@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 8,
+    "published": 11,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -78213,7 +78213,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Equipment",
       "title": "Equipment",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Equipment",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -82797,7 +82798,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Feats",
       "title": "Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -252541,7 +252543,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery",
       "title": "Weapon_Mastery",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Weapon_Mastery",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]

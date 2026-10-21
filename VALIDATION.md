@@ -40,3 +40,19 @@ Reconciliation yielded 28,636 unique article candidates, 12 supporting pages, ei
 `npm run validate` and both browser tests passed against the completed inventory. Astro checks and the build passed again after updating coverage copy. Current output remains 15 files (57,373 bytes). The candidate manifest is build-time input and is not copied into the deployed site. The useful-page total and the full-site hosting architecture remain undetermined.
 
 Independent review verified that all 84 pagination batches form a continuous chain ending at the terminal page, the generated inventory matches the discovery data, and coverage copy accurately distinguishes enumeration from reviewed content. No actionable findings were reported.
+
+## Static hosting decision and representative content batch
+
+Validated October 20, 2026, on Node 24:
+
+- `npm run validate`: zero Astro diagnostics, all 14 tests passed, inventory consistency and 11 article publication checks passed.
+- `npm run test:browser`: all three tests passed. Added mastery-table search, 11-row rendering, and 390px viewport overflow coverage. Quest policy tests now select a quest by slug instead of assuming the last article is a quest.
+- Inspected the mobile mastery screenshot: the six-column table scrolls within the page; headings, attribution, and related links remain readable.
+- Static output: 18 files, 78,311 bytes. Existing 18,000-file guard unchanged.
+- Firecrawl retrieved Feats, Equipment, Weapon Mastery, and The Strategist Card. Published the first three after source review; withheld the artifact because the article-body scrape lacked its stat infobox. The initial guessed Strategist_Card URL returned 404, and the inventory supplied the correct title. No artifact stats or guessed page were published.
+- Mastery preserves all 11 source table rows. Feat tiers use the explicit four-star table rather than conflicting older prose that claims a 50-point maximum. Omitted dated equipment access prices.
+- Recorded the selected static Workers hosting path: free until needed, paid only after actual output measurement and account upgrade. No Cloudflare subscription, DNS, or deployment changes performed.
+
+Sources remain subject to in-game verification. Full content import, redirect triage, infobox extraction, and live Cloudflare deployment remain incomplete.
+
+Independent `codex review --uncommitted` completed with no actionable defects; it also compared the new guides to cached source material and reran the validation and browser checks successfully.

@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".card")).toHaveCount(8);
+  await expect(page.locator(".card")).toHaveCount(11);
   await page.getByRole("searchbox").fill("corridor leading to the exit");
   await expect(page.locator(".card:visible")).toHaveCount(1);
   await page.getByRole("searchbox").fill("no matching entry");
@@ -72,4 +72,29 @@ test("location tables, video chapters, and related guides", async ({
   await page.getByRole("searchbox").fill("");
   await page.getByRole("button", { name: "Locations", exact: true }).click();
   await expect(page.locator(".card:visible")).toHaveCount(1);
+});
+
+test("mastery table remains usable on mobile and searchable", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("searchbox").fill("Shuriken Storm");
+  await expect(page.locator(".card:visible")).toHaveCount(1);
+  await page.getByRole("link", { name: /Weapon Mastery/ }).click();
+  await expect(page.getByRole("row")).toHaveCount(12);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth,
+      ),
+    )
+    .toBe(true);
+  await expect(
+    page.getByRole("cell", { name: "Bow", exact: true }),
+  ).toBeVisible();
+  await page.screenshot({
+    path: "test-results/mastery-mobile.png",
+    fullPage: true,
+  });
 });

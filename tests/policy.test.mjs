@@ -15,7 +15,11 @@ test("blocks empty and unreviewed imports", () => {
   );
 });
 test("quests require location research and video checks", () => {
-  const q = { ...articles.at(-1), location: undefined, videoReview: undefined };
+  const q = {
+    ...articles.find((a) => a.slug === "House_of_Venom"),
+    location: undefined,
+    videoReview: undefined,
+  };
   assert.ok(issuesFor(q).includes("YouTube research required"));
   assert.ok(
     issuesFor(q).includes(
@@ -26,7 +30,7 @@ test("quests require location research and video checks", () => {
 test("incidental video matches cannot pass without evidence", () => {
   assert.ok(
     issuesFor({
-      ...articles.at(-1),
+      ...articles.find((a) => a.slug === "House_of_Venom"),
       videos: [{ url: "https://www.youtube.com/watch?v=abc" }],
     }).includes("unverified video"),
   );

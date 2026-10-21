@@ -454,5 +454,231 @@
       }
     ],
     "related": ["Out_in_the_Streets", "Viva_la_Lucha_Libre"]
+  },
+  {
+    "slug": "Feats",
+    "title": "Feats",
+    "category": "Progression",
+    "summary": "Earn feat points, gain skill points, and understand optional unlocks for alternate characters.",
+    "sections": [
+      {
+        "title": "Earning skill points",
+        "items": [
+          "Feats reward completion of challenges across exploration, solo content, group instances, PvP, and other activities. Every 100 feat points grants one additional skill point, allowing progression beyond the points gained through leveling."
+        ]
+      },
+      {
+        "title": "Star ratings and points",
+        "items": [
+          "Read the requirement of each feat before attempting it. Four-star feats are special rewards and do not necessarily demand more effort than three-star challenges."
+        ],
+        "table": {
+          "caption": "Feat rewards by star rating",
+          "columns": ["Rating", "Source difficulty label", "Feat points"],
+          "rows": [
+            ["1 star", "Easy", "10"],
+            ["2 stars", "Medium", "25"],
+            ["3 stars", "Hard", "50"],
+            ["4 stars", "Special", "100"]
+          ]
+        }
+      },
+      {
+        "title": "Unlocking feats on another character",
+        "items": [
+          "Replay badges can grant eligible feats already earned by another character. This is optional: feats can still be earned by completing their normal requirements. Only feats shared by the characters are eligible, so movement-specific feats cannot be transferred to an incompatible movement type.",
+          "The source lists badge costs of 1, 3, 5, and 7 for feats worth 10, 25, 50, and 100 points respectively. Check the in-game unlock confirmation before spending badges. Some event-progression feats can instead be obtained on other characters by reclaiming their associated rewards."
+        ]
+      },
+      {
+        "title": "Finding your next goal",
+        "items": [
+          "Use the feats menu to inspect requirements and progress. A yellow ribbon marks feats that also award a title. The menu was reorganized in Game Update 135; older screenshots and navigation instructions may differ from the current interface."
+        ]
+      }
+    ],
+    "related": ["Powers", "Weapon_Mastery"],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Feats",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Feats?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Equipment",
+    "title": "Equipment",
+    "category": "Equipment",
+    "summary": "Understand weapons, costume pieces, and the other items your character carries.",
+    "sections": [
+      {
+        "title": "Choosing weapons",
+        "items": [
+          "Your weapon type determines the attacks and combos available in combat. Weapon types offer different combinations of ranged and melee attacks. Characters can develop more than one weapon type; choose based on the attacks you want to use and your combat role."
+        ]
+      },
+      {
+        "title": "Costume equipment",
+        "items": [
+          "Costume pieces contribute character statistics. Role and character-level requirements can restrict which pieces you can equip. Compare usable equipment separately from its visual style when choosing upgrades."
+        ]
+      },
+      {
+        "title": "Other item types",
+        "items": [
+          "Inventory items serve several purposes beyond equipped armor and weapons. Trinkets and consumables can assist in combat, collection items contribute to sets, and base items provide decoration. Currency and crafting materials have separate progression uses."
+        ]
+      },
+      {
+        "title": "Weapon types",
+        "items": [
+          "The source lists Bow, Brawling, Dual Pistols, Dual Wield, Hand Blaster, Martial Arts, One-Handed, Rifle, Shield, Staff, and Two-Handed. For cross-weapon combos, see the Weapon Mastery guide. Check current in-game access requirements for restricted weapon types."
+        ]
+      }
+    ],
+    "related": ["Weapon_Mastery", "Powers", "Collections"],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Equipment",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Equipment?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Weapon_Mastery",
+    "title": "Weapon Mastery",
+    "category": "Combat",
+    "summary": "Unlock stronger weapon combos and chain attacks into another weapon type.",
+    "sections": [
+      {
+        "title": "Unlocking mastery",
+        "items": [
+          "Weapon Mastery becomes available after spending the required stat points in a weapon tree. Unlocking mastery for your equipped weapon increases damage from its weapon combos. Check the tree in game for the exact point requirements."
+        ]
+      },
+      {
+        "title": "Multiple Mastery",
+        "items": [
+          "Cross-weapon combos require the corresponding mastery unlocks in the other weapon trees. You do not need to own a secondary weapon item to perform its unlocked mastery combo. Unlocking the combo also adds an appearance option in the Style UI."
+        ]
+      },
+      {
+        "title": "Combo reference",
+        "items": [
+          "Each row lists the secondary weapon trees and the four combo sequences recorded by the source. The first two sequences are labeled melee and the last two ranged in that reference. These are source-listed sequences, not independently tested damage rankings."
+        ],
+        "table": {
+          "caption": "Multiple Mastery weapon combos",
+          "columns": [
+            "Weapon",
+            "Secondary weapons",
+            "Melee combo 1",
+            "Melee combo 2",
+            "Ranged combo 1",
+            "Ranged combo 2"
+          ],
+          "rows": [
+            [
+              "Bow",
+              "Martial Arts Dual Pistol",
+              "Kip-Up Launcher -> Smoke Bomb",
+              "Blow Slam -> Spinning Punch",
+              "Explosive Shot -> Full Auto",
+              "Flurry Shot -> Magnum Round"
+            ],
+            [
+              "Brawling",
+              "Two Handed Martial Arts",
+              "Backfist -> Doom Spin",
+              "Haymaker -> Home Run",
+              "Clap -> Shuriken Storm",
+              "Stomp Smash -> Enhanced Shuriken"
+            ],
+            [
+              "Dual Pistol",
+              "Dual Wield Hand Blaster",
+              "Loft Shot -> Dual Flurry",
+              "Sweep Shot -> Ultra Flurry",
+              "Magnum Round -> Solar Flame",
+              "Jump Shot -> Meteor Blast"
+            ],
+            [
+              "Dual Wield",
+              "Brawling Bow",
+              "Whirlwind Overstrike -> Ground Pound",
+              "Stunning Swipe -> Launching Uppercut",
+              "Phantom Slash -> Flurry Shot",
+              "Charged Double Throw -> Explosive Shot"
+            ],
+            [
+              "Hand Blaster",
+              "Brawling Bow",
+              "Fist Slam -> Ground Pound",
+              "Uppercut -> Haymaker",
+              "Solar Flame -> Explosive Shot",
+              "Meteor Blast -> Arrow Fling"
+            ],
+            [
+              "Martial Arts",
+              "Dual Pistol Hand Blaster",
+              "Knee Launch -> Loft Shot",
+              "Spinning Punch \u00a0-> Sweep Shot",
+              "Cartwheel Kick -> Uppercut",
+              "Empowered Shuriken -> Meteor Blast"
+            ],
+            [
+              "One Handed",
+              "Dual Wield Hand Blaster",
+              "Air Launch -> Stunning Swipe",
+              "Spin Chop -> Dual Flurry",
+              "Flip Slash -> Pulse Beam",
+              "Focused Blast -> Solar Flame"
+            ],
+            [
+              "Rifle",
+              "One Handed Dual Pistol",
+              "Overhead Smash -> Flurry",
+              "Flamethrower -> Air Launch",
+              "Rolling Barrage -> Full Auto",
+              "Flip Burst -> Slip Shot"
+            ],
+            [
+              "Shield",
+              "Two Handed Dual Pistol",
+              "Spinning Upslash -> Home Run",
+              "Spinning Downward Cross -> Big Scoop",
+              "Leaping Stab -> Lifting Strike",
+              "Heavy Sidearm Throw -> Magnum Round"
+            ],
+            [
+              "Staff",
+              "One Handed Rifle",
+              "2 Tap -> Cleave",
+              "4 Tap -> Air Launch",
+              "Martial Flowers -> Flip Burst",
+              "Tap -> Mortar (infinite Mortar)"
+            ],
+            [
+              "Two Handed",
+              "Martial Arts Bow",
+              "2 Tap -> Knee Launch",
+              "4 Tap -> Spinning Punch",
+              "Home Run -> Flurry Shot",
+              "Hammer Throw -> Arrow Storm"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Practice and appearance",
+        "items": [
+          "The source notes that mastery combos can be performed without hitting an enemy or sparring target. Secondary and tertiary weapon appearances can be selected in the style menu, including a default energy-construct appearance using the primary character color."
+        ]
+      }
+    ],
+    "related": ["Equipment", "Feats"],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
   }
 ]

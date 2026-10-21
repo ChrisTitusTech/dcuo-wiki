@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An exploratory Astro wiki for https://dcuo-wiki.com. Eight curated starter guides, not a full Fandom mirror. Quest pilot: Grab and Smash, with five source map references and an explicitly documented unsuccessful YouTube match search.
+An exploratory Astro wiki for https://dcuo-wiki.com. Eleven curated starter guides, not a full Fandom mirror. Quest pilot: Grab and Smash, with five source map references and an explicitly documented unsuccessful YouTube match search.
 
 ## Develop and validate
 
@@ -29,7 +29,7 @@ Review staged content against its source before adding a record to `src/data/art
 
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. Eight guides are published. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. Eleven guides are published. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory
@@ -46,13 +46,17 @@ Discovery commits a checkpoint after each successful page. It follows the source
 
 For a Cloudflare Pages project, connect ChrisTitusTech/dcuo-wiki, select main, set build command `npm run build`, and output directory `dist`. Use Node 24. Add dcuo-wiki.com through the project's custom domains flow and verify its DNS and HTTPS status. Owning the domain does not automatically connect the project.
 
-Alternatively, the included `wrangler.jsonc` supports static Workers hosting. With Workers Builds, use `npm run build` as build command and `npx wrangler deploy` as deploy command. Review account quotas before changing hosting architecture.
+The selected hosting path is static Astro on Cloudflare Workers, using the included `wrangler.jsonc`. With Workers Builds, connect this GitHub repository on main, use `npm run build` as build command and `npx wrangler deploy` as deploy command. Keep Node 24. Add dcuo-wiki.com as a Worker custom domain and verify DNS and HTTPS. The Pages instructions above remain an alternative.
+
+Stay on Workers Free while the output fits the existing 18,000-file safety budget. Workers Free allows 20,000 files; Workers Paid starts at $5/month and allows 100,000 files. Static asset serving is free and unlimited. Keep rendering and search static; no database or per-visit Worker execution is needed. Domain renewal and build usage beyond included allowances are separate. Before approaching the safety budget, measure the complete output, explicitly activate the paid account plan if needed, and then update the guard for the confirmed tier. Do not drop useful guides to fit the free tier. No paid subscription has been activated.
+
+Pricing checked October 20, 2026: [Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/), [file limits](https://developers.cloudflare.com/workers/platform/limits/), [static asset billing](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/).
 
 Do not replace the build command with plain `astro build`: that would skip publication and file-budget checks. No Cloudflare credentials or account configuration are included. Repository publication does not confirm a live deployment.
 
 ## Rollback and refresh
 
-Revert the offending commit on main and let Cloudflare rebuild, or restore a previous successful deployment in Cloudflare. Content updates are reviewed commits; no scheduled crawling is enabled. Full inventory, automated enrichment, media mirroring, and large-scale hosting selection remain future milestones.
+Revert the offending commit on main and let Cloudflare rebuild, or restore a previous successful deployment in Cloudflare. Content updates are reviewed commits; no scheduled crawling is enabled. Content classification, automated enrichment, media mirroring, and live hosting activation remain future milestones.
 
 ## Attribution
 
