@@ -121,7 +121,7 @@ Owner requested sustained implementation and deployment, with quest walkthroughs
 map points and exact-match YouTube guides ahead of reference directories. This
 supersedes the reference-first order in the previous coverage correction.
 
-- [ ] Complete existing three quests and four mapped location/collectible guides:
+- [x] Complete existing three quests and four mapped location/collectible guides:
   missing route images, objectives/context, exact-name video research, chapters.
 - [ ] Expand a connected set of additional quest walkthroughs with sourced maps
   and matching videos; record researched exclusions instead of publishing stubs.
@@ -136,3 +136,13 @@ pass content/build/browser/Cloudflare checks and Codex review, then push main an
 verify production. Completion means the recorded scope passed, not that every
 one of the 28,636 candidate URLs has been converted. That original full-wiki
 objective remains open until candidate disposition and coverage are established.
+
+Quest-first batch 1: added 21 scene screenshots (42 R2 objects with previews),
+source-backed mission context and exact-match videos for Viva la Lucha Libre,
+Cape Carmine Lighthouse and both Til Death briefing episodes. All twelve briefing
+chapters match wiki token identity, including the different Episode I video order.
+Grab and Smash has a documented no-match search; unrelated videos were rejected.
+Existing editable baselines remain unchanged. R2 objects were byte-compared with
+local files and their attribution catalog updated in D1. Validation: type checking,
+35 unit tests, production build, 9 browser tests, 7 Cloudflare integration tests,
+and independent Codex review passed. Build contains 30 files against 18,000 budget.

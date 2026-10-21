@@ -145,7 +145,7 @@ test("global search, category navigation, and mobile menu", async ({
 });
 
 test("copied maps appear inline with full-size and source links", async ({ page }) => {
-  for (const [slug, count] of [["Grab_and_Smash", 5], ["Cape_Carmine_Lighthouse", 2], ["Viva_la_Lucha_Libre", 6], ["Out_in_the_Streets", 1], ["House_of_Venom", 2], ["Til_Death_Do_Us_Part_Episode_I", 12], ["Til_Death_Do_Us_Part_Episode_II", 12]] as const) {
+  for (const [slug, count] of [["Grab_and_Smash", 10], ["Cape_Carmine_Lighthouse", 12], ["Viva_la_Lucha_Libre", 12], ["Out_in_the_Streets", 1], ["House_of_Venom", 2], ["Til_Death_Do_Us_Part_Episode_I", 12], ["Til_Death_Do_Us_Part_Episode_II", 12]] as const) {
     await page.goto(`/wiki/${slug}/`);
     await expect(page.locator('.map-gallery img')).toHaveCount(count);
     await expect(page.locator('.map-gallery a').filter({hasText: 'Full-size image'})).toHaveCount(count);
@@ -153,4 +153,12 @@ test("copied maps appear inline with full-size and source links", async ({ page 
       await expect(img).toHaveAttribute('src', /^https:\/\/images\.dcuo-wiki\.com\/[a-f0-9]{64}-preview\.webp$/);
     }
   }
+});
+
+test('briefing chapters match wiki parts rather than video collection order', async ({page}) => {
+  await page.goto('/wiki/Til_Death_Do_Us_Part_Episode_I/');
+  await expect(page.getByRole('link',{name:'Part 1: Vicki Vale',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=2bfM23Di18w&t=238s');
+  await expect(page.getByRole('link',{name:'Part 4: Jack Ryder',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=2bfM23Di18w&t=68s');
+  await page.goto('/wiki/Til_Death_Do_Us_Part_Episode_II/');
+  await expect(page.getByRole('link',{name:'Part 4: Lois Lane',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=GJOXYvO91xc&t=346s');
 });

@@ -685,7 +685,10 @@
     "retrieved": "2026-10-20",
     "reviewed": true,
     "license": "CC-BY-SA; see source for exceptions",
-    "related": ["Viva_la_Lucha_Libre", "Collections"]
+    "related": [
+      "Viva_la_Lucha_Libre",
+      "Collections"
+    ]
   },
   {
     "slug": "Collections",
@@ -750,6 +753,35 @@
         "items": [
           "The source lists 1,162 cash and a Source Mark. These values have not been verified in the current game."
         ]
+      },
+      {
+        "title": "Mission objective and terminal views",
+        "items": [
+          "Bane's street soldiers are trading information about increased magical activity in Gotham. Retrieve five pieces of information before the gang can profit from it.",
+          "Interact with all five terminals during the queued duo. If a terminal is not interactive, confirm this mission was tracked in the Journal before starting the run. The pictures below correspond to the five numbered map screenshots in Location & maps."
+        ],
+        "images": [
+          {
+            "label": "Terminal 1: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:1.0.jpg"
+          },
+          {
+            "label": "Terminal 2: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:2.0.jpg"
+          },
+          {
+            "label": "Terminal 3: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:3.0.jpg"
+          },
+          {
+            "label": "Terminal 4: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:4.0.jpg"
+          },
+          {
+            "label": "Terminal 5: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:5.0.jpg"
+          }
+        ]
       }
     ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Grab_and_Smash",
@@ -787,11 +819,14 @@
     "videoReview": {
       "status": "no-verified-match",
       "query": "DCUO \"Grab and Smash\" site:youtube.com/watch",
-      "checked": "2026-10-20",
-      "note": "Search returned a different mission with an incidental phrase match; no video qualified."
+      "checked": "2026-10-21",
+      "note": "Repeated exact-name search returned Mannheim's Chinese Theater with an incidental phrase match, not this mission. No qualified video found."
     },
     "videos": [],
-    "related": ["Cape_Carmine_Lighthouse", "Viva_la_Lucha_Libre"]
+    "related": [
+      "Cape_Carmine_Lighthouse",
+      "Viva_la_Lucha_Libre"
+    ]
   },
   {
     "slug": "Cape_Carmine_Lighthouse",
@@ -819,6 +854,69 @@
           "Grab and Smash requires the queued duo rather than the walk-in instance. Track that quest before entering.",
           "The Viva la Lucha Libre investigation includes two parts inside the lighthouse. Use its individual landmark descriptions to locate those nodes."
         ]
+      },
+      {
+        "title": "Inhabitants and faction encounters",
+        "items": [
+          "Outside: Retaliators, Lieutenants, Hoppers and Razors; the Lighthouse Keeper, GCPD Rookies, Officer O'Brien and Fast Eddie.",
+          "Inside: Lieutenants, Muscle, Razors, Envenomed Guard Dogs, Retaliators, Strongmen and Bane.",
+          "The source lists Killer Croc for the villain solo and both duo factions; Nightwing for the hero solo and both duo factions. Deathstroke is specific to the hero duo and Huntress to the villain duo."
+        ]
+      },
+      {
+        "title": "Landmark and instance gallery",
+        "items": [
+          "These views show the lighthouse and its interior. For navigation, use the world-map location and instance map below."
+        ],
+        "images": [
+          {
+            "label": "Lighthouse reference view 1",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:GothamCapeCarmineLighthouse1.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 2",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:GothamCapeCarmineLighthouse2.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 3",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:GothamCapeCarmineLighthouse3.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 4",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:GothamCapeCarmineLighthouse.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 5",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lighthouse1.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 6",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lighthouse2.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 7",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lighthouse3.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 8",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lighthouse4.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 9",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lighthouse5.jpg"
+          },
+          {
+            "label": "Lighthouse reference view 10",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lighthouse6.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Local objectives and history",
+        "items": [
+          "The Lighthouse Keeper asks players to destroy 15 Venom Canisters. Several exobit spawn locations lie close together around the lighthouse.",
+          "The duo was introduced in Game Update 1 on February 14, 2011. Cape Carmine is named for comics artist Carmine Infantino."
+        ]
       }
     ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse",
@@ -841,7 +939,23 @@
         }
       ]
     },
-    "related": ["Grab_and_Smash", "Viva_la_Lucha_Libre"]
+    "related": [
+      "Grab_and_Smash",
+      "Viva_la_Lucha_Libre"
+    ],
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Cape Carmine Lighthouse\" walkthrough site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact guide match verified from retrieved video title and publisher description. Footage has not been independently reviewed."
+    },
+    "videos": [
+      {
+        "title": "Trexlight: Cape Carmine Lighthouse duo guide",
+        "url": "https://www.youtube.com/watch?v=Yw2aiR3y5m8",
+        "evidence": "Title and publisher description explicitly identify the lighthouse duo. Published March 16, 2011; the publisher notes a cropped HUD. Use for route context, not current balance or rewards."
+      }
+    ]
   },
   {
     "slug": "Viva_la_Lucha_Libre",
@@ -863,7 +977,10 @@
         ],
         "table": {
           "caption": "Source-reported investigation locations",
-          "columns": ["Part", "Landmarks"],
+          "columns": [
+            "Part",
+            "Landmarks"
+          ],
           "rows": [
             [
               "1. Quetzalcoatl",
@@ -897,6 +1014,45 @@
         "items": [
           "The source lists Gangster's Jacket, using the Classic Biker style, as the completion reward.",
           "Heroes receive completion mail from Harvey Bullock; villains receive it from the Penguin. Read the message at a mail terminal."
+        ]
+      },
+      {
+        "title": "Investigation node views",
+        "items": [
+          "Match these six scene images to the numbered map screenshots and location table. Outdoor nodes can have alternate positions; collect only one copy of each named part."
+        ],
+        "images": [
+          {
+            "label": "Part 1: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.1.jpg"
+          },
+          {
+            "label": "Part 2: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.2.jpg"
+          },
+          {
+            "label": "Part 3: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.3.jpg"
+          },
+          {
+            "label": "Part 4: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt4.jpg"
+          },
+          {
+            "label": "Part 5: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt5.jpg"
+          },
+          {
+            "label": "Part 6: in-game view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt6.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Recordings and reward mail",
+        "items": [
+          "Vicki Vale identifies Quetzalcoatl as the feathered serpent, Tlaloc as the god of water, Camaxtli as the god of the hunt, Mextli as the god of war, Itzli with stone and sacrifice, and Xochipilli with street art. The masks worn by Bane's soldiers conceal their identities and invoke luck.",
+          "Hero completion mail is from Harvey Bullock, subject Pounding the Mat; villain mail is from the Penguin, subject A Bird in the Hand. Both attach Gangster's Jacket."
         ]
       }
     ],
@@ -941,6 +1097,19 @@
       "Out_in_the_Streets",
       "House_of_Venom",
       "Cape_Carmine_Lighthouse"
+    ],
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Viva la Lucha Libre\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact guide match verified from retrieved video title and publisher description. Footage has not been independently reviewed."
+    },
+    "videos": [
+      {
+        "title": "Sethum: all six Viva la Lucha Libre investigations",
+        "url": "https://www.youtube.com/watch?v=aRjIXwHiqOo",
+        "evidence": "Title and description explicitly identify all Viva la Lucha Libre locations. Retrieved transcript covers the lighthouse, docks and Distribution Center. Published May 21, 2020."
+      }
     ]
   },
   {
@@ -968,6 +1137,13 @@
         "items": [
           "Follow the tracked mission objectives for remaining crate and enemy targets. No exact target coordinates are supplied by the reviewed sources.",
           "The linked hero playthrough explicitly names this quest; the next chapter covers House of Venom."
+        ]
+      },
+      {
+        "title": "Story context and results",
+        "items": [
+          "Batman reports Bane's return to Gotham and warns that his gang is distributing Venom throughout the East End. Take shipment samples for analysis while disrupting the distribution operation.",
+          "After analysis, Oracle identifies the samples as a weaker version of Bane's usual Venom and warns that the steroid can damage the body."
         ]
       }
     ],
@@ -1001,7 +1177,10 @@
         "evidence": "The publisher explicitly names Out in the Streets in the title and chapter description. Segment starts at 0:00. Verified from metadata, not a full viewing."
       }
     ],
-    "related": ["House_of_Venom", "Viva_la_Lucha_Libre"]
+    "related": [
+      "House_of_Venom",
+      "Viva_la_Lucha_Libre"
+    ]
   },
   {
     "slug": "House_of_Venom",
@@ -1028,6 +1207,13 @@
         "items": [
           "The source lists Bane's minions, Muscle, Strongman, Razor, and Venom-affected dogs among the opponents.",
           "The allies list distinguishes Nightwing for heroes and Killer Croc for villains. The linked video is a Batman-mentor hero playthrough."
+        ]
+      },
+      {
+        "title": "Gang war and supporting combatants",
+        "items": [
+          "The Joker-backed Falcone crime family and Bane's Venom-charged gang are fighting over Gotham's East End. Investigate the supplier to stop the new Venom distribution.",
+          "The source also lists Falcone Family Hoods and Bane among the opposition, and Gotham Police among the allies. Oracle connects the mission to Bane's earlier attack that broke Batman's back."
         ]
       }
     ],
@@ -1065,7 +1251,10 @@
         "evidence": "The publisher explicitly names House of Venom in the title and chapter description. Segment starts at 7:37. Verified from metadata, not a full viewing."
       }
     ],
-    "related": ["Out_in_the_Streets", "Viva_la_Lucha_Libre"]
+    "related": [
+      "Out_in_the_Streets",
+      "Viva_la_Lucha_Libre"
+    ]
   },
   {
     "slug": "Feats",
@@ -1086,12 +1275,32 @@
         ],
         "table": {
           "caption": "Feat rewards by star rating",
-          "columns": ["Rating", "Source difficulty label", "Feat points"],
+          "columns": [
+            "Rating",
+            "Source difficulty label",
+            "Feat points"
+          ],
           "rows": [
-            ["1 star", "Easy", "10"],
-            ["2 stars", "Medium", "25"],
-            ["3 stars", "Hard", "50"],
-            ["4 stars", "Special", "100"]
+            [
+              "1 star",
+              "Easy",
+              "10"
+            ],
+            [
+              "2 stars",
+              "Medium",
+              "25"
+            ],
+            [
+              "3 stars",
+              "Hard",
+              "50"
+            ],
+            [
+              "4 stars",
+              "Special",
+              "100"
+            ]
           ]
         }
       },
@@ -1109,7 +1318,10 @@
         ]
       }
     ],
-    "related": ["Powers", "Weapon_Mastery"],
+    "related": [
+      "Powers",
+      "Weapon_Mastery"
+    ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Feats",
     "history": "https://dcuniverseonline.fandom.com/wiki/Feats?action=history",
     "retrieved": "2026-10-20",
@@ -1147,7 +1359,11 @@
         ]
       }
     ],
-    "related": ["Weapon_Mastery", "Powers", "Collections"],
+    "related": [
+      "Weapon_Mastery",
+      "Powers",
+      "Collections"
+    ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Equipment",
     "history": "https://dcuniverseonline.fandom.com/wiki/Equipment?action=history",
     "retrieved": "2026-10-20",
@@ -1232,7 +1448,7 @@
               "Martial Arts",
               "Dual Pistol Hand Blaster",
               "Knee Launch -> Loft Shot",
-              "Spinning Punch \u00a0-> Sweep Shot",
+              "Spinning Punch  -> Sweep Shot",
               "Cartwheel Kick -> Uppercut",
               "Empowered Shuriken -> Meteor Blast"
             ],
@@ -1286,7 +1502,10 @@
         ]
       }
     ],
-    "related": ["Equipment", "Feats"],
+    "related": [
+      "Equipment",
+      "Feats"
+    ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery",
     "history": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery?action=history",
     "retrieved": "2026-10-20",
@@ -1325,7 +1544,11 @@
         ]
       }
     ],
-    "related": ["Equipment", "Powers", "Feats"],
+    "related": [
+      "Equipment",
+      "Powers",
+      "Feats"
+    ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Artifacts",
     "history": "https://dcuniverseonline.fandom.com/wiki/Artifacts?action=history",
     "retrieved": "2026-10-20",
@@ -1460,7 +1683,56 @@
     "history": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_I_(Briefings)?action=history",
     "retrieved": "2026-10-20",
     "reviewed": true,
-    "license": "CC-BY-SA; see source for exceptions"
+    "license": "CC-BY-SA; see source for exceptions",
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Til Death\" \"Briefing\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact guide match verified from retrieved video title and publisher description. Footage has not been independently reviewed."
+    },
+    "videos": [
+      {
+        "title": "TechLouis: 'Til Death Do Us Part: Episode I (Briefings)",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "evidence": "Exact episode and all six tokens are identified in the publisher description. Published in May 2016. Chapters follow the video's route, which may differ from the wiki's part order."
+      },
+      {
+        "title": "Part 1: Vicki Vale",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "startSeconds": 238,
+        "evidence": "Publisher description names this recording at 3:58. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 2: Lois Lane",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "startSeconds": 430,
+        "evidence": "Publisher description names this recording at 7:10. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 3: Madame Xanadu's",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "startSeconds": 546,
+        "evidence": "Publisher description names this recording at 9:06. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 4: Jack Ryder",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "startSeconds": 68,
+        "evidence": "Publisher description names this recording at 1:08. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 5: Circe",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "startSeconds": 161,
+        "evidence": "Publisher description names this recording at 2:41. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 6: Wonder Woman",
+        "url": "https://www.youtube.com/watch?v=2bfM23Di18w",
+        "startSeconds": 335,
+        "evidence": "Publisher description names this recording at 5:35. Matched to the wiki part by recording name, not video order."
+      }
+    ]
   },
   {
     "slug": "Til_Death_Do_Us_Part_Episode_II",
@@ -1590,6 +1862,55 @@
     "history": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_II_(Briefings)?action=history",
     "retrieved": "2026-10-20",
     "reviewed": true,
-    "license": "CC-BY-SA; see source for exceptions"
+    "license": "CC-BY-SA; see source for exceptions",
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Til Death\" \"Briefing\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact guide match verified from retrieved video title and publisher description. Footage has not been independently reviewed."
+    },
+    "videos": [
+      {
+        "title": "TechLouis: 'Til Death Do Us Part: Episode II (Briefings)",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "evidence": "Exact episode and all six tokens are identified in the publisher description. Published in May 2016. Chapters follow the video's route, which may differ from the wiki's part order."
+      },
+      {
+        "title": "Part 1: Lois Lane",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "startSeconds": 76,
+        "evidence": "Publisher description names this recording at 1:16. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 2: Vicki Vale",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "startSeconds": 165,
+        "evidence": "Publisher description names this recording at 2:45. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 3: Jack Ryder",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "startSeconds": 246,
+        "evidence": "Publisher description names this recording at 4:06. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 4: Lois Lane",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "startSeconds": 346,
+        "evidence": "Publisher description names this recording at 5:46. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 5: Circe",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "startSeconds": 449,
+        "evidence": "Publisher description names this recording at 7:29. Matched to the wiki part by recording name, not video order."
+      },
+      {
+        "title": "Part 6: Wonder Woman",
+        "url": "https://www.youtube.com/watch?v=GJOXYvO91xc",
+        "startSeconds": 530,
+        "evidence": "Publisher description names this recording at 8:50. Matched to the wiki part by recording name, not video order."
+      }
+    ]
   }
 ]
