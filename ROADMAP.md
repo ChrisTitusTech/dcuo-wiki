@@ -77,3 +77,7 @@ Git automation blocker: Cloudflare reports the Git account disconnected after th
 The owner saved GitHub installation access. Cloudflare settings no longer report a disconnected Git account; verify the next push-triggered deployment.
 
 Commit cb23314 passed GitHub CI and deployed automatically in Cloudflare build 4371cf08-2257-4159-a0de-afa0943a7f26 (version 954a5593-f823-4abe-905a-47327e4068c2). Live /api/status confirms login and Census matching remain disabled until activation; /account/ and existing articles respond successfully. GitHub deployment automation is restored.
+
+## Production database activation
+
+Created dcuo-wiki-accounts in the existing Cloudflare account on the free allocation. Applied 0001_accounts.sql through the D1 console, verified all six application tables and five indexes, and recorded the migration in Wrangler-compatible d1_migrations. Added the permanent DB binding to wrangler.jsonc. All four production secrets are configured; approved Census service ID and numeric moderator ID were updated separately. Deployment and real Discord sign-in acceptance must be verified after this binding is published.

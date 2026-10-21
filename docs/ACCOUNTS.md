@@ -14,7 +14,7 @@
 
 ## Required activation
 
-Production currently has no database binding or authentication secrets committed. Without them, account endpoints return a clear unavailable response and wiki articles still work. Never put secrets in Git or chat.
+Production secrets are configured in Cloudflare. The database dcuo-wiki-accounts (1b3140dd-8d8e-49cc-ab3b-cfd0104efaa9) has been created and initialized through the dashboard; its DB binding is persisted in wrangler.jsonc. Migration 0001_accounts.sql is recorded in d1_migrations. The steps below also serve as recreation instructions. Never put secrets in Git or chat.
 
 1. Create an application in the [Discord developer portal](https://discord.com/developers/applications). Add this exact OAuth2 redirect:
 

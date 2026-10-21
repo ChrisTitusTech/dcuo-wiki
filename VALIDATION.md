@@ -104,3 +104,9 @@ Production Discord sign-in, approved Census service ID, real D1 binding/migratio
 Local Codex review completed. The first review found article context was lost through sign-in; state-bound page-title storage fixed it, with a regression test. Repeat review found no actionable defects. The owner saved GitHub repository access, and refreshed Cloudflare settings no longer show the disconnected warning. Live deployment of this increment still requires verification after push.
 
 Live evidence: cb23314 passed GitHub Actions run 39532602770 and Cloudflare automatic build 4371cf08-2257-4159-a0de-afa0943a7f26. Cloudflare reported deploy success for dcuo-wiki.com and version 954a5593-f823-4abe-905a-47327e4068c2. HTTPS /api/status returns 200 with login=false and census=false; /account/ and /wiki/Artifacts/ return 200. This verifies deployment and the activation lock, not completed provider setup.
+
+## Production D1 setup
+
+Created database 1b3140dd-8d8e-49cc-ab3b-cfd0104efaa9 (dcuo-wiki-accounts) through the Cloudflare dashboard. The console reported successful execution of the existing migration; sqlite_schema confirmed users, oauth_states, sessions, profiles, contributions, rate_limits, and all five application indexes. Migration tracking was initialized with 0001_accounts.sql using the schema expected by pinned Wrangler. No existing database was modified and no paid upgrade was activated.
+
+`npm run deploy:check` passed with env.DB bound to dcuo-wiki-accounts. All four `npm run test:cloudflare` checks passed against the disposable local database. Unchanged application validation evidence is reused. Live OAuth completion requires the account owner to sign into Discord.

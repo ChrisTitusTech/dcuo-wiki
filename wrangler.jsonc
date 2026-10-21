@@ -16,6 +16,14 @@
     },
   ],
   "main": "worker/index.mjs",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dcuo-wiki-accounts",
+      "database_id": "1b3140dd-8d8e-49cc-ab3b-cfd0104efaa9",
+      "migrations_dir": "migrations",
+    },
+  ],
   "vars": {
     "SITE_ORIGIN": "https://dcuo-wiki.com",
   },
