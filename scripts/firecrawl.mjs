@@ -4,6 +4,11 @@ export async function scrape(
     key,
     fetcher = fetch,
     sleep = (ms) => new Promise((r) => setTimeout(r, ms)),
+    includeTags = [
+      ".mw-parser-output",
+      ".mw-allpages-body",
+      ".mw-allpages-nav",
+    ],
   } = {},
 ) {
   if (!key) throw new Error("Set FIRECRAWL_API_KEY in the environment.");
@@ -19,11 +24,7 @@ export async function scrape(
         body: JSON.stringify({
           url,
           formats: ["markdown", "links", "html"],
-          includeTags: [
-            ".mw-parser-output",
-            ".mw-allpages-body",
-            ".mw-allpages-nav",
-          ],
+          includeTags,
           onlyMainContent: true,
         }),
         signal: AbortSignal.timeout(60000),

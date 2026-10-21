@@ -1,0 +1,12 @@
+# Mission source downloads
+
+Run `node scripts/download-missions.mjs` from the repository root to stage the source Missions category. The downloader reads the existing Firecrawl key from `.env`, follows every category continuation, and checks the unique entry count against the source total before fetching articles.
+
+- `data/mission-downloads.json` records the index pages, separate category links, article URLs, retrieval times, content hashes, and failures.
+- `.import-cache/<sha256-of-url>.json` retains the Markdown, HTML, links, and source metadata locally. These source captures are ignored by Git and are not deployed as website assets.
+- Five requests run concurrently. Existing valid article captures are reused, and completed captures are written atomically. Rerun the command to resume after interruption or retry failed entries.
+- Category captures are also cached locally. Remove only `.import-cache/category-*.json` when deliberately requesting a fresh category enumeration.
+
+A download is not publication approval. Review canonical aliases, historical versions, substantive objectives, map/location evidence, and attribution before converting an article. Missing information can be supplemented with an explicitly matching YouTube reference; do not infer a quest match from a generic DCUO video. Record what the reference actually supports and any remaining gaps.
+
+The source category includes overview pages and nested category links, so its item count is not a count of complete walkthroughs. This download covers direct members of the Missions category; it does not recursively claim coverage of every nested category.
