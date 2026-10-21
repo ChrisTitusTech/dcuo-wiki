@@ -58,3 +58,13 @@ Decorative badges, navigation templates and unverified embedded video captions
 are excluded explicitly. The current Artifacts capture gives upgrading/catalyst
 prose and linked detail pages, not a separate upgrade table; its overview and
 update history disagree on artifact slots, which the article flags.
+
+## Power-set detail pages (2026-10-21)
+
+All 15 power sets now have local ability/role tables (465 rows), interactions,
+source artwork and available combo tables. Powers links to the local guides under
+related guides. See `data/power-coverage-2026-10-21.json` for per-source evidence.
+Light's merged HTML cells and Celestial's malformed Markdown table were repaired
+before publication. Values are source-reported, not an in-game balance audit.
+Individual ability detail pages remain external references. The next 25 inventory
+captures are staged with review requirements in `data/import-batches/002.json`.

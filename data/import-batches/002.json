@@ -1,0 +1,266 @@
+{
+  "id": "002",
+  "date": "2026-10-21",
+  "scope": "Next 25 uncached inventory URLs after quest-first and reference work",
+  "downloaded": 25,
+  "cachedReused": 23,
+  "failed": 0,
+  "publishedGuides": [],
+  "notes": [
+    "Downloads resumed with existing Firecrawl credits. No placeholders or unreviewed articles were automatically published.",
+    "These source captures are retained locally; metadata and review requirements are recorded here.",
+    "Separate focused quest and power batches published reviewed content during the same pass."
+  ],
+  "records": [
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/100",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/Intergang",
+      "scrapeId": "01a15ceb-64cf-747a-80f2-8570bdedeacd",
+      "retrieved": "2026-10-21T05:24:55.799Z",
+      "markdownSha256": "fe958ec2bb7fb0b319073c1f2040143015604fcd4f0b620b23beb934e31bf8f9",
+      "characters": 36142,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Alias resolves to Intergang; faction page and navigation template need canonical conversion."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Black_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Black_Gold_Ring",
+      "scrapeId": "01a15ceb-6fee-719d-b69d-8d97a616877e",
+      "retrieved": "2026-10-21T05:24:57.927Z",
+      "markdownSha256": "700fa2316d032487639fa390616b71c58bd71a56e7b4c1b1a10af8769372565e",
+      "characters": 2976,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Green_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Green_Gold_Ring",
+      "scrapeId": "01a15ceb-77fb-7683-bbf5-78910b11e61d",
+      "retrieved": "2026-10-21T05:25:00.163Z",
+      "markdownSha256": "cfb9bec2f2290e3f6e21045904830f6d11c2aeab95bf091572bf1da5858a3666",
+      "characters": 2976,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Rose_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Rose_Gold_Ring",
+      "scrapeId": "01a15ceb-8118-70de-9599-f7c0775e9587",
+      "retrieved": "2026-10-21T05:25:02.657Z",
+      "markdownSha256": "796d6b7824088a326c1bd3c8f4b1b9c48e49bb5b7961de22130a31b6d33886ae",
+      "characters": 2975,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10K_White_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10K_White_Gold_Ring",
+      "scrapeId": "01a15ceb-8b0d-7148-92d8-08de578da491",
+      "retrieved": "2026-10-21T05:25:05.025Z",
+      "markdownSha256": "4c1dc2ddc135ecb4dcfaf0a1a4aa9f49ade286aebe33589eba912098772ea5bb",
+      "characters": 2976,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Yellow_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10K_Yellow_Gold_Ring",
+      "scrapeId": "01a15ceb-93ed-755c-9b70-44d87aa2da2d",
+      "retrieved": "2026-10-21T05:25:07.311Z",
+      "markdownSha256": "f258e3d387dcd8050f0c68340832d7d0234791b6fab5231924591755867b680b",
+      "characters": 2977,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Banner",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Banner",
+      "scrapeId": "01a15ceb-9ca0-7502-beb0-893ce8ec7a7b",
+      "retrieved": "2026-10-21T05:25:09.466Z",
+      "markdownSha256": "bba0f076e654d230d6229dc2615ec8e5e4df93658d642d762c66ab1ba3335ca0",
+      "characters": 2572,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Cake",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Cake",
+      "scrapeId": "01a15ceb-a511-71fa-aa78-ffcc8a8bf06f",
+      "retrieved": "2026-10-21T05:25:11.583Z",
+      "markdownSha256": "c37288722c07d1a88c5eb7f97deccd5faa566747cf0b9d8a0034b4fa891396ca",
+      "characters": 2546,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Celebration_Package",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Celebration_Package",
+      "scrapeId": "01a15ceb-ada8-73c9-b644-de9bc45def1c",
+      "retrieved": "2026-10-21T05:25:15.142Z",
+      "markdownSha256": "5ff9e1e8c4dc906fa080e249b8c243cc01dfb2527c73f21cab1581a80ae2e779",
+      "characters": 1568,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Emblem",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Emblem",
+      "scrapeId": "01a15ceb-bb49-7008-a689-ac1fbd1136e8",
+      "retrieved": "2026-10-21T05:25:17.686Z",
+      "markdownSha256": "c45aa43738e7132ec5ee9955a3de6ebc0e2505f6f88696230ac5ddcc5c300645",
+      "characters": 1470,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Fireworks",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Fireworks",
+      "scrapeId": "01a15cec-529f-751a-ac68-84b295d3ad92",
+      "retrieved": "2026-10-21T05:25:56.047Z",
+      "markdownSha256": "1eefe180bebcddaa03fe07dd0ffaf2ecbc09950d973b30272ee44c2ef9afb85b",
+      "characters": 1920,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Fireworks_Aura",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10th_Anniversary_Fireworks_Aura",
+      "scrapeId": "01a15cec-5b3e-740d-abd2-7ea8f3a7b925",
+      "retrieved": "2026-10-21T05:26:02.598Z",
+      "markdownSha256": "95ac2f08425c1a21878e5d30cadcdbf71811e4ab07a0ba5257d536e511d1045f",
+      "characters": 1687,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12_Sided_Die",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12_Sided_Die",
+      "scrapeId": "01a15cec-7493-70ff-bf6e-e8e1a0905f3b",
+      "retrieved": "2026-10-21T05:26:05.040Z",
+      "markdownSha256": "e341829dfa2b4b1f7489444dbef33de137fb16fcf95fc267cfd3bb8fcedd7f36",
+      "characters": 1667,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/1217_Ore_Place_(Gotham_City)",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/1217_Ore_Place_(Gotham_City)",
+      "scrapeId": "01a15cec-7e99-708f-a2b0-25ffa3056eb6",
+      "retrieved": "2026-10-21T05:26:10.340Z",
+      "markdownSha256": "3b5b71434044d4aba4e3138f1211e5921d109dee86d82a97f4b96e58a788b0d9",
+      "characters": 12942,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Apartment address needs location-map and map-image review before a useful location guide can be published."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Black_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Black_Gold_Ring",
+      "scrapeId": "01a15cec-92d9-771c-b0b3-de4910a91fdd",
+      "retrieved": "2026-10-21T05:26:12.600Z",
+      "markdownSha256": "f2b414adb2a420c9b15c668731cd0d00959b13024b9150c31a300bb49bc02094",
+      "characters": 2976,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Green_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Green_Gold_Ring",
+      "scrapeId": "01a15cec-9bdc-7490-b24b-ffe6fefc1088",
+      "retrieved": "2026-10-21T05:26:14.577Z",
+      "markdownSha256": "b72a0783ceb91875d5a7b7f2e633b499af620d1a02db0b9d8becf1a7310703ee",
+      "characters": 2976,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Rose_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Rose_Gold_Ring",
+      "scrapeId": "01a15cec-a39c-70af-9083-170438786684",
+      "retrieved": "2026-10-21T05:26:19.190Z",
+      "markdownSha256": "e3c64a51ad7d3d8fc37baada49014604c5cc35f125128efe94f4362c9f4dd576",
+      "characters": 2975,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12K_White_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12K_White_Gold_Ring",
+      "scrapeId": "01a15cec-b5aa-708d-a670-5ba1d542f667",
+      "retrieved": "2026-10-21T05:26:21.477Z",
+      "markdownSha256": "f6fc1faa394f1aca75563a14c838e260185b6951065cf3b1d888dc8154426f01",
+      "characters": 2977,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Yellow_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12K_Yellow_Gold_Ring",
+      "scrapeId": "01a15cec-be5f-76af-8102-cb3c03c0be46",
+      "retrieved": "2026-10-21T05:26:23.862Z",
+      "markdownSha256": "c1c7d56ec233d88a184d508e61cd267bf220efb74804389fd471e4d1ab041262",
+      "characters": 2977,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12th_Anniversary_Cake_-_Death_Metal",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12th_Anniversary_Cake_-_Death_Metal",
+      "scrapeId": "01a15cec-c7de-714e-811a-54c06ab9071a",
+      "retrieved": "2026-10-21T05:26:28.937Z",
+      "markdownSha256": "2ff93894ddd777fd53e6666a29cb10ab1a51c44306956a1abd4919ff61a721ed",
+      "characters": 2596,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12th_Anniversary_Cake_-_Source_Wall",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12th_Anniversary_Cake_-_Source_Wall",
+      "scrapeId": "01a15ced-3e10-757c-9384-88396c10627c",
+      "retrieved": "2026-10-21T05:26:55.980Z",
+      "markdownSha256": "19e18c0f55c44ff6975674bde7c5b6bcd7b0f9400efa05eae8ba65481f0fb7e5",
+      "characters": 2596,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/12th_Anniversary_Cake_-_Underworld",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/12th_Anniversary_Cake_-_Underworld",
+      "scrapeId": "01a15ced-455e-74c7-bd3a-abeed8b8aeb6",
+      "retrieved": "2026-10-21T05:26:57.932Z",
+      "markdownSha256": "e85fa5b2ea23996b5f26c17f334196e5e2c7636cd4ad8d2761afe9031251629d",
+      "characters": 2953,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/13th_Anniversary_Cake_-_Justice_League_Dark_Cursed",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/13th_Anniversary_Cake_-_Justice_League_Dark_Cursed",
+      "scrapeId": "01a15ced-4d2f-77b6-8320-e56404587660",
+      "retrieved": "2026-10-21T05:26:59.797Z",
+      "markdownSha256": "801bc7ee5d709bf315b3199563fe98b55953ded7df5f21e36fabb088070c17e3",
+      "characters": 3266,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/13th_Anniversary_Cake_-_Shock_to_the_System",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/13th_Anniversary_Cake_-_Shock_to_the_System",
+      "scrapeId": "01a15ced-544a-73fe-aede-cb22537bd153",
+      "retrieved": "2026-10-21T05:27:04.279Z",
+      "markdownSha256": "3cd7049cfa23b49f20281b9abd996900371a42985159148de768eee379735c3e",
+      "characters": 3133,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Anniversary item or toy: verify historical acquisition context, infobox details, appearance imagery and substantive page coverage before publication."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/14K_Black_Gold_Ring",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/14K_Black_Gold_Ring",
+      "scrapeId": "01a15ced-660b-7729-ac05-e0d1a4aec8ac",
+      "retrieved": "2026-10-21T05:27:09.796Z",
+      "markdownSha256": "bda31fa0bbf57ae157a7d6695f102a092a446fae0d9808a01a1196bd508fa5de",
+      "characters": 2976,
+      "disposition": "staged-needs-item-or-location-review",
+      "reason": "Seasonal ring variant: preserve vendor availability and item statistics; do not publish near-identical name-only pages."
+    }
+  ]
+}

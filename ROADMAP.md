@@ -128,8 +128,8 @@ supersedes the reference-first order in the previous coverage correction.
 - [x] Add further mapped collectible guides with source-complete node coverage.
 - [x] Restore Collections, Artifacts, Investigations and Feats reference coverage,
   then remaining Equipment/Weapon Mastery details.
-- [ ] Convert individual power ability lists after the practical guide work.
-- [ ] Resume bounded inventory imports with section/image coverage evidence.
+- [x] Convert individual power ability lists after the practical guide work.
+- [x] Resume bounded inventory imports with section/image coverage evidence.
 
 Each completed batch must preserve live revisions, copy/verify images through R2,
 pass content/build/browser/Cloudflare checks and Codex review, then push main and
@@ -171,3 +171,25 @@ All 213 existing editable baselines remain unchanged. Type/build, 10 browser and
 splitting, content after TOC, actual headers and multi-row directories. Independent
 review found a directory/header ambiguity; the parser now promotes only recognized
 replacement header rows, with a regression test. Full wiki import remains open.
+
+Power-list and bounded-import completion: added all 15 power-set pages, preserving
+465 source ability/role rows, interaction tables and the available combo tables.
+Light's 42 construct rows were reconstructed from HTML rowspans; Celestial's
+three malformed Markdown interaction rows were reconstructed from source HTML.
+The converter now rejects malformed table prose for explicit review. Added 292
+credited images (584 R2 objects), including legitimate small ability icons.
+All 295 earlier editable baselines remain unchanged. The site now has 35 reviewed
+articles and 419 image records. Validation: 43 unit tests, 12 browser tests, seven
+Cloudflare integration tests, production build and deployment dry run passed.
+Build budget: 51 files of 18,000 internal / 20,000 platform limit. Worker upload:
+1,470.91 KiB raw / 180.71 KiB compressed. Review's Celestial table finding is fixed
+and covered by a browser regression test.
+
+Inventory import resumed for 25 new URLs, reusing 23 cached records, with zero
+failed requests. Every capture has a recorded canonical URL, hash, retrieval ID
+and review requirement in data/import-batches/002.json. They remain staged because
+item infoboxes, historical acquisition or map evidence still need conversion.
+This completes the six-step priority pass above, not the full 28,636-page migration.
+
+All 584 new power-image objects were byte-verified against local files. Cloudflare
+D1 reports 419 image catalog records after the six successful metadata batches.
