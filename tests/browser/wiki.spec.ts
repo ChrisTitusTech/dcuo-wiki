@@ -230,3 +230,45 @@ test("reference directories retain entries and keep detail links compact", async
   ).toBeVisible();
   await page.screenshot({ path: "test-results/artifacts-expanded-mobile.png" });
 });
+
+test("power pages retain ability details and merged combo labels", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Fire_Power/");
+  await expect(
+    page
+      .locator("tbody tr")
+      .filter({ hasText: "Spontaneous Combustion" })
+      .filter({ hasText: "Level: 30" }),
+  ).toContainText("Power Cost: 200");
+  await page.goto("/wiki/Light/");
+  const table = page.getByRole("table", {
+    name: "Construct Combos",
+    exact: true,
+  });
+  await expect(table.locator("tbody tr")).toHaveCount(42);
+  await expect(table.locator("tbody tr").last()).toContainText("Whip Thrash");
+  await expect(table.locator("tbody tr").last()).toContainText("Impact");
+  await expect(table.locator("tbody tr").last()).toContainText("Hold Range");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+});
+
+test("Celestial purification interactions are structured rows", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Celestial/");
+  const table = page.getByRole("table", {
+    name: "Celestial Power Interactions",
+    exact: true,
+  });
+  await expect(table.locator("tbody tr")).toHaveCount(3);
+  await expect(table.locator("tbody tr").first()).toContainText(
+    "Purifies enemies",
+  );
+  await expect(table.locator("tbody tr").first()).toContainText("Retribution");
+});

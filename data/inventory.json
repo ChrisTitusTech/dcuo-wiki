@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 20,
+    "published": 35,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -16033,7 +16033,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Atomic",
       "title": "Atomic",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Atomic",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -36810,7 +36811,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Celestial",
       "title": "Celestial",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Celestial",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Campaign"
       ]
@@ -66270,7 +66272,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Earth_(Power)",
       "title": "Earth_(Power)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Earth_Power",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -67200,7 +67203,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Electricity",
       "title": "Electricity",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Electricity",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -84424,7 +84428,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fire_(Power)",
       "title": "Fire_(Power)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fire_Power",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -91255,7 +91260,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gadgets",
       "title": "Gadgets",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Gadgets",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fury+Token+x+10"
       ]
@@ -120804,7 +120810,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Ice",
       "title": "Ice",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Ice",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -134477,7 +134484,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Light",
       "title": "Light",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Light",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -142283,7 +142291,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Mental",
       "title": "Mental",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Mental",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Manor+Lair"
       ]
@@ -150644,7 +150653,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Munitions",
       "title": "Munitions",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Munitions",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ]
@@ -152051,7 +152061,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Nature",
       "title": "Nature",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Nature",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ]
@@ -189825,7 +189836,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Quantum",
       "title": "Quantum",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Quantum",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Priority+Taunt"
       ]
@@ -191319,7 +191331,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Rage",
       "title": "Rage",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Rage",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -215191,7 +215204,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sorcery",
       "title": "Sorcery",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Sorcery",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -251841,7 +251855,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Water",
       "title": "Water",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Water",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]

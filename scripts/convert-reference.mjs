@@ -167,6 +167,10 @@ export function convertReference(markdown, source) {
         }
       } else if (["paragraph", "blockquote"].includes(node.type)) {
         const value = clean(plain(node));
+        if (/^\|.*\|$/.test(value))
+          throw new Error(
+            `Malformed Markdown table in ${title}; inspect the source HTML`,
+          );
         if (value && !/^\d+\/\d+$/.test(value)) items.push(value);
       } else
         throw new Error(

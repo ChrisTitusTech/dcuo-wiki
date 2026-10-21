@@ -70,8 +70,11 @@ for (const source of sources) {
       .split(" ")
       .map(Number);
   const [width, height] = identify(original);
-  if (width < 50 || height < 50 || width * height > 40000000)
-    throw new Error("Unexpected screenshot dimensions");
+  // Reviewed ability icons can be smaller than screenshots (often 32-48 px).
+  if (width < 16 || height < 16 || width * height > 40000000)
+    throw new Error(
+      `Unexpected image dimensions: ${source.sourcePage} (${width}x${height})`,
+    );
   execFileSync("magick", [
     original,
     "-resize",

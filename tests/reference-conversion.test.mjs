@@ -65,3 +65,11 @@ test("multi-row headerless directories preserve every entry", () => {
     false,
   );
 });
+
+test("malformed table markup requires HTML review instead of becoming prose", () => {
+  assert.throws(
+    () =>
+      convertReference("| Interaction | Powers |\n| Burns | Fire |", source),
+    /Malformed Markdown table/,
+  );
+});
