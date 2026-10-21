@@ -13,7 +13,11 @@
     "import": "node scripts/import.mjs",
     "inventory": "node scripts/inventory.mjs",
     "discover": "node scripts/discover.mjs",
-    "inventory:check": "node scripts/inventory.mjs --check"
+    "inventory:check": "node scripts/inventory.mjs --check",
+    "deploy:check": "npm run build && wrangler deploy --dry-run",
+    "deploy": "npm run build && wrangler deploy",
+    "preview:cloudflare": "wrangler dev --local --port 8787",
+    "test:cloudflare": "playwright test --config playwright.cloudflare.config.ts"
   },
   "repository": {
     "type": "git",
@@ -36,7 +40,8 @@
     "@playwright/test": "^1.64.1",
     "@types/node": "^26.6.5",
     "prettier": "^3.9.10",
-    "prettier-plugin-astro": "^1.1.1"
+    "prettier-plugin-astro": "^1.1.1",
+    "wrangler": "4.151.3"
   },
   "private": true
 }

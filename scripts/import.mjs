@@ -1,42 +1,42 @@
 // Staged content never becomes a published article automatically.
 import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { classifyURL } from "./wiki-urls.mjs";
+import { importPlan, reusableCache } from "./import-plan.mjs";
 import { scrape } from "./firecrawl.mjs";
-const args = process.argv.slice(2),
-  refresh = args.includes("--refresh");
-const urls = args.filter((a) => a !== "--refresh");
-if (!urls.length)
-  throw new Error("Usage: npm run import -- [--refresh] <DCUO article URLs>");
+const args = process.argv.slice(2);
+const inventory = args.includes("--inventory")
+  ? JSON.parse(await readFile("data/inventory.json", "utf8"))
+  : undefined;
+const { urls, refresh, dryRun, limit } = importPlan(args, inventory);
 const key = process.env.FIRECRAWL_API_KEY;
-if (!key)
-  throw new Error("Set FIRECRAWL_API_KEY in the environment; never commit it.");
-const entries = urls.map(classifyURL);
-if (entries.some((e) => e.kind !== "article"))
-  throw new Error(
-    "Import only gameplay articles; use discovery for supporting pages.",
-  );
-await mkdir(".import-cache", { recursive: true });
-let failed = 0;
-for (const url of new Set(entries.map((e) => e.url))) {
+if (!dryRun) await mkdir(".import-cache", { recursive: true });
+let failed = 0,
+  attempted = 0,
+  cachedCount = 0;
+for (const url of urls) {
   const id = createHash("sha256").update(url).digest("hex"),
     file = `.import-cache/${id}.json`;
   if (!refresh) {
     try {
       const cached = JSON.parse(await readFile(file, "utf8"));
-      if (
-        cached.url === url &&
-        cached.status === "needs-review" &&
-        typeof cached.markdown === "string" &&
-        cached.markdown.trim()
-      ) {
-        console.log(`Cached: ${url}`);
+      if (reusableCache(cached, url)) {
+        cachedCount++;
         continue;
       }
     } catch (e) {
       if (e.code && e.code !== "ENOENT") throw e;
     }
   }
+  if (attempted >= limit) break;
+  attempted++;
+  if (dryRun) {
+    console.log(`Would stage: ${url}`);
+    continue;
+  }
+  if (!key)
+    throw new Error(
+      "Set FIRECRAWL_API_KEY in the environment; never commit it.",
+    );
   try {
     const data = await scrape(url, { key });
     await writeFile(
@@ -59,4 +59,5 @@ for (const url of new Set(entries.map((e) => e.url))) {
     failed++;
   }
 }
+console.log(JSON.stringify({ dryRun, attempted, cached: cachedCount, failed }));
 if (failed) process.exitCode = 1;

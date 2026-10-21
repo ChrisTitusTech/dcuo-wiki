@@ -680,5 +680,44 @@
     "retrieved": "2026-10-20",
     "reviewed": true,
     "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Artifacts",
+    "title": "Artifacts",
+    "category": "Equipment",
+    "summary": "Equip long-term upgrades and improve them with Nth Metal and catalyst breakthroughs.",
+    "sections": [
+      {
+        "title": "Equipping artifacts",
+        "items": [
+          "Artifacts use dedicated equipment slots. Each artifact type can be equipped only once, so duplicate copies cannot fill multiple slots. Unlike frequently replaced combat-rating gear, artifacts develop through a longer-term investment in ranks."
+        ]
+      },
+      {
+        "title": "Obtaining your first artifact",
+        "items": [
+          "The source describes an introductory Artifacts mission from John Constantine, available at level 20. After completing it, additional artifacts can be obtained from Constantine in the House of Legends, Watchtower, or Hall of Doom. Individual artifacts may also come from mission rewards, Time Capsules, or grants. Check the vendor and the specific artifact source before spending currency."
+        ]
+      },
+      {
+        "title": "Fortifying and breakthroughs",
+        "items": [
+          "Use Nth Metal to add item experience through the artifact fortification interface. Higher-quality Nth Metal provides more experience. Gaining enough experience increases the artifact rank and its statistical bonuses.",
+          "Every 20 ranks is a milestone requiring specific catalysts for a breakthrough. The source identifies John Constantine and certain episode vendors as catalyst sources. Inspect the breakthrough requirements for your current artifact rather than assuming every milestone uses the same catalyst combination."
+        ]
+      },
+      {
+        "title": "Choosing an artifact",
+        "items": [
+          "Artifacts can provide passive or active abilities as well as statistics. Match those effects to the role and play style you want to support. The available effects depend on the artifact and its rank; this overview does not supply unverified item-level statistics."
+        ]
+      }
+    ],
+    "related": ["Equipment", "Powers", "Feats"],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Artifacts",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Artifacts?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
   }
 ]

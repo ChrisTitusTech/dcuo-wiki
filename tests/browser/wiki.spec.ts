@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".card")).toHaveCount(11);
+  await expect(page.locator(".card")).toHaveCount(12);
   await page.getByRole("searchbox").fill("corridor leading to the exit");
   await expect(page.locator(".card:visible")).toHaveCount(1);
   await page.getByRole("searchbox").fill("no matching entry");

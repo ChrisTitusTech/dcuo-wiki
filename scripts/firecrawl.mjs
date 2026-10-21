@@ -43,6 +43,8 @@ export async function scrape(
     const body = await res.json();
     if (
       !body.success ||
+      (body.data?.metadata?.statusCode !== undefined &&
+        body.data.metadata.statusCode !== 200) ||
       typeof body.data?.markdown !== "string" ||
       !body.data.markdown.trim()
     )

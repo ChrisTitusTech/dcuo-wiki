@@ -56,3 +56,22 @@ Validated October 20, 2026, on Node 24:
 Sources remain subject to in-game verification. Full content import, redirect triage, infobox extraction, and live Cloudflare deployment remain incomplete.
 
 Independent `codex review --uncommitted` completed with no actionable defects; it also compared the new guides to cached source material and reran the validation and browser checks successfully.
+
+## Activation preparation
+
+Validated October 20, 2026:
+
+- `npm run validate`: zero Astro diagnostics; 17 tests passed; inventory consistency and all 12 publication checks passed; static build passed.
+- `npm run test:browser`: all three browser checks passed.
+- `npm run deploy:check`: build and pinned Wrangler 4.151.3 deployment dry run passed without uploading.
+- `npm run test:cloudflare`: local Wrangler serving check passed for articles, both Artifact alias spellings, real 404 responses, canonical sitemap entries, and inaccessible inventory/cache paths.
+- Output: 20 files, 84,445 bytes. The free-tier safety guard remains unchanged.
+- `npm run import -- --inventory 3 --dry-run` selected three uncached candidates without credentials or network requests. Mocked integration coverage proves bounded attempts and cache resume across consecutive batches. Standalone live Firecrawl API-key execution remains unverified; source retrieval used the connected Firecrawl tools.
+- `npx wrangler whoami` reported unauthenticated. Cloudflare API token and account ID environment variables are absent. Live deployment, DNS, HTTPS, and Git integration therefore require account activation; no temporary account or paid plan was created.
+- Firecrawl source evidence: Artifact resolves to canonical Artifacts. The broader artifact selector still returned no item-stat infobox; The Strategist Card and Page of Destiny remain held. The related acquisition mission contradicts itself about the required instance and remains unpublished. Bounded crawls returned zero and one page respectively, not a complete section crawl.
+
+The npm install completed with no reported vulnerabilities. Package install-script notices did not prevent the actual Wrangler dry run or local serving tests from passing. Full content import and current in-game verification remain unfinished.
+
+Independent review found a source contradiction: its introduction says three artifact slots, while its update history records additional slots in Game Update 155. Removed the numeric count rather than publishing the outdated introduction.
+
+Final independent Codex review found no actionable defects after the artifact-slot correction; all local checks passed again. The in-app Cloudflare dashboard also opens to its sign-in page, confirming that browser access does not currently provide an authenticated alternative.

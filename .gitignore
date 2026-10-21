@@ -6,3 +6,5 @@ dist/
 .import-cache/
 playwright-report/
 test-results/
+
+.wrangler/

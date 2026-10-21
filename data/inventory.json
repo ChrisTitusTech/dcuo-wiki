@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 11,
+    "published": 12,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -13627,7 +13627,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Artifacts",
       "title": "Artifacts",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Artifacts",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Arkham+Island+Official+Souvenir"
       ]
