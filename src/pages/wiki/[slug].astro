@@ -13,15 +13,27 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
 
 <Layout title={article.title} description={article.summary}>
   <div class="article-top">
-    <a href="/#library">← All guides</a>
-    <div class="eyebrow">{article.category}</div>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Main page</a>
+      <span>/</span>
+      <a href={`/?category=${encodeURIComponent(article.category)}#library`}>
+        {article.category}
+      </a>
+    </nav>
+
     <h1>{article.title}</h1>
     <p class="lede">{article.summary}</p>
-    <span class="badge">Source reviewed · {article.retrieved}</span>
+    <div class="article-tools">
+      <span class="badge">Source reviewed · {article.retrieved}</span>
+      <a href={`/account/?page=${encodeURIComponent(article.title)}`}>
+        Suggest an edit
+      </a>
+      <a href={article.history}>Source history ↗</a>
+    </div>
   </div>
   <div class="article-grid">
     <aside class="toc">
-      <strong>IN THIS GUIDE</strong>
+      <strong>Contents</strong>
       <nav aria-label="Table of contents">
         {article.sections.map((s, i) => (
           <a href={`#section-${i}`}>{s.title}</a>

@@ -1,13 +1,16 @@
 ---
 import "../styles/global.css";
+import articles from "../data/articles";
 interface Props {
   title: string;
   description?: string;
 }
 const {
   title,
-  description = "A growing, carefully sourced guide to DC Universe Online.",
+  description = "A carefully sourced DC Universe Online community wiki.",
 } = Astro.props;
+const categories = [...new Set(articles.map((a) => a.category))];
+const home = Astro.url.pathname === "/";
 ---
 
 <!doctype html>
@@ -23,34 +26,118 @@ const {
     <a class="skip" href="#main">
       Skip to content
     </a>
-    <header>
-      <a class="brand" href="/">
-        <span class="emblem">D</span> DCUO <span>WIKI</span>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="DCUO Wiki home">
+        <img
+          src="/images/dcuo-logo.png"
+          alt="DC Universe Online"
+          width="220"
+          height="52"
+        />
+        <span>WIKI</span>
       </a>
-      <nav aria-label="Main navigation">
-        <a href="/#library">Explore</a>
-        <a href="/about/">About the wiki</a>
+      <form class="global-search" action="/" role="search">
+        <label class="sr-only" for="search">
+          Search published guides
+        </label>
+        <input
+          id="search"
+          name="q"
+          type="search"
+          placeholder="Search the wiki..."
+          autocomplete="off"
+        />
+        <button aria-label="Search wiki" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6" />
+            <path d="m15 15 6 6" />
+          </svg>
+        </button>
+      </form>
+      <nav class="header-tools" aria-label="Main navigation">
         <a href="/account/">Player profile</a>
-        <button id="theme" aria-label="Switch color theme">
+        <button
+          id="theme"
+          aria-label="Switch color theme"
+          title="Switch color theme"
+        >
           Light / dark
         </button>
       </nav>
     </header>
-    <main id="main">
-      <slot />
-    </main>
-    <footer>
-      <strong>DCUO WIKI</strong>
-      <p>
-        An independent fan reference. Not affiliated with DC, Daybreak, or
-        Fandom.
-      </p>
-      <a href="/about/">Sources, attribution & coverage</a>
-    </footer>
+    <div class="wiki-shell">
+      <aside class="wiki-sidebar">
+        <details open>
+          <summary>Wiki navigation</summary>
+          <nav aria-label="Wiki navigation">
+            <a class:list={{ active: home }} href="/">
+              Main page
+            </a>
+            <a href="/#library">
+              All guides <span>{articles.length}</span>
+            </a>
+          </nav>
+          <h2>Browse the wiki</h2>
+          <nav aria-label="Categories">
+            {categories.map((c) => (
+              <a href={`/?category=${encodeURIComponent(c)}#library`}>
+                {c}
+                <span>{articles.filter((a) => a.category === c).length}</span>
+              </a>
+            ))}
+          </nav>
+          <h2>Community</h2>
+          <nav aria-label="Community">
+            <a href="/account/">Contribute to the wiki</a>
+            <a href="/about/">Sources & standards</a>
+            <a href="https://www.dcuniverseonline.com/home" rel="noreferrer">
+              Official DCUO site <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
+          <div class="sidebar-note">
+            <strong>Built by players.</strong>
+            <p>Useful guides. Sourced details. No empty pages.</p>
+          </div>
+        </details>
+      </aside>
+      <div class="wiki-content">
+        <main id="main">
+          <slot />
+        </main>
+        <footer class="site-footer">
+          <span>
+            <strong>DCUO WIKI</strong> · Independent community reference
+          </span>
+          <a href="/about/">Sources & attribution</a>
+          <p>
+            Not affiliated with DC, Daybreak, or Fandom. Game artwork and
+            trademarks belong to their respective owners.
+          </p>
+        </footer>
+      </div>
+    </div>
     <script>
+      const navigation = document.querySelector<HTMLDetailsElement>(
+        ".wiki-sidebar details",
+      );
+      const mobile = matchMedia("(max-width: 650px)");
+      const syncNavigation = () => {
+        if (navigation) navigation.open = !mobile.matches;
+      };
+      syncNavigation();
+      mobile.addEventListener("change", syncNavigation);
       const button = document.querySelector<HTMLButtonElement>("#theme");
+      try {
+        document.documentElement.classList.toggle(
+          "light",
+          localStorage.getItem("wiki-theme") === "light",
+        );
+      } catch {}
       button?.addEventListener("click", () => {
-        document.documentElement.classList.toggle("light");
+        const light = document.documentElement.classList.toggle("light");
+        try {
+          localStorage.setItem("wiki-theme", light ? "light" : "dark");
+        } catch {}
       });
     </script>
   </body>

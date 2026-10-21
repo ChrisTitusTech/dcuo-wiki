@@ -110,3 +110,11 @@ Live evidence: cb23314 passed GitHub Actions run 39532602770 and Cloudflare auto
 Created database 1b3140dd-8d8e-49cc-ab3b-cfd0104efaa9 (dcuo-wiki-accounts) through the Cloudflare dashboard. The console reported successful execution of the existing migration; sqlite_schema confirmed users, oauth_states, sessions, profiles, contributions, rate_limits, and all five application indexes. Migration tracking was initialized with 0001_accounts.sql using the schema expected by pinned Wrangler. No existing database was modified and no paid upgrade was activated.
 
 `npm run deploy:check` passed with env.DB bound to dcuo-wiki-accounts. All four `npm run test:cloudflare` checks passed against the disposable local database. Unchanged application validation evidence is reused. Live OAuth completion requires the account owner to sign into Discord.
+
+## Compact DCUO visual redesign
+
+Replaced the generic landing layout with official-source game artwork, condensed headings, blue/orange accents, persistent search, a compact category sidebar, and article contents beside the text on desktop. Added source provenance in DESIGN.md and the public attribution page. Published article content and account verification rules are unchanged.
+
+Validation: `npm run validate` passed (26 unit tests, Astro check, inventory/content checks, build); `npm run test:browser` passed all 4 tests including cross-page search, category links, theme persistence, and mobile menu behavior; `npm run test:cloudflare` passed all 4 account/routing integration checks; `npm run deploy:check` passed. Desktop dark homepage, mobile light homepage, and mobile quest screenshots were visually inspected. Output contains 25 files, far below the 18,000-file guard and 20,000 platform limit. Full live Discord sign-in remains an owner acceptance step.
+
+Local Codex review found that All guides did not clear same-page filters. Fixed both search and category reset and added regression coverage. The repeat review found no actionable defects. All 26 unit tests and all eight browser/integration checks passed after the fix; the mobile player form screenshot was also inspected.
