@@ -148,10 +148,12 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
               article.location.maps.map((m) => [m.label, m.url]),
             )}
           />
-          <p class="map-note">
-            Select a map to open the full-size image. Copies are hosted by DCUO
-            Wiki; original sources are credited below.
-          </p>
+          {article.location.maps.length > 0 && (
+            <p class="map-note">
+              Select a map to open the full-size image. Copies are hosted by
+              DCUO Wiki; original sources are credited below.
+            </p>
+          )}
         </section>
       )}
       {article.locationLimitation && (

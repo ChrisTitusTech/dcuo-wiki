@@ -193,3 +193,15 @@ This completes the six-step priority pass above, not the full 28,636-page migrat
 
 All 584 new power-image objects were byte-verified against local files. Cloudflare
 D1 reports 419 image catalog records after the six successful metadata batches.
+
+## Complete mission guide conversion (authorized October 21, 2026)
+
+- [x] Download and hash-verify every direct Missions category article (1,107).
+- [x] Stage all mission source conversions, preserving objectives, tables, source links and useful imagery.
+- [ ] Resolve source warnings, thin pages, canonical aliases and missing location context.
+- [ ] Research exact-title YouTube references across the mission inventory and verify accepted matches.
+- [ ] Copy mission images to R2, verify public objects, and update the attribution catalog.
+- [ ] Publish substantive guides with documented source coverage; preserve existing live-edit baselines.
+- [ ] Pass content/type/build/browser/Cloudflare checks and independent review, push main, and verify production.
+
+The source's empty headings and maintenance templates must not become wiki content. Named area evidence is distinct from an exact map point; historical versions must stay labeled. Unresolved factual gaps require additional evidence, not invented details or placeholder padding.
