@@ -1,0 +1,821 @@
+[
+  {
+    "slug": "Collections",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Collections",
+    "sourceMarkdownSha256": "bfd44c171c76102a9fde367dd5305b5765e9a7af9373b922649ef82915cb8c36",
+    "checked": "2026-10-21",
+    "sections": [
+      {
+        "title": "Source overview",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "Source overview",
+        "omitted": "Decorative UI icon",
+        "image": "Collection_Icon.png"
+      },
+      {
+        "title": "Source overview",
+        "omitted": "Decorative UI icon",
+        "image": "Collection_Icon.png"
+      },
+      {
+        "title": "Source overview",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 1,
+        "references": 7
+      },
+      {
+        "title": "List of Collections",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "List of Collections",
+        "paragraphs": 0,
+        "tableRows": 0,
+        "images": 0,
+        "references": 0
+      },
+      {
+        "title": "Basic Collections",
+        "omitted": "Empty or image-only table columns; substantive images handled separately"
+      },
+      {
+        "title": "Basic Collections",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "Basic Collections",
+        "paragraphs": 0,
+        "tableRows": 40,
+        "images": 0,
+        "references": 97
+      },
+      {
+        "title": "Alert and Raid Collections",
+        "omitted": "Empty or image-only table columns; substantive images handled separately"
+      },
+      {
+        "title": "Alert and Raid Collections",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "Alert and Raid Collections",
+        "paragraphs": 0,
+        "tableRows": 8,
+        "images": 0,
+        "references": 22
+      },
+      {
+        "title": "Metacollections",
+        "omitted": "Empty or image-only table columns; substantive images handled separately"
+      },
+      {
+        "title": "Metacollections",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "Metacollections",
+        "paragraphs": 0,
+        "tableRows": 14,
+        "images": 0,
+        "references": 27
+      },
+      {
+        "title": "Seasonal and Event Collections",
+        "omitted": "Empty or image-only table columns; substantive images handled separately"
+      },
+      {
+        "title": "Seasonal and Event Collections",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "Seasonal and Event Collections",
+        "paragraphs": 0,
+        "tableRows": 47,
+        "images": 0,
+        "references": 113
+      },
+      {
+        "title": "Story Arc Collections",
+        "omitted": "Empty or image-only table columns; substantive images handled separately"
+      },
+      {
+        "title": "Story Arc Collections",
+        "omitted": "Decorative UI icon",
+        "image": "MiscItem8.png"
+      },
+      {
+        "title": "Story Arc Collections",
+        "paragraphs": 0,
+        "tableRows": 162,
+        "images": 0,
+        "references": 429
+      },
+      {
+        "title": "Special Collections",
+        "omitted": "Empty or image-only table columns; substantive images handled separately"
+      },
+      {
+        "title": "Special Collections",
+        "paragraphs": 1,
+        "tableRows": 108,
+        "images": 1,
+        "references": 240
+      },
+      {
+        "title": "Trivia",
+        "paragraphs": 4,
+        "tableRows": 0,
+        "images": 1,
+        "references": 8
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "Artifacts",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Artifacts",
+    "sourceMarkdownSha256": "78e28ba73efc3f0775204cb8057245864799fcba327048ecc83b38227239a67f",
+    "checked": "2026-10-21",
+    "sections": [
+      {
+        "title": "Source overview",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 1,
+        "references": 4
+      },
+      {
+        "title": "Obtaining Artifacts",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 0,
+        "references": 8
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Cog_of_Mageddon_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Dilustel_Refractor_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Entwined_Rings_of_Azar_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Legionnaire's_Sparring_AI_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Parasite's_Power_Harness_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Scrap_of_the_Soul_Cloak_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Starheart_Fragment_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Tetrahedron_of_Urgrund_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_B.O.P._Commlink_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Brand_of_Hecate_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Candle_of_Neron_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Circe's_Mask_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Claw_of_Aelkhund_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Computo's_Redistributor_HUD_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Dead_King's_Scepter_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Ebon's_Untethered_Shadow_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Everyman_Prototype_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Eye_of_Gemini_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Grimbor's_Chains_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Grimorium_Verum_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Heart_of_Isis_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Lasso_of_Truth_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_La-Mort_Card_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Lernaea's_Amulet_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_M.E.R.C.Y._Amazotron_Matrix_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Manacles_of_Force_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Mystic_Symbol_Of_The_Seven_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Omegahedron_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Orb_of_Arion_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Page_of_Destiny_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Philosopher's_Stone_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Pied_Piper's_Flute_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Purified_Pages_of_the_Black_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Purple_Healing_Ray_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Quislet_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Razer's_Power_Battery_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Red_Tornado_Redistribution_Module_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Ancient_Tantu_Totem_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Sinestro's_Corrupted_Power_Ring_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Source_Shard_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Sunstone_Helix_Spike_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_The_Clarion_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_The_Gem_of_Horus_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_The_Omega_Totality_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_The_Strategist_Card_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_The_Transformation_Card_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Amulet_of_Rao_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Bottled_City_Soder_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Lazarus_Pit_Water_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Solar_Amplifier_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_The_Demon's_Fang_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Venom_Wrist_Dispenser_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Amphora_of_the_Gods_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Forge_Mold_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Damaged_Androids_Legplates_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Gift_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Lamp_of_Van_Helsing_(Base).png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Shattered_Wise_Helm_of_Omnipotence_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Neck_024_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Hands_016_Blue.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Back_027_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Waist_018_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Back_029_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Back_028_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Waist_017_Green.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Back_026_Blue.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Standard_Worldkiller_Pauldron.png"
+      },
+      {
+        "title": "Known Artifacts",
+        "paragraphs": 0,
+        "tableRows": 82,
+        "images": 8,
+        "references": 80
+      },
+      {
+        "title": "Upgrading Artifacts",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 1
+      },
+      {
+        "title": "Reagents",
+        "paragraphs": 5,
+        "tableRows": 0,
+        "images": 0,
+        "references": 7
+      },
+      {
+        "title": "Catalysts",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 2
+      },
+      {
+        "title": "Feats",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 0,
+        "references": 2
+      },
+      {
+        "title": "Trivia",
+        "paragraphs": 10,
+        "tableRows": 0,
+        "images": 0,
+        "references": 8
+      },
+      {
+        "title": "Gallery",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 8,
+        "references": 0
+      },
+      {
+        "title": "Video",
+        "omitted": "Embedded video or unsupported media; requires separate verification",
+        "image": "Preview_Artifacts!_Livestream_Replay"
+      },
+      {
+        "title": "Video",
+        "omitted": "Embedded video or unsupported media; requires separate verification",
+        "image": "DCUO-_Artifact_Tier_Ranking"
+      },
+      {
+        "title": "Video",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 0,
+        "references": 0
+      },
+      {
+        "title": "See also",
+        "paragraphs": 4,
+        "tableRows": 0,
+        "images": 0,
+        "references": 4
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "Investigations",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Investigations",
+    "sourceMarkdownSha256": "c92b33dbcad57db53d1ce54007d29f451694f8787fea80e26c8f023843510af0",
+    "checked": "2026-10-21",
+    "sections": [
+      {
+        "title": "Source overview",
+        "omitted": "Decorative UI icon",
+        "image": "Investigation_Icon.png"
+      },
+      {
+        "title": "Source overview",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 2
+      },
+      {
+        "title": "Gotham Investigations",
+        "paragraphs": 13,
+        "tableRows": 0,
+        "images": 0,
+        "references": 13
+      },
+      {
+        "title": "Metropolis Investigations",
+        "paragraphs": 19,
+        "tableRows": 0,
+        "images": 0,
+        "references": 19
+      },
+      {
+        "title": "Global Investigations",
+        "paragraphs": 94,
+        "tableRows": 0,
+        "images": 0,
+        "references": 94
+      },
+      {
+        "title": "Gallery",
+        "omitted": "Decorative UI icon",
+        "image": "InvestigationRadioIntercept.png"
+      },
+      {
+        "title": "Gallery",
+        "omitted": "Decorative UI icon",
+        "image": "InvestigationSatellite.png"
+      },
+      {
+        "title": "Gallery",
+        "omitted": "Decorative UI icon",
+        "image": "InvestigationTelevisionBroadcast.png"
+      },
+      {
+        "title": "Gallery",
+        "paragraphs": 0,
+        "tableRows": 0,
+        "images": 8,
+        "references": 0
+      },
+      {
+        "title": "Trivia",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 3
+      },
+      {
+        "title": "See also",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 1
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "Feats",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Feats",
+    "sourceMarkdownSha256": "bdc7ec521c676960f10c38444943138a603ca694baf01aec3377e4ee08130026",
+    "checked": "2026-10-21",
+    "sections": [
+      {
+        "title": "Source overview",
+        "omitted": "Decorative UI icon",
+        "image": "Feats_Icon_clean.png"
+      },
+      {
+        "title": "Source overview",
+        "paragraphs": 4,
+        "tableRows": 0,
+        "images": 1,
+        "references": 4
+      },
+      {
+        "title": "Feats Menu",
+        "omitted": "Decorative UI icon",
+        "image": "Icon_Titles_Feat.png"
+      },
+      {
+        "title": "Feats Menu",
+        "paragraphs": 9,
+        "tableRows": 0,
+        "images": 1,
+        "references": 2
+      },
+      {
+        "title": "Categories of Feats",
+        "paragraphs": 11,
+        "tableRows": 0,
+        "images": 0,
+        "references": 137
+      },
+      {
+        "title": "Rewards",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 0,
+        "references": 0
+      },
+      {
+        "title": "Difficulty Rating/Points Awarded",
+        "paragraphs": 2,
+        "tableRows": 4,
+        "images": 0,
+        "references": 1
+      },
+      {
+        "title": "Manual Feats Unlock",
+        "paragraphs": 4,
+        "tableRows": 4,
+        "images": 1,
+        "references": 2
+      },
+      {
+        "title": "Notes",
+        "paragraphs": 3,
+        "tableRows": 0,
+        "images": 0,
+        "references": 3
+      },
+      {
+        "title": "Trivia",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 1
+      },
+      {
+        "title": "Other Links",
+        "paragraphs": 3,
+        "tableRows": 0,
+        "images": 0,
+        "references": 0
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "Equipment",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Equipment",
+    "sourceMarkdownSha256": "a5ad984382fe4479258aeba4cef091a60e04b67335fd08d246874432317da880",
+    "checked": "2026-10-21",
+    "sections": [
+      {
+        "title": "Source overview",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 2
+      },
+      {
+        "title": "Items",
+        "paragraphs": 16,
+        "tableRows": 0,
+        "images": 0,
+        "references": 11
+      },
+      {
+        "title": "Weapons",
+        "paragraphs": 16,
+        "tableRows": 0,
+        "images": 1,
+        "references": 13
+      },
+      {
+        "title": "Costumes",
+        "paragraphs": 7,
+        "tableRows": 0,
+        "images": 1,
+        "references": 6
+      },
+      {
+        "title": "See also",
+        "paragraphs": 1,
+        "tableRows": 0,
+        "images": 0,
+        "references": 1
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "Weapon_Mastery",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery",
+    "sourceMarkdownSha256": "17c64c8170d533648479e4a1ffc3ece063b103658fa16fc2acf92f237934f5be",
+    "checked": "2026-10-21",
+    "sections": [
+      {
+        "title": "Source overview",
+        "paragraphs": 2,
+        "tableRows": 0,
+        "images": 1,
+        "references": 2
+      },
+      {
+        "title": "Overview",
+        "paragraphs": 4,
+        "tableRows": 0,
+        "images": 0,
+        "references": 2
+      },
+      {
+        "title": "Multiple Mastery Combos",
+        "paragraphs": 0,
+        "tableRows": 11,
+        "images": 0,
+        "references": 11
+      },
+      {
+        "title": "Trivia",
+        "omitted": "Navigation template"
+      },
+      {
+        "title": "Trivia",
+        "paragraphs": 3,
+        "tableRows": 0,
+        "images": 0,
+        "references": 6
+      }
+    ],
+    "notes": [
+      "Original full combo table retained instead of duplicating it."
+    ]
+  }
+]

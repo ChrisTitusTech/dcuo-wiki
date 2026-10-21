@@ -46,3 +46,15 @@ two investigations. Lighthouse inhabitants/gallery, Grab and Smash terminal view
 Viva investigation scenes, and twelve Til Death video chapters are now covered.
 There are 20 published articles and 93 credited R2 images. This does not resolve
 the four reference-directory gaps above or complete the full-wiki import.
+
+## Reference restoration (2026-10-21)
+
+The four overview gaps above are now restored, with section/table evidence in
+`data/reference-coverage-2026-10-21.json`. Collections has 379 entries, Artifacts
+82 entries, and Investigations 126 directory entries. Feat categories, menu images,
+point ratings and replay costs are retained. Equipment and Weapon Mastery have
+additional source context. Thirty-four additional images are copied to R2.
+Decorative badges, navigation templates and unverified embedded video captions
+are excluded explicitly. The current Artifacts capture gives upgrading/catalyst
+prose and linked detail pages, not a separate upgrade table; its overview and
+update history disagree on artifact slots, which the article flags.

@@ -126,7 +126,7 @@ supersedes the reference-first order in the previous coverage correction.
 - [x] Expand a connected set of additional quest walkthroughs with sourced maps
   and matching videos; record researched exclusions instead of publishing stubs.
 - [x] Add further mapped collectible guides with source-complete node coverage.
-- [ ] Restore Collections, Artifacts, Investigations and Feats reference coverage,
+- [x] Restore Collections, Artifacts, Investigations and Feats reference coverage,
   then remaining Equipment/Weapon Mastery details.
 - [ ] Convert individual power ability lists after the practical guide work.
 - [ ] Resume bounded inventory imports with section/image coverage evidence.
@@ -158,3 +158,16 @@ need further evidence. Bane Brought Down video is labeled broader mission footag
 no precise turn-in timestamp is claimed. Validation passed (35 unit, 9 browser,
 build/type checks); independent review's stale quest-count finding was fixed and
 retested. Existing Cloudflare integration evidence applies to unchanged runtime.
+
+Reference batch: restored 379 collection table entries, 82 artifact entries, 126
+investigation directory entries, feat categories and point/replay-badge tables,
+Equipment detail and Weapon Mastery context. Existing combo table retained.
+Copied 34 additional reference images and verified all 68 R2 objects; D1 catalog
+updated. Long detail-link lists are collapsible. Embedded video captions without
+verified video targets, decorative badges and navigation templates are recorded
+as omitted. The source's conflicting artifact slot count is explicitly flagged.
+All 213 existing editable baselines remain unchanged. Type/build, 10 browser and
+7 Cloudflare integration checks passed. Converter regression tests cover table
+splitting, content after TOC, actual headers and multi-row directories. Independent
+review found a directory/header ambiguity; the parser now promotes only recognized
+replacement header rows, with a regression test. Full wiki import remains open.

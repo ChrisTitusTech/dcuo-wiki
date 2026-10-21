@@ -70,15 +70,17 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
             />
           )}
           {s.references && (
-            <p class="section-references">
-              Further reading on the source wiki:{" "}
+            <details class="section-references">
+              <summary>
+                Source wiki detail links ({s.references.length})
+              </summary>
               {s.references.map((r, index) => (
                 <>
                   {index > 0 && " · "}
                   <a href={r.url}>{r.label}</a>
                 </>
               ))}
-            </p>
+            </details>
           )}
           {s.table && (
             <>

@@ -16,7 +16,9 @@ test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await expect(page.locator("#empty")).toBeVisible();
   await page.getByRole("searchbox").fill("");
   await page.getByRole("button", { name: "Quests", exact: true }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(articles.filter(a => a.category === "Quests").length);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    articles.filter((a) => a.category === "Quests").length,
+  );
   await page.getByRole("link", { name: /Grab and Smash/ }).click();
   await expect(
     page.getByRole("heading", { name: "Grab and Smash", exact: true }),
@@ -119,7 +121,9 @@ test("global search, category navigation, and mobile menu", async ({
     .getByRole("navigation", { name: "Categories", exact: true })
     .getByRole("link", { name: "Quests" })
     .click();
-  await expect(page.locator(".card:visible")).toHaveCount(articles.filter(a => a.category === "Quests").length);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    articles.filter((a) => a.category === "Quests").length,
+  );
   await page.getByRole("button", { name: "Switch color theme" }).click();
   await page.reload();
   await expect(page.locator("html")).toHaveClass("light");
@@ -145,21 +149,84 @@ test("global search, category navigation, and mobile menu", async ({
   });
 });
 
-test("copied maps appear inline with full-size and source links", async ({ page }) => {
-  for (const [slug, count] of [["Grab_and_Smash", 10], ["Cape_Carmine_Lighthouse", 12], ["Viva_la_Lucha_Libre", 12], ["Out_in_the_Streets", 1], ["House_of_Venom", 2], ["Til_Death_Do_Us_Part_Episode_I", 12], ["Til_Death_Do_Us_Part_Episode_II", 12]] as const) {
+test("copied maps appear inline with full-size and source links", async ({
+  page,
+}) => {
+  for (const [slug, count] of [
+    ["Grab_and_Smash", 10],
+    ["Cape_Carmine_Lighthouse", 12],
+    ["Viva_la_Lucha_Libre", 12],
+    ["Out_in_the_Streets", 1],
+    ["House_of_Venom", 2],
+    ["Til_Death_Do_Us_Part_Episode_I", 12],
+    ["Til_Death_Do_Us_Part_Episode_II", 12],
+  ] as const) {
     await page.goto(`/wiki/${slug}/`);
-    await expect(page.locator('.map-gallery img')).toHaveCount(count);
-    await expect(page.locator('.map-gallery a').filter({hasText: 'Full-size image'})).toHaveCount(count);
-    for (const img of await page.locator('.map-gallery img').all()) {
-      await expect(img).toHaveAttribute('src', /^https:\/\/images\.dcuo-wiki\.com\/[a-f0-9]{64}-preview\.webp$/);
+    await expect(page.locator(".map-gallery img")).toHaveCount(count);
+    await expect(
+      page.locator(".map-gallery a").filter({ hasText: "Full-size image" }),
+    ).toHaveCount(count);
+    for (const img of await page.locator(".map-gallery img").all()) {
+      await expect(img).toHaveAttribute(
+        "src",
+        /^https:\/\/images\.dcuo-wiki\.com\/[a-f0-9]{64}-preview\.webp$/,
+      );
     }
   }
 });
 
-test('briefing chapters match wiki parts rather than video collection order', async ({page}) => {
-  await page.goto('/wiki/Til_Death_Do_Us_Part_Episode_I/');
-  await expect(page.getByRole('link',{name:'Part 1: Vicki Vale',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=2bfM23Di18w&t=238s');
-  await expect(page.getByRole('link',{name:'Part 4: Jack Ryder',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=2bfM23Di18w&t=68s');
-  await page.goto('/wiki/Til_Death_Do_Us_Part_Episode_II/');
-  await expect(page.getByRole('link',{name:'Part 4: Lois Lane',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=GJOXYvO91xc&t=346s');
+test("briefing chapters match wiki parts rather than video collection order", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Til_Death_Do_Us_Part_Episode_I/");
+  await expect(
+    page.getByRole("link", { name: "Part 1: Vicki Vale", exact: true }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.youtube.com/watch?v=2bfM23Di18w&t=238s",
+  );
+  await expect(
+    page.getByRole("link", { name: "Part 4: Jack Ryder", exact: true }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.youtube.com/watch?v=2bfM23Di18w&t=68s",
+  );
+  await page.goto("/wiki/Til_Death_Do_Us_Part_Episode_II/");
+  await expect(
+    page.getByRole("link", { name: "Part 4: Lois Lane", exact: true }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.youtube.com/watch?v=GJOXYvO91xc&t=346s",
+  );
+});
+
+test("reference directories retain entries and keep detail links compact", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Collections/");
+  await expect(page.locator("tbody tr")).toHaveCount(379);
+  const references = page
+    .locator("details.section-references")
+    .filter({ hasText: "Alien Technology" })
+    .first();
+  await expect(references).not.toHaveAttribute("open", "");
+  await references.locator("summary").click();
+  await expect(
+    references.getByRole("link", { name: "Alien Technology", exact: true }),
+  ).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+  await page.goto("/wiki/Artifacts/");
+  await expect(page.locator("tbody tr")).toHaveCount(82);
+  await expect(
+    page.getByText(
+      "The source introduction still describes three artifact slots",
+      { exact: false },
+    ),
+  ).toBeVisible();
+  await page.screenshot({ path: "test-results/artifacts-expanded-mobile.png" });
 });

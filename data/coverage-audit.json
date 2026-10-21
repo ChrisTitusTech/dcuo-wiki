@@ -38,7 +38,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Investigations",
       "retrieved": "2026-10-21T04:47:09.627Z",
       "sourceMarkdownSha256": "c92b33dbcad57db53d1ce54007d29f451694f8787fea80e26c8f023843510af0",
-      "status": "high",
+      "status": "expanded",
       "finding": "Only recognition and reward guidance was published. Gotham, Metropolis and Global investigation directories and gallery are missing.",
       "sourceSections": [
         "Gotham Investigations",
@@ -47,14 +47,15 @@
         "Gallery",
         "Trivia",
         "See also"
-      ]
+      ],
+      "resolution": "2026-10-21: substantive source sections restored; see data/reference-coverage-2026-10-21.json for table counts, images and intentional omissions. Linked detail pages remain external. Existing editable baselines preserved."
     },
     {
       "slug": "Collections",
       "source": "https://dcuniverseonline.fandom.com/wiki/Collections",
       "retrieved": "2026-10-21T04:47:10.213Z",
       "sourceMarkdownSha256": "bfd44c171c76102a9fde367dd5305b5765e9a7af9373b922649ef82915cb8c36",
-      "status": "high",
+      "status": "expanded",
       "finding": "Only six starting examples were published. Basic, alert/raid, meta, seasonal/event, story-arc and special collection tables with locations and rewards are missing, along with collection mechanics and illustrations.",
       "sourceSections": [
         "List of Collections",
@@ -65,7 +66,8 @@
         "Story Arc Collections",
         "Special Collections",
         "Trivia"
-      ]
+      ],
+      "resolution": "2026-10-21: substantive source sections restored; see data/reference-coverage-2026-10-21.json for table counts, images and intentional omissions. Linked detail pages remain external. Existing editable baselines preserved."
     },
     {
       "slug": "Grab_and_Smash",
@@ -76,7 +78,7 @@
       "finding": "Route, unlock, rewards and five scene screenshots are present. Source gallery also has five location images; mission narrative and explicit 0/5 objective should be restored. Empty combatants section should stay excluded.",
       "sourceSections": [
         "Summary",
-        "​Objectives",
+        "\u200bObjectives",
         "Combatants",
         "Walkthrough",
         "Rewards",
@@ -155,7 +157,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Feats",
       "retrieved": "2026-10-20",
       "sourceMarkdownSha256": "bdc7ec521c676960f10c38444943138a603ca694baf01aec3377e4ee08130026",
-      "status": "high",
+      "status": "expanded",
       "finding": "Point rewards and replay badge costs are present. Full categories/subcategories directory, illustrated menu guide and additional notes are missing.",
       "sourceSections": [
         "Feats Menu",
@@ -166,41 +168,44 @@
         "Notes",
         "Trivia",
         "Other Links"
-      ]
+      ],
+      "resolution": "2026-10-21: substantive source sections restored; see data/reference-coverage-2026-10-21.json for table counts, images and intentional omissions. Linked detail pages remain external. Existing editable baselines preserved."
     },
     {
       "slug": "Equipment",
       "source": "https://dcuniverseonline.fandom.com/wiki/Equipment",
       "retrieved": "2026-10-20",
       "sourceMarkdownSha256": "a5ad984382fe4479258aeba4cef091a60e04b67335fd08d246874432317da880",
-      "status": "medium",
+      "status": "expanded",
       "finding": "Core weapon, costume and item guidance is present. Detailed item-type links, costume browsing links, artwork and source-listed Shield access information need conversion/review.",
       "sourceSections": [
         "Items",
         "Weapons",
         "Costumes",
         "See also"
-      ]
+      ],
+      "resolution": "2026-10-21: substantive source sections restored; see data/reference-coverage-2026-10-21.json for table counts, images and intentional omissions. Linked detail pages remain external. Existing editable baselines preserved."
     },
     {
       "slug": "Weapon_Mastery",
       "source": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery",
       "retrieved": "2026-10-20",
       "sourceMarkdownSha256": "17c64c8170d533648479e4a1ffc3ece063b103658fa16fc2acf92f237934f5be",
-      "status": "low",
+      "status": "expanded",
       "finding": "Full 11-row combo table and main unlock mechanics are present. Original animation, introduction and secondary-weapon frequency trivia are omitted.",
       "sourceSections": [
         "Overview",
         "Multiple Mastery Combos",
         "Trivia"
-      ]
+      ],
+      "resolution": "2026-10-21: substantive source sections restored; see data/reference-coverage-2026-10-21.json for table counts, images and intentional omissions. Linked detail pages remain external. Existing editable baselines preserved."
     },
     {
       "slug": "Artifacts",
       "source": "https://dcuniverseonline.fandom.com/wiki/Artifacts",
       "retrieved": "2026-10-21T04:47:12.287Z",
       "sourceMarkdownSha256": "78e28ba73efc3f0775204cb8057245864799fcba327048ecc83b38227239a67f",
-      "status": "high",
+      "status": "expanded",
       "finding": "Only introductory progression guidance was published. Known-artifact table, detailed upgrade/reagent/catalyst tables, feats and artwork are missing.",
       "sourceSections": [
         "Obtaining Artifacts",
@@ -213,7 +218,8 @@
         "Gallery",
         "Video",
         "See also"
-      ]
+      ],
+      "resolution": "2026-10-21: substantive source sections restored; see data/reference-coverage-2026-10-21.json for table counts, images and intentional omissions. Linked detail pages remain external. Existing editable baselines preserved."
     }
   ]
 }
