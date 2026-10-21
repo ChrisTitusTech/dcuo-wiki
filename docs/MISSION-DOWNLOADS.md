@@ -16,3 +16,9 @@ The source category includes overview pages and nested category links, so its it
 After category discovery has created the manifest, `node scripts/download-mission-batch.mjs` submits uncached URLs through Firecrawl's batch endpoint. It saves the job ID and result cursor in `.import-cache/mission-batch-job.json`, retrieves and saves completed results incrementally, and resumes that same job when rerun. It follows the API's result pagination and checks requested URL membership before saving data. Account concurrency limits still apply.
 
 After the batch finishes, rerun `node scripts/download-missions.mjs` to verify all cached captures, retry any missing pages, and finalize the tracked manifest. Do not run the individual and batch downloaders concurrently. Preserve the job checkpoint until retrieval is complete; deleting it while the remote job runs would risk submitting duplicate work.
+
+## Completed capture: October 21, 2026
+
+All six Missions index pages were traversed and reconciled: 1,130 direct members, comprising 1,107 article URLs and 23 category links. All 1,107 articles are saved locally with Markdown, HTML, and links; each stored content hash and HTTP status was verified. No article downloads remain missing. The tracked manifest records the complete result. Source captures are approximately 26 MB before compression.
+
+These are source articles, including overview and historical pages, not 1,107 approved quest walkthroughs. Conversion, map review, local image copying, and matching YouTube references remain separate work.
