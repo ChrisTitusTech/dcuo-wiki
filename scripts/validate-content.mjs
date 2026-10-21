@@ -9,6 +9,9 @@ for (const a of articles) {
   const errors = issuesFor(a);
   if (seen.has(a.slug)) errors.push("duplicate slug");
   seen.add(a.slug);
+  for (const slug of a.related || [])
+    if (!articles.some((other) => other.slug === slug))
+      errors.push(`missing related guide: ${slug}`);
   if (errors.length) {
     console.error(a.slug, errors);
     failures++;

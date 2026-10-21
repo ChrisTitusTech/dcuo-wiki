@@ -5,12 +5,15 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "check": "astro check",
-    "build": "node scripts/validate-content.mjs && astro build && node scripts/check-budget.mjs",
+    "build": "node scripts/inventory.mjs --check && node scripts/validate-content.mjs && astro build && node scripts/check-budget.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "test": "node --test tests/*.test.mjs",
     "test:browser": "playwright test",
     "validate": "npm run check && npm test && npm run build",
-    "import": "node scripts/import.mjs"
+    "import": "node scripts/import.mjs",
+    "inventory": "node scripts/inventory.mjs",
+    "discover": "node scripts/discover.mjs",
+    "inventory:check": "node scripts/inventory.mjs --check"
   },
   "repository": {
     "type": "git",

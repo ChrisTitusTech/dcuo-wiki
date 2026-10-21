@@ -444,3 +444,45 @@ article a,
     font-size: 0.85rem;
   }
 }
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin-top: 24px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+caption {
+  text-align: left;
+  padding: 16px;
+  font-weight: 700;
+}
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+  line-height: 1.7;
+}
+th {
+  background: var(--panel);
+}
+td:first-child {
+  min-width: 140px;
+  color: var(--accent);
+}
+td {
+  min-width: 230px;
+}
+.table-scroll:focus-visible {
+  outline: 3px solid var(--accent);
+}
+
+.article-grid > article {
+  min-width: 0;
+}

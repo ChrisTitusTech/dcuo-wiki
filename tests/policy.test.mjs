@@ -36,3 +36,33 @@ test("deployment includes all files and rejects oversized assets", () => {
   assert.equal(checkBudget([26 * 1024 * 1024]).ok, false);
   assert.equal(checkBudget([100, 200]).ok, true);
 });
+test("rejects unsafe map links, invalid timestamps and malformed tables", () => {
+  const quest = articles.find((a) => a.slug === "House_of_Venom");
+  assert.ok(
+    issuesFor({
+      ...quest,
+      location: {
+        ...quest.location,
+        maps: [{ label: "Map", url: "javascript:alert(1)" }],
+      },
+    }).includes("invalid map reference"),
+  );
+  assert.ok(
+    issuesFor({
+      ...quest,
+      videos: [{ ...quest.videos[0], startSeconds: -1 }],
+    }).includes("unverified video"),
+  );
+  assert.ok(
+    issuesFor({
+      ...articles[0],
+      sections: [
+        {
+          title: "Test",
+          items: articles[0].sections[0].items,
+          table: { caption: "Table", columns: ["One"], rows: [["A", "B"]] },
+        },
+      ],
+    }).includes("invalid table"),
+  );
+});

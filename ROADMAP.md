@@ -21,4 +21,12 @@ No placeholders or name-only entries. No invented locations. No automatic public
 
 ## Foundation status
 
-Implemented and locally validated. See VALIDATION.md for tests, independent review, output size, and explicit limitations. GitHub publication is the final step of this milestone; Cloudflare activation remains separate.
+Implemented and locally validated. See VALIDATION.md for tests, independent review, output size, and explicit limitations. Foundation published as bad07c3; its GitHub CI passed. Cloudflare activation remains separate.
+
+## Discovery and enrichment increment
+
+- Six sequential All Pages batches retrieved through Firecrawl; 2,159 article candidates tracked with supporting pages and exclusions. Continuation is saved; enumeration is not exhaustive.
+- Canonical URL inventory and resumable discovery command implemented. Legacy malformed Markdown candidates are not consumed.
+- Four additional guides cover Cape Carmine Lighthouse, Viva la Lucha Libre, Out in the Streets, and House of Venom. Tables, related guides, location evidence links, and verified video chapter links are supported.
+- Video matching uses retrieved title and description evidence; footage has not been independently reviewed. Map references describe source landmarks and do not invent exact coordinates.
+- Full inventory, redirect resolution, bulk quality review, equipment/infobox extraction validation, and Cloudflare activation remain open.

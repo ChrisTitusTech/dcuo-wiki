@@ -4,7 +4,12 @@ export interface Article {
   title: string;
   category: string;
   summary: string;
-  sections: { title: string; items: string[] }[];
+  sections: {
+    title: string;
+    items: string[];
+    table?: { caption: string; columns: string[]; rows: string[][] };
+  }[];
+  related?: string[];
   source: string;
   history: string;
   retrieved: string;
@@ -23,6 +28,11 @@ export interface Article {
     checked: string;
     note: string;
   };
-  videos?: { title: string; url: string; evidence: string }[];
+  videos?: {
+    title: string;
+    url: string;
+    evidence: string;
+    startSeconds?: number;
+  }[];
 }
 export default data as Article[];

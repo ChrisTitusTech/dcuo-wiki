@@ -42,7 +42,7 @@ import articles from "../data/articles";
       autocomplete="off"
     />
     <div class="filters" aria-label="Filter guides">
-      {["All", "Character", "Collectibles", "Quests"].map((c) => (
+      {["All", ...new Set(articles.map((a) => a.category))].map((c) => (
         <button data-category={c} aria-pressed={c === "All"}>
           {c}
         </button>
@@ -61,12 +61,15 @@ import articles from "../data/articles";
             a.title,
             a.category,
             a.summary,
-            ...a.sections.flatMap((s) => s.items),
+            ...a.sections.flatMap((s) => [
+              ...s.items,
+              ...(s.table?.rows.flat() || []),
+            ]),
           ]
             .join(" ")
             .toLowerCase()}
         >
-          <span class="card-number">0{i + 1}</span>
+          <span class="card-number">{String(i + 1).padStart(2, "0")}</span>
           <div class="eyebrow">{a.category}</div>
           <h3>{a.title}</h3>
           <p>{a.summary}</p>

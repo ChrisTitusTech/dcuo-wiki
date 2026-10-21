@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import articles from "../data/articles";
+import inventory from "../../data/inventory.json";
 ---
 
 <Layout title="About & coverage">
@@ -39,6 +40,13 @@ import articles from "../data/articles";
       rights; this edition links map file pages instead of redistributing them.
     </p>
     <h2>Coverage limits</h2>
+    <p>
+      We have discovered{" "}
+      {inventory.summary.articleCandidates.toLocaleString("en-US")} candidate
+      article URLs so far. Only {articles.length} guides have been reviewed and
+      published. The candidate list is partial, includes possible aliases and
+      unhelpful entries, and is not a count of finished guides.
+    </p>
     <p>
       The initial map found 124 URLs, while the source homepage reported
       approximately 25,000 pages. That map is not an exhaustive inventory.

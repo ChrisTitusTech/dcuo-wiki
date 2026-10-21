@@ -8,6 +8,7 @@ export function getStaticPaths() {
   }));
 }
 const { article } = Astro.props;
+const related = articles.filter((a) => article.related?.includes(a.slug));
 ---
 
 <Layout title={article.title} description={article.summary}>
@@ -37,6 +38,34 @@ const { article } = Astro.props;
               <li>{item}</li>
             ))}
           </ul>
+          {s.table && (
+            <div
+              class="table-scroll"
+              tabindex="0"
+              role="region"
+              aria-label={s.table.caption}
+            >
+              <table>
+                <caption>{s.table.caption}</caption>
+                <thead>
+                  <tr>
+                    {s.table.columns.map((c) => (
+                      <th scope="col">{c}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {s.table.rows.map((row) => (
+                    <tr>
+                      {row.map((cell) => (
+                        <td>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </section>
       ))}
       {article.location && (
@@ -44,8 +73,8 @@ const { article } = Astro.props;
           <div class="eyebrow">FIND YOUR WAY</div>
           <h2>{article.location.label}</h2>
           <p>
-            Precision: {article.location.precision}. The route above follows
-            documented landmarks; no coordinates have been inferred.
+            Precision: {article.location.precision}. No coordinates have been
+            inferred. <a href={article.location.source}>Location evidence</a>.
           </p>
           <ul>
             {article.location.maps.map((m) => (
@@ -75,7 +104,15 @@ const { article } = Astro.props;
             <ul>
               {article.videos.map((video) => (
                 <li>
-                  <a href={video.url}>{video.title}</a>
+                  <a
+                    href={
+                      video.startSeconds
+                        ? `${video.url}&t=${video.startSeconds}s`
+                        : video.url
+                    }
+                  >
+                    {video.title}
+                  </a>
                   <p>{video.evidence}</p>
                 </li>
               ))}
@@ -86,6 +123,18 @@ const { article } = Astro.props;
               {article.videoReview.checked}. This does not mean none exists.
             </p>
           )}
+        </section>
+      )}
+      {related.length > 0 && (
+        <section>
+          <h2>Related guides</h2>
+          <ul>
+            {related.map((a) => (
+              <li>
+                <a href={`/wiki/${a.slug}/`}>{a.title}</a>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
       <aside class="notice">

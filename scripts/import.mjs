@@ -1,77 +1,62 @@
-// Staging only: scraped content never becomes a published article automatically.
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+// Staged content never becomes a published article automatically.
+import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
 import { createHash } from "node:crypto";
-const urls = process.argv.slice(2);
+import { classifyURL } from "./wiki-urls.mjs";
+import { scrape } from "./firecrawl.mjs";
+const args = process.argv.slice(2),
+  refresh = args.includes("--refresh");
+const urls = args.filter((a) => a !== "--refresh");
 if (!urls.length)
-  throw new Error(
-    "Usage: npm run import -- https://dcuniverseonline.fandom.com/wiki/Article",
-  );
+  throw new Error("Usage: npm run import -- [--refresh] <DCUO article URLs>");
 const key = process.env.FIRECRAWL_API_KEY;
 if (!key)
   throw new Error("Set FIRECRAWL_API_KEY in the environment; never commit it.");
+const entries = urls.map(classifyURL);
+if (entries.some((e) => e.kind !== "article"))
+  throw new Error(
+    "Import only gameplay articles; use discovery for supporting pages.",
+  );
 await mkdir(".import-cache", { recursive: true });
 let failed = 0;
-for (const raw of urls) {
-  const url = new URL(raw);
-  if (
-    url.origin !== "https://dcuniverseonline.fandom.com" ||
-    !url.pathname.startsWith("/wiki/")
-  )
-    throw new Error("Only DCUO Fandom wiki URLs are allowed.");
-  url.search = "";
-  url.hash = "";
-  const id = createHash("sha256").update(url.href).digest("hex");
-  const file = `.import-cache/${id}.json`;
-  try {
-    await readFile(file);
-    console.log(`Cached: ${url.pathname}`);
-    continue;
-  } catch (e) {
-    if (e.code !== "ENOENT") throw e;
-  }
-  let saved = false;
-  for (let attempt = 0; attempt < 3; attempt++) {
+for (const url of new Set(entries.map((e) => e.url))) {
+  const id = createHash("sha256").update(url).digest("hex"),
+    file = `.import-cache/${id}.json`;
+  if (!refresh) {
     try {
-      const res = await fetch("https://api.firecrawl.dev/v2/scrape", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${key}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          url: url.href,
-          formats: ["markdown"],
-          includeTags: [".mw-parser-output"],
-          onlyMainContent: true,
-        }),
-        signal: AbortSignal.timeout(60000),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const body = await res.json();
-      if (!body.success || !body.data?.markdown)
-        throw new Error("No article content returned");
-      await writeFile(
-        file,
-        JSON.stringify(
-          {
-            url: url.href,
-            retrieved: new Date().toISOString(),
-            status: "needs-review",
-            ...body.data,
-          },
-          null,
-          2,
-        ),
-      );
-      saved = true;
-      console.log(`Staged: ${url.pathname}`);
-      break;
+      const cached = JSON.parse(await readFile(file, "utf8"));
+      if (
+        cached.url === url &&
+        cached.status === "needs-review" &&
+        typeof cached.markdown === "string" &&
+        cached.markdown.trim()
+      ) {
+        console.log(`Cached: ${url}`);
+        continue;
+      }
     } catch (e) {
-      console.error(`Attempt ${attempt + 1}: ${e.message}`);
-      if (attempt < 2)
-        await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
+      if (e.code && e.code !== "ENOENT") throw e;
     }
   }
-  if (!saved) failed++;
+  try {
+    const data = await scrape(url, { key });
+    await writeFile(
+      file + ".tmp",
+      JSON.stringify(
+        {
+          ...data,
+          url,
+          retrieved: new Date().toISOString(),
+          status: "needs-review",
+        },
+        null,
+        2,
+      ),
+    );
+    await rename(file + ".tmp", file);
+    console.log(`Staged: ${url}`);
+  } catch (e) {
+    console.error(`${url}: ${e.message}`);
+    failed++;
+  }
 }
 if (failed) process.exitCode = 1;

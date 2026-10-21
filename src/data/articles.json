@@ -64,7 +64,7 @@
       {
         "title": "Where to begin",
         "items": [
-          "The source organizes investigations into Gotham, Metropolis, and Global groups. Individual node guides have not yet been imported into this edition."
+          "The source organizes investigations into Gotham, Metropolis, and Global groups. Start with the linked Viva la Lucha Libre guide for Cape Carmine node locations; the remaining individual investigation guides still await review."
         ]
       }
     ],
@@ -72,7 +72,8 @@
     "history": "https://dcuniverseonline.fandom.com/wiki/Investigations?action=history",
     "retrieved": "2026-10-20",
     "reviewed": true,
-    "license": "CC-BY-SA; see source for exceptions"
+    "license": "CC-BY-SA; see source for exceptions",
+    "related": ["Viva_la_Lucha_Libre", "Collections"]
   },
   {
     "slug": "Collections",
@@ -177,6 +178,281 @@
       "checked": "2026-10-20",
       "note": "Search returned a different mission with an incidental phrase match; no video qualified."
     },
-    "videos": []
+    "videos": [],
+    "related": ["Cape_Carmine_Lighthouse", "Viva_la_Lucha_Libre"]
+  },
+  {
+    "slug": "Cape_Carmine_Lighthouse",
+    "title": "Cape Carmine Lighthouse",
+    "category": "Locations",
+    "summary": "Find the Gotham landmark, mission entrance, and duo setting.",
+    "sections": [
+      {
+        "title": "Which version are you entering?",
+        "items": [
+          "The source describes a Gotham landmark, a level 9 mission instance, and a Tier 1 duo under this name. Check which version your objective requires.",
+          "The source lists level 30 access and two Source Marks for the duo. These requirements and rewards have not been checked in the current game."
+        ]
+      },
+      {
+        "title": "Inside the lighthouse",
+        "items": [
+          "Bane and his Venom-powered gang occupy the lighthouse. Nightwing and Killer Croc pursue Bane and his Venom supply.",
+          "The encounter cast varies by faction and mode. The source identifies Deathstroke with the hero duo and Huntress with the villain duo."
+        ]
+      },
+      {
+        "title": "Related objectives",
+        "items": [
+          "Grab and Smash requires the queued duo rather than the walk-in instance. Track that quest before entering.",
+          "The Viva la Lucha Libre investigation includes two parts inside the lighthouse. Use its individual landmark descriptions to locate those nodes."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Cape Carmine, Gotham",
+      "precision": "landmark and instance map",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse#Map",
+      "maps": [
+        {
+          "label": "Lighthouse world-map location",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:CapeCarmineLighthouseMapLoc.jpg"
+        },
+        {
+          "label": "Lighthouse instance map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Capecarminelighthouse.jpg"
+        }
+      ]
+    },
+    "related": ["Grab_and_Smash", "Viva_la_Lucha_Libre"]
+  },
+  {
+    "slug": "Viva_la_Lucha_Libre",
+    "title": "Viva la Lucha Libre",
+    "category": "Collectibles",
+    "summary": "Locate six investigation parts around Cape Carmine and its instances.",
+    "sections": [
+      {
+        "title": "Route overview",
+        "items": [
+          "This six-part investigation is spread across Cape Carmine in Gotham's East End, including the Distribution Center and Cape Carmine Lighthouse instances.",
+          "Several outdoor parts have alternate nodes. The location descriptions below preserve those alternatives rather than implying a single fixed spawn."
+        ]
+      },
+      {
+        "title": "Six investigation parts",
+        "items": [
+          "Use the map references with the landmarks in this table. The source does not supply numeric coordinates for these nodes."
+        ],
+        "table": {
+          "caption": "Source-reported investigation locations",
+          "columns": ["Part", "Landmarks"],
+          "rows": [
+            [
+              "1. Quetzalcoatl",
+              "Four possible nodes: sidewalks west of the western cargo ship or east of the eastern cargo ship at Gotham Docks."
+            ],
+            [
+              "2. Tlaloc",
+              "Three possible nodes: northeast corner of the Old Soder Cola Plant block near the Distribution Center entrance; northwest corner of the block north of the plant; Stagg Stop gas station northeast of the plant."
+            ],
+            [
+              "3. Camaxtli",
+              "Distribution Center: southern side room next to the room containing Venom Supplier Diego."
+            ],
+            [
+              "4. Mextli",
+              "Sidewalk north of Cape Carmine Lighthouse, or stairs south of the lighthouse."
+            ],
+            [
+              "5. Itzli",
+              "Cape Carmine Lighthouse: middle of the room where Nightwing or Killer Croc fights Bane's Streetgang."
+            ],
+            [
+              "6. Xochipilli",
+              "Cape Carmine Lighthouse: southeast corner of the Bane fight room."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Completion reward",
+        "items": [
+          "The source lists Gangster's Jacket, using the Classic Biker style, as the completion reward.",
+          "Heroes receive completion mail from Harvey Bullock; villains receive it from the Penguin. Read the message at a mail terminal."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Cape Carmine, East End, Gotham",
+      "precision": "landmarks and instance rooms",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)#Investigations",
+      "maps": [
+        {
+          "label": "Part 1 source map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.1_Map.jpg"
+        },
+        {
+          "label": "Part 2 source map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.2_Map.jpg"
+        },
+        {
+          "label": "Part 3 source map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.3_Map.jpg"
+        },
+        {
+          "label": "Part 4 source map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt4_Map.jpg"
+        },
+        {
+          "label": "Part 5 source map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt5_Map.jpg"
+        },
+        {
+          "label": "Part 6 source map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt6_Map.jpg"
+        }
+      ]
+    },
+    "related": [
+      "Investigations",
+      "Out_in_the_Streets",
+      "House_of_Venom",
+      "Cape_Carmine_Lighthouse"
+    ]
+  },
+  {
+    "slug": "Out_in_the_Streets",
+    "title": "Out in the Streets",
+    "category": "Quests",
+    "summary": "Disrupt Bane's Venom shipments at the Cape Carmine docks.",
+    "sections": [
+      {
+        "title": "Objectives",
+        "items": [
+          "Travel to Cape Carmine in Gotham. Defeat 15 Bane thugs protecting the Venom shipments.",
+          "Collect samples from 20 shipment crates, and stop 10 Strongmen carrying Venom crates before delivery."
+        ]
+      },
+      {
+        "title": "Finding the mission area",
+        "items": [
+          "The investigation guide identifies the Gotham Docks at Cape Carmine as this mission's area. Its first investigation-part map shows the surrounding dock area, not every mission objective.",
+          "The same investigation guide places alternate first-part nodes on sidewalks west of the western cargo ship and east of the eastern cargo ship. These are investigation landmarks, not guaranteed quest target positions."
+        ]
+      },
+      {
+        "title": "Before moving on",
+        "items": [
+          "Follow the tracked mission objectives for remaining crate and enemy targets. No exact target coordinates are supplied by the reviewed sources.",
+          "The linked hero playthrough explicitly names this quest; the next chapter covers House of Venom."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Out_in_the_Streets",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Out_in_the_Streets?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Gotham Docks, Cape Carmine, East End",
+      "precision": "mission area; investigation map context",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)#Part_1:_Quetzalcoatl_Lucha_Libre_Mask",
+      "maps": [
+        {
+          "label": "Dock-area map from the associated investigation",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.1_Map.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Out in the Streets\" site:youtube.com/watch",
+      "checked": "2026-10-20",
+      "note": "Exact quest is named in the retrieved video title and description; Out in the Streets chapter verified."
+    },
+    "videos": [
+      {
+        "title": "StressOutGamer: Out in the Streets",
+        "url": "https://www.youtube.com/watch?v=J2s4czUcY8Q",
+        "startSeconds": 0,
+        "evidence": "The publisher explicitly names Out in the Streets in the title and chapter description. Segment starts at 0:00. Verified from metadata, not a full viewing."
+      }
+    ],
+    "related": ["House_of_Venom", "Viva_la_Lucha_Libre"]
+  },
+  {
+    "slug": "House_of_Venom",
+    "title": "House of Venom",
+    "category": "Quests",
+    "summary": "Locate Bane's distribution hub and take down Venom Supplier Diego.",
+    "sections": [
+      {
+        "title": "Objectives",
+        "items": [
+          "Search for Bane's Venom Distribution Hub, interrogate his Street Soldiers, and confiscate Venom from his Razors.",
+          "Take down Venom Supplier Diego and arrest him. The mission source identifies him as the boss."
+        ]
+      },
+      {
+        "title": "Finding the hub",
+        "items": [
+          "The mission article identifies the hub as the Distribution Center. The associated investigation guide places its entrance near the northeast corner of the Old Soder Cola Plant block in Cape Carmine.",
+          "An investigation node is also located in the southern side room next to Diego's room. The linked investigation maps provide entrance-area and interior context, not a marked route through every quest objective."
+        ]
+      },
+      {
+        "title": "Opposition and allies",
+        "items": [
+          "The source lists Bane's minions, Muscle, Strongman, Razor, and Venom-affected dogs among the opponents.",
+          "The allies list distinguishes Nightwing for heroes and Killer Croc for villains. The linked video is a Batman-mentor hero playthrough."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/House_of_Venom",
+    "history": "https://dcuniverseonline.fandom.com/wiki/House_of_Venom?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Distribution Center, Cape Carmine, East End",
+      "precision": "entrance landmark and interior room",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)#Part_2:_Tlaloc_Lucha_Libre_Mask",
+      "maps": [
+        {
+          "label": "Plant and entrance-area investigation map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.2_Map.jpg"
+        },
+        {
+          "label": "Distribution Center investigation map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.3_Map.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Out in the Streets\" site:youtube.com/watch",
+      "checked": "2026-10-20",
+      "note": "Discovered through the Out in the Streets search recorded above, not a separate House of Venom search. The retrieved title and publisher description explicitly identify House of Venom at 7:37."
+    },
+    "videos": [
+      {
+        "title": "StressOutGamer: House of Venom",
+        "url": "https://www.youtube.com/watch?v=J2s4czUcY8Q",
+        "startSeconds": 457,
+        "evidence": "The publisher explicitly names House of Venom in the title and chapter description. Segment starts at 7:37. Verified from metadata, not a full viewing."
+      }
+    ],
+    "related": ["Out_in_the_Streets", "Viva_la_Lucha_Libre"]
   }
 ]
