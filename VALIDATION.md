@@ -30,3 +30,13 @@ Validated on October 20, 2026:
 The Out in the Streets and House of Venom video chapters are verified from the publisher's title and description, not from watching the footage. Source images remain linked rather than redistributed. Exact coordinates, current in-game correctness, full enumeration, bulk extraction fidelity, and Cloudflare activation remain unverified.
 
 Final independent Codex review found no actionable defects after fixing underscore-normalized discussion namespace exclusions and adding regression coverage. Optional CodeRabbit feedback about missing files was checked against the staged new files and passing builds; those files are included in this increment. The House of Venom research note now explicitly records that its video was discovered through the Out in the Streets query.
+
+## Completed main-namespace enumeration
+
+Followed the source's All Pages next-page links through 84 batches to the final Zod Emblem batch. Its 14 returned links include 13 article links and a previous-page link; there is no next-page link. The inventory regenerates deterministically with `exhaustive: true` and `nextPage: null`. This flag applies to the enumerated main namespace, not all supporting namespaces or content quality.
+
+Reconciliation yielded 28,636 unique article candidates, 12 supporting pages, eight published guides, 503 duplicate URL observations, and 113 excluded links. The initial sitemap-only mapping returned zero URLs; pagination supplied the enumeration. Firecrawl rate limiting was handled by slowing requests and resuming from saved checkpoints.
+
+`npm run validate` and both browser tests passed against the completed inventory. Astro checks and the build passed again after updating coverage copy. Current output remains 15 files (57,373 bytes). The candidate manifest is build-time input and is not copied into the deployed site. The useful-page total and the full-site hosting architecture remain undetermined.
+
+Independent review verified that all 84 pagination batches form a continuous chain ending at the terminal page, the generated inventory matches the discovery data, and coverage copy accurately distinguishes enumeration from reviewed content. No actionable findings were reported.

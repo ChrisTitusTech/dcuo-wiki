@@ -44,8 +44,13 @@ import inventory from "../../data/inventory.json";
       We have discovered{" "}
       {inventory.summary.articleCandidates.toLocaleString("en-US")} candidate
       article URLs so far. Only {articles.length} guides have been reviewed and
-      published. The candidate list is partial, includes possible aliases and
-      unhelpful entries, and is not a count of finished guides.
+      published.{" "}
+      {inventory.exhaustive
+        ? "The source main-article index has been enumerated to its end."
+        : "The candidate list is partial."}{" "}
+      Candidates include possible aliases and unhelpful entries, and are not a
+      count of finished guides. Supporting media and category indexes have not
+      been fully enumerated.
     </p>
     <p>
       The initial map found 124 URLs, while the source homepage reported

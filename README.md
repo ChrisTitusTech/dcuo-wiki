@@ -29,7 +29,7 @@ Review staged content against its source before adding a record to `src/data/art
 
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. It currently covers 2,159 article candidates from six sequential All Pages batches and linked sources, with eight published guides. It is explicitly partial: the next index starts at Base Items: Cinema. Redirects and semantically duplicate titles still require resolution.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. Eight guides are published. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory
@@ -40,7 +40,7 @@ npm run discover -- 5
 
 Discovery commits a checkpoint after each successful page. It follows the source's Next page link rather than guessing alphabet ranges. URL normalization preserves case, parentheses, Unicode, and meaningful title prefixes such as Collections:. File and Category pages are retained as supporting sources; user and discussion namespaces are excluded. Inventory checks fail when published content or discovery changes without regenerating the inventory.
 
-`data/exploration.json` remains the historical pilot record. Its Markdown-derived candidate links may be malformed and are not consumed by the new inventory. Only Firecrawl's structured link observations seed the new workflow. No complete-site or future hosting-fit claim is made.
+`data/exploration.json` remains the historical pilot record. Its Markdown-derived candidate links may be malformed and are not consumed by the new inventory. Only Firecrawl's structured link observations seed the new workflow. No complete-content or future hosting-fit claim is made. One static file per candidate alone would exceed the free 20,000-file limit. The useful-page total remains unknown until quality review; do not drop useful material just to fit a hosting tier.
 
 ## Cloudflare Git integration
 
