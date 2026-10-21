@@ -85,3 +85,20 @@ Live HTTPS checks on dcuo-wiki.com returned 200 for the homepage, Artifacts guid
 After adding the production domain configuration, pinned Wrangler's deployment dry run and the local Cloudflare serving test passed. The workstation CLI remains unauthenticated; builds use the Cloudflare-managed dedicated token. No secrets are stored in this repository.
 
 Follow-up blocker: after pushing routing commit 4f7f0e4, Cloudflare's production build settings report "This project is disconnected from your Git account." No automatic build appeared. Manage opens GitHub installation settings behind a sign-in page. Initial deployment remains live, but automatic updates and deployment of the persisted routing settings are not yet verified. User GitHub sign-in/reconnection is required. The initial build enabled default workers.dev and preview URLs; the explicit disable settings are committed but have not yet deployed.
+
+## Discord accounts and Census-matched profiles
+
+Implemented Discord identity sign-in, D1-backed profiles and sessions, optional bounded screenshots, Census character-name matching, server-enforced submission gating, and a private editorial queue. Per explicit owner direction, matching a public name is sufficient; ownership is not claimed. Provider setup is intentionally absent from source control.
+
+Validation on 2026-10-20:
+
+- `npm run validate`: Astro check passed with zero errors/warnings; all 26 unit tests passed; content/inventory validation and build passed. Output: 23 files, 99,400 bytes, below the 18,000 guard and 20,000 platform limit.
+- `npm run test:browser`: all 3 existing wiki browser tests passed.
+- `npm run test:cloudflare`: all 4 tests passed. A disposable local D1 database exercised session queries, screenshot BLOB round-trip/removal, origin enforcement, missing Census configuration, and static article/redirect/404 routing. Browser checks exercised login visibility, public profile rendering, and a mocked character-save/contribution flow at mobile width.
+- `npx wrangler deploy --dry-run`: passed with the API Worker and static asset bindings. No production credentials used.
+- Security tests cover single-use browser-bound OAuth state, hashed sessions, logout/expiry, exact Census matching, public-data boundaries, outage handling, rate limits, upload size/type, anonymous/forged submissions, and moderator access.
+- Mobile screenshot inspected at `test-results/player-profile-mobile.png`: no horizontal overflow, form labels and actions readable. The screenshot uses test data and is not evidence of live provider activation.
+
+Production Discord sign-in, approved Census service ID, real D1 binding/migration, moderator allowlist, and live user acceptance remain pending. Activation procedure: docs/ACCOUNTS.md. The owner elected to save the prepared GitHub installation access change themselves. No paid plan activated; no full wiki import claimed.
+
+Local Codex review completed. The first review found article context was lost through sign-in; state-bound page-title storage fixed it, with a regression test. Repeat review found no actionable defects. The owner saved GitHub repository access, and refreshed Cloudflare settings no longer show the disconnected warning. Live deployment of this increment still requires verification after push.

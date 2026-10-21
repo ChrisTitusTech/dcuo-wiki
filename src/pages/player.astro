@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Player profile">
+  <section class="prose account">
+    <h1 id="player-name">Player profile</h1>
+    <p id="player-status" role="status">
+      Loading profile...
+    </p>
+    <div id="player-details" hidden>
+      <p id="player-stats"></p>
+      <p id="player-bio"></p>
+      <img
+        id="player-screenshot"
+        alt="Player-provided character screenshot"
+        hidden
+      />
+      <p>
+        Census matched means the character appears in Daybreak's public data.
+        Ownership is not verified. Stats reflect the last profile save.
+      </p>
+    </div>
+    <p>
+      <a href="/account/">Create or update your profile</a>
+    </p>
+  </section>
+  <script>
+    const status = document.getElementById("player-status")!;
+    const id = new URLSearchParams(location.search).get("id");
+    async function load() {
+      if (!id || !/^[a-f0-9-]{36}$/.test(id)) {
+        status.textContent = "Open a profile using its shareable link.";
+        return;
+      }
+      try {
+        const response = await fetch(`/api/profiles/${id}`);
+        const p = await response.json();
+        if (!response.ok) throw new Error(p.error);
+        document.getElementById("player-name")!.textContent = p.character.name;
+        document.getElementById("player-stats")!.textContent =
+          `World ${p.character.world_id} | Level ${p.character.level} | Combat rating ${p.character.combat_rating} | Skill points ${p.character.skill_points}`;
+        document.getElementById("player-bio")!.textContent = p.bio;
+        status.textContent = `Census matched on ${new Date(p.matchedAt * 1000).toLocaleDateString()}`;
+        if (p.screenshot) {
+          const image = document.getElementById(
+            "player-screenshot",
+          ) as HTMLImageElement;
+          image.src = p.screenshot;
+          image.hidden = false;
+        }
+        document.getElementById("player-details")!.hidden = false;
+      } catch (e) {
+        status.textContent =
+          (e as Error).message || "Profile is temporarily unavailable.";
+      }
+    }
+    load();
+  </script>
+</Layout>

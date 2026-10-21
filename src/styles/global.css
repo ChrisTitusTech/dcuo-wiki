@@ -486,3 +486,65 @@ td {
 .article-grid > article {
   min-width: 0;
 }
+
+.account {
+  max-width: 900px;
+  margin-inline: auto;
+  padding-inline: 22px;
+}
+.account [hidden] {
+  display: none !important;
+}
+.account-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+.account form {
+  display: grid;
+  gap: 16px;
+  margin-block: 20px;
+}
+.account label {
+  display: grid;
+  gap: 8px;
+}
+.account input,
+.account select,
+.account textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+}
+.account button,
+.account .button {
+  display: inline-block;
+  justify-self: start;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  color: var(--text);
+  background: var(--panel);
+  cursor: pointer;
+}
+.account button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.account img {
+  max-width: 100%;
+  height: auto;
+}
+.account p {
+  overflow-wrap: anywhere;
+}
+header nav {
+  flex-wrap: wrap;
+}

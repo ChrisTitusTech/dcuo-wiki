@@ -1,0 +1,156 @@
+import { test, expect } from "@playwright/test";
+const headers = {
+  Cookie: `__Host-dcuo-session=${"a".repeat(64)}`,
+  Origin: "http://127.0.0.1:8787",
+};
+test("D1 session and screenshot round trip, with Census unconfigured and submissions locked", async ({
+  request,
+}) => {
+  const me = await request.get("/api/me", { headers });
+  expect(me.status()).toBe(200);
+  expect((await me.json()).name).toBe("Local fixture");
+  expect(
+    (
+      await request.post("/api/contributions", {
+        headers,
+        data: { page: "test" },
+      })
+    ).status(),
+  ).toBe(400);
+  const body = {
+    page: "test",
+    suggestion: "A contribution that cannot be accepted without Census.",
+    sources: "In-game evidence",
+  };
+  expect(
+    (
+      await request.post("/api/contributions", { headers, data: body })
+    ).status(),
+  ).toBe(503);
+  expect(
+    (
+      await request.post("/api/contributions", {
+        headers: { Origin: headers.Origin },
+        data: body,
+      })
+    ).status(),
+  ).toBe(401);
+  expect(
+    (
+      await request.post("/api/contributions", {
+        headers: { ...headers, Origin: "https://evil.example" },
+        data: body,
+      })
+    ).status(),
+  ).toBe(403);
+  const image = Buffer.from(
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=",
+    "base64",
+  );
+  expect(
+    (
+      await request.post("/api/profile/screenshot", {
+        headers: { ...headers, "Content-Type": "image/png" },
+        data: image,
+      })
+    ).status(),
+  ).toBe(200);
+  const screenshot = await request.get(
+    "/api/profiles/11111111-1111-4111-8111-111111111111/screenshot",
+  );
+  expect(screenshot.status()).toBe(200);
+  expect(await screenshot.body()).toEqual(image);
+  expect(
+    (await request.delete("/api/profile/screenshot", { headers })).status(),
+  ).toBe(200);
+});
+test("account page exposes Discord sign in and public profiles use text rendering", async ({
+  page,
+}) => {
+  await page.goto("/account/");
+  await expect(
+    page.getByRole("link", { name: "Sign in with Discord", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Submit for review" }),
+  ).toBeHidden();
+  await page.goto("/player/?id=11111111-1111-4111-8111-111111111111");
+  await expect(
+    page.getByRole("heading", { name: "Local fixture" }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Ownership is not verified.", { exact: false }),
+  ).toBeVisible();
+});
+
+test("account form saves a selected Census character and queues a suggestion", async ({
+  page,
+}) => {
+  const character = {
+    character_id: "123",
+    name: "Test Hero",
+    world_id: "2",
+    level: "30",
+    combat_rating: "100",
+    skill_points: "90",
+  };
+  const profile = {
+    id: "11111111-1111-4111-8111-111111111111",
+    character,
+    bio: "",
+    screenshot: null,
+  };
+  await page.route("**/api/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    let body: unknown;
+    if (path === "/api/status") body = { login: true, census: true };
+    else if (path === "/api/me")
+      body = { name: "Player", profile: null, moderator: false };
+    else if (path === "/api/characters") body = { characters: [character] };
+    else if (path === "/api/profile") {
+      expect(route.request().postDataJSON().characterId).toBe("123");
+      body = { profile };
+    } else if (path === "/api/contributions")
+      body =
+        route.request().method() === "POST"
+          ? { id: "queued", status: "pending" }
+          : { contributions: [] };
+    else throw new Error(`Unexpected route ${path}`);
+    await route.fulfill({ json: body });
+  });
+  await page.goto("/account/");
+  await expect(
+    page.getByRole("button", { name: "Submit for review" }),
+  ).toBeHidden();
+  await page.getByLabel("Exact character name").fill("Test Hero");
+  await page
+    .getByRole("button", { name: "Search Census", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Save player profile", exact: true })
+    .click();
+  await expect(
+    page.getByRole("button", { name: "Submit for review" }),
+  ).toBeVisible();
+  await page.getByLabel("Wiki page title").fill("A quest");
+  await page
+    .getByLabel("Your addition or correction")
+    .fill("A useful correction with sufficient details and context.");
+  await page
+    .getByLabel("Sources or in-game evidence")
+    .fill("A map location and quest evidence");
+  await page.getByRole("button", { name: "Submit for review" }).click();
+  await expect(page.getByRole("status")).toContainText(
+    "Suggestion submitted for review",
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await page.screenshot({
+    path: "test-results/player-profile-mobile.png",
+    fullPage: true,
+  });
+});

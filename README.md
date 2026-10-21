@@ -59,15 +59,15 @@ Discovery commits a checkpoint after each successful page. It follows the source
 
 For a Cloudflare Pages project, connect ChrisTitusTech/dcuo-wiki, select main, set build command `npm run build`, and output directory `dist`. Use Node 24. Add dcuo-wiki.com through the project's custom domains flow and verify its DNS and HTTPS status. Owning the domain does not automatically connect the project.
 
-The selected hosting path is static Astro on Cloudflare Workers, using the included `wrangler.jsonc`. With Workers Builds, connect this GitHub repository on main, use `npm run build` as build command and `npx wrangler deploy` as deploy command. Wrangler is pinned in the lockfile, so this uses the tested version. Keep Node 24. Add dcuo-wiki.com as a Worker custom domain and verify DNS and HTTPS. The Pages instructions above remain an alternative.
+The selected hosting path is static Astro on Cloudflare Workers, using the included `wrangler.jsonc`. With Workers Builds, connect this GitHub repository on main, use `npm run build` as build command and `npx wrangler deploy` as deploy command. Wrangler is pinned in the lockfile, so this uses the tested version. Keep Node 24. Add dcuo-wiki.com as a Worker custom domain and verify DNS and HTTPS. The Pages instructions above remain an alternative for the static wiki only; the new account API requires the Workers configuration.
 
-Stay on Workers Free while the output fits the existing 18,000-file safety budget. Workers Free allows 20,000 files; Workers Paid starts at $5/month and allows 100,000 files. Static asset serving is free and unlimited. Keep rendering and search static; no database or per-visit Worker execution is needed. Domain renewal and build usage beyond included allowances are separate. Before approaching the safety budget, measure the complete output, explicitly activate the paid account plan if needed, and then update the guard for the confirmed tier. Do not drop useful guides to fit the free tier. No paid subscription has been activated.
+Stay on Workers Free while the output fits the existing 18,000-file safety budget. Workers Free allows 20,000 files; Workers Paid starts at $5/month and allows 100,000 files. Static asset serving is free and unlimited. Wiki rendering and search stay static. The optional player-account features use a Worker and D1 database, with separate request and storage quotas. Domain renewal and build usage beyond included allowances are separate. Before approaching the safety budget, measure the complete output, explicitly activate the paid account plan if needed, and then update the guard for the confirmed tier. Do not drop useful guides to fit the free tier. No paid subscription has been activated.
 
 Pricing checked October 20, 2026: [Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/), [file limits](https://developers.cloudflare.com/workers/platform/limits/), [static asset billing](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/).
 
 ### Activation handoff
 
-The initial deployment is live at https://dcuo-wiki.com. The initial Cloudflare Workers Build used this repository on main, with Node 24 and a dedicated build token. Cloudflare now reports the Git account disconnected, so automatic updates require GitHub reconnection. Preview builds are disabled. The custom domain is declared in wrangler.jsonc; workers.dev and preview URLs are explicitly disabled in source, pending deployment of that follow-up configuration. No paid plan was activated.
+The initial deployment is live at https://dcuo-wiki.com. The initial Cloudflare Workers Build used this repository on main, with Node 24 and a dedicated build token. The owner corrected GitHub installation access; Cloudflare no longer reports the Git account disconnected. The next push will verify automatic updates. Preview builds are disabled. The custom domain is declared in wrangler.jsonc; workers.dev and preview URLs are explicitly disabled in source, pending deployment of that follow-up configuration. No paid plan was activated.
 
 For recreating this setup: In Cloudflare Workers & Pages, create a Worker from the GitHub repository `ChrisTitusTech/dcuo-wiki`, select `main`, and use the build/deploy commands above. Keep the free plan. After the first successful deployment, attach `dcuo-wiki.com` under the Worker's custom domains. Confirm there is no conflicting existing DNS record before replacing anything.
 
@@ -79,8 +79,12 @@ Do not replace the build command with plain `astro build`: that would skip publi
 
 ## Rollback and refresh
 
-Revert the offending commit on main and let Cloudflare rebuild, or restore a previous successful deployment in Cloudflare. Content updates are reviewed commits; no scheduled crawling is enabled. Content classification, automated enrichment, media mirroring, and live hosting activation remain future milestones.
+Revert the offending commit on main and let Cloudflare rebuild, or restore a previous successful deployment in Cloudflare. Content updates are reviewed commits; no scheduled crawling is enabled. Content classification, automated enrichment, media mirroring, and player-account activation remain future milestones.
 
 ## Attribution
 
 Article text is condensed and adapted from DC Universe Online Wiki contributors on Fandom. Each article links its source and contributor history. Adaptations retain the applicable source CC-BY-SA license; see https://www.fandom.com/licensing and per-source exceptions. This is not a blanket license for game imagery, trademarks, or repository code. Map screenshots are linked to their file pages, not redistributed. This fan site is unaffiliated with DC, Daybreak, or Fandom.
+
+## Player accounts
+
+Discord sign-in, public character profiles, optional screenshots, and pending wiki suggestions are implemented but await provider/database activation. The owner selected exact Census character-name matching as sufficient; this confirms a public character record, not ownership. Server checks prevent contributions without a Census match and recheck Census at submission. See [account setup and acceptance checks](docs/ACCOUNTS.md). Until activated, the account page explains its unavailable state and existing wiki guides remain readable.

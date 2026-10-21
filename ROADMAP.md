@@ -65,3 +65,13 @@ Implemented and locally validated. See VALIDATION.md for tests, independent revi
 - Bulk content review remains unfinished. This is the reviewed starter site, not the full 28,636-candidate wiki.
 
 Git automation blocker: Cloudflare reports the Git account disconnected after the initial manual build. GitHub sign-in is required to inspect/reconnect the installation. The site is live, but automatic deploy-on-push and deployment of commit 4f7f0e4 remain pending.
+
+## Player accounts increment
+
+- Owner selected Discord sign-in, character details, and an optional screenshot.
+- Owner explicitly chose Census character-name matching as sufficient, without ownership challenges. This does not establish that a Discord user owns the character; UI labels this as Census matched.
+- Added account/profile UI, Discord OAuth, D1 schema, exact-name Census matching, bounded screenshots, and pending contribution review queue. Account features fail closed until production bindings and provider secrets are configured.
+- Activation instructions and privacy/operational limitations are in docs/ACCOUNTS.md. Real Discord/Census/D1 production acceptance remains pending. No paid plan activated.
+- GitHub installation was missing this repository. The change is prepared, and the owner chose to save it themselves; deployment-on-push still needs verification after that save.
+
+The owner saved GitHub installation access. Cloudflare settings no longer report a disconnected Git account; verify the next push-triggered deployment.

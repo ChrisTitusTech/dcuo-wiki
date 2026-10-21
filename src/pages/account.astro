@@ -1,0 +1,146 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Your player profile"
+  description="Sign in with Discord, find your DCUO character, and contribute to the wiki."
+>
+  <section class="prose account">
+    <p class="eyebrow">PLAYER COMMUNITY</p>
+    <h1>Your player profile</h1>
+    <p>
+      Sign in with Discord and match your character's name in Daybreak Census to
+      suggest wiki additions. A Census match confirms a listed character, not
+      ownership of that character.
+    </p>
+    <p id="account-status" role="status" aria-live="polite">
+      Checking sign-in availability...
+    </p>
+    <div id="signed-out" hidden>
+      <a class="button" href="/api/auth/discord">
+        Sign in with Discord
+      </a>
+      <p>
+        We request your Discord identity only, without email or server access.
+      </p>
+    </div>
+    <div id="signed-in" hidden>
+      <p>
+        Signed in as <strong id="display-name"></strong>.{" "}
+        <button id="logout">Sign out</button>
+      </p>
+      <section class="account-card">
+        <h2>Find your character</h2>
+        <form id="character-search">
+          <label>
+            Exact character name{" "}
+            <input name="name" required maxlength="64" autocomplete="off" />
+          </label>
+          <button>Search Census</button>
+        </form>
+        <form id="profile-form" hidden>
+          <label>
+            Matching character <select name="character" required></select>
+          </label>
+          <label>
+            About your character (optional){" "}
+            <textarea name="bio" maxlength="500" rows="3"></textarea>
+          </label>
+          <p>
+            Saving publishes your character name, world, Census stats, and
+            description on your shareable profile. Your Discord identity stays
+            private.
+          </p>
+          <button>Save player profile</button>
+        </form>
+        <div id="profile-summary" hidden>
+          <p id="match-status"></p>
+          <p>
+            <a id="profile-link">View your public profile</a>
+          </p>
+          <form id="screenshot-form">
+            <label>
+              Optional screenshot{" "}
+              <input
+                type="file"
+                name="image"
+                accept="image/png,image/jpeg"
+                required
+              />
+            </label>
+            <p>
+              Your screenshot will be public. Choose an image without private
+              chat or personal information. Images are resized before upload.
+            </p>
+            <button>Upload screenshot</button>
+          </form>
+          <button id="remove-screenshot" hidden>
+            Remove screenshot
+          </button>
+        </div>
+      </section>
+      <section class="account-card">
+        <h2>Suggest a wiki addition</h2>
+        <p id="contribution-lock">
+          Match a character in Census to unlock submissions.
+        </p>
+        <form id="contribution-form" hidden>
+          <label>
+            Wiki page title <input name="page" required maxlength="120" />
+          </label>
+          <label>
+            Your addition or correction{" "}
+            <textarea
+              name="suggestion"
+              required
+              minlength="30"
+              maxlength="10000"
+              rows="7"
+            ></textarea>
+          </label>
+          <label>
+            Sources or in-game evidence{" "}
+            <textarea
+              name="sources"
+              required
+              minlength="10"
+              maxlength="2000"
+              rows="3"
+            ></textarea>
+          </label>
+          <p>
+            For quests, include map locations where available and videos that
+            explicitly cover the quest. All submissions wait for editorial
+            review.
+          </p>
+          <button>Submit for review</button>
+        </form>
+        <h3>Your recent submissions</h3>
+        <div id="my-submissions"></div>
+      </section>
+      <section id="moderation" class="account-card" hidden>
+        <h2>Review queue</h2>
+        <p>
+          Review sources and publish accepted changes through the repository.
+          Mark reviewed only after the editorial work is finished; this button
+          does not publish pages.
+        </p>
+        <div id="review-queue"></div>
+      </section>
+    </div>
+    <h2>Account privacy</h2>
+    <p>
+      We store your Discord identifier and username for sign-in, a seven-day
+      session, your saved profile, and submissions. Discord access tokens are
+      discarded after sign-in. Your optional screenshot and character
+      description are public; contributions are visible to you and moderators
+      until editorial publication.
+    </p>
+    <noscript>
+      JavaScript is needed for player accounts. Wiki articles remain readable
+      without it.
+    </noscript>
+  </section>
+  <script src="../scripts/account.ts"></script>
+</Layout>

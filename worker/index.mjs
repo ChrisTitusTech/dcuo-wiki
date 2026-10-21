@@ -1,0 +1,454 @@
+import {
+  HttpError,
+  now,
+  random,
+  hash,
+  cookie,
+  setCookie,
+  json,
+  bodyJson,
+  boundedBody,
+  textField,
+  imageType,
+} from "./security.mjs";
+import { searchCharacters, matchCharacter } from "./census.mjs";
+const SESSION = "__Host-dcuo-session",
+  STATE = "__Host-dcuo-state";
+const WEEK = 7 * 86400;
+const ready = (env) =>
+  !!(env.DB && env.DISCORD_CLIENT_ID && env.DISCORD_CLIENT_SECRET);
+const moderator = (env, user) =>
+  (env.DISCORD_MODERATOR_IDS || "")
+    .split(",")
+    .map((v) => v.trim())
+    .includes(user.discord_id);
+const stmt = (env, sql, ...args) => env.DB.prepare(sql).bind(...args);
+async function limit(env, key, maximum, seconds) {
+  const bucket = Math.floor(now() / seconds);
+  const row = await stmt(
+    env,
+    `INSERT INTO rate_limits(key,count,expires_at) VALUES (?,1,?)
+    ON CONFLICT(key) DO UPDATE SET count=count+1 RETURNING count`,
+    `${key}:${bucket}`,
+    (bucket + 1) * seconds,
+  ).first();
+  if (row.count > maximum)
+    throw new HttpError(429, "Too many attempts. Please wait and try again.");
+}
+async function session(request, env) {
+  const token = cookie(request, SESSION);
+  if (!/^[a-f0-9]{64}$/.test(token))
+    throw new HttpError(401, "Sign in with Discord first.");
+  const user = await stmt(
+    env,
+    `SELECT users.* FROM sessions JOIN users ON users.id=sessions.user_id
+    WHERE token_hash=? AND expires_at>?`,
+    await hash(token),
+    now(),
+  ).first();
+  if (!user)
+    throw new HttpError(401, "Your session has expired. Sign in again.");
+  return user;
+}
+function redirect(location, cookies = []) {
+  const headers = new Headers({
+    Location: location,
+    "Cache-Control": "no-store",
+    "Referrer-Policy": "no-referrer",
+  });
+  for (const c of cookies) headers.append("Set-Cookie", c);
+  return new Response(null, { status: 302, headers });
+}
+async function oauth(request, env, path, fetcher) {
+  const origin = env.SITE_ORIGIN || "https://dcuo-wiki.com";
+  const redirectUri = `${origin}/api/auth/callback`;
+  if (path === "/api/auth/discord") {
+    await limit(
+      env,
+      `login:${await hash(request.headers.get("CF-Connecting-IP") || "local")}`,
+      20,
+      600,
+    );
+    const state = random();
+    await stmt(
+      env,
+      "INSERT INTO oauth_states(token_hash,expires_at,page_title) VALUES (?,?,?)",
+      await hash(state),
+      now() + 600,
+      (new URL(request.url).searchParams.get("page") || "").slice(0, 120),
+    ).run();
+    const target = new URL("https://discord.com/oauth2/authorize");
+    target.search = new URLSearchParams({
+      client_id: env.DISCORD_CLIENT_ID,
+      redirect_uri: redirectUri,
+      response_type: "code",
+      scope: "identify",
+      state,
+    }).toString();
+    return redirect(target.toString(), [setCookie(STATE, state, 600)]);
+  }
+  const url = new URL(request.url),
+    state = url.searchParams.get("state");
+  if (
+    !state ||
+    !/^[a-f0-9]{64}$/.test(state) ||
+    cookie(request, STATE) !== state
+  )
+    throw new HttpError(
+      400,
+      "Sign-in expired or invalid. Start again from your player profile.",
+    );
+  // DELETE RETURNING consumes the nonce atomically, including denied sign-ins.
+  const nonce = await stmt(
+    env,
+    "DELETE FROM oauth_states WHERE token_hash=? AND expires_at>? RETURNING token_hash,page_title",
+    await hash(state),
+    now(),
+  ).first();
+  if (!nonce)
+    throw new HttpError(400, "Sign-in expired or already used. Start again.");
+  if (url.searchParams.has("error"))
+    return redirect("/account/?login=cancelled", [setCookie(STATE, "", 0)]);
+  if (
+    url.searchParams.has("iss") &&
+    url.searchParams.get("iss") !== "https://discord.com"
+  )
+    throw new HttpError(400, "Unexpected sign-in provider.");
+  const code = url.searchParams.get("code");
+  if (!code || code.length > 4096)
+    throw new HttpError(400, "Missing sign-in code.");
+  let token, identity;
+  try {
+    const res = await fetcher("https://discord.com/api/oauth2/token", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        client_id: env.DISCORD_CLIENT_ID,
+        client_secret: env.DISCORD_CLIENT_SECRET,
+        grant_type: "authorization_code",
+        code,
+        redirect_uri: redirectUri,
+      }),
+      signal: AbortSignal.timeout(10000),
+    });
+    token = await res.json();
+    if (!res.ok || typeof token.access_token !== "string") throw new Error();
+    const who = await fetcher("https://discord.com/api/users/@me", {
+      headers: { Authorization: `Bearer ${token.access_token}` },
+      signal: AbortSignal.timeout(10000),
+    });
+    identity = await who.json();
+    if (
+      !who.ok ||
+      !/^\d{1,30}$/.test(identity.id) ||
+      typeof identity.username !== "string"
+    )
+      throw new Error();
+  } catch {
+    throw new HttpError(502, "Discord sign-in failed. Please start again.");
+  } finally {
+    if (typeof token?.access_token === "string") {
+      // No Discord tokens are retained after identity lookup.
+      try {
+        await fetcher("https://discord.com/api/oauth2/token/revoke", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams({
+            client_id: env.DISCORD_CLIENT_ID,
+            client_secret: env.DISCORD_CLIENT_SECRET,
+            token: token.access_token,
+          }),
+          signal: AbortSignal.timeout(5000),
+        });
+      } catch {
+        /* Token is still discarded locally. */
+      }
+    }
+  }
+  const user = await stmt(
+    env,
+    `INSERT INTO users(id,discord_id,display_name,created_at) VALUES (?,?,?,?)
+    ON CONFLICT(discord_id) DO UPDATE SET display_name=excluded.display_name RETURNING id`,
+    crypto.randomUUID(),
+    identity.id,
+    identity.username.slice(0, 80),
+    now(),
+  ).first();
+  const tokenValue = random();
+  await env.DB.batch([
+    stmt(env, "DELETE FROM sessions WHERE expires_at<=?", now()),
+    stmt(env, "DELETE FROM oauth_states WHERE expires_at<=?", now()),
+    stmt(env, "DELETE FROM rate_limits WHERE expires_at<=?", now()),
+    stmt(
+      env,
+      "INSERT INTO sessions VALUES (?,?,?)",
+      await hash(tokenValue),
+      user.id,
+      now() + WEEK,
+    ),
+  ]);
+  return redirect(
+    nonce.page_title
+      ? `/account/?page=${encodeURIComponent(nonce.page_title)}`
+      : "/account/",
+    [setCookie(SESSION, tokenValue, WEEK), setCookie(STATE, "", 0)],
+  );
+}
+async function profile(env, id) {
+  const p = await stmt(
+    env,
+    "SELECT user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at,screenshot_type FROM profiles WHERE user_id=?",
+    id,
+  ).first();
+  if (!p) return null;
+  return {
+    id: p.user_id,
+    character: JSON.parse(p.census_json),
+    matchedAt: p.matched_at,
+    bio: p.bio,
+    updatedAt: p.updated_at,
+    screenshot: p.screenshot_type
+      ? `/api/profiles/${p.user_id}/screenshot`
+      : null,
+  };
+}
+export async function handle(request, env, fetcher = fetch) {
+  const url = new URL(request.url),
+    path = url.pathname;
+  if (!path.startsWith("/api/")) return env.ASSETS.fetch(request);
+  try {
+    if (path === "/api/status" && request.method === "GET")
+      return json({
+        login: ready(env),
+        census: !!env.CENSUS_SERVICE_ID && env.CENSUS_SERVICE_ID !== "example",
+      });
+    if (!ready(env))
+      throw new HttpError(
+        503,
+        "Player accounts are awaiting activation. Wiki guides remain available.",
+      );
+    const origin = env.SITE_ORIGIN || "https://dcuo-wiki.com";
+    if (
+      !["GET", "HEAD"].includes(request.method) &&
+      request.headers.get("Origin") !== origin
+    )
+      throw new HttpError(403, "Please submit from this website.");
+    if (
+      request.method === "GET" &&
+      ["/api/auth/discord", "/api/auth/callback"].includes(path)
+    )
+      return await oauth(request, env, path, fetcher);
+    const publicMatch = path.match(
+      /^\/api\/profiles\/([a-f0-9-]{36})(\/screenshot)?$/,
+    );
+    if (publicMatch && request.method === "GET") {
+      if (publicMatch[2]) {
+        const row = await stmt(
+          env,
+          "SELECT screenshot,screenshot_type FROM profiles WHERE user_id=?",
+          publicMatch[1],
+        ).first();
+        if (!row?.screenshot) throw new HttpError(404, "Screenshot not found.");
+        return new Response(new Uint8Array(row.screenshot), {
+          headers: {
+            "Content-Type": row.screenshot_type,
+            "Cache-Control": "no-store",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Security-Policy": "default-src 'none'; sandbox",
+            "Content-Disposition": 'inline; filename="character-screenshot"',
+          },
+        });
+      }
+      const p = await profile(env, publicMatch[1]);
+      if (!p) throw new HttpError(404, "Player profile not found.");
+      return json(p);
+    }
+    const user = await session(request, env);
+    if (path === "/api/me" && request.method === "GET")
+      return json({
+        name: user.display_name,
+        profile: await profile(env, user.id),
+        moderator: moderator(env, user),
+      });
+    if (path === "/api/auth/logout" && request.method === "POST") {
+      await stmt(
+        env,
+        "DELETE FROM sessions WHERE token_hash=?",
+        await hash(cookie(request, SESSION)),
+      ).run();
+      const result = json({ ok: true });
+      result.headers.set("Set-Cookie", setCookie(SESSION, "", 0));
+      return result;
+    }
+    if (path === "/api/characters" && request.method === "GET") {
+      await limit(env, `census:${user.id}`, 15, 60);
+      return json({
+        characters: await searchCharacters(
+          env,
+          url.searchParams.get("name"),
+          fetcher,
+        ),
+      });
+    }
+    if (path === "/api/profile" && request.method === "POST") {
+      await limit(env, `profile:${user.id}`, 10, 600);
+      const b = await bodyJson(request),
+        bio = textField(b.bio ?? "", "About your character", 0, 500);
+      const c = await matchCharacter(env, b.characterId, b.name, fetcher);
+      await stmt(
+        env,
+        `INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES (?,?,?,?,?,?,?,?)
+        ON CONFLICT(user_id) DO UPDATE SET character_id=excluded.character_id,character_name=excluded.character_name,world_id=excluded.world_id,census_json=excluded.census_json,matched_at=excluded.matched_at,bio=excluded.bio,updated_at=excluded.updated_at,
+        screenshot=CASE WHEN profiles.character_id=excluded.character_id THEN profiles.screenshot ELSE NULL END,
+        screenshot_type=CASE WHEN profiles.character_id=excluded.character_id THEN profiles.screenshot_type ELSE NULL END`,
+        user.id,
+        c.character_id,
+        c.name,
+        c.world_id,
+        JSON.stringify(c),
+        now(),
+        bio,
+        now(),
+      ).run();
+      return json({ profile: await profile(env, user.id) });
+    }
+    if (
+      path === "/api/profile/screenshot" &&
+      ["POST", "DELETE"].includes(request.method)
+    ) {
+      await limit(env, `image:${user.id}`, 10, 600);
+      const p = await profile(env, user.id);
+      if (!p) throw new HttpError(403, "Match your character first.");
+      if (request.method === "DELETE")
+        await stmt(
+          env,
+          "UPDATE profiles SET screenshot=NULL,screenshot_type=NULL,updated_at=? WHERE user_id=?",
+          now(),
+          user.id,
+        ).run();
+      else {
+        const bytes = await boundedBody(request, 256 * 1024),
+          type = imageType(bytes);
+        await stmt(
+          env,
+          "UPDATE profiles SET screenshot=?,screenshot_type=?,updated_at=? WHERE user_id=?",
+          bytes.buffer,
+          type,
+          now(),
+          user.id,
+        ).run();
+      }
+      return json({ profile: await profile(env, user.id) });
+    }
+    if (path === "/api/contributions" && request.method === "POST") {
+      await limit(env, `contribute:${user.id}`, 5, 3600);
+      const p = await profile(env, user.id);
+      if (!p)
+        throw new HttpError(
+          403,
+          "Match your character in Census before contributing.",
+        );
+      const b = await bodyJson(request),
+        slug = textField(b.page, "Page title", 1, 120);
+      if (!/^[\p{L}\p{N} _'().:-]+$/u.test(slug))
+        throw new HttpError(400, "Use a page title, not a URL.");
+      const suggestion = textField(
+          b.suggestion,
+          "Suggested content",
+          30,
+          10000,
+        ),
+        sources = textField(
+          b.sources,
+          "Supporting sources or in-game evidence",
+          10,
+          2000,
+        );
+      await matchCharacter(
+        env,
+        p.character.character_id,
+        p.character.name,
+        fetcher,
+      );
+      const id = crypto.randomUUID();
+      // Bind the insert to the same matched profile even if a concurrent request changes it.
+      const saved = await stmt(
+        env,
+        `INSERT INTO contributions(id,user_id,character_id,character_name,page_slug,suggestion,sources,created_at)
+        SELECT ?,user_id,character_id,character_name,?,?,?,? FROM profiles WHERE user_id=? AND character_id=? AND character_name=?`,
+        id,
+        slug,
+        suggestion,
+        sources,
+        now(),
+        user.id,
+        p.character.character_id,
+        p.character.name,
+      ).run();
+      if (saved.meta.changes !== 1)
+        throw new HttpError(
+          409,
+          "Your character changed. Please submit again.",
+        );
+      return json({ id, status: "pending" }, 201);
+    }
+    if (path === "/api/contributions" && request.method === "GET")
+      return json({
+        contributions: (
+          await stmt(
+            env,
+            "SELECT id,page_slug,suggestion,sources,status,created_at FROM contributions WHERE user_id=? ORDER BY created_at DESC LIMIT 50",
+            user.id,
+          ).all()
+        ).results,
+      });
+    if (path === "/api/moderation" && request.method === "GET") {
+      if (!moderator(env, user))
+        throw new HttpError(403, "Moderator access required.");
+      return json({
+        contributions: (
+          await stmt(
+            env,
+            "SELECT id,character_name,page_slug,suggestion,sources,status,created_at FROM contributions WHERE status='pending' ORDER BY created_at LIMIT 100",
+          ).all()
+        ).results,
+      });
+    }
+    if (path === "/api/moderation" && request.method === "POST") {
+      if (!moderator(env, user))
+        throw new HttpError(403, "Moderator access required.");
+      const b = await bodyJson(request);
+      if (
+        !["reviewed", "rejected"].includes(b.status) ||
+        typeof b.id !== "string"
+      )
+        throw new HttpError(400, "Choose a review decision.");
+      await stmt(
+        env,
+        "UPDATE contributions SET status=?,reviewed_by=?,reviewed_at=? WHERE id=? AND status='pending'",
+        b.status,
+        user.id,
+        now(),
+        b.id,
+      ).run();
+      return json({ ok: true });
+    }
+    throw new HttpError(404, "Endpoint not found.");
+  } catch (error) {
+    if (error instanceof HttpError)
+      return json({ error: error.message }, error.status);
+    // Do not expose OAuth secrets, Census service IDs, SQL or profile data in errors/logs.
+    return json(
+      {
+        error:
+          "The account service is temporarily unavailable. Please try again later.",
+      },
+      503,
+    );
+  }
+}
+export default {
+  fetch(request, env) {
+    return handle(request, env);
+  },
+};

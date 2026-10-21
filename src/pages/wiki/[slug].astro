@@ -150,4 +150,9 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       </aside>
     </article>
   </div>
+  <p class="prose">
+    <a href={`/account/?page=${encodeURIComponent(article.title)}`}>
+      Suggest an addition or correction
+    </a>
+  </p>
 </Layout>
