@@ -114,3 +114,25 @@ Powers expanded from its pilot summary to the full source-page section scope,
 with inline R2 artwork and original live revisions preserved. Before another
 broad import, fill the Collections, Artifacts, Investigations and Feats gaps
 recorded in `data/coverage-audit.json` and `docs/CONTENT-COVERAGE.md`.
+
+## Active quest-first completion pass (2026-10-21)
+
+Owner requested sustained implementation and deployment, with quest walkthroughs,
+map points and exact-match YouTube guides ahead of reference directories. This
+supersedes the reference-first order in the previous coverage correction.
+
+- [ ] Complete existing three quests and four mapped location/collectible guides:
+  missing route images, objectives/context, exact-name video research, chapters.
+- [ ] Expand a connected set of additional quest walkthroughs with sourced maps
+  and matching videos; record researched exclusions instead of publishing stubs.
+- [ ] Add further mapped collectible guides with source-complete node coverage.
+- [ ] Restore Collections, Artifacts, Investigations and Feats reference coverage,
+  then remaining Equipment/Weapon Mastery details.
+- [ ] Convert individual power ability lists after the practical guide work.
+- [ ] Resume bounded inventory imports with section/image coverage evidence.
+
+Each completed batch must preserve live revisions, copy/verify images through R2,
+pass content/build/browser/Cloudflare checks and Codex review, then push main and
+verify production. Completion means the recorded scope passed, not that every
+one of the 28,636 candidate URLs has been converted. That original full-wiki
+objective remains open until candidate disposition and coverage are established.
