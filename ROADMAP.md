@@ -63,3 +63,5 @@ Implemented and locally validated. See VALIDATION.md for tests, independent revi
 - Connected the existing root domain dcuo-wiki.com to production. HTTPS now serves all 12 reviewed guides. No paid subscription was activated.
 - Added the custom-domain route to wrangler.jsonc and explicitly disabled workers.dev and preview URLs to preserve intended routing on future deployments.
 - Bulk content review remains unfinished. This is the reviewed starter site, not the full 28,636-candidate wiki.
+
+Git automation blocker: Cloudflare reports the Git account disconnected after the initial manual build. GitHub sign-in is required to inspect/reconnect the installation. The site is live, but automatic deploy-on-push and deployment of commit 4f7f0e4 remain pending.
