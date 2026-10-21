@@ -977,3 +977,14 @@ tr:nth-child(even) {
   padding: 12px;
   border: 1px solid var(--line);
 }
+.section-edit {
+  float: right;
+  margin: 5px 0 5px 12px;
+  font-size: 12px;
+}
+.article-editor select[size] {
+  min-height: 150px;
+}
+.article-editor select[size] option {
+  padding: 6px 8px;
+}

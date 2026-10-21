@@ -25,6 +25,7 @@ const endpoint = `/api/articles/${encodeURIComponent(root.dataset.slug!)}`;
 const key = `wiki-edit:${root.dataset.slug}`;
 const field = (name: string) =>
   form.elements.namedItem(name) as HTMLTextAreaElement;
+let requestedPart: string | undefined;
 let loading = false,
   busy = false;
 function setBusy(value: boolean) {
@@ -129,6 +130,12 @@ async function start() {
   try {
     const data = await api(endpoint);
     parts = data.parts;
+    selected = String(
+      Math.max(
+        0,
+        parts.findIndex((part) => part.id === "section-0"),
+      ),
+    );
     try {
       const saved = JSON.parse(sessionStorage.getItem(key) || "null");
       if (
@@ -151,6 +158,11 @@ async function start() {
         selected = String(saved.selected);
       }
     } catch {}
+    if (requestedPart) {
+      const index = parts.findIndex((part) => part.id === requestedPart);
+      if (index >= 0) selected = String(index);
+      requestedPart = undefined;
+    }
     loaded = true;
     form.hidden = false;
     select.replaceChildren(
@@ -183,12 +195,26 @@ if (location.hash === "#article-editor") {
 root.addEventListener("toggle", () => {
   if (root.hasAttribute("open")) start();
 });
-document.querySelectorAll('a[href="#article-editor"]').forEach((link) =>
-  link.addEventListener("click", () => {
-    root.setAttribute("open", "");
-    start();
-  }),
-);
+document
+  .querySelectorAll<HTMLAnchorElement>('a[href="#article-editor"]')
+  .forEach((link) =>
+    link.addEventListener("click", (event) => {
+      if (busy) {
+        event.preventDefault();
+        return;
+      }
+      requestedPart = link.dataset.editPart || "section-0";
+      if (loaded) {
+        remember();
+        const index = parts.findIndex((part) => part.id === requestedPart);
+        if (index >= 0) selected = String(index);
+        requestedPart = undefined;
+        show();
+      }
+      root.setAttribute("open", "");
+      start();
+    }),
+  );
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!eligible || !loaded || busy) return;

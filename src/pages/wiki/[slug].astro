@@ -45,6 +45,14 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
     <article>
       {article.sections.map((s, i) => (
         <section id={`section-${i}`}>
+          <a
+            class="section-edit"
+            href="#article-editor"
+            data-edit-part={`section-${i}`}
+            aria-label={`Edit ${s.title}`}
+          >
+            Edit section
+          </a>
           <h2>{s.title}</h2>
           <div data-live-part={`section-${i}`}>
             <ul>
@@ -54,39 +62,56 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
             </ul>
           </div>
           {s.table && (
-            <div
-              data-live-part={`table-${i}`}
-              class="table-scroll"
-              tabindex="0"
-              role="region"
-              aria-label={s.table.caption}
-            >
-              <table>
-                <caption>{s.table.caption}</caption>
-                <thead>
-                  <tr>
-                    {s.table.columns.map((c) => (
-                      <th scope="col">{c}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {s.table.rows.map((row) => (
+            <>
+              <a
+                class="section-edit"
+                href="#article-editor"
+                data-edit-part={`table-${i}`}
+                aria-label={`Edit ${s.title} table`}
+              >
+                Edit table
+              </a>
+              <div
+                data-live-part={`table-${i}`}
+                class="table-scroll"
+                tabindex="0"
+                role="region"
+                aria-label={s.table.caption}
+              >
+                <table>
+                  <caption>{s.table.caption}</caption>
+                  <thead>
                     <tr>
-                      {row.map((cell) => (
-                        <td>{cell}</td>
+                      {s.table.columns.map((c) => (
+                        <th scope="col">{c}</th>
                       ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                    {s.table.rows.map((row) => (
+                      <tr>
+                        {row.map((cell) => (
+                          <td>{cell}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
           )}
         </section>
       ))}
       {article.location && (
         <section id="location">
           <div class="eyebrow">FIND YOUR WAY</div>
+          <a
+            class="section-edit"
+            href="#article-editor"
+            data-edit-part="location-maps"
+          >
+            Edit map links
+          </a>
           <h2 data-live-part="location-label">{article.location.label}</h2>
           <p>
             Precision:{" "}
@@ -115,12 +140,26 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       )}
       {article.locationLimitation && (
         <section>
+          <a
+            class="section-edit"
+            href="#article-editor"
+            data-edit-part="location-research"
+          >
+            Edit location research
+          </a>
           <h2>Location research</h2>
           <p data-live-part="location-research">{article.locationLimitation}</p>
         </section>
       )}
       {article.videoReview && (
         <section>
+          <a
+            class="section-edit"
+            href="#article-editor"
+            data-edit-part="videos"
+          >
+            Edit video walkthroughs
+          </a>
           <h2>Video walkthroughs</h2>
           <div data-live-part="videos">
             {article.videos?.length ? (

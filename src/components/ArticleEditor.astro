@@ -34,9 +34,19 @@ const parts = articleParts(article);
     it.
   </noscript>
   <form id="article-edit-form" hidden>
+    <p id="edit-help">
+      Select any article section below to edit its current content. Tables,
+      maps, and video links have their own entries. Each section publishes
+      separately.
+    </p>
     <label>
       Section to edit
-      <select id="edit-part" name="part">
+      <select
+        id="edit-part"
+        name="part"
+        size={Math.min(parts.length, 8)}
+        aria-describedby="edit-help"
+      >
         {parts.map((part, i) => (
           <option value={i}>{part.title}</option>
         ))}

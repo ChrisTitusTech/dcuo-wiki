@@ -30,6 +30,16 @@ test("live D1 revisions render safely in articles, search, and history", async (
   );
   await page.getByRole("link", { name: "Edit this page", exact: true }).click();
   await expect(page.getByLabel("Proposed text")).toHaveValue(
+    /Choose your power set during character creation/,
+  );
+  await page
+    .getByRole("link", { name: "Edit Tank power sets", exact: true })
+    .click();
+  await expect(page.getByLabel("Proposed text")).toHaveValue(
+    /Fire, Ice, Earth, Rage, and Atomic/,
+  );
+  await page.getByLabel("Section to edit").selectOption({ label: "Summary" });
+  await expect(page.getByLabel("Proposed text")).toHaveValue(
     "Live fixture power correction <script>bad()</script>",
   );
   await expect(
