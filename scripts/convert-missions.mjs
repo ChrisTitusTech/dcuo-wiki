@@ -44,13 +44,22 @@ export function convertMission(cache, record) {
     for (const c of n.childNodes || []) walk(c);
   }
   walk(parse(cache.html));
-  const sections = converted.sections
+  let sections = converted.sections
     .map((s) => ({
       ...s,
       title: cleanTitle(s.title),
-      items: s.items.filter((x) => !maintenance.test(x) && !/^n\/a$/i.test(x)),
+      items: s.items.filter(
+        (x) =>
+          !maintenance.test(x) &&
+          !/^n\/a$/i.test(x) &&
+          !/^Source-listed entries\./.test(x),
+      ),
     }))
-    .filter((s) => !/^Contents$/i.test(s.title) && s.items.length);
+    .filter(
+      (s) =>
+        !/^Contents$/i.test(s.title) &&
+        (s.items.length || s.images?.length || s.references?.length || s.table),
+    );
   const images = converted.images.filter(
     (i) =>
       imageNames.has(
@@ -67,6 +76,10 @@ export function convertMission(cache, record) {
     if (s.images) s.images = s.images.filter((i) => imagePages.has(i.url));
     if (!s.images?.length) delete s.images;
   }
+  sections = sections.filter(
+    (s) =>
+      s.items.length || s.images?.length || s.references?.length || s.table,
+  );
   const intro =
     sections.find((s) => s.title === "Source overview") || sections[0];
   const summary = (
@@ -85,7 +98,7 @@ export function convertMission(cache, record) {
   const objectiveText = objectiveSections.flatMap((s) => s.items).join(" ");
   // Location labels are exact excerpts from source prose, never invented coordinates.
   const areas =
-    /\b(?:Bottled D\.C\.|Titans Island|Titans Tower|War-Torn Village|War-Torn Area 51|Doomed Washington, D\.C\.|Botanical Gardens|Knightsdome|Ace Chemicals|Steelworks|Arkham Asylum|Coast City|Gorilla Island|H\.I\.V\.E\. Moon Base|Oan Sciencells|Oolong Island|Stryker.s Island Penitentiary|League of Assassins Stronghold|Cursed Gotham City|Chaos Gotham|Central City(?: Starro Deluge Zone)?|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|South Gotham|Otisburg|Chinatown|Historic District|Tomorrow District|Suicide Slums|Old Gotham|Gotham Wastelands|Gotham Under Siege|New Genesis|Patchwork Themyscira|Flashpoint Gotham City|Infernal Kahndaq|Dakota City|Doomed Metropolis|Amusement Mile|Cape Carmine|Robinson Park|Tricorner.s Yard|Crime Alley|University of Metropolis|Science Spire|Gotham University)|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|Chinatown|Burnley) (?:Police Station|MPD|Nightclub)|(?:Gotham City|Metropolis|Atlantis|Themyscira|Washington D\.C\.|Kahndaq|Thanagar|Apokolips|House of Legends|Hall of Doom|Watchtower|Area 51|Royal Hideout))(?=\W|$)/gi;
+    /\b(?:Death Metal Washington, D\.C\.|Arkham Island|Downtown Metropolis Battlezone|31st Century: New Earth|Earth 3 Gotham|Metropolis Anti-Matter Invasion Zone|Apokoliptic Gotham City|Old Gotham Subway|Main Observation Deck|Monitor Womb|Glenmorgan Square|8th Precinct|Oblivion Bar|Gotham Mercy General Hospital|Mogo|Ranx.s Command Center|Command and Control Center|Frozen Mogo|HIVE Base|Centennial Park|Water Treatment Facility|Earth 3: The Panopticon|Lair of the Spectre|Lust.s Territory|East End Regal Hotel|Shadowlands|Monarch Playing Card Company|Bottled D\.C\.|Titans Island|Titans Tower|War-Torn Village|War-Torn Area 51|Doomed Washington, D\.C\.|Botanical Gardens|Knightsdome|Ace Chemicals|Steelworks|Arkham Asylum|Coast City|Gorilla Island|H\.I\.V\.E\. Moon Base|Oan Sciencells|Oolong Island|Stryker.s Island Penitentiary|League of Assassins Stronghold|Cursed Gotham City|Chaos Gotham|Central City(?: Starro Deluge Zone)?|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|South Gotham|Otisburg|Chinatown|Historic District|Tomorrow District|Suicide Slums|Old Gotham|Gotham Wastelands|Gotham Under Siege|New Genesis|Patchwork Themyscira|Flashpoint Gotham City|Infernal Kahndaq|Dakota City|Doomed Metropolis|Amusement Mile|Cape Carmine|Robinson Park|Tricorner.s Yard|Crime Alley|University of Metropolis|Science Spire|Gotham University)|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|Chinatown|Burnley) (?:Police Station|MPD|Nightclub)|(?:Gotham City|Metropolis|Atlantis|Themyscira|Washington D\.C\.|Kahndaq|Thanagar|Apokolips|House of Legends|Hall of Doom|Watchtower|Area 51|Royal Hideout))(?=\W|$)/gi;
   const objectiveLocations = sections
     .filter((s) => /^Objectives?$/i.test(s.title))
     .flatMap((s) => s.items);
@@ -217,7 +230,12 @@ export function convertMission(cache, record) {
     words,
     objectiveWords: objectiveText.split(/\s+/).filter(Boolean).length,
     locationExcerpts: unique,
-    canonical: classifyURL(cache.metadata?.url || record.url).url,
+    canonical: classifyURL(
+      cache.metadata?.ogUrl ||
+        cache.metadata?.["og:url"] ||
+        cache.metadata?.url ||
+        record.url,
+    ).url,
     reasons,
   };
 }

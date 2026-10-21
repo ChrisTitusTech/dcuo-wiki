@@ -1,11 +1,11 @@
 {
-  "createdAt": "2026-10-21T23:22:39.012Z",
+  "createdAt": "2026-10-21T23:24:06.411Z",
   "records": [
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Missions/Heroes",
       "slug": "Missions_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Missions/Heroes",
-      "words": 416,
+      "words": 383,
       "objectiveWords": 0,
       "maps": 0,
       "images": 0,
@@ -15,7 +15,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Missions/Villains",
       "slug": "Missions_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Missions/Villains",
-      "words": 893,
+      "words": 860,
       "objectiveWords": 0,
       "maps": 0,
       "images": 0,
@@ -57,7 +57,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/A_Clean_Cover-Up",
       "slug": "A_Clean_Cover-Up",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/A_Clean_Cover-Up",
-      "words": 148,
+      "words": 137,
       "objectiveWords": 56,
       "maps": 0,
       "images": 0,
@@ -308,7 +308,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/A_World_Past_Hope_And_Fear",
       "words": 131,
       "objectiveWords": 22,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -818,7 +818,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Anti-Matter_Anniversary",
       "words": 91,
       "objectiveWords": 9,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -829,7 +829,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Anti-Matter_Matters_(Heroes)",
       "words": 87,
       "objectiveWords": 24,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -840,7 +840,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Anti-Matter_Matters_(Villains)",
       "words": 87,
       "objectiveWords": 24,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -862,7 +862,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Apokoliptian_Apparatus",
       "words": 113,
       "objectiveWords": 18,
-      "location": "Apokolips / Gotham City",
+      "location": "Apokolips / Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -1001,6 +1001,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Artifacts_(Mission)",
       "words": 600,
       "objectiveWords": 0,
+      "location": "Oblivion Bar",
       "maps": 0,
       "images": 10,
       "reasons": []
@@ -1128,6 +1129,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Avian_Extermination",
       "words": 84,
       "objectiveWords": 39,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -1157,7 +1159,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down",
       "slug": "Bane_Brought_Down",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down",
-      "words": 133,
+      "words": 122,
       "objectiveWords": 41,
       "location": "East End",
       "maps": 0,
@@ -1190,7 +1192,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Bane%2C_Banished!",
       "slug": "Bane_Banished",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bane%2C_Banished!",
-      "words": 144,
+      "words": 133,
       "objectiveWords": 0,
       "location": "North Burnley",
       "maps": 0,
@@ -1247,6 +1249,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Batman's_Missions",
       "words": 93,
       "objectiveWords": 23,
+      "location": "Earth 3 Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1257,6 +1260,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bats_in_the_Belfry_(Mission)",
       "words": 90,
       "objectiveWords": 10,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -1289,7 +1293,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Beast_Taming",
       "words": 117,
       "objectiveWords": 22,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -1322,7 +1326,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Beasts_of_War",
       "words": 118,
       "objectiveWords": 22,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1416,6 +1420,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Birdbath_Buster",
       "words": 87,
       "objectiveWords": 37,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1511,6 +1516,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Blood_Runs_Cold",
       "words": 44,
       "objectiveWords": 8,
+      "location": "Gotham Mercy General Hospital",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1541,7 +1547,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounties",
       "slug": "Bounties",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounties",
-      "words": 1113,
+      "words": 1091,
       "objectiveWords": 0,
       "maps": 0,
       "images": 10,
@@ -1564,6 +1570,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Arkillo_(Mogo)",
       "words": 344,
       "objectiveWords": 0,
+      "location": "Mogo",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2352,7 +2359,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Check_In_with_Nightwing",
       "words": 137,
       "objectiveWords": 58,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2438,6 +2445,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Citizens_in_the_Shadows",
       "words": 97,
       "objectiveWords": 26,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2490,7 +2498,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Clinical_Strike",
       "slug": "Clinical_Strike",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Clinical_Strike",
-      "words": 312,
+      "words": 301,
       "objectiveWords": 168,
       "location": "Clinical Strike - source map",
       "maps": 1,
@@ -2523,7 +2531,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Clue_Three",
       "slug": "Clue_Three",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Clue_Three",
-      "words": 248,
+      "words": 237,
       "objectiveWords": 147,
       "location": "Otisburg",
       "maps": 0,
@@ -2568,6 +2576,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Cold_Contender",
       "words": 251,
       "objectiveWords": 213,
+      "location": "Gotham Mercy General Hospital",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2597,7 +2606,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Communication_Breakdown_(level_12)",
       "slug": "Communication_Breakdown_level_12",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Communication_Breakdown_(level_12)",
-      "words": 211,
+      "words": 200,
       "objectiveWords": 120,
       "maps": 0,
       "images": 1,
@@ -2642,7 +2651,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Confronting_the_General",
       "words": 321,
       "objectiveWords": 240,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2807,6 +2816,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Ghostly_Anomaly",
       "words": 412,
       "objectiveWords": 247,
+      "location": "Mogo",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2817,6 +2827,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Rescue_Mission",
       "words": 392,
       "objectiveWords": 115,
+      "location": "Mogo",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2827,6 +2838,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Searching_for_Survivors",
       "words": 696,
       "objectiveWords": 200,
+      "location": "Mogo",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2837,6 +2849,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Supply_Run",
       "words": 287,
       "objectiveWords": 90,
+      "location": "Mogo",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2847,6 +2860,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Tracking_Walker",
       "words": 182,
       "objectiveWords": 119,
+      "location": "Mogo",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2902,6 +2916,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Cyborg's_Missions",
       "words": 92,
       "objectiveWords": 22,
+      "location": "Earth 3 Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2977,6 +2992,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Daring_Rescue",
       "words": 413,
       "objectiveWords": 291,
+      "location": "Frozen Mogo",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2987,7 +3003,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Mission)",
       "words": 258,
       "objectiveWords": 134,
-      "location": "Apokolips",
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3029,7 +3045,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Shadows",
       "slug": "Dark_Shadows",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dark_Shadows",
-      "words": 304,
+      "words": 293,
       "objectiveWords": 170,
       "location": "Midtown",
       "maps": 0,
@@ -3157,6 +3173,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Death_Metal_Swan_Song",
       "words": 259,
       "objectiveWords": 158,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3199,7 +3216,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Deeper_Into_Doom",
       "words": 138,
       "objectiveWords": 113,
-      "location": "Hall of Doom",
+      "location": "Command and Control Center",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3232,6 +3249,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Deliberate_Acts_of_Violence",
       "words": 242,
       "objectiveWords": 109,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3400,6 +3418,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Don't_Mess_with_LexCorp!",
       "words": 145,
       "objectiveWords": 63,
+      "location": "HIVE Base",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3531,7 +3550,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Earth_3_Emergency_(Heroes)",
       "words": 73,
       "objectiveWords": 10,
-      "location": "Watchtower",
+      "location": "Watchtower / Earth 3 Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3542,7 +3561,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Earth_3_Emergency_(Villains)",
       "words": 77,
       "objectiveWords": 12,
-      "location": "Hall of Doom",
+      "location": "Hall of Doom / Earth 3 Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3563,6 +3582,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Echoes_of_Umbrax",
       "words": 115,
       "objectiveWords": 32,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -3792,7 +3812,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Arkham_Island!",
       "words": 111,
       "objectiveWords": 53,
-      "location": "Arkham Asylum",
+      "location": "Arkham Island",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -3803,7 +3823,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Downtown_Metropolis!",
       "words": 103,
       "objectiveWords": 39,
-      "location": "Chinatown",
+      "location": "Glenmorgan Square",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -3902,7 +3922,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis's_Centennial_Park!",
       "words": 115,
       "objectiveWords": 54,
-      "location": "Metropolis",
+      "location": "Centennial Park / Metropolis",
       "maps": 0,
       "images": 4,
       "reasons": []
@@ -4076,6 +4096,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Falling_STARs",
       "words": 198,
       "objectiveWords": 133,
+      "location": "Centennial Park",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4161,7 +4182,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Faustian_Desires",
       "slug": "Faustian_Desires",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Faustian_Desires",
-      "words": 197,
+      "words": 186,
       "objectiveWords": 104,
       "location": "Gotham University",
       "maps": 0,
@@ -4293,6 +4314,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fighting_the_Food_Chain",
       "words": 115,
       "objectiveWords": 33,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -4314,7 +4336,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Find_Big_Barda",
       "words": 137,
       "objectiveWords": 71,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -4466,7 +4488,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Flashpoint_Foes",
       "words": 92,
       "objectiveWords": 23,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -4574,6 +4596,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/From_Apex_to_Zenith",
       "words": 93,
       "objectiveWords": 41,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -4584,6 +4607,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Frostbitten",
       "words": 291,
       "objectiveWords": 98,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -4592,7 +4616,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Frozen_Assets",
       "slug": "Frozen_Assets",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Frozen_Assets",
-      "words": 253,
+      "words": 242,
       "objectiveWords": 97,
       "maps": 0,
       "images": 0,
@@ -4604,6 +4628,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Frozen_with_Fear",
       "words": 271,
       "objectiveWords": 101,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -4625,7 +4650,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fun_for_Girls_and_Boys",
       "words": 475,
       "objectiveWords": 211,
-      "location": "Watchtower / Hall of Doom",
+      "location": "Monitor Womb / Watchtower / Hall of Doom",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -4636,6 +4661,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fundamentals_of_Arkham_101",
       "words": 234,
       "objectiveWords": 14,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4989,6 +5015,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotta_Get_Up%2C_Gotta_Go!",
       "words": 113,
       "objectiveWords": 22,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5018,7 +5045,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Greed_(Mission)",
       "slug": "Greed_Mission",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Greed_(Mission)",
-      "words": 276,
+      "words": 265,
       "objectiveWords": 108,
       "location": "Midtown / Metropolis",
       "maps": 0,
@@ -5099,6 +5126,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hack-a-thon",
       "words": 107,
       "objectiveWords": 33,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5107,7 +5135,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Hail_Trigon!",
       "slug": "Hail_Trigon",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hail_Trigon!",
-      "words": 141,
+      "words": 130,
       "objectiveWords": 34,
       "maps": 0,
       "images": 0,
@@ -5202,7 +5230,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/He_Wants_a_Devolution",
       "slug": "He_Wants_a_Devolution",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/He_Wants_a_Devolution",
-      "words": 358,
+      "words": 347,
       "objectiveWords": 62,
       "location": "Metropolis",
       "maps": 0,
@@ -5258,7 +5286,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hellspore_Convoy",
       "words": 479,
       "objectiveWords": 348,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5332,6 +5360,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hoard_of_the_Batmage",
       "words": 296,
       "objectiveWords": 219,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5450,7 +5479,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hotel_Hell",
       "words": 113,
       "objectiveWords": 43,
-      "location": "East End",
+      "location": "East End Regal Hotel",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5585,7 +5614,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/In_Jacob_We_Lust",
       "words": 182,
       "objectiveWords": 56,
-      "location": "Gotham Wastelands",
+      "location": "Lust's territory / Gotham Wastelands",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5876,6 +5905,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lantern_Assistance",
       "words": 122,
       "objectiveWords": 41,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -5918,7 +5948,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lava_and_Brimstone",
       "words": 247,
       "objectiveWords": 131,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5940,6 +5970,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Legion_in_Need",
       "words": 129,
       "objectiveWords": 39,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5950,6 +5981,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Hunted_Heroes",
       "words": 130,
       "objectiveWords": 32,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -6047,6 +6079,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lighten_the_Load",
       "words": 101,
       "objectiveWords": 35,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -6101,7 +6134,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion_(Heroes)",
       "words": 294,
       "objectiveWords": 97,
-      "location": "Use the On Duty menu to queue for Long Live the Legion: Legion: HQ Orientaton under 4 Player and complete it",
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6247,6 +6280,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lust_At_First_Sight",
       "words": 177,
       "objectiveWords": 54,
+      "location": "Lust's Territory",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6257,7 +6291,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lust_Imp_Ire",
       "words": 149,
       "objectiveWords": 45,
-      "location": "Gotham Wastelands",
+      "location": "Lust's territory / Gotham Wastelands",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -6268,7 +6302,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lust_or_Combust",
       "words": 212,
       "objectiveWords": 101,
-      "location": "Gotham Wastelands",
+      "location": "Lust's territory / Gotham Wastelands",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6290,6 +6324,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Magic_Gone_Wild",
       "words": 102,
       "objectiveWords": 23,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6311,7 +6346,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Make_Them_Mad",
       "words": 282,
       "objectiveWords": 33,
-      "location": "Gotham City / Arkham Asylum",
+      "location": "Arkham Island",
       "maps": 0,
       "images": 5,
       "reasons": []
@@ -6388,6 +6423,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Meet_the_Robins",
       "words": 93,
       "objectiveWords": 32,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 4,
       "reasons": []
@@ -6517,7 +6553,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Melt_down",
       "words": 111,
       "objectiveWords": 28,
-      "location": "Metropolis",
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -6570,7 +6606,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Heroes)",
       "words": 231,
       "objectiveWords": 103,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6581,7 +6617,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Heroes)_(2017-2020)",
       "words": 267,
       "objectiveWords": 65,
-      "location": "Watchtower / Metropolis",
+      "location": "Watchtower / Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -6592,7 +6628,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Villains)",
       "words": 218,
       "objectiveWords": 103,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6603,7 +6639,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Villains)_(2017-2020)",
       "words": 256,
       "objectiveWords": 67,
-      "location": "Hall of Doom / Metropolis",
+      "location": "Hall of Doom / Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -6636,6 +6672,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Mordru's_Wild_Magic",
       "words": 126,
       "objectiveWords": 23,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -6783,6 +6820,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Nekron's_Raging_Night",
       "words": 342,
       "objectiveWords": 248,
+      "location": "Mogo",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6936,7 +6974,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/OMAC_Attack",
       "slug": "OMAC_Attack",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/OMAC_Attack",
-      "words": 226,
+      "words": 215,
       "objectiveWords": 117,
       "maps": 0,
       "images": 0,
@@ -7058,6 +7096,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Orbital_Apex",
       "words": 97,
       "objectiveWords": 35,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7210,7 +7249,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Para-Demonic_Purge",
       "words": 112,
       "objectiveWords": 19,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -7232,7 +7271,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Paradoxical_Punch-Up",
       "words": 85,
       "objectiveWords": 18,
-      "location": "Metropolis",
+      "location": "Metropolis Anti-Matter Invasion Zone",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -7265,6 +7304,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Paranormal_Paramedic",
       "words": 186,
       "objectiveWords": 95,
+      "location": "Centennial Park",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -7583,7 +7623,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Preventing_Apokolips",
       "words": 101,
       "objectiveWords": 8,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -7649,6 +7689,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/ProbeTek_in_Defect",
       "words": 107,
       "objectiveWords": 22,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -7790,6 +7831,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Quick_Chaos",
       "words": 126,
       "objectiveWords": 24,
+      "location": "Earth 3 Gotham",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -8218,7 +8260,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Report_to_Harley_Quinn",
       "words": 129,
       "objectiveWords": 55,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -8251,6 +8293,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Residential_Evil",
       "words": 188,
       "objectiveWords": 21,
+      "location": "Earth 3 Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -8768,7 +8811,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Seduced_by_Lust",
       "words": 174,
       "objectiveWords": 62,
-      "location": "Gotham Wastelands",
+      "location": "Lust's territory / Gotham Wastelands",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9120,7 +9163,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Soul_Catcher",
       "slug": "Soul_Catcher",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Soul_Catcher",
-      "words": 381,
+      "words": 370,
       "objectiveWords": 53,
       "location": "Chinatown / Metropolis",
       "maps": 0,
@@ -9142,7 +9185,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Soul_Siphoners",
       "slug": "Soul_Siphoners",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Soul_Siphoners",
-      "words": 209,
+      "words": 198,
       "objectiveWords": 105,
       "location": "Gotham University",
       "maps": 0,
@@ -9176,6 +9219,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Space/Off",
       "words": 97,
       "objectiveWords": 31,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9219,6 +9263,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Spectral_Embrace",
       "words": 814,
       "objectiveWords": 561,
+      "location": "Lair of the Spectre",
       "maps": 0,
       "images": 19,
       "reasons": []
@@ -9429,6 +9474,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Stirring_the_HIVE",
       "words": 195,
       "objectiveWords": 69,
+      "location": "HIVE Base",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9457,7 +9503,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
       "slug": "Story_Arcs_Classic_Game",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
-      "words": 1046,
+      "words": 1035,
       "objectiveWords": 0,
       "maps": 0,
       "images": 0,
@@ -9552,7 +9598,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Student_Protest",
       "slug": "Student_Protest",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Student_Protest",
-      "words": 294,
+      "words": 283,
       "objectiveWords": 36,
       "maps": 0,
       "images": 1,
@@ -9586,6 +9632,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Suit_Up",
       "words": 185,
       "objectiveWords": 86,
+      "location": "Water Treatment facility",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9694,7 +9741,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Sweeter_Than_Honey",
       "slug": "Sweeter_Than_Honey",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Sweeter_Than_Honey",
-      "words": 237,
+      "words": 226,
       "objectiveWords": 89,
       "location": "Little Bohemia",
       "maps": 0,
@@ -9828,7 +9875,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/That_Stings!",
       "words": 135,
       "objectiveWords": 71,
-      "location": "Little Bohemia",
+      "location": "HIVE Base / Little Bohemia",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9848,7 +9895,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Awakening",
       "slug": "The_Awakening",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Awakening",
-      "words": 771,
+      "words": 749,
       "objectiveWords": 63,
       "maps": 0,
       "images": 6,
@@ -9860,6 +9907,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Ballad_of_Barbatos",
       "words": 85,
       "objectiveWords": 16,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -10047,7 +10095,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Justice_League",
       "slug": "The_Justice_League",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Justice_League",
-      "words": 257,
+      "words": 246,
       "objectiveWords": 36,
       "location": "House of Legends",
       "maps": 0,
@@ -10081,6 +10129,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Last_Stand",
       "words": 64,
       "objectiveWords": 9,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -10089,7 +10138,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Lost_Collection",
       "slug": "The_Lost_Collection",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Lost_Collection",
-      "words": 622,
+      "words": 600,
       "objectiveWords": 76,
       "location": "Doomed Metropolis",
       "maps": 0,
@@ -10307,7 +10356,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Sum_of_Its_Parts",
       "words": 88,
       "objectiveWords": 21,
-      "location": "Metropolis",
+      "location": "Downtown Metropolis Battlezone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -10622,7 +10671,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/To_Hell%2C_Demon!",
       "words": 152,
       "objectiveWords": 47,
-      "location": "Queue for the 8th Precinct challenge using the On Duty menu or go to the 8th Precinct Interior - Raven’s Destiny walk-in version (any of those will do) and complete the instance. Once Raven is gone, the Demonic Abomination will spawn. Defeat him to complete the mission.",
+      "location": "8th Precinct",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -10802,7 +10851,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Trigon_Loosed",
       "slug": "Trigon_Loosed",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Trigon_Loosed",
-      "words": 133,
+      "words": 122,
       "objectiveWords": 38,
       "maps": 0,
       "images": 0,
@@ -10847,6 +10896,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Trouble_in_the_31st_Century%3A_New_Earth",
       "words": 75,
       "objectiveWords": 13,
+      "location": "31st Century: New Earth",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -11021,7 +11071,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Urban_Liberation",
       "words": 97,
       "objectiveWords": 16,
-      "location": "Gotham City",
+      "location": "Apokoliptic Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -11032,6 +11082,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/UV%3A_UndercoVer",
       "words": 87,
       "objectiveWords": 37,
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11074,6 +11125,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Vines_of_Wrath",
       "words": 296,
       "objectiveWords": 114,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 4,
       "reasons": []
@@ -11269,7 +11321,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Mist-Empowered_Villain",
       "slug": "WANTED_Mist-Empowered_Villain",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Mist-Empowered_Villain",
-      "words": 305,
+      "words": 294,
       "objectiveWords": 81,
       "maps": 0,
       "images": 15,
@@ -11703,6 +11755,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/When_Plants_Attack",
       "words": 303,
       "objectiveWords": 108,
+      "location": "Arkham Island",
       "maps": 0,
       "images": 5,
       "reasons": []
@@ -11768,7 +11821,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman's_Missions",
       "words": 114,
       "objectiveWords": 27,
-      "location": "Gotham City",
+      "location": "Earth 3 Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11865,7 +11918,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/You_Have_My_Axe",
       "words": 118,
       "objectiveWords": 69,
-      "location": "Journal / player menus",
+      "location": "Death Metal Washington, D.C.",
       "maps": 0,
       "images": 2,
       "reasons": []

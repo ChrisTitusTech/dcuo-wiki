@@ -51,3 +51,17 @@ test("mission conversion retains reward table rows and meaningful source referen
     ["Staff", "Energy Staff"],
   ]);
 });
+
+test("image-only map sections retain their image without placeholder prose", () => {
+  const d = cache(
+    "This source gives useful mission objectives and a map.\n\n## Objectives\n\n- Travel to Metropolis and collect the samples.\n\n## Map\n\n![Mission map](https://static.wikia.nocookie.net/dcuo/images/a/ab/Mission_Map.jpg/revision/latest)",
+  );
+  d.html =
+    '<img width="400" height="300" data-image-name="Mission_Map.jpg" src="https://static.wikia.nocookie.net/dcuo/images/a/ab/Mission_Map.jpg/revision/latest">';
+  const r = convertMission(d, record);
+  const map = r.article.sections.find((s) => s.title === "Map");
+  assert.ok(map);
+  assert.deepEqual(map.items, []);
+  assert.equal(map.images.length, 1);
+  assert.equal(r.article.location.maps.length, 1);
+});
