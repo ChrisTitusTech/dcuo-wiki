@@ -10,3 +10,9 @@ Run `node scripts/download-missions.mjs` from the repository root to stage the s
 A download is not publication approval. Review canonical aliases, historical versions, substantive objectives, map/location evidence, and attribution before converting an article. Missing information can be supplemented with an explicitly matching YouTube reference; do not infer a quest match from a generic DCUO video. Record what the reference actually supports and any remaining gaps.
 
 The source category includes overview pages and nested category links, so its item count is not a count of complete walkthroughs. This download covers direct members of the Missions category; it does not recursively claim coverage of every nested category.
+
+## Large batches
+
+After category discovery has created the manifest, `node scripts/download-mission-batch.mjs` submits uncached URLs through Firecrawl's batch endpoint. It saves the job ID and result cursor in `.import-cache/mission-batch-job.json`, retrieves and saves completed results incrementally, and resumes that same job when rerun. It follows the API's result pagination and checks requested URL membership before saving data. Account concurrency limits still apply.
+
+After the batch finishes, rerun `node scripts/download-missions.mjs` to verify all cached captures, retry any missing pages, and finalize the tracked manifest. Do not run the individual and batch downloaders concurrently. Preserve the job checkpoint until retrieval is complete; deleting it while the remote job runs would risk submitting duplicate work.
