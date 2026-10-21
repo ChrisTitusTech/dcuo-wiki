@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import articles from "../data/articles";
+---
+
+<Layout title="About & coverage">
+  <div class="prose">
+    <div class="eyebrow">BUILT WITH CARE</div>
+    <h1>
+      A useful wiki.
+      <br />
+      One guide at a time.
+    </h1>
+    <p class="lede">
+      This independent DCUO reference currently contains {articles.length}{" "}
+      reviewed starter guides. It is not a complete copy of the source wiki.
+    </p>
+    <h2>What makes the cut</h2>
+    <p>
+      We publish substantive guidance, not name-only entries or placeholders.
+      Duplicate pages should be merged while preserving meaningful faction and
+      version differences.
+    </p>
+    <h2>Quest standards</h2>
+    <p>
+      Quests need useful objectives or walkthroughs. We seek map locations and
+      exact-quest YouTube references. Unverified coordinates and unrelated video
+      matches are never presented as guidance. A useful guide may remain
+      published with a clearly stated location limitation after research.
+    </p>
+    <h2>Sources and licensing</h2>
+    <p>
+      Starter text is adapted from DC Universe Online Wiki on Fandom, retrieved
+      with Firecrawl. Each article links its original page and contributor
+      history. Adapted text remains under the source's applicable{" "}
+      <a href="https://www.fandom.com/licensing">CC-BY-SA terms</a>, except
+      where the source indicates otherwise. Summaries, omissions, and layout
+      changes are our adaptations. Images and trademarks may have different
+      rights; this edition links map file pages instead of redistributing them.
+    </p>
+    <h2>Coverage limits</h2>
+    <p>
+      The initial map found 124 URLs, while the source homepage reported
+      approximately 25,000 pages. That map is not an exhaustive inventory.
+      Current work is a small extraction and publishing pilot. Gear values and
+      rewards may be outdated; source review does not establish current in-game
+      accuracy.
+    </p>
+    <h2>Contribute</h2>
+    <p>
+      Suggest a correction with a source or a precise location through{" "}
+      <a href="https://github.com/ChrisTitusTech/dcuo-wiki/issues">
+        the GitHub repository
+      </a>
+      .
+    </p>
+  </div>
+</Layout>

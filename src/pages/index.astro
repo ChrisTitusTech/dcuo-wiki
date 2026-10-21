@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/Layout.astro";
+import articles from "../data/articles";
+---
+
+<Layout title="Explore DC Universe Online">
+  <section class="hero">
+    <div class="eyebrow">YOUR NEXT MISSION STARTS HERE</div>
+    <h1>
+      Know your world.
+      <br />
+      <span>Build your legend.</span>
+    </h1>
+    <p>
+      Powers, places, and the details that get you there. A carefully sourced
+      field guide to DC Universe Online.
+    </p>
+    <a class="primary" href="#library">
+      Explore the field guide <span aria-hidden="true">→</span>
+    </a>
+    <div class="orbit" aria-hidden="true">
+      <div>
+        D<span>UNIVERSE ONLINE</span>
+      </div>
+    </div>
+  </section>
+  <section id="library">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">THE FIELD GUIDE</div>
+        <h2>Find your next step</h2>
+      </div>
+      <span class="badge">{articles.length} reviewed starter guides</span>
+    </div>
+    <label class="search-label" for="search">
+      Search published guides
+    </label>
+    <input
+      id="search"
+      type="search"
+      placeholder="Try powers, Gotham, or Grab and Smash"
+      autocomplete="off"
+    />
+    <div class="filters" aria-label="Filter guides">
+      {["All", "Character", "Collectibles", "Quests"].map((c) => (
+        <button data-category={c} aria-pressed={c === "All"}>
+          {c}
+        </button>
+      ))}
+    </div>
+    <p id="count" role="status" aria-live="polite">
+      {articles.length} guides
+    </p>
+    <div class="cards">
+      {articles.map((a, i) => (
+        <a
+          class="card"
+          href={`/wiki/${a.slug}/`}
+          data-type={a.category}
+          data-search={[
+            a.title,
+            a.category,
+            a.summary,
+            ...a.sections.flatMap((s) => s.items),
+          ]
+            .join(" ")
+            .toLowerCase()}
+        >
+          <span class="card-number">0{i + 1}</span>
+          <div class="eyebrow">{a.category}</div>
+          <h3>{a.title}</h3>
+          <p>{a.summary}</p>
+          <span class="card-link">
+            Read guide <span aria-hidden="true">↗</span>
+          </span>
+        </a>
+      ))}
+    </div>
+    <p id="empty" hidden>
+      No guides match. Try another term or choose All.
+    </p>
+    <aside class="notice">
+      <strong>A smaller wiki, built with care.</strong>
+      <p>
+        This is an exploratory edition, not a complete mirror. Empty entries
+        stay out. Quest locations and video matches are checked before
+        publication. <a href="/about/">See our coverage standards.</a>
+      </p>
+    </aside>
+  </section>
+  <script>
+    const input = document.querySelector<HTMLInputElement>("#search")!;
+    let category = "All";
+    function filter() {
+      let count = 0;
+      document.querySelectorAll<HTMLAnchorElement>(".card").forEach((card) => {
+        const visible =
+          (category === "All" || card.dataset.type === category) &&
+          (card.dataset.search || "").includes(
+            input.value.trim().toLowerCase(),
+          );
+        card.hidden = !visible;
+        if (visible) count++;
+      });
+      document.querySelector("#count")!.textContent =
+        `${count} ${count === 1 ? "guide" : "guides"}`;
+      document.querySelector<HTMLElement>("#empty")!.hidden = count !== 0;
+    }
+    input.addEventListener("input", filter);
+    document
+      .querySelectorAll<HTMLButtonElement>("[data-category]")
+      .forEach((button) =>
+        button.addEventListener("click", () => {
+          category = button.dataset.category!;
+          document
+            .querySelectorAll("[data-category]")
+            .forEach((b) =>
+              b.setAttribute("aria-pressed", String(b === button)),
+            );
+          filter();
+        }),
+      );
+  </script>
+</Layout>

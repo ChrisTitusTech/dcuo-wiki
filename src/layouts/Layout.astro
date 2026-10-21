@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+interface Props {
+  title: string;
+  description?: string;
+}
+const {
+  title,
+  description = "A growing, carefully sourced guide to DC Universe Online.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <title>{title} | DCUO Wiki</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header>
+      <a class="brand" href="/">
+        <span class="emblem">D</span> DCUO <span>WIKI</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/#library">Explore</a>
+        <a href="/about/">About the wiki</a>
+        <button id="theme" aria-label="Switch color theme">
+          Light / dark
+        </button>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <strong>DCUO WIKI</strong>
+      <p>
+        An independent fan reference. Not affiliated with DC, Daybreak, or
+        Fandom.
+      </p>
+      <a href="/about/">Sources, attribution & coverage</a>
+    </footer>
+    <script>
+      const button = document.querySelector<HTMLButtonElement>("#theme");
+      button?.addEventListener("click", () => {
+        document.documentElement.classList.toggle("light");
+      });
+    </script>
+  </body>
+</html>

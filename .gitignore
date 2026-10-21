@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.env*
+!.env.example
+.import-cache/
+playwright-report/
+test-results/

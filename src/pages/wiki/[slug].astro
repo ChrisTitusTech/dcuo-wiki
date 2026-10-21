@@ -1,0 +1,104 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import articles from "../../data/articles";
+export function getStaticPaths() {
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+const { article } = Astro.props;
+---
+
+<Layout title={article.title} description={article.summary}>
+  <div class="article-top">
+    <a href="/#library">← All guides</a>
+    <div class="eyebrow">{article.category}</div>
+    <h1>{article.title}</h1>
+    <p class="lede">{article.summary}</p>
+    <span class="badge">Source reviewed · {article.retrieved}</span>
+  </div>
+  <div class="article-grid">
+    <aside class="toc">
+      <strong>IN THIS GUIDE</strong>
+      <nav aria-label="Table of contents">
+        {article.sections.map((s, i) => (
+          <a href={`#section-${i}`}>{s.title}</a>
+        ))}
+        {article.location && <a href="#location">Location & maps</a>}
+      </nav>
+    </aside>
+    <article>
+      {article.sections.map((s, i) => (
+        <section id={`section-${i}`}>
+          <h2>{s.title}</h2>
+          <ul>
+            {s.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      {article.location && (
+        <section id="location">
+          <div class="eyebrow">FIND YOUR WAY</div>
+          <h2>{article.location.label}</h2>
+          <p>
+            Precision: {article.location.precision}. The route above follows
+            documented landmarks; no coordinates have been inferred.
+          </p>
+          <ul>
+            {article.location.maps.map((m) => (
+              <li>
+                <a href={m.url} rel="noreferrer">
+                  {m.label} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p>
+            Map images are linked to their source file pages while media reuse
+            is reviewed.
+          </p>
+        </section>
+      )}
+      {article.locationLimitation && (
+        <section>
+          <h2>Location research</h2>
+          <p>{article.locationLimitation}</p>
+        </section>
+      )}
+      {article.videoReview && (
+        <section>
+          <h2>Video walkthroughs</h2>
+          {article.videos?.length ? (
+            <ul>
+              {article.videos.map((video) => (
+                <li>
+                  <a href={video.url}>{video.title}</a>
+                  <p>{video.evidence}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>
+              No quest-specific video verified in the search performed on{" "}
+              {article.videoReview.checked}. This does not mean none exists.
+            </p>
+          )}
+        </section>
+      )}
+      <aside class="notice">
+        <strong>Source & accuracy</strong>
+        <p>
+          Adapted and condensed from{" "}
+          <a href={article.source}>DC Universe Online Wiki contributors</a>.{" "}
+          <a href={article.history}>Contributor history</a> ·{" "}
+          <a href="https://www.fandom.com/licensing">Source licensing</a>. Text
+          adaptations retain the source's applicable CC-BY-SA license. Source
+          review is not in-game verification.
+        </p>
+      </aside>
+    </article>
+  </div>
+</Layout>

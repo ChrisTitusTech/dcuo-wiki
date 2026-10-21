@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dcuo-wiki.com/sitemap.xml

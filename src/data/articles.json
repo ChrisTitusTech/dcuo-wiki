@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "Powers",
+    "title": "Powers",
+    "category": "Character",
+    "summary": "Choose a power set around the role you want to play.",
+    "sections": [
+      {
+        "title": "How powers work",
+        "items": [
+          "Choose your power set during character creation. Active powers unlock as you level; all active powers in your set are available at level 30.",
+          "Every power set supports the Damage role. Each also has a support role: Tank, Controller, or Healer."
+        ]
+      },
+      {
+        "title": "Tank power sets",
+        "items": [
+          "Fire, Ice, Earth, Rage, and Atomic support tanking. Tanks attract enemy attention and absorb attacks to protect the group."
+        ]
+      },
+      {
+        "title": "Controller power sets",
+        "items": [
+          "Gadgets, Mental, Light, Quantum, and Munitions support controlling. Controllers supply group power and incapacitate enemies."
+        ]
+      },
+      {
+        "title": "Healer power sets",
+        "items": [
+          "Sorcery, Nature, Electricity, Celestial, and Water support healing. Healers restore the health of their teammates."
+        ]
+      },
+      {
+        "title": "Starting choices",
+        "items": [
+          "Fire, Gadgets, Ice, Mental, Nature, and Sorcery are the classic character-creation power sets. Check current in-game access before purchasing additional powers."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Powers",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Powers?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Investigations",
+    "title": "Investigations",
+    "category": "Collectibles",
+    "summary": "Follow the green markers to complete investigation sets.",
+    "sections": [
+      {
+        "title": "Recognizing investigations",
+        "items": [
+          "Investigation tokens use a green exclamation mark. They are a different collectible type from Collections and Player Briefings."
+        ]
+      },
+      {
+        "title": "Completion rewards",
+        "items": [
+          "Completing an investigation awards an armor piece or accessory. Use the specific investigation guide to identify its reward and individual node locations."
+        ]
+      },
+      {
+        "title": "Where to begin",
+        "items": [
+          "The source organizes investigations into Gotham, Metropolis, and Global groups. Individual node guides have not yet been imported into this edition."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Investigations",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Investigations?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Collections",
+    "title": "Collections",
+    "category": "Collectibles",
+    "summary": "Find collection sets by neighborhood and reward.",
+    "sections": [
+      {
+        "title": "Gotham starting points",
+        "items": [
+          "Gotham Street Signs: East End; the source lists Arkham Riot Officer's Belt as the reward.",
+          "Gotham University: Gotham University; reward listed as Breastplate of the Believer.",
+          "Robinson Remembrance: Robinson Park; reward listed as Heavenly Legplates."
+        ]
+      },
+      {
+        "title": "Metropolis starting points",
+        "items": [
+          "Alien Technology: Avenue of Tomorrow; reward listed as Grooved Alien Leggings.",
+          "Centennial: Centennial Park; reward listed as Clockwork Diver's Helmet.",
+          "Metropolis University: Little Bohemia; reward listed as Relic Shoulderguards."
+        ]
+      },
+      {
+        "title": "Location precision",
+        "items": [
+          "These are source-reported collection areas, not exact spawn coordinates. Individual map guides still need review."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Collections",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Collections?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Grab_and_Smash",
+    "title": "Grab and Smash",
+    "category": "Quests",
+    "summary": "Retrieve five pieces of information inside the Cape Carmine Lighthouse duo.",
+    "sections": [
+      {
+        "title": "Before entering",
+        "items": [
+          "The source identifies Arcane Edict #020 as the hero unlock. Its villain edict number is unspecified.",
+          "Track the mission in your Journal before queuing for Cape Carmine Lighthouse through On Duty. The source warns that the walk-in version does not work."
+        ]
+      },
+      {
+        "title": "Terminal route",
+        "items": [
+          "After the Venom Supplier Diego fight, go through the door and look to the left.",
+          "Look in the room where you fight Killer Croc or Huntress.",
+          "Check the lobby for the Killer Croc and Deathstroke, or Huntress and Nightwing, fight.",
+          "Check the western side of the corridor leading to Bane.",
+          "Find the final terminal in the corridor leading to the exit."
+        ]
+      },
+      {
+        "title": "Rewards",
+        "items": [
+          "The source lists 1,162 cash and a Source Mark. These values have not been verified in the current game."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Grab_and_Smash",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Grab_and_Smash?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Cape Carmine Lighthouse duo, Gotham",
+      "precision": "instance route",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Grab_and_Smash#Walkthrough",
+      "maps": [
+        {
+          "label": "Terminal 1: source map screenshot",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:1.1.jpg"
+        },
+        {
+          "label": "Terminal 2: source map screenshot",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:2.1.jpg"
+        },
+        {
+          "label": "Terminal 3: source map screenshot",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:3.1.jpg"
+        },
+        {
+          "label": "Terminal 4: source map screenshot",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:4.1.jpg"
+        },
+        {
+          "label": "Terminal 5: source map screenshot",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:5.1.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "no-verified-match",
+      "query": "DCUO \"Grab and Smash\" site:youtube.com/watch",
+      "checked": "2026-10-20",
+      "note": "Search returned a different mission with an incidental phrase match; no video qualified."
+    },
+    "videos": []
+  }
+]

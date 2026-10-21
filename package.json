@@ -1,0 +1,39 @@
+{
+  "name": "dcuo-wiki",
+  "version": "1.0.0",
+  "description": "A curated DC Universe Online wiki built with Astro",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "check": "astro check",
+    "build": "node scripts/validate-content.mjs && astro build && node scripts/check-budget.mjs",
+    "preview": "astro preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "validate": "npm run check && npm test && npm run build",
+    "import": "node scripts/import.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisTitusTech/dcuo-wiki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ChrisTitusTech/dcuo-wiki/issues"
+  },
+  "homepage": "https://github.com/ChrisTitusTech/dcuo-wiki#readme",
+  "dependencies": {
+    "@astrojs/check": "^0.9.11",
+    "astro": "^7.4.1",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1"
+  },
+  "private": true
+}
