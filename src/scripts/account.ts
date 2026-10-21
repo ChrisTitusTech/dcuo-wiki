@@ -1,3 +1,4 @@
+import articles from "../data/articles";
 export {};
 type Character = {
   character_id: string;
@@ -18,6 +19,13 @@ const el = <T extends HTMLElement = HTMLElement>(id: string) =>
 const status = el("account-status");
 const requestedPage = new URLSearchParams(location.search).get("page");
 if (requestedPage) {
+  const article = articles.find((a) => a.title === requestedPage);
+  if (article) {
+    const returnLink = document.createElement("a");
+    returnLink.href = `/wiki/${article.slug}/#article-editor`;
+    returnLink.textContent = `Return to edit ${article.title}`;
+    status.insertAdjacentElement("afterend", returnLink);
+  }
   const login = document.querySelector<HTMLAnchorElement>("#signed-out a")!;
   login.href = `/api/auth/discord?page=${encodeURIComponent(requestedPage.slice(0, 120))}`;
 }

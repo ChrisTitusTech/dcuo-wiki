@@ -17,6 +17,7 @@ const character = {
 function db() {
   const sqlite = new DatabaseSync(":memory:");
   sqlite.exec(readFileSync("migrations/0001_accounts.sql", "utf8"));
+  sqlite.exec(readFileSync("migrations/0002_article_revisions.sql", "utf8"));
   return {
     sqlite,
     prepare(sql) {
@@ -288,4 +289,97 @@ test("logout revokes server session", async () => {
   const { call } = await setup();
   assert.equal((await call("/api/auth/logout", "POST", {})).status, 200);
   assert.equal((await call("/api/me")).status, 401);
+});
+
+test("matched players publish revisions, reject stale writes, and retain public history", async () => {
+  const { call, env, fetcher, request } = await setup();
+  const path = "/api/articles/Powers";
+  const before = (await (await call(path)).json()).parts[0];
+  const edit = {
+    part: before.id,
+    baseHash: before.baseHash,
+    revision: before.revision,
+    content: "Updated powers guidance checked in game.",
+    reason: "Correct outdated power guidance.",
+    sources: "Verified against the in-game power menu.",
+  };
+  assert.equal(
+    (await handle(new Request(origin + path, { method: "POST" }), env, fetcher))
+      .status,
+    403,
+  );
+  assert.equal((await call(path, "POST", edit)).status, 403);
+  await call("/api/profile", "POST", {
+    characterId: "123",
+    name: character.name,
+  });
+  assert.equal(
+    (await call(path, "POST", edit, { Origin: "https://evil.example" })).status,
+    403,
+  );
+  assert.equal((await call(path, "POST", edit)).status, 201);
+  assert.equal((await call(path, "POST", edit)).status, 409);
+  const after = (await (await call(path)).json()).parts[0];
+  assert.equal(after.text, edit.content);
+  assert.ok(after.revision > 0);
+  const history = await (
+    await handle(new Request(origin + path + "/history"), env, fetcher)
+  ).json();
+  assert.equal(history.revisions[0].previous_content, before.text);
+  assert.equal(history.revisions[0].content, edit.content);
+  assert.equal(history.revisions[0].character_name, character.name);
+  assert.equal(JSON.stringify(history).includes("discord_id"), false);
+  assert.equal(
+    (
+      await call(path, "POST", {
+        ...edit,
+        revision: after.revision,
+        content: before.text,
+        reason: "Restore previous accurate summary.",
+      })
+    ).status,
+    201,
+  );
+  assert.equal(
+    (
+      await handle(
+        request(path, "POST", { ...edit, revision: after.revision }),
+        env,
+        async () => Response.json({ character_list: [] }),
+      )
+    ).status,
+    409,
+  );
+});
+
+test("live publishing rechecks Census and rejects unsafe links or malformed tables", async () => {
+  const { call, env, request } = await setup();
+  await call("/api/profile", "POST", {
+    characterId: "123",
+    name: character.name,
+  });
+  const path = "/api/articles/Grab_and_Smash";
+  const parts = (await (await call(path)).json()).parts;
+  const part = parts.find((p) => p.id === "location-maps");
+  const payload = {
+    part: part.id,
+    revision: part.revision,
+    baseHash: part.baseHash,
+    content: "Map | javascript:alert(1)",
+    reason: "Replace the map reference.",
+    sources: "Verified against in-game map.",
+  };
+  assert.equal((await call(path, "POST", payload)).status, 400);
+  const good = { ...payload, content: "Map | https://example.com/map" };
+  assert.equal(
+    (
+      await handle(request(path, "POST", good), env, async () =>
+        Response.json({ character_list: [] }),
+      )
+    ).status,
+    403,
+  );
+  assert.equal((await call(path, "POST", good)).status, 201);
+  const history = await (await call(path + "/history")).json();
+  assert.equal(history.revisions.length, 1);
 });

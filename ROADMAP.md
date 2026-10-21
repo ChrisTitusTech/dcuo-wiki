@@ -81,3 +81,11 @@ Commit cb23314 passed GitHub CI and deployed automatically in Cloudflare build 4
 ## Production database activation
 
 Created dcuo-wiki-accounts in the existing Cloudflare account on the free allocation. Applied 0001_accounts.sql through the D1 console, verified all six application tables and five indexes, and recorded the migration in Wrangler-compatible d1_migrations. Added the permanent DB binding to wrangler.jsonc. All four production secrets are configured; approved Census service ID and numeric moderator ID were updated separately. Deployment and real Discord sign-in acceptance must be verified after this binding is published.
+
+## Direct player corrections
+
+The owner confirmed real Discord sign-in and explicitly authorized every Census-matched player to edit and publish existing article content without moderator approval. This supersedes review-only publication for corrections. New-guide proposals continue through the existing review queue.
+
+Implement section editing in the article, immediate D1-backed publication, public revision history attributed to the character, source/reason requirements, Census revalidation, and optimistic concurrency. Keep original source attribution. Validate anonymous/unmatched/stale/Census-failed writes, safe rendering, search updates, and restoring earlier text. Apply additive migration 0002 before deployment; preserve history on rollback.
+
+Direct corrections implementation and local validation are complete, with the additive production revision-history migration applied. Final review passed after conflict-recovery and pending-publication draft fixes. Live deployment verification follows the main push; full candidate import remains separate.

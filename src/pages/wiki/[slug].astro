@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ArticleEditor from "../../components/ArticleEditor.astro";
 import articles from "../../data/articles";
 export function getStaticPaths() {
   return articles.map((article) => ({
@@ -22,12 +23,12 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
     </nav>
 
     <h1>{article.title}</h1>
-    <p class="lede">{article.summary}</p>
+    <p class="lede" data-live-part="summary">
+      {article.summary}
+    </p>
     <div class="article-tools">
       <span class="badge">Source reviewed · {article.retrieved}</span>
-      <a href={`/account/?page=${encodeURIComponent(article.title)}`}>
-        Suggest an edit
-      </a>
+      <a href="#article-editor">Edit this page</a>
       <a href={article.history}>Source history ↗</a>
     </div>
   </div>
@@ -45,13 +46,16 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       {article.sections.map((s, i) => (
         <section id={`section-${i}`}>
           <h2>{s.title}</h2>
-          <ul>
-            {s.items.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
+          <div data-live-part={`section-${i}`}>
+            <ul>
+              {s.items.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
           {s.table && (
             <div
+              data-live-part={`table-${i}`}
               class="table-scroll"
               tabindex="0"
               role="region"
@@ -83,20 +87,26 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       {article.location && (
         <section id="location">
           <div class="eyebrow">FIND YOUR WAY</div>
-          <h2>{article.location.label}</h2>
+          <h2 data-live-part="location-label">{article.location.label}</h2>
           <p>
-            Precision: {article.location.precision}. No coordinates have been
-            inferred. <a href={article.location.source}>Location evidence</a>.
+            Precision:{" "}
+            <span data-live-part="location-precision">
+              {article.location.precision}
+            </span>
+            . No coordinates have been inferred.{" "}
+            <a href={article.location.source}>Location evidence</a>.
           </p>
-          <ul>
-            {article.location.maps.map((m) => (
-              <li>
-                <a href={m.url} rel="noreferrer">
-                  {m.label} ↗
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div data-live-part="location-maps">
+            <ul>
+              {article.location.maps.map((m) => (
+                <li>
+                  <a href={m.url} rel="noreferrer">
+                    {m.label} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
           <p>
             Map images are linked to their source file pages while media reuse
             is reviewed.
@@ -106,35 +116,37 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       {article.locationLimitation && (
         <section>
           <h2>Location research</h2>
-          <p>{article.locationLimitation}</p>
+          <p data-live-part="location-research">{article.locationLimitation}</p>
         </section>
       )}
       {article.videoReview && (
         <section>
           <h2>Video walkthroughs</h2>
-          {article.videos?.length ? (
-            <ul>
-              {article.videos.map((video) => (
-                <li>
-                  <a
-                    href={
-                      video.startSeconds
-                        ? `${video.url}&t=${video.startSeconds}s`
-                        : video.url
-                    }
-                  >
-                    {video.title}
-                  </a>
-                  <p>{video.evidence}</p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>
-              No quest-specific video verified in the search performed on{" "}
-              {article.videoReview.checked}. This does not mean none exists.
-            </p>
-          )}
+          <div data-live-part="videos">
+            {article.videos?.length ? (
+              <ul>
+                {article.videos.map((video) => (
+                  <li>
+                    <a
+                      href={
+                        video.startSeconds
+                          ? `${video.url}&t=${video.startSeconds}s`
+                          : video.url
+                      }
+                    >
+                      {video.title}
+                    </a>
+                    <p>{video.evidence}</p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>
+                No quest-specific video verified in the search performed on{" "}
+                {article.videoReview.checked}. This does not mean none exists.
+              </p>
+            )}
+          </div>
         </section>
       )}
       {related.length > 0 && (
@@ -162,9 +174,5 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       </aside>
     </article>
   </div>
-  <p class="prose">
-    <a href={`/account/?page=${encodeURIComponent(article.title)}`}>
-      Suggest an addition or correction
-    </a>
-  </p>
+  <ArticleEditor article={article} />
 </Layout>

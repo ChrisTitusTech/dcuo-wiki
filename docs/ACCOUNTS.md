@@ -62,3 +62,13 @@ Rollback: deploy the previous static release to remove account endpoints. Keep t
 - [Daybreak Census](https://census.daybreakgames.com/): public queries, service-ID registration, and game collections. The live public character endpoint returned character data; `auth_character` returned `login_required`, and no supported third-party ownership flow was established. Name matching follows the owner's chosen policy.
 - [Cloudflare Worker/static asset routing](https://developers.cloudflare.com/workers/static-assets/routing/worker-script/): selective `/api/*` Worker-first routing.
 - [D1 prepared statements](https://developers.cloudflare.com/d1/worker-api/prepared-statements/): parameter binding and result methods.
+
+## Direct article editing
+
+Per the owner's updated policy, any signed-in player with a Census-matched profile can publish corrections to existing articles. Use **Edit this page** on the article, choose a section, change the prefilled text, supply a reason and evidence, then **Publish correction**. The server rechecks Census on every write. This is a public-name match, not proof of character ownership. New guide proposals still use the review queue.
+
+Apply `0002_article_revisions.sql` before deploying the editing code. Revisions store before/after text, evidence, reason, author account internally, and public character name. Page edit history shows the latest 50 edits. Restore text from before an edit to a draft, then publish it as a new revision. Earlier rows remain in D1. No credentials or Discord IDs are exposed in public history. Drafts persist in sessionStorage in the current browser tab and survive the sign-in round trip; the account page provides a return-to-article link.
+
+Article and homepage requests now run through the Worker to reflect published revisions in HTML, summary cards, and search. No-JavaScript readers see current content. Live responses are not cached. This adds Worker requests and D1 reads; static file count remains small. Table rows use ` | ` between cells; map/video links require HTTPS. Plain text is escaped, never evaluated as HTML.
+
+Revisions are keyed to the repository's original section text hash. When deliberately changing an edited section in `articles.json`, reconcile its live revisions first: a changed baseline retires that section's previous overlay, while history remains available. Ordinary code deployments with unchanged article data preserve live edits. Rollback to the prior application restores static article content without deleting profiles or revisions. Back up D1 before content migrations. Large-scale article expansion will need a more efficient homepage search index than per-edited-article queries.

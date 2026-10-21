@@ -11,6 +11,13 @@ import {
   textField,
   imageType,
 } from "./security.mjs";
+import {
+  findArticle,
+  liveParts,
+  serveArticle,
+  serveIndex,
+} from "./articles.mjs";
+import { renderPart } from "../shared/article-content.mjs";
 import { searchCharacters, matchCharacter } from "./census.mjs";
 const SESSION = "__Host-dcuo-session",
   STATE = "__Host-dcuo-state";
@@ -215,8 +222,31 @@ async function profile(env, id) {
 export async function handle(request, env, fetcher = fetch) {
   const url = new URL(request.url),
     path = url.pathname;
-  if (!path.startsWith("/api/")) return env.ASSETS.fetch(request);
   try {
+    if (path === "/" && ["GET", "HEAD"].includes(request.method))
+      return await serveIndex(request, env);
+    if (path.startsWith("/wiki/") && ["GET", "HEAD"].includes(request.method))
+      return await serveArticle(request, env);
+    if (!path.startsWith("/api/")) return env.ASSETS.fetch(request);
+    const articleRoute = path.match(/^\/api\/articles\/([^/]+)(\/history)?$/);
+    if (articleRoute && request.method === "GET") {
+      const article = findArticle(decodeURIComponent(articleRoute[1]));
+      if (!env.DB) throw new HttpError(503, "Live editing is unavailable.");
+      if (articleRoute[2])
+        return json({
+          revisions: (
+            await stmt(
+              env,
+              "SELECT id,part,content,previous_content,reason,sources,character_name,created_at FROM article_revisions WHERE slug=? ORDER BY id DESC LIMIT 50",
+              article.slug,
+            ).all()
+          ).results,
+        });
+      return json({
+        title: article.title,
+        parts: await liveParts(env, article),
+      });
+    }
     if (path === "/api/status" && request.method === "GET")
       return json({
         login: ready(env),
@@ -339,6 +369,74 @@ export async function handle(request, env, fetcher = fetch) {
         ).run();
       }
       return json({ profile: await profile(env, user.id) });
+    }
+    if (articleRoute && !articleRoute[2] && request.method === "POST") {
+      await limit(env, `publish:${user.id}`, 20, 3600);
+      const article = findArticle(decodeURIComponent(articleRoute[1]));
+      const p = await profile(env, user.id);
+      if (!p)
+        throw new HttpError(
+          403,
+          "Match your character in Census before publishing.",
+        );
+      const b = await bodyJson(request);
+      const part = (await liveParts(env, article)).find((p) => p.id === b.part);
+      if (!part)
+        throw new HttpError(400, "Choose an existing article section.");
+      if (b.revision !== part.revision || b.baseHash !== part.baseHash)
+        throw new HttpError(
+          409,
+          "This section changed. Reload the current text before publishing your correction.",
+        );
+      const content = textField(
+        b.content,
+        "Proposed text",
+        part.kind === "videos" ? 0 : 1,
+        7000,
+      );
+      const reason = textField(b.reason, "Edit explanation", 10, 500);
+      const sources = textField(b.sources, "Supporting evidence", 10, 2000);
+      try {
+        renderPart(part, content);
+      } catch (e) {
+        throw new HttpError(400, e.message);
+      }
+      if (content === part.text.trim())
+        throw new HttpError(400, "Change the text before publishing.");
+      await matchCharacter(
+        env,
+        p.character.character_id,
+        p.character.name,
+        fetcher,
+      );
+      const saved = await stmt(
+        env,
+        `INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
+        SELECT ?,?,?,?,?,?,?,?,user_id,character_name,? FROM profiles WHERE user_id=? AND character_id=? AND character_name=?
+        AND COALESCE((SELECT MAX(id) FROM article_revisions WHERE slug=? AND part=? AND base_hash=?),0)=?`,
+        article.slug,
+        part.id,
+        part.baseHash,
+        part.revision,
+        content,
+        part.text,
+        reason,
+        sources,
+        now(),
+        user.id,
+        p.character.character_id,
+        p.character.name,
+        article.slug,
+        part.id,
+        part.baseHash,
+        part.revision,
+      ).run();
+      if (saved.meta.changes !== 1)
+        throw new HttpError(
+          409,
+          "The section or your character changed. Reload before publishing.",
+        );
+      return json({ published: true }, 201);
     }
     if (path === "/api/contributions" && request.method === "POST") {
       await limit(env, `contribute:${user.id}`, 5, 3600);

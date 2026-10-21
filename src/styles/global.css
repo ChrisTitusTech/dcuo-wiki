@@ -953,3 +953,27 @@ tr:nth-child(even) {
     scroll-behavior: auto !important;
   }
 }
+
+.article-editor {
+  margin-top: 24px;
+  max-width: 960px;
+}
+.article-editor > summary {
+  cursor: pointer;
+  font-family: Oswald, sans-serif;
+  font-size: 21px;
+  color: var(--text);
+}
+.article-editor form {
+  max-width: none;
+}
+.edit-original {
+  margin: 12px 0;
+}
+.edit-original pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  padding: 12px;
+  border: 1px solid var(--line);
+}
