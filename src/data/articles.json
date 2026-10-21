@@ -1912,5 +1912,605 @@
         "evidence": "Publisher description names this recording at 8:50. Matched to the wiki part by recording name, not video order."
       }
     ]
+  },
+  {
+    "slug": "Punks_n_Robbers",
+    "title": "Punks 'n Robbers",
+    "category": "Quests",
+    "summary": "Contaminate Bane's Venom shipments at Cape Carmine for the Joker.",
+    "sections": [
+      {
+        "title": "Objectives",
+        "items": [
+          "Travel to Cape Carmine in Gotham. Defeat 15 Bane thugs protecting the Venom shipments.",
+          "Contaminate 10 shipment crates. Stop 10 Strongmen carrying Venom crates before they finish their deliveries."
+        ]
+      },
+      {
+        "title": "Finding the mission area",
+        "items": [
+          "The associated Viva la Lucha Libre investigation identifies the Cape Carmine dock area with this mission. Use its map for dock-area orientation, then follow the tracked mission markers for crates and enemies.",
+          "The map marks an investigation node, not all quest objectives. Target spawn coordinates are not provided by the reviewed sources."
+        ]
+      },
+      {
+        "title": "Story and next objective",
+        "items": [
+          "The Joker wants Bane's operation driven off Falcone territory. Contaminate the supply rather than collect the samples required by the separate hero mission Out in the Streets.",
+          "The linked playthrough names this quest explicitly and continues toward the distribution-hub objectives in Poisoned Bait. Use the journal to confirm which objective is active."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Punks_%27n_Robbers",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Punks_%27n_Robbers?action=history",
+    "retrieved": "2026-10-21",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Gotham Docks, Cape Carmine, East End",
+      "precision": "mission area; investigation map context",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)#Part_1:_Quetzalcoatl_Lucha_Libre_Mask",
+      "maps": [
+        {
+          "label": "Dock-area map from the associated investigation",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.1_Map.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Punks 'n Robbers\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact quest title and publisher description verified with Firecrawl. Historical gameplay; current balance may differ."
+    },
+    "videos": [
+      {
+        "title": "Jane Denton Gaming: Punks 'n Robbers",
+        "url": "https://www.youtube.com/watch?v=B_fDtaBjfNE",
+        "evidence": "Publisher title and description explicitly identify this quest. Metadata and available transcript checked; no unverified chapter timestamps added."
+      }
+    ],
+    "related": [
+      "Poisoned_Bait",
+      "Out_in_the_Streets",
+      "Viva_la_Lucha_Libre"
+    ]
+  },
+  {
+    "slug": "Poisoned_Bait",
+    "title": "Poisoned Bait",
+    "category": "Quests",
+    "summary": "Find Bane's Venom distribution hub and interrogate his street soldiers.",
+    "sections": [
+      {
+        "title": "Objectives",
+        "items": [
+          "Search for Bane's Venom distribution hub. Find and interrogate 3 Bane Street Soldiers.",
+          "Defeat 10 of Bane's Razors and steal their Venom. Follow the active journal objective to distinguish these enemies from other gang members."
+        ]
+      },
+      {
+        "title": "Route and map",
+        "items": [
+          "The associated investigation identifies its second-part area with Poisoned Bait and the hero's House of Venom mission. Use the plant/entrance-area map to reach this part of Cape Carmine.",
+          "The investigation marker is a landmark for the mission area, not a precise Street Soldier or Razor spawn. The source quest page does not supply individual target coordinates."
+        ]
+      },
+      {
+        "title": "Nearby freelance missions",
+        "items": [
+          "Hood offers Mainliner. Circuitbreaker Tobias offers Intent to Sell. These are separate side missions listed by the source; track their own objectives if you accept them."
+        ]
+      },
+      {
+        "title": "Story context",
+        "items": [
+          "The Joker sends you after Bane's main distributor. Interrogating the street soldiers advances the search; Calculator notes that the Falcones have hired Killer Croc, who already hates Bane."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Poisoned_Bait",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Poisoned_Bait?action=history",
+    "retrieved": "2026-10-21",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Venom distribution area, Cape Carmine, Gotham",
+      "precision": "mission area; associated investigation map, not exact enemy spawns",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)#Part_2:_Tlaloc_Lucha_Libre_Mask",
+      "maps": [
+        {
+          "label": "Plant and entrance-area investigation map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Viva_la_Lucha_Libre_Pt.2_Map.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Poisoned Bait\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact quest title and publisher description verified with Firecrawl. Historical gameplay; current balance may differ."
+    },
+    "videos": [
+      {
+        "title": "StressOutGamer: Poisoned Bait",
+        "url": "https://www.youtube.com/watch?v=4HhKkQ1GmIY",
+        "evidence": "Publisher title and description explicitly identify this quest. Metadata and available transcript checked; no unverified chapter timestamps added."
+      }
+    ],
+    "related": [
+      "Punks_n_Robbers",
+      "Beatdown_for_Bane",
+      "House_of_Venom",
+      "Viva_la_Lucha_Libre"
+    ]
+  },
+  {
+    "slug": "Beatdown_for_Bane",
+    "title": "Beatdown for Bane",
+    "category": "Quests",
+    "summary": "Enter Cape Carmine Lighthouse and help Killer Croc defeat Bane.",
+    "sections": [
+      {
+        "title": "Entrance and objective",
+        "items": [
+          "Travel to Cape Carmine Lighthouse. The mission dialogue explicitly places the entrance up top, behind the light. Use the world map below to find the lighthouse, then the instance map for its interior.",
+          "Killer Croc is inside. Find Bane and defeat him to complete the main objective; Calculator then directs you back to the safehouse."
+        ]
+      },
+      {
+        "title": "Lighthouse Cleanup",
+        "items": [
+          "The Lighthouse Keeper offers the separate Lighthouse Cleanup mission. The linked walkthrough shows its Venom-canister cleanup alongside the main route. Check the tracked objective before leaving the instance."
+        ]
+      },
+      {
+        "title": "Historical feat walkthrough",
+        "items": [
+          "Jane Denton Gaming explicitly labels this run Beatdown for Bane. The description lists Lights Out in the Lighthouse at 1:54 and the Undefeated / School of Hard Knocks completion segment at 9:27.",
+          "The description associates Lights Out with clearing enemies and Venom canisters before Bane, Undefeated with avoiding a knockout, and School of Hard Knocks with defeating Bane without consumables or supercharge abilities. This is a 2015 recording; verify current feat requirements in the game before attempting them."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Beatdown_for_Bane",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Beatdown_for_Bane?action=history",
+    "retrieved": "2026-10-21",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Cape Carmine, Gotham",
+      "precision": "landmark and instance map",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse#Map",
+      "maps": [
+        {
+          "label": "Lighthouse world-map location",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:CapeCarmineLighthouseMapLoc.jpg"
+        },
+        {
+          "label": "Lighthouse instance map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Capecarminelighthouse.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Beatdown for Bane\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Exact quest title and publisher description verified with Firecrawl. Historical gameplay; current balance may differ."
+    },
+    "videos": [
+      {
+        "title": "Jane Denton Gaming: Beatdown for Bane",
+        "url": "https://www.youtube.com/watch?v=1zmbH_l9i5Y",
+        "evidence": "Publisher title and description explicitly identify this quest. Metadata and available transcript checked; no unverified chapter timestamps added."
+      },
+      {
+        "title": "Lights Out in the Lighthouse route (1:54)",
+        "url": "https://www.youtube.com/watch?v=1zmbH_l9i5Y",
+        "startSeconds": 114,
+        "evidence": "Timestamp explicitly published in the video description; historical 2015 route."
+      },
+      {
+        "title": "Undefeated and School of Hard Knocks segment (9:27)",
+        "url": "https://www.youtube.com/watch?v=1zmbH_l9i5Y",
+        "startSeconds": 567,
+        "evidence": "Timestamp explicitly published for both feats in the video description."
+      }
+    ],
+    "related": [
+      "Cape_Carmine_Lighthouse",
+      "Poisoned_Bait",
+      "Viva_la_Lucha_Libre"
+    ]
+  },
+  {
+    "slug": "The_Precipice_of_Fear",
+    "title": "The Precipice of Fear",
+    "category": "Investigations",
+    "summary": "Find all six of Dr. Crane's research notes around the East End and Gotham Sewer.",
+    "sections": [
+      {
+        "title": "Part 1: Fear Itself",
+        "items": [
+          "On the top of a building under construction right in front of the East End Police Station, behind a Box Pallet.",
+          "Recording: Dr. Crane: \" Experiment 905: Roosevelt said: 'the only thing we have to fear is fear itself.' He was, of course, utterly wrong.\""
+        ],
+        "images": [
+          {
+            "label": "Part 1: Fear Itself - location view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Fear_Loc.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Part 2: Anxiety's Sting",
+        "items": [
+          "There are two nodes for this part. One is located just Southwest of the East End Bowery point in the map (behind the fence), while the other is two blocks West from the Bowery, under the railway to the North.",
+          "Recording: Dr. Crane: \" Experiment 910: To acquaint the nervousness of a first date, with the sheer terror one must feel in a plane crash, does a disservice to us all.\""
+        ],
+        "images": [
+          {
+            "label": "Part 2: Anxiety's Sting - location view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-2.jpg"
+          },
+          {
+            "label": "Part 2: Anxiety's Sting - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-2-Map.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Part 3: Terror Suppression",
+        "items": [
+          "South from Crime Alley, at the Malone Improvement District block. It's near a truck to the East.",
+          "Recording: Dr. Crane: \" Experiment 504: The rostral anterior cingulate cortex gives us some semblance of control over our fear.\""
+        ],
+        "images": [
+          {
+            "label": "Part 3: Terror Suppression - location view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-3.jpg"
+          },
+          {
+            "label": "Part 3: Terror Suppression - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-3-Map.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Part 4: Hysteria's Song",
+        "items": [
+          "There are two nodes for this part: one on the roof of the East End Free Clinic (image), and the other behind the Free Clinic.",
+          "Recording: Dr. Crane: \" Experiment 79: Like Ichabod fleeing the Headless horseman, mediated thought is replaced with a stream of hysteria.\""
+        ],
+        "images": [
+          {
+            "label": "Part 4: Hysteria's Song - location view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The_Precipice_of_Fear_Pt4.jpg"
+          },
+          {
+            "label": "Part 4: Hysteria's Song - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The_Precipice_of_Fear_Pt4_Map.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Part 5: Pangs of Horror",
+        "items": [
+          "Heroes will find this part inside the first room in the Gotham Sewer, in the dead-end tunnel to the South. A node for this part is also available for all players in the open-world zone, on the building Northwest from East End Free Clinic and South from the Amusement Mile area.",
+          "Recording: Dr. Crane: \" Experiment 408: The Toxoplasma gondii parasite will actually suppress the rat's fear, making it actively seek out the scent-marked areas of cats.\""
+        ],
+        "images": [
+          {
+            "label": "Part 5: Pangs of Horror - location view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-5.jpg"
+          },
+          {
+            "label": "Part 5: Pangs of Horror - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-5-Map.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Part 6: Phobia's Darkness",
+        "items": [
+          "Heroes will find this part inside the final room in the Gotham Sewer, near the exit. A node for this part is also available for all players in the open-world zone, Northwest to Crime Alley, in the middle of the housing complexes.",
+          "Recording: Dr. Crane: \" Experiment 81: Adverse reactions to specific stimuli can eventually be removed from the subject via carefully measured exposure.\""
+        ],
+        "images": [
+          {
+            "label": "Part 6: Phobia's Darkness - location view",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-6.jpg"
+          },
+          {
+            "label": "Part 6: Phobia's Darkness - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:The-Precipice-of-Fear-6-Map.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Reward and completion",
+        "items": [
+          "Fear Gas Breather Helmet (Antifreeze head style). Heroes receive mail from Doctor Jeremiah Arkham thanking them for the research; villains receive mail from Doctor Jonathan Crane about recovering his early work.",
+          "Collect each of the six distinct parts. Alternate nodes described above are alternatives for the same part, not additional required collectibles."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/The_Precipice_of_Fear_(Investigations)",
+    "history": "https://dcuniverseonline.fandom.com/wiki/The_Precipice_of_Fear_(Investigations)?action=history",
+    "retrieved": "2026-10-21",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "East End, Gotham",
+      "precision": "source-described collectible nodes and alternate locations",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Precipice_of_Fear_(Investigations)",
+      "maps": []
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"The Precipice of Fear\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Publisher descriptions explicitly name the investigation and covered nodes. No chapter times are supplied."
+    },
+    "videos": [
+      {
+        "title": "Emberstrife: Fear Itself, Anxiety's Sting and Terror Suppression",
+        "url": "https://www.youtube.com/watch?v=7S4IfwmCdvM",
+        "evidence": "Investigation and covered nodes explicitly identified by the publisher. Historical guide; no unverified timestamps added."
+      },
+      {
+        "title": "Emberstrife: Hysteria's Song, Pangs of Horror and Phobia's Darkness",
+        "url": "https://www.youtube.com/watch?v=wPvj8-pVClA",
+        "evidence": "Investigation and covered nodes explicitly identified by the publisher. Historical guide; no unverified timestamps added."
+      }
+    ]
+  },
+  {
+    "slug": "Gorilla_Bomb_Components",
+    "title": "Gorilla Bomb Components",
+    "category": "Investigations",
+    "summary": "Find the six components of Grodd's devolution bombs around Little Bohemia.",
+    "sections": [
+      {
+        "title": "Part 1: Simian-Infused Payload Shell",
+        "items": [
+          "Queensland Beach, in the vicinity of the mission Gorillas By The Sea",
+          "Recording: \" Gorilla Technician Report: General Grodd brilliantly designed this to shred upon impact, ensuring maximum devastation!\""
+        ],
+        "images": [
+          {
+            "label": "Part 1: Simian-Infused Payload Shell - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Map,_Little_Bohemia,_Gorilla_Bomb_Components_1.png"
+          }
+        ]
+      },
+      {
+        "title": "Part 2: Chromosome 2 Diffuser Node",
+        "items": [
+          "Southbank Commercial District, in the vicinity of the Devolving Citizen involved in the mission He Wants a Devolution, on the ground level across the street of a building with Metropolis University banners.",
+          "Recording: \" Gorilla Technician Report: An ingenious device - it breaks down human genetic material for easy manipulation.\""
+        ],
+        "images": [
+          {
+            "label": "Part 2: Chromosome 2 Diffuser Node - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Map,_Little_Bohemia,_Gorilla_Bomb_Components_2.png"
+          }
+        ]
+      },
+      {
+        "title": "Part 3: Simian-Infused Chassis",
+        "items": [
+          "In front of the Queensland Boardwalk entrance, in the vicinity of the missions Gorilla Warfare and Boardwalk Assault",
+          "Recording: \" Gorilla Technician Report: This chassis is infused with a metal alloy so advanced, the human's primitive weapons won't even leave a scratch.\""
+        ],
+        "images": [
+          {
+            "label": "Part 3: Simian-Infused Chassis - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Map,_Little_Bohemia,_Gorilla_Bomb_Components_3.png"
+          }
+        ]
+      },
+      {
+        "title": "Part 4: Simium-231 Reactor Core",
+        "items": [
+          "Southbank Commercial District, in the vicinity of the Devolution Units involved in the mission He Wants a Devolution, near Scout Tiken. The node is on the ground floor next to a fountain in front of a Cafe.",
+          "Recording: \" Gorilla Technician Report: This Reactor Core can provide nearly endless power to any one of General Grodd's visionary devices.\""
+        ],
+        "images": [
+          {
+            "label": "Part 4: Simium-231 Reactor Core - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Map,_Little_Bohemia,_Gorilla_Bomb_Components_4.png"
+          }
+        ]
+      },
+      {
+        "title": "Part 5: Psionics-Sensitive Detonator",
+        "items": [
+          "South of the Queensland Boardwalk, in the vicinity of the Neural Arrays involved in the mission He Wants a Devolution. Node is next to a Neural Arrays on the top of the commercial building comprised of Coffee shop with outdoor tables, Computers store, Books store, Video store, and a Billiards (you'll need to engage with Gorilla Technicians before collecting it).",
+          "Recording: \" Gorilla Technician Report: General Grodd designed the detonator to pick up psychic vibrations so slight, even thinking about the sensor could trip the fuse. Uh oh.\""
+        ],
+        "images": [
+          {
+            "label": "Part 5: Psionics-Sensitive Detonator - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Map,_Little_Bohemia,_Gorilla_Bomb_Components_5.png"
+          }
+        ]
+      },
+      {
+        "title": "Part 6: Primary Reactor Rotor",
+        "items": [
+          "Southbank Commercial District, in the vicinity of the Devolution Units involved in the mission He Wants a Devolution. The node is on the highest floating platform (players what don't have the flight movement style can use the teleporters on the lowest platforms to get there).",
+          "Recording: \" Gorilla Technician Report: The Reactor is powerful enough to send devolution rays across the entire city!\""
+        ],
+        "images": [
+          {
+            "label": "Part 6: Primary Reactor Rotor - map",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Map,_Little_Bohemia,_Gorilla_Bomb_Components_6.png"
+          }
+        ]
+      },
+      {
+        "title": "Reward and completion",
+        "items": [
+          "Bioshaped Gorillium Leggings. Heroes receive mail from the Flash saying STAR Labs will analyze the parts; villains receive a message from Grodd praising the power of gorilla technology.",
+          "Collect each of the six distinct parts. Alternate nodes described above are alternatives for the same part, not additional required collectibles."
+        ]
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Bomb_Components_(Investigations)",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Bomb_Components_(Investigations)?action=history",
+    "retrieved": "2026-10-21",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Little Bohemia, Metropolis",
+      "precision": "source-described collectible nodes and alternate locations",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Bomb_Components_(Investigations)",
+      "maps": []
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Gorilla Bomb Components\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Publisher descriptions explicitly name the investigation and covered nodes. No chapter times are supplied."
+    },
+    "videos": [
+      {
+        "title": "Sethum: all six Gorilla Bomb Components locations",
+        "url": "https://www.youtube.com/watch?v=CK03Iw5LA3Y",
+        "evidence": "Investigation and covered nodes explicitly identified by the publisher. Historical guide; no unverified timestamps added."
+      }
+    ]
+  },
+  {
+    "slug": "Bane_Brought_Down",
+    "title": "Bane Brought Down",
+    "category": "Quests",
+    "summary": "Return to Batwoman at the East End Police Station after defeating Bane and choose a weapon reward.",
+    "sections": [
+      {
+        "title": "Turn-in and route",
+        "items": [
+          "Speak to Batwoman inside the East End Police Station, also known as the GCPD 9th Precinct. The station source lists her in the main area and side halls.",
+          "Enter through the front door in Gotham's East End, or use the Watchtower Tech Wing teleporter described by the station source. The maps show the station and its interior; they do not mark Batwoman's exact standing position.",
+          "Batman says Bane will remain in custody while rehabilitation is considered and directs you to meet Batwoman at the safehouse. This page covers that turn-in objective."
+        ],
+        "references": [
+          {
+            "label": "Station access, map and inhabitants",
+            "url": "https://dcuniverseonline.fandom.com/wiki/East_End_Police_Station"
+          }
+        ]
+      },
+      {
+        "title": "Selectable weapon reward",
+        "items": [
+          "The source lists the following weapon choices and styles. Consult the in-game reward panel for current availability and stats."
+        ],
+        "table": {
+          "caption": "Source-listed weapon rewards",
+          "columns": [
+            "Weapon type",
+            "Name",
+            "Style"
+          ],
+          "rows": [
+            [
+              "Bow",
+              "Shielded Nanochine Bow",
+              "Tech-Enhanced Longbow"
+            ],
+            [
+              "Brawling",
+              "Bouncer's Favorite Knuckles",
+              "Spike Cestus"
+            ],
+            [
+              "Dual Pistol",
+              "PX4200 Pistols",
+              "Plasma Pistol"
+            ],
+            [
+              "Dual Wield",
+              "Anodized Nanochine Escrima Stick",
+              "Exobyte-Infused Escrima Stick"
+            ],
+            [
+              "Hand Blaster",
+              "Shielded Nanochine Blasters",
+              "Plasma Gauntlets"
+            ],
+            [
+              "Martial Arts",
+              "Claws of Zinthos",
+              "Traditional Katar"
+            ],
+            [
+              "One-Handed",
+              "Machined Synthium Sword",
+              "Bone Hilt Katana"
+            ],
+            [
+              "Rifle",
+              "LR9000 Rifle",
+              "Intergang Rifle"
+            ],
+            [
+              "Shield",
+              "Anodized Nanochine Plate",
+              "Multi-Plated Shield"
+            ],
+            [
+              "Staff",
+              "Combat Energy Staff",
+              "Cog-Headed Staff"
+            ],
+            [
+              "Two-Handed",
+              "Thug Slugger",
+              "Baseball Bat"
+            ]
+          ]
+        }
+      }
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down",
+    "history": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down?action=history",
+    "retrieved": "2026-10-21",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions",
+    "location": {
+      "label": "Batwoman, East End Police Station, Gotham",
+      "precision": "safehouse world and interior maps; NPC area, not exact coordinates",
+      "source": "https://dcuniverseonline.fandom.com/wiki/East_End_Police_Station",
+      "maps": [
+        {
+          "label": "East End Police Station world map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:GCPD9thPrecinctMapLoc.jpg"
+        },
+        {
+          "label": "East End Police Station interior map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:East_End_GCPD.jpg"
+        }
+      ]
+    },
+    "videoReview": {
+      "status": "verified-match",
+      "query": "DCUO \"Bane Brought Down\" site:youtube.com/watch",
+      "checked": "2026-10-21",
+      "note": "Video title explicitly names Bane Brought Down, but the description covers the broader Bane mission. No precise turn-in timestamp is verified."
+    },
+    "videos": [
+      {
+        "title": "MightyLightning: Bane Brought Down (broader mission gameplay)",
+        "url": "https://www.youtube.com/watch?v=TESgdACqaDg",
+        "evidence": "Exact quest name appears in the publisher title. The description identifies Batman-mentor Bane gameplay; no specific Batwoman turn-in segment was verified."
+      }
+    ],
+    "related": [
+      "Cape_Carmine_Lighthouse",
+      "Out_in_the_Streets",
+      "House_of_Venom"
+    ]
   }
 ]

@@ -1,12 +1,13 @@
 import { test, expect } from "@playwright/test";
+import articles from "../../src/data/articles.json" with { type: "json" };
 test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".card")).toHaveCount(14);
+  await expect(page.locator(".card")).toHaveCount(articles.length);
   await page.getByRole("searchbox").fill("corridor leading to the exit");
   await expect(page.locator(".card:visible")).toHaveCount(1);
   await page.getByRole("button", { name: "Quests", exact: true }).click();
   await page.getByRole("link", { name: "All guides" }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(14);
+  await expect(page.locator(".card:visible")).toHaveCount(articles.length);
   await expect(page.getByRole("searchbox")).toHaveValue("");
   await expect(
     page.getByRole("button", { name: "All", exact: true }),
@@ -15,7 +16,7 @@ test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await expect(page.locator("#empty")).toBeVisible();
   await page.getByRole("searchbox").fill("");
   await page.getByRole("button", { name: "Quests", exact: true }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(3);
+  await expect(page.locator(".card:visible")).toHaveCount(articles.filter(a => a.category === "Quests").length);
   await page.getByRole("link", { name: /Grab and Smash/ }).click();
   await expect(
     page.getByRole("heading", { name: "Grab and Smash", exact: true }),
@@ -118,7 +119,7 @@ test("global search, category navigation, and mobile menu", async ({
     .getByRole("navigation", { name: "Categories", exact: true })
     .getByRole("link", { name: "Quests" })
     .click();
-  await expect(page.locator(".card:visible")).toHaveCount(3);
+  await expect(page.locator(".card:visible")).toHaveCount(articles.filter(a => a.category === "Quests").length);
   await page.getByRole("button", { name: "Switch color theme" }).click();
   await page.reload();
   await expect(page.locator("html")).toHaveClass("light");

@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 14,
+    "published": 20,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -17746,7 +17746,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down",
       "title": "Bane_Brought_Down",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Bane_Brought_Down",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -22685,7 +22686,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Beatdown_for_Bane",
       "title": "Beatdown_for_Bane",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Beatdown_for_Bane",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Battle+Lust+Aura+-+Hands%2C+Head%2C+Feet"
       ]
@@ -97188,7 +97190,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Bomb_Components_(Investigations)",
       "title": "Gorilla_Bomb_Components_(Investigations)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Gorilla_Bomb_Components",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Godseye+Pyramid+%28Location%29"
       ]
@@ -180493,7 +180496,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Poisoned_Bait",
       "title": "Poisoned_Bait",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Poisoned_Bait",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Poison+Tongue%27s+Missions"
@@ -188928,7 +188932,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Punks_'n_Robbers",
       "title": "Punks_'n_Robbers",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Punks_n_Robbers",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Priority+Taunt"
@@ -234481,7 +234486,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Precipice_of_Fear_(Investigations)",
       "title": "The_Precipice_of_Fear_(Investigations)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Precipice_of_Fear",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]

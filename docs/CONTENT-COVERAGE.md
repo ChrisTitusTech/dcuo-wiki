@@ -37,3 +37,12 @@ These pages were audited, not expanded in this Powers change.
   reconcile its live revision first; never silently orphan community corrections.
 - Retain the existing quest map and quest-specific YouTube verification policy.
 - A source-reviewed badge means reviewed content, not exhaustive source coverage.
+
+## Quest-first update (2026-10-21)
+
+The owner prioritized mapped quests and practical guides before reference pages.
+The first two batches expanded seven existing guides and added four quests and
+two investigations. Lighthouse inhabitants/gallery, Grab and Smash terminal views,
+Viva investigation scenes, and twelve Til Death video chapters are now covered.
+There are 20 published articles and 93 credited R2 images. This does not resolve
+the four reference-directory gaps above or complete the full-wiki import.

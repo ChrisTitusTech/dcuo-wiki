@@ -123,9 +123,9 @@ supersedes the reference-first order in the previous coverage correction.
 
 - [x] Complete existing three quests and four mapped location/collectible guides:
   missing route images, objectives/context, exact-name video research, chapters.
-- [ ] Expand a connected set of additional quest walkthroughs with sourced maps
+- [x] Expand a connected set of additional quest walkthroughs with sourced maps
   and matching videos; record researched exclusions instead of publishing stubs.
-- [ ] Add further mapped collectible guides with source-complete node coverage.
+- [x] Add further mapped collectible guides with source-complete node coverage.
 - [ ] Restore Collections, Artifacts, Investigations and Feats reference coverage,
   then remaining Equipment/Weapon Mastery details.
 - [ ] Convert individual power ability lists after the practical guide work.
@@ -146,3 +146,15 @@ Existing editable baselines remain unchanged. R2 objects were byte-compared with
 local files and their attribution catalog updated in D1. Validation: type checking,
 35 unit tests, production build, 9 browser tests, 7 Cloudflare integration tests,
 and independent Codex review passed. Build contains 30 files against 18,000 budget.
+
+Quest-first batch 2: Punks 'n Robbers, Poisoned Bait, Beatdown for Bane and
+Bane Brought Down now include sourced map context and exact-title video matches.
+The Precipice of Fear and Gorilla Bomb Components retain all six nodes, alternate
+locations, recording text, rewards and verified video coverage. Nineteen new
+images (38 R2 objects) supplement reused maps; decorative mail/investigation icons
+and empty trivia headings are intentionally omitted. Bane's Back hero/villain
+pages remain held: thin introductory content and conflicting level information
+need further evidence. Bane Brought Down video is labeled broader mission footage;
+no precise turn-in timestamp is claimed. Validation passed (35 unit, 9 browser,
+build/type checks); independent review's stale quest-count finding was fixed and
+retested. Existing Cloudflare integration evidence applies to unchanged runtime.
