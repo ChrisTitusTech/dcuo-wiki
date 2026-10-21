@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ImageViewer from "../components/ImageViewer.astro";
 import articles from "../data/articles";
 interface Props {
   title: string;
@@ -121,7 +122,9 @@ const home = Astro.url.pathname === "/";
         </footer>
       </div>
     </div>
+    <ImageViewer />
     <script>
+      import "../scripts/image-viewer";
       import { loadPlayerNavigation } from "../scripts/player-navigation";
       loadPlayerNavigation();
       const navigation = document.querySelector<HTMLDetailsElement>(

@@ -1,0 +1,40 @@
+<dialog
+  id="image-viewer"
+  aria-label="Image viewer"
+  aria-describedby="viewer-caption"
+>
+  <div class="viewer-toolbar">
+    <span id="viewer-count" aria-live="polite"></span>
+    <button
+      id="viewer-close"
+      type="button"
+      autofocus
+      aria-label="Close image viewer"
+    >
+      Close <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="viewer-stage">
+    <button
+      id="viewer-previous"
+      class="viewer-arrow"
+      type="button"
+      aria-label="Previous image"
+    >
+      &#8249;
+    </button>
+    <img id="viewer-image" alt="" />
+    <button
+      id="viewer-next"
+      class="viewer-arrow"
+      type="button"
+      aria-label="Next image"
+    >
+      &#8250;
+    </button>
+  </div>
+  <p id="viewer-caption"></p>
+  <p id="viewer-error" role="status" hidden>
+    Image could not load. Close the viewer and try again.
+  </p>
+</dialog>

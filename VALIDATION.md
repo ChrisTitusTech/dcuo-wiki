@@ -190,3 +190,19 @@ loads the owner's FIRECRAWL_KEY from ignored .env, stops on rejected credentials
 and backs off on rate limits. Tests exercise local key loading, secret exclusion
 from logs, authentication stop, cache resume and throttling delay. Final output:
 30 static files, 442,025 bytes; R2 totals 7,182,254 bytes across 74 objects.
+
+## Article image popout
+
+Owner clarified that images must open over the article, not in a new tab. Both
+thumbnail and Full-size image links now open a full-screen native dialog with
+original R2 bytes, captions, image position, previous/next controls, and left/right
+arrow keys. Navigation wraps at either end and is hidden for single images.
+Clicking the surrounding area, Close, or Escape returns to the article with focus
+and scroll position preserved. Delegated events support server-rendered community
+map corrections; unimported source links retain their normal behavior.
+
+35 unit tests, seven wiki browser tests, seven Cloudflare integration tests,
+Astro checks, build and deployment dry run passed. Browser regressions cover the
+same-tab behavior, full-size source, navigation, Escape/backdrop/Close dismissal,
+focus/scroll restoration, single-image behavior and mobile overflow. Real R2 maps
+were visually inspected at desktop and 390px mobile widths.

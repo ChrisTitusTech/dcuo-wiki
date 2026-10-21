@@ -1001,3 +1001,25 @@ tr:nth-child(even) {
 .player-navigation small { color: var(--muted); font-size: .7rem; }
 .player-navigation small:not([hidden]) { display: block; }
 .player-navigation a { display: block; overflow-wrap: anywhere; }
+
+html.image-viewer-open { overflow: hidden; }
+#image-viewer { position: fixed; inset: 0; width: 100vw; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 12px; border: 0; background: rgba(5, 12, 20, .96); color: #fff; }
+#image-viewer[open] { display: flex; flex-direction: column; gap: 10px; }
+#image-viewer::backdrop { background: rgba(0, 0, 0, .85); }
+.viewer-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+#image-viewer button { background: #1b2e44; color: #fff; border: 1px solid #6f8aa6; border-radius: 4px; min-width: 44px; min-height: 44px; padding: 8px 14px; }
+.viewer-stage { display: flex; flex: 1; min-height: 0; align-items: center; justify-content: center; gap: 12px; }
+#viewer-image { display: block; min-width: 0; max-width: calc(100% - 140px); max-height: 100%; width: auto; height: auto; object-fit: contain; }
+#image-viewer:has(#viewer-previous[hidden]) #viewer-image { max-width: 100%; }
+#viewer-image[hidden], #image-viewer button[hidden], #viewer-error[hidden] { display: none; }
+.viewer-arrow { flex-shrink: 0; font-size: 30px; line-height: 1; }
+#viewer-caption { margin: 0; text-align: center; overflow-wrap: anywhere; max-height: 20vh; overflow-y: auto; }
+#viewer-error { margin: 0; text-align: center; }
+@media (max-width: 640px) {
+  #image-viewer { padding: 8px; }
+  .viewer-stage { position: relative; gap: 0; padding-bottom: 52px; }
+  #viewer-image { max-width: 100%; }
+  .viewer-arrow { position: absolute; bottom: 0; }
+  #viewer-previous { left: 20%; }
+  #viewer-next { right: 20%; }
+}

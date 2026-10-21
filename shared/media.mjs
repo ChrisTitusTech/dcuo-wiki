@@ -21,7 +21,7 @@ export function renderMapLinks(rows) {
       const asset = assets.get(url.href);
       if (!asset)
         return `<p><a href="${escape(url.href)}" rel="noreferrer">${escape(label)}</a></p>`;
-      return `<figure><a href="${escape(asset.original)}" aria-label="${escape(label)} - open full-size map"><img src="${escape(asset.preview)}" alt="${escape(label)}" width="${asset.previewWidth}" height="${asset.previewHeight}" loading="lazy" decoding="async"></a><figcaption><strong>${escape(label)}</strong><span><a href="${escape(asset.original)}">Full-size image</a> | <a href="${escape(asset.sourcePage)}" rel="noreferrer">Source</a></span><small>${escape(asset.credit)}</small></figcaption></figure>`;
+      return `<figure><a data-image-viewer href="${escape(asset.original)}" aria-label="${escape(label)} - enlarge image"><img src="${escape(asset.preview)}" alt="${escape(label)}" width="${asset.previewWidth}" height="${asset.previewHeight}" loading="lazy" decoding="async"></a><figcaption><strong>${escape(label)}</strong><span><a data-image-viewer href="${escape(asset.original)}">Full-size image</a> | <a href="${escape(asset.sourcePage)}" rel="noreferrer">Source</a></span><small>${escape(asset.credit)}</small></figcaption></figure>`;
     })
     .join("")}</div>`;
 }
