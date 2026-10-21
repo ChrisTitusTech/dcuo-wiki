@@ -36,10 +36,22 @@ export async function scrape(
     }
     if (res.status === 429 || res.status >= 500) {
       if (attempt === 2) throw new Error(`Firecrawl HTTP ${res.status}`);
-      await sleep(1000 * 2 ** attempt);
+      const retryAfter = Number(res.headers?.get("retry-after"));
+      await sleep(
+        res.status === 429
+          ? Math.min(
+              60000,
+              Math.max(1000, retryAfter > 0 ? retryAfter * 1000 : 60000),
+            )
+          : 1000 * 2 ** attempt,
+      );
       continue;
     }
-    if (!res.ok) throw new Error(`Firecrawl HTTP ${res.status}`);
+    if (!res.ok) {
+      const error = new Error(`Firecrawl HTTP ${res.status}`);
+      error.status = res.status;
+      throw error;
+    }
     const body = await res.json();
     if (
       !body.success ||

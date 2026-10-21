@@ -719,5 +719,265 @@
     "retrieved": "2026-10-20",
     "reviewed": true,
     "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Til_Death_Do_Us_Part_Episode_I",
+    "title": "'Til Death Do Us Part: Episode I (Briefings)",
+    "category": "Collectibles",
+    "summary": "Find all six briefing tokens in Chinatown, Metropolis, with maps and in-game views for each location.",
+    "sections": [
+      {
+        "title": "Before you start",
+        "items": [
+          "This briefing set contains six tokens in Chinatown, Metropolis. Match the part number in the location table with the screenshots below.",
+          "The directions and images come from the source wiki. They describe landmarks and rooftop or ground-level positions; they have not been rechecked in the current game."
+        ]
+      },
+      {
+        "title": "Briefing locations",
+        "items": [],
+        "table": {
+          "caption": "Episode I: six briefing locations",
+          "columns": [
+            "Part",
+            "Recording",
+            "Where to look"
+          ],
+          "rows": [
+            [
+              "1",
+              "Vicki Vale",
+              "At street level, along the southern edge of a parking lot located three blocks north of the Mannheim's Chinese Theater map marker."
+            ],
+            [
+              "2",
+              "Lois Lane",
+              "Rooftop level, on the west side of a skyscraper; approximately six blocks east of the Chinatown MPD Station."
+            ],
+            [
+              "3",
+              "Madame Xanadu's",
+              "Rooftop level, on the north side of a skyscraper; approximately one and a half blocks east and one block north of the Mannheim's Chinese Theater map marker."
+            ],
+            [
+              "4",
+              "Jack Ryder",
+              "Rooftop level, beneath the eaves of a pagoda-style sitting area on a roof approximately one and a half blocks north of the Mannheim's Chinese Theater map marker."
+            ],
+            [
+              "5",
+              "Circe",
+              "Rooftop level, on the east side of a smoking chimney that can obscure it from view; roughly four blocks east of the Chinatown MPD Station."
+            ],
+            [
+              "6",
+              "Wonder Woman",
+              "Rooftop level, roughly three blocks east and two blocks north of the Chinatown MPD Station; next to a large air conditioner."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Completion reward",
+        "items": [
+          "Completing this set rewards the Carry-Me Panda back item, which grants the Kabuki Pack style."
+        ]
+      }
+    ],
+    "location": {
+      "label": "Chinatown, Metropolis",
+      "precision": "source map screenshots and landmark directions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_I_(Briefings)#Briefings",
+      "maps": [
+        {
+          "label": "Part 1: Vicki Vale - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_VickieVale_Loc.png"
+        },
+        {
+          "label": "Part 1: Vicki Vale - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_VickieVale.png"
+        },
+        {
+          "label": "Part 2: Lois Lane - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_LoisLane_Loc.png"
+        },
+        {
+          "label": "Part 2: Lois Lane - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_LoisLane.png"
+        },
+        {
+          "label": "Part 3: Madame Xanadu's - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_MadameXanadu%27s_Loc.png"
+        },
+        {
+          "label": "Part 3: Madame Xanadu's - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_MadameXanadu%27s.png"
+        },
+        {
+          "label": "Part 4: Jack Ryder - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_JackRyder_Loc.png"
+        },
+        {
+          "label": "Part 4: Jack Ryder - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_JackRyder.png"
+        },
+        {
+          "label": "Part 5: Circe - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_Circe_Loc.png"
+        },
+        {
+          "label": "Part 5: Circe - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_Circe.png"
+        },
+        {
+          "label": "Part 6: Wonder Woman - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_WonderWoman_Loc.png"
+        },
+        {
+          "label": "Part 6: Wonder Woman - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Til_Death_Ep1_Brief_WonderWoman.png"
+        }
+      ]
+    },
+    "related": [
+      "Til_Death_Do_Us_Part_Episode_II",
+      "Investigations",
+      "Collections"
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_I_(Briefings)",
+    "history": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_I_(Briefings)?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
+  },
+  {
+    "slug": "Til_Death_Do_Us_Part_Episode_II",
+    "title": "'Til Death Do Us Part: Episode II (Briefings)",
+    "category": "Collectibles",
+    "summary": "Find all six briefing tokens in Burnley, Gotham, with maps and in-game views for each location.",
+    "sections": [
+      {
+        "title": "Before you start",
+        "items": [
+          "This briefing set contains six tokens in Burnley, Gotham. Match the part number in the location table with the screenshots below.",
+          "The directions and images come from the source wiki. They describe landmarks and rooftop or ground-level positions; they have not been rechecked in the current game."
+        ]
+      },
+      {
+        "title": "Briefing locations",
+        "items": [],
+        "table": {
+          "caption": "Episode II: six briefing locations",
+          "columns": [
+            "Part",
+            "Recording",
+            "Where to look"
+          ],
+          "rows": [
+            [
+              "1",
+              "Lois Lane",
+              "On the ground, between the two apartments with graffiti on them. Two blocks north of Pillars of Hades and one block west."
+            ],
+            [
+              "2",
+              "Vicki Vale",
+              "South east of the University warehouse on top of building with sign that reads: \"Nora's frozen Treats\", aka the WGTU radio building."
+            ],
+            [
+              "3",
+              "Jack Ryder",
+              "On the ground behind the building across from the night club."
+            ],
+            [
+              "4",
+              "Lois Lane",
+              "On the ground between the two apartment buildings."
+            ],
+            [
+              "5",
+              "Circe",
+              "In the train stop platform."
+            ],
+            [
+              "6",
+              "Wonder Woman",
+              "Behind the fountain, south of the University."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Completion reward",
+        "items": [
+          "Completing this set rewards the Archmagus' Robe item. The source lists reward mail for both heroes and villains."
+        ]
+      }
+    ],
+    "location": {
+      "label": "Burnley, Gotham",
+      "precision": "source map screenshots and landmark directions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_II_(Briefings)#Briefings",
+      "maps": [
+        {
+          "label": "Part 1: Lois Lane - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Lois_Lane1.jpg"
+        },
+        {
+          "label": "Part 1: Lois Lane - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Lois_Lane1_Map.png"
+        },
+        {
+          "label": "Part 2: Vicki Vale - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Map1.png"
+        },
+        {
+          "label": "Part 2: Vicki Vale - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:Part_2_%27Til_Death_II_Vicki_Vale.png"
+        },
+        {
+          "label": "Part 3: Jack Ryder - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Jack_Ryder.jpg"
+        },
+        {
+          "label": "Part 3: Jack Ryder - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Jack_Ryder_Map.png"
+        },
+        {
+          "label": "Part 4: Lois Lane - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Lois_Lane2.jpg"
+        },
+        {
+          "label": "Part 4: Lois Lane - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Lois_Lane2_Map.png"
+        },
+        {
+          "label": "Part 5: Circe - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Circe.jpg"
+        },
+        {
+          "label": "Part 5: Circe - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Circe_Map.png"
+        },
+        {
+          "label": "Part 6: Wonder Woman - in-game view",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Wonder_Woman.jpg"
+        },
+        {
+          "label": "Part 6: Wonder Woman - map",
+          "url": "https://dcuniverseonline.fandom.com/wiki/File:%27Til_Death_II_-_Wonder_Woman_Map.png"
+        }
+      ]
+    },
+    "related": [
+      "Til_Death_Do_Us_Part_Episode_I",
+      "Investigations",
+      "Collections"
+    ],
+    "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_II_(Briefings)",
+    "history": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_II_(Briefings)?action=history",
+    "retrieved": "2026-10-20",
+    "reviewed": true,
+    "license": "CC-BY-SA; see source for exceptions"
   }
 ]

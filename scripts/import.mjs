@@ -1,5 +1,6 @@
 // Staged content never becomes a published article automatically.
 import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
+import { parseEnv } from "node:util";
 import { createHash } from "node:crypto";
 import { importPlan, reusableCache } from "./import-plan.mjs";
 import { scrape } from "./firecrawl.mjs";
@@ -8,7 +9,21 @@ const inventory = args.includes("--inventory")
   ? JSON.parse(await readFile("data/inventory.json", "utf8"))
   : undefined;
 const { urls, refresh, dryRun, limit } = importPlan(args, inventory);
-const key = process.env.FIRECRAWL_API_KEY;
+let localEnv = {};
+if (!dryRun) {
+  try {
+    localEnv = parseEnv(await readFile(".env", "utf8"));
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+}
+const key = (
+  process.env.FIRECRAWL_API_KEY ||
+  process.env.FIRECRAWL_KEY ||
+  localEnv.FIRECRAWL_API_KEY ||
+  localEnv.FIRECRAWL_KEY ||
+  localEnv.firecrawl_key
+)?.trim();
 if (!dryRun) await mkdir(".import-cache", { recursive: true });
 let failed = 0,
   attempted = 0,
@@ -57,6 +72,7 @@ for (const url of urls) {
   } catch (e) {
     console.error(`${url}: ${e.message}`);
     failed++;
+    if (e.status === 401 || e.status === 403) break;
   }
 }
 console.log(JSON.stringify({ dryRun, attempted, cached: cachedCount, failed }));

@@ -1,8 +1,8 @@
 # Guide image storage
 
 R2 bucket: `dcuo-wiki-images`. Public domain: `https://images.dcuo-wiki.com`.
-13 source images and 13 previews (3,051,242 bytes) cover the 16 existing map
-references in five guides. Full-resolution downloaded bytes are preserved;
+37 source images and 37 previews (7,182,254 bytes) cover 40 image references
+in seven guides, including maps and in-game location screenshots. Full-resolution downloaded bytes are preserved;
 Fandom's CDN returned WebP even for source URLs ending in .jpg.
 
 `data/media-sources.json` records reviewed source URLs and attribution.

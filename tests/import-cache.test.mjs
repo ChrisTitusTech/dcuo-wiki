@@ -106,3 +106,38 @@ test("inventory CLI dry run and bounded resume avoid publishing and repeated fet
     await rm(dir, { recursive: true, force: true });
   }
 });
+
+test("CLI reads FIRECRAWL_KEY from .env and stops a batch after rejected credentials", async () => {
+  const dir = await mkdtemp(join(tmpdir(), "dcuo-env-"));
+  try {
+    await writeFile(join(dir, ".env"), "FIRECRAWL_KEY=test-local-key\n");
+    const mock = join(dir, "mock.mjs");
+    await writeFile(
+      mock,
+      `import {appendFile} from 'node:fs/promises';globalThis.fetch=async(u,init)=>{if(init.headers.Authorization!=='Bearer test-local-key')throw Error('Wrong fixture key');await appendFile('calls','x');return {ok:false,status:401}};`,
+    );
+    const env = { ...process.env };
+    delete env.FIRECRAWL_API_KEY;
+    delete env.FIRECRAWL_KEY;
+    const script = fileURLToPath(
+      new URL("../scripts/import.mjs", import.meta.url),
+    );
+    const result = spawnSync(
+      process.execPath,
+      [
+        "--import",
+        mock,
+        script,
+        "https://dcuniverseonline.fandom.com/wiki/A",
+        "https://dcuniverseonline.fandom.com/wiki/B",
+      ],
+      { cwd: dir, env, encoding: "utf8" },
+    );
+    assert.equal(result.status, 1);
+    assert.equal(await readFile(join(dir, "calls"), "utf8"), "x");
+    assert.doesNotMatch(result.stdout + result.stderr, /test-local-key/);
+    assert.match(result.stdout, /"attempted":1/);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});

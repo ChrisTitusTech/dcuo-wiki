@@ -1,12 +1,12 @@
 import { test, expect } from "@playwright/test";
 test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".card")).toHaveCount(12);
+  await expect(page.locator(".card")).toHaveCount(14);
   await page.getByRole("searchbox").fill("corridor leading to the exit");
   await expect(page.locator(".card:visible")).toHaveCount(1);
   await page.getByRole("button", { name: "Quests", exact: true }).click();
   await page.getByRole("link", { name: "All guides" }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(12);
+  await expect(page.locator(".card:visible")).toHaveCount(14);
   await expect(page.getByRole("searchbox")).toHaveValue("");
   await expect(
     page.getByRole("button", { name: "All", exact: true }),
@@ -145,7 +145,7 @@ test("global search, category navigation, and mobile menu", async ({
 });
 
 test("copied maps appear inline with full-size and source links", async ({ page }) => {
-  for (const [slug, count] of [["Grab_and_Smash", 5], ["Cape_Carmine_Lighthouse", 2], ["Viva_la_Lucha_Libre", 6], ["Out_in_the_Streets", 1], ["House_of_Venom", 2]] as const) {
+  for (const [slug, count] of [["Grab_and_Smash", 5], ["Cape_Carmine_Lighthouse", 2], ["Viva_la_Lucha_Libre", 6], ["Out_in_the_Streets", 1], ["House_of_Venom", 2], ["Til_Death_Do_Us_Part_Episode_I", 12], ["Til_Death_Do_Us_Part_Episode_II", 12]] as const) {
     await page.goto(`/wiki/${slug}/`);
     await expect(page.locator('.map-gallery img')).toHaveCount(count);
     await expect(page.locator('.map-gallery a').filter({hasText: 'Full-size image'})).toHaveCount(count);

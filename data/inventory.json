@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 12,
+    "published": 14,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -72,7 +72,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
       "title": "'Til_Death_Do_Us_Part:_Episode_I_(Briefings)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Til_Death_Do_Us_Part_Episode_I",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -82,7 +83,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_II_(Briefings)",
       "title": "'Til_Death_Do_Us_Part:_Episode_II_(Briefings)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Til_Death_Do_Us_Part_Episode_II",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"

@@ -77,6 +77,7 @@ test("inventory reports partial, deduplicates URL variants, and marks terminal c
 });
 test("Firecrawl retries transient failures and retains HTML and links", async () => {
   let calls = 0;
+  const waits = [];
   const data = {
     markdown: "Content",
     html: "<p>Content</p>",
@@ -84,7 +85,7 @@ test("Firecrawl retries transient failures and retains HTML and links", async ()
   };
   const result = await scrape(origin + "/wiki/Powers", {
     key: "test",
-    sleep: async () => {},
+    sleep: async (ms) => { waits.push(ms); },
     fetcher: async () => {
       calls++;
       return calls === 1
@@ -97,6 +98,7 @@ test("Firecrawl retries transient failures and retains HTML and links", async ()
     },
   });
   assert.equal(calls, 2);
+  assert.deepEqual(waits, [60000]);
   assert.deepEqual(result, data);
 });
 test("Firecrawl does not retry authentication errors or accept empty content", async () => {

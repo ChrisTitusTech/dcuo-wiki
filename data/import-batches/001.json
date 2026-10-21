@@ -1,0 +1,275 @@
+{
+  "id": "001",
+  "date": "2026-10-20",
+  "scope": "First 25 unreviewed inventory URLs, alphabetical order; staging and representative conversion test",
+  "downloaded": 25,
+  "uniqueCanonicalPages": 20,
+  "publishedGuides": [
+    "Til_Death_Do_Us_Part_Episode_I",
+    "Til_Death_Do_Us_Part_Episode_II"
+  ],
+  "newImages": 24,
+  "notes": [
+    "Initial key-variable mismatch caused rejected authentication requests; no key values were logged. Importer now reads FIRECRAWL_KEY from .env and stops on rejected credentials.",
+    "Eight initial rate-limited URLs were retried from the same bounded batch. All 25 eventually succeeded; cached documents were reused.",
+    "Other gameplay candidates remain staged, not rejected merely for being short. The remaining conversion work is recorded per URL."
+  ],
+  "records": [
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_do_Us_Part",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
+      "scrapeId": "01a15cb5-2910-73fb-b10f-8e049ee90712",
+      "retrieved": "2026-10-21T04:25:41.809Z",
+      "markdownSha256": "86ed021838294d3814e33e34538ec607bc7d6793eea796437a1522a8f69c7fd2",
+      "characters": 17265,
+      "disposition": "duplicate-of-published",
+      "publishedSlug": "Til_Death_Do_Us_Part_Episode_I",
+      "reason": "Six sourced locations, complete location screenshots and map images; converted once per canonical guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part",
+      "scrapeId": "01a15cb5-351d-717b-9482-97e092eaa8a4",
+      "retrieved": "2026-10-21T04:25:46.788Z",
+      "markdownSha256": "a053d72df9f74ca0ff5aa7cae6455c1ad3dcfeadc329a8fe3b99bdc84c1a6588",
+      "characters": 58698,
+      "disposition": "held",
+      "reason": "Source carries cleanup warning; quest location and exact-video research still required."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_do_Us_Part_(briefing)/Episode_1",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
+      "scrapeId": "01a15cb5-4887-72cf-bf68-1a23b83a7cbb",
+      "retrieved": "2026-10-21T04:25:50.197Z",
+      "markdownSha256": "86ed021838294d3814e33e34538ec607bc7d6793eea796437a1522a8f69c7fd2",
+      "characters": 17265,
+      "disposition": "duplicate-of-published",
+      "publishedSlug": "Til_Death_Do_Us_Part_Episode_I",
+      "reason": "Six sourced locations, complete location screenshots and map images; converted once per canonical guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_do_Us_Part_(briefing)/Episode_I",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
+      "scrapeId": "01a15cb5-5619-71c2-b601-d08649031a71",
+      "retrieved": "2026-10-21T04:25:54.822Z",
+      "markdownSha256": "86ed021838294d3814e33e34538ec607bc7d6793eea796437a1522a8f69c7fd2",
+      "characters": 17265,
+      "disposition": "duplicate-of-published",
+      "publishedSlug": "Til_Death_Do_Us_Part_Episode_I",
+      "reason": "Six sourced locations, complete location screenshots and map images; converted once per canonical guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part_(Briefings)",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part_(Briefings)",
+      "scrapeId": "01a15cb5-683a-7559-9f8e-8da7e2f663f1",
+      "retrieved": "2026-10-21T04:25:58.217Z",
+      "markdownSha256": "67847194ea07f8f49f74eb72bed658eaf99846ef8d1661b87c1d3dcb5d56156b",
+      "characters": 3434,
+      "disposition": "held",
+      "reason": "Umbrella stub overlaps the episode guides; do not duplicate their content."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_do_Us_Part%3A_Episode_I_(Briefings)",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
+      "scrapeId": "01a15cb5-75eb-72ca-b0a7-3fa86ddf3c30",
+      "retrieved": "2026-10-21T04:26:00.602Z",
+      "markdownSha256": "86ed021838294d3814e33e34538ec607bc7d6793eea796437a1522a8f69c7fd2",
+      "characters": 17265,
+      "disposition": "duplicate-of-published",
+      "publishedSlug": "Til_Death_Do_Us_Part_Episode_I",
+      "reason": "Six sourced locations, complete location screenshots and map images; converted once per canonical guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_I_(Briefings)",
+      "scrapeId": "01a15cb5-7e84-70ef-9f26-6f6862444865",
+      "retrieved": "2026-10-21T04:26:02.834Z",
+      "markdownSha256": "86ed021838294d3814e33e34538ec607bc7d6793eea796437a1522a8f69c7fd2",
+      "characters": 17265,
+      "disposition": "published",
+      "publishedSlug": "Til_Death_Do_Us_Part_Episode_I",
+      "reason": "Six sourced locations, complete location screenshots and map images; converted once per canonical guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_II_(Briefings)",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part%3A_Episode_II_(Briefings)",
+      "scrapeId": "01a15cb5-878a-71ed-94e9-2d5a2e4ed338",
+      "retrieved": "2026-10-21T04:26:07.711Z",
+      "markdownSha256": "9fff331487a18842b46f669257c9ca8dea39c74eb15c921f7520f536ef78f749",
+      "characters": 15577,
+      "disposition": "published",
+      "publishedSlug": "Til_Death_Do_Us_Part_Episode_II",
+      "reason": "Six sourced locations, complete location screenshots and map images; converted once per canonical guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Aggro%22_Antonio",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Aggro%22_Antonio",
+      "scrapeId": "01a15cb5-9a47-763a-85c2-63be79b255d1",
+      "retrieved": "2026-10-21T04:26:11.192Z",
+      "markdownSha256": "e831139bebf8ddbc2245eee74310eb1fd9997a8d70586272bef233c9b549c16d",
+      "characters": 646,
+      "disposition": "held",
+      "reason": "Thin lore entry without actionable gameplay/location detail; hold for consolidation with the investigation guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Carbomb%22_Carmine",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Carbomb%22_Carmine",
+      "scrapeId": "01a15cb5-a7e0-7545-ab49-3207e198e537",
+      "retrieved": "2026-10-21T04:26:13.263Z",
+      "markdownSha256": "5539eb5e87299a81ec11bf9631c7222b4534e1ed616f57b0e8d3a966b9808f38",
+      "characters": 494,
+      "disposition": "held",
+      "reason": "Thin lore entry without actionable gameplay/location detail; hold for consolidation with the investigation guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Ha_Ha_Ha%22_Graffiti",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Ha_Ha_Ha%22_Graffiti",
+      "scrapeId": "01a15cb6-8b98-726c-adc9-d797a9f6375f",
+      "retrieved": "2026-10-21T04:27:09.799Z",
+      "markdownSha256": "f26cdce0ead3f176873f81dd70c718d2d49bed2d36703f2fc529e6263dc267b9",
+      "characters": 3203,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Knuckles%22_Farrelli",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Knuckles%22_Farrelli",
+      "scrapeId": "01a15cb6-8cd5-74ef-b2b3-f4fa9a4d1898",
+      "retrieved": "2026-10-21T04:27:12.893Z",
+      "markdownSha256": "af29b5e931660afabe6682facfe7ad3111270cf73af108e70557a87207c7df00",
+      "characters": 1571,
+      "disposition": "held",
+      "reason": "Thin lore entry without actionable gameplay/location detail; hold for consolidation with the investigation guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Make_a_Deal%22_McNulty",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Make_a_Deal%22_McNulty",
+      "scrapeId": "01a15cb7-44f0-7011-9bd6-b915b361fec8",
+      "retrieved": "2026-10-21T04:28:00.308Z",
+      "markdownSha256": "755c7535a8333af92f2e6724bb0e4441512f889d726bd5c0957366685f255f96",
+      "characters": 11658,
+      "disposition": "held",
+      "reason": "Vendor tables retrieved; current stock/prices and image extraction need dedicated review."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Masters_of_Magic!%22_Trading_Cards",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/Collections%3A_%22Masters_of_Magic!%22_Trading_Cards",
+      "scrapeId": "01a15cb7-51e8-728e-a21f-3f148b4b57e1",
+      "retrieved": "2026-10-21T04:28:03.100Z",
+      "markdownSha256": "41c721de4ccc7529191c3bfc27a1ccd87cebf3ec6002bdf0eac640b748c3dabd",
+      "characters": 8536,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Matches%22_Malone",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Matches%22_Malone",
+      "scrapeId": "01a15cb7-5d08-716d-899c-cb93b59426e9",
+      "retrieved": "2026-10-21T04:28:05.449Z",
+      "markdownSha256": "5bd574ac436e0623a846bef8b7c6aa16fdc0e5d38f799b0822048eccb8ecff22",
+      "characters": 1451,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Riddle_Me_This%22_Aura",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Riddle_Me_This%22_Aura",
+      "scrapeId": "01a15cb7-6630-72ee-8427-59deea55cecb",
+      "retrieved": "2026-10-21T04:28:07.996Z",
+      "markdownSha256": "cbe56f2b22f98089248ad655eaa66ee8c79128f9bfe2bb0aab157e3e88ae0b7f",
+      "characters": 2616,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Sidekick%22_Uplink_Device%3A_Joker",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Sidekick%22_Uplink_Device%3A_Joker",
+      "scrapeId": "01a15cb7-7024-7749-a104-5e11b4d44e64",
+      "retrieved": "2026-10-21T04:28:10.603Z",
+      "markdownSha256": "102242afbcc296d2dddf6f991908b3baae60d213c4a989c38694933fdb00e6c9",
+      "characters": 3244,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Viper%22_Vin_Santo",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Viper%22_Vin_Santo",
+      "scrapeId": "01a15cb7-7a5c-765c-b61f-5754c8b79116",
+      "retrieved": "2026-10-21T04:28:13.717Z",
+      "markdownSha256": "be560b16e77e103e0719e9ce67270c3732584475b5a8e1f61e716e3d7567930a",
+      "characters": 745,
+      "disposition": "held",
+      "reason": "Thin lore entry without actionable gameplay/location detail; hold for consolidation with the investigation guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Where's_My_Invitation%22_Graffiti",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/%22Where's_My_Invitation%22_Graffiti",
+      "scrapeId": "01a15cb6-15ee-71cc-acd0-29de109185ae",
+      "retrieved": "2026-10-21T04:26:41.929Z",
+      "markdownSha256": "0871db4767988541c24e4ee54db13d15319aa64617cd95b32fdf391a19e0ef77",
+      "characters": 3399,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/%22Worlds_of_Multiversal_Magic%22_Video_Series",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/Collections%3A_%22Worlds_of_Multiversal_Magic%22_Video_Series",
+      "scrapeId": "01a15cb6-1ff3-72e8-988a-fd879854a08e",
+      "retrieved": "2026-10-21T04:26:44.357Z",
+      "markdownSha256": "f60f83ca5342adeb99159c0d46b12fa32f90e0a033df46b1f6356e56125e3722",
+      "characters": 9711,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/1",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/Emblem_Styles",
+      "scrapeId": "01a15cb6-296e-752a-a6fe-39339a475f31",
+      "retrieved": "2026-10-21T04:26:48.066Z",
+      "markdownSha256": "5c4c60921d90764d7db10566d9eb8ab9e45e446cd77feffd29289b68e5fe9860",
+      "characters": 300063,
+      "disposition": "held",
+      "reason": "Redirect to the large Emblem Styles index; hold for complete index conversion rather than duplicate it."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/1_Emblem",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/1_Emblem",
+      "scrapeId": "01a15cb6-3834-7048-8dba-9c5009d58f04",
+      "retrieved": "2026-10-21T04:26:51.692Z",
+      "markdownSha256": "fcb1e1d853f643f80493578869b18e78f420c02c2495d91bcc7b64a5b6b69658",
+      "characters": 1824,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/Emblem_Styles",
+      "scrapeId": "01a15cb6-4637-74cb-9e7b-f6f6040cd6dd",
+      "retrieved": "2026-10-21T04:26:55.066Z",
+      "markdownSha256": "5c4c60921d90764d7db10566d9eb8ab9e45e446cd77feffd29289b68e5fe9860",
+      "characters": 300063,
+      "disposition": "held",
+      "reason": "Redirect to the large Emblem Styles index; hold for complete index conversion rather than duplicate it."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10_Emblem",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10_Emblem",
+      "scrapeId": "01a15cb6-5315-728c-8000-43da66c2cc17",
+      "retrieved": "2026-10-21T04:26:57.406Z",
+      "markdownSha256": "25120d62bc42b0e7c5bc558c2f95ddcbd81d91916b6c867a119ec71e4cd5a040",
+      "characters": 1831,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    },
+    {
+      "requestedUrl": "https://dcuniverseonline.fandom.com/wiki/10_Sided_Die",
+      "canonicalUrl": "https://dcuniverseonline.fandom.com/wiki/10_Sided_Die",
+      "scrapeId": "01a15cb6-5ca5-7226-b008-0ec641c834af",
+      "retrieved": "2026-10-21T04:27:01.092Z",
+      "markdownSha256": "a2d2c5fdf35bf2d98baf07bb70833032d7312f4410681e93c2a441bcf4e86895",
+      "characters": 1667,
+      "disposition": "held",
+      "reason": "Staged for a later focused conversion; not published as a partial guide."
+    }
+  ]
+}

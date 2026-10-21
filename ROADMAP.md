@@ -89,3 +89,21 @@ The owner confirmed real Discord sign-in and explicitly authorized every Census-
 Implement section editing in the article, immediate D1-backed publication, public revision history attributed to the character, source/reason requirements, Census revalidation, and optimistic concurrency. Keep original source attribution. Validate anonymous/unmatched/stale/Census-failed writes, safe rendering, search updates, and restoring earlier text. Apply additive migration 0002 before deployment; preserve history on rollback.
 
 Direct corrections implementation and local validation are complete, with the additive production revision-history migration applied. Final review passed after conflict-recovery and pending-publication draft fixes. Live deployment verification follows the main push; full candidate import remains separate.
+
+## First bounded conversion batch
+
+Downloaded the first 25 unreviewed inventory URLs using the owner's local
+Firecrawl key. All succeeded after bounded retries of rate-limited pages. These
+resolve to 20 unique canonical pages. `data/import-batches/001.json` preserves
+source URLs, retrieval IDs, content hashes and review decisions.
+
+Converted the two 'Til Death Do Us Part briefing episodes into complete six-stop
+location guides, with 24 copied map/location screenshots in R2. Four alternate
+URLs resolve to the first briefing guide and do not create duplicate articles.
+The remaining 19 requested URLs are staged with explicit hold reasons; they are
+not all placeholders and still need focused conversion/review. Existing player
+correction baselines are unchanged. Fourteen reviewed guides are now prepared.
+
+The importer accepts FIRECRAWL_KEY from ignored .env, stops after rejected
+credentials, and waits on rate limits. The next inventory batch reuses existing
+cached records. Automated review/conversion of every wiki type is not complete.

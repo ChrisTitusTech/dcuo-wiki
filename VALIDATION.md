@@ -169,3 +169,24 @@ uses a real local D1 session/profile and uploaded PNG to follow the header link
 and verify the image loads. It also checks anonymous and unlinked states and
 immediate name updates after saving a character. The 390px profile screenshot
 was inspected with no horizontal overflow. No production player data was changed.
+
+## Bounded Firecrawl batch 001
+
+All 25 selected inventory URLs downloaded successfully after retrying rate limits;
+20 distinct canonical pages were observed. Two briefing guides were converted,
+four alternate URLs consolidated into the first guide, and 19 requested URLs
+held with reasons in data/import-batches/001.json. The original 12 article data
+objects remain identical, preserving community revision baselines.
+
+Uploaded 24 originals and 24 previews to R2. All 48 new public objects matched
+local bytes and image content types. D1 media catalog count verified at 37.
+Visually inspected all 24 images; misleading source filenames required correcting
+map/in-game-view captions. Both guides were checked at desktop and 390px mobile
+widths with real R2 images and no horizontal overflow.
+
+35 unit tests, five wiki browser tests, seven Cloudflare integration tests,
+Astro/content/build validation and deployment dry run passed. The importer now
+loads the owner's FIRECRAWL_KEY from ignored .env, stops on rejected credentials,
+and backs off on rate limits. Tests exercise local key loading, secret exclusion
+from logs, authentication stop, cache resume and throttling delay. Final output:
+30 static files, 442,025 bytes; R2 totals 7,182,254 bytes across 74 objects.
