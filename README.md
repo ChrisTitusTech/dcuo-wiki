@@ -67,7 +67,7 @@ Pricing checked October 20, 2026: [Workers pricing](https://developers.cloudflar
 
 ### Activation handoff
 
-The initial deployment is live at https://dcuo-wiki.com. The initial Cloudflare Workers Build used this repository on main, with Node 24 and a dedicated build token. The owner corrected GitHub installation access; Cloudflare no longer reports the Git account disconnected. The next push will verify automatic updates. Preview builds are disabled. The custom domain is declared in wrangler.jsonc; workers.dev and preview URLs are explicitly disabled in source, pending deployment of that follow-up configuration. No paid plan was activated.
+The initial deployment is live at https://dcuo-wiki.com. The initial Cloudflare Workers Build used this repository on main, with Node 24 and a dedicated build token. The owner corrected GitHub installation access; Cloudflare no longer reports the Git account disconnected. The automatic build of cb23314 succeeded and the updated account page is live. Preview builds are disabled. The custom domain is declared in wrangler.jsonc; workers.dev and preview URLs are explicitly disabled in the deployed configuration. No paid plan was activated.
 
 For recreating this setup: In Cloudflare Workers & Pages, create a Worker from the GitHub repository `ChrisTitusTech/dcuo-wiki`, select `main`, and use the build/deploy commands above. Keep the free plan. After the first successful deployment, attach `dcuo-wiki.com` under the Worker's custom domains. Confirm there is no conflicting existing DNS record before replacing anything.
 

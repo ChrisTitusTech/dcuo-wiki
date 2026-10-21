@@ -102,3 +102,5 @@ Validation on 2026-10-20:
 Production Discord sign-in, approved Census service ID, real D1 binding/migration, moderator allowlist, and live user acceptance remain pending. Activation procedure: docs/ACCOUNTS.md. The owner elected to save the prepared GitHub installation access change themselves. No paid plan activated; no full wiki import claimed.
 
 Local Codex review completed. The first review found article context was lost through sign-in; state-bound page-title storage fixed it, with a regression test. Repeat review found no actionable defects. The owner saved GitHub repository access, and refreshed Cloudflare settings no longer show the disconnected warning. Live deployment of this increment still requires verification after push.
+
+Live evidence: cb23314 passed GitHub Actions run 39532602770 and Cloudflare automatic build 4371cf08-2257-4159-a0de-afa0943a7f26. Cloudflare reported deploy success for dcuo-wiki.com and version 954a5593-f823-4abe-905a-47327e4068c2. HTTPS /api/status returns 200 with login=false and census=false; /account/ and /wiki/Artifacts/ return 200. This verifies deployment and the activation lock, not completed provider setup.

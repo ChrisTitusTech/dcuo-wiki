@@ -75,3 +75,5 @@ Git automation blocker: Cloudflare reports the Git account disconnected after th
 - GitHub installation was missing this repository. The change is prepared, and the owner chose to save it themselves; deployment-on-push still needs verification after that save.
 
 The owner saved GitHub installation access. Cloudflare settings no longer report a disconnected Git account; verify the next push-triggered deployment.
+
+Commit cb23314 passed GitHub CI and deployed automatically in Cloudflare build 4371cf08-2257-4159-a0de-afa0943a7f26 (version 954a5593-f823-4abe-905a-47327e4068c2). Live /api/status confirms login and Census matching remain disabled until activation; /account/ and existing articles respond successfully. GitHub deployment automation is restored.
