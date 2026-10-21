@@ -1,5 +1,16 @@
 {
   "name": "dcuo-wiki",
   "compatibility_date": "2026-10-20",
-  "assets": { "directory": "./dist", "not_found_handling": "404-page" }
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "dcuo-wiki.com",
+      "custom_domain": true
+    }
+  ]
 }

@@ -75,3 +75,11 @@ The npm install completed with no reported vulnerabilities. Package install-scri
 Independent review found a source contradiction: its introduction says three artifact slots, while its update history records additional slots in Game Update 155. Removed the numeric count rather than publishing the outdated introduction.
 
 Final independent Codex review found no actionable defects after the artifact-slot correction; all local checks passed again. The in-app Cloudflare dashboard also opens to its sign-in page, confirming that browser access does not currently provide an authenticated alternative.
+
+## Live activation
+
+On October 20, 2026, Cloudflare built main with Node 24.22.0, npm run build, and npx wrangler deploy. Initial build e554f334-7eb6-4d8c-bebd-87e949fdc003 succeeded; asset-upload retry recovered. Dependency install-script notices were non-blocking. Explicit routing settings now remove the observed default workers.dev/preview URL warnings.
+
+Live HTTPS checks on dcuo-wiki.com returned 200 for the homepage, Artifacts guide, and sitemap; 301 from /wiki/Artifact/ to /wiki/Artifacts/; and 404 for an unknown guide and /data/inventory.json. Browser search for Shuriken Storm returned only Weapon Mastery. The homepage shows 12 guides. Live screenshot saved locally in test-results/live-wiki.png.
+
+After adding the production domain configuration, pinned Wrangler's deployment dry run and the local Cloudflare serving test passed. The workstation CLI remains unauthenticated; builds use the Cloudflare-managed dedicated token. No secrets are stored in this repository.

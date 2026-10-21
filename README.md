@@ -67,11 +67,13 @@ Pricing checked October 20, 2026: [Workers pricing](https://developers.cloudflar
 
 ### Activation handoff
 
-The repository is ready to connect; account access is still required. In Cloudflare Workers & Pages, create a Worker from the GitHub repository `ChrisTitusTech/dcuo-wiki`, select `main`, and use the build/deploy commands above. Keep the free plan. After the first successful deployment, attach `dcuo-wiki.com` under the Worker's custom domains. Confirm there is no conflicting existing DNS record before replacing anything.
+The initial deployment is live at https://dcuo-wiki.com. Cloudflare Workers Builds is connected to this repository on main, with Node 24 and a dedicated build token. Preview builds are disabled. The custom domain is declared in wrangler.jsonc; workers.dev and preview URLs are explicitly disabled. No paid plan was activated.
 
-If deploying from this workstation instead, authenticate with `npx wrangler login`, then run `npm run deploy`. Do not paste API tokens into chat or commit them. The local account check currently reports unauthenticated; no temporary preview account was created.
+For recreating this setup: In Cloudflare Workers & Pages, create a Worker from the GitHub repository `ChrisTitusTech/dcuo-wiki`, select `main`, and use the build/deploy commands above. Keep the free plan. After the first successful deployment, attach `dcuo-wiki.com` under the Worker's custom domains. Confirm there is no conflicting existing DNS record before replacing anything.
 
-`npm run deploy:check` builds and validates the deployment package without uploading. `npm run test:cloudflare` exercises the built assets using local Wrangler: article responses, alias redirects, a real missing-page 404, sitemap URLs, and absence of source/cache files. Run it after building. These checks do not prove live DNS or HTTPS. After activation, verify the same URLs over HTTPS on the real domain and confirm GitHub-triggered rebuilds.
+If deploying from this workstation instead, authenticate with `npx wrangler login`, then run `npm run deploy`. Do not paste API tokens into chat or commit them. The workstation CLI remains unauthenticated; production deployment uses Cloudflare Workers Builds. No temporary preview account was created.
+
+`npm run deploy:check` builds and validates the deployment package without uploading. `npm run test:cloudflare` exercises the built assets using local Wrangler: article responses, alias redirects, a real missing-page 404, sitemap URLs, and absence of source/cache files. Run it after building. These checks do not prove live DNS or HTTPS. For subsequent changes, verify the same URLs over HTTPS on the real domain and check the GitHub-triggered Cloudflare build.
 
 Do not replace the build command with plain `astro build`: that would skip publication and file-budget checks. No Cloudflare credentials or account configuration are included. Repository publication does not confirm a live deployment.
 
