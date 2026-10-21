@@ -1,0 +1,219 @@
+{
+  "checked": "2026-10-20",
+  "scope": "Twelve initial published guides; section-level comparison, not in-game validation or an exhaustive factual audit.",
+  "articles": [
+    {
+      "slug": "Powers",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Powers",
+      "retrieved": "2026-10-21T04:47:09.303Z",
+      "sourceMarkdownSha256": "2e17a2f05339a5f8c53e54397abffb9d4a42fcc59d43b46618a5d6a775090dc9",
+      "status": "expanded",
+      "finding": "All 21 substantive source headings, introductory role/stat guidance and 16 images are now represented. Original five sections are retained to preserve live revisions. Linked power ability lists remain on the source wiki; this is coverage of Powers, not a claim that its linked articles are imported.",
+      "sourceSections": [
+        "Classic Game Powers",
+        "Marketplace Powers",
+        "Complexity",
+        "Atomic",
+        "Celestial",
+        "Earth",
+        "Electricity",
+        "Fire",
+        "Gadgets",
+        "Ice",
+        "Light",
+        "Mental",
+        "Munitions",
+        "Nature",
+        "Quantum",
+        "Rage",
+        "Sorcery",
+        "Water",
+        "Iconic Powers",
+        "Artifact Powers",
+        "Notes"
+      ]
+    },
+    {
+      "slug": "Investigations",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Investigations",
+      "retrieved": "2026-10-21T04:47:09.627Z",
+      "sourceMarkdownSha256": "c92b33dbcad57db53d1ce54007d29f451694f8787fea80e26c8f023843510af0",
+      "status": "high",
+      "finding": "Only recognition and reward guidance was published. Gotham, Metropolis and Global investigation directories and gallery are missing.",
+      "sourceSections": [
+        "Gotham Investigations",
+        "Metropolis Investigations",
+        "Global Investigations",
+        "Gallery",
+        "Trivia",
+        "See also"
+      ]
+    },
+    {
+      "slug": "Collections",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Collections",
+      "retrieved": "2026-10-21T04:47:10.213Z",
+      "sourceMarkdownSha256": "bfd44c171c76102a9fde367dd5305b5765e9a7af9373b922649ef82915cb8c36",
+      "status": "high",
+      "finding": "Only six starting examples were published. Basic, alert/raid, meta, seasonal/event, story-arc and special collection tables with locations and rewards are missing, along with collection mechanics and illustrations.",
+      "sourceSections": [
+        "List of Collections",
+        "Basic Collections",
+        "Alert and Raid Collections",
+        "Metacollections",
+        "Seasonal and Event Collections",
+        "Story Arc Collections",
+        "Special Collections",
+        "Trivia"
+      ]
+    },
+    {
+      "slug": "Grab_and_Smash",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Grab_and_Smash",
+      "retrieved": "2026-10-21T04:47:10.565Z",
+      "sourceMarkdownSha256": "4d93207f3b9833b20369b025442d4d481f31ee758a95366a694ff5bd5c72a08a",
+      "status": "medium",
+      "finding": "Route, unlock, rewards and five scene screenshots are present. Source gallery also has five location images; mission narrative and explicit 0/5 objective should be restored. Empty combatants section should stay excluded.",
+      "sourceSections": [
+        "Summary",
+        "​Objectives",
+        "Combatants",
+        "Walkthrough",
+        "Rewards",
+        "Gallery",
+        "Trivia"
+      ]
+    },
+    {
+      "slug": "Cape_Carmine_Lighthouse",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse",
+      "retrieved": "2026-10-21T04:47:10.818Z",
+      "sourceMarkdownSha256": "6be968e757a157a70a606dbf07a818690adad5b726f05f7748d2258b8b582f9b",
+      "status": "medium",
+      "finding": "Core access, duo and location information is present. Full inhabitants list by location/faction and remaining gallery images are missing.",
+      "sourceSections": [
+        "In-Game History",
+        "Duo Description",
+        "Map",
+        "Inhabitants",
+        "Gallery",
+        "Trivia"
+      ]
+    },
+    {
+      "slug": "Viva_la_Lucha_Libre",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
+      "retrieved": "2026-10-21T04:47:11.174Z",
+      "sourceMarkdownSha256": "266559a2a011c1cb16280a791efa798f97f1583aab858a112730da13f15543aa",
+      "status": "medium",
+      "finding": "Six named parts, locations, maps and reward are present. Source also includes scene images, collectible flavor text and reward mail.",
+      "sourceSections": [
+        "Synopsis",
+        "Investigations",
+        "Part 1: Quetzalcoatl Lucha Libre Mask",
+        "Part 2: Tlaloc Lucha Libre Mask",
+        "Part 3: Camaxtli Lucha Libre Mask",
+        "Part 4: Mextli Lucha Libre Mask",
+        "Part 5: Itzli Lucha Libre Mask",
+        "Part 6: Xochipilli Lucha Libre Mask",
+        "Reward",
+        "Mail Messages",
+        "Item",
+        "Gallery",
+        "Trivia"
+      ]
+    },
+    {
+      "slug": "Out_in_the_Streets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Out_in_the_Streets",
+      "retrieved": "2026-10-21T04:47:11.478Z",
+      "sourceMarkdownSha256": "f95f05ae08cf92275f8952c4cf23062e73799a79088c89cba4a8231e5191e1c0",
+      "status": "low",
+      "finding": "All objective counts are represented. Batman and Oracle dialogue is omitted; local guide adds sourced map context and a verified video.",
+      "sourceSections": [
+        "Objectives"
+      ]
+    },
+    {
+      "slug": "House_of_Venom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/House_of_Venom",
+      "retrieved": "2026-10-21T04:47:11.848Z",
+      "sourceMarkdownSha256": "f70bad7d1709c422e7ace5f00f5c0709c7ca67d7bd96dd71d9bf7d3e142607a2",
+      "status": "medium",
+      "finding": "Objectives, location and major combatants are represented. Full narrative and supporting combatants/allies are omitted. Source Background and Result headings are empty and should not be duplicated.",
+      "sourceSections": [
+        "Background",
+        "Objectives",
+        "Walkthrough",
+        "Opponents",
+        "Allies",
+        "Result"
+      ]
+    },
+    {
+      "slug": "Feats",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Feats",
+      "retrieved": "2026-10-20",
+      "sourceMarkdownSha256": "bdc7ec521c676960f10c38444943138a603ca694baf01aec3377e4ee08130026",
+      "status": "high",
+      "finding": "Point rewards and replay badge costs are present. Full categories/subcategories directory, illustrated menu guide and additional notes are missing.",
+      "sourceSections": [
+        "Feats Menu",
+        "Categories of Feats",
+        "Rewards",
+        "Difficulty Rating/Points Awarded",
+        "Manual Feats Unlock",
+        "Notes",
+        "Trivia",
+        "Other Links"
+      ]
+    },
+    {
+      "slug": "Equipment",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Equipment",
+      "retrieved": "2026-10-20",
+      "sourceMarkdownSha256": "a5ad984382fe4479258aeba4cef091a60e04b67335fd08d246874432317da880",
+      "status": "medium",
+      "finding": "Core weapon, costume and item guidance is present. Detailed item-type links, costume browsing links, artwork and source-listed Shield access information need conversion/review.",
+      "sourceSections": [
+        "Items",
+        "Weapons",
+        "Costumes",
+        "See also"
+      ]
+    },
+    {
+      "slug": "Weapon_Mastery",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weapon_Mastery",
+      "retrieved": "2026-10-20",
+      "sourceMarkdownSha256": "17c64c8170d533648479e4a1ffc3ece063b103658fa16fc2acf92f237934f5be",
+      "status": "low",
+      "finding": "Full 11-row combo table and main unlock mechanics are present. Original animation, introduction and secondary-weapon frequency trivia are omitted.",
+      "sourceSections": [
+        "Overview",
+        "Multiple Mastery Combos",
+        "Trivia"
+      ]
+    },
+    {
+      "slug": "Artifacts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Artifacts",
+      "retrieved": "2026-10-21T04:47:12.287Z",
+      "sourceMarkdownSha256": "78e28ba73efc3f0775204cb8057245864799fcba327048ecc83b38227239a67f",
+      "status": "high",
+      "finding": "Only introductory progression guidance was published. Known-artifact table, detailed upgrade/reagent/catalyst tables, feats and artwork are missing.",
+      "sourceSections": [
+        "Obtaining Artifacts",
+        "Known Artifacts",
+        "Upgrading Artifacts",
+        "Reagents",
+        "Catalysts",
+        "Feats",
+        "Trivia",
+        "Gallery",
+        "Video",
+        "See also"
+      ]
+    }
+  ]
+}

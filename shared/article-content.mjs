@@ -18,6 +18,16 @@ export function articleParts(article) {
         kind: "items",
         text: s.items.map((v) => `- ${v}`).join("\n"),
       },
+      ...(s.images
+        ? [
+            {
+              id: `images-${i}`,
+              title: `${s.title}: images (label | URL)`,
+              kind: "links",
+              text: s.images.map((m) => `${m.label} | ${m.url}`).join("\n"),
+            },
+          ]
+        : []),
       ...(s.table
         ? [
             {

@@ -107,3 +107,10 @@ correction baselines are unchanged. Fourteen reviewed guides are now prepared.
 The importer accepts FIRECRAWL_KEY from ignored .env, stops after rejected
 credentials, and waits on rate limits. The next inventory batch reuses existing
 cached records. Automated review/conversion of every wiki type is not complete.
+
+## Coverage correction (2026-10-20)
+
+Powers expanded from its pilot summary to the full source-page section scope,
+with inline R2 artwork and original live revisions preserved. Before another
+broad import, fill the Collections, Artifacts, Investigations and Feats gaps
+recorded in `data/coverage-audit.json` and `docs/CONTENT-COVERAGE.md`.

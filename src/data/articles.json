@@ -35,6 +35,618 @@
         "items": [
           "Fire, Gadgets, Ice, Mental, Nature, and Sorcery are the classic character-creation power sets. Check current in-game access before purchasing additional powers."
         ]
+      },
+      {
+        "title": "Roles, stats and additional powers",
+        "items": [
+          "Tanks emphasize Defense, Health and Dominance, draw enemy attention, absorb attacks and provide group immunity to control effects.",
+          "Controllers emphasize Vitalization and Dominance, restore group Power and incapacitate enemies. Healers emphasize Restoration and Power to restore group Health.",
+          "All power sets can play Damage, emphasizing Precision and Might to defeat enemies and complete objectives.",
+          "Spend stat points in the movement-mode tree or Iconic Powers to gain additional active abilities."
+        ],
+        "images": [
+          {
+            "label": "DC Universe Online heroes",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:NewHeroes1.png"
+          }
+        ]
+      },
+      {
+        "title": "Classic Game Powers",
+        "items": [
+          "These power sets are available to all players in character creation:",
+          "Fire",
+          "Gadgets",
+          "Ice",
+          "Mental",
+          "Nature",
+          "Sorcery"
+        ],
+        "references": [
+          {
+            "label": "Fire",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Fire_(Power)"
+          },
+          {
+            "label": "Gadgets",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gadgets"
+          },
+          {
+            "label": "Ice",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ice"
+          },
+          {
+            "label": "Mental",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mental"
+          },
+          {
+            "label": "Nature",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Nature"
+          },
+          {
+            "label": "Sorcery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Sorcery"
+          }
+        ]
+      },
+      {
+        "title": "Marketplace Powers",
+        "items": [
+          "All power sets are available to members with an active subscription.",
+          "Non-members may purchase Marketplace power sets for access.",
+          "Celestial",
+          "Atomic",
+          "Earth",
+          "Electricity",
+          "Light",
+          "Munitions",
+          "Quantum",
+          "Rage",
+          "Water"
+        ],
+        "references": [
+          {
+            "label": "Celestial",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Celestial"
+          },
+          {
+            "label": "Atomic",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atomic"
+          },
+          {
+            "label": "Earth",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_(Power)"
+          },
+          {
+            "label": "Electricity",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Electricity"
+          },
+          {
+            "label": "Light",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Light"
+          },
+          {
+            "label": "Munitions",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Munitions"
+          },
+          {
+            "label": "Quantum",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Quantum"
+          },
+          {
+            "label": "Rage",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Rage"
+          },
+          {
+            "label": "Water",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Water"
+          }
+        ]
+      },
+      {
+        "title": "Complexity",
+        "items": [
+          "Character Creation, as of 2025, classifies Powers by their complexity to use:",
+          "Simple: Fire, Munitions, Electricity",
+          "Standard: Sorcery, Mental, Ice, Quantum",
+          "High: Gadgets, Nature, Earth, Light, Water",
+          "Very High: Celestial, Rage, Atomic"
+        ],
+        "references": [
+          {
+            "label": "Character Creation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Character_Creation"
+          },
+          {
+            "label": "Fire",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Fire"
+          },
+          {
+            "label": "Munitions",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Munitions"
+          },
+          {
+            "label": "Electricity",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Electricity"
+          },
+          {
+            "label": "Sorcery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Sorcery"
+          },
+          {
+            "label": "Mental",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mental"
+          },
+          {
+            "label": "Ice",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ice"
+          },
+          {
+            "label": "Quantum",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Quantum"
+          },
+          {
+            "label": "Gadgets",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gadgets"
+          },
+          {
+            "label": "Nature",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Nature"
+          },
+          {
+            "label": "Earth",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_(Power)"
+          },
+          {
+            "label": "Light",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Light"
+          },
+          {
+            "label": "Water",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Water"
+          },
+          {
+            "label": "Celestial",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Celestial"
+          },
+          {
+            "label": "Rage",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Rage"
+          },
+          {
+            "label": "Atomic",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atomic"
+          }
+        ]
+      },
+      {
+        "title": "Atomic",
+        "items": [
+          "Utilize the power of nuclear energy, rearranging the atomic structure of yourself, your allies, and your enemies at will. Split Atoms, cause Thermochemical Explosions, and burn under the intense Nuclear Pressure causing unreal destruction. Transmute into fortified metal and reorganize your atomic structure to protect you and your allies or harness the power of the building blocks of all matter to lay waste to your enemies. Explode with harmful radiation, reducing your enemies to ash and speeding up your recovery. Manipulate the subatomic structure of enemies to shield you and your allies."
+        ],
+        "references": [
+          {
+            "label": "List of Atomic Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atomic"
+          }
+        ],
+        "images": [
+          {
+            "label": "Atomic power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Atomic.png"
+          }
+        ]
+      },
+      {
+        "title": "Celestial",
+        "items": [
+          "Keep your allies alive with cleansing Holy Magic or Dark Unholy rituals. Characters using Celestial Powers can shape the forces of the universe, Bless their allies and/or Curse their enemies. Wield divine powers to restrain and overwhelm your enemies and to soothe the wounds of your allies.\nCommand dark powers to restrain and overwhelm your enemies and to mend the wounds of your allies."
+        ],
+        "references": [
+          {
+            "label": "List of Celestial Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Celestial"
+          }
+        ],
+        "images": [
+          {
+            "label": "Celestial power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Celestial.png"
+          }
+        ]
+      },
+      {
+        "title": "Earth",
+        "items": [
+          "Characters that choose earth will rumble on to the scene and shake things up. Earth Powers can be used for both Tanking and Damage and features a Tanking mechanic that defers damage to a player's summoned Golem. Shape Earthen constructs to crush enemies and reinforce allies. Call mighty, Earth-shaking forces to rattle and daze opponents."
+        ],
+        "references": [
+          {
+            "label": "List of Earth Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_(Power)"
+          }
+        ],
+        "images": [
+          {
+            "label": "Earth power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Earth.png"
+          }
+        ]
+      },
+      {
+        "title": "Electricity",
+        "items": [
+          "Characters that choose electricity will imbue themselves with lightning. Electricity characters use these powers to shock their enemies or revitalize allies. They also want to spread their electricity so they can do as much damage to groups as possible. Electrify your enemies and resuscitate your allies. Manipulate and damage enemies with electrostatic forces."
+        ],
+        "references": [
+          {
+            "label": "List of Electricity Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Electricity"
+          }
+        ],
+        "images": [
+          {
+            "label": "Electricity power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Lightning.png"
+          }
+        ]
+      },
+      {
+        "title": "Fire",
+        "items": [
+          "Players who choose to wield the wild and unpredictable forces of fire have to be tough. Fire characters like to get up front and blast away at enemies, and therefore they tend to draw a lot of attention. Cause flames to well up around your character, causing damage to anyone in the vicinity.\nFlames burst forth, searing your opponents and their nearby allies."
+        ],
+        "references": [
+          {
+            "label": "List of Fire Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Fire_(Power)"
+          }
+        ],
+        "images": [
+          {
+            "label": "Fire power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Fire.png"
+          }
+        ]
+      },
+      {
+        "title": "Gadgets",
+        "items": [
+          "Characters with the gadget power will find themselves pulling out all manner of devices from their pockets and pouches. On the front lines, a well-placed gadget will help you control not only the enemy but the battlefield itself. Gadget characters are crafty and use their heads to place their devices strategically to achieve victory. Slip through the shadows and deploy cunning gadgets to manipulate the battlefield. Employ a variety of devious and deadly contraptions to baffle your foes."
+        ],
+        "references": [
+          {
+            "label": "List of Gadget Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gadgets"
+          }
+        ],
+        "images": [
+          {
+            "label": "Gadgets power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Gadgets.png"
+          }
+        ]
+      },
+      {
+        "title": "Ice",
+        "items": [
+          "Characters that choose to master subzero temperatures make for challenging foes. During combat, ice wielders have the ability to lock down opponents who come within their chilling reach. Ice forms around you and enemy attacks don't seem to land. By using your powers to create defenses for yourself, you are a master of mitigating damage. When the occasional attack does strike true, the cold is passed on to your attacker, often freezing them in their tracks. Icy winds dance at your command, allowing you to push and pull enemies around the battlefield. No one can escape your arctic blasts, which allows you to control the direction of the fight."
+        ],
+        "references": [
+          {
+            "label": "List of Ice Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ice"
+          }
+        ],
+        "images": [
+          {
+            "label": "Ice power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Ice.png"
+          }
+        ]
+      },
+      {
+        "title": "Light",
+        "items": [
+          "The rings that grant the ability to create Hard Light Constructs are given to only a chosen few. In times of great crisis, however, the Green Lantern and Sinestro Corps may choose individuals to be reservists, thereby swelling the ranks of Light Powered heroes and villains. Those who wield the power of Light are ideal front-line combatants dealing massive damage with imaginative constructs, or supporting their allies when the fight gets thickest. Heroes wield the green power of Will, while Villains use the yellow power of Fear. Light characters can chain deadly and devastating combinations called Construct Combos by using a power followed by certain weapon combos. A Light powered warrior is tough to defeat when charging in to battle with deadly constructs. Rain devastation on your enemies with missiles and bombs, blast them with a hail of bullets, or smash them out of the way with brute force. In the midst of a tough group battle the power of Light can be used to support the team in many ways. Throttle and stun an enemy with a giant hand or use a blast of light to recharge your team's power."
+        ],
+        "references": [
+          {
+            "label": "List of Light Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Light"
+          },
+          {
+            "label": "Green Lantern",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Green_Lantern"
+          },
+          {
+            "label": "Sinestro Corps",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Sinestro_Corps"
+          },
+          {
+            "label": "Construct Combos",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Construct_Combos"
+          }
+        ],
+        "images": [
+          {
+            "label": "Light power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Light.png"
+          }
+        ]
+      },
+      {
+        "title": "Mental",
+        "items": [
+          "Characters with the mental superpower are masters of mind over matter. Using their unique abilities, they can move objects with a thought to defend themselves or damage an enemy. They can also use the force of their will in more subtle ways, such as creating illusions to disorient and confuse. Mental characters love to be where the action is and control the battlefield with their minds. With the brute force of your will, you can create force fields that encase enemies or send them flying down the street. By using your mental powers, create opportunities for surprise attacks. Such power can even make an opponent think they see something that isn't there."
+        ],
+        "references": [
+          {
+            "label": "List of Mental Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mental"
+          }
+        ],
+        "images": [
+          {
+            "label": "Mental power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Mental.png"
+          }
+        ]
+      },
+      {
+        "title": "Munitions",
+        "items": [
+          "Lock, load, and become a master of explosives and ballistics. Run and gun as you cut paths of destruction through your enemies with big guns and bigger explosions. Use your ordnance expertise to take control on the battlefield or simply blast right through the fray. Lay waste to the battlefield and any enemies that happen to be there with military-grade ordnance.\nKnowledge of up-and-coming prototype artillery is half of the battle."
+        ],
+        "references": [
+          {
+            "label": "List of Munitions Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Munitions"
+          }
+        ],
+        "images": [
+          {
+            "label": "Munitions power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Munitions.png"
+          }
+        ]
+      },
+      {
+        "title": "Nature",
+        "items": [
+          "Characters that choose the nature power will find themselves masters over primal forces. Nature characters draw upon these forces to keep their allies alive or wither their enemies away. When the battle gets really tough, they can also let the call of the wild surge through them and actually become a beast full of rage, cunning and animal instincts. Wield poisonous botanical powers to restrain and overwhelm your enemies and to soothe the wounds of allies.\nCall forth the attributes of a variety of frightening and fantastic animals to dominate enemies and aid allies."
+        ],
+        "references": [
+          {
+            "label": "List of Nature Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Nature"
+          }
+        ],
+        "images": [
+          {
+            "label": "Nature power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Nature.png"
+          }
+        ]
+      },
+      {
+        "title": "Quantum",
+        "items": [
+          "Manipulate time, control gravity and twist the very fabric of space itself! Characters using Quantum Powers can slow down opponents, change their density, or even teleport behind them by altering time, manipulating gravity, and folding space. Control the flow of time and control your enemies futures. Bring your enemies to their knees by manipulating space and generating graviton fields."
+        ],
+        "references": [
+          {
+            "label": "List of Quantum Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Quantum"
+          }
+        ],
+        "images": [
+          {
+            "label": "Quantum power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Quantum.png"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "items": [
+          "Tap into the Rage of the emotional spectrum to create energy blasts, deadly blood plasma attacks, and even vicious constructs. Wield this Red Light with righteous fury or be driven by vengeance and petty anger. Anger powers allow you to eradicate your enemies through blind rage. Defer incoming damage and share your rage with your allies."
+        ],
+        "references": [
+          {
+            "label": "List of Rage Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Rage"
+          }
+        ],
+        "images": [
+          {
+            "label": "Rage power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Rage.png"
+          }
+        ]
+      },
+      {
+        "title": "Sorcery",
+        "items": [
+          "Characters who wield the unseen forces of the universe hold the power of life and death in their hands. Sorcerers can doom enemies to failure or ensure their allies have the power to carry on the fight. They are ideal for combat support, often tipping the balance of a fight with their spells.\nDrawn to your mystical power, fantastic arcane creatures never leave your side. Choose wisely which pet you summon, for each will behave according to the mystic forces that created it. Whether attacking, defending, or performing some other fantastic feat, legions of powerful minions are at your service. The fate of many rests in your hands as you change the course of battle. Generate good or bad karma for you, your allies, or foes. Gathering these positive and negative energies allows you to elevate or enfeeble those around you."
+        ],
+        "references": [
+          {
+            "label": "List of Sorcery Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Sorcery"
+          }
+        ],
+        "images": [
+          {
+            "label": "Sorcery power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Sorcery.png"
+          }
+        ]
+      },
+      {
+        "title": "Water",
+        "items": [
+          "Keep your allies alive with powerful storms and flowing water. Command water in and around allies and enemies. Bend and blast water into incredible streams and torrents to unleash a flood of destruction, or shape it into awe-inspiring constructs to wash away your enemies. Soothe the wounds of your allies or envelop them and yourself with the shielding power of water. And turn the tides of conflicts by pulling strength from the mystical energies of the ocean depths."
+        ],
+        "references": [
+          {
+            "label": "List of Water Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Water"
+          }
+        ],
+        "images": [
+          {
+            "label": "Water power icon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/File:Water.png"
+          }
+        ]
+      },
+      {
+        "title": "Iconic Powers",
+        "items": [
+          "Iconic Powers are special powers, which are uniquely associated with specific DC Universe characters. Examples of iconic powers are Heat Vision, Word of Power, and Neo-Venom Boost, which are associated with Superman, Shazam, and Bane, respectively. All characters can purchase iconic powers, regardless of the power set they chose at character creation."
+        ],
+        "references": [
+          {
+            "label": "Iconic Powers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Iconic_Powers"
+          },
+          {
+            "label": "Heat Vision",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Heat_Vision"
+          },
+          {
+            "label": "Word of Power",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Word_of_Power"
+          },
+          {
+            "label": "Neo-Venom Boost",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Neo-Venom_Boost"
+          },
+          {
+            "label": "Superman",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Superman"
+          },
+          {
+            "label": "Shazam",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Shazam"
+          },
+          {
+            "label": "Bane",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Bane"
+          }
+        ]
+      },
+      {
+        "title": "Artifact Powers",
+        "items": [
+          "Certain artifacts grant access to new powers. Examples of such artifacts are The Omega Totality, M.E.R.C.Y. Amazotron Matrix, B.O.P. Commlink, Brand of Hecate and Source Shard. Artifact powers become available once the artifact is at least rank 80."
+        ],
+        "references": [
+          {
+            "label": "artifacts",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Artifacts"
+          },
+          {
+            "label": "The Omega Totality",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Omega_Totality"
+          },
+          {
+            "label": "M.E.R.C.Y. Amazotron Matrix",
+            "url": "https://dcuniverseonline.fandom.com/wiki/M.E.R.C.Y._Amazotron_Matrix"
+          },
+          {
+            "label": "B.O.P. Commlink",
+            "url": "https://dcuniverseonline.fandom.com/wiki/B.O.P._Commlink"
+          },
+          {
+            "label": "Brand of Hecate",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brand_of_Hecate"
+          },
+          {
+            "label": "Source Shard",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Source_Shard"
+          }
+        ]
+      },
+      {
+        "title": "Notes",
+        "items": [
+          "All powers activated from the power tray and their combos cause damage based on Might.",
+          "Most powers support Power Interactions.",
+          "Character's main power set will affect the color as well as some other visual effects of weapon attacks. One of the most noticeable examples is Martial Arts' Spinning Punch combo.",
+          "Certain Allies and Artifacts can modify effects of powers.",
+          "Certain powers can be cast faster than their animation by use of Clipping.",
+          "Certain powers can be canceled early, for example finishers by pressing the jump button.",
+          "On March 31st, 2015, previous DLC packs were separated into Episodes, Powers, Upgrades and Legends characters.",
+          "Before game update 73 Power points could be reset and altered in-game through the use of the R.A.D. Kiosk, located in the Aquacultural area of the JLA Watchtower, or the B.A.D. Kiosk located in The Pit of the Hall of Doom. Now these devices are only used to reset skill points."
+        ],
+        "references": [
+          {
+            "label": "Might",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Might"
+          },
+          {
+            "label": "Power Interactions",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Power_Interactions"
+          },
+          {
+            "label": "weapon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Weapon_Types"
+          },
+          {
+            "label": "Martial Arts",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Martial_Arts"
+          },
+          {
+            "label": "Allies",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Allies"
+          },
+          {
+            "label": "Artifacts",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Artifacts"
+          },
+          {
+            "label": "Clipping",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Clipping"
+          },
+          {
+            "label": "finishers",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Finisher"
+          },
+          {
+            "label": "game update 73",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Game_Update_73"
+          },
+          {
+            "label": "R.A.D. Kiosk",
+            "url": "https://dcuniverseonline.fandom.com/wiki/R.A.D._Kiosk"
+          },
+          {
+            "label": "Aquacultural",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Aquacultural_Area_(Watchtower)"
+          },
+          {
+            "label": "JLA Watchtower",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLA_Watchtower"
+          },
+          {
+            "label": "B.A.D. Kiosk",
+            "url": "https://dcuniverseonline.fandom.com/wiki/B.A.D._Kiosk"
+          },
+          {
+            "label": "The Pit",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Pit_(Hall_of_Doom)"
+          },
+          {
+            "label": "Hall of Doom",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Hall_of_Doom"
+          },
+          {
+            "label": "skill points",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Skill_points"
+          }
+        ]
       }
     ],
     "source": "https://dcuniverseonline.fandom.com/wiki/Powers",

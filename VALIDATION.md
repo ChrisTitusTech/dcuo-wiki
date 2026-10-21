@@ -206,3 +206,23 @@ Astro checks, build and deployment dry run passed. Browser regressions cover the
 same-tab behavior, full-size source, navigation, Escape/backdrop/Close dismissal,
 focus/scroll restoration, single-image behavior and mobile overflow. Real R2 maps
 were visually inspected at desktop and 390px mobile widths.
+
+## Powers coverage correction (2026-10-20)
+
+- Restored all 21 substantive source headings plus introductory role/stat details;
+  27 total sections including the five preserved pilot sections.
+- Six existing editable baselines match production hashes exactly, including the
+  live revision on `section-0`. Other 13 guide objects are unchanged.
+- 16 images and 16 previews uploaded to R2; all 32 public responses match local
+  bytes. Total media storage is 7,368,198 bytes across 106 objects.
+- `npm run validate`: Astro check, 35 unit tests, policy and build passed.
+- `npm run test:browser`: 8 passed, including section-gallery navigation/mobile.
+- `npm run test:cloudflare`: 7 passed, including editing and revision rendering.
+- `npm run deploy:check`: passed; output remains 30 files, below 20,000.
+- Coverage audit of the 12 initial guides is recorded in
+  `data/coverage-audit.json`; remaining gaps are described in
+  `docs/CONTENT-COVERAGE.md`. Other pages have not been expanded in this change.
+- Local Codex review completed with no actionable defects. Three source-markup
+  fragments found during conversion cleanup were removed; the final build passed.
+- Manual desktop inspection confirmed readable inline icons and a scrollable
+  contents list; D1 catalog count is now 53 copied images.

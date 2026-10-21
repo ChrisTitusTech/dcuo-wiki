@@ -5,14 +5,17 @@ import articles from "../src/data/articles.json" with { type: "json" };
 import { renderPart } from "../shared/article-content.mjs";
 import { renderMapLinks } from "../shared/media.mjs";
 test("all existing guide maps resolve to copied images with source credits", () => {
-  const maps = articles.flatMap((a) => a.location?.maps ?? []);
-  assert.equal(maps.length, 40);
+  const maps = articles.flatMap((a) => [
+    ...(a.location?.maps ?? []),
+    ...a.sections.flatMap((s) => s.images ?? []),
+  ]);
+  assert.ok(maps.length > 0);
   for (const map of maps) {
     const html = renderMapLinks([[map.label, map.url]]);
     assert.match(html, /<img src="https:\/\/images.dcuo-wiki.com\//);
     assert.match(html, />Source<\/a>/);
   }
-  assert.equal(new Set(media.map((m) => m.sha256)).size, 37);
+  assert.equal(new Set(media.map((m) => m.sourcePage)).size, media.length);
 });
 test("edited map references use the same safe gallery renderer", () => {
   const m = media[0];

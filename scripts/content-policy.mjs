@@ -30,6 +30,14 @@ export function issuesFor(a) {
       section.items.some((i) => !text(i))
     )
       errors.push("invalid section");
+    for (const field of ["images", "references"]) {
+      if (
+        section[field] !== undefined &&
+        (!Array.isArray(section[field]) ||
+          section[field].some((r) => !text(r.label) || !https(r.url)))
+      )
+        errors.push(`invalid section ${field}`);
+    }
     if (section.table) {
       const t = section.table;
       if (

@@ -62,6 +62,24 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
               ))}
             </ul>
           </div>
+          {s.images && (
+            <div
+              class="section-images"
+              data-live-part={`images-${i}`}
+              set:html={renderMapLinks(s.images.map((m) => [m.label, m.url]))}
+            />
+          )}
+          {s.references && (
+            <p class="section-references">
+              Further reading on the source wiki:{" "}
+              {s.references.map((r, index) => (
+                <>
+                  {index > 0 && " · "}
+                  <a href={r.url}>{r.label}</a>
+                </>
+              ))}
+            </p>
+          )}
           {s.table && (
             <>
               <a

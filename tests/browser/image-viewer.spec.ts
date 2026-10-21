@@ -50,3 +50,27 @@ test('single images hide navigation and mobile viewer fits the screen', async ({
   await page.getByRole('button', {name:'Close image viewer'}).click();
   await expect(page.getByRole('dialog')).not.toBeVisible();
 });
+
+test("Powers inline artwork shares the page gallery and fits a mobile article", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Powers/");
+  await expect(page.locator(".section-images img")).toHaveCount(16);
+  const atomic = page.locator("#section-9");
+  await expect(
+    atomic.getByRole("heading", { name: "Atomic", exact: true }),
+  ).toBeVisible();
+  await atomic.getByRole("img").click();
+  await expect(page.locator("#viewer-count")).toHaveText("2 / 16");
+  await page.getByRole("button", { name: "Next image", exact: true }).click();
+  await expect(page.locator("#viewer-caption")).toHaveText(
+    "Celestial power icon",
+  );
+  await page.keyboard.press("Escape");
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+});

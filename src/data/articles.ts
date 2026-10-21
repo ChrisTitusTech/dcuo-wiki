@@ -7,6 +7,8 @@ export interface Article {
   sections: {
     title: string;
     items: string[];
+    images?: { label: string; url: string }[];
+    references?: { label: string; url: string }[];
     table?: { caption: string; columns: string[]; rows: string[][] };
   }[];
   related?: string[];

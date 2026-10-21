@@ -595,6 +595,8 @@ small {
 }
 .toc nav {
   display: grid;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 .toc a {
   padding: 5px 0;
@@ -1023,3 +1025,9 @@ html.image-viewer-open { overflow: hidden; }
   #viewer-previous { left: 20%; }
   #viewer-next { right: 20%; }
 }
+
+.section-images .map-gallery { display: block; }
+.section-images figure { display: flex; align-items: center; flex-wrap: wrap; border: 0; background: transparent; }
+.section-images img { width: auto; max-width: 100%; max-height: 180px; }
+.section-images figcaption { flex: 1; min-width: 160px; }
+.section-references { color: var(--muted); }
