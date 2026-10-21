@@ -988,3 +988,11 @@ tr:nth-child(even) {
 .article-editor select[size] option {
   padding: 6px 8px;
 }
+
+.map-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.map-gallery figure { margin: 0; min-width: 0; border: 1px solid var(--line); background: var(--panel); }
+.map-gallery img { display: block; width: 100%; height: auto; max-height: 310px; object-fit: contain; }
+.map-gallery figcaption { padding: .5rem .65rem; font-size: .85rem; line-height: 1.4; }
+.map-gallery figcaption strong, .map-gallery figcaption span, .map-gallery figcaption small { display: block; }
+.map-gallery figcaption small, .map-note { color: var(--muted); }
+@media (max-width: 640px) { .map-gallery { grid-template-columns: 1fr; } }

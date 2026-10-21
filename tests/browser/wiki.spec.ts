@@ -143,3 +143,14 @@ test("global search, category navigation, and mobile menu", async ({
     fullPage: true,
   });
 });
+
+test("copied maps appear inline with full-size and source links", async ({ page }) => {
+  for (const [slug, count] of [["Grab_and_Smash", 5], ["Cape_Carmine_Lighthouse", 2], ["Viva_la_Lucha_Libre", 6], ["Out_in_the_Streets", 1], ["House_of_Venom", 2]] as const) {
+    await page.goto(`/wiki/${slug}/`);
+    await expect(page.locator('.map-gallery img')).toHaveCount(count);
+    await expect(page.locator('.map-gallery a').filter({hasText: 'Full-size image'})).toHaveCount(count);
+    for (const img of await page.locator('.map-gallery img').all()) {
+      await expect(img).toHaveAttribute('src', /^https:\/\/images\.dcuo-wiki\.com\/[a-f0-9]{64}-preview\.webp$/);
+    }
+  }
+});

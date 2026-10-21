@@ -1,3 +1,4 @@
+import { renderMapLinks } from "./media.mjs";
 // Plain-text editing formats shared by static pages, the editor, and the Worker.
 export const escapeHtml = (value) =>
   String(value).replace(
@@ -119,5 +120,6 @@ export function renderPart(part, value) {
     );
   if (part.kind === "table")
     return `<table><caption>${escapeHtml(part.caption)}</caption><thead><tr>${part.columns.map((c) => `<th scope="col">${escapeHtml(c)}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  if (part.kind === "links") return renderMapLinks(rows);
   return `<ul>${rows.map((r) => `<li><a href="${url(r[1])}" rel="noreferrer">${escapeHtml(r[0])}</a>${part.kind === "videos" ? `<p>${escapeHtml(r[2])}</p>` : ""}</li>`).join("")}</ul>`;
 }

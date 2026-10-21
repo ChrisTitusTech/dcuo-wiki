@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import ArticleEditor from "../../components/ArticleEditor.astro";
+import { renderMapLinks } from "../../../shared/media.mjs";
 import articles from "../../data/articles";
 export function getStaticPaths() {
   return articles.map((article) => ({
@@ -121,20 +122,15 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
             . No coordinates have been inferred.{" "}
             <a href={article.location.source}>Location evidence</a>.
           </p>
-          <div data-live-part="location-maps">
-            <ul>
-              {article.location.maps.map((m) => (
-                <li>
-                  <a href={m.url} rel="noreferrer">
-                    {m.label} ↗
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <p>
-            Map images are linked to their source file pages while media reuse
-            is reviewed.
+          <div
+            data-live-part="location-maps"
+            set:html={renderMapLinks(
+              article.location.maps.map((m) => [m.label, m.url]),
+            )}
+          />
+          <p class="map-note">
+            Select a map to open the full-size image. Copies are hosted by DCUO
+            Wiki; original sources are credited below.
           </p>
         </section>
       )}

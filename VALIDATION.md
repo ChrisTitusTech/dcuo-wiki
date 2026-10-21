@@ -136,3 +136,20 @@ User reported that Edit this page appeared to edit only the subtitle. The entry 
 Owner explicitly selected preventing duplicate claims. Production read-only aggregate audit found zero duplicated Census character IDs. Added a unique index and atomic guarded profile save with a clear conflict response. Tests cover duplicate/case-varied claims, updates by the existing linked account, failed switches preserving the old profile, distinct character IDs sharing a name, direct uniqueness enforcement, and simultaneous claims producing one winner. `npm run validate` passed (32 unit tests); six Cloudflare integration tests and four wiki browser tests passed; deployment dry run passed.
 
 Local Codex review passed with no actionable findings and independently verified that a migration encountering duplicates fails without deleting profiles. Production migration 0003 succeeded and was recorded in d1_migrations. The database now enforces one current profile per Census character ID.
+
+## R2 guide maps
+
+Copied 13 unique map images plus 13 previews to `dcuo-wiki-images`, served by
+`images.dcuo-wiki.com`. All 26 public objects returned the correct content type
+and exactly matched the local uploaded bytes (3,051,242 bytes total). D1 migration
+0004 and the provenance catalog were applied; a production count confirmed 13
+records. Existing 16 map references across five guides now render inline using
+one shared static/live renderer without changing article revision baselines.
+
+`npm run validate` passed (34 unit tests, Astro/content/build checks); five browser
+tests and six Cloudflare integration tests passed; `npm run deploy:check` passed.
+Local Codex review completed with no actionable defects. Desktop and 390px mobile
+map galleries were visually inspected with real R2 images; mobile has no horizontal
+overflow. Static output remains 26 files, well below 20,000. New external references
+remain source links until explicitly imported. Other source article images and
+profile screenshot migration are outside this existing-map batch.
