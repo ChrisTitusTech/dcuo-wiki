@@ -68,6 +68,7 @@ test("account page exposes Discord sign in and public profiles use text renderin
   page,
 }) => {
   await page.goto("/account/");
+  await expect(page.locator("#player-navigation")).toHaveText("Player profile / Sign in");
   await expect(
     page.getByRole("link", { name: "Sign in with Discord", exact: true }),
   ).toBeVisible();
@@ -122,6 +123,9 @@ test("account form saves a selected Census character and queues a suggestion", a
   await expect(
     page.getByRole("button", { name: "Submit for review" }),
   ).toBeHidden();
+  await expect(page.locator("#player-sign-in-state")).toHaveText("Signed in");
+  await expect(page.locator("#player-navigation")).toHaveText("Player");
+  await expect(page.locator("#player-navigation")).toHaveAttribute("href", "/account/");
   await page.getByLabel("Exact character name").fill("Test Hero");
   await page
     .getByRole("button", { name: "Search Census", exact: true })
@@ -132,6 +136,8 @@ test("account form saves a selected Census character and queues a suggestion", a
   await expect(
     page.getByRole("button", { name: "Submit for review" }),
   ).toBeVisible();
+  await expect(page.locator("#player-navigation")).toHaveText("Test Hero");
+  await expect(page.locator("#player-navigation")).toHaveAttribute("href", `/player/?id=${profile.id}`);
   await page.getByLabel("Wiki page title").fill("A quest");
   await page
     .getByLabel("Your addition or correction")
@@ -153,4 +159,29 @@ test("account form saves a selected Census character and queues a suggestion", a
     path: "test-results/player-profile-mobile.png",
     fullPage: true,
   });
+});
+
+test("signed-in character navigation opens their profile and uploaded image", async ({ page, request }) => {
+  const image = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=", "base64");
+  const upload = await request.post('/api/profile/screenshot', { headers: { ...headers, 'Content-Type': 'image/png' }, data: image });
+  expect(upload.status()).toBe(200);
+  await page.route('**/api/me', async route => {
+    const response = await request.get('/api/me', { headers });
+    await route.fulfill({ response });
+  });
+  try {
+    await page.goto('/wiki/Powers/');
+    await expect(page.locator('#player-sign-in-state')).toHaveText('Signed in');
+    await expect(page.locator('#player-navigation')).toHaveText('Local fixture');
+    await page.locator('#player-navigation').click();
+    await expect(page).toHaveURL(/\/player\/\?id=11111111-1111-4111-8111-111111111111$/);
+    await expect(page.locator('#player-name')).toHaveText('Local fixture');
+    await expect(page.locator('#player-screenshot')).toBeVisible();
+    await expect.poll(() => page.locator('#player-screenshot').evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
+    await page.setViewportSize({width:390,height:844});
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.screenshot({path:'test-results/signed-in-player.png', fullPage:true});
+  } finally {
+    await request.delete('/api/profile/screenshot', { headers });
+  }
 });

@@ -1,3 +1,4 @@
+import { showPlayerNavigation } from "./player-navigation";
 import articles from "../data/articles";
 export {};
 type Character = {
@@ -43,6 +44,7 @@ const post = (path: string, data: unknown) =>
     body: JSON.stringify(data),
   });
 function showProfile(p: Profile | null) {
+  showPlayerNavigation(p, el("display-name").textContent || "Your account");
   el("profile-summary").hidden = !p;
   el("contribution-form").hidden = !p;
   el("contribution-lock").textContent = p

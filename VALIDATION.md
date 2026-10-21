@@ -153,3 +153,19 @@ map galleries were visually inspected with real R2 images; mobile has no horizon
 overflow. Static output remains 26 files, well below 20,000. New external references
 remain source links until explicitly imported. Other source article images and
 profile screenshot migration are outside this existing-map batch.
+
+## Signed-in player navigation
+
+The shared header now checks the private, uncached session endpoint and displays
+Signed in plus the linked character name. The name opens the existing public
+profile, which renders the optional uploaded screenshot. Signed-in users without
+a character see their Discord display name linked to account setup; anonymous
+users retain a sign-in link. Profile saves update the header immediately, and a
+late initial session response cannot overwrite that update. Names use textContent.
+
+Validation: 34 unit tests, five wiki browser tests, seven Cloudflare integration
+tests, Astro/build checks and deployment dry run passed. Integration coverage
+uses a real local D1 session/profile and uploaded PNG to follow the header link
+and verify the image loads. It also checks anonymous and unlinked states and
+immediate name updates after saving a character. The 390px profile screenshot
+was inspected with no horizontal overflow. No production player data was changed.

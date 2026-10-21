@@ -55,7 +55,12 @@ const home = Astro.url.pathname === "/";
         </button>
       </form>
       <nav class="header-tools" aria-label="Main navigation">
-        <a href="/account/">Player profile</a>
+        <div class="player-navigation">
+          <small id="player-sign-in-state" hidden></small>
+          <a id="player-navigation" href="/account/">
+            Player profile / Sign in
+          </a>
+        </div>
         <button
           id="theme"
           aria-label="Switch color theme"
@@ -117,6 +122,8 @@ const home = Astro.url.pathname === "/";
       </div>
     </div>
     <script>
+      import { loadPlayerNavigation } from "../scripts/player-navigation";
+      loadPlayerNavigation();
       const navigation = document.querySelector<HTMLDetailsElement>(
         ".wiki-sidebar details",
       );

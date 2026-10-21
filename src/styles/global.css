@@ -996,3 +996,8 @@ tr:nth-child(even) {
 .map-gallery figcaption strong, .map-gallery figcaption span, .map-gallery figcaption small { display: block; }
 .map-gallery figcaption small, .map-note { color: var(--muted); }
 @media (max-width: 640px) { .map-gallery { grid-template-columns: 1fr; } }
+
+.player-navigation { white-space: normal; min-width: 0; max-width: 16rem; line-height: 1.3; }
+.player-navigation small { color: var(--muted); font-size: .7rem; }
+.player-navigation small:not([hidden]) { display: block; }
+.player-navigation a { display: block; overflow-wrap: anywhere; }
