@@ -72,3 +72,9 @@ Apply `0002_article_revisions.sql` before deploying the editing code. Revisions 
 Article and homepage requests now run through the Worker to reflect published revisions in HTML, summary cards, and search. No-JavaScript readers see current content. Live responses are not cached. This adds Worker requests and D1 reads; static file count remains small. Table rows use ` | ` between cells; map/video links require HTTPS. Plain text is escaped, never evaluated as HTML.
 
 Revisions are keyed to the repository's original section text hash. When deliberately changing an edited section in `articles.json`, reconcile its live revisions first: a changed baseline retires that section's previous overlay, while history remains available. Ordinary code deployments with unchanged article data preserve live edits. Rollback to the prior application restores static article content without deleting profiles or revisions. Back up D1 before content migrations. Large-scale article expansion will need a more efficient homepage search index than per-edited-article queries.
+
+## Unique character claims
+
+A Census character can be linked to one Discord account at a time. Migration `0003_unique_character_claim.sql` enforces uniqueness by stable Census character ID, not display-name spelling. Different characters with matching names on different worlds remain separate. The save operation checks and writes atomically; a conflicting claim returns 409 without altering either existing profile. The current linked account can update its bio or refresh Census details. Switching successfully to another unclaimed character releases the old current link.
+
+Audit for duplicates before applying the migration: `SELECT character_id, COUNT(*) FROM profiles GROUP BY character_id HAVING COUNT(*) > 1;`. If any exist, stop for resolution; the migration does not delete or reassign profiles. Keep the unique index when rolling back application code so the claim restriction remains enforced.

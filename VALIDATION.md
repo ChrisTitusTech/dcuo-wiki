@@ -130,3 +130,9 @@ Production migration 0002 executed successfully through the Cloudflare D1 consol
 ## Article body editor discoverability
 
 User reported that Edit this page appeared to edit only the subtitle. The entry point now selects the first article-body section, exposes the complete section list instead of a collapsed dropdown, and provides direct Edit section/table/map/video links in the article. Drafts are retained when moving between sections. Regression coverage verifies the main entry opens body text, a section link selects its current content, and the summary remains separately editable. All 29 unit tests, four wiki browser tests, and six Cloudflare integration tests passed.
+
+## Prevent duplicate character claims
+
+Owner explicitly selected preventing duplicate claims. Production read-only aggregate audit found zero duplicated Census character IDs. Added a unique index and atomic guarded profile save with a clear conflict response. Tests cover duplicate/case-varied claims, updates by the existing linked account, failed switches preserving the old profile, distinct character IDs sharing a name, direct uniqueness enforcement, and simultaneous claims producing one winner. `npm run validate` passed (32 unit tests); six Cloudflare integration tests and four wiki browser tests passed; deployment dry run passed.
+
+Local Codex review passed with no actionable findings and independently verified that a migration encountering duplicates fails without deleting profiles. Production migration 0003 succeeded and was recorded in d1_migrations. The database now enforces one current profile per Census character ID.

@@ -325,9 +325,10 @@ export async function handle(request, env, fetcher = fetch) {
       const b = await bodyJson(request),
         bio = textField(b.bio ?? "", "About your character", 0, 500);
       const c = await matchCharacter(env, b.characterId, b.name, fetcher);
-      await stmt(
+      const saved = await stmt(
         env,
-        `INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES (?,?,?,?,?,?,?,?)
+        `INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at)
+        SELECT ?,?,?,?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM profiles WHERE character_id=? AND user_id<>?)
         ON CONFLICT(user_id) DO UPDATE SET character_id=excluded.character_id,character_name=excluded.character_name,world_id=excluded.world_id,census_json=excluded.census_json,matched_at=excluded.matched_at,bio=excluded.bio,updated_at=excluded.updated_at,
         screenshot=CASE WHEN profiles.character_id=excluded.character_id THEN profiles.screenshot ELSE NULL END,
         screenshot_type=CASE WHEN profiles.character_id=excluded.character_id THEN profiles.screenshot_type ELSE NULL END`,
@@ -339,7 +340,14 @@ export async function handle(request, env, fetcher = fetch) {
         now(),
         bio,
         now(),
+        c.character_id,
+        user.id,
       ).run();
+      if (saved.meta.changes !== 1)
+        throw new HttpError(
+          409,
+          "This character is already linked to another Discord account. Choose a different character.",
+        );
       return json({ profile: await profile(env, user.id) });
     }
     if (

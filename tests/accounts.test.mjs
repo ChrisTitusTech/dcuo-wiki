@@ -18,6 +18,9 @@ function db() {
   const sqlite = new DatabaseSync(":memory:");
   sqlite.exec(readFileSync("migrations/0001_accounts.sql", "utf8"));
   sqlite.exec(readFileSync("migrations/0002_article_revisions.sql", "utf8"));
+  sqlite.exec(
+    readFileSync("migrations/0003_unique_character_claim.sql", "utf8"),
+  );
   return {
     sqlite,
     prepare(sql) {
@@ -382,4 +385,119 @@ test("live publishing rechecks Census and rejects unsafe links or malformed tabl
   assert.equal((await call(path, "POST", good)).status, 201);
   const history = await (await call(path + "/history")).json();
   assert.equal(history.revisions.length, 1);
+});
+
+async function secondAccount(context) {
+  const id = "22222222-2222-4222-8222-222222222222",
+    token = "b".repeat(64);
+  context.DB.sqlite
+    .prepare("INSERT INTO users VALUES (?,?,?,?)")
+    .run(id, "200", "other player", now());
+  context.DB.sqlite
+    .prepare("INSERT INTO sessions VALUES (?,?,?)")
+    .run(await hash(token), id, now() + 600);
+  return (body, fetcher = context.fetcher) =>
+    handle(
+      context.request("/api/profile", "POST", body, {
+        Cookie: `__Host-dcuo-session=${token}`,
+      }),
+      context.env,
+      fetcher,
+    );
+}
+test("a linked character is reserved while its account can update its profile", async () => {
+  const context = await setup(),
+    other = await secondAccount(context);
+  const body = {
+    characterId: "123",
+    name: character.name,
+    bio: "Original bio",
+  };
+  assert.equal((await context.call("/api/profile", "POST", body)).status, 200);
+  const denied = await other({ ...body, name: character.name.toLowerCase() });
+  assert.equal(denied.status, 409);
+  assert.match(
+    (await denied.json()).error,
+    /already linked to another Discord account/,
+  );
+  assert.equal(
+    (
+      await context.call("/api/profile", "POST", {
+        ...body,
+        bio: "Updated bio",
+      })
+    ).status,
+    200,
+  );
+  assert.equal(
+    context.DB.sqlite.prepare("SELECT COUNT(*) AS total FROM profiles").get()
+      .total,
+    1,
+  );
+  assert.equal(
+    context.DB.sqlite.prepare("SELECT bio FROM profiles").get().bio,
+    "Updated bio",
+  );
+});
+test("conflicting character switches preserve the existing profile and distinct characters can share a name", async () => {
+  const context = await setup(),
+    other = await secondAccount(context);
+  await context.call("/api/profile", "POST", {
+    characterId: "123",
+    name: character.name,
+  });
+  const different = async () =>
+    Response.json({
+      character_list: [{ ...character, character_id: "456", world_id: "3" }],
+    });
+  assert.equal(
+    (
+      await other(
+        { characterId: "456", name: character.name, bio: "Keep this bio" },
+        different,
+      )
+    ).status,
+    200,
+  );
+  assert.equal(
+    (
+      await other({
+        characterId: "123",
+        name: character.name,
+        bio: "Wrong replacement",
+      })
+    ).status,
+    409,
+  );
+  const saved = context.DB.sqlite
+    .prepare(
+      "SELECT character_id,bio FROM profiles WHERE user_id='22222222-2222-4222-8222-222222222222'",
+    )
+    .get();
+  assert.equal(saved.character_id, "456");
+  assert.equal(saved.bio, "Keep this bio");
+  assert.throws(
+    () =>
+      context.DB.sqlite
+        .prepare(
+          "UPDATE profiles SET character_id='123' WHERE character_id='456'",
+        )
+        .run(),
+    /UNIQUE constraint/,
+  );
+});
+test("simultaneous claims have one winner", async () => {
+  const context = await setup(),
+    other = await secondAccount(context);
+  const body = { characterId: "123", name: character.name };
+  const responses = await Promise.all([
+    context.call("/api/profile", "POST", body),
+    other(body),
+  ]);
+  assert.deepEqual(responses.map((r) => r.status).sort(), [200, 409]);
+  assert.equal(
+    context.DB.sqlite.prepare("SELECT COUNT(*) AS total FROM profiles").get()
+      .total,
+    1,
+  );
 });
