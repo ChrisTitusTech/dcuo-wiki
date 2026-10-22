@@ -20,8 +20,5 @@ test("published text is escaped and tables retain their shape", () => {
   assert.throws(() =>
     renderPart({ kind: "links" }, "Map | javascript:alert(1)"),
   );
-  assert.equal(
-    renderPart({ kind: "videos" }, ""),
-    "<p>No verified walkthrough listed.</p>",
-  );
+  assert.equal(renderPart({ kind: "videos" }, ""), "");
 });

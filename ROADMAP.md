@@ -521,3 +521,43 @@ revisions were zero before deployment. The other 1,571 article records are
 unchanged. Native inspection confirms separate Hero/Villain paths on Episode 1.
 Live evidence is in `.import-cache/story-fix/live-acceptance.json` and
 `.import-cache/proofs/story-missions-fixed-live.png`.
+
+### Catalog text and unfilled-field cleanup (2026-10-22)
+
+Audited all 1,586 article records after the Disturbance on the Coast report.
+Mechanical cleanup affects 196 articles: remove escaped Markdown punctuation,
+trailing line-break slashes, standalone punctuation, numbered n/a entries,
+unfilled named fields and empty template brackets. Correct the Coast City
+objective's source typo using its overview and walkthrough. Preserve actual
+zero amounts and mission names such as Unknown Evil. Do not invent rewards.
+
+Keep section positions and table grid dimensions in source records so legacy
+revision keys remain stable. Hide 37 empty sections from the page and contents,
+omit them from full-document editor baselines, leave 331 unavailable table
+values blank and omit wholly empty table columns/rows from presentation. A
+later verified legacy correction can populate an omitted section. Omit empty
+video sections while retaining search/research metadata. Rebase currency
+restoration only when its original text differs by the same mechanical cleanup.
+
+Importer normalization and publication-policy checks prevent recurrence.
+Captured public part/document states for all 196 affected articles; none had
+published legacy or full-document revisions. No production database changes.
+Validation and production acceptance are recorded after completion.
+
+Local acceptance passes: Astro checks, 114 unit tests, 24 browser tests,
+16 Cloudflare integration tests and deployment dry run. Output remains 1,686
+files against the 20,000-file limit. Tests cover missing fields versus real
+zero values, stable revision keys, blank table round-trips, currency labels,
+future conversion, clean Coast City rendering and restoration of an omitted
+section through a legacy correction. Running the cleanup twice changes nothing.
+
+Independent review caught a relaxed-delimiter mismatch between legacy link/video
+validation and the full-document editor parser. Limit relaxed parsing to blank
+table cells and retain the existing link/video syntax; regression tests cover
+both accepted and rejected forms.
+
+Follow-up independent review found no actionable regressions. Production
+acceptance compares each of the 196 public document baselines and revision IDs
+against the corrected catalog. Evidence location:
+`.import-cache/article-cleanup/live-acceptance.json`; visual proof:
+`.import-cache/proofs/coast-cleanup-live.png`.

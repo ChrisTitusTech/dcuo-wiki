@@ -133,6 +133,29 @@ export async function serveArticle(request, env) {
       },
     });
   }
+  const videos = changed.find((p) => p.id === "videos");
+  if (!document && videos)
+    rewriter.on("#video-walkthroughs", {
+      element(el) {
+        if (videos.text.trim()) el.removeAttribute("hidden");
+        else el.setAttribute("hidden", "");
+      },
+    });
+  // Empty imported sections retain their original revision keys. A later legacy
+  // correction can populate one, so reveal both the section and its contents link.
+  if (!document)
+    for (const part of changed) {
+      if (!/^section-\d+$/.test(part.id) || !part.text.trim()) continue;
+      for (const selector of [
+        `#${part.id}`,
+        `#article-toc a[href="#${part.id}"]`,
+      ])
+        rewriter.on(selector, {
+          element(el) {
+            el.removeAttribute("hidden");
+          },
+        });
+    }
   const transformed = rewriter.transform(response);
   const headers = new Headers(transformed.headers);
   headers.set("Cache-Control", "no-store");

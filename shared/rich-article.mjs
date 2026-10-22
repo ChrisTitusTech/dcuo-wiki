@@ -1,3 +1,4 @@
+import { sectionHasContent, filledTable } from "./import-text.mjs";
 import { renderFeatText } from "./feat-meter.mjs";
 import { escapeHtml } from "./article-content.mjs";
 import { mediaAsset, renderMapLinks } from "./media.mjs";
@@ -451,7 +452,6 @@ export function baselineDocument(article, parts, related = []) {
     }
   }
   for (const [i, section] of article.sections.entries()) {
-    content.push(heading(section.title, `section-${i}`));
     const part = values.get(`section-${i}`),
       restoration = part && rewardContext(article.slug, part, part.text);
     const items =
@@ -460,6 +460,8 @@ export function baselineDocument(article, parts, related = []) {
         .split("\n")
         .filter(Boolean)
         .map((v) => v.replace(/^[-*]\s*/, ""));
+    if (!sectionHasContent({ ...section, items })) continue;
+    content.push(heading(section.title, `section-${i}`));
     if (items.length)
       content.push({
         type: "bulletList",
@@ -489,10 +491,12 @@ export function baselineDocument(article, parts, related = []) {
         get(`table-${i}`)
           .split("\n")
           .filter(Boolean)
-          .map((r) => r.split(" | "));
+          .map((r) => r.split(/\s*\|\s*/));
+      const display = filledTable(section.table.columns, rows);
+      if (!display.columns.length) continue;
       content.push({
         type: "table",
-        content: [section.table.columns, ...rows].map((row, index) => ({
+        content: [display.columns, ...display.rows].map((row, index) => ({
           type: "tableRow",
           content: row.map((cell) => ({
             type: index === 0 ? "tableHeader" : "tableCell",
@@ -518,15 +522,9 @@ export function baselineDocument(article, parts, related = []) {
       heading("Location research"),
       paragraph(get("location-research")),
     );
-  if (article.videoReview) {
+  if (article.videoReview && get("videos").trim()) {
     content.push(heading("Video walkthroughs"));
     const videos = get("videos").split("\n").filter(Boolean);
-    if (!videos.length)
-      content.push(
-        paragraph(
-          `No quest-specific video verified in the search performed on ${article.videoReview.checked}. This does not mean none exists.`,
-        ),
-      );
     for (const line of videos) {
       const [title, url, evidence] = line.split(" | ");
       try {

@@ -1,3 +1,4 @@
+import { cleanImportedArticle } from "../shared/import-text.mjs";
 // Convert sourced feat rows into editable, bounded wiki articles and a compact search catalog.
 import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -615,7 +616,7 @@ export async function importFeats({ partial = false } = {}) {
   );
   await writeFile(
     "src/data/articles.json",
-    JSON.stringify(articles, null, 2) + "\n",
+    JSON.stringify(articles.map(cleanImportedArticle), null, 2) + "\n",
   );
   const assignmentReport = JSON.parse(
     await readFile("data/guide-release-assignments.json", "utf8"),

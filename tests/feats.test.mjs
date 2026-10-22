@@ -1,3 +1,4 @@
+import { missingImportText } from "../shared/import-text.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -124,7 +125,10 @@ test("all catalog entries resolve to editable guides with independent accessible
       assert.ok(
         a.sections[idx].items.includes("Requirement: " + f.requirement),
       );
-      assert.ok(a.sections[idx].items.includes("Feat reward: " + f.reward));
+      assert.equal(
+        a.sections[idx].items.includes("Feat reward: " + f.reward),
+        !missingImportText(f.reward),
+      );
     } else {
       assert.ok(
         a.sections.some((s) =>

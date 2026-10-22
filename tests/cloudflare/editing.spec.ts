@@ -491,3 +491,36 @@ test("published story corrections appear safely in the Story tab and its search"
     page.getByRole("textbox", { name: "Article body", exact: true }),
   ).toContainText("Green Lantern");
 });
+
+test("cleaned empty sections remain omitted until a legacy correction supplies real content", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/wiki/Disturbance_on_the_Coast/");
+  await expect(page.locator("#article-body")).toContainText(
+    "Restore Order in Coast City",
+  );
+  await expect(
+    page
+      .locator("#article-body")
+      .getByRole("heading", { name: "Rewards", exact: true }),
+  ).toHaveCount(0);
+  const initial = await (
+    await request.get("/api/articles/Disturbance_on_the_Coast/document")
+  ).json();
+  expect(JSON.stringify(initial.document)).not.toMatch(
+    /n\/a|\\\\|Restore Order in \[oast/,
+  );
+  await page.goto("/wiki/Tomorrow_Will_Be_Gigantic/");
+  await expect(page.locator("#section-4")).toBeVisible();
+  await expect(
+    page
+      .getByRole("navigation", { name: "Table of contents" })
+      .getByRole("link", { name: "Rewards", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator("#section-4")).toContainText("5 Source Marks");
+  const restored = await (
+    await request.get("/api/articles/Tomorrow_Will_Be_Gigantic/document")
+  ).json();
+  expect(JSON.stringify(restored.document)).toContain("5 Source Marks");
+});

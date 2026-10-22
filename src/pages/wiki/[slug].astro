@@ -1,4 +1,5 @@
 ---
+import { sectionHasContent } from "../../../shared/import-text.mjs";
 import Layout from "../../layouts/Layout.astro";
 import { articleParts, renderPart } from "../../../shared/article-content.mjs";
 import ArticleEditor from "../../components/ArticleEditor.astro";
@@ -65,7 +66,9 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       <strong>Contents</strong>
       <nav id="article-toc" aria-label="Table of contents">
         {article.sections.map((s, i) => (
-          <a href={`#section-${i}`}>{s.title}</a>
+          <a hidden={!sectionHasContent(s)} href={`#section-${i}`}>
+            {s.title}
+          </a>
         ))}
         {article.location && <a href="#location">Location & maps</a>}
       </nav>
@@ -73,7 +76,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
     <article>
       <div id="article-body">
         {article.sections.map((s, i) => (
-          <section id={`section-${i}`}>
+          <section hidden={!sectionHasContent(s)} id={`section-${i}`}>
             <a
               class="section-edit"
               href="#article-editor"
@@ -193,7 +196,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
           </section>
         )}
         {article.videoReview && (
-          <section>
+          <section id="video-walkthroughs" hidden={!article.videos?.length}>
             <a
               class="section-edit"
               href="#article-editor"
@@ -220,12 +223,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
                     </li>
                   ))}
                 </ul>
-              ) : (
-                <p>
-                  No quest-specific video verified in the search performed on{" "}
-                  {article.videoReview.checked}. This does not mean none exists.
-                </p>
-              )}
+              ) : null}
             </div>
           </section>
         )}

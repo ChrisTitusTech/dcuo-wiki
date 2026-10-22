@@ -315,3 +315,28 @@ test("large guide libraries paginate and reset after searching or changing categ
     "Quests",
   );
 });
+
+test("imported articles omit unfilled sections and display clean text and tables", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Disturbance_on_the_Coast/");
+  const body = page.locator("#article-body");
+  await expect(body).toContainText("Restore Order in Coast City");
+  expect(await body.innerText()).not.toMatch(/\\|\bn\/a\b|Not specified/);
+  await expect(
+    body.getByRole("heading", { name: "Rewards", exact: true }),
+  ).toHaveCount(0);
+  await expect(
+    page
+      .getByRole("navigation", { name: "Table of contents" })
+      .getByRole("link", { name: "Rewards", exact: true }),
+  ).toHaveCount(0);
+  await expect(
+    body.getByRole("heading", { name: "Video walkthroughs", exact: true }),
+  ).toHaveCount(0);
+  await page.goto("/wiki/Collections/");
+  expect(await page.locator("#article-body").innerText()).not.toMatch(
+    /\b(?:n\/a|Not specified)\b/i,
+  );
+  await expect(page.locator("#article-body td:empty").first()).toBeVisible();
+});

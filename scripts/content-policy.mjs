@@ -1,3 +1,4 @@
+import { missingImportText, cleanImportText } from "../shared/import-text.mjs";
 function text(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
@@ -30,6 +31,15 @@ export function issuesFor(a) {
       section.items.some((i) => !text(i))
     )
       errors.push("invalid section");
+    if (
+      Array.isArray(section.items) &&
+      section.items.some(
+        (i) =>
+          typeof i === "string" &&
+          (missingImportText(i) || cleanImportText(i) !== i),
+      )
+    )
+      errors.push("unfilled field or import formatting debris");
     for (const field of ["images", "references"]) {
       if (
         section[field] !== undefined &&
@@ -51,7 +61,7 @@ export function issuesFor(a) {
           (r) =>
             !Array.isArray(r) ||
             r.length !== t.columns.length ||
-            r.some((c) => !text(c)),
+            r.some((c) => typeof c !== "string"),
         )
       )
         errors.push("invalid table");

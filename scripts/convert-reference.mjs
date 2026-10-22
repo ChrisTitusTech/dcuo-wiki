@@ -1,5 +1,10 @@
 // Stage structured content from a cached Firecrawl capture. Publication is separate.
 import { readFile, writeFile } from "node:fs/promises";
+import {
+  cleanImportText,
+  cleanImportItems,
+  missingImportText,
+} from "../shared/import-text.mjs";
 import { createHash } from "node:crypto";
 import { fromMarkdown } from "mdast-util-from-markdown";
 import { gfmFromMarkdown } from "mdast-util-gfm";
@@ -21,10 +26,12 @@ const walk = (node, fn, parent) => {
   for (const child of node.children || []) walk(child, fn, node);
 };
 const clean = (value) =>
-  value
-    .replace(/\s+/g, " ")
-    .replace(/\s*;\s*;/g, ";")
-    .trim();
+  cleanImportText(
+    value
+      .replace(/\s+/g, " ")
+      .replace(/\s*;\s*;/g, ";")
+      .trim(),
+  );
 const safe = (value) => {
   try {
     const u = new URL(value);
@@ -158,7 +165,9 @@ export function convertReference(markdown, source, options = {}) {
             columns: cols.map((i) => raw[0][i] || "Details"),
             rows: raw
               .slice(1)
-              .map((r) => cols.map((i) => r[i] || "Not specified")),
+              .map((r) =>
+                cols.map((i) => (missingImportText(r[i] || "") ? "" : r[i])),
+              ),
           });
         }
       } else if (node.type === "list") {
@@ -180,7 +189,7 @@ export function convertReference(markdown, source, options = {}) {
     }
     const chunks = [];
     let chunk = [];
-    for (const item of items) {
+    for (const item of cleanImportItems(items)) {
       if (item.length > 6500)
         throw new Error("Oversized paragraph in " + title);
       if (chunk.join("\n").length + item.length > 6500) {

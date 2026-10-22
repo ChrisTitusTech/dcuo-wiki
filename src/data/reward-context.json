@@ -24,7 +24,7 @@
       ]
     },
     "table-5": {
-      "base": "Alien Technology | Avenue of Tomorrow | Grooved Alien Leggings\nBibbo's Burgers Signature Plates | Suicide Slums | Tall Synthweave Gloves\nBig Belly BurgerTime | Otisburg | Grooved Alien Backplate\nBrainiac War | Brainiac Incursion Sites | Ulgo's Fortified Shoulderplates\nCentennial | Centennial Park | Clockwork Diver's Helmet\nDaily Planet Guides | Downtown Metropolis and Historic District | Firefighter's Helmet\nDepths of the Asylum | Arkham Island | SCU Special Ops Helmet\nGold Quality Boostercomms | Avenue of Tomorrow to Historic District | Booster Gold T-Shirt\nGotham Central | East End | Detective's Trench Coat\nGotham Fans | East End | Jester's Gloves\nGotham Gazette Guides | Diamond District | Archmagus' Gloves\nGotham Meetups | East End and Gotham Common | Boots of Light\nGotham Street Signs | East End | Arkham Riot Officer's Belt\nGotham University | Gotham University | Breastplate of the Believer\nKryptonite Isotopes | Historic District and Old Dutch Quarter | Krypton-Vine Leggings\nLexCorp Rapid Assault Gear | Downtown and Midtown Metropolis | LexCorp T-Shirt\nLois Lane Bylines | Downtown and Midtown Metropolis | Daily Planet Cap\nMana-Twisted Plants | Metropolis | Mana-Twisted Shirt\nMetahumanity's Vanguard | Historic District, Little Bohemia | Thanagarian Warrior's Helmet\nMetropolis Fans | Metropolis | Mysterious Vine-Twisted Shoulderguards\nMetropolis Matchups | Metropolis | Mana-Woven Boots\nMetropolis Street Signs | Metropolis | Watchmaker's Breastplate\nMetropolis University | Little Bohemia | Relic Shoulderguards\nMPD Science Cops | Downtown Metropolis and Historic District | Regulation Science Police Helmet\nNews From Around the Planet | Metropolis | Longwalker's Boots\nNo Man's Land | Gotham | Grooved Enforcer's Boots\nPenguin Umbrellas | Gotham | Merry Jester's Pants\nRobinson Remembrance | Robinson Park | Heavenly Legplates\nSigns of the Great Ten | Chinatown | Hat of the Deadly Brothers\nSorcerous Vanguard | Chinatown | Belt of the Archmagus\nStagg Stop Maps | Not specified | Jester's Belt\nSTAR Prototype Gear | Not specified | STAR Labs Cap\nSteelworks Scraps | Suicide Slums | Standard SCU Helmet\nTechnology's Vanguard | Gotham | Metallic Wings of Glory\nThe Hall of Doom | Hall of Doom | Prince Ulgo's Massive Helm\nThe Joker's Trick Cards | Gotham | Duct Tape Mask\nThe Watchtower | Watchtower | Prince Ulgo's Massive Helm\nVicki Vale Bylines | Gotham | Bio-Vined Gloves\nWayneTech Watches | East End | Watchmaker's Geared Legplates\nYou Are Wrong! Fan Service | Midtown Metropolis | Cynic's Travel Hat",
+      "base": "Alien Technology | Avenue of Tomorrow | Grooved Alien Leggings\nBibbo's Burgers Signature Plates | Suicide Slums | Tall Synthweave Gloves\nBig Belly BurgerTime | Otisburg | Grooved Alien Backplate\nBrainiac War | Brainiac Incursion Sites | Ulgo's Fortified Shoulderplates\nCentennial | Centennial Park | Clockwork Diver's Helmet\nDaily Planet Guides | Downtown Metropolis and Historic District | Firefighter's Helmet\nDepths of the Asylum | Arkham Island | SCU Special Ops Helmet\nGold Quality Boostercomms | Avenue of Tomorrow to Historic District | Booster Gold T-Shirt\nGotham Central | East End | Detective's Trench Coat\nGotham Fans | East End | Jester's Gloves\nGotham Gazette Guides | Diamond District | Archmagus' Gloves\nGotham Meetups | East End and Gotham Common | Boots of Light\nGotham Street Signs | East End | Arkham Riot Officer's Belt\nGotham University | Gotham University | Breastplate of the Believer\nKryptonite Isotopes | Historic District and Old Dutch Quarter | Krypton-Vine Leggings\nLexCorp Rapid Assault Gear | Downtown and Midtown Metropolis | LexCorp T-Shirt\nLois Lane Bylines | Downtown and Midtown Metropolis | Daily Planet Cap\nMana-Twisted Plants | Metropolis | Mana-Twisted Shirt\nMetahumanity's Vanguard | Historic District, Little Bohemia | Thanagarian Warrior's Helmet\nMetropolis Fans | Metropolis | Mysterious Vine-Twisted Shoulderguards\nMetropolis Matchups | Metropolis | Mana-Woven Boots\nMetropolis Street Signs | Metropolis | Watchmaker's Breastplate\nMetropolis University | Little Bohemia | Relic Shoulderguards\nMPD Science Cops | Downtown Metropolis and Historic District | Regulation Science Police Helmet\nNews From Around the Planet | Metropolis | Longwalker's Boots\nNo Man's Land | Gotham | Grooved Enforcer's Boots\nPenguin Umbrellas | Gotham | Merry Jester's Pants\nRobinson Remembrance | Robinson Park | Heavenly Legplates\nSigns of the Great Ten | Chinatown | Hat of the Deadly Brothers\nSorcerous Vanguard | Chinatown | Belt of the Archmagus\nStagg Stop Maps |  | Jester's Belt\nSTAR Prototype Gear |  | STAR Labs Cap\nSteelworks Scraps | Suicide Slums | Standard SCU Helmet\nTechnology's Vanguard | Gotham | Metallic Wings of Glory\nThe Hall of Doom | Hall of Doom | Prince Ulgo's Massive Helm\nThe Joker's Trick Cards | Gotham | Duct Tape Mask\nThe Watchtower | Watchtower | Prince Ulgo's Massive Helm\nVicki Vale Bylines | Gotham | Bio-Vined Gloves\nWayneTech Watches | East End | Watchmaker's Geared Legplates\nYou Are Wrong! Fan Service | Midtown Metropolis | Cynic's Travel Hat",
       "rows": [
         [
           "Alien Technology",
@@ -178,12 +178,12 @@
         ],
         [
           "Stagg Stop Maps",
-          "Not specified",
+          "",
           "Jester's Belt"
         ],
         [
           "STAR Prototype Gear",
-          "Not specified",
+          "",
           "STAR Labs Cap"
         ],
         [
@@ -1496,7 +1496,7 @@
       ]
     },
     "table-15": {
-      "base": "Brainiac's Experimental Tech | Bottled D.C. | Hall of Justice - Batman Statue | Brainiac Returns\nFactory Reset | Various DCUO content, episode vendor | Automaton Influence Aura | Brainiac Returns\nTrinkets from Bizarro World | Bottled D.C. | Hall of Justice - Superman Statue | Brainiac Returns\nHarley's Apokoliptian Souvenirs | Apokoliptic Gotham City | Hellseed Pod | Harley Quinn vs. Apokolips\nHarley's Gotham Goodies | Apokoliptic Gotham City | Hail Darkseid - Makeover Poster | Harley Quinn vs. Apokolips\nHarley's Mementos | Apokoliptic Gotham City | Wicked Warmth | Harley Quinn vs. Apokolips\nHarley Quinn's 12 Easy Steps to Fix the Timeline | Various DCUO content, episode vendor | Bully Buster Hair Style | Harley Quinn vs. Apokolips\nHarley's Mementos | Apokoliptic Gotham City | Wicked Warmth | Harley Quinn vs. Apokolips\nExorcism Kit | Various Day of Reckoning content, chapter vendor | Hellblazer Aura | Day of Reckoning\nHeroes and Villains of Kaznia Comics | Kaznia City | Plans: Infernal Obelisk | Day of Reckoning\nMonsters of Kaznia Trading Cards | Kaznia City | Plans: Infernal Door - Large | Day of Reckoning\nVisit Scenic Kaznia! | Kaznia City | Plans: Infernal Bell | Day of Reckoning\nGalactic School Books | Mogo | Flawless Mogo Exobyte | Fearful Day\nGreen Lantern Corps Crime Files | Mogo | Perfected Willpower | Fearful Day\nLuzia's Mementos | Various Fearful Day content, chapter vendor | Reborn Tattoo Skin Set | Fearful Day\nQwardian Tech | Mogo | Qwardian Alloy | Fearful Day\nMemories of the Lost | Mournful Mogo | Risen Exobyte | Raging Night\nMogoberry Madness! | Mournful Mogo | Unliving Essence | Raging Night\nGreen Lantern Relics | Frozen Mogo | Not specified | Hope Burns Bright\nWanted: Red Lanterns! | Frozen Mogo | Not specified | Hope Burns Bright\nKennik’s Keepsakes | Various Hope Burns Bright content, chapter vendor | Not specified | Hope Burns Bright\nAllies of Supergirl | Sunken Argo City | Red Kryptonite Infused Exobyte | Shadows Over Argo\nFoes of the Girl of Steel | Sunken Argo City | Refined Red Kryptonite Shard | Shadows Over Argo\nThere is Always Hope | Various Shadows Over Argo content, chapter vendor | Hope Light Chroma Pack | Shadows Over Argo",
+      "base": "Brainiac's Experimental Tech | Bottled D.C. | Hall of Justice - Batman Statue | Brainiac Returns\nFactory Reset | Various DCUO content, episode vendor | Automaton Influence Aura | Brainiac Returns\nTrinkets from Bizarro World | Bottled D.C. | Hall of Justice - Superman Statue | Brainiac Returns\nHarley's Apokoliptian Souvenirs | Apokoliptic Gotham City | Hellseed Pod | Harley Quinn vs. Apokolips\nHarley's Gotham Goodies | Apokoliptic Gotham City | Hail Darkseid - Makeover Poster | Harley Quinn vs. Apokolips\nHarley's Mementos | Apokoliptic Gotham City | Wicked Warmth | Harley Quinn vs. Apokolips\nHarley Quinn's 12 Easy Steps to Fix the Timeline | Various DCUO content, episode vendor | Bully Buster Hair Style | Harley Quinn vs. Apokolips\nHarley's Mementos | Apokoliptic Gotham City | Wicked Warmth | Harley Quinn vs. Apokolips\nExorcism Kit | Various Day of Reckoning content, chapter vendor | Hellblazer Aura | Day of Reckoning\nHeroes and Villains of Kaznia Comics | Kaznia City | Plans: Infernal Obelisk | Day of Reckoning\nMonsters of Kaznia Trading Cards | Kaznia City | Plans: Infernal Door - Large | Day of Reckoning\nVisit Scenic Kaznia! | Kaznia City | Plans: Infernal Bell | Day of Reckoning\nGalactic School Books | Mogo | Flawless Mogo Exobyte | Fearful Day\nGreen Lantern Corps Crime Files | Mogo | Perfected Willpower | Fearful Day\nLuzia's Mementos | Various Fearful Day content, chapter vendor | Reborn Tattoo Skin Set | Fearful Day\nQwardian Tech | Mogo | Qwardian Alloy | Fearful Day\nMemories of the Lost | Mournful Mogo | Risen Exobyte | Raging Night\nMogoberry Madness! | Mournful Mogo | Unliving Essence | Raging Night\nGreen Lantern Relics | Frozen Mogo |  | Hope Burns Bright\nWanted: Red Lanterns! | Frozen Mogo |  | Hope Burns Bright\nKennik’s Keepsakes | Various Hope Burns Bright content, chapter vendor |  | Hope Burns Bright\nAllies of Supergirl | Sunken Argo City | Red Kryptonite Infused Exobyte | Shadows Over Argo\nFoes of the Girl of Steel | Sunken Argo City | Refined Red Kryptonite Shard | Shadows Over Argo\nThere is Always Hope | Various Shadows Over Argo content, chapter vendor | Hope Light Chroma Pack | Shadows Over Argo",
       "rows": [
         [
           "Brainiac's Experimental Tech",
@@ -1609,19 +1609,19 @@
         [
           "Green Lantern Relics",
           "Frozen Mogo",
-          "Not specified",
+          "",
           "Hope Burns Bright"
         ],
         [
           "Wanted: Red Lanterns!",
           "Frozen Mogo",
-          "Not specified",
+          "",
           "Hope Burns Bright"
         ],
         [
           "Kennik’s Keepsakes",
           "Various Hope Burns Bright content, chapter vendor",
-          "Not specified",
+          "",
           "Hope Burns Bright"
         ],
         [
@@ -1651,7 +1651,7 @@
       ]
     },
     "table-17": {
-      "base": "Fear is Yellow | Time Capsule | Amber Mist Aura | Suicide Squad Training\nPure Rage | Time Capsule | Crimson Mist Aura | Suicide Squad Training\nInspiration of Will | Time Capsule | Emerald Mist Aura | Suicide Squad Training\nBorn of Fire | Amazon Time Capsule | Phoenix Material | Monster Training\nIt's the End of the Underworld! | Amazon Time Capsule | Crown of Hades | Monster Training\nLove is Love | Amazon Time Capsule | Amethyst Misted Aura | Monster Training\nArtifacts of the Void | Qwardian Time Capsule | Void Material | Anti-Matter Research\nRelics of Orange Avarice | Qwardian Time Capsule | Citrine Misted Aura | Anti-Matter Research\nRelics of Black Death | Qwardian Time Capsule | Corrupted Aura | Anti-Matter Research\nThe Black Flash Analysis | Team-Up Time Capsule | Black Flash's Cowl | Mental Manifestations\nCompassion is for Everyone | Team-Up Time Capsule | Lazuli Misted Aura | Mental Manifestations\necroF deepS | Team-Up Time Capsule | Negative Speed Force Material | Mental Manifestations\nA Brief History of Savage | Time Torn Time Capsule | Time Torn Aura | World War II Basic Training and Battle Preparation\nLids of a Lifetime | Time Torn Time Capsule | Time Torn Material | World War II Basic Training and Battle Preparation\nThe Ultimate Arm | Time Torn Time Capsule | Robotic Arm Style | World War II Basic Training and Battle Preparation\nDark Rocks Rock | Arcane Time Capsule | Dark Flame Aura | Stabilizer Fragmentation\nTokens of Sin | Arcane Time Capsule | Wings of Sin | Stabilizer Fragmentation\nWonderful Toys | Arcane Time Capsule | Ultimate Aura | Stabilizer Fragmentation\nKahndaqi Clues | Gotham Time Capsule | Sandstorm Aura | Stabilizer Fragmentation\nRiddling Wringers | Gotham Time Capsule | \"Riddle Me This\" Aura | Stabilizer Fragmentation\nT.O. Morrow Trophies | Gotham Time Capsule | Energy Vortex Aura | Stabilizer Fragmentation\nDilustel Details | Notorious Time Capsule | Chrome Material | Stabilizer Fragmentation\nThat Boy is Super | Notorious Time Capsule | Crimson Kryptonian Aura - Hands | Stabilizer Fragmentation\nThe Shadow of Death | Notorious Time Capsule | Umbral Aura | Stabilizer Fragmentation\nAnti-Matter Ammo Dump | Paradox Time Capsule | Anti-Matter Cache | Stabilizer Fragmentation\nBottled City Blues | Paradox Time Capsule | Forcefield Material | Stabilizer Fragmentation\nExobitten | Paradox Time Capsule | Exoskeleton Cache | Stabilizer Fragmentation\nOwl Eyes | Assassin Time Capsule | Court of Owls Mask | Stabilizer Fragmentation\nSon of a Jackal! | Assassin Time Capsule | The Jackal's Head | Stabilizer Fragmentation\nTools of the Slay | Assassin Time Capsule | Cloak of Shadows | Stabilizer Fragmentation\nA Feet Worse than Death | Kryptonian Time Capsule | Reactive Battle Boots | Stabilizer Fragmentation\nHands of Fate | Kryptonian Time Capsule | Reactive Battle Gauntlets | Stabilizer Fragmentation\nShoulder of the Load | Kryptonian Time Capsule | Reactive Battle Spaulders | Stabilizer Fragmentation\nEnemies in the Dark | Cursed Gotham Time Capsule | Vampiric Visage | Stabilizer Fragmentation\nGotham's Dark Beating Heart | Cursed Gotham Time Capsule | Tattered Cloak of Corruption | Stabilizer Fragmentation\nRituals of Alchemy | Cursed Gotham Time Capsule | Runic Hand Aura Box | Stabilizer Fragmentation\nDeceptive Devices | Atlantean Time Capsule | Bioluminescent Material | Stabilizer Fragmentation\nFine Fisherman | Atlantean Time Capsule | Commander's Harpoon Hand | Stabilizer Fragmentation\nUnder the Sea | Atlantean Time Capsule | Bubbles movement style | Stabilizer Fragmentation\nExploring the Rock of Eternity | Shazam! Time Capsule | Cloak of Eternities | Stabilizer Fragmentation\nPrinciples of Flight | Shazam! Time Capsule | Winged Feet of Hermes | Stabilizer Fragmentation\nVasquez Family Effects | Shazam! Time Capsule | Crown of Solomon Accessory Box | Stabilizer Fragmentation\nMysteries of the Labyrinth | Dark Knights Time Capsule | Minotaur Helmet | Stabilizer Fragmentation\nA Single Spark | Dark Knights Time Capsule | Orange Flux Fire Aura | Stabilizer Fragmentation\nStrongest Ink | Dark Knights Time Capsule | Ink Material | Stabilizer Fragmentation\nAny Joke in a Storm | Dark Multiverse Time Capsule | Laughing Accessory | Stabilizer Fragmentation\nSilver Lightning | Dark Multiverse Time Capsule | Thunderstorm Aura | Stabilizer Fragmentation\nTop Hawk | Dark Multiverse Time Capsule | Thanagar's Champion Helmet | Stabilizer Fragmentation\nFocused Aggression | Oracle's Time Capsule | Avatar of War Cape | Stabilizer Fragmentation\nInfoSec | Oracle's Time Capsule | Network Infiltrator Accessory | Stabilizer Fragmentation\nInner Peace | Oracle's Time Capsule | Avatar of Peace Mask | Stabilizer Fragmentation\nIt's a Horrible Life | Flashpoint Time Capsule | Future Flash Cowl | Stabilizer Fragmentation\nMemory-Vest | Flashpoint Time Capsule | Madness Chroma Pack | Stabilizer Fragmentation\nPenthesilea's and Orm's Delights | Flashpoint Time Capsule | Lasso of Truth Style | Stabilizer Fragmentation\nRaven's Stuff: Keep Out | Teen Titans Time Capsule | Demonic Gemstone | Stabilizer Fragmentation\nTeen Titans Pet Club | Teen Titans Time Capsule | Drifting Feathers Aura | Stabilizer Fragmentation\nTitans Tower Trophies | Teen Titans Time Capsule | Spyral Operative Pack | Stabilizer Fragmentation\nElement Woman's Perspective | Knight of Vengeance Time Capsule | Element Mist Aura | Stabilizer Fragmentation\nLois Lane and The Evidence | Knight of Vengeance Time Capsule | Resistance Ponytail Pack | Stabilizer Fragmentation\nMental Resistance | Knight of Vengeance Time Capsule | Swindler Mask | Stabilizer Fragmentation\nEnd-of-Century Classic | Sixth Dimension Kryptonian Time Capsule | Freedom Mullet | Stabilizer Fragmentation\nGenetically Popped Collar | Sixth Dimension Kryptonian Time Capsule | Super Rebellious Jacket | Stabilizer Fragmentation\nRogol Zaar's Scars | Sixth Dimension Kryptonian Time Capsule | Kryptonian Kerchief Accessory | Stabilizer Fragmentation\nDrowned Earth's Themyscira | Wondrous Time Capsule | Blue Misty Stars Aura | n/a\nMythical Haircare | Wondrous Time Capsule | Wonderful Locks Hair | n/a\nThe True Amazon | Wondrous Time Capsule | Scale Material | n/a\nDouble Deuces | Joker's Legacy Time Capsule | Joker's Wild Card Accessory | n/a\nWildly Beautiful | Joker's Legacy Time Capsule | Wild Style Hair | n/a\nWooden Performance | Joker's Legacy Time Capsule | Doll Skin Set | n/a\nIn the Walls | LexCorp Exclusive Time Capsule | Lexobyte Exosuit Back Style | n/a",
+      "base": "Fear is Yellow | Time Capsule | Amber Mist Aura | Suicide Squad Training\nPure Rage | Time Capsule | Crimson Mist Aura | Suicide Squad Training\nInspiration of Will | Time Capsule | Emerald Mist Aura | Suicide Squad Training\nBorn of Fire | Amazon Time Capsule | Phoenix Material | Monster Training\nIt's the End of the Underworld! | Amazon Time Capsule | Crown of Hades | Monster Training\nLove is Love | Amazon Time Capsule | Amethyst Misted Aura | Monster Training\nArtifacts of the Void | Qwardian Time Capsule | Void Material | Anti-Matter Research\nRelics of Orange Avarice | Qwardian Time Capsule | Citrine Misted Aura | Anti-Matter Research\nRelics of Black Death | Qwardian Time Capsule | Corrupted Aura | Anti-Matter Research\nThe Black Flash Analysis | Team-Up Time Capsule | Black Flash's Cowl | Mental Manifestations\nCompassion is for Everyone | Team-Up Time Capsule | Lazuli Misted Aura | Mental Manifestations\necroF deepS | Team-Up Time Capsule | Negative Speed Force Material | Mental Manifestations\nA Brief History of Savage | Time Torn Time Capsule | Time Torn Aura | World War II Basic Training and Battle Preparation\nLids of a Lifetime | Time Torn Time Capsule | Time Torn Material | World War II Basic Training and Battle Preparation\nThe Ultimate Arm | Time Torn Time Capsule | Robotic Arm Style | World War II Basic Training and Battle Preparation\nDark Rocks Rock | Arcane Time Capsule | Dark Flame Aura | Stabilizer Fragmentation\nTokens of Sin | Arcane Time Capsule | Wings of Sin | Stabilizer Fragmentation\nWonderful Toys | Arcane Time Capsule | Ultimate Aura | Stabilizer Fragmentation\nKahndaqi Clues | Gotham Time Capsule | Sandstorm Aura | Stabilizer Fragmentation\nRiddling Wringers | Gotham Time Capsule | \"Riddle Me This\" Aura | Stabilizer Fragmentation\nT.O. Morrow Trophies | Gotham Time Capsule | Energy Vortex Aura | Stabilizer Fragmentation\nDilustel Details | Notorious Time Capsule | Chrome Material | Stabilizer Fragmentation\nThat Boy is Super | Notorious Time Capsule | Crimson Kryptonian Aura - Hands | Stabilizer Fragmentation\nThe Shadow of Death | Notorious Time Capsule | Umbral Aura | Stabilizer Fragmentation\nAnti-Matter Ammo Dump | Paradox Time Capsule | Anti-Matter Cache | Stabilizer Fragmentation\nBottled City Blues | Paradox Time Capsule | Forcefield Material | Stabilizer Fragmentation\nExobitten | Paradox Time Capsule | Exoskeleton Cache | Stabilizer Fragmentation\nOwl Eyes | Assassin Time Capsule | Court of Owls Mask | Stabilizer Fragmentation\nSon of a Jackal! | Assassin Time Capsule | The Jackal's Head | Stabilizer Fragmentation\nTools of the Slay | Assassin Time Capsule | Cloak of Shadows | Stabilizer Fragmentation\nA Feet Worse than Death | Kryptonian Time Capsule | Reactive Battle Boots | Stabilizer Fragmentation\nHands of Fate | Kryptonian Time Capsule | Reactive Battle Gauntlets | Stabilizer Fragmentation\nShoulder of the Load | Kryptonian Time Capsule | Reactive Battle Spaulders | Stabilizer Fragmentation\nEnemies in the Dark | Cursed Gotham Time Capsule | Vampiric Visage | Stabilizer Fragmentation\nGotham's Dark Beating Heart | Cursed Gotham Time Capsule | Tattered Cloak of Corruption | Stabilizer Fragmentation\nRituals of Alchemy | Cursed Gotham Time Capsule | Runic Hand Aura Box | Stabilizer Fragmentation\nDeceptive Devices | Atlantean Time Capsule | Bioluminescent Material | Stabilizer Fragmentation\nFine Fisherman | Atlantean Time Capsule | Commander's Harpoon Hand | Stabilizer Fragmentation\nUnder the Sea | Atlantean Time Capsule | Bubbles movement style | Stabilizer Fragmentation\nExploring the Rock of Eternity | Shazam! Time Capsule | Cloak of Eternities | Stabilizer Fragmentation\nPrinciples of Flight | Shazam! Time Capsule | Winged Feet of Hermes | Stabilizer Fragmentation\nVasquez Family Effects | Shazam! Time Capsule | Crown of Solomon Accessory Box | Stabilizer Fragmentation\nMysteries of the Labyrinth | Dark Knights Time Capsule | Minotaur Helmet | Stabilizer Fragmentation\nA Single Spark | Dark Knights Time Capsule | Orange Flux Fire Aura | Stabilizer Fragmentation\nStrongest Ink | Dark Knights Time Capsule | Ink Material | Stabilizer Fragmentation\nAny Joke in a Storm | Dark Multiverse Time Capsule | Laughing Accessory | Stabilizer Fragmentation\nSilver Lightning | Dark Multiverse Time Capsule | Thunderstorm Aura | Stabilizer Fragmentation\nTop Hawk | Dark Multiverse Time Capsule | Thanagar's Champion Helmet | Stabilizer Fragmentation\nFocused Aggression | Oracle's Time Capsule | Avatar of War Cape | Stabilizer Fragmentation\nInfoSec | Oracle's Time Capsule | Network Infiltrator Accessory | Stabilizer Fragmentation\nInner Peace | Oracle's Time Capsule | Avatar of Peace Mask | Stabilizer Fragmentation\nIt's a Horrible Life | Flashpoint Time Capsule | Future Flash Cowl | Stabilizer Fragmentation\nMemory-Vest | Flashpoint Time Capsule | Madness Chroma Pack | Stabilizer Fragmentation\nPenthesilea's and Orm's Delights | Flashpoint Time Capsule | Lasso of Truth Style | Stabilizer Fragmentation\nRaven's Stuff: Keep Out | Teen Titans Time Capsule | Demonic Gemstone | Stabilizer Fragmentation\nTeen Titans Pet Club | Teen Titans Time Capsule | Drifting Feathers Aura | Stabilizer Fragmentation\nTitans Tower Trophies | Teen Titans Time Capsule | Spyral Operative Pack | Stabilizer Fragmentation\nElement Woman's Perspective | Knight of Vengeance Time Capsule | Element Mist Aura | Stabilizer Fragmentation\nLois Lane and The Evidence | Knight of Vengeance Time Capsule | Resistance Ponytail Pack | Stabilizer Fragmentation\nMental Resistance | Knight of Vengeance Time Capsule | Swindler Mask | Stabilizer Fragmentation\nEnd-of-Century Classic | Sixth Dimension Kryptonian Time Capsule | Freedom Mullet | Stabilizer Fragmentation\nGenetically Popped Collar | Sixth Dimension Kryptonian Time Capsule | Super Rebellious Jacket | Stabilizer Fragmentation\nRogol Zaar's Scars | Sixth Dimension Kryptonian Time Capsule | Kryptonian Kerchief Accessory | Stabilizer Fragmentation\nDrowned Earth's Themyscira | Wondrous Time Capsule | Blue Misty Stars Aura | \nMythical Haircare | Wondrous Time Capsule | Wonderful Locks Hair | \nThe True Amazon | Wondrous Time Capsule | Scale Material | \nDouble Deuces | Joker's Legacy Time Capsule | Joker's Wild Card Accessory | \nWildly Beautiful | Joker's Legacy Time Capsule | Wild Style Hair | \nWooden Performance | Joker's Legacy Time Capsule | Doll Skin Set | \nIn the Walls | LexCorp Exclusive Time Capsule | Lexobyte Exosuit Back Style | ",
       "rows": [
         [
           "Fear is Yellow",
@@ -2035,43 +2035,43 @@
           "Drowned Earth's Themyscira",
           "Wondrous Time Capsule",
           "Blue Misty Stars Aura",
-          "n/a"
+          ""
         ],
         [
           "Mythical Haircare",
           "Wondrous Time Capsule",
           "Wonderful Locks Hair",
-          "n/a"
+          ""
         ],
         [
           "The True Amazon",
           "Wondrous Time Capsule",
           "Scale Material",
-          "n/a"
+          ""
         ],
         [
           "Double Deuces",
           "Joker's Legacy Time Capsule",
           "Joker's Wild Card Accessory",
-          "n/a"
+          ""
         ],
         [
           "Wildly Beautiful",
           "Joker's Legacy Time Capsule",
           "Wild Style Hair",
-          "n/a"
+          ""
         ],
         [
           "Wooden Performance",
           "Joker's Legacy Time Capsule",
           "Doll Skin Set",
-          "n/a"
+          ""
         ],
         [
           "In the Walls",
           "LexCorp Exclusive Time Capsule",
           "Lexobyte Exosuit Back Style",
-          "n/a"
+          ""
         ]
       ]
     },
@@ -2082,91 +2082,91 @@
       ]
     },
     "table-18": {
-      "base": "LexCoin Corporate Securities | LexCorp Exclusive Time Capsule | LexCoin Accessory | n/a\nLuthor's Personal \"Jade\" Collection | LexCorp Exclusive Time Capsule | Sheathed Kyrptonite Spear Back Style | n/a\nGarland of Life | Secrets of Kahndaq Time Capsule | Hieroglyphics Skin Set | n/a\nKahndaqi Archaeology | Secrets of Kahndaq Time Capsule | Battle Damaged Slimline Cache | n/a\nRelics of the Magic Lands | Secrets of Kahndaq Time Capsule | Mister Mind Accessory | n/a\nAesthetic Augmentations | Neon Technomancer Time Capsule | Cybernetic Skin Set | n/a\nFur, Feather, and Fang | Neon Technomancer Time Capsule | Cybernetic Hair Cache | n/a\nHecate's Alignment | Neon Technomancer Time Capsule | Hecate's Crown Accessory | n/a\nBullet Proof | Kryptonian General Time Capsule | Bulletproof Emote | n/a\nDaily Planet Scoops | Kryptonian General Time Capsule | Secret Identity Shirt | n/a\nThe Ravers' Punk Scene | Kryptonian General Time Capsule | Super Rebellious Hair | n/a\nPerplexing Predicament | Batman Eternal Time Capsule | Perplexing Material | n/a\nThe Epic of King Tut | Batman Eternal Time Capsule | Tut-Tut Emote | n/a\nWayneTech's High-Rad Future! | Batman Eternal Time Capsule | Lumos Aura | n/a\nBody of Construction | Total Tool Time Capsule | Legends-in-Ink Skin Set | Stabilizer Fragmentation\nComic Rating Issues | Total Tool Time Capsule | Comic Browsing Emote | Stabilizer Fragmentation\nErect-All-Set | Total Tool Time Capsule | Thought Bubble Accessory | Stabilizer Fragmentation\nA Deal Signed in Ink | Deadly Katana Time Capsule | Demon Ink Skin Set‎ | Stabilizer Fragmentation\nSouls of the Slain | Deadly Katana Time Capsule | Captured Souls Material | Stabilizer Fragmentation\nThe Forging of a Blade | Deadly Katana Time Capsule | Soul Sliced Hair | Stabilizer Fragmentation\nMementos of New Genesis | Apokoliptian Overlord Time Capsule | New Gods Aura Pack | Stabilizer Fragmentation\nRock Of Ages | Apokoliptian Overlord Time Capsule | Splinter of Destiny Emote | Stabilizer Fragmentation\nThe Shadow of Anti-Life | Apokoliptian Overlord Time Capsule | Anti-Life Accessory | Stabilizer Fragmentation\nKlarion's Kollection | Mystical Magician Time Capsule | Spellbound Skin Set | Stabilizer Fragmentation\n\"Masters of Magic!\" Trading Cards | Mystical Magician Time Capsule | Arcane Glyph Accessory | Stabilizer Fragmentation\n\"Worlds of Multiversal Magic\" Video Series | Mystical Magician Time Capsule | Reaper Mask Style | Stabilizer Fragmentation\nAbsolute GCPD Files | Absolute Dark Knight Time Capsule | Spike Flex Emote | Stabilizer Fragmentation\nAbsolute Mementos: Batman | Absolute Dark Knight Time Capsule | Bat Swarm Iconic Ability | Stabilizer Fragmentation\nAbsolute Tech: Batman | Absolute Dark Knight Time Capsule | Absolute Infiltration Cape Style | Stabilizer Fragmentation\nGreat Goddesses and Monsters! | Absolute Amazon Time Capsule | Hellforged Amazon Helm Style | Stabilizer Fragmentation\nMagical Materials | Absolute Amazon Time Capsule | Nemesis Lasso Iconic Ability | Stabilizer Fragmentation\nPeople and Places in Gateway City | Absolute Amazon Time Capsule | Last Amazon Skin Set | Stabilizer Fragmentation\nLands of the Last Son | Absolute Kryptonian Time Capsule | Sunstone Dust Blast Iconic Ability | Stabilizer Fragmentation\nOf Krypton | Absolute Kryptonian Time Capsule | Omega Prime Helmet Style | Stabilizer Fragmentation\nPeople of the Last Son | Absolute Kryptonian Time Capsule | Textured Kryptonian Hairstyle | Stabilizer Fragmentation\nAbsolute Heroes | Absolute Gotham Time Capsule | Whiplash Payload Iconic Ability | Stabilizer Fragmentation\nFriends of the Absolute Bat | Absolute Gotham Time Capsule | ARK M Batman Cowl Style | Stabilizer Fragmentation\nSites of Absolute Gotham | Absolute Gotham Time Capsule | Absolute Ivy Skin Set | Stabilizer Fragmentation",
+      "base": "LexCoin Corporate Securities | LexCorp Exclusive Time Capsule | LexCoin Accessory | \nLuthor's Personal \"Jade\" Collection | LexCorp Exclusive Time Capsule | Sheathed Kyrptonite Spear Back Style | \nGarland of Life | Secrets of Kahndaq Time Capsule | Hieroglyphics Skin Set | \nKahndaqi Archaeology | Secrets of Kahndaq Time Capsule | Battle Damaged Slimline Cache | \nRelics of the Magic Lands | Secrets of Kahndaq Time Capsule | Mister Mind Accessory | \nAesthetic Augmentations | Neon Technomancer Time Capsule | Cybernetic Skin Set | \nFur, Feather, and Fang | Neon Technomancer Time Capsule | Cybernetic Hair Cache | \nHecate's Alignment | Neon Technomancer Time Capsule | Hecate's Crown Accessory | \nBullet Proof | Kryptonian General Time Capsule | Bulletproof Emote | \nDaily Planet Scoops | Kryptonian General Time Capsule | Secret Identity Shirt | \nThe Ravers' Punk Scene | Kryptonian General Time Capsule | Super Rebellious Hair | \nPerplexing Predicament | Batman Eternal Time Capsule | Perplexing Material | \nThe Epic of King Tut | Batman Eternal Time Capsule | Tut-Tut Emote | \nWayneTech's High-Rad Future! | Batman Eternal Time Capsule | Lumos Aura | \nBody of Construction | Total Tool Time Capsule | Legends-in-Ink Skin Set | Stabilizer Fragmentation\nComic Rating Issues | Total Tool Time Capsule | Comic Browsing Emote | Stabilizer Fragmentation\nErect-All-Set | Total Tool Time Capsule | Thought Bubble Accessory | Stabilizer Fragmentation\nA Deal Signed in Ink | Deadly Katana Time Capsule | Demon Ink Skin Set‎ | Stabilizer Fragmentation\nSouls of the Slain | Deadly Katana Time Capsule | Captured Souls Material | Stabilizer Fragmentation\nThe Forging of a Blade | Deadly Katana Time Capsule | Soul Sliced Hair | Stabilizer Fragmentation\nMementos of New Genesis | Apokoliptian Overlord Time Capsule | New Gods Aura Pack | Stabilizer Fragmentation\nRock Of Ages | Apokoliptian Overlord Time Capsule | Splinter of Destiny Emote | Stabilizer Fragmentation\nThe Shadow of Anti-Life | Apokoliptian Overlord Time Capsule | Anti-Life Accessory | Stabilizer Fragmentation\nKlarion's Kollection | Mystical Magician Time Capsule | Spellbound Skin Set | Stabilizer Fragmentation\n\"Masters of Magic!\" Trading Cards | Mystical Magician Time Capsule | Arcane Glyph Accessory | Stabilizer Fragmentation\n\"Worlds of Multiversal Magic\" Video Series | Mystical Magician Time Capsule | Reaper Mask Style | Stabilizer Fragmentation\nAbsolute GCPD Files | Absolute Dark Knight Time Capsule | Spike Flex Emote | Stabilizer Fragmentation\nAbsolute Mementos: Batman | Absolute Dark Knight Time Capsule | Bat Swarm Iconic Ability | Stabilizer Fragmentation\nAbsolute Tech: Batman | Absolute Dark Knight Time Capsule | Absolute Infiltration Cape Style | Stabilizer Fragmentation\nGreat Goddesses and Monsters! | Absolute Amazon Time Capsule | Hellforged Amazon Helm Style | Stabilizer Fragmentation\nMagical Materials | Absolute Amazon Time Capsule | Nemesis Lasso Iconic Ability | Stabilizer Fragmentation\nPeople and Places in Gateway City | Absolute Amazon Time Capsule | Last Amazon Skin Set | Stabilizer Fragmentation\nLands of the Last Son | Absolute Kryptonian Time Capsule | Sunstone Dust Blast Iconic Ability | Stabilizer Fragmentation\nOf Krypton | Absolute Kryptonian Time Capsule | Omega Prime Helmet Style | Stabilizer Fragmentation\nPeople of the Last Son | Absolute Kryptonian Time Capsule | Textured Kryptonian Hairstyle | Stabilizer Fragmentation\nAbsolute Heroes | Absolute Gotham Time Capsule | Whiplash Payload Iconic Ability | Stabilizer Fragmentation\nFriends of the Absolute Bat | Absolute Gotham Time Capsule | ARK M Batman Cowl Style | Stabilizer Fragmentation\nSites of Absolute Gotham | Absolute Gotham Time Capsule | Absolute Ivy Skin Set | Stabilizer Fragmentation",
       "rows": [
         [
           "LexCoin Corporate Securities",
           "LexCorp Exclusive Time Capsule",
           "LexCoin Accessory",
-          "n/a"
+          ""
         ],
         [
           "Luthor's Personal \"Jade\" Collection",
           "LexCorp Exclusive Time Capsule",
           "Sheathed Kyrptonite Spear Back Style",
-          "n/a"
+          ""
         ],
         [
           "Garland of Life",
           "Secrets of Kahndaq Time Capsule",
           "Hieroglyphics Skin Set",
-          "n/a"
+          ""
         ],
         [
           "Kahndaqi Archaeology",
           "Secrets of Kahndaq Time Capsule",
           "Battle Damaged Slimline Cache",
-          "n/a"
+          ""
         ],
         [
           "Relics of the Magic Lands",
           "Secrets of Kahndaq Time Capsule",
           "Mister Mind Accessory",
-          "n/a"
+          ""
         ],
         [
           "Aesthetic Augmentations",
           "Neon Technomancer Time Capsule",
           "Cybernetic Skin Set",
-          "n/a"
+          ""
         ],
         [
           "Fur, Feather, and Fang",
           "Neon Technomancer Time Capsule",
           "Cybernetic Hair Cache",
-          "n/a"
+          ""
         ],
         [
           "Hecate's Alignment",
           "Neon Technomancer Time Capsule",
           "Hecate's Crown Accessory",
-          "n/a"
+          ""
         ],
         [
           "Bullet Proof",
           "Kryptonian General Time Capsule",
           "Bulletproof Emote",
-          "n/a"
+          ""
         ],
         [
           "Daily Planet Scoops",
           "Kryptonian General Time Capsule",
           "Secret Identity Shirt",
-          "n/a"
+          ""
         ],
         [
           "The Ravers' Punk Scene",
           "Kryptonian General Time Capsule",
           "Super Rebellious Hair",
-          "n/a"
+          ""
         ],
         [
           "Perplexing Predicament",
           "Batman Eternal Time Capsule",
           "Perplexing Material",
-          "n/a"
+          ""
         ],
         [
           "The Epic of King Tut",
           "Batman Eternal Time Capsule",
           "Tut-Tut Emote",
-          "n/a"
+          ""
         ],
         [
           "WayneTech's High-Rad Future!",
           "Batman Eternal Time Capsule",
           "Lumos Aura",
-          "n/a"
+          ""
         ],
         [
           "Body of Construction",
@@ -5180,11 +5180,8 @@
   },
   "Disturbance_on_the_Coast": {
     "section-4": {
-      "base": "- \\\n- n/a\\",
-      "items": [
-        "\\",
-        "n/a\\"
-      ]
+      "base": "",
+      "items": []
     }
   },
   "Don_t_Count_Your_Starro_Before_They_Hatch_Heroes": {
@@ -6659,7 +6656,7 @@
       "items": []
     },
     "table-5": {
-      "base": "Bow | Synthium Battlebow | Tech-Enhanced Longbow\nBrawling | Plated Synthium Knuckles | Power Clamps\nDual Pistol | Synthium-Plated Pistols | Plasma Pistol\nDual Wield | Polished Synthium Axes | Thanagarian Tomahawk\nHand Blaster | Reinforced Focusing Gauntlets | Hand Cannons\nMartial Arts | Exterminator's Claws | Twinblade Katar\nOne-Handed | Synthium Sword | Engraved Cutlass\nRifle | Exterminator's Rifle | Grenade Launcher\nShield | Synthium-Plated Shield | Giant Gear\nStaff | Exterminator's Staff | Staff\nTwo-Handed | Korlium Exocracker | Not specified",
+      "base": "Bow | Synthium Battlebow | Tech-Enhanced Longbow\nBrawling | Plated Synthium Knuckles | Power Clamps\nDual Pistol | Synthium-Plated Pistols | Plasma Pistol\nDual Wield | Polished Synthium Axes | Thanagarian Tomahawk\nHand Blaster | Reinforced Focusing Gauntlets | Hand Cannons\nMartial Arts | Exterminator's Claws | Twinblade Katar\nOne-Handed | Synthium Sword | Engraved Cutlass\nRifle | Exterminator's Rifle | Grenade Launcher\nShield | Synthium-Plated Shield | Giant Gear\nStaff | Exterminator's Staff | Staff\nTwo-Handed | Korlium Exocracker | ",
       "rows": [
         [
           "Bow",
@@ -6714,7 +6711,7 @@
         [
           "Two-Handed",
           "Korlium Exocracker",
-          "Not specified"
+          ""
         ]
       ]
     }
@@ -7206,10 +7203,9 @@
   },
   "Lantern_Assistance": {
     "section-5": {
-      "base": "- Dark Knights: Large Loot Cache\n- ?",
+      "base": "- Dark Knights: Large Loot Cache",
       "items": [
-        "Dark Knights: Large Loot Cache",
-        "?"
+        "Dark Knights: Large Loot Cache"
       ]
     }
   },
@@ -9982,7 +9978,7 @@
       "items": []
     },
     "table-5": {
-      "base": "5 | Party Crashers | Journal (automatic) | Armor-Plated Treads | Gotham | Not specified\n5 | Smash and Grab | Journal (automatic) | Prototype Plexiderm Belt | Gotham | Not specified\n5 | Seduction of the Innocent | Side Quest: Vito | $7 and 2x Soder Cola | Gotham | Not specified\n5 | The Big Payback | Journal (automatic) | Weapon | Gotham | Not specified\n5 | Cops and Robbers | Side Quest: Professor Daft | $7 and 2x Soder Cola | Gotham | Not specified\n5 | Shipping and Handling | Journal (automatic) | $38 | Burnley Warehouse | Not specified\n5 | Clubhouse Clout | Journal (automatic) | $7 and Slim Sensormise Jacket | North Burnley Nightclub | Not specified\n8 | Punks 'n Robbers | Journal (automatic) | Synthium-Plated Shoulderguards | Gotham | 634\n8 | Poisoned Bait | Journal (automatic) | Not specified | Distribution Center | 845\n8 | Mainliner | Side Quest: Circuitbreaker Tobias | $9 and 2x Soder Cola | Gotham | 277\n8 | Intent to Sell | Side Quest: Hood | $9 and 2x Soder Cola | Distribution Center | 277\n8 | Maximum Overload | Journal (automatic) | $49 and Battleworn Synthium Helm | Gotham | 845\n8 | Fast Eddie's Revenge | Side Quest: Fast Eddie | $9 and 2x Soder Cola | Gotham | 277\n8 | Beatdown for Bane | Journal (automatic) | Not specified | Cape Carmine Lighthouse | 2533\n8 | Lighthouse Cleanup | Side Quest: Lighthouse Keeper | $9 and Nanite-Reinforced Cloak | Cape Carmine Lighthouse | 277\n8 | Bane, Banished! | Journal (automatic) | $10 and weapon | North Burnley Nightclub | 627",
+      "base": "5 | Party Crashers | Journal (automatic) | Armor-Plated Treads | Gotham | \n5 | Smash and Grab | Journal (automatic) | Prototype Plexiderm Belt | Gotham | \n5 | Seduction of the Innocent | Side Quest: Vito | $7 and 2x Soder Cola | Gotham | \n5 | The Big Payback | Journal (automatic) | Weapon | Gotham | \n5 | Cops and Robbers | Side Quest: Professor Daft | $7 and 2x Soder Cola | Gotham | \n5 | Shipping and Handling | Journal (automatic) | $38 | Burnley Warehouse | \n5 | Clubhouse Clout | Journal (automatic) | $7 and Slim Sensormise Jacket | North Burnley Nightclub | \n8 | Punks 'n Robbers | Journal (automatic) | Synthium-Plated Shoulderguards | Gotham | 634\n8 | Poisoned Bait | Journal (automatic) |  | Distribution Center | 845\n8 | Mainliner | Side Quest: Circuitbreaker Tobias | $9 and 2x Soder Cola | Gotham | 277\n8 | Intent to Sell | Side Quest: Hood | $9 and 2x Soder Cola | Distribution Center | 277\n8 | Maximum Overload | Journal (automatic) | $49 and Battleworn Synthium Helm | Gotham | 845\n8 | Fast Eddie's Revenge | Side Quest: Fast Eddie | $9 and 2x Soder Cola | Gotham | 277\n8 | Beatdown for Bane | Journal (automatic) |  | Cape Carmine Lighthouse | 2533\n8 | Lighthouse Cleanup | Side Quest: Lighthouse Keeper | $9 and Nanite-Reinforced Cloak | Cape Carmine Lighthouse | 277\n8 | Bane, Banished! | Journal (automatic) | $10 and weapon | North Burnley Nightclub | 627",
       "rows": [
         [
           "5",
@@ -9990,7 +9986,7 @@
           "Journal (automatic)",
           "Armor-Plated Treads",
           "Gotham",
-          "Not specified"
+          ""
         ],
         [
           "5",
@@ -9998,7 +9994,7 @@
           "Journal (automatic)",
           "Prototype Plexiderm Belt",
           "Gotham",
-          "Not specified"
+          ""
         ],
         [
           "5",
@@ -10006,7 +10002,7 @@
           "Side Quest: Vito",
           "$7 and 2x Soder Cola",
           "Gotham",
-          "Not specified"
+          ""
         ],
         [
           "5",
@@ -10014,7 +10010,7 @@
           "Journal (automatic)",
           "Weapon",
           "Gotham",
-          "Not specified"
+          ""
         ],
         [
           "5",
@@ -10022,7 +10018,7 @@
           "Side Quest: Professor Daft",
           "$7 and 2x Soder Cola",
           "Gotham",
-          "Not specified"
+          ""
         ],
         [
           "5",
@@ -10030,7 +10026,7 @@
           "Journal (automatic)",
           "$38",
           "Burnley Warehouse",
-          "Not specified"
+          ""
         ],
         [
           "5",
@@ -10038,7 +10034,7 @@
           "Journal (automatic)",
           "$7 and Slim Sensormise Jacket",
           "North Burnley Nightclub",
-          "Not specified"
+          ""
         ],
         [
           "8",
@@ -10052,7 +10048,7 @@
           "8",
           "Poisoned Bait",
           "Journal (automatic)",
-          "Not specified",
+          "",
           "Distribution Center",
           "845"
         ],
@@ -10092,7 +10088,7 @@
           "8",
           "Beatdown for Bane",
           "Journal (automatic)",
-          "Not specified",
+          "",
           "Cape Carmine Lighthouse",
           "2533"
         ],
@@ -10202,10 +10198,9 @@
   },
   "Superman_Celebration_Daily_Raid": {
     "section-4": {
-      "base": "- Superman Reward Cache\n- ?",
+      "base": "- Superman Reward Cache",
       "items": [
-        "Superman Reward Cache",
-        "?"
+        "Superman Reward Cache"
       ]
     }
   },
@@ -11030,10 +11025,8 @@
   },
   "Tomorrow_Will_Be_Gigantic": {
     "section-4": {
-      "base": "- None",
-      "items": [
-        "None"
-      ]
+      "base": "",
+      "items": []
     }
   },
   "Tour_of_Duty_Heroes": {

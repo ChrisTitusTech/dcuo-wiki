@@ -1,3 +1,4 @@
+import { cleanRewardContexts } from "../shared/import-text.mjs";
 // Restore icon-only currency labels from source without changing editable article text.
 import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -306,7 +307,7 @@ export async function build() {
   );
   await writeFile(
     "src/data/reward-context.json",
-    JSON.stringify(context, null, 2) + "\n",
+    JSON.stringify(cleanRewardContexts(context, articles), null, 2) + "\n",
   );
   await writeFile(
     "data/reward-context-audit.json",

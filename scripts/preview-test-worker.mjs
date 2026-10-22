@@ -106,6 +106,19 @@ await writeFile(
 INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
 VALUES ('Story_episode_1','summary','${createHash("sha256").update(storyFixture.summary).digest("hex")}',0,'Live story correction <script>storyUnsafe()</script>','${quote(storyFixture.summary)}','Local story navigation test','Local story source evidence','11111111-1111-4111-8111-111111111111','Local fixture',4);`,
 );
+const emptyRewardFixture = articles.find(
+  (a) => a.slug === "Tomorrow_Will_Be_Gigantic",
+);
+const emptyRewardPart = articleParts(emptyRewardFixture).find(
+  (p) => p.title === "Rewards",
+);
+await writeFile(
+  join(directory, "seed.sql"),
+  (await readFile(join(directory, "seed.sql"), "utf8")) +
+    `
+INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
+VALUES ('Tomorrow_Will_Be_Gigantic','${emptyRewardPart.id}','${createHash("sha256").update(emptyRewardPart.text).digest("hex")}',0,'- 5 Source Marks','${quote(emptyRewardPart.text)}','Local empty section restoration test','Local source evidence','11111111-1111-4111-8111-111111111111','Local fixture',5);`,
+);
 const init = spawnSync(
   process.execPath,
   [
