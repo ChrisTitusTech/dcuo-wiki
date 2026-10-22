@@ -335,7 +335,7 @@ passed production checks. Evidence: `.import-cache/release-guides/production-ver
 - [x] Preserve effective legacy edits and attribution when creating the initial complete document; retain old drafts and public revision history.
 - [x] Publish title, summary and body in one Census-checked, conditional revision; handle whole-article conflicts without losing the draft.
 - [x] Render complete revisions in live HTML, contents, metadata, guide cards and search, and restore earlier full documents as drafts.
-- [ ] Complete release validation, independent review, deployment and live acceptance.
+- [x] Complete release validation, independent review, deployment and live acceptance.
 
 The document format uses the existing revision table, so no additional D1
 migration or editor service is required. Imported article JSON is unchanged.
@@ -366,4 +366,15 @@ Final focused review found no actionable regressions and independently passed
 all seven rich-document tests. Whole-document guide-card titles, summaries and
 body search are covered by the Cloudflare fixture tests. Final local gates:
 85 unit, 16 site browser, 14 Cloudflare integration tests; deploy dry run at
-9,074.95 KiB raw / 1,100.62 KiB compressed. Production acceptance is pending.
+9,074.95 KiB raw / 1,100.62 KiB compressed.
+
+Implementation commits `edea7b3` and `326c050` are deployed. GitHub validation
+run `39714557352` and Cloudflare build `2d338eba-e869-4da8-90ae-af40af22f70c`
+passed for the deployed head. Production checks preserved all 66 sampled live
+parts and revision IDs, confirmed active Discord/Census configuration, rejected
+an unauthenticated full-article publish with 401, and successfully previewed
+both Return to the Nexus and the 437,792-byte Collections document. Native
+browser inspection confirmed the complete visual editor, full HTML source with
+maps/gallery/videos, and rendered preview. No production test edit was created.
+Evidence: `.import-cache/editor/production-acceptance.json` and
+`.import-cache/proofs/full-article-editor-live.jpg`.
