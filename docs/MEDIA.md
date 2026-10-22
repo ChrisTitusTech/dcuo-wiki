@@ -1,9 +1,7 @@
 # Guide image storage
 
 R2 bucket: `dcuo-wiki-images`. Public domain: `https://images.dcuo-wiki.com`.
-37 source images and 37 previews (7,182,254 bytes) cover 40 image references
-in seven guides, including maps and in-game location screenshots. Full-resolution downloaded bytes are preserved;
-Fandom's CDN returned WebP even for source URLs ending in .jpg.
+The render catalog contains 1,715 credited source-image records, including guide maps, source artwork, and currency icons. Full-resolution downloaded bytes and compact previews are retained; Fandom's CDN may return WebP for a URL ending in .jpg or .png. The latest release-gap/reward batch adds 354 records and 708 original/preview objects. Binary files stay outside Git and Astro assets.
 
 `data/media-sources.json` records reviewed source URLs and attribution.
 `data/media.json` is the versioned render catalog. D1 `media_assets` mirrors
@@ -17,7 +15,7 @@ Unknown URLs remain links until reviewed and imported; they are not hotlinked.
 1. Retrieve the source article and image evidence with Firecrawl. Review the
    actual image, source, credit and rights; do not assume the text license applies.
 2. Add the full-resolution source to `data/media-sources.json`.
-3. Run `node scripts/import-media.mjs` (requires ImageMagick `magick`). Downloads
+3. Run `node scripts/import-media.mjs --new-only` (requires ImageMagick `magick`). Downloads
    are bounded, restricted to the reviewed Fandom image host, and cached locally.
    SHA-256 filenames reuse identical originals. Binaries stay out of Git.
 4. Upload only the `key` and `previewKey` files listed in `data/media.json` from
@@ -25,6 +23,9 @@ Unknown URLs remain links until reviewed and imported; they are not hotlinked.
    cache files. Use the Cloudflare dashboard's multiple-file upload, or an
    authenticated Wrangler `r2 object put` command with `--remote --file` and the
    appropriate `--content-type`. Keep the custom domain enabled.
+   Dashboard uploads allow 100 files per batch. After completion, refresh the
+   page before selecting another batch. Do not use the upload panel's `Remove
+   all` control: it removes the uploaded objects as well as clearing the list.
 5. Apply D1 migrations, run `node scripts/media-catalog.mjs`, then execute
    `.import-cache/media-catalog.sql` against `dcuo-wiki-accounts`. This upserts
    metadata only; it does not modify player data.

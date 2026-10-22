@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 const batches = JSON.parse(
-  await readFile(".import-cache/mission-upload-batches.json", "utf8"),
+  await readFile(process.argv[2] || ".import-cache/mission-upload-batches.json", "utf8"),
 );
 const files = batches.flat();
 const results = [];
@@ -51,7 +51,7 @@ await Promise.all(
 );
 const failed = results.filter((r) => !r.match);
 await writeFile(
-  ".import-cache/mission-media-verification.json",
+  process.argv[3] || ".import-cache/mission-media-verification.json",
   JSON.stringify(
     {
       verifiedAt: new Date().toISOString(),

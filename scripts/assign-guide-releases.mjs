@@ -200,6 +200,21 @@ export async function assign() {
       });
     }
   }
+  // Audited imports come from exact release content entries, including instance pages outside Category:Missions.
+  const releaseImports = JSON.parse(
+    await readFile("data/release-guide-import.json", "utf8"),
+  );
+  for (const record of releaseImports.records.filter((r) => r.published)) {
+    if (!catalog.some((r) => r.id === record.release))
+      throw Error("Unknown imported release " + record.release);
+    known.set(normalize(record.url), {
+      ids: [record.release],
+      method: "verified-release-content-entry",
+      source: record.url,
+      via: [record.releaseSource, record.catalogSource],
+      evidence: record.evidence,
+    });
+  }
   // City exploration is core progression. Event names are matched only in mission introductions.
   for (const a of articles) {
     if (a.category !== "Quests") continue;

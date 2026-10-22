@@ -9,7 +9,9 @@ test("guides hub combines release, category and search; shareable filters reset 
     page.getByRole("heading", { name: "Guides & missions", exact: true }),
   ).toBeVisible();
   await page.locator("#next-guides").click();
-  await expect(page.locator("#guide-page")).toHaveText("Page 2 of 22");
+  await expect(page.locator("#guide-page")).toHaveText(
+    `Page 2 of ${Math.ceil(articles.length / 48)}`,
+  );
   await page.getByLabel("Episode / DLC / chapter").selectOption("episode-1");
   const expected = articles.filter((a) =>
     releaseIdsFor(a.slug).includes("episode-1"),
@@ -80,6 +82,49 @@ test("release catalog and arc chapters connect to missions without empty release
     path: "test-results/release-guides-mobile.png",
     fullPage: true,
   });
-  const missing = await request.get("/releases/children-of-krypton-chapter-2/");
+  const chapter = await request.get("/releases/children-of-krypton-chapter-2/");
+  expect(chapter.status()).toBe(200);
+  const missing = await request.get("/releases/unknown-release/");
   expect(missing.status()).toBe(404);
+});
+
+test("previously empty Episodes contain instance guides with maps and explicit release links", async ({
+  page,
+}) => {
+  await page.goto("/releases/episode-13/");
+  await expect(page.locator(".card:visible")).toHaveCount(6);
+  await page
+    .getByRole("link", { name: /Instances Return to the Nexus/ })
+    .click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Return to the Nexus",
+  );
+  await expect(
+    page.getByRole("navigation", { name: "Content release" }),
+  ).toContainText("Episode 13: Amazon Fury Part II");
+  await expect(page.locator(".map-gallery img").first()).toHaveAttribute(
+    "src",
+    /^https:\/\/images\.dcuo-wiki\.com\//,
+  );
+  await page.goto("/wiki/BOUNTY_New_Genesis_Protector/");
+  const rewards = page
+    .locator("section")
+    .filter({
+      has: page.getByRole("heading", { name: "Rewards", exact: true }),
+    });
+  await expect(rewards).toContainText("1 Source Mark");
+  await expect(rewards.locator(".reward-currency img").first()).toHaveAttribute(
+    "src",
+    /^https:\/\/images\.dcuo-wiki\.com\//,
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await page.screenshot({
+    path: "test-results/reward-currency-mobile.png",
+    fullPage: true,
+  });
 });

@@ -1,3 +1,4 @@
+import { renderCurrencyText, rewardContext, isRewardPart } from "./rewards.mjs";
 import { renderMapLinks } from "./media.mjs";
 // Plain-text editing formats shared by static pages, the editor, and the Worker.
 export const escapeHtml = (value) =>
@@ -104,7 +105,10 @@ function url(value) {
     throw new Error("Links must be full HTTPS URLs without credentials.");
   return escapeHtml(parsed.href);
 }
-export function renderPart(part, value) {
+export function renderPart(part, value, { slug } = {}) {
+  const rewards = isRewardPart(part, slug);
+  const restored = rewards ? rewardContext(slug, part, value) : null;
+  const renderText = rewards ? renderCurrencyText : escapeHtml;
   if (part.kind === "videos" && value === "")
     return "<p>No verified walkthrough listed.</p>";
   if (typeof value !== "string" || value.length > 7000 || !value.trim())
@@ -116,7 +120,7 @@ export function renderPart(part, value) {
     .map((s) => s.trim())
     .filter(Boolean);
   if (part.kind === "items")
-    return `<ul>${lines.map((s) => `<li>${escapeHtml(s.replace(/^[-*]\s*/, ""))}</li>`).join("")}</ul>`;
+    return `<ul>${lines.map((s, i) => `<li>${renderText(restored?.items?.[i] ?? s.replace(/^[-*]\s*/, ""))}</li>`).join("")}</ul>`;
   const rows = lines.map((s) => s.split(" | ").map((v) => v.trim()));
   const count =
     part.kind === "table"
@@ -129,7 +133,7 @@ export function renderPart(part, value) {
       `Use ${count} nonempty fields per line, separated by " | ".`,
     );
   if (part.kind === "table")
-    return `<table><caption>${escapeHtml(part.caption)}</caption><thead><tr>${part.columns.map((c) => `<th scope="col">${escapeHtml(c)}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+    return `<table><caption>${escapeHtml(part.caption)}</caption><thead><tr>${part.columns.map((c) => `<th scope="col">${escapeHtml(c)}</th>`).join("")}</tr></thead><tbody>${rows.map((r, i) => `<tr>${r.map((c, j) => `<td>${renderText(restored?.rows?.[i]?.[j] ?? c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
   if (part.kind === "links") return renderMapLinks(rows);
   return `<ul>${rows.map((r) => `<li><a href="${url(r[1])}" rel="noreferrer">${escapeHtml(r[0])}</a>${part.kind === "videos" ? `<p>${escapeHtml(r[2])}</p>` : ""}</li>`).join("")}</ul>`;
 }

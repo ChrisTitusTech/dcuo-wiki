@@ -156,3 +156,20 @@ test("live corrections appear on the guides hub and release pages with release s
     await expect(page.locator('.card[href="/wiki/Powers/"]')).toBeVisible();
   }
 });
+
+test("live reward corrections keep their edited amount and safely display the currency icon", async ({
+  page,
+}) => {
+  await page.goto("/wiki/BOUNTY_New_Genesis_Protector/");
+  const rewards = page.locator('[data-live-part="section-5"]');
+  await expect(rewards).toContainText("9 Source Marks");
+  await expect(rewards).not.toContainText("1 Source Mark");
+  await expect(rewards.locator(".reward-currency img")).toHaveAttribute(
+    "src",
+    /^https:\/\/images\.dcuo-wiki\.com\//,
+  );
+  await expect(rewards).toContainText("<script>unsafe()</script>");
+  expect(
+    (await page.locator("script").allTextContents()).join(""),
+  ).not.toContain("unsafe()");
+});

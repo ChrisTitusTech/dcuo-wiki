@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { resolve, join } from "node:path";
 import { spawn, spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
+import { articleParts } from "../shared/article-content.mjs";
 import articles from "../src/data/articles.json" with { type: "json" };
 const directory = await mkdtemp(join(tmpdir(), "dcuo-worker-test-"));
 const { default: ts } = await import("typescript");
@@ -31,6 +32,12 @@ config.d1_databases = [
 const file = join(directory, "wrangler.json");
 await writeFile(file, JSON.stringify(config));
 const baseline = articles.find((a) => a.slug === "Powers").summary;
+const rewardArticle = articles.find(
+  (a) => a.slug === "BOUNTY_New_Genesis_Protector",
+);
+const rewardPart = articleParts(rewardArticle).find(
+  (p) => p.title === "Rewards",
+);
 const sql =
   (await readFile("migrations/0001_accounts.sql", "utf8")) +
   (await readFile("migrations/0002_article_revisions.sql", "utf8")) +
@@ -44,6 +51,13 @@ await writeFile(
     `
 INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
 VALUES ('Powers','summary','${createHash("sha256").update(baseline).digest("hex")}',0,'Live fixture power correction <script>bad()</script>','${baseline.replaceAll("'", "''")}','Local integration test','Local fixture evidence','11111111-1111-4111-8111-111111111111','Local fixture',1);`,
+);
+await writeFile(
+  join(directory, "seed.sql"),
+  (await readFile(join(directory, "seed.sql"), "utf8")) +
+    `
+INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
+VALUES ('BOUNTY_New_Genesis_Protector','${rewardPart.id}','${createHash("sha256").update(rewardPart.text).digest("hex")}',0,'- 9 Source Marks\n- Reward correction fixture <script>unsafe()</script>','${rewardPart.text.replaceAll("'", "''")}','Local reward correction test','Local fixture evidence','11111111-1111-4111-8111-111111111111','Local fixture',2);`,
 );
 const cli = resolve("node_modules/wrangler/bin/wrangler.js");
 const init = spawnSync(

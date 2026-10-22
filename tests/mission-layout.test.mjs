@@ -1,6 +1,24 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { missionLayout } from "../scripts/mission-layout.mjs";
+import { missionLayout, missionSummary } from "../scripts/mission-layout.mjs";
+test("import summaries use substantive introductions instead of image captions", () => {
+  const intro =
+    "Wayne Manor Gala is a Tier 4 2 player operation in Episode 26.";
+  assert.equal(
+    missionSummary({
+      summary: "Kandor Central Tower",
+      sections: [
+        { items: [], images: [{ label: "Kandor Central Tower" }] },
+        { items: [intro] },
+      ],
+    }),
+    intro,
+  );
+  assert.equal(
+    missionSummary({ summary: intro, sections: [{ items: [] }] }),
+    intro,
+  );
+});
 test("reward references and images survive merging into their table", () => {
   const image = { label: "Weapon", url: "https://example.com/weapon.png" },
     ref = { label: "Reward details", url: "https://example.com/reward" };

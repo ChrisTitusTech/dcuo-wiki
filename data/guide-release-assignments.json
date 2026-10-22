@@ -10375,6 +10375,422 @@
       ],
       "source": "https://dcuniverseonline.fandom.com/wiki/Zombie_Benefits",
       "evidence": "Give your soul to the Demon Etrigan and destroy the magic protecting Faust's portal."
+    },
+    {
+      "slug": "Return_to_the_Nexus",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Return_to_the_Nexus",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Return to the Nexus Tier 3 Operation"
+    },
+    {
+      "slug": "Act_of_Defiance",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Act_of_Defiance",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Act of Defiance Tier 3 Operation"
+    },
+    {
+      "slug": "Labyrinth_of_Lost_Souls",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Labyrinth_of_Lost_Souls",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Labyrinth of Lost Souls Tier 3 Raid"
+    },
+    {
+      "slug": "Halls_of_Hades",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Hades",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Halls of Hades Tier 3 Raid"
+    },
+    {
+      "slug": "Throne_of_the_Dead",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Throne_of_the_Dead",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Throne of the Dead Tier 3 Raid"
+    },
+    {
+      "slug": "Corrupted_Zamaron",
+      "ids": [
+        "episode-15"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Corrupted_Zamaron",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_15:_Bombshell_Paradox_%26_Corrupted_Zamaron",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Corrupted Zamaron Tier 3 Duo"
+    },
+    {
+      "slug": "The_Bombshell_Paradox",
+      "ids": [
+        "episode-15"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Bombshell_Paradox",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_15:_Bombshell_Paradox_%26_Corrupted_Zamaron",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The Bombshell Paradox Tier 3 8-Player Operation"
+    },
+    {
+      "slug": "Oa_Under_Siege",
+      "ids": [
+        "episode-16"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Oa_Under_Siege",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_16:_Desecrated_Cathedral_%26_Oa_Under_Siege",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Oa Under Siege Tier 3 solo mission"
+    },
+    {
+      "slug": "Desecrated_Cathedral",
+      "ids": [
+        "episode-16"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Desecrated_Cathedral",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_16:_Desecrated_Cathedral_%26_Oa_Under_Siege",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Desecrated Cathedral Tier 3 Alert"
+    },
+    {
+      "slug": "Flash_Museum_Burglary",
+      "ids": [
+        "episode-17"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Flash_Museum_Burglary",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_17:_Flash_Museum_Burglary_%26_Unholy_Matrimony",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Flash Museum Burglary Tier 3 Duo"
+    },
+    {
+      "slug": "Unholy_Matrimony",
+      "ids": [
+        "episode-17"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Unholy_Matrimony",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_17:_Flash_Museum_Burglary_%26_Unholy_Matrimony",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Unholy Matrimony Tier 3 8-Player Operation"
+    },
+    {
+      "slug": "The_Demon_s_Pit",
+      "ids": [
+        "episode-18"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Pit",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_18:_Blackest_Day_%26_The_Demon%27s_Pit",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The Demon's Pit Tier 3 Duo"
+    },
+    {
+      "slug": "Blackest_Day",
+      "ids": [
+        "episode-18"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blackest_Day",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_18:_Blackest_Day_%26_The_Demon%27s_Pit",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Blackest Day Tier 3 8-Player Operation"
+    },
+    {
+      "slug": "Deep_Desires",
+      "ids": [
+        "episode-19"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deep_Desires",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_19:_The_Demon%27s_Plan_%26_Deep_Desires",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Deep Desires Tier 3 Challenge"
+    },
+    {
+      "slug": "The_Demon_s_Plan",
+      "ids": [
+        "episode-19"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Plan",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_19:_The_Demon%27s_Plan_%26_Deep_Desires",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The Demon's Plan Tier 3 Alert"
+    },
+    {
+      "slug": "Wastelands_Wonderland",
+      "ids": [
+        "episode-20"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wastelands_Wonderland",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_20:_Blackest_Night_%26_Wastelands_Wonderland",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Wastelands Wonderland Tier 3 Duo"
+    },
+    {
+      "slug": "Blackest_Night",
+      "ids": [
+        "episode-20"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blackest_Night",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_20:_Blackest_Night_%26_Wastelands_Wonderland",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Blackest Night Tier 3 8-Player Operation"
+    },
+    {
+      "slug": "The_First_Piece",
+      "ids": [
+        "episode-21"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_First_Piece",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_21:_The_First_Piece_%26_Prison_Break",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The First Piece Tier 3 2-Player Operation"
+    },
+    {
+      "slug": "Prison_Break",
+      "ids": [
+        "episode-21"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Prison_Break",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_21:_The_First_Piece_%26_Prison_Break",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Prison Break Tier 3 8-Player Operation"
+    },
+    {
+      "slug": "The_Phantom_Zone",
+      "ids": [
+        "episode-22"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Phantom_Zone",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_22:_Phantom_Zone_%26_Science_Spire",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The Phantom Zone Tier 3 4-Player Operation"
+    },
+    {
+      "slug": "The_Science_Spire",
+      "ids": [
+        "episode-22"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Science_Spire",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_22:_Phantom_Zone_%26_Science_Spire",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The Science Spire Tier 3 Challenge"
+    },
+    {
+      "slug": "The_Will_of_Darkseid",
+      "ids": [
+        "episode-23"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Will_of_Darkseid",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_23:_Brainiac%27s_Bottle_Ship_%26_The_Will_of_Darkseid",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "The Will of Darkseid Tier 4 2-Player Operation"
+    },
+    {
+      "slug": "Brainiac_s_Bottle_Ship",
+      "ids": [
+        "episode-23"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac's_Bottle_Ship",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_23:_Brainiac%27s_Bottle_Ship_%26_The_Will_of_Darkseid",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Brainiac's Bottle Ship Tier 4 8-Player Operation"
+    },
+    {
+      "slug": "Harley_s_Heist",
+      "ids": [
+        "episode-24"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Harley's_Heist",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_24:_Darkseid%27s_War_Factory_%26_Harley%27s_Heist",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Harley's Heist Tier 4 Duo"
+    },
+    {
+      "slug": "Darkseid_s_War_Factory",
+      "ids": [
+        "episode-24"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Darkseid's_War_Factory",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_24:_Darkseid%27s_War_Factory_%26_Harley%27s_Heist",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Darkseid's War Factory Tier 4 Raid"
+    },
+    {
+      "slug": "Iceberg_Lounge_Challenge",
+      "ids": [
+        "episode-25"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Iceberg_Lounge_(Challenge)",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_25:_Iceberg_Lounge_%26_A_Rip_in_Time",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Iceberg Lounge Tier 4 Challenge; the source location page links this specific Episode 25 challenge under its Episode 25 section."
+    },
+    {
+      "slug": "A_Rip_in_Time",
+      "ids": [
+        "episode-25"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Rip_in_Time",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_25:_Iceberg_Lounge_%26_A_Rip_in_Time",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "A Rip in Time Tier 4 4-player Operation"
+    },
+    {
+      "slug": "Wayne_Manor_Gala",
+      "ids": [
+        "episode-26"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wayne_Manor_Gala",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_26:_Wayne_Manor_Gala_%26_Kandor_Central_Tower",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Wayne Manor Gala Tier 4 Duo"
+    },
+    {
+      "slug": "Kandor_Central_Tower",
+      "ids": [
+        "episode-26"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Kandor_Central_Tower",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Episode_26:_Wayne_Manor_Gala_%26_Kandor_Central_Tower",
+        "https://dcuniverseonline.fandom.com/wiki/Episode"
+      ],
+      "evidence": "Kandor Central Tower Tier 4 Raid"
+    },
+    {
+      "slug": "Patrol_Catastrophe",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Patrol_Catastrophe",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+        "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II"
+      ],
+      "evidence": "Listed under Recurring Missions in Amazon Fury Part II."
+    },
+    {
+      "slug": "Shadows_Over_Argo",
+      "ids": [
+        "children-of-krypton-chapter-1"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo",
+        "https://dcuniverseonline.fandom.com/wiki/Chapter"
+      ],
+      "evidence": "Children of Krypton - Chapter 1: Shadows Over Argo"
+    },
+    {
+      "slug": "Wrath_of_the_Worldkillers",
+      "ids": [
+        "children-of-krypton-chapter-2"
+      ],
+      "method": "verified-release-content-entry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers",
+      "via": [
+        "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers",
+        "https://dcuniverseonline.fandom.com/wiki/Children_of_Krypton"
+      ],
+      "evidence": "Children of Krypton - Chapter 2: Wrath of the Worldkillers"
     }
   ]
 }

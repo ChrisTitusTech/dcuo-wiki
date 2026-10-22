@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An Astro wiki for https://dcuo-wiki.com with 1,047 reviewed articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
+An Astro wiki for https://dcuo-wiki.com with 1,079 reviewed articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
 
 ## Develop and validate
 
@@ -81,9 +81,28 @@ npm run test:cloudflare
 
 The assignment builder prefers source release badges, then explicit introductory release links and exact mission membership in release/classic-story lists. It can inherit an unambiguous association from another mission in the introduction; shared NPCs and general locations do not establish membership. Reviewed exceptions and their reasons live in `data/release-assignment-overrides.json`. Unresolved assignments fail the builder, and publication validation rejects guides without valid release metadata. Source capture manifests are `data/release-catalog-sources.json` and `data/release-sources.json`. Adding a new release requires updating the catalog parser/curated entries and verifying the source; do not guess an Episode number or publish a future TBA chapter.
 
+## Instance coverage and reward currencies
+
+The Episode coverage check includes 29 added instance guides, Patrol Catastrophe and two Children of Krypton chapter guides. These 32 additions fill the previously empty Episodes 13 and 15-26 and both newer chapters. `data/release-guide-import.json` records the exact catalog entry/source behind each addition; `data/release-guide-videos.json` records title searches and verified YouTube metadata. This closes empty release groups, not every remaining content gap across the full wiki.
+
+```sh
+# The committed import plan is retained on reruns.
+node scripts/import-release-guides.mjs download
+node scripts/import-release-guides.mjs convert
+node scripts/research-release-videos.mjs
+node scripts/import-release-guides.mjs publish
+node scripts/assign-guide-releases.mjs
+node scripts/build-reward-context.mjs
+node scripts/import-media.mjs --new-only
+npm run inventory
+npm run validate
+```
+
+The reward builder reads cached mission/instance captures and the Currency source capture at `.import-cache/release-guides/currency-source.json`. It restores currency labels dropped when the source used icons alone, and builds the currency icon registry. Reward display uses source context only when the current editable part still matches its original text. Player corrections retain their amounts and named currencies receive the same safe icon rendering. Historical currencies are retained by name; quantities are not converted or invented. Existing article parts and revision hashes remain unchanged. Upload and verify new media originals/previews and upsert D1 metadata using the [image storage workflow](docs/MEDIA.md) before deploying.
+
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,047 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,079 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory

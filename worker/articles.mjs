@@ -69,7 +69,10 @@ export async function serveArticle(request, env) {
   for (const part of changed) {
     rewriter.on(`[data-live-part="${part.id}"]`, {
       element(el) {
-        el.setInnerContent(renderPart(part, part.text), { html: true });
+        el.setInnerContent(
+          renderPart(part, part.text, { slug: article.slug }),
+          { html: true },
+        );
       },
     });
   }

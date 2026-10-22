@@ -1,0 +1,4872 @@
+{
+  "source": "https://dcuniverseonline.fandom.com/wiki/Currency",
+  "sourceSha256": "d36975f4058f573b521478e4b587fcde09fdc0db14ef24938022af63a2121612",
+  "records": [
+    {
+      "slug": "Investigations",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Investigations",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Collections",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Collections",
+      "parts": 18,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Grab_and_Smash",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Grab_and_Smash",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Viva_la_Lucha_Libre",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
+      "parts": 4,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Out_in_the_Streets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Out_in_the_Streets",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Feats",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Feats",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Til_Death_Do_Us_Part_Episode_I",
+      "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_I_(Briefings)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Til_Death_Do_Us_Part_Episode_II",
+      "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part:_Episode_II_(Briefings)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Precipice_of_Fear",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Precipice_of_Fear_(Investigations)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorilla_Bomb_Components",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Bomb_Components_(Investigations)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bane_Brought_Down",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down",
+      "parts": 4,
+      "restoredItems": 0
+    },
+    {
+      "slug": "52",
+      "source": "https://dcuniverseonline.fandom.com/wiki/52",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "75_Years_of_Batman",
+      "source": "https://dcuniverseonline.fandom.com/wiki/75_Years_of_Batman",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Brainiac_Mind",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Brainiac_Mind",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Crook_s_Best_Friend",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Crook's_Best_Friend",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Day_in_the_Life",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Day_in_the_Life",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Fan-Tastic_Rescue",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Fan-Tastic_Rescue",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Fool_and_His_Gold",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Fool_and_His_Gold",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Gentleman_s_Disagreement",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Gentleman's_Disagreement",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Glowing_Love",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Glowing_Love",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Helping_Hand",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Helping_Hand",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runed_Boots",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runed_Boots",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runic_Cape",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runic_Cape",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runic_Epaulets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runic_Epaulets",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runic_Fists",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runic_Fists",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runic_Helm",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runic_Helm",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runic_Leggings",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runic_Leggings",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Runic_Shirt",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Runic_Shirt",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Just_Reward_Waist_Runes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Just_Reward%3A_Waist_Runes",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Reckoning_is_Beckoning_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Reckoning_is_Beckoning_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Reckoning_is_Beckoning_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Reckoning_is_Beckoning_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_Twisted_Web",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Twisted_Web",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_World_Past_Hope_And_Fear",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_World_Past_Hope_And_Fear",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_R_G_U_S_Alert",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A.R.G.U.S._Alert",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_R_G_U_S_Anti-Magic_Cannon",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A.R.G.U.S._Anti-Magic_Cannon",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "A_R_G_U_S_Outfit_and_Deploy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/A.R.G.U.S._Outfit_and_Deploy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Absorbascon_Modules",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Absorbascon_Modules",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Afflicted_Nicked_Dead",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Afflicted%2C_Nicked%2C_Dead",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Affliction_Eviction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Affliction_Eviction",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Agents_of_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Agents_of_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Area_51",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Area_51",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Arkham_Asylum_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Arkham_Asylum_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Arkham_Asylum_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Arkham_Asylum_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Bl_dhaven",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Bl%C3%BCdhaven",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Gorilla_Island",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Gorilla_Island",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_HIVE_Moon_Base",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_HIVE_Moon_Base",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Oolong_Island",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Oolong_Island",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_South_Gotham_Courthouse",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_South_Gotham_Courthouse",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Stryker_s_Island_Penitentiary_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Stryker's_Island_Penitentiary_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Alert_T1_Stryker_s_Island_Penitentiary_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Stryker's_Island_Penitentiary_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "All_s_Well_That_Ends_Well",
+      "source": "https://dcuniverseonline.fandom.com/wiki/All's_Well_That_Ends_Well",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Allied_Commander_Pearce_Battlefield_Frontline_Missions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Allied_Commander_Pearce%3A_Battlefield_Frontline_Missions",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ally_Fortify",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ally_Fortify",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ally_Rally",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ally_Rally",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ally_Resupply",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ally_Resupply",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ammo_Depot",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ammo_Depot",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "An_Escaped_Experiment",
+      "source": "https://dcuniverseonline.fandom.com/wiki/An_Escaped_Experiment",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "And_Be_Quick_About_It_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/And_Be_Quick_About_It..._(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "And_Be_Quick_About_It_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/And_Be_Quick_About_It..._(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Animal_Heads_I_Win_Tails_You_Lose",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Animal_Heads_I_Win%3B_Tails_You_Lose",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Animal_Rescue",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Animal_Rescue",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Another_Fine_Myth",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Another_Fine_Myth",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Anti-Matter_Anniversary",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Anti-Matter_Anniversary",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Anti-Matter_Matters_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Anti-Matter_Matters_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Anti-Matter_Matters_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Anti-Matter_Matters_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Apokolips_No",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Apokolips%2C_No",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Apokoliptian_Apparatus",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Apokoliptian_Apparatus",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Apokoliptic_Appropriations",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Apokoliptic_Appropriations",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Armed_in_a_Major_Way",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Armed_in_a_Major_Way",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Arrested_Embezzlement",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Arrested_Embezzlement",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Artifact_-_Gem_of_Horus",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Artifact_-_Gem_of_Horus",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Artifact_-_Page_of_Destiny",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Artifact_-_Page_of_Destiny",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Artifact_-_The_La-Mort_Card",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Artifact_-_The_La-Mort_Card",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Artifact_-_The_Strategist_Card",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Artifact_-_The_Strategist_Card",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Artifact_-_The_Transformation_Card",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Artifact_-_The_Transformation_Card",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Assuming_Control",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Assuming_Control",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Atlantis_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Atlantis_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Attack_Brainiac_Part_One_Magic_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Attack_Brainiac!_(Part_One)_(Magic_Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bad_Medicine",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bad_Medicine",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bag_of_Chips",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bag_of_Chips",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bane_Banished",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bane%2C_Banished!",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Batman_Day_Celebration",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Batman_Day%3A_Celebration",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Batman_Day_Daily_Alert",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Batman_Day%3A_Daily_Alert",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Batman_Day_Daily_Raid",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Batman_Day%3A_Daily_Raid",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Batman_Day_Daily_Solo_or_Duo",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Batman_Day%3A_Daily_Solo_or_Duo",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bats_in_the_Belfry_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bats_in_the_Belfry_(Mission)",
+      "parts": 1,
+      "restoredItems": 2
+    },
+    {
+      "slug": "Beast_Taming",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Beast_Taming",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Beastly_Spirit",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Beastly_Spirit",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Beasts_Begone",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Beasts_Begone",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Beasts_of_War",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Beasts_of_War",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bee_Aggressive",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bee_Aggressive",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Biotic_Armor_Research",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Biotic_Armor_Research",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Birdbath_Buster",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Birdbath_Buster",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Birdcaged",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Birdcaged",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Birds_of_Prey_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Birds_of_Prey_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Blasts_From_the_Past",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blasts_From_the_Past",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Blood_In_Blood_Out",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blood_In%2C_Blood_Out",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Blood_Runs_Cold",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blood_Runs_Cold",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Boardwalk_Assault",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Boardwalk_Assault",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Boom_Goes_the_Ordnance",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Boom_Goes_the_Ordnance",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounties",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounties",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Ace_Chemicals_Experiment",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Ace_Chemicals_Experiment",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Arkillo_Mogo",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Arkillo_(Mogo)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "BOUNTY_Black_Canary_and_Green_Arrow",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Black_Canary_and_Green_Arrow",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Black_Lightning",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Black_Lightning",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Brainiac_Sub-Avatar",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Brainiac_Sub-Avatar",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Cyborg",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Cyborg",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Daemon_Lord",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Daemon_Lord",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Doctor_Fate",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Doctor_Fate",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Donna_Troy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Donna_Troy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Full_House",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Full_House",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Hawkman_and_Hawkgirl",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Hawkman_and_Hawkgirl",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Invasion_Force",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Invasion_Force",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Joker_Riddler_Allies",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Joker_%26_Riddler_Allies",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Kid_Flash",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kid_Flash",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Kilowog",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kilowog",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Metropolis_Villians",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Metropolis_Villians",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Mist-Empowered_Hero",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Mist-Empowered_Hero",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Nepheritos",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nepheritos",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_New_Genesis_Protector",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_New_Genesis_Protector",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "BOUNTY_Nightwing",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nightwing",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Paradoxical_Predicament",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Paradoxical_Predicament",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Raven",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Raven",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Starfire",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Starfire",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Static",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Static",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Stryker_s_Critical_Defender",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Stryker's_Critical_Defender",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_Superman",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Superman",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_The_Crime_Syndicate",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_The_Crime_Syndicate",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_The_Flash",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_The_Flash",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "BOUNTY_The_Flash_Central_City",
+      "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_The_Flash_(Central_City)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bounty_Titans_Go_Metal",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Titans_Go_Metal",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Brainiac_Returns_Part_2",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns_Part_2",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Breaking_Steel",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Breaking_Steel",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Breaking_the_Crime_Wave",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Breaking_the_Crime_Wave",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Bridge_to_Nowhere",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bridge_to_Nowhere",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Building_a_Power_Base",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Building_a_Power_Base",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Burn_Like_His_Power",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Burn_Like_His_Power",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Burning_Bridges",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Burning_Bridges",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Busted_Again",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Busted_Again!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Buzz_Kill_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Buzz_Kill_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "By_the_Shores_of_Little_Bohemia_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/By_the_Shores_of_Little_Bohemia_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "By_the_Shores_of_Little_Bohemia_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/By_the_Shores_of_Little_Bohemia_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Call_of_the_Wild",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Call_of_the_Wild",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Campaign_Reform",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Campaign_Reform",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Can_You_Hear_Me_Now",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Can_You_Hear_Me_Now%3F",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Canary_s_Weekly_mission_for_Catwoman",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Canary's_Weekly_mission_for_Catwoman",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Canary_s_Weekly_mission_for_Harley_Quinn",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Canary's_Weekly_mission_for_Harley_Quinn",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Canary_s_Weekly_mission_for_Huntress",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Canary's_Weekly_mission_for_Huntress",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Canary_s_Weekly_mission_for_Poison_Ivy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Canary's_Weekly_mission_for_Poison_Ivy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Carnival_at_the_Amusement",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Carnival_at_the_Amusement",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cat_s_Eye",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cat's_Eye",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Catch_Catwoman",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Catwoman!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Catch_Cheetah",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Cheetah!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Catch_Killer_Croc",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Killer_Croc!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Catch_Mister_Freeze",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Mister_Freeze!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Catch_of_the_Day",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Catch_of_the_Day",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Catching_a_Killer",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Catching_a_Killer",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Caught_A_Drift_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Caught_A_Drift_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Caught_A_Drift_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Caught_A_Drift_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Celebrate_Pride",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Celebrate_Pride",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cell_Blockade",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cell_Blockade",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chaos_in_BoP_Metropolis_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chaos_in_BoP%3A_Metropolis_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chaos_in_BoP_Metropolis_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chaos_in_BoP%3A_Metropolis_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chaos_in_Gotham_City_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chaos_in_Gotham_City_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chaos_in_Gotham_City_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chaos_in_Gotham_City_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chat_With_The_Commish",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chat_With_The_Commish",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Check_In_with_Nightwing",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Check_In_with_Nightwing",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chemo-Therapy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chemo-Therapy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chicken_of_the_Sea",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chicken_of_the_Sea",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Chiropteralloy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Chiropteralloy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Circe_s_Panthemonium",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Circe's_Panthemonium",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Citizen_Collection",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Citizen_Collection",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Citizen_Souffle",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Citizen_Souffle",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Citizens_in_the_Shadows",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Citizens_in_the_Shadows",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Claw_of_Aelkh_nd_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkh%C3%BCnd_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cleaning_out_the_Gutters",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cleaning_out_the_Gutters",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cleaning_the_Gutters",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cleaning_the_Gutters",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cleaning_the_Yard",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cleaning_the_Yard",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Clinical_Strike",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Clinical_Strike",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Closing_the_Causeway",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Closing_the_Causeway",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Clubhouse_Clout_Meta_Villain_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Clubhouse_Clout_(Meta_Villain_Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Clue_Three",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Clue_Three",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Coffin_Crashin",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Coffin_Crashin'",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cold_Contender",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cold_Contender",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cold_Thievery",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cold_Thievery",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Coldest_Cuts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Coldest_Cuts",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Communication_Breakdown_level_5",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Communication_Breakdown_(level_5)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Conduit_of_the_Soul",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Conduit_of_the_Soul",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Confronting_the_General",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Confronting_the_General",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Conquer_the_Conquerors_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Conquer_the_Conquerors_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Conquer_the_Conquerors_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Conquer_the_Conquerors_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Conqueror_Counterstrike",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Conqueror_Counterstrike",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Construct_of_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Construct_of_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Control_the_Convicts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Control_the_Convicts",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cops_Behind_Bars",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cops_Behind_Bars",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cough_Up_the_Cash",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cough_Up_the_Cash",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cram_Session",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cram_Session",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Crime_Spree",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Crime_Spree",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Crushing_Sorrow_Ghostly_Anomaly",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Ghostly_Anomaly",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Crushing_Sorrow_Rescue_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Rescue_Mission",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Crushing_Sorrow_Searching_for_Survivors",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Searching_for_Survivors",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Crushing_Sorrow_Supply_Run",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Supply_Run",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Crushing_Sorrow_Tracking_Walker",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Crushing_Sorrow%3A_Tracking_Walker",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Curious_Gorge",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Curious_Gorge",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cybernetic_Cores",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cybernetic_Cores",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Cyborg_Support",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Cyborg_Support",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Daily_Justice",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Daily_Justice",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Danger_Crawling",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Danger_Crawling",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dark_Knights_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dark_Nights_in_Gotham_City_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Nights_in_Gotham_City_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dark_Nights_in_Gotham_City_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Nights_in_Gotham_City_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dark_Phylactery_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Phylactery_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dark_Shadows",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Shadows",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Data_Theft",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Data_Theft",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "DCUO_Year_Two",
+      "source": "https://dcuniverseonline.fandom.com/wiki/DCUO%3A_Year_Two",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "De-Constructed",
+      "source": "https://dcuniverseonline.fandom.com/wiki/De-Constructed",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dead_King_s_Scepter_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dead_King's_Scepter_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dead_Reckoning_Demonic_Influence",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dead_Reckoning%3A_Demonic_Influence",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dead_Reckoning_Hiding_Out",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dead_Reckoning%3A_Hiding_Out",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dead_Reckoning_Reckless_Vigilantes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dead_Reckoning%3A_Reckless_Vigilantes",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Deadly_Pride",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deadly_Pride",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Death_From_Above",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Death_From_Above",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Death_Metal_Swan_Song",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Death_Metal_Swan_Song",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Deconstruction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deconstruction",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Deconstruction_Work",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deconstruction_Work",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Deep_Sea_Corruption",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deep_Sea_Corruption",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Defeat_Brother_Eye",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Defeat_Brother_Eye",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Defend_the_Defenses",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Defend_the_Defenses!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Deliberate_Acts_of_Violence",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deliberate_Acts_of_Violence",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Demonic_Repossession",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Demonic_Repossession",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dirty_Job",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dirty_Job",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dispelling_Darkness",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dispelling_Darkness",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Disturbance_on_the_Coast",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Disturbance_on_the_Coast",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Don_t_Count_Your_Starro_Before_They_Hatch_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Don_t_Count_Your_Starro_Before_They_Hatch_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Don_t_Fear_the_Reaper",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Fear_the_Reaper",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Don_t_Mess_with_LexCorp",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Mess_with_LexCorp!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Doomed_Metropolis_Part_2_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Doomed_Metropolis_(Part_2)_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Dredging_the_Trenches",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dredging_the_Trenches",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Drone_Bones",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Drone_Bones",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Earth_3_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Earth_3_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Earth_3_Emergency_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Earth_3_Emergency_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Earth_3_Emergency_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Earth_3_Emergency_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Eavesdropping",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Eavesdropping",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Echoes_of_Umbrax",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Echoes_of_Umbrax",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Egg_Beater",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Egg_Beater",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Election_Fraud",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Election_Fraud",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Emotional_Baggage",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Emotional_Baggage",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Enchanted_Coral_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Enchanted_Coral_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Endangered_Hawks",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Endangered_Hawks",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Enter_The_Flashpoint_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Enter_The_Flashpoint_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Enter_The_Flashpoint_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Enter_The_Flashpoint_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Envy_To_Die_For",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Envy_To_Die_For",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Envy_To_Share",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Envy_To_Share",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Envy_Envy_Everywhere",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Envy%2C_Envy%2C_Everywhere",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Exobytes_Gone_Awry",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Exobytes_Gone_Awry",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Mxyzptlk_s_Metropolis_Haunts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore_Mxyzptlk's_Metropolis_Haunts",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Thanagar",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore_Thanagar",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Titans_Island",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore_Titans_Island",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Arkham_Island",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Arkham_Island!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Downtown_Metropolis",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Downtown_Metropolis!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Gotham_University",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Gotham_University!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Gotham_s_Amusement_Mile",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Gotham's_Amusement_Mile!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Gotham_s_Giordano_Gardens",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Gotham's_Giordano_Gardens!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Gotham_s_Otisburg_Neighborhood",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Gotham's_Otisburg_Neighborhood!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Gotham_s_Robinson_Park",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Gotham's_Robinson_Park!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Gotham_s_Waterfront",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Gotham's_Waterfront!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Metropolis_Metro_Station",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis_Metro_Station!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Metropolis_University",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis_University!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Metropolis_s_Centennial_Park",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis's_Centennial_Park!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Metropolis_s_Chinatown_Neighborhood",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis's_Chinatown_Neighborhood!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Metropolis_s_Historic_District",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis's_Historic_District!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Metropolis_s_Suicide_Slums",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis's_Suicide_Slums!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_The_Metropolis_General_Hospital",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_The_Metropolis_General_Hospital!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_The_Metropolis_Metrodome",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_The_Metropolis_Metrodome!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_The_Metropolis_Science_Police_HQ",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_The_Metropolis_Science_Police_HQ!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_The_Queensland_Boardwalk_in_Metropolis",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_The_Queensland_Boardwalk_in_Metropolis!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Tomorrow_District",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Tomorrow_District!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Explore_Wayne_Legacy_in_Gotham_s_East_End",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Wayne_Legacy_in_Gotham's_East_End!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Eye_of_Gemini_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Eye_of_Gemini_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Facing_Faust",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Facing_Faust",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fallen_Comrades",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fallen_Comrades",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fallen_Stars_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fallen_Stars_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fallen_Stars_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fallen_Stars_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fate_Falls",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fate_Falls!",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fateful_Demise",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fateful_Demise",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fateful_Omen",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fateful_Omen",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Faustian_Desires",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Faustian_Desires",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fear_is_Yellow_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fear_is_Yellow_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fear_Itself",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fear_Itself",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fearsome_Opportunities",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fearsome_Opportunities",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Feel_the_Fear",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Feel_the_Fear",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fields_of_Wrath",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fields_of_Wrath",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fighting_the_Food_Chain",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fighting_the_Food_Chain",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Find_Big_Barda",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Find_Big_Barda",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fire_and_the_Sky_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fire_and_the_Sky_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fire_Walker",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fire_Walker",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "First_Second_and_Third_Aid",
+      "source": "https://dcuniverseonline.fandom.com/wiki/First%2C_Second%2C_and_Third_Aid",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fish_Food",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fish_Food",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fish_in_a_Barrel",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fish_in_a_Barrel",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fixing_the_Game",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fixing_the_Game",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Flash_of_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Flash_of_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Flashpoint_Foes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Flashpoint_Foes",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Flock_Stock_and_Barrel_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Flock%2C_Stock%2C_and_Barrel_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Floral_Affliction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Floral_Affliction",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Followers_of_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Followers_of_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Force_and_Fury",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Force_and_Fury",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fowl_Natured",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fowl_Natured",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fratricide",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fratricide",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Freedom_Force",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Freedom_Force",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fresh_Meat",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fresh_Meat",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Frostbitten",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Frostbitten",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Frozen_Assets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Frozen_Assets",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Frozen_with_Fear",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Frozen_with_Fear",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fueling_the_Past",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fueling_the_Past",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fun_for_Girls_and_Boys",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fun_for_Girls_and_Boys",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fury_of_the_Amazons_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fury_of_the_Amazons_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fury_of_the_Amazons_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fury_of_the_Amazons_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Fury_of_the_Amazons_III_Gods_and_Monsters_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fury_of_the_Amazons_III%3A_Gods_and_Monsters_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gateway_Closure",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gateway_Closure",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Get_Up_Go_Fight",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Get_Up%2C_Go_Fight!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Get_Your_Heart_Racing",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Get_Your_Heart_Racing",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Ghostly_Apparel",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ghostly_Apparel",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gifts_of_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gifts_of_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Giganta_Girl_villain_mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Giganta_Girl_(villain_mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gigantic_Promises",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gigantic_Promises",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gluttony",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gluttony",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Godly_Power",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Godly_Power",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Godly_Subversion",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Godly_Subversion",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Going_Viral",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Going_Viral",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gordon_Wants_a_Word",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gordon_Wants_a_Word",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorgons_Come_Out_And_Play",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorgons_Come_Out_And_Play",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorilla_Warfare",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Warfare",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorillas_By_The_Sea",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorillas_By_The_Sea",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorillas_in_the_Midst",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorillas_in_the_Midst",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorillas_with_Attitude_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorillas_with_Attitude_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gorillas_with_Attitude_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gorillas_with_Attitude_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gotham_War_Front_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotham_War_Front_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gotham_War_Front_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotham_War_Front_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Gotta_Get_Up_Gotta_Go",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotta_Get_Up%2C_Gotta_Go!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Grated_Gorgons",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Grated_Gorgons",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Greed_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Greed_(Mission)",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Green_Lantern_s_Light",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Green_Lantern's_Light",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Grimorium_Verum_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Grimorium_Verum_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Growing_Pains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Growing_Pains",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Guiding_Light",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Guiding_Light",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Habeas_Corpus",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Habeas_Corpus",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hack-a-thon",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hack-a-thon",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hall_of_Doom_Armory_Alert",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hall_of_Doom_Armory_(Alert)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Happy_Anniversary_2014",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2014)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Happy_Anniversary_2015",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2015)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Happy_Anniversary_2016",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2016)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Harley_Quinn_vs_Apokolips_Part_2",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips_Part_2",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Hazardous_Materials",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hazardous_Materials",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "He_Wants_a_Devolution",
+      "source": "https://dcuniverseonline.fandom.com/wiki/He_Wants_a_Devolution",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Heads_You_Won",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Heads%2C_You_Won",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Heal_Em_and_Tag_Em",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Heal_'Em_and_Tag_'Em",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Heart_and_Soul",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Heart_and_Soul",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hecate_s_Moon-Touched_Gorgon",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hecate's_Moon-Touched_Gorgon",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hellspore_Convoy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hellspore_Convoy",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Help_Cyborg",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Help_Cyborg",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Help_Raven",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Help_Raven",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Here_There_Be_Monsters",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Here_There_Be_Monsters",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hoard_of_the_Batmage",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hoard_of_the_Batmage",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hold_the_Line_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hold_the_Line_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hold_the_Line",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hold_the_Line!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Holding_the_Line_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Holding_the_Line_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Homecoming_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Homecoming_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Homecoming_Game_On",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Homecoming%3A_Game_On!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Homecoming_Invasion",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Homecoming%3A_Invasion",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hospital_Havok",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hospital_Havok",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hotel_Hell",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hotel_Hell",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "How_to_Train_Your_Seahorse",
+      "source": "https://dcuniverseonline.fandom.com/wiki/How_to_Train_Your_Seahorse",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hungry_Hungry_Starro_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hungry%2C_Hungry_Starro_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hungry_Hungry_Starro_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hungry%2C_Hungry_Starro_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hunt_Down_Donna_Troy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hunt_Down_Donna_Troy!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Hydra_Havok",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hydra_Havok",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "I_Beam_You",
+      "source": "https://dcuniverseonline.fandom.com/wiki/I_Beam_You",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "I_Need_a_Botanist",
+      "source": "https://dcuniverseonline.fandom.com/wiki/I_Need_a_Botanist!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "If_I_Only_Had_a_Heart",
+      "source": "https://dcuniverseonline.fandom.com/wiki/If_I_Only_Had_a_Heart",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "In_Blackest_Day",
+      "source": "https://dcuniverseonline.fandom.com/wiki/In_Blackest_Day",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "In_Jacob_We_Lust",
+      "source": "https://dcuniverseonline.fandom.com/wiki/In_Jacob_We_Lust",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "In_Lust_She_Trusts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/In_Lust_She_Trusts",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Industrial_Sabotage",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Industrial_Sabotage",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Infection_Protection_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Infection_Protection_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Infection_Protection_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Infection_Protection_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Infiltrating_Ace",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Infiltrating_Ace",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Injustice_in_Just_Us",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Injustice_in_Just_Us",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Insane_Clown_Possession",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Insane_Clown_Possession",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Insecurity_Cameras",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Insecurity_Cameras",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Intel_Drops_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Intel_Drops_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Intel_Drops_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Intel_Drops_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Into_the_Breach",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Into_the_Breach",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "JLA_in_Trouble",
+      "source": "https://dcuniverseonline.fandom.com/wiki/JLA_in_Trouble%3F",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Justice_League_Dark_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Justice_League_Dark_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Justice_League_Dark_Cursed_Pt_2",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed_Pt._2",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Kahndaq_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Kahndaq_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lady_Blackhawk_Battlefield_Frontline_Missions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lady_Blackhawk%3A_Battlefield_Frontline_Missions",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lantern_Assistance",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lantern_Assistance",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lantern_in_Need",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lantern_in_Need",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Laugh_Riot",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Laugh_Riot",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lava_and_Brimstone",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lava_and_Brimstone",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Lazy_Magents",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lazy_Magents",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Legion_in_Need",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Legion_in_Need",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Legion_of_Hunted_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Hunted_Heroes",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Less_Possessed",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Less_Possessed",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lifting_the_Curse",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lifting_the_Curse",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Light_Em_Up",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Light_'Em_Up",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lighten_the_Load",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lighten_the_Load",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Like_Fish_In_A_Net",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Like_Fish_In_A_Net",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Logic_Loses",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Logic_Loses",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Long_Live_the_Legion_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Loose_Cannons",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Loose_Cannons",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Losing_Inhibitions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Losing_Inhibitions",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Loss_of_Leadership_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Loss_of_Leadership_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lost_and_Found",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lost_and_Found",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lost_Souls",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lost_Souls",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Love_is_in_the_Air",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Love_is_in_the_Air",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Love_is_Thicker_than_Water",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Love_is_Thicker_than_Water",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lower_the_Boom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lower_the_Boom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lunar_Eclipse",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lunar_Eclipse",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lunatic_Fringe",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lunatic_Fringe",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lust_Imp_Ire",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lust_Imp_Ire",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Lust_or_Combust",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lust_or_Combust",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Magic_Gone_Wild",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Magic_Gone_Wild",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mainliner",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mainliner",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Make_Them_Mad",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Make_Them_Mad",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Manacles_of_Force_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Manacles_of_Force_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mane_Man",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mane_Man",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Measure_for_Measure",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Measure_for_Measure",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mechanical_Mech",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mechanical_Mech",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Medical_Misinformation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Medical_Misinformation",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Meet_the_Robins",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Meet_the_Robins",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Membership_Has_Its_Perks",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Membership_Has_Its_Perks",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Memento_of_the_Goddess",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Memento_of_the_Goddess",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Message_in_a_Bottle",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Message_in_a_Bottle",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metal_Massacre",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Massacre",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metal_Part_I_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metal_Part_I_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metal_Part_II_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metal_Part_II_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metal_Resonator_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Resonator_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Metropolis_Melt_down",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Melt_down",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Military_Ties",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Military_Ties",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Miming_Metal",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Miming_Metal",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Monitoring_the_Situation_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Monitoring_the_Situation_Heroes_2017-2020",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Heroes)_(2017-2020)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Monitoring_the_Situation_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Monitoring_the_Situation_Villains_2017-2020",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Monitoring_the_Situation_(Villains)_(2017-2020)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Monsters_Inc",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Monsters_Inc.",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Moonstone_Tablets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Moonstone_Tablets",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mordru_s_Wild_Magic",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mordru's_Wild_Magic",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Morrow_s_Notes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Morrow's_Notes",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Municipal_Resposibility",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Municipal_Resposibility",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Murder_in_Kaznia_Citizen_s_Arrest",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Citizen's_Arrest",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Murder_in_Kaznia_Crime_Scene_Investigation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Crime_Scene_Investigation",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Murder_in_Kaznia_Witness_Protection",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Witness_Protection",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mutation_101",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mutation_101",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "MutilAid",
+      "source": "https://dcuniverseonline.fandom.com/wiki/MutilAid",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mxyleprechauns",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mxyleprechauns!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "My_Envy_Is_Your_Envy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/My_Envy_Is_Your_Envy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Mystic_Symbol_of_the_Seven_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Mystic_Symbol_of_the_Seven_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Nekron_s_Raging_Night",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Nekron's_Raging_Night",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "New_Genesis_Assault",
+      "source": "https://dcuniverseonline.fandom.com/wiki/New_Genesis_Assault",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "New_Genesis_Defense",
+      "source": "https://dcuniverseonline.fandom.com/wiki/New_Genesis_Defense",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Nightfall",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Nightfall",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "No_Joke",
+      "source": "https://dcuniverseonline.fandom.com/wiki/No_Joke",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "No_Laughing_Matter",
+      "source": "https://dcuniverseonline.fandom.com/wiki/No_Laughing_Matter",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "No_More_Monkey_Business",
+      "source": "https://dcuniverseonline.fandom.com/wiki/No_More_Monkey_Business",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Occult_Gestalt_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Occult_Gestalt_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Occult_Gestalt_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Occult_Gestalt_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Olympus_Descends",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Olympus_Descends",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "OMAC_Attack",
+      "source": "https://dcuniverseonline.fandom.com/wiki/OMAC_Attack",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "On_the_Hunt",
+      "source": "https://dcuniverseonline.fandom.com/wiki/On_the_Hunt",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Once_More_With_Rockets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Once_More_With_Rockets!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Opposition_Abolition_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Opposition_Abolition_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Opposition_Abolition_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Opposition_Abolition_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Orb_of_Arion_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Orbital_Apex",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Orbital_Apex",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Orbital_Justice",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Orbital_Justice",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Original_Synn",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Original_Synn",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Otherworldly_Visitor",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Otherworldly_Visitor",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Outbreak",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Outbreak",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Outsiders_Ops_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Outsiders_Ops_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Overstepped_Boundaries",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Overstepped_Boundaries",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Overzealous_Security",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Overzealous_Security",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Paint_the_Town_Green",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Paint_the_Town_Green",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Para-Demonic_Purge",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Para-Demonic_Purge",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Paradox_Repeating",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Paradox_Repeating",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Paradoxical_Punch-Up",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Paradoxical_Punch-Up",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Paranormal_Activity",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Paranormal_Activity",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Paranormal_Paramedic",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Paranormal_Paramedic",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Patchwork_Themyscira_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Patchwork_Themyscira_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Patchwork_Themyscira_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Patchwork_Themyscira_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Payback_With_Chemical_Compound_Interest_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Payback_With_(Chemical)_Compound_Interest_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Payback_With_Chemical_Compound_Interest_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Payback_With_(Chemical)_Compound_Interest_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Penance",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Penance",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Perpetual_Preparation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Perpetual_Preparation",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Perpetual_Prize",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Perpetual_Prize",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Philosopher_s_Stone_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Philosopher's_Stone_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Plan_Bee",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Plan_Bee",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Playing_Joker_s_Game",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Playing_Joker's_Game",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Playing_With_a_Full_Deck",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Playing_With_a_Full_Deck",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Pod_Hunting",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Pod_Hunting",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Podnormous",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Podnormous!",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Poisonous_Desire_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Poisonous_Desire_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Poisonous_Desire_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Poisonous_Desire_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Power_Hungry_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Power_Hungry_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Power_Hungry_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Power_Hungry_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Powering_Down_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Powering_Down_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Powering_Down_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Powering_Down_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Preventing_Apokolips",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Preventing_Apokolips",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Primal_Propaganda",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Primal_Propaganda",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Prison_Break_Breakup",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Prison_Break_Breakup",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Prisoners_of_War_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Prisoners_of_War_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Prisoners_of_War_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Prisoners_of_War_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "ProbeTek_in_Defect",
+      "source": "https://dcuniverseonline.fandom.com/wiki/ProbeTek_in_Defect",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Project_Mayhem",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Project_Mayhem",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Proportional_Response",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Proportional_Response",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Protect_and_Serve",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Protect_and_Serve",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Protecting_the_Green",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Protecting_the_Green",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Protection_Money",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Protection_Money",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Prototype_Weapons",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Prototype_Weapons",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Psycho_Slip-Ups",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Psycho_Slip-Ups",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Purge_the_Merge",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Purge_the_Merge",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quick_Chaos",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quick_Chaos",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runed_Boots",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runed_Boots",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runic_Cape",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runic_Cape",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runic_Epaulets",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runic_Epaulets",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runic_Fists",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runic_Fists",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runic_Helm",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runic_Helm",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runic_Leggings",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runic_Leggings",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Runic_Shirt",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Runic_Shirt",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Quid_Pro_Quo_Waist_Runes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Quid_Pro_Quo%3A_Waist_Runes",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Radio_Star_fish_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Radio_Star(fish)_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Radio_Star_fish_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Radio_Star(fish)_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Raid_T1_Brainiac_Sub-Construct",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raid_T1%3A_Brainiac_Sub-Construct",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Raid_T1_The_Prime_Battleground",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raid_T1%3A_The_Prime_Battleground",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Random_Sample",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Random_Sample",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rare_Blood",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rare_Blood",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rath_Propaganda_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rath_Propaganda_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rath_Propaganda_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rath_Propaganda_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Raven_Bound_villain_mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raven_Bound_(villain_mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Raven_Support",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raven_Support",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Raven_Unleashed_hero_mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raven_Unleashed_(hero_mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Raven_Unleashed_villain_mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raven_Unleashed_(villain_mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Reaping_Evil",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Reaping_Evil",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Reflections",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Reflections...",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Refurbished_Robots",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Refurbished_Robots",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Relic_Recovery",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Relic_Recovery",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Report_to_Harley_Quinn",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Report_to_Harley_Quinn",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Research_Development",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Research_%26_Development",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Residential_Evil",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Residential_Evil",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Resist_and_Assist_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Resist_and_Assist_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Resist_and_Assist_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Resist_and_Assist_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Resistance_Assistance",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Resistance_Assistance",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rest_in_Pieces",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rest_in_Pieces",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Restless_Dead",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Restless_Dead",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Retribution_at_the_Cathedral",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Retribution_at_the_Cathedral",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Riddled_With_Traps",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Riddled_With_Traps",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rift_It_Up",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rift_It_Up",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ring_Hog",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ring_Hog",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ring_in_the_Holidays_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ring_in_the_Holidays_(Heroes)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Ring_in_the_Holidays_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ring_in_the_Holidays_(Villains)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Rise_of_the_Tomb_Raiders",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rise_of_the_Tomb_Raiders",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Risky_Calculation_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Risky_Calculation_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Risky_Calculation_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Risky_Calculation_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Robo_Royale",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Robo_Royale",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rock_Em",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rock_'Em",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rocked_Residents",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rocked_Residents",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Running_with_Metal_Bulls",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Running_with_Metal_Bulls",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Rush_Week",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Rush_Week",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Safehouses_Unsafe",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Safehouses_Unsafe!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Salvage_Operation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Salvage_Operation",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Savage_Defector_Battlefield_Frontline_Missions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Savage_Defector%3A_Battlefield_Frontline_Missions",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Save_the_Universe_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Save_the_Universe_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Save_the_World",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Save_the_World",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Savory_Citizens",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Savory_Citizens",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Scavenger_Hunt",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Scavenger_Hunt",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Science_of_Crime",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Science_of_Crime",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Science_Spire_Blitz",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Science_Spire_Blitz",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Scrap_Metal",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Scrap_Metal",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Scry_Havoc_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Scry_Havoc!_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sea_Change",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sea_Change",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sea_of_Love",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sea_of_Love",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Search_and_Destroy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Search_and_Destroy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Search_and_Seizure",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Search_and_Seizure",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Season_s_Greedings_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings_(Heroes)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Season_s_Greedings_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings_(Villains)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Season_s_Greedings_Vault",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings_Vault",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Secure_Area_51",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Secure_Area_51",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Seduced_by_Lust",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Seduced_by_Lust",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Seeds_of_Change",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Seeds_of_Change",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Seek_and_Destroy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Seek_and_Destroy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Self_Possessed",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Self_Possessed",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sewer_Sweep",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sewer_Sweep",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sewers_in_Spring_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sewers_in_Spring_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shadow_of_their_Leader",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shadow_of_their_Leader",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shards_of_Influence",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shards_of_Influence",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shock_the_Pool_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shock_the_Pool..._(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shock_the_Pool_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shock_the_Pool..._(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shock_to_the_System_Pt_2",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System_Pt._2",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shooting_Starfish_in_a_Barrel_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shooting_Starfish_in_a_Barrel_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Shooting_Starfish_in_a_Barrel_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shooting_Starfish_in_a_Barrel_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sigils_of_Safeguarding",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sigils_of_Safeguarding",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sigils_of_Strength",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sigils_of_Strength",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Situation_Report_World_of_Flashpoint",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Situation_Report%3A_World_of_Flashpoint",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "So_Sayeth_Cain",
+      "source": "https://dcuniverseonline.fandom.com/wiki/So_Sayeth_Cain",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Soldier_of_Misfortune",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Soldier_of_Misfortune",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Solitary_Riot",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Solitary_Riot",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Something_s_Fishy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Something's_Fishy...",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "SOolong_Farewell",
+      "source": "https://dcuniverseonline.fandom.com/wiki/SOolong%2C_Farewell",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Soul_Catcher",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Soul_Catcher",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Soul_Collector",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Soul_Collector",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Soul_Siphoners",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Soul_Siphoners",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Source_of_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Source_of_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Space_Off",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Space/Off",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Special_Agent_Anderson_Area_51_Task_Force_Missions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Special_Agent_Anderson%3A_Area_51_Task_Force_Missions",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Spectral_Embrace",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Spectral_Embrace",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Spies_Like_Us",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Spies_Like_Us",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Springtime_Vault",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Springtime_Vault",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Squawking_out_the_Gang_War",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Squawking_out_the_Gang_War",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Star_Sapphire_Support",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Star_Sapphire_Support",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Starro_Appreciation_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Starro_Appreciation_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Starro_Appreciation_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Starro_Appreciation_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Starro_the_Conqueror_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Starro_the_Conqueror!_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Starro_the_Conqueror_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Starro_the_Conqueror!_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Stemming_the_Tide_Part_1_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stemming_the_Tide_(Part_1)_(Heroes)",
+      "parts": 2,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Stemming_the_Tide_Part_1_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stemming_the_Tide_(Part_1)_(Villains)",
+      "parts": 2,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Stemming_the_Tide_Part_2_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stemming_the_Tide_(Part_2)_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Stemming_the_Tide_Part_2_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stemming_the_Tide_(Part_2)_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Stone_Society",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stone_Society",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Storming_the_Ivory_Tower",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Storming_the_Ivory_Tower",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Story_Arcs_Classic_Game",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Strait_to_Metropolis_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Strait_to_Metropolis_(Heroes)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Strait_to_Metropolis_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Strait_to_Metropolis_(Villains)",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "Street_Sweeping",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Street_Sweeping",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Streetside_Abductions",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Streetside_Abductions",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Strolling_Through_the_Gas",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Strolling_Through_the_Gas",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Suggestion_Box_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Suggestion_Box_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Suit_Up",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Suit_Up",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Superman_Celebration_Daily_Alert",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Superman_Celebration%3A_Daily_Alert",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Superman_Celebration_Daily_Raid",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Superman_Celebration%3A_Daily_Raid",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Superman_Celebration_Daily_Solo_or_Duo",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Superman_Celebration%3A_Daily_Solo_or_Duo",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Superman_s_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Superman's_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Supplies_in_Demand_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Supplies_in_Demand_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Supplies_in_Demand_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Supplies_in_Demand_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Supply_Drop_Mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Supply_Drop_(Mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Swarm_Attack",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Swarm_Attack",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Sweeter_Than_Honey",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sweeter_Than_Honey",
+      "parts": 3,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Syndicate_Surveillance",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Syndicate_Surveillance",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "T-Spheres",
+      "source": "https://dcuniverseonline.fandom.com/wiki/T-Spheres",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Take_Down_the_Drift_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Take_Down_the_Drift_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Take_Pride_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Take_Pride_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Take_Pride_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Take_Pride_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Teen_Titans_Judas_Contract_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Teen_Titans%3A_Judas_Contract_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Teen_Titans_Judas_Contract_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Teen_Titans%3A_Judas_Contract_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tentacled",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tentacled!",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "That_Stings",
+      "source": "https://dcuniverseonline.fandom.com/wiki/That_Stings!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Awakening",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Awakening",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Ballad_of_Barbatos",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Ballad_of_Barbatos",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Bee_in_the_Moon_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Bee_in_the_Moon_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Bee_in_the_Moon_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Bee_in_the_Moon_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Bigger_They_Are",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Bigger_They_Are...",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Curse_of_Gotham_City",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Curse_of_Gotham_City",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Day_the_Island_Stood_Still",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Day_the_Island_Stood_Still",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Demon_Inside_villain_mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon_Inside_(villain_mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Demon_s_Head",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Head",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Face_of_Evil",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Face_of_Evil",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Fates_Aligned",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Fates_Aligned",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Faust_Finale",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Faust_Finale",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Hunt_for_Grodd",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Hunt_for_Grodd",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Joker_s_Problem",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Joker's_Problem",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Justice_League",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Justice_League",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_King_and_Queen_of_Kahndaq",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_King_and_Queen_of_Kahndaq",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Last_Laugh_mission",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(mission)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Last_Stand",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Last_Stand",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Lost_Collection",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Lost_Collection",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Missing_Riddle",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Missing_Riddle",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Ninth_Triage",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Ninth_Triage",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Perils_of_Zatanna",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Perils_of_Zatanna",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Petri_Dish",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Petri_Dish",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Runaround",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Runaround",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Shipment_News",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Shipment_News",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Sins_of_Black_Adam_Pt_2",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam_Pt._2",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Spoils_of_War",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Spoils_of_War",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Sum_of_Its_Parts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Sum_of_Its_Parts",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Trappings_of_Chaos_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Trappings_of_Chaos_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Trappings_of_Chaos_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Trappings_of_Chaos_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Truth_Hurts",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Truth_Hurts",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_War_Against_War",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_War_Against_War",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "The_Witching_Hour_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour_(Heroes)",
+      "parts": 1,
+      "restoredItems": 2
+    },
+    {
+      "slug": "The_Witching_Hour_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour_(Villains)",
+      "parts": 1,
+      "restoredItems": 2
+    },
+    {
+      "slug": "The_Witching_Hour_Vault",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour_Vault",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "They_ll_Be_Back",
+      "source": "https://dcuniverseonline.fandom.com/wiki/They'll_Be_Back",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Thief_of_Souls",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Thief_of_Souls",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Things_That_Go_BOOM",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Things_That_Go_BOOM",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Thrash_Metal",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Thrash_Metal",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Thrasher_s_Defense",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Thrasher's_Defense",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tick_Tick_Boom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tick_Tick_Boom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tidal_Waves",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tidal_Waves",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tides_of_War_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tides_of_War_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tides_of_War_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tides_of_War_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tides_of_War_Vault",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tides_of_War_Vault",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Time_After_Time_Portal",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Time_After_Time_Portal",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Timid_Sentinels",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Timid_Sentinels",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Titans_Tower_Troubles",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Titans_Tower_Troubles",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Titans_Tower_Troubles_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Titans_Tower_Troubles_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Titans_Tower_Troubles_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Titans_Tower_Troubles_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_Catch_a_Thief",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_Catch_a_Thief",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_Dakota_City",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_Dakota_City",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_Hell_Demon",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_Hell%2C_Demon!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_the_Nth_Power",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_the_Nth_Power",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_the_Shore",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_the_Shore",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_the_Skies_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_the_Skies_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "To_the_Skies_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/To_the_Skies_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tomorrow_Will_Be_Gigantic",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tomorrow_Will_Be_Gigantic",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tour_of_Duty_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tour_of_Duty_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tour_of_Duty_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tour_of_Duty_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tower_Defense",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tower_Defense",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Toxic_Trouble",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Toxic_Trouble",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Toyland",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Toyland",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Traffic_Stop",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Traffic_Stop",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Tragic_Comedy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tragic_Comedy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Trigon_s_Blood_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Trigon's_Blood_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Trigon_s_Blood_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Trigon's_Blood_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Trouble_in_the_31st_Century_New_Earth",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Trouble_in_the_31st_Century%3A_New_Earth",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Trouble_on_Thanagar_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Trouble_on_Thanagar_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Trouble_on_Thanagar_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Trouble_on_Thanagar_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Turn_Over_Every_Stone",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Turn_Over_Every_Stone",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Turn_the_Tide",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Turn_the_Tide",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Ultraviolet_Doom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Ultraviolet_Doom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Un-Metalled",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Un-Metalled",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Uncivil_Engineering",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Uncivil_Engineering",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Under_Siege",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Under_Siege",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Undercover_Havok",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Undercover_Havok",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Unguarded_Towers",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Unguarded_Towers",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Unstable_Technology",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Unstable_Technology",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Urban_Liberation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Urban_Liberation",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "UV_UndercoVer",
+      "source": "https://dcuniverseonline.fandom.com/wiki/UV%3A_UndercoVer",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Vault_Ambush",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Vault_Ambush!",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Vengeful_Spirits",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Vengeful_Spirits",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Vices_over_Virtues",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Vices_over_Virtues",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Vines_of_Wrath",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Vines_of_Wrath",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Virtues_over_Vices",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Virtues_over_Vices",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Abra_Kadabra",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Abra_Kadabra",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Apokoliptian_Commander",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Apokoliptian_Commander",
+      "parts": 1,
+      "restoredItems": 1
+    },
+    {
+      "slug": "WANTED_Arkillo",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Arkillo",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Avatar_of_Sin",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Avatar_of_Sin",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Bizarro",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Bizarro",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Captain_Boomerang",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Boomerang",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Captain_Cold",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Cold",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Clayface",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Clayface",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Doctor_Light",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Doctor_Light",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Enchanted_Statue",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Enchanted_Statue",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_General_Kordax",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_General_Kordax",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Heat_Wave",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Heat_Wave",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wanted_Joker_Riddler_Allies",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wanted%3A_Joker_%26_Riddler_Allies",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Killer_Frost",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Killer_Frost",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Minotaur",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Minotaur",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Mist-Empowered_Villain",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Mist-Empowered_Villain",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Oolong_Siege_Robot",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Oolong_Siege_Robot",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Pied_Piper",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Pied_Piper",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Professor_Zoom",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Professor_Zoom",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Second-Generation_Morrowbot",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Second-Generation_Morrowbot",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Solomon_Grundy",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Solomon_Grundy",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_The_Judge",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Judge",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_The_Top",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Top",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_The_Trickster",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Trickster",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "WANTED_Weather_Wizard",
+      "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Weather_Wizard",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "War_with_the_Corps",
+      "source": "https://dcuniverseonline.fandom.com/wiki/War_with_the_Corps",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Warsuit_Power_Cores",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Warsuit_Power_Cores",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wartime_Whistleblower",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wartime_Whistleblower",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Watch_Your_Step_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Watch_Your_Step_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Watch_Your_Step_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Watch_Your_Step_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Watchtower_Containment_Facility",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Watchtower_Containment_Facility",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Weapons_of_Metal_Destruction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weapons_of_Metal_Destruction",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Weekly_Bounty_Starro_Conqueror",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Starro_Conqueror",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Weekly_Bounty_The_Fearsome_Five_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_The_Fearsome_Five_(Heroes)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Weekly_Bounty_The_Fearsome_Five_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_The_Fearsome_Five_(Villains)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Weird_Science",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weird_Science",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "What_Fate_Awaits",
+      "source": "https://dcuniverseonline.fandom.com/wiki/What_Fate_Awaits%3F",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "What_s_a_Diadem",
+      "source": "https://dcuniverseonline.fandom.com/wiki/What's_a_Diadem",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "What_s_In_The_Box",
+      "source": "https://dcuniverseonline.fandom.com/wiki/What's_In_The_Box%3F",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "What_s_the_Anti-Matter",
+      "source": "https://dcuniverseonline.fandom.com/wiki/What's_the_Anti-Matter%3F",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "When_Plants_Attack",
+      "source": "https://dcuniverseonline.fandom.com/wiki/When_Plants_Attack",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Winter_Plunderland",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Winter_Plunderland",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wonder_Woman_Day_Celebration",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day%3A_Celebration",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wonder_Woman_Day_Daily_Alert",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day%3A_Daily_Alert",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wonder_Woman_Day_Daily_Raid",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day%3A_Daily_Raid",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wonder_Woman_Day_Daily_Solo_or_Duo",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day%3A_Daily_Solo_or_Duo",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wonderverse_Heroes",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonderverse_(Heroes)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wonderverse_Villains",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonderverse_(Villains)",
+      "parts": 2,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wrath_Not_Taken",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wrath_Not_Taken",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wrath_Reduced",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wrath_Reduced",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Wrath_Within",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wrath_Within",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "You_Have_My_Axe",
+      "source": "https://dcuniverseonline.fandom.com/wiki/You_Have_My_Axe",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Your_Armory",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Your_Armory",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Your_Best_Face_Forward",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Your_Best_Face_Forward",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Yuletide_Fear",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Yuletide_Fear",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Return_to_the_Nexus",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Return_to_the_Nexus",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Act_of_Defiance",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Act_of_Defiance",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Labyrinth_of_Lost_Souls",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Labyrinth_of_Lost_Souls",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Halls_of_Hades",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Hades",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Throne_of_the_Dead",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Throne_of_the_Dead",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Oa_Under_Siege",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Oa_Under_Siege",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Iceberg_Lounge_Challenge",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Iceberg_Lounge_(Challenge)",
+      "parts": 1,
+      "restoredItems": 0
+    },
+    {
+      "slug": "Patrol_Catastrophe",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Patrol_Catastrophe",
+      "parts": 2,
+      "restoredItems": 0
+    }
+  ]
+}

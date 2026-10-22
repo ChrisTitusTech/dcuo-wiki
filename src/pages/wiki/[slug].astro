@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { articleParts, renderPart } from "../../../shared/article-content.mjs";
 import ArticleEditor from "../../components/ArticleEditor.astro";
 import { renderMapLinks } from "../../../shared/media.mjs";
 import { releasesFor, releaseHref } from "../../../shared/releases.mjs";
@@ -11,6 +12,7 @@ export function getStaticPaths() {
   }));
 }
 const { article } = Astro.props;
+const parts = new Map(articleParts(article).map((part) => [part.id, part]));
 const related = articles.filter((a) => article.related?.includes(a.slug));
 ---
 
@@ -63,13 +65,18 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
             Edit section
           </a>
           <h2>{s.title}</h2>
-          <div data-live-part={`section-${i}`}>
-            <ul>
-              {s.items.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
-          </div>
+          <div
+            data-live-part={`section-${i}`}
+            set:html={
+              s.items.length
+                ? renderPart(
+                    parts.get(`section-${i}`),
+                    parts.get(`section-${i}`).text,
+                    { slug: article.slug },
+                  )
+                : ""
+            }
+          />
           {s.images && (
             <div
               class="section-images"
@@ -107,25 +114,13 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
                 role="region"
                 aria-label={s.table.caption}
               >
-                <table>
-                  <caption>{s.table.caption}</caption>
-                  <thead>
-                    <tr>
-                      {s.table.columns.map((c) => (
-                        <th scope="col">{c}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {s.table.rows.map((row) => (
-                      <tr>
-                        {row.map((cell) => (
-                          <td>{cell}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                <Fragment
+                  set:html={renderPart(
+                    parts.get(`table-${i}`),
+                    parts.get(`table-${i}`).text,
+                    { slug: article.slug },
+                  )}
+                />
               </div>
             </>
           )}

@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 1047,
+    "published": 1079,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -1903,7 +1903,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/A_Rip_in_Time",
       "title": "A_Rip_in_Time",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "A_Rip_in_Time",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -3939,7 +3940,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Act_of_Defiance",
       "title": "Act_of_Defiance",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Act_of_Defiance",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -25381,7 +25383,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Blackest_Day",
       "title": "Blackest_Day",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Blackest_Day",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Black+Large+Crystal"
       ]
@@ -25390,7 +25393,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Blackest_Night",
       "title": "Blackest_Night",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Blackest_Night",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Black+Large+Crystal"
       ]
@@ -31211,7 +31215,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac's_Bottle_Ship",
       "title": "Brainiac's_Bottle_Ship",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Brainiac_s_Bottle_Ship",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bombshell+Platinum+Poster+%28Purchased%29"
       ]
@@ -49350,7 +49355,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Corrupted_Zamaron",
       "title": "Corrupted_Zamaron",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Corrupted_Zamaron",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Concentrated+Power+Set+Aura+Box"
       ]
@@ -55394,7 +55400,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Darkseid's_War_Factory",
       "title": "Darkseid's_War_Factory",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Darkseid_s_War_Factory",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=DCPIII%2FSandbox-DoRTest"
       ]
@@ -57776,7 +57783,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Deep_Desires",
       "title": "Deep_Desires",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Deep_Desires",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -59025,7 +59033,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Desecrated_Cathedral",
       "title": "Desecrated_Cathedral",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Desecrated_Cathedral",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -85756,7 +85765,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Flash_Museum_Burglary",
       "title": "Flash_Museum_Burglary",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Flash_Museum_Burglary",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -104406,7 +104416,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Hades",
       "title": "Halls_of_Hades",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Halls_of_Hades",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -106113,7 +106124,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Harley's_Heist",
       "title": "Harley's_Heist",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Harley_s_Heist",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -121676,7 +121688,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Iceberg_Lounge_(Challenge)",
       "title": "Iceberg_Lounge_(Challenge)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Iceberg_Lounge_Challenge",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -127628,7 +127641,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Kandor_Central_Tower",
       "title": "Kandor_Central_Tower",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Kandor_Central_Tower",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -130314,7 +130328,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Labyrinth_of_Lost_Souls",
       "title": "Labyrinth_of_Lost_Souls",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Labyrinth_of_Lost_Souls",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -155890,7 +155905,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Oa_Under_Siege",
       "title": "Oa_Under_Siege",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Oa_Under_Siege",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -161532,7 +161548,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Patrol_Catastrophe",
       "title": "Patrol_Catastrophe",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Patrol_Catastrophe",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Otherworldly+Armored+Vest"
       ]
@@ -187608,7 +187625,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Prison_Break",
       "title": "Prison_Break",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Prison_Break",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Priority+Taunt"
       ]
@@ -199926,7 +199944,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Return_to_the_Nexus",
       "title": "Return_to_the_Nexus",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Return_to_the_Nexus",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Retro-Futuristic"
       ]
@@ -209134,7 +209153,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo",
       "title": "Shadows_Over_Argo",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Shadows_Over_Argo",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -233608,7 +233628,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Bombshell_Paradox",
       "title": "The_Bombshell_Paradox",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Bombshell_Paradox",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -233981,7 +234002,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Pit",
       "title": "The_Demon's_Pit",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Demon_s_Pit",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -233990,7 +234012,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Plan",
       "title": "The_Demon's_Plan",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Demon_s_Plan",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -234201,7 +234224,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_First_Piece",
       "title": "The_First_Piece",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_First_Piece",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -235291,7 +235315,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Phantom_Zone",
       "title": "The_Phantom_Zone",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Phantom_Zone",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -235639,7 +235664,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Science_Spire",
       "title": "The_Science_Spire",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Science_Spire",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -236236,7 +236262,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Will_of_Darkseid",
       "title": "The_Will_of_Darkseid",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Will_of_Darkseid",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -237722,7 +237749,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Throne_of_the_Dead",
       "title": "Throne_of_the_Dead",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Throne_of_the_Dead",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -245240,7 +245268,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Unholy_Matrimony",
       "title": "Unholy_Matrimony",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Unholy_Matrimony",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Unattuned+Captain%27s+Breastplate"
       ]
@@ -252586,7 +252615,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wastelands_Wonderland",
       "title": "Wastelands_Wonderland",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Wastelands_Wonderland",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -253202,7 +253232,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wayne_Manor_Gala",
       "title": "Wayne_Manor_Gala",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Wayne_Manor_Gala",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -257731,7 +257762,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers",
       "title": "Wrath_of_the_Worldkillers",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Wrath_of_the_Worldkillers",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]

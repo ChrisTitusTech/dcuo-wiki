@@ -12,6 +12,9 @@ const escape = (value) =>
         c
       ],
   );
+export function mediaAsset(reference) {
+  return assets.get(new URL(reference).href);
+}
 export function renderMapLinks(rows) {
   return `<div class="map-gallery">${rows
     .map(([label, reference]) => {

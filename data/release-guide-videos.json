@@ -1,0 +1,500 @@
+{
+  "records": [
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Return_to_the_Nexus",
+      "query": "DCUO site:youtube.com/watch (\"Return to the Nexus\" OR \"Act of Defiance\" OR \"Labyrinth of Lost Souls\" OR \"Halls of Hades\")",
+      "checked": "2026-10-22T01:28:36.061Z",
+      "matches": [
+        {
+          "title": "Amazon Fury P2 Return to the Nexus Alert feat Guide DCUO",
+          "url": "https://www.youtube.com/watch?v=feVycMBmm5Q",
+          "evidence": "YouTube metadata explicitly names Return to the Nexus. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO Return to the Nexus w/ Galactic Goonies",
+          "url": "https://www.youtube.com/watch?v=hs22mAnqf5E",
+          "evidence": "YouTube metadata explicitly names Return to the Nexus. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Act_of_Defiance",
+      "query": "DCUO site:youtube.com/watch (\"Return to the Nexus\" OR \"Act of Defiance\" OR \"Labyrinth of Lost Souls\" OR \"Halls of Hades\")",
+      "checked": "2026-10-22T01:28:36.061Z",
+      "matches": [
+        {
+          "title": "DCUO - Act Of Defiance (Full Run) Feats: Listed/Shown How To",
+          "url": "https://www.youtube.com/watch?v=m79j-AEuKDE",
+          "evidence": "YouTube metadata explicitly names Act of Defiance. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO: Act Of Defiance Tier 6 - Episode 1 Part 1",
+          "url": "https://www.youtube.com/watch?v=Cc844qImiOs",
+          "evidence": "YouTube metadata explicitly names Act of Defiance. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Labyrinth_of_Lost_Souls",
+      "query": "DCUO site:youtube.com/watch (\"Return to the Nexus\" OR \"Act of Defiance\" OR \"Labyrinth of Lost Souls\" OR \"Halls of Hades\")",
+      "checked": "2026-10-22T01:28:36.061Z",
+      "matches": [
+        {
+          "title": "DCUO - Labyrinth of Lost Souls Raid - Amazon Fury Part II [DLC 13]",
+          "url": "https://www.youtube.com/watch?v=ZtyDYt16Oxc",
+          "evidence": "YouTube metadata explicitly names Labyrinth of Lost Souls. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO How to do: T6 Labyrinth of Lost Souls (walkthrough + commentary)",
+          "url": "https://www.youtube.com/watch?v=kayNc97tAxo",
+          "evidence": "YouTube metadata explicitly names Labyrinth of Lost Souls. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Hades",
+      "query": "DCUO site:youtube.com/watch (\"Return to the Nexus\" OR \"Act of Defiance\" OR \"Labyrinth of Lost Souls\" OR \"Halls of Hades\")",
+      "checked": "2026-10-22T01:28:36.061Z",
+      "matches": [
+        {
+          "title": "DCUO How to do: T6 Halls of Hades (Walkthrough + Commentary)",
+          "url": "https://www.youtube.com/watch?v=7vHgQPrbXaY",
+          "evidence": "YouTube metadata explicitly names Halls of Hades. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online Xbox Walkthrough - Halls of Hades Raid - Let's Play Part 10",
+          "url": "https://www.youtube.com/watch?v=3Xv88GH27YY",
+          "evidence": "YouTube metadata explicitly names Halls of Hades. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Throne_of_the_Dead",
+      "query": "DCUO site:youtube.com/watch (\"Throne of the Dead\" OR \"Corrupted Zamaron\" OR \"The Bombshell Paradox\" OR \"Oa Under Siege\")",
+      "checked": "2026-10-22T01:28:37.366Z",
+      "matches": [
+        {
+          "title": "DC Universe Online: Episode 41: House of Legends: Throne of the Dead (Raid (Reg)) Light Controller",
+          "url": "https://www.youtube.com/watch?v=w8z1H4FuSTM",
+          "evidence": "YouTube metadata explicitly names Throne of the Dead. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO Test: Throne of the Dead Elite First Look!",
+          "url": "https://www.youtube.com/watch?v=G-wTwNuQ9Ow",
+          "evidence": "YouTube metadata explicitly names Throne of the Dead. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Corrupted_Zamaron",
+      "query": "DCUO site:youtube.com/watch (\"Throne of the Dead\" OR \"Corrupted Zamaron\" OR \"The Bombshell Paradox\" OR \"Oa Under Siege\")",
+      "checked": "2026-10-22T01:28:37.366Z",
+      "matches": [
+        {
+          "title": "DCUO Corrupted Zamaron Duo",
+          "url": "https://www.youtube.com/watch?v=0XJd45wmr6U",
+          "evidence": "YouTube metadata explicitly names Corrupted Zamaron. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO Episode 15 - Corrupted Zamaron (Gameplay and Cutscenes) NOHUD",
+          "url": "https://www.youtube.com/watch?v=qy_FS8cMYvA",
+          "evidence": "YouTube metadata explicitly names Corrupted Zamaron. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Bombshell_Paradox",
+      "query": "DCUO site:youtube.com/watch (\"Throne of the Dead\" OR \"Corrupted Zamaron\" OR \"The Bombshell Paradox\" OR \"Oa Under Siege\")",
+      "checked": "2026-10-22T01:28:37.366Z",
+      "matches": []
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Oa_Under_Siege",
+      "query": "DCUO site:youtube.com/watch (\"Throne of the Dead\" OR \"Corrupted Zamaron\" OR \"The Bombshell Paradox\" OR \"Oa Under Siege\")",
+      "checked": "2026-10-22T01:28:37.366Z",
+      "matches": [
+        {
+          "title": "DCUO-How to find Oa Under Siege",
+          "url": "https://www.youtube.com/watch?v=HgzKOSNreE8",
+          "evidence": "YouTube metadata explicitly names Oa Under Siege. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO - Episode 16: Oa Under Siege Playthrough",
+          "url": "https://www.youtube.com/watch?v=Nv8S2Jw7Nt4",
+          "evidence": "YouTube metadata explicitly names Oa Under Siege. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Desecrated_Cathedral",
+      "query": "DCUO site:youtube.com/watch (\"Desecrated Cathedral\" OR \"Flash Museum Burglary\" OR \"Unholy Matrimony\" OR \"The Demon's Pit\")",
+      "checked": "2026-10-22T01:28:38.623Z",
+      "matches": [
+        {
+          "title": "DC Universe Online : Desecrated Cathedral hero",
+          "url": "https://www.youtube.com/watch?v=701JIRD-hpA",
+          "evidence": "YouTube metadata explicitly names Desecrated Cathedral. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Flash_Museum_Burglary",
+      "query": "DCUO site:youtube.com/watch (\"Desecrated Cathedral\" OR \"Flash Museum Burglary\" OR \"Unholy Matrimony\" OR \"The Demon's Pit\")",
+      "checked": "2026-10-22T01:28:38.623Z",
+      "matches": [
+        {
+          "title": "DC Universe Online : Flash Museum Burglary",
+          "url": "https://www.youtube.com/watch?v=9NBjPKx96IY",
+          "evidence": "YouTube metadata explicitly names Flash Museum Burglary. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online: Flash Museum Burglary Briefings",
+          "url": "https://www.youtube.com/watch?v=ruY64cxnt98",
+          "evidence": "YouTube metadata explicitly names Flash Museum Burglary. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Unholy_Matrimony",
+      "query": "DCUO site:youtube.com/watch (\"Desecrated Cathedral\" OR \"Flash Museum Burglary\" OR \"Unholy Matrimony\" OR \"The Demon's Pit\")",
+      "checked": "2026-10-22T01:28:38.623Z",
+      "matches": [
+        {
+          "title": "DC Universe Online : Unholy Matrimony",
+          "url": "https://www.youtube.com/watch?v=fa8kC6ur1-A",
+          "evidence": "YouTube metadata explicitly names Unholy Matrimony. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO- Episode 17 Announced (\"Unholy Matrimony\" & \"The Flash Museum Burglary\")",
+          "url": "https://www.youtube.com/watch?v=FITiFrk0DKM",
+          "evidence": "YouTube metadata explicitly names Unholy Matrimony. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Pit",
+      "query": "DCUO site:youtube.com/watch (\"Desecrated Cathedral\" OR \"Flash Museum Burglary\" OR \"Unholy Matrimony\" OR \"The Demon's Pit\")",
+      "checked": "2026-10-22T01:28:38.623Z",
+      "matches": [
+        {
+          "title": "DCUO - The Demon's Pit [Episode 18]",
+          "url": "https://www.youtube.com/watch?v=Ibml7XhBb3Q",
+          "evidence": "YouTube metadata explicitly names The Demon's Pit. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO: The Demon's Pit Duo",
+          "url": "https://www.youtube.com/watch?v=q-FfJrZRxg0",
+          "evidence": "YouTube metadata explicitly names The Demon's Pit. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blackest_Day",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Day\" OR \"Deep Desires\" OR \"The Demon's Plan\" OR \"Wastelands Wonderland\")",
+      "checked": "2026-10-22T01:28:40.095Z",
+      "matches": [
+        {
+          "title": "DC Universe Online Blackest Day Raid",
+          "url": "https://www.youtube.com/watch?v=MQgphUC2lMU",
+          "evidence": "YouTube metadata explicitly names Blackest Day. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online : Blackest Day hero",
+          "url": "https://www.youtube.com/watch?v=j0KKXEbv-RI",
+          "evidence": "YouTube metadata explicitly names Blackest Day. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deep_Desires",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Day\" OR \"Deep Desires\" OR \"The Demon's Plan\" OR \"Wastelands Wonderland\")",
+      "checked": "2026-10-22T01:28:40.095Z",
+      "matches": [
+        {
+          "title": "DCUO - Episode 19 - Deep Desires Solo",
+          "url": "https://www.youtube.com/watch?v=x9De1HMEVB8",
+          "evidence": "YouTube metadata explicitly names Deep Desires. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online: Deep Desires [SOLO] [DCUO 2026] - Livestream / $KUNK",
+          "url": "https://www.youtube.com/watch?v=Cpnrupg-QKM",
+          "evidence": "YouTube metadata explicitly names Deep Desires. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Plan",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Day\" OR \"Deep Desires\" OR \"The Demon's Plan\" OR \"Wastelands Wonderland\")",
+      "checked": "2026-10-22T01:28:40.095Z",
+      "matches": [
+        {
+          "title": "DCUO - The Demon's Plan Alert",
+          "url": "https://www.youtube.com/watch?v=N-oE8-jfaws",
+          "evidence": "YouTube metadata explicitly names The Demon's Plan. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO - The Demon's Plan (Last Boss)",
+          "url": "https://www.youtube.com/watch?v=FIUju_wT0d8",
+          "evidence": "YouTube metadata explicitly names The Demon's Plan. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wastelands_Wonderland",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Day\" OR \"Deep Desires\" OR \"The Demon's Plan\" OR \"Wastelands Wonderland\")",
+      "checked": "2026-10-22T01:28:40.095Z",
+      "matches": [
+        {
+          "title": "DC Universe Online (DCUO) - Wastelands Wonderland - 2 Player (Duo) - T3",
+          "url": "https://www.youtube.com/watch?v=TU8RHwpkVrw",
+          "evidence": "YouTube metadata explicitly names Wastelands Wonderland. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO - Episode 20 - Wastelands Wonderland [Duo]",
+          "url": "https://www.youtube.com/watch?v=Fp2A1bO4JgU",
+          "evidence": "YouTube metadata explicitly names Wastelands Wonderland. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Blackest_Night",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Night\" OR \"The First Piece\" OR \"Prison Break\" OR \"The Phantom Zone\")",
+      "checked": "2026-10-22T01:28:41.430Z",
+      "matches": [
+        {
+          "title": "DCUO / Flashback: Blackest Night Raid Working The Five Consoles & Cogs",
+          "url": "https://www.youtube.com/watch?v=hrxvOQdU3tI",
+          "evidence": "YouTube metadata explicitly names Blackest Night. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO - Investigation - Blackest Night [Location & Reward]",
+          "url": "https://www.youtube.com/watch?v=_HUwnLejVlc",
+          "evidence": "YouTube metadata explicitly names Blackest Night. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_First_Piece",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Night\" OR \"The First Piece\" OR \"Prison Break\" OR \"The Phantom Zone\")",
+      "checked": "2026-10-22T01:28:41.430Z",
+      "matches": [
+        {
+          "title": "DCUO - The First Piece - Duo",
+          "url": "https://www.youtube.com/watch?v=Ua0RyLrzSX0",
+          "evidence": "YouTube metadata explicitly names The First Piece. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Prison_Break",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Night\" OR \"The First Piece\" OR \"Prison Break\" OR \"The Phantom Zone\")",
+      "checked": "2026-10-22T01:28:41.430Z",
+      "matches": [
+        {
+          "title": "DCUO Episode 21: T7 Raid \"Prison Break\" (Walkthrough + Commentary)",
+          "url": "https://www.youtube.com/watch?v=6Q6K7mjKhyA",
+          "evidence": "YouTube metadata explicitly names Prison Break. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO - Briefing & Reward (Prison Break) - Odyssey",
+          "url": "https://www.youtube.com/watch?v=SNHOuhKAdnA",
+          "evidence": "YouTube metadata explicitly names Prison Break. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Phantom_Zone",
+      "query": "DCUO site:youtube.com/watch (\"Blackest Night\" OR \"The First Piece\" OR \"Prison Break\" OR \"The Phantom Zone\")",
+      "checked": "2026-10-22T01:28:41.430Z",
+      "matches": [
+        {
+          "title": "DCUO Episode 22 - The Phantom Zone (Gameplay & Cutscenes) NOHUD",
+          "url": "https://www.youtube.com/watch?v=mY0bCo9h5qE",
+          "evidence": "YouTube metadata explicitly names The Phantom Zone. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online : The Phantom Zone",
+          "url": "https://www.youtube.com/watch?v=ywUCsUsLG44",
+          "evidence": "YouTube metadata explicitly names The Phantom Zone. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Science_Spire",
+      "query": "DCUO site:youtube.com/watch (\"The Science Spire\" OR \"The Will of Darkseid\" OR \"Brainiac's Bottle Ship\" OR \"Harley's Heist\")",
+      "checked": "2026-10-22T01:28:42.927Z",
+      "matches": []
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Will_of_Darkseid",
+      "query": "DCUO site:youtube.com/watch (\"The Science Spire\" OR \"The Will of Darkseid\" OR \"Brainiac's Bottle Ship\" OR \"Harley's Heist\")",
+      "checked": "2026-10-22T01:28:42.927Z",
+      "matches": [
+        {
+          "title": "DCUO - The Will of Darkseid - Duo",
+          "url": "https://www.youtube.com/watch?v=EuAfFBCyNXY",
+          "evidence": "YouTube metadata explicitly names The Will of Darkseid. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online (DCUO) - The Will of Darkseid - 2 Player (Duo) - T4",
+          "url": "https://www.youtube.com/watch?v=pTigdYV57Cw",
+          "evidence": "YouTube metadata explicitly names The Will of Darkseid. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac's_Bottle_Ship",
+      "query": "DCUO site:youtube.com/watch (\"The Science Spire\" OR \"The Will of Darkseid\" OR \"Brainiac's Bottle Ship\" OR \"Harley's Heist\")",
+      "checked": "2026-10-22T01:28:42.927Z",
+      "matches": [
+        {
+          "title": "DCUO Episode 23: T7 Raid \"Brainiac's Bottle Ship\" (Walkthrough + Commentary)",
+          "url": "https://www.youtube.com/watch?v=PVsTVTVPkjk",
+          "evidence": "YouTube metadata explicitly names Brainiac's Bottle Ship. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online Full Episode 23 - Brainiac's Bottle Ship/Will of Darkseid (Gameplay & Cutscenes)",
+          "url": "https://www.youtube.com/watch?v=5kbPDFC7ex8",
+          "evidence": "YouTube metadata explicitly names Brainiac's Bottle Ship. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Harley's_Heist",
+      "query": "DCUO site:youtube.com/watch (\"The Science Spire\" OR \"The Will of Darkseid\" OR \"Brainiac's Bottle Ship\" OR \"Harley's Heist\")",
+      "checked": "2026-10-22T01:28:42.927Z",
+      "matches": [
+        {
+          "title": "DCUO; Harley's Heist",
+          "url": "https://www.youtube.com/watch?v=L59Fu-MUecE",
+          "evidence": "YouTube metadata explicitly names Harley's Heist. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DC Universe Online : Harley's Heist hero",
+          "url": "https://www.youtube.com/watch?v=GtUd5ATRJ5w",
+          "evidence": "YouTube metadata explicitly names Harley's Heist. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Darkseid's_War_Factory",
+      "query": "DCUO site:youtube.com/watch (\"Darkseid's War Factory\" OR \"Iceberg Lounge\" OR \"A Rip in Time\" OR \"Wayne Manor Gala\")",
+      "checked": "2026-10-22T01:28:44.356Z",
+      "matches": [
+        {
+          "title": "DCUO Episode 24 - Darkseid's War Factory (Gameplay & Cutscenes) NOHUD",
+          "url": "https://www.youtube.com/watch?v=NdbxGUmeOA8",
+          "evidence": "YouTube metadata explicitly names Darkseid's War Factory. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Iceberg_Lounge_(Challenge)",
+      "query": "DCUO site:youtube.com/watch (\"Darkseid's War Factory\" OR \"Iceberg Lounge\" OR \"A Rip in Time\" OR \"Wayne Manor Gala\")",
+      "checked": "2026-10-22T01:28:44.356Z",
+      "matches": [
+        {
+          "title": "DCUO Iceberg Lounge Elite",
+          "url": "https://www.youtube.com/watch?v=O7v7sw_8S50",
+          "evidence": "YouTube metadata explicitly names Iceberg Lounge. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO Batman Day 2025 - The Iceberg Lounge",
+          "url": "https://www.youtube.com/watch?v=rVFtlQMvWtc",
+          "evidence": "YouTube metadata explicitly names Iceberg Lounge. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/A_Rip_in_Time",
+      "query": "DCUO site:youtube.com/watch (\"Darkseid's War Factory\" OR \"Iceberg Lounge\" OR \"A Rip in Time\" OR \"Wayne Manor Gala\")",
+      "checked": "2026-10-22T01:28:44.356Z",
+      "matches": []
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wayne_Manor_Gala",
+      "query": "DCUO site:youtube.com/watch (\"Darkseid's War Factory\" OR \"Iceberg Lounge\" OR \"A Rip in Time\" OR \"Wayne Manor Gala\")",
+      "checked": "2026-10-22T01:28:44.356Z",
+      "matches": [
+        {
+          "title": "DCUO: Wayne Manor Gala - Duo",
+          "url": "https://www.youtube.com/watch?v=kjzmuLra1hc",
+          "evidence": "YouTube metadata explicitly names Wayne Manor Gala. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO Episode 26: T8 DUO \"Wayne Manor Gala\" (Walkthrough)",
+          "url": "https://www.youtube.com/watch?v=rL70IjuGXis",
+          "evidence": "YouTube metadata explicitly names Wayne Manor Gala. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Kandor_Central_Tower",
+      "query": "DCUO site:youtube.com/watch (\"Kandor Central Tower\" OR \"Patrol Catastrophe\" OR \"Shadows Over Argo\" OR \"Wrath of the Worldkillers\")",
+      "checked": "2026-10-22T01:28:45.957Z",
+      "matches": [
+        {
+          "title": "DCUO Episode 26: T8 Raid \"Kandor Central Tower\" FULL RUN",
+          "url": "https://www.youtube.com/watch?v=8zRF8WBxzwc",
+          "evidence": "YouTube metadata explicitly names Kandor Central Tower. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO - Episode 26 - Kandor Central Tower - Kryptonian Hat-Trick",
+          "url": "https://www.youtube.com/watch?v=AYNiI6ozlTE",
+          "evidence": "YouTube metadata explicitly names Kandor Central Tower. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Patrol_Catastrophe",
+      "query": "DCUO site:youtube.com/watch (\"Kandor Central Tower\" OR \"Patrol Catastrophe\" OR \"Shadows Over Argo\" OR \"Wrath of the Worldkillers\")",
+      "checked": "2026-10-22T01:28:45.957Z",
+      "matches": [
+        {
+          "title": "DCUO - Patrol Catastrophe Solo - Amazon Fury Part 2",
+          "url": "https://www.youtube.com/watch?v=n7Oi8KoPH30",
+          "evidence": "YouTube metadata explicitly names Patrol Catastrophe. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "Amazon Fury P2 Patrol Catastrophe Solo Feat Guide DCUO",
+          "url": "https://www.youtube.com/watch?v=qTYep392VBk",
+          "evidence": "YouTube metadata explicitly names Patrol Catastrophe. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo",
+      "query": "DCUO site:youtube.com/watch (\"Kandor Central Tower\" OR \"Patrol Catastrophe\" OR \"Shadows Over Argo\" OR \"Wrath of the Worldkillers\")",
+      "checked": "2026-10-22T01:28:45.957Z",
+      "matches": [
+        {
+          "title": "DCUO Shadows over Argo Begins",
+          "url": "https://www.youtube.com/watch?v=z5ljWIpmivo",
+          "evidence": "YouTube metadata explicitly names Shadows Over Argo. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "DCUO Shadows over Argo Aftershock / Zor-El's Lab",
+          "url": "https://www.youtube.com/watch?v=i9khCR43nC0",
+          "evidence": "YouTube metadata explicitly names Shadows Over Argo. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers",
+      "query": "DCUO site:youtube.com/watch (\"Kandor Central Tower\" OR \"Patrol Catastrophe\" OR \"Shadows Over Argo\" OR \"Wrath of the Worldkillers\")",
+      "checked": "2026-10-22T01:28:45.957Z",
+      "matches": [
+        {
+          "title": "DCUO / Wrath of the Worldkillers Story Walkthrough",
+          "url": "https://www.youtube.com/watch?v=ZPafRBLhiqQ",
+          "evidence": "YouTube metadata explicitly names Wrath of the Worldkillers. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        },
+        {
+          "title": "🔴 LIVE NOW! DCUO WRATH OF THE WORLDKILLERS — NEW CONTENT, GEAR & FEATS!",
+          "url": "https://www.youtube.com/watch?v=Qrw9Iowbutc",
+          "evidence": "YouTube metadata explicitly names Wrath of the Worldkillers. Title and availability checked on 2026-10-22. Full gameplay, route and mechanics have not been verified."
+        }
+      ]
+    }
+  ]
+}

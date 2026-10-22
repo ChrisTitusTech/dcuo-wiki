@@ -66,3 +66,21 @@ test("every guide has valid audited release metadata, with chapter parents and s
   ]);
   assert.deepEqual(releaseIdsFor("unknown-guide"), []);
 });
+
+test("each numbered Episode and chapter has substantive imported content", () => {
+  for (const release of releases.filter((r) =>
+    ["episode", "chapter"].includes(r.kind),
+  ))
+    assert.ok(
+      articles.some((a) => releaseIdsFor(a.slug).includes(release.id)),
+      release.label,
+    );
+  assert.deepEqual(releaseIdsFor("Patrol_Catastrophe"), ["episode-13"]);
+  assert.deepEqual(releaseIdsFor("Return_to_the_Nexus"), ["episode-13"]);
+  assert.deepEqual(releaseIdsFor("Iceberg_Lounge_Challenge"), ["episode-25"]);
+  assert.deepEqual(releaseIdsFor("Kandor_Central_Tower"), ["episode-26"]);
+  assert.deepEqual(releaseIdsFor("Wrath_of_the_Worldkillers"), [
+    "children-of-krypton-chapter-2",
+    "children-of-krypton",
+  ]);
+});

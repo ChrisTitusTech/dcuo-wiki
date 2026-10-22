@@ -1,4 +1,22 @@
 // Keep imported guide layout compact while retaining source images and references.
+export function missionSummary(article) {
+  const captions = new Set(
+    article.sections.flatMap((s) =>
+      (s.images || []).map((i) => i.label.trim()),
+    ),
+  );
+  const substantive = (text) =>
+    text &&
+    text.trim().split(/\s+/).length >= 8 &&
+    !captions.has(text.trim()) &&
+    !/^Source details and references/.test(text);
+  return substantive(article.summary)
+    ? article.summary
+    : article.sections
+        .flatMap((s) => s.items)
+        .find(substantive)
+        ?.slice(0, 420) || "";
+}
 export function missionLayout(article) {
   const sections = structuredClone(article.sections);
   const maps = new Set((article.location?.maps || []).map((m) => m.url));

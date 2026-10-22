@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "cash",
+    "name": "Cash",
+    "aliases": [
+      "Cash",
+      "Cashs"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Cash",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MoneyPickup.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/b/b7/MoneyPickup.png/revision/latest?cb=20131126104145"
+  },
+  {
+    "id": "escrow",
+    "name": "Escrow",
+    "aliases": [
+      "Escrow",
+      "Escrows"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Escrow",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Escrow.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/2d/Escrow.png/revision/latest?cb=20200224123352"
+  },
+  {
+    "id": "daybreak-cash",
+    "name": "Daybreak Cash",
+    "aliases": [
+      "Daybreak Cash",
+      "Daybreak Cashs"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Daybreak_Cash",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Daybreak_Cash_Logo.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/e/ea/Daybreak_Cash_Logo.png/revision/latest?cb=20200224123351"
+  },
+  {
+    "id": "loyalty-points",
+    "name": "Loyalty Points",
+    "aliases": [
+      "Loyalty Points"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Loyalty_Points",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:LoyaltyPoints.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/2d/LoyaltyPoints.png/revision/latest?cb=20200224123530"
+  },
+  {
+    "id": "ally-favor",
+    "name": "Ally Favor",
+    "aliases": [
+      "Ally Favor",
+      "Ally Favors"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Ally_Favor",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:AllyFavor.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/1d/AllyFavor.png/revision/latest?cb=20210904231729"
+  },
+  {
+    "id": "grain-of-time",
+    "name": "Grain of Time",
+    "aliases": [
+      "Grain of Time",
+      "Grains of Time",
+      "Grain of Times"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Grain_of_Time",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:GrainOfTime.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/3/35/GrainOfTime.png/revision/latest?cb=20210904231731"
+  },
+  {
+    "id": "mark-of-legend",
+    "name": "Mark of Legend",
+    "aliases": [
+      "Mark of Legend",
+      "Marks of Legend",
+      "Mark of Legends"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Legend",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofLegend.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/0/09/MarkofLegend.png/revision/latest?cb=20200224123701"
+  },
+  {
+    "id": "mark-of-valor",
+    "name": "Mark of Valor",
+    "aliases": [
+      "Mark of Valor",
+      "Marks of Valor",
+      "Mark of Valors"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Valor",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofValor.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/14/MarkofValor.png/revision/latest?cb=20200224123826"
+  },
+  {
+    "id": "source-mark",
+    "name": "Source Mark",
+    "aliases": [
+      "Source Mark",
+      "Source Marks"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Source_Mark",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SourceMark.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/27/SourceMark.png/revision/latest?cb=20200224124003"
+  },
+  {
+    "id": "sunstone-fragment",
+    "name": "Sunstone Fragment",
+    "aliases": [
+      "Sunstone Fragment",
+      "Sunstone Fragments"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Sunstone_Fragment",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Sunstone_Fragments.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/41/Icon_Sunstone_Fragments.png/revision/latest?cb=20260612074210"
+  },
+  {
+    "id": "time-beacon",
+    "name": "Time Beacon",
+    "aliases": [
+      "Time Beacon",
+      "Time Beacons"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Time_Beacon",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:TimeBeacon.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/4f/TimeBeacon.png/revision/latest?cb=20201105194825"
+  },
+  {
+    "id": "titans-token",
+    "name": "Titans Token",
+    "aliases": [
+      "Titans Token",
+      "Titans Tokens"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Titans_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Titans_Token.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/92/Icon_Titans_Token.png/revision/latest?cb=20261010165841",
+    "iconSource": "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers"
+  },
+  {
+    "id": "qwardian-crown",
+    "name": "Qwardian Crown",
+    "aliases": [
+      "Qwardian Crown",
+      "Qwardian Crowns"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Qwardian_Crown",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Qwardian_Crowns.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/1b/Qwardian_Crowns.png/revision/latest?cb=20200224123849"
+  },
+  {
+    "id": "hearts",
+    "name": "Hearts",
+    "aliases": [
+      "Hearts",
+      "Heart"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Hearts",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Hearts.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/26/Hearts.png/revision/latest?cb=20200224123353"
+  },
+  {
+    "id": "lucky-clover",
+    "name": "Lucky Clover",
+    "aliases": [
+      "Lucky Clover",
+      "Lucky Clovers"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Lucky_Clover",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:LuckyClover.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/15/LuckyClover.png/revision/latest?cb=20200224123533"
+  },
+  {
+    "id": "seed-pods",
+    "name": "Seed Pods",
+    "aliases": [
+      "Seed Pods",
+      "Seed Pod"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Seed_Pods",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SeedPods.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/44/SeedPods.png/revision/latest?cb=20200224123959"
+  },
+  {
+    "id": "sand-dollar",
+    "name": "Sand Dollar",
+    "aliases": [
+      "Sand Dollar",
+      "Sand Dollars"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Sand_Dollar",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SandDollar.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/f/fa/SandDollar.png/revision/latest?cb=20200224123858"
+  },
+  {
+    "id": "prize-ticket",
+    "name": "Prize Ticket",
+    "aliases": [
+      "Prize Ticket",
+      "Prize Tickets"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Prize_Ticket",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:PrizeTicket.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/0/0e/PrizeTicket.png/revision/latest?cb=20220908135505"
+  },
+  {
+    "id": "spooky-bite",
+    "name": "Spooky Bite",
+    "aliases": [
+      "Spooky Bite",
+      "Spooky Bites"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Spooky_Bite",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Spooky_Token_or_Bite.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/a/a8/Spooky_Token_or_Bite.png/revision/latest?cb=20200224124007"
+  },
+  {
+    "id": "holly-leaves",
+    "name": "Holly Leaves",
+    "aliases": [
+      "Holly Leaves",
+      "Holly Leaf"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Holly_Leaves",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:HollyLeaves.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/10/HollyLeaves.png/revision/latest?cb=20200224123354"
+  },
+  {
+    "id": "ally-legion-tribute",
+    "name": "Ally Legion Tribute",
+    "aliases": [
+      "Ally Legion Tribute",
+      "Ally Legion Tributes"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Ally_Legion_Tribute",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:IconAllyLegionTribute.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/9b/IconAllyLegionTribute.png/revision/latest?cb=20251203230828"
+  },
+  {
+    "id": "batman-day-2024-coin",
+    "name": "Batman Day 2024 Coin",
+    "aliases": [
+      "Batman Day 2024 Coin",
+      "Batman Day 2024 Coins"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Batman_Day_2024_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:BatmanDay2024Coin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/7/7b/BatmanDay2024Coin.png/revision/latest?cb=20240911214407"
+  },
+  {
+    "id": "outsiders-ops-2024-coin",
+    "name": "Outsiders Ops 2024 Coin",
+    "aliases": [
+      "Outsiders Ops 2024 Coin",
+      "Outsiders Ops 2024 Coins"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Outsiders_Ops_2024_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:OutsidersOps2024Coin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/8/81/OutsidersOps2024Coin.png/revision/latest?cb=20241106135733"
+  },
+  {
+    "id": "prestige",
+    "name": "Prestige",
+    "aliases": [
+      "Prestige",
+      "Prestiges"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Prestige",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Prestige.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/d/d6/Prestige.png/revision/latest?cb=20200225080718"
+  },
+  {
+    "id": "quarks",
+    "name": "Quarks",
+    "aliases": [
+      "Quarks",
+      "Quarkss"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Quarks",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Quarks.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/6/64/Quarks.png/revision/latest?cb=20200224123844"
+  },
+  {
+    "id": "renown",
+    "name": "Renown",
+    "aliases": [
+      "Renown",
+      "Renowns"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Renown"
+  },
+  {
+    "id": "replay-badges",
+    "name": "Replay Badges",
+    "aliases": [
+      "Replay Badges",
+      "Replay Badgess"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Replay_Badges",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:ReplayBadge2.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/7/74/ReplayBadge2.png/revision/latest?cb=20200224123856"
+  },
+  {
+    "id": "stabilizer",
+    "name": "Stabilizer",
+    "aliases": [
+      "Stabilizer",
+      "Stabilizers"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Stabilizer",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Stabilizer.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/1b/Icon_Stabilizer.png/revision/latest?cb=20200224123513"
+  },
+  {
+    "id": "stabilizer-fragment",
+    "name": "Stabilizer Fragment",
+    "aliases": [
+      "Stabilizer Fragment",
+      "Stabilizer Fragments"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Stabilizer_Fragment",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Stabilizer_Fragments.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/23/Icon_Stabilizer_Fragments.png/revision/latest?cb=20200224123358"
+  },
+  {
+    "id": "wolf-pack-token",
+    "name": "Wolf Pack Token",
+    "aliases": [
+      "Wolf Pack Token",
+      "Wolf Pack Tokens"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Wolf_Pack_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Wolf_Pack_Token.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/8/8d/Icon_Wolf_Pack_Token.png/revision/latest?cb=20231231053616"
+  },
+  {
+    "id": "wonder-woman-day-2024-coin",
+    "name": "Wonder Woman Day 2024 Coin",
+    "aliases": [
+      "Wonder Woman Day 2024 Coin",
+      "Wonder Woman Day 2024 Coins"
+    ],
+    "retired": false,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Wonder_Woman_Day_2024_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:WonderWomanDay2024Coin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/a/a7/WonderWomanDay2024Coin.png/revision/latest?cb=20241016103732"
+  },
+  {
+    "id": "ancient-coin",
+    "name": "Ancient Coin",
+    "aliases": [
+      "Ancient Coin",
+      "Ancient Coins"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Ancient_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:AncientCoin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/3/3f/AncientCoin.png/revision/latest?cb=20200224123347"
+  },
+  {
+    "id": "aphrodite-s-token",
+    "name": "Aphrodite's Token",
+    "aliases": [
+      "Aphrodite's Token",
+      "Aphrodite's Tokens"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Aphrodite's_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:AphroditesToken.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/2a/AphroditesToken.png/revision/latest?cb=20200225234806"
+  },
+  {
+    "id": "atlantean-crown",
+    "name": "Atlantean Crown",
+    "aliases": [
+      "Atlantean Crown",
+      "Atlantean Crowns"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Atlantean_Crown",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:AtlanteanCrown.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/17/AtlanteanCrown.png/revision/latest?cb=20200224123349"
+  },
+  {
+    "id": "bizarro-sample",
+    "name": "Bizarro Sample",
+    "aliases": [
+      "Bizarro Sample",
+      "Bizarro Samples"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Bizarro_Sample",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:BizarroSample.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/2c/BizarroSample.png/revision/latest?cb=20240514130325"
+  },
+  {
+    "id": "coin-of-ra",
+    "name": "Coin of Ra",
+    "aliases": [
+      "Coin of Ra",
+      "Coins of Ra",
+      "Coin of Ras"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Coin_of_Ra",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:CoinOfRa.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/a/a2/CoinOfRa.png/revision/latest?cb=20221021214135"
+  },
+  {
+    "id": "coney-coin",
+    "name": "Coney Coin",
+    "aliases": [
+      "Coney Coin",
+      "Coney Coins"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Coney_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:ConeyCoin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/18/ConeyCoin.png/revision/latest?cb=20240902143202"
+  },
+  {
+    "id": "daemohedron",
+    "name": "Daemohedron",
+    "aliases": [
+      "Daemohedron",
+      "Daemohedrons"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Daemohedron",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Daemohedron.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/7/7c/Icon_Daemohedron.png/revision/latest?cb=20200224123355"
+  },
+  {
+    "id": "dark-metal-coin",
+    "name": "Dark Metal Coin",
+    "aliases": [
+      "Dark Metal Coin",
+      "Dark Metal Coins"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Dark_Metal_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_DarkMetalCoin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/e/e0/Icon_DarkMetalCoin.png/revision/latest?cb=20200224123356"
+  },
+  {
+    "id": "death-metal",
+    "name": "Death Metal",
+    "aliases": [
+      "Death Metal",
+      "Death Metals"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Death_Metal",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:DeathMetal.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/95/DeathMetal.png/revision/latest?cb=20220407203233"
+  },
+  {
+    "id": "destiny-token",
+    "name": "Destiny Token",
+    "aliases": [
+      "Destiny Token",
+      "Destiny Tokens"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Destiny_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:DestinyToken.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/e/e1/DestinyToken.png/revision/latest?cb=20220709204035"
+  },
+  {
+    "id": "empyrean-aether",
+    "name": "Empyrean Aether",
+    "aliases": [
+      "Empyrean Aether",
+      "Empyrean Aethers"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Empyrean_Aether",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:EmpyreanAether.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/90/EmpyreanAether.png/revision/latest?cb=20200804213305"
+  },
+  {
+    "id": "encrypted-schematic",
+    "name": "Encrypted Schematic",
+    "aliases": [
+      "Encrypted Schematic",
+      "Encrypted Schematics"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Encrypted_Schematic",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:EncryptedSchematic.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/94/EncryptedSchematic.png/revision/latest?cb=20230502115243"
+  },
+  {
+    "id": "fate-token",
+    "name": "Fate Token",
+    "aliases": [
+      "Fate Token",
+      "Fate Tokens"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Fate_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:FateToken.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/0/07/FateToken.png/revision/latest?cb=20220709204035"
+  },
+  {
+    "id": "fulfilled-waller-contract",
+    "name": "Fulfilled Waller Contract",
+    "aliases": [
+      "Fulfilled Waller Contract",
+      "Fulfilled Waller Contracts"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Fulfilled_Waller_Contract",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Fulfilled_Waller_Contract.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/26/Fulfilled_Waller_Contract.png/revision/latest?cb=20200606163400"
+  },
+  {
+    "id": "influence",
+    "name": "Influence",
+    "aliases": [
+      "Influence",
+      "Influences"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Influence",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Influence.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/91/Influence.png/revision/latest?cb=20200224123527"
+  },
+  {
+    "id": "justice-token",
+    "name": "Justice Token",
+    "aliases": [
+      "Justice Token",
+      "Justice Tokens"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Justice_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:JusticeToken.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/d/d5/JusticeToken.png/revision/latest?cb=20211210013906"
+  },
+  {
+    "id": "kaznia-crown",
+    "name": "Kaznia Crown",
+    "aliases": [
+      "Kaznia Crown",
+      "Kaznia Crowns"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Kaznia_Crown",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Kaznia_Crown.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/5/54/Kaznia_Crown.png/revision/latest?cb=20250201133243"
+  },
+  {
+    "id": "lexcoin",
+    "name": "LexCoin",
+    "aliases": [
+      "LexCoin",
+      "LexCoins"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#LexCoin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:LexCoin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/8/8e/LexCoin.png/revision/latest?cb=20200421224037"
+  },
+  {
+    "id": "marked-bill",
+    "name": "Marked Bill",
+    "aliases": [
+      "Marked Bill",
+      "Marked Bills"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Marked_Bill",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Marked_Bill.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/1/1c/Marked_Bill.png/revision/latest?cb=20200224123535"
+  },
+  {
+    "id": "mark-of-allegiance",
+    "name": "Mark of Allegiance",
+    "aliases": [
+      "Mark of Allegiance",
+      "Marks of Allegiance",
+      "Mark of Allegiances"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Allegiance",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofAllegiance.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/f/f3/MarkofAllegiance.png/revision/latest?cb=20200224123539"
+  },
+  {
+    "id": "mark-of-conquest",
+    "name": "Mark of Conquest",
+    "aliases": [
+      "Mark of Conquest",
+      "Marks of Conquest",
+      "Mark of Conquests"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Conquest",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofConquest.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/8/89/MarkofConquest.png/revision/latest?cb=20200224123651"
+  },
+  {
+    "id": "mark-of-distinction",
+    "name": "Mark of Distinction",
+    "aliases": [
+      "Mark of Distinction",
+      "Marks of Distinction",
+      "Mark of Distinctions"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Distinction"
+  },
+  {
+    "id": "mark-of-fury",
+    "name": "Mark of Fury",
+    "aliases": [
+      "Mark of Fury",
+      "Marks of Fury",
+      "Mark of Furys"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Fury",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofFury.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/6/66/MarkofFury.png/revision/latest?cb=20200224123655"
+  },
+  {
+    "id": "mark-of-krypton",
+    "name": "Mark of Krypton",
+    "aliases": [
+      "Mark of Krypton",
+      "Marks of Krypton",
+      "Mark of Kryptons"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Krypton",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofKrypton.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/47/MarkofKrypton.png/revision/latest?cb=20200224123658"
+  },
+  {
+    "id": "mark-of-lore",
+    "name": "Mark of Lore",
+    "aliases": [
+      "Mark of Lore",
+      "Marks of Lore",
+      "Mark of Lores"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Lore",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofLore.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/45/MarkofLore.png/revision/latest?cb=20200224123705"
+  },
+  {
+    "id": "mark-of-momentum",
+    "name": "Mark of Momentum",
+    "aliases": [
+      "Mark of Momentum",
+      "Marks of Momentum",
+      "Mark of Momentums"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Momentum",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofMomentum.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/7/7b/MarkofMomentum.png/revision/latest?cb=20200224123709"
+  },
+  {
+    "id": "mark-of-reality",
+    "name": "Mark of Reality",
+    "aliases": [
+      "Mark of Reality",
+      "Marks of Reality",
+      "Mark of Realitys"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Reality",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofReality.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/25/MarkofReality.png/revision/latest?cb=20200224123711"
+  },
+  {
+    "id": "mark-of-strategy",
+    "name": "Mark of Strategy",
+    "aliases": [
+      "Mark of Strategy",
+      "Marks of Strategy",
+      "Mark of Strategys"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Strategy",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofStrategy.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/a/ae/MarkofStrategy.png/revision/latest?cb=20200224123714"
+  },
+  {
+    "id": "mark-of-tactics",
+    "name": "Mark of Tactics",
+    "aliases": [
+      "Mark of Tactics",
+      "Marks of Tactics",
+      "Mark of Tacticss"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Tactics",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofTactics.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/f/f1/MarkofTactics.png/revision/latest?cb=20200224123717"
+  },
+  {
+    "id": "mark-of-triumph",
+    "name": "Mark of Triumph",
+    "aliases": [
+      "Mark of Triumph",
+      "Marks of Triumph",
+      "Mark of Triumphs"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Triumph",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofTriumph.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/5/53/MarkofTriumph.png/revision/latest?cb=20200224123720"
+  },
+  {
+    "id": "mark-of-victory",
+    "name": "Mark of Victory",
+    "aliases": [
+      "Mark of Victory",
+      "Marks of Victory",
+      "Mark of Victorys"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Victory",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofVictory.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/e/ec/MarkofVictory.png/revision/latest?cb=20200224123833"
+  },
+  {
+    "id": "mark-of-victory-old",
+    "name": "Mark of Victory (old)",
+    "aliases": [
+      "Mark of Victory (old)",
+      "Marks of Victory (old)"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_Victory_(old)",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofVictory_(old).png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/6/62/MarkofVictory_%28old%29.png/revision/latest?cb=20200224123830"
+  },
+  {
+    "id": "mark-of-war",
+    "name": "Mark of War",
+    "aliases": [
+      "Mark of War",
+      "Marks of War",
+      "Mark of Wars"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mark_of_War",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MarkofWar.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/d/d7/MarkofWar.png/revision/latest?cb=20200224123838"
+  },
+  {
+    "id": "meta-clinic-id",
+    "name": "Meta Clinic ID",
+    "aliases": [
+      "Meta Clinic ID",
+      "Meta Clinic IDs"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Meta_Clinic_ID",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:MetaClinicID.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/3/35/MetaClinicID.png/revision/latest?cb=20230405225137"
+  },
+  {
+    "id": "mogo-acorn",
+    "name": "Mogo Acorn",
+    "aliases": [
+      "Mogo Acorn",
+      "Mogo Acorns"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mogo_Acorn",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Mogo_Acorn.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/d/d3/Icon_Mogo_Acorn.png/revision/latest?cb=20250927200439"
+  },
+  {
+    "id": "mogo-berry",
+    "name": "Mogo Berry",
+    "aliases": [
+      "Mogo Berry",
+      "Mogo Berries"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mogo_Berry",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Mogo_Berry.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/0/0b/Icon_Mogo_Berry.png/revision/latest?cb=20250529113108"
+  },
+  {
+    "id": "mogo-sprout",
+    "name": "Mogo Sprout",
+    "aliases": [
+      "Mogo Sprout",
+      "Mogo Sprouts"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Mogo_Sprout",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Mogo_Sprout.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/0/04/Icon_Mogo_Sprout.png/revision/latest?cb=20260128221957"
+  },
+  {
+    "id": "rath-crown",
+    "name": "Rath Crown",
+    "aliases": [
+      "Rath Crown",
+      "Rath Crowns"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Rath_Crown",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:RathCrown.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/3/3c/RathCrown.png/revision/latest?cb=20200224123852"
+  },
+  {
+    "id": "solar-credit",
+    "name": "Solar Credit",
+    "aliases": [
+      "Solar Credit",
+      "Solar Credits"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Solar_Credit",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SolarCredit.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/c/cd/SolarCredit.png/revision/latest?cb=20201105194741"
+  },
+  {
+    "id": "splintered-coin",
+    "name": "Splintered Coin",
+    "aliases": [
+      "Splintered Coin",
+      "Splintered Coins"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Splintered_Coin",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SplinteredCoin.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/4b/SplinteredCoin.png/revision/latest?cb=20200804213235"
+  },
+  {
+    "id": "spore",
+    "name": "Spore",
+    "aliases": [
+      "Spore",
+      "Spores"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Spore",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Spore.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/a/a9/Spore.png/revision/latest?cb=20200224124011"
+  },
+  {
+    "id": "station-cash",
+    "name": "Station Cash",
+    "aliases": [
+      "Station Cash",
+      "Station Cashs"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Station_Cash"
+  },
+  {
+    "id": "symbol-of-power",
+    "name": "Symbol of Power",
+    "aliases": [
+      "Symbol of Power",
+      "Symbols of Power",
+      "Symbol of Powers"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Symbol_of_Power",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SymbolofPower.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/b/bf/SymbolofPower.png/revision/latest?cb=20200224124022"
+  },
+  {
+    "id": "symbol-of-light-ii",
+    "name": "Symbol of Light II",
+    "aliases": [
+      "Symbol of Light II",
+      "Symbols of Light II",
+      "Symbol of Light IIs"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Symbol_of_Light_II",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SymbolofLightII.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/2/23/SymbolofLightII.png/revision/latest?cb=20200224124017"
+  },
+  {
+    "id": "symbol-of-myth-ii",
+    "name": "Symbol of Myth II",
+    "aliases": [
+      "Symbol of Myth II",
+      "Symbols of Myth II",
+      "Symbol of Myth IIs"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Symbol_of_Myth_II",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:SymbolofMythII.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/e/e2/SymbolofMythII.png/revision/latest?cb=20200224124020"
+  },
+  {
+    "id": "tarot-card",
+    "name": "Tarot Card",
+    "aliases": [
+      "Tarot Card",
+      "Tarot Cards"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Tarot_Card",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:TarotCard.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/3/39/TarotCard.png/revision/latest?cb=20230917205824"
+  },
+  {
+    "id": "thanagarian-mark",
+    "name": "Thanagarian Mark",
+    "aliases": [
+      "Thanagarian Mark",
+      "Thanagarian Marks"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Thanagarian_Mark",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Thanagarian_Mark.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/c/cb/Icon_Thanagarian_Mark.png/revision/latest?cb=20200224123517"
+  },
+  {
+    "id": "titans-cred",
+    "name": "Titans Cred",
+    "aliases": [
+      "Titans Cred",
+      "Titans Creds"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Titans_Cred",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:TitansCred.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/3/3b/TitansCred.png/revision/latest?cb=20200224124026"
+  },
+  {
+    "id": "tribute",
+    "name": "Tribute",
+    "aliases": [
+      "Tribute",
+      "Tributes"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Tribute",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Tribute.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/8/81/Tribute.png/revision/latest?cb=20200224124029"
+  },
+  {
+    "id": "ultrabuck",
+    "name": "Ultrabuck",
+    "aliases": [
+      "Ultrabuck",
+      "Ultrabucks"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Ultrabuck",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Ultrabuck.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/b/b8/Ultrabuck.png/revision/latest?cb=20200224124100"
+  },
+  {
+    "id": "waller-contract-line-item",
+    "name": "Waller Contract Line Item",
+    "aliases": [
+      "Waller Contract Line Item",
+      "Waller Contract Line Items"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Waller_Contract_Line_Item",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Waller_Contract_Line_Item.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/7/75/Waller_Contract_Line_Item.png/revision/latest?cb=20200606163310"
+  },
+  {
+    "id": "war-bond",
+    "name": "War Bond",
+    "aliases": [
+      "War Bond",
+      "War Bonds"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#War_Bond",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:WarBond.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/4/4a/WarBond.png/revision/latest?cb=20200224124104"
+  },
+  {
+    "id": "wayne-casino-token",
+    "name": "Wayne Casino Token",
+    "aliases": [
+      "Wayne Casino Token",
+      "Wayne Casino Tokens"
+    ],
+    "retired": true,
+    "source": "https://dcuniverseonline.fandom.com/wiki/Currency#Wayne_Casino_Token",
+    "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:WayneCasinoToken.png",
+    "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/f/f9/WayneCasinoToken.png/revision/latest?cb=20210418142118"
+  }
+]

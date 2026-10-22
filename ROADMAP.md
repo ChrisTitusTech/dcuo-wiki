@@ -292,3 +292,29 @@ wiki migration remain explicit outstanding coverage, not published placeholders.
 - [x] Pass local gates, independent review, main deployment and live navigation checks.
 
 Validation before deployment: all 1,047 guides (1,006 quests) have audited assignments across 75 catalog groups. The catalog includes 48 Episodes, six chapters, two parent arcs, seasonal/special events and core/system content. There are 59 populated release landing pages; 16 unpopulated catalog entries link to source details without empty pages. Source capture hashes verified for 85 release/context pages. All article JSON remains unchanged, preserving editable part hashes. Astro check: 0 errors; 69 unit tests, 15 browser tests and 9 Cloudflare integration tests passed. Deployment dry run passed at 1,124 generated files and 946.83 KiB compressed Worker. Independent Codex review completed with no actionable findings; it independently repeated type, unit, build and browser checks. Production commit `81ea7fb` passed GitHub validation and Cloudflare Workers Builds. Live browser checks confirmed the Guides hub, all 75 catalog rows, the seven-guide Fight for the Light landing page and the six-guide Raging Night chapter filter. Public HTTP checks confirmed the hub, catalog, Episode/chapter/arc landing pages and article release links; uncovered release pages correctly return 404. All 66 sampled live article parts, including the Powers revision, were unchanged across deployment. Screenshot: `.import-cache/proofs/release-guides-live.jpg`; production evidence: `.import-cache/releases/production-verification.json`.
+
+## Release gaps and reward currencies (authorized October 21, 2026)
+
+- [x] Identify missing Episode coverage beyond Category:Missions.
+- [x] Import 29 specific instance guides, Patrol Catastrophe, and two Children of Krypton chapter guides; retain source catalog provenance and title-verified video references.
+- [x] Restore source icon-only reward currency labels and render names/icons without changing any existing editable parts.
+- [x] Upload and verify new R2 artwork/currency icons and mirror image provenance to D1.
+- [ ] Pass validation, independent review, main deployment and live checks.
+
+Local acceptance: 1,079 articles across all 75 populated release groups, including
+all 48 Episodes and six chapters. The 32 additions include 29 title-verified
+YouTube references. All 11,814 existing editable parts across 1,047 articles are
+unchanged. Reward rendering covers 84 named currencies with 81 sourced icons;
+28 icon-only reward items in 25 guides recover their missing currency labels.
+Source context is applied only to unchanged baseline text. Corrected amounts are
+preserved and escaped before display. D1 contains all 1,715 image records,
+including the 354 new records. All 708 new public R2 objects matched their local
+SHA-256 hashes after upload and cache refresh. Local gates passed: Astro check (0 errors), 74
+unit tests, 16 browser tests, 10 Cloudflare integration tests and deployment dry
+run (1,172 asset files, 1,094.60 KiB compressed Worker).
+
+Independent Codex review found two source-conversion defects: conflicting
+currency icons appended an extra label, and short image captions became guide
+summaries. Both are fixed with regression coverage. The final review found no
+actionable regressions and independently passed nine focused tests. Production
+deployment and live acceptance remain pending.

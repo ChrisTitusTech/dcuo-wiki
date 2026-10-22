@@ -1106,3 +1106,6 @@ html.image-viewer-open { overflow: hidden; }
   font-size: 0.85rem;
   color: var(--muted);
 }
+
+.reward-currency { display: inline-flex; align-items: center; gap: .25rem; white-space: nowrap; vertical-align: middle; }
+.reward-currency img { width: 24px; height: 24px; object-fit: contain; display: inline-block; }

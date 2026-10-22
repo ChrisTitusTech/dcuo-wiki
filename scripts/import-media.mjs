@@ -7,7 +7,20 @@ const directory = resolve(".import-cache/media");
 await mkdir(directory, { recursive: true });
 const sources = JSON.parse(await readFile("data/media-sources.json", "utf8"));
 const manifest = [];
+const prior = process.argv.includes("--new-only")
+  ? new Map(
+      JSON.parse(await readFile("data/media.json", "utf8")).map((m) => [
+        m.sourcePage,
+        m,
+      ]),
+    )
+  : new Map();
 for (const source of sources) {
+  const existing = prior.get(source.sourcePage);
+  if (existing && existing.originalUrl === source.originalUrl) {
+    manifest.push(existing);
+    continue;
+  }
   const url = new URL(source.originalUrl);
   if (
     url.protocol !== "https:" ||
