@@ -32,3 +32,15 @@ test("edited map references use the same safe gallery renderer", () => {
   for (const url of ["javascript:alert(1)", "https://user:pass@example.com/"])
     assert.throws(() => renderMapLinks([["Bad", url]]));
 });
+
+test("every catalog URL resolves to its R2 image, including encoded Unicode filenames", () => {
+  for (const m of media) {
+    for (const url of [m.sourcePage, new URL(m.sourcePage).href]) {
+      assert.match(
+        renderMapLinks([[m.sourcePage, url]]),
+        /<img src="https:\/\/images.dcuo-wiki.com\//,
+        m.sourcePage,
+      );
+    }
+  }
+});

@@ -1,7 +1,7 @@
 import media from "../data/media.json" with { type: "json" };
 const assets = new Map(
   media.flatMap((m) =>
-    [m.sourcePage, m.original, m.preview].map((url) => [url, m]),
+    [m.sourcePage, m.original, m.preview].map((url) => [new URL(url).href, m]),
   ),
 );
 const escape = (value) =>

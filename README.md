@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An exploratory Astro wiki for https://dcuo-wiki.com. Twelve curated starter guides, not a full Fandom mirror. Quest pilot: Grab and Smash, with five source map references and an explicitly documented unsuccessful YouTube match search.
+An Astro wiki for https://dcuo-wiki.com with 1,054 reviewed articles. The mission conversion adds 1,019 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
 
 ## Develop and validate
 
@@ -40,9 +40,29 @@ The importer uses Firecrawl v2, retries failures, and resumes from `.import-cach
 
 Review staged content against its source before adding a record to `src/data/articles.json`. Keep source and history attribution, retrieval date, substantive sections, and review status. Do not infer facts. Quest records require sourced location information or a researched limitation, plus a dated YouTube search. Videos require explicit quest-match evidence. Semantic quality still requires human/editorial judgment; automated rules are guardrails, not proof.
 
+## Mission conversion
+
+All 1,107 direct mission article captures are preserved in the ignored import cache, with capture hashes in `data/mission-downloads.json`. Conversion, enrichment and video research produce auditable records in `data/mission-conversion.json`, `data/mission-videos.json` and `data/mission-publication.json`. The current disposition is 1,019 new guides, seven existing guides supplemented, two canonical aliases and 79 held entries. Held pages lack usable source detail, location/video evidence or consistent prerequisites; they are not published as placeholders.
+
+```sh
+node scripts/convert-missions.mjs
+node scripts/enrich-mission-locations.mjs
+node scripts/research-mission-videos.mjs
+node scripts/verify-mission-videos.mjs
+node scripts/publish-missions.mjs
+# Review the proposed articles and disposition report before writing:
+node scripts/publish-missions.mjs --write
+npm run inventory
+npm run validate
+```
+
+Cached captures and YouTube metadata are needed for reproducible conversion. Search requires Firecrawl credentials for uncached queries. Publication preserves existing editable sections and appends missing source tables/images; it never overwrites live database revisions. Re-running against an already published dataset classifies those guides as existing. Named area or instance evidence is distinguished from precise map coordinates. Video titles and availability are verified; full gameplay, route, faction/version and timestamps are not implied by a title match.
+
+The library displays 48 matching guides per page. Search and category filters cover the entire published library and reset pagination.
+
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. Fourteen guides are published. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,054 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory
@@ -79,12 +99,12 @@ Do not replace the build command with plain `astro build`: that would skip publi
 
 ## Rollback and refresh
 
-Revert the offending commit on main and let Cloudflare rebuild, or restore a previous successful deployment in Cloudflare. Content updates are reviewed commits; no scheduled crawling is enabled. Content classification, automated enrichment, media mirroring, and player-account activation remain future milestones.
+Revert the offending commit on main and let Cloudflare rebuild, or restore a previous successful deployment in Cloudflare. Content updates are reviewed commits; no scheduled crawling is enabled. Source conversion, location enrichment and media mirroring have resumable scripts; unresolved content remains staged for further evidence.
 
 ## Attribution
 
-Article text is condensed and adapted from DC Universe Online Wiki contributors on Fandom. Each article links its source and contributor history. Adaptations retain the applicable source CC-BY-SA license; see https://www.fandom.com/licensing and per-source exceptions. This is not a blanket license for game imagery, trademarks, or repository code. Map screenshots are linked to their file pages, not redistributed. This fan site is unaffiliated with DC, Daybreak, or Fandom.
+Article text is condensed and adapted from DC Universe Online Wiki contributors on Fandom. Each article links its source and contributor history. Adaptations retain the applicable source CC-BY-SA license; see https://www.fandom.com/licensing and per-source exceptions. This is not a blanket license for game imagery, trademarks, or repository code. Copied images are served from the owned R2 image domain with original file-page attribution and rights notices. This fan site is unaffiliated with DC, Daybreak, or Fandom.
 
 ## Player accounts
 
-Discord sign-in, public character profiles, optional screenshots, and pending wiki suggestions are implemented but await provider/database activation. The owner selected exact Census character-name matching as sufficient; this confirms a public character record, not ownership. Server checks prevent contributions without a Census match and recheck Census at submission. See [account setup and acceptance checks](docs/ACCOUNTS.md). Until activated, the account page explains its unavailable state and existing wiki guides remain readable.
+Discord sign-in, public character profiles, optional screenshots and live wiki corrections are implemented and activated. The owner selected exact Census character-name matching as sufficient; this confirms a public character record, not ownership. Server checks prevent contributions without a Census match and recheck Census at submission; a character cannot be claimed by multiple accounts. See [account setup and acceptance checks](docs/ACCOUNTS.md). The account page reports unavailable configuration if required provider or database settings are missing.

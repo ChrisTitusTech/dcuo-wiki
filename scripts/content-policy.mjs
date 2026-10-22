@@ -63,7 +63,24 @@ export function issuesFor(a) {
       ...(Array.isArray(s.table?.rows) ? s.table.rows.flat() : []),
     ])
     .join(" ");
-  if (body.trim().split(/\s+/).length < 40)
+  const wordCount = body.trim().split(/\s+/).length;
+  const completeBriefQuest =
+    a.category === "Quests" &&
+    wordCount >= 20 &&
+    text(a.location?.label) &&
+    a.videos?.length > 0 &&
+    a.videoReview?.status === "verified-match" &&
+    sections.some(
+      (s) =>
+        /^Objectives?$/i.test(s.title) &&
+        Array.isArray(s.items) &&
+        s.items.some((item) =>
+          /^(?:Travel|Go|Speak|Talk|Defeat|Collect|Recover|Destroy|Return|Help|Find|Rescue|Stop|Capture|Deliver|Repair|Protect|Use|Open|Activate|Locate|Check|Complete|Report|Free|Resupply|Kill|Plant|Extract|Deactivate|Disable)\b/i.test(
+            item,
+          ),
+        ),
+    );
+  if (wordCount < 40 && !completeBriefQuest)
     errors.push("insufficient substantive content");
   if (/\b(TODO|TBD|coming soon)\b/i.test(body))
     errors.push("placeholder content");

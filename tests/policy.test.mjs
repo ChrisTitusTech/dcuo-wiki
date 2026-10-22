@@ -70,3 +70,41 @@ test("rejects unsafe map links, invalid timestamps and malformed tables", () => 
     }).includes("invalid table"),
   );
 });
+
+test("brief quests require concrete objectives, a source-backed location and a verified video", () => {
+  const base = articles.find((a) => a.slug === "House_of_Venom");
+  const brief = {
+    ...base,
+    sections: [
+      {
+        title: "Objectives",
+        items: [
+          "Travel to the named mission area and defeat the guards. Collect the requested samples, then speak to the contact to finish the objective.",
+        ],
+      },
+    ],
+  };
+  assert.deepEqual(issuesFor(brief), []);
+  assert.ok(
+    issuesFor({ ...brief, videos: [] }).includes(
+      "insufficient substantive content",
+    ),
+  );
+  assert.ok(
+    issuesFor({ ...brief, location: undefined }).includes(
+      "insufficient substantive content",
+    ),
+  );
+  assert.ok(
+    issuesFor({
+      ...brief,
+      sections: [{ title: "Background", items: brief.sections[0].items }],
+    }).includes("insufficient substantive content"),
+  );
+  assert.ok(
+    issuesFor({
+      ...brief,
+      sections: [{ title: "Objectives", items: ["Defeat the target."] }],
+    }).includes("insufficient substantive content"),
+  );
+});

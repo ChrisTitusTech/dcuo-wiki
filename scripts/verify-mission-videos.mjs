@@ -82,7 +82,23 @@ await Promise.all(
           await writeFile(file, JSON.stringify(metadata, null, 2) + "\n");
       }
       if (!metadata) continue;
-      for (const { record, base } of c.records) {
+      for (const {
+        record,
+        base,
+        searchTitle,
+        searchDescription,
+      } of c.records) {
+        if (
+          !/DCUO|DC Universe Online/i.test(
+            [
+              metadata.title,
+              metadata.author_name,
+              searchTitle,
+              searchDescription,
+            ].join(" "),
+          )
+        )
+          continue;
         if (
           !(" " + normalizeTitle(metadata.title) + " ").includes(
             " " + base + " ",

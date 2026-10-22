@@ -7,7 +7,9 @@ test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await expect(page.locator(".card:visible")).toHaveCount(1);
   await page.getByRole("button", { name: "Quests", exact: true }).click();
   await page.getByRole("link", { name: "All guides" }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(articles.length);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    Math.min(48, articles.length),
+  );
   await expect(page.getByRole("searchbox")).toHaveValue("");
   await expect(
     page.getByRole("button", { name: "All", exact: true }),
@@ -17,7 +19,7 @@ test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await page.getByRole("searchbox").fill("");
   await page.getByRole("button", { name: "Quests", exact: true }).click();
   await expect(page.locator(".card:visible")).toHaveCount(
-    articles.filter((a) => a.category === "Quests").length,
+    Math.min(48, articles.filter((a) => a.category === "Quests").length),
   );
   await page.getByRole("link", { name: /Grab and Smash/ }).click();
   await expect(
@@ -122,7 +124,7 @@ test("global search, category navigation, and mobile menu", async ({
     .getByRole("link", { name: "Quests" })
     .click();
   await expect(page.locator(".card:visible")).toHaveCount(
-    articles.filter((a) => a.category === "Quests").length,
+    Math.min(48, articles.filter((a) => a.category === "Quests").length),
   );
   await page.getByRole("button", { name: "Switch color theme" }).click();
   await page.reload();
@@ -271,4 +273,45 @@ test("Celestial purification interactions are structured rows", async ({
     "Purifies enemies",
   );
   await expect(table.locator("tbody tr").first()).toContainText("Retribution");
+});
+
+test("large guide libraries paginate and reset after searching or changing categories", async ({
+  page,
+}) => {
+  test.skip(
+    articles.length <= 48,
+    "Pagination is only needed for larger libraries",
+  );
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  const navigation = page.getByRole("navigation", { name: "Guide pages" });
+  await expect(navigation).toBeVisible();
+  await expect(page.locator(".card:visible")).toHaveCount(48);
+  const first = await page
+    .locator(".card:visible")
+    .first()
+    .getAttribute("href");
+  await expect(
+    navigation.getByRole("button", { name: "Previous", exact: true }),
+  ).toBeDisabled();
+  await navigation.getByRole("button", { name: "Next", exact: true }).click();
+  await expect(page.locator("#guide-page")).toHaveText(/Page 2 of/);
+  await expect(page.locator(".card:visible").first()).not.toHaveAttribute(
+    "href",
+    first!,
+  );
+  await page.getByRole("searchbox").fill("no matching entry");
+  await expect(page.locator("#empty")).toBeVisible();
+  await expect(navigation).toBeHidden();
+  await page.getByRole("link", { name: /^All guides/ }).click();
+  await expect(page.locator("#guide-page")).toHaveText(/Page 1 of/);
+  await expect(page.locator(".card:visible").first()).toHaveAttribute(
+    "href",
+    first!,
+  );
+  await page.getByRole("button", { name: "Quests", exact: true }).click();
+  await expect(page.locator("#guide-page")).toHaveText(/Page 1 of/);
+  await expect(page.locator(".card:visible").first()).toHaveAttribute(
+    "data-type",
+    "Quests",
+  );
 });

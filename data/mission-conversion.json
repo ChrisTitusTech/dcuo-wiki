@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-21T23:24:06.411Z",
+  "createdAt": "2026-10-21T23:58:47.272Z",
   "records": [
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Missions/Heroes",
@@ -27,6 +27,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/52",
       "words": 101,
       "objectiveWords": 14,
+      "location": "Journal reward mission",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -124,7 +125,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/A_Fool_and_His_Gold",
       "words": 583,
       "objectiveWords": 28,
-      "location": "House of Legends",
+      "location": "Metropolis",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -276,11 +277,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/A_Twisted_Web",
       "slug": "A_Twisted_Web",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/A_Twisted_Web",
-      "words": 64,
+      "words": 70,
       "objectiveWords": 11,
       "maps": 0,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "location": "Otisburg / Botanical Gardens",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Lethal_Pod-Cast"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/A_Weekly_Dose_of_Heroism",
@@ -494,7 +497,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Bl%C3%BCdhaven",
       "words": 294,
       "objectiveWords": 34,
-      "location": "Use On Duty Menu to Queue for the Alert [Tier 1]: Blüdhaven",
+      "location": "Blüdhaven",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -593,7 +596,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Smallville",
       "words": 272,
       "objectiveWords": 30,
-      "location": "Use On Duty Menu to Queue for the Alert [Tier 1]: Smallville",
+      "location": "Smallville",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -648,7 +651,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Alert_T1%3A_Smallville",
       "words": 272,
       "objectiveWords": 30,
-      "location": "Use On Duty Menu to Queue for the Alert [Tier 1]: Smallville",
+      "location": "Smallville",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -681,7 +684,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Ally_Fortify",
       "words": 151,
       "objectiveWords": 35,
-      "maps": 0,
+      "location": "Ally Fortify - source map",
+      "maps": 1,
       "images": 3,
       "reasons": []
     },
@@ -691,7 +695,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Ally_Rally",
       "words": 154,
       "objectiveWords": 26,
-      "maps": 0,
+      "location": "Ally Rally - source map",
+      "maps": 1,
       "images": 5,
       "reasons": []
     },
@@ -701,7 +706,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Ally_Resupply",
       "words": 186,
       "objectiveWords": 37,
-      "maps": 0,
+      "location": "Ally Resupply - source map",
+      "maps": 1,
       "images": 7,
       "reasons": []
     },
@@ -712,7 +718,7 @@
       "words": 113,
       "objectiveWords": 22,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 6,
       "reasons": []
     },
@@ -744,6 +750,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/An_Iconic_Anomaly_(Villains)",
       "words": 145,
       "objectiveWords": 13,
+      "location": "The Nexus Computer can be used to create simulations of critical points in in time. The data that you gather has the potential to assist in manipulating these key points in the timeline. Queue up and complete either simulation: Iconic Anomaly: The Hunt or Test Subject #1.",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -752,21 +759,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/And_Be_Quick_About_It..._(Heroes)",
       "slug": "And_Be_Quick_About_It_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/And_Be_Quick_About_It..._(Heroes)",
-      "words": 170,
+      "words": 198,
       "objectiveWords": 22,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Forensic_Scientist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/And_Be_Quick_About_It..._(Villains)",
       "slug": "And_Be_Quick_About_It_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/And_Be_Quick_About_It..._(Villains)",
-      "words": 168,
+      "words": 195,
       "objectiveWords": 21,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Forensic_Scientist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Animal_Heads_I_Win%3B_Tails_You_Lose",
@@ -807,7 +818,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Answer_Nightwing's_Call",
       "words": 87,
       "objectiveWords": 24,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1034,7 +1045,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Assuming_Control",
       "words": 168,
       "objectiveWords": 86,
-      "location": "Knightsdome",
+      "location": "Gotham City / Knightsdome",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -1140,6 +1151,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bad_Medicine",
       "words": 104,
       "objectiveWords": 7,
+      "location": "Tomorrow District",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -1172,9 +1184,11 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bane's_Back_(hero_mission)",
       "words": 32,
       "objectiveWords": 3,
+      "location": "East End",
       "maps": 0,
       "images": 0,
       "reasons": [
+        "Source contradicts itself about level 6 versus level 8; confirm the current prerequisite before publication",
         "Insufficient source detail"
       ]
     },
@@ -1184,6 +1198,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bane's_Back_(villain_mission)",
       "words": 40,
       "objectiveWords": 11,
+      "location": "East End",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1315,7 +1330,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Beasts_Begone",
       "words": 204,
       "objectiveWords": 105,
-      "location": "Tomorrow District",
+      "location": "Metropolis / Tomorrow District",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -1337,6 +1352,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Beat_the_Heat",
       "words": 284,
       "objectiveWords": 245,
+      "location": "Gotham Mercy Hospital",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1347,6 +1363,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Beatdown_for_Bane",
       "words": 128,
       "objectiveWords": 110,
+      "location": "Cape Carmine",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1367,7 +1384,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bee_Aggressive",
       "words": 147,
       "objectiveWords": 68,
-      "location": "Metropolis",
+      "location": "Metropolis / Metrodome",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1495,6 +1512,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Blind_Eye",
       "words": 319,
       "objectiveWords": 296,
+      "location": "Gotham sewers",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1539,7 +1557,7 @@
       "words": 143,
       "objectiveWords": 21,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 11,
       "reasons": []
     },
@@ -1557,12 +1575,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Ace_Chemicals_Experiment",
       "slug": "BOUNTY_Ace_Chemicals_Experiment",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Ace_Chemicals_Experiment",
-      "words": 227,
+      "words": 267,
       "objectiveWords": 19,
       "location": "Ace Chemicals",
       "maps": 0,
       "images": 5,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Arkillo_(Mogo)",
@@ -1579,22 +1598,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Black_Canary_and_Green_Arrow",
       "slug": "BOUNTY_Black_Canary_and_Green_Arrow",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Black_Canary_and_Green_Arrow",
-      "words": 149,
+      "words": 189,
       "objectiveWords": 91,
       "location": "Gotham City",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Black_Lightning",
       "slug": "BOUNTY_Black_Lightning",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Black_Lightning",
-      "words": 98,
+      "words": 137,
       "objectiveWords": 5,
-      "maps": 0,
+      "location": "In front of hero teleport",
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Brainiac_Sub-Avatar",
@@ -1611,118 +1633,133 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Cyborg",
       "slug": "BOUNTY_Cyborg",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Cyborg",
-      "words": 88,
+      "words": 125,
       "objectiveWords": 4,
-      "location": "BOUNTY: Cyborg - source map",
+      "location": "There are 8 locations where Cyborg can appear.",
       "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Daemon_Lord",
       "slug": "Bounty_Daemon_Lord",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Daemon_Lord",
-      "words": 243,
+      "words": 286,
       "objectiveWords": 139,
       "location": "Chaos Gotham",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Doctor_Fate",
       "slug": "BOUNTY_Doctor_Fate",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Doctor_Fate",
-      "words": 190,
+      "words": 232,
       "objectiveWords": 146,
+      "location": "Metropolis",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Donna_Troy",
       "slug": "BOUNTY_Donna_Troy",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Donna_Troy",
-      "words": 90,
+      "words": 130,
       "objectiveWords": 5,
-      "maps": 0,
+      "location": "Due north of #1 by 1.5 blocks",
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Fire",
       "slug": "BOUNTY_Fire",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Fire",
-      "words": 25,
+      "words": 65,
       "objectiveWords": 0,
+      "location": "Knightsdome",
       "maps": 0,
       "images": 0,
-      "reasons": [
-        "Insufficient source detail"
-      ]
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Full_House",
       "slug": "BOUNTY_Full_House",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Full_House",
-      "words": 375,
+      "words": 414,
       "objectiveWords": 262,
       "location": "East End",
       "maps": 1,
       "images": 3,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Hawkman_and_Hawkgirl",
       "slug": "BOUNTY_Hawkman_and_Hawkgirl",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Hawkman_and_Hawkgirl",
-      "words": 181,
+      "words": 219,
       "objectiveWords": 144,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Metropolis / Club deVile",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Invasion_Force",
       "slug": "Bounty_Invasion_Force",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Invasion_Force",
-      "words": 142,
+      "words": 182,
       "objectiveWords": 55,
       "location": "War-Torn Village",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Joker_%26_Riddler_Allies",
       "slug": "Bounty_Joker_Riddler_Allies",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Joker_%26_Riddler_Allies",
-      "words": 260,
+      "words": 306,
       "objectiveWords": 31,
       "location": "Amusement Mile",
-      "maps": 0,
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kid_Flash",
       "slug": "BOUNTY_Kid_Flash",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kid_Flash",
-      "words": 203,
+      "words": 241,
       "objectiveWords": 98,
-      "maps": 0,
+      "location": "Little Bohemia",
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kilowog",
       "slug": "BOUNTY_Kilowog",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kilowog",
-      "words": 150,
+      "words": 188,
       "objectiveWords": 113,
+      "location": "Metropolis",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Meddling_Heroes",
@@ -1740,6 +1777,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Metropolis_Villians",
       "words": 57,
       "objectiveWords": 23,
+      "location": "Little Bohemia / Chinatown",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1748,128 +1786,145 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Mist-Empowered_Hero",
       "slug": "BOUNTY_Mist-Empowered_Hero",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Mist-Empowered_Hero",
-      "words": 270,
+      "words": 315,
       "objectiveWords": 52,
       "maps": 0,
       "images": 7,
-      "reasons": []
+      "reasons": [],
+      "location": "Downtown Metropolis Battlezone / Ranx's Command Center",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nepheritos",
       "slug": "BOUNTY_Nepheritos",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nepheritos",
-      "words": 211,
+      "words": 253,
       "objectiveWords": 126,
       "maps": 0,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "location": "Gotham City / GCPD 12th Precinct",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_New_Genesis_Protector",
       "slug": "BOUNTY_New_Genesis_Protector",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_New_Genesis_Protector",
-      "words": 200,
+      "words": 243,
       "objectiveWords": 70,
       "location": "New Genesis",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nightwing",
       "slug": "BOUNTY_Nightwing",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nightwing",
-      "words": 76,
+      "words": 114,
       "objectiveWords": 4,
       "location": "BOUNTY: Nightwing - source map",
       "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Paradoxical_Predicament",
       "slug": "Bounty_Paradoxical_Predicament",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Paradoxical_Predicament",
-      "words": 206,
+      "words": 248,
       "objectiveWords": 8,
       "location": "Area 51",
       "maps": 1,
       "images": 5,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Power_Girl",
       "slug": "BOUNTY_Power_Girl",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Power_Girl",
-      "words": 163,
+      "words": 203,
       "objectiveWords": 0,
       "maps": 0,
       "images": 3,
-      "reasons": []
+      "reasons": [],
+      "location": "Metropolis / Club deVile",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Raven",
       "slug": "BOUNTY_Raven",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Raven",
-      "words": 81,
+      "words": 121,
       "objectiveWords": 4,
       "location": "BOUNTY: Raven - source map",
       "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Starfire",
       "slug": "BOUNTY_Starfire",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Starfire",
-      "words": 81,
+      "words": 120,
       "objectiveWords": 4,
       "location": "BOUNTY: Starfire - source map",
       "maps": 1,
       "images": 4,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Static",
       "slug": "BOUNTY_Static",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Static",
-      "words": 78,
+      "words": 116,
       "objectiveWords": 4,
       "location": "BOUNTY: Static - source map",
       "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Stryker's_Critical_Defender",
       "slug": "BOUNTY_Stryker_s_Critical_Defender",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Stryker's_Critical_Defender",
-      "words": 140,
+      "words": 179,
       "objectiveWords": 9,
       "maps": 0,
       "images": 3,
-      "reasons": []
+      "reasons": [],
+      "location": "Metropolis / near Steelworks",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Superman",
       "slug": "BOUNTY_Superman",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Superman",
-      "words": 108,
+      "words": 152,
       "objectiveWords": 14,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Downtown Metropolis Battlezone / Downtown Metropolis Battlezone",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_The_Crime_Syndicate",
       "slug": "Bounty_The_Crime_Syndicate",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_The_Crime_Syndicate",
-      "words": 200,
+      "words": 245,
       "objectiveWords": 73,
       "location": "Gotham City",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_The_Flash",
@@ -1886,22 +1941,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_The_Flash_(Central_City)",
       "slug": "BOUNTY_The_Flash_Central_City",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_The_Flash_(Central_City)",
-      "words": 131,
+      "words": 170,
       "objectiveWords": 5,
-      "maps": 0,
+      "location": "Central City",
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Titans_Go_Metal",
       "slug": "Bounty_Titans_Go_Metal",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bounty%3A_Titans_Go_Metal",
-      "words": 115,
+      "words": 161,
       "objectiveWords": 29,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 4,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Invasion_(heroes)",
@@ -1965,7 +2023,7 @@
       "words": 229,
       "objectiveWords": 47,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -1973,11 +2031,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Breaking_the_Crime_Wave",
       "slug": "Breaking_the_Crime_Wave",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Breaking_the_Crime_Wave",
-      "words": 97,
+      "words": 131,
       "objectiveWords": 20,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Bridge_to_Nowhere",
@@ -1986,7 +2046,7 @@
       "words": 438,
       "objectiveWords": 65,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 3,
       "images": 4,
       "reasons": []
     },
@@ -1996,6 +2056,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bring_the_Fear",
       "words": 139,
       "objectiveWords": 124,
+      "location": "Downtown Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2004,13 +2065,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Brother_Blue_in_Trouble",
       "slug": "Brother_Blue_in_Trouble",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Brother_Blue_in_Trouble",
-      "words": 26,
+      "words": 59,
       "objectiveWords": 0,
       "maps": 0,
       "images": 0,
-      "reasons": [
-        "Insufficient source detail"
-      ]
+      "reasons": [],
+      "location": "Giordano Botanical Gardens, outside Poison Ivy's greenhouse",
+      "supplementarySource": "https://dcuniverseonline.fandom.com/wiki/Officer_Walden"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Building_a_Power_Base",
@@ -2051,7 +2112,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Busted_Again!",
       "words": 115,
       "objectiveWords": 23,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -2062,6 +2123,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Buzz_Kill_(Villains)",
       "words": 171,
       "objectiveWords": 78,
+      "location": "Metrodome",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2113,11 +2175,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Campaign_Reform",
       "slug": "Campaign_Reform",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Campaign_Reform",
-      "words": 87,
+      "words": 119,
       "objectiveWords": 24,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Batman's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Can_You_Hear_Me_Now%3F",
@@ -2200,31 +2264,37 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Catwoman!",
       "slug": "Catch_Catwoman",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Catch_Catwoman!",
-      "words": 124,
+      "words": 143,
       "objectiveWords": 6,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Gotham Under Siege",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Special_Mission_from_Commander_Adonia"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Cheetah!",
       "slug": "Catch_Cheetah",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Catch_Cheetah!",
-      "words": 119,
+      "words": 138,
       "objectiveWords": 6,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Gotham Under Siege",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Special_Mission_from_Commander_Adonia"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Killer_Croc!",
       "slug": "Catch_Killer_Croc",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Catch_Killer_Croc!",
-      "words": 123,
+      "words": 142,
       "objectiveWords": 7,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Gotham Under Siege",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Special_Mission_from_Commander_Adonia"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Catch_Mister_Freeze!",
@@ -2232,6 +2302,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Catch_Mister_Freeze!",
       "words": 131,
       "objectiveWords": 7,
+      "location": "Gotham Mercy Hospital",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2240,11 +2311,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Catch_of_the_Day",
       "slug": "Catch_of_the_Day",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Catch_of_the_Day",
-      "words": 88,
+      "words": 120,
       "objectiveWords": 20,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Atlantis",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Rescue_Atlanteans"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Catching_a_Killer",
@@ -2252,6 +2325,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Catching_a_Killer",
       "words": 282,
       "objectiveWords": 59,
+      "location": "Desecrated Mausoleum / Kaznia City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2260,21 +2334,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Caught_A_Drift_(Heroes)",
       "slug": "Caught_A_Drift_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Caught_A_Drift_(Heroes)",
-      "words": 110,
+      "words": 143,
       "objectiveWords": 34,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Atlantis / Royal Hideout",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Take_Down_the_Drift_(Heroes)"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Caught_A_Drift_(Villains)",
       "slug": "Caught_A_Drift_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Caught_A_Drift_(Villains)",
-      "words": 112,
+      "words": 146,
       "objectiveWords": 35,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Atlantis / Royal Hideout",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Take_Down_the_Drift_(Villains)"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Celebrate_Pride",
@@ -2294,7 +2372,7 @@
       "words": 271,
       "objectiveWords": 43,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -2381,6 +2459,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Chemo-Therapy",
       "words": 251,
       "objectiveWords": 83,
+      "location": "Blüdhaven",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2402,8 +2481,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Chiropteralloy",
       "words": 276,
       "objectiveWords": 33,
-      "location": "Gotham City",
-      "maps": 0,
+      "location": "Metal Gotham City",
+      "maps": 1,
       "images": 2,
       "reasons": []
     },
@@ -2490,7 +2569,7 @@
       "words": 274,
       "objectiveWords": 39,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -2598,6 +2677,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Coldest_Cuts",
       "words": 45,
       "objectiveWords": 8,
+      "location": "Gotham Mercy General Hospital",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2618,7 +2698,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Communication_Breakdown_(level_5)",
       "words": 185,
       "objectiveWords": 9,
-      "location": "Little Bohemia / Metropolis",
+      "location": "Little Bohemia",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2629,7 +2709,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Conduit_of_the_Soul",
       "words": 222,
       "objectiveWords": 19,
-      "location": "Chinatown / Metropolis",
+      "location": "Chinatown",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -2706,6 +2786,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Construction_Delays",
       "words": 50,
       "objectiveWords": 9,
+      "location": "South Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2717,7 +2798,7 @@
       "words": 274,
       "objectiveWords": 39,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -2874,7 +2955,8 @@
       "maps": 0,
       "images": 1,
       "reasons": [
-        "Insufficient source detail"
+        "Insufficient source detail",
+        "Missing objectives"
       ]
     },
     {
@@ -2883,7 +2965,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Curious_Gorge",
       "words": 207,
       "objectiveWords": 82,
-      "location": "Little Bohemia",
+      "location": "Metropolis",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2906,7 +2988,7 @@
       "words": 401,
       "objectiveWords": 297,
       "location": "Titans Island",
-      "maps": 0,
+      "maps": 1,
       "images": 5,
       "reasons": []
     },
@@ -2959,6 +3041,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Daily%3A_Master_of_Disguise",
       "words": 105,
       "objectiveWords": 51,
+      "location": "Journal",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2980,6 +3063,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Danger_Pay",
       "words": 19,
       "objectiveWords": 6,
+      "location": "Midtown / Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": [
@@ -3014,7 +3098,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dark_Nights_in_Gotham_City_(Heroes)",
       "words": 131,
       "objectiveWords": 35,
-      "location": "Watchtower / Gotham City",
+      "location": "Watchtower / Metal Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -3025,7 +3109,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dark_Nights_in_Gotham_City_(Villains)",
       "words": 135,
       "objectiveWords": 37,
-      "location": "Hall of Doom / Gotham City",
+      "location": "Hall of Doom / Metal Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -3079,6 +3163,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/DCUO%3A_Year_Two",
       "words": 108,
       "objectiveWords": 16,
+      "location": "Journal reward mission",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -3111,6 +3196,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_Reckoning%3A_Demonic_Influence",
       "words": 570,
       "objectiveWords": 440,
+      "location": "Laughing Hound Pub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3121,6 +3207,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_Reckoning%3A_Hiding_Out",
       "words": 253,
       "objectiveWords": 91,
+      "location": "Laughing Hound Pub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3131,6 +3218,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_Reckoning%3A_Reckless_Vigilantes",
       "words": 389,
       "objectiveWords": 291,
+      "location": "Laughing Hound Pub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3239,7 +3327,7 @@
       "words": 415,
       "objectiveWords": 42,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -3279,13 +3367,16 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Designer_Genes",
       "slug": "Designer_Genes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Designer_Genes",
-      "words": 11,
+      "words": 27,
       "objectiveWords": 0,
       "maps": 0,
       "images": 1,
       "reasons": [
-        "Insufficient source detail"
-      ]
+        "Insufficient source detail",
+        "Missing objectives"
+      ],
+      "location": "Metropolis",
+      "contactSource": "https://dcuniverseonline.fandom.com/wiki/Hospital_Havok"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Destroy_the_Barrier_(villain_mission)",
@@ -3335,7 +3426,7 @@
       "words": 410,
       "objectiveWords": 53,
       "location": "Steelworks / Ace Chemicals",
-      "maps": 0,
+      "maps": 2,
       "images": 2,
       "reasons": []
     },
@@ -3356,6 +3447,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Disturbance_on_the_Coast",
       "words": 82,
       "objectiveWords": 20,
+      "location": "Coast City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3385,21 +3477,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Heroes)",
       "slug": "Don_t_Count_Your_Starro_Before_They_Hatch_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Heroes)",
-      "words": 198,
+      "words": 225,
       "objectiveWords": 19,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Microbiologist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Villains)",
       "slug": "Don_t_Count_Your_Starro_Before_They_Hatch_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Villains)",
-      "words": 195,
+      "words": 221,
       "objectiveWords": 18,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Microbiologist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Fear_the_Reaper",
@@ -3408,7 +3504,7 @@
       "words": 183,
       "objectiveWords": 44,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 9,
       "reasons": []
     },
@@ -3517,6 +3613,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Duty_Never_Done",
       "words": 21,
       "objectiveWords": 5,
+      "location": "Little Bohemia",
       "maps": 0,
       "images": 0,
       "reasons": [
@@ -3570,11 +3667,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Eavesdropping",
       "slug": "Eavesdropping",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Eavesdropping",
-      "words": 81,
+      "words": 113,
       "objectiveWords": 18,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Cyborg's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Echoes_of_Umbrax",
@@ -3602,11 +3701,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Election_Fraud",
       "slug": "Election_Fraud",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Election_Fraud",
-      "words": 109,
+      "words": 141,
       "objectiveWords": 31,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Batman's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Emotional_Baggage",
@@ -3759,6 +3860,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Exobyte_Extraction",
       "words": 130,
       "objectiveWords": 91,
+      "location": "S.T.A.R. Labs Research Facility / Little Bohemia",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3791,7 +3893,7 @@
       "words": 138,
       "objectiveWords": 41,
       "location": "Thanagar",
-      "maps": 0,
+      "maps": 1,
       "images": 7,
       "reasons": []
     },
@@ -3802,7 +3904,7 @@
       "words": 139,
       "objectiveWords": 61,
       "location": "Titans Tower / Titans Island",
-      "maps": 0,
+      "maps": 1,
       "images": 6,
       "reasons": []
     },
@@ -3977,7 +4079,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_The_Metropolis_Metrodome!",
       "words": 90,
       "objectiveWords": 24,
-      "location": "Metropolis",
+      "location": "Metropolis / Metrodome",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -4053,6 +4155,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Facing_Faust",
       "words": 181,
       "objectiveWords": 34,
+      "location": "Kaznian Necropolis / Kaznia City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4105,13 +4208,15 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Fast_Eddie's_Revenge",
       "slug": "Fast_Eddie_s_Revenge",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fast_Eddie's_Revenge",
-      "words": 12,
+      "words": 29,
       "objectiveWords": 6,
       "maps": 0,
       "images": 0,
       "reasons": [
         "Insufficient source detail"
-      ]
+      ],
+      "location": "Cape Carmine",
+      "contactSource": "https://dcuniverseonline.fandom.com/wiki/Maximum_Overload"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Fate_Falls!",
@@ -4141,7 +4246,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fateful_Demise",
       "words": 282,
       "objectiveWords": 0,
-      "location": "Chinatown / Metropolis",
+      "location": "Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4163,6 +4268,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Faust_Falls!",
       "words": 98,
       "objectiveWords": 0,
+      "location": "Chinatown",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4195,6 +4301,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Faustian_Fakeout",
       "words": 148,
       "objectiveWords": 139,
+      "location": "Kahndaq",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4216,6 +4323,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fear_-_It's_a_Gas",
       "words": 139,
       "objectiveWords": 0,
+      "location": "East End / Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4226,6 +4334,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fear_and_Loathing",
       "words": 110,
       "objectiveWords": 91,
+      "location": "downtown Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4247,6 +4356,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fear_is_Yellow_(Mission)",
       "words": 146,
       "objectiveWords": 123,
+      "location": "Historic District",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4380,7 +4490,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fire_Walker",
       "words": 108,
       "objectiveWords": 33,
-      "maps": 0,
+      "location": "Fire Walker - source map",
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -4390,6 +4501,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fire's_Out",
       "words": 58,
       "objectiveWords": 49,
+      "location": "East End",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4411,7 +4523,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/First%2C_Second%2C_and_Third_Aid",
       "words": 129,
       "objectiveWords": 28,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -4431,13 +4543,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Fish_in_a_Barrel",
       "slug": "Fish_in_a_Barrel",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fish_in_a_Barrel",
-      "words": 14,
+      "words": 40,
       "objectiveWords": 3,
       "maps": 0,
       "images": 0,
-      "reasons": [
-        "Insufficient source detail"
-      ]
+      "reasons": [],
+      "location": "Metropolis City Hall, Historic District",
+      "supplementarySource": "https://dcuniverseonline.fandom.com/wiki/Fearmonger_(NPC)"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Fish_out_of_Water",
@@ -4532,6 +4644,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Foraging_for_Food",
       "words": 87,
       "objectiveWords": 42,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4575,7 +4688,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Freedom_Force",
       "words": 154,
       "objectiveWords": 23,
-      "maps": 0,
+      "location": "Freedom Force - source map",
+      "maps": 1,
       "images": 5,
       "reasons": []
     },
@@ -4640,7 +4754,7 @@
       "words": 105,
       "objectiveWords": 24,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 4,
       "reasons": []
     },
@@ -4705,7 +4819,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fury_of_the_Amazons_III%3A_Gods_and_Monsters_(Heroes)",
       "words": 198,
       "objectiveWords": 48,
-      "location": "Queue up in the On Duty tab and complete the Raising Hades Duo",
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4858,6 +4972,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Godly_Power",
       "words": 126,
       "objectiveWords": 68,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4868,6 +4983,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Godly_Subversion",
       "words": 124,
       "objectiveWords": 55,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4876,11 +4992,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Going_Viral",
       "slug": "Going_Viral",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Going_Viral",
-      "words": 108,
+      "words": 140,
       "objectiveWords": 40,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Cyborg's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Gordon_Wants_a_Word",
@@ -4908,11 +5026,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Gorgons_Come_Out_And_Play",
       "slug": "Gorgons_Come_Out_And_Play",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gorgons_Come_Out_And_Play",
-      "words": 109,
+      "words": 136,
       "objectiveWords": 33,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Typhon's Monster Invasion",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Gotham's_Invaders"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Warfare",
@@ -4920,7 +5040,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gorilla_Warfare",
       "words": 205,
       "objectiveWords": 26,
-      "location": "Little Bohemia / Metropolis",
+      "location": "Metropolis / Little Bohemia",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -4931,7 +5051,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gorillas_By_The_Sea",
       "words": 191,
       "objectiveWords": 11,
-      "location": "Little Bohemia / Metropolis",
+      "location": "Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4953,6 +5073,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gorillas_with_Attitude_(Heroes)",
       "words": 106,
       "objectiveWords": 21,
+      "location": "Gorilla Island",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4963,6 +5084,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gorillas_with_Attitude_(Villains)",
       "words": 160,
       "objectiveWords": 70,
+      "location": "Gorilla Island",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4995,6 +5117,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham's_Bane",
       "words": 116,
       "objectiveWords": 100,
+      "location": "Cape Carmine",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5005,6 +5128,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham's_Invaders",
       "words": 89,
       "objectiveWords": 45,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5035,11 +5159,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Grated_Gorgons",
       "slug": "Grated_Gorgons",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Grated_Gorgons",
-      "words": 110,
+      "words": 138,
       "objectiveWords": 33,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Typhon's Monster Invasion",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Foraging_for_Food"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Greed_(Mission)",
@@ -5116,7 +5242,7 @@
       "words": 361,
       "objectiveWords": 50,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -5158,6 +5284,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2014)",
       "words": 105,
       "objectiveWords": 14,
+      "location": "Journal reward mission",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5168,6 +5295,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2015)",
       "words": 131,
       "objectiveWords": 14,
+      "location": "Journal reward mission",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5178,6 +5306,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2016)",
       "words": 107,
       "objectiveWords": 15,
+      "location": "Journal reward mission",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -5222,7 +5351,7 @@
       "words": 533,
       "objectiveWords": 59,
       "location": "Ace Chemicals",
-      "maps": 0,
+      "maps": 2,
       "images": 2,
       "reasons": []
     },
@@ -5232,7 +5361,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/He_Wants_a_Devolution",
       "words": 347,
       "objectiveWords": 62,
-      "location": "Metropolis",
+      "location": "Little Bohemia",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5243,6 +5372,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Heads%2C_You_Won",
       "words": 131,
       "objectiveWords": 9,
+      "location": "Amusement Mile",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5254,7 +5384,7 @@
       "words": 124,
       "objectiveWords": 20,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 6,
       "reasons": []
     },
@@ -5371,8 +5501,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hold_the_Line_(Villains)",
       "words": 218,
       "objectiveWords": 129,
-      "location": "Metropolis",
-      "maps": 0,
+      "location": "Metropolis / Metrodome",
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -5383,7 +5513,7 @@
       "words": 277,
       "objectiveWords": 52,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -5509,31 +5639,37 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Hungry%2C_Hungry_Starro_(Heroes)",
       "slug": "Hungry_Hungry_Starro_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hungry%2C_Hungry_Starro_(Heroes)",
-      "words": 112,
+      "words": 140,
       "objectiveWords": 29,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Forensic_Scientist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Hungry%2C_Hungry_Starro_(Villains)",
       "slug": "Hungry_Hungry_Starro_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hungry%2C_Hungry_Starro_(Villains)",
-      "words": 110,
+      "words": 137,
       "objectiveWords": 28,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Forensic_Scientist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Hunt_Down_Donna_Troy!",
       "slug": "Hunt_Down_Donna_Troy",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hunt_Down_Donna_Troy!",
-      "words": 111,
+      "words": 130,
       "objectiveWords": 7,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Gotham Under Siege",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Special_Mission_from_General_Ptolema"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Hydra_Havok",
@@ -5550,11 +5686,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/I_Beam_You",
       "slug": "I_Beam_You",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/I_Beam_You",
-      "words": 255,
+      "words": 289,
       "objectiveWords": 119,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/I_Need_a_Botanist!",
@@ -5635,6 +5773,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/In_Lust_She_Trusts",
       "words": 102,
       "objectiveWords": 9,
+      "location": "Tomorrow District",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5700,6 +5839,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Insane_Clown_Possession",
       "words": 131,
       "objectiveWords": 36,
+      "location": "Gotham City / Monarch Playing Card Company / Botanical Gardens",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -5754,6 +5894,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Isis_Risen",
       "words": 13,
       "objectiveWords": 4,
+      "location": "Gotham University",
       "maps": 0,
       "images": 0,
       "reasons": [
@@ -5766,6 +5907,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Isis_Unveiled",
       "words": 125,
       "objectiveWords": 25,
+      "location": "Kahndaq",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5776,6 +5918,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/JLA_in_Trouble%3F",
       "words": 161,
       "objectiveWords": 94,
+      "location": "Watchtower",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5784,11 +5927,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Journal",
       "slug": "Journal",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Journal",
-      "words": 536,
+      "words": 583,
       "objectiveWords": 0,
       "maps": 0,
       "images": 9,
-      "reasons": []
+      "reasons": [],
+      "location": "House of Legends",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Story_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/JSA_-_Jacked",
@@ -5796,6 +5941,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/JSA_-_Jacked",
       "words": 130,
       "objectiveWords": 114,
+      "location": "Downtown Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5806,10 +5952,12 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Justice_for_All_(Mission)",
       "words": 16,
       "objectiveWords": 0,
+      "location": "Metrodome",
       "maps": 0,
       "images": 0,
       "reasons": [
-        "Insufficient source detail"
+        "Insufficient source detail",
+        "Missing objectives"
       ]
     },
     {
@@ -5862,6 +6010,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Kahndaq_(Mission)",
       "words": 314,
       "objectiveWords": 142,
+      "location": "Kahndaq",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6146,7 +6295,7 @@
       "words": 94,
       "objectiveWords": 24,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 3,
       "reasons": []
     },
@@ -6156,7 +6305,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Losing_Inhibitions",
       "words": 58,
       "objectiveWords": 11,
-      "location": "Losing Inhibitions - source map",
+      "location": "Metropolis",
       "maps": 1,
       "images": 1,
       "reasons": []
@@ -6165,11 +6314,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Loss_of_Leadership_(Heroes)",
       "slug": "Loss_of_Leadership_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Loss_of_Leadership_(Heroes)",
-      "words": 89,
+      "words": 122,
       "objectiveWords": 22,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Atlantis / Royal Hideout",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Take_Down_the_Drift_(Heroes)"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Loss_of_Leadership_(Villains)",
@@ -6187,7 +6338,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lost_and_Found",
       "words": 97,
       "objectiveWords": 8,
-      "maps": 0,
+      "location": "Lost and Found - source map",
+      "maps": 3,
       "images": 3,
       "reasons": []
     },
@@ -6260,6 +6412,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lunar_Eclipse",
       "words": 186,
       "objectiveWords": 68,
+      "location": "Sentinel base",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -6402,7 +6555,7 @@
       "words": 482,
       "objectiveWords": 65,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -6412,7 +6565,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Medical_Misinformation",
       "words": 68,
       "objectiveWords": 9,
-      "location": "Medical Misinformation - source map",
+      "location": "Metropolis",
       "maps": 1,
       "images": 2,
       "reasons": []
@@ -6434,6 +6587,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Membership_Has_Its_Perks",
       "words": 72,
       "objectiveWords": 14,
+      "location": "Journal reward mission",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6487,7 +6641,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Metal_Massacre",
       "words": 111,
       "objectiveWords": 20,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -6575,7 +6729,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Miming_Metal",
       "words": 121,
       "objectiveWords": 18,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -6684,7 +6838,7 @@
       "words": 373,
       "objectiveWords": 58,
       "location": "Steelworks / Ace Chemicals",
-      "maps": 0,
+      "maps": 3,
       "images": 3,
       "reasons": []
     },
@@ -6695,7 +6849,7 @@
       "words": 200,
       "objectiveWords": 33,
       "location": "Little Bohemia / Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -6703,11 +6857,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Municipal_Resposibility",
       "slug": "Municipal_Resposibility",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Municipal_Resposibility",
-      "words": 99,
+      "words": 131,
       "objectiveWords": 24,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Batman's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Citizen's_Arrest",
@@ -6715,6 +6871,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Citizen's_Arrest",
       "words": 444,
       "objectiveWords": 306,
+      "location": "Laughing Hound Pub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6725,6 +6882,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Crime_Scene_Investigation",
       "words": 447,
       "objectiveWords": 294,
+      "location": "Laughing Hound Pub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6745,6 +6903,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Murder_in_Kaznia%3A_Witness_Protection",
       "words": 389,
       "objectiveWords": 248,
+      "location": "Laughing Hound Pub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6756,7 +6915,7 @@
       "words": 158,
       "objectiveWords": 61,
       "location": "Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 2,
       "reasons": []
     },
@@ -6767,7 +6926,7 @@
       "words": 200,
       "objectiveWords": 33,
       "location": "Little Bohemia / Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -6864,6 +7023,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Nightfall",
       "words": 192,
       "objectiveWords": 123,
+      "location": "Sentinel base",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6910,7 +7070,8 @@
       "maps": 0,
       "images": 0,
       "reasons": [
-        "Insufficient source detail"
+        "Insufficient source detail",
+        "Missing objectives"
       ]
     },
     {
@@ -6934,7 +7095,8 @@
       "maps": 0,
       "images": 2,
       "reasons": [
-        "Insufficient source detail"
+        "Insufficient source detail",
+        "Missing objectives"
       ]
     },
     {
@@ -6976,6 +7138,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/OMAC_Attack",
       "words": 215,
       "objectiveWords": 117,
+      "location": "Knights Dome",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -6986,6 +7149,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/OMAC_Crackup",
       "words": 34,
       "objectiveWords": 7,
+      "location": "Knightsdome",
       "maps": 0,
       "images": 1,
       "reasons": [
@@ -7140,7 +7304,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Origins_in_Crisis",
       "words": 154,
       "objectiveWords": 33,
-      "location": "Queue and run Brothers in Arms or Family Reunion alert. The mission will be completed once you finish the run.",
+      "location": "Central City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7174,7 +7338,7 @@
       "words": 579,
       "objectiveWords": 65,
       "location": "Ace Chemicals",
-      "maps": 0,
+      "maps": 3,
       "images": 3,
       "reasons": []
     },
@@ -7282,7 +7446,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Paradoxology",
       "words": 220,
       "objectiveWords": 62,
-      "location": "Queue and run the Paradox Wave raid. The mission will autocomplete once you finish the run.",
+      "location": "Queue up for the Paradox Wave raid and defeat the Paradox Tyrant before he destroys our timeline",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7304,7 +7468,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Paranormal_Paramedic",
       "words": 186,
       "objectiveWords": 95,
-      "location": "Centennial Park",
+      "location": "Metropolis / Midtown",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -7367,21 +7531,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Payback_With_(Chemical)_Compound_Interest_(Heroes)",
       "slug": "Payback_With_Chemical_Compound_Interest_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Payback_With_(Chemical)_Compound_Interest_(Heroes)",
-      "words": 177,
+      "words": 206,
       "objectiveWords": 27,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Environmental_Health_Specialist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Payback_With_(Chemical)_Compound_Interest_(Villains)",
       "slug": "Payback_With_Chemical_Compound_Interest_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Payback_With_(Chemical)_Compound_Interest_(Villains)",
-      "words": 175,
+      "words": 203,
       "objectiveWords": 26,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Environmental_Health_Specialist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Penance",
@@ -7454,6 +7622,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Playing_Joker's_Game",
       "words": 189,
       "objectiveWords": 54,
+      "location": "Amusement Mile",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -7464,6 +7633,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Playing_With_a_Full_Deck",
       "words": 191,
       "objectiveWords": 96,
+      "location": "Otisburg / Monarch Playing Card Company",
       "maps": 0,
       "images": 3,
       "reasons": []
@@ -7550,6 +7720,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Population_Control",
       "words": 89,
       "objectiveWords": 44,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7558,21 +7729,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Power_Hungry_(Heroes)",
       "slug": "Power_Hungry_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Power_Hungry_(Heroes)",
-      "words": 103,
+      "words": 131,
       "objectiveWords": 28,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Forensic_Scientist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Power_Hungry_(Villains)",
       "slug": "Power_Hungry_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Power_Hungry_(Villains)",
-      "words": 101,
+      "words": 128,
       "objectiveWords": 27,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Forensic_Scientist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Power_Lunch!",
@@ -7646,7 +7821,7 @@
       "words": 262,
       "objectiveWords": 33,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -7723,7 +7898,7 @@
       "words": 353,
       "objectiveWords": 46,
       "location": "Steelworks / Ace Chemicals",
-      "maps": 0,
+      "maps": 3,
       "images": 4,
       "reasons": []
     },
@@ -7731,14 +7906,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Protect_and_Serve",
       "slug": "Protect_and_Serve",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Protect_and_Serve",
-      "words": 31,
+      "words": 47,
       "objectiveWords": 11,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Police Station, near the Booster Gold Kiosk",
       "maps": 0,
       "images": 0,
-      "reasons": [
-        "Insufficient source detail"
-      ]
+      "reasons": [],
+      "supplementarySource": "https://dcuniverseonline.fandom.com/wiki/Doctor_Sarah_Charles"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Protecting_the_Green",
@@ -7777,11 +7951,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Psycho_Slip-Ups",
       "slug": "Psycho_Slip-Ups",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Psycho_Slip-Ups",
-      "words": 64,
+      "words": 83,
       "objectiveWords": 18,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Metropolis",
+      "contactSource": "https://dcuniverseonline.fandom.com/wiki/Under_a_Red_Sun_Lamp"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Psychosomatic_Illness",
@@ -7950,13 +8126,14 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Raging_Wristbands",
       "slug": "Raging_Wristbands",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Raging_Wristbands",
-      "words": 21,
+      "words": 38,
       "objectiveWords": 7,
       "maps": 0,
       "images": 1,
       "reasons": [
         "Insufficient source detail"
-      ]
+      ],
+      "contactSource": "https://dcuniverseonline.fandom.com/wiki/A_Clean_Cover-Up"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Raid_T1%3A_Brainiac_Sub-Construct",
@@ -8041,7 +8218,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Raid_T1%3A_The_Chasm_(Villains)",
       "words": 251,
       "objectiveWords": 36,
-      "location": "Use the On Duty Menu to Queue for the Raid [Tier 1]: The Chasm",
+      "location": "Hall of Doom",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -8097,7 +8274,7 @@
       "words": 506,
       "objectiveWords": 63,
       "location": "Ace Chemicals",
-      "maps": 0,
+      "maps": 2,
       "images": 2,
       "reasons": []
     },
@@ -8160,7 +8337,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Raven_Bound_(villain_mission)",
       "words": 217,
       "objectiveWords": 58,
-      "location": "Raven Bound (villain mission) - source map",
+      "location": "Tomorrow District",
       "maps": 1,
       "images": 2,
       "reasons": []
@@ -8172,7 +8349,7 @@
       "words": 344,
       "objectiveWords": 245,
       "location": "Titans Island",
-      "maps": 0,
+      "maps": 1,
       "images": 4,
       "reasons": []
     },
@@ -8193,7 +8370,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Raven_Unleashed_(villain_mission)",
       "words": 202,
       "objectiveWords": 90,
-      "location": "Chinatown",
+      "location": "Tomorrow District",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -8379,7 +8556,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Riddled_With_Traps",
       "words": 122,
       "objectiveWords": 38,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -8390,7 +8567,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Rift_It_Up",
       "words": 83,
       "objectiveWords": 22,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -8507,11 +8684,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Rocked_Residents",
       "slug": "Rocked_Residents",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Rocked_Residents",
-      "words": 108,
+      "words": 135,
       "objectiveWords": 35,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Typhon's Monster Invasion",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Street_Cleaning"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Rule_the_World",
@@ -8529,7 +8708,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Running_with_Metal_Bulls",
       "words": 112,
       "objectiveWords": 18,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -8605,6 +8784,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Save_the_World",
       "words": 393,
       "objectiveWords": 13,
+      "location": "Metropolis / Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -8615,6 +8795,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Saving_Citizens",
       "words": 81,
       "objectiveWords": 42,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -8659,7 +8840,7 @@
       "words": 378,
       "objectiveWords": 40,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -8669,6 +8850,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Science_of_Crime",
       "words": 177,
       "objectiveWords": 11,
+      "location": "Tomorrow District",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -8713,7 +8895,7 @@
       "words": 420,
       "objectiveWords": 55,
       "location": "Steelworks / Ace Chemicals",
-      "maps": 0,
+      "maps": 3,
       "images": 3,
       "reasons": []
     },
@@ -8974,21 +9156,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Shock_the_Pool..._(Heroes)",
       "slug": "Shock_the_Pool_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Shock_the_Pool..._(Heroes)",
-      "words": 155,
+      "words": 182,
       "objectiveWords": 20,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Microbiologist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Shock_the_Pool..._(Villains)",
       "slug": "Shock_the_Pool_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Shock_the_Pool..._(Villains)",
-      "words": 152,
+      "words": 178,
       "objectiveWords": 19,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Microbiologist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System_Pt._1",
@@ -9016,21 +9202,25 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Shooting_Starfish_in_a_Barrel_(Heroes)",
       "slug": "Shooting_Starfish_in_a_Barrel_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Shooting_Starfish_in_a_Barrel_(Heroes)",
-      "words": 129,
+      "words": 158,
       "objectiveWords": 24,
       "maps": 0,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/STAR_Labs_Environmental_Health_Specialist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Shooting_Starfish_in_a_Barrel_(Villains)",
       "slug": "Shooting_Starfish_in_a_Barrel_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Shooting_Starfish_in_a_Barrel_(Villains)",
-      "words": 127,
+      "words": 155,
       "objectiveWords": 23,
       "maps": 0,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "location": "Central City Starro Deluge Zone",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/LexCorp_Environmental_Health_Specialist_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Sigils_of_Safeguarding",
@@ -9111,7 +9301,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Soldier_of_Misfortune",
       "words": 119,
       "objectiveWords": 50,
-      "location": "Queue for the STAR Labs Facility challenge using the On Duty menu or go to the walk-in version (both versions work for this mission) and complete the instance. Once Superman is gone, the Hexed LexCorp Veteran will spawn at the center of the battlefield. Defeat him to complete the mission.",
+      "location": "STAR Labs Facility",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9278,7 +9468,8 @@
       "maps": 0,
       "images": 0,
       "reasons": [
-        "Insufficient source detail"
+        "Insufficient source detail",
+        "Missing objectives"
       ]
     },
     {
@@ -9483,11 +9674,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Stone_Society",
       "slug": "Stone_Society",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Stone_Society",
-      "words": 108,
+      "words": 135,
       "objectiveWords": 35,
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "location": "Typhon's Monster Invasion",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Saving_Citizens"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Storming_the_Ivory_Tower",
@@ -9495,7 +9688,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Storming_the_Ivory_Tower",
       "words": 434,
       "objectiveWords": 60,
-      "maps": 0,
+      "location": "Storming the Ivory Tower - source map",
+      "maps": 2,
       "images": 2,
       "reasons": []
     },
@@ -9527,7 +9721,7 @@
       "words": 180,
       "objectiveWords": 95,
       "location": "Little Bohemia",
-      "maps": 0,
+      "maps": 1,
       "images": 5,
       "reasons": []
     },
@@ -9538,7 +9732,7 @@
       "words": 184,
       "objectiveWords": 97,
       "location": "Little Bohemia",
-      "maps": 0,
+      "maps": 1,
       "images": 5,
       "reasons": []
     },
@@ -9548,6 +9742,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Street_Cleaning",
       "words": 80,
       "objectiveWords": 40,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9569,6 +9764,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Streetside_Abductions",
       "words": 194,
       "objectiveWords": 63,
+      "location": "Tomorrow District",
       "maps": 0,
       "images": 4,
       "reasons": []
@@ -9579,7 +9775,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Strolling_Through_the_Gas",
       "words": 140,
       "objectiveWords": 25,
-      "maps": 0,
+      "location": "Strolling Through the Gas - source map",
+      "maps": 1,
       "images": 2,
       "reasons": []
     },
@@ -9610,7 +9807,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Sub-Contract%3A_Exotic_Metals",
       "words": 98,
       "objectiveWords": 28,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9676,6 +9873,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Superman's_Doom",
       "words": 617,
       "objectiveWords": 542,
+      "location": "Watchtower",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -9722,7 +9920,7 @@
       "words": 405,
       "objectiveWords": 48,
       "location": "Steelworks",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -9765,7 +9963,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/T-Spheres",
       "words": 117,
       "objectiveWords": 15,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -9918,6 +10116,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Bee_in_the_Moon_(Heroes)",
       "words": 157,
       "objectiveWords": 50,
+      "location": "H.I.V.E. Moon Base",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9928,6 +10127,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Bee_in_the_Moon_(Villains)",
       "words": 154,
       "objectiveWords": 55,
+      "location": "H.I.V.E. Moon Base",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9968,12 +10168,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Day_the_Island_Stood_Still",
       "slug": "The_Day_the_Island_Stood_Still",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Day_the_Island_Stood_Still",
-      "words": 192,
+      "words": 241,
       "objectiveWords": 7,
       "location": "Titans Island",
       "maps": 0,
       "images": 4,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Demon_Inside_(hero_mission)",
@@ -9991,6 +10192,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Demon_Inside_(villain_mission)",
       "words": 290,
       "objectiveWords": 91,
+      "location": "Tomorrow District",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10012,6 +10214,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Face_of_Evil",
       "words": 126,
       "objectiveWords": 62,
+      "location": "Kaznia City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10032,6 +10235,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Fates_Aligned",
       "words": 76,
       "objectiveWords": 43,
+      "location": "Midtown",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10075,7 +10279,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Hunt_for_Grodd",
       "words": 490,
       "objectiveWords": 17,
-      "location": "Little Bohemia / Metropolis",
+      "location": "Metropolis / Little Bohemia",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10119,6 +10323,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(mission)",
       "words": 178,
       "objectiveWords": 54,
+      "location": "Amusement Mile",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10141,7 +10346,7 @@
       "words": 600,
       "objectiveWords": 76,
       "location": "Doomed Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 10,
       "reasons": []
     },
@@ -10215,11 +10420,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Ninth_Triage",
       "slug": "The_Ninth_Triage",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Ninth_Triage",
-      "words": 76,
+      "words": 109,
       "objectiveWords": 19,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Atlantis / Royal Hideout",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Assist_Atlanteans"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Perils_of_Zatanna",
@@ -10238,6 +10445,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Petri_Dish",
       "words": 260,
       "objectiveWords": 24,
+      "location": "Smallville",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10259,6 +10467,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Riddle_Solved",
       "words": 73,
       "objectiveWords": 61,
+      "location": "East End",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10279,6 +10488,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Runaround",
       "words": 135,
       "objectiveWords": 80,
+      "location": "Your player base / lair",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10289,7 +10499,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Shipment_News",
       "words": 105,
       "objectiveWords": 15,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10356,7 +10566,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Sum_of_Its_Parts",
       "words": 88,
       "objectiveWords": 21,
-      "location": "Downtown Metropolis Battlezone",
+      "location": "Downtown Metropolis",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -10411,6 +10621,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Typhon_Underground",
       "words": 92,
       "objectiveWords": 46,
+      "location": "Typhon's Monster Invasion",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10540,7 +10751,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Tick_Tick_Boom",
       "words": 142,
       "objectiveWords": 35,
-      "maps": 0,
+      "location": "Tick Tick Boom - source map",
+      "maps": 1,
       "images": 3,
       "reasons": []
     },
@@ -10595,7 +10807,7 @@
       "words": 152,
       "objectiveWords": 21,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 5,
       "reasons": []
     },
@@ -10682,7 +10894,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/To_Protect_and_To_Serve",
       "words": 127,
       "objectiveWords": 32,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10737,6 +10949,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Together_Unbroken",
       "words": 208,
       "objectiveWords": 0,
+      "location": "House of Legends",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10802,7 +11015,7 @@
       "words": 839,
       "objectiveWords": 94,
       "location": "Steelworks / Ace Chemicals",
-      "maps": 0,
+      "maps": 3,
       "images": 3,
       "reasons": []
     },
@@ -10830,11 +11043,13 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Traffic_Stop",
       "slug": "Traffic_Stop",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Traffic_Stop",
-      "words": 116,
+      "words": 150,
       "objectiveWords": 29,
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "location": "Earth 3 Gotham",
+      "locationContextSource": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman's_Missions"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Tragic_Comedy",
@@ -10941,7 +11156,7 @@
       "words": 98,
       "objectiveWords": 21,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -10972,7 +11187,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Un-Metalled",
       "words": 104,
       "objectiveWords": 18,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11017,7 +11232,7 @@
       "words": 160,
       "objectiveWords": 40,
       "location": "Area 51",
-      "maps": 0,
+      "maps": 1,
       "images": 7,
       "reasons": []
     },
@@ -11061,7 +11276,7 @@
       "words": 248,
       "objectiveWords": 9,
       "location": "Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
       "reasons": []
     },
@@ -11093,6 +11308,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Vault_Ambush!",
       "words": 141,
       "objectiveWords": 46,
+      "location": "the Vault",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11103,7 +11319,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Vengeful_Spirits",
       "words": 287,
       "objectiveWords": 105,
-      "location": "Metropolis",
+      "location": "Downtown Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11156,176 +11372,193 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Abra_Kadabra",
       "slug": "WANTED_Abra_Kadabra",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Abra_Kadabra",
-      "words": 180,
+      "words": 221,
       "objectiveWords": 40,
       "location": "Central City",
-      "maps": 0,
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Apokoliptian_Commander",
       "slug": "WANTED_Apokoliptian_Commander",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Apokoliptian_Commander",
-      "words": 232,
+      "words": 274,
       "objectiveWords": 85,
       "location": "New Genesis",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Arkillo",
       "slug": "WANTED_Arkillo",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Arkillo",
-      "words": 128,
+      "words": 166,
       "objectiveWords": 61,
-      "location": "Metropolis",
+      "location": "Historic District / Metropolis",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Avatar_of_Sin",
       "slug": "WANTED_Avatar_of_Sin",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Avatar_of_Sin",
-      "words": 151,
+      "words": 192,
       "objectiveWords": 86,
       "location": "Metropolis",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Bizarro",
       "slug": "WANTED_Bizarro",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Bizarro",
-      "words": 491,
+      "words": 529,
       "objectiveWords": 334,
       "location": "Metropolis",
       "maps": 1,
       "images": 5,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Boomerang",
       "slug": "WANTED_Captain_Boomerang",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Boomerang",
-      "words": 116,
+      "words": 156,
       "objectiveWords": 8,
       "location": "Gotham City",
       "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Cold",
       "slug": "WANTED_Captain_Cold",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Cold",
-      "words": 186,
+      "words": 225,
       "objectiveWords": 5,
-      "location": "Central City / Metropolis",
-      "maps": 0,
+      "location": "Midtown",
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Clayface",
       "slug": "WANTED_Clayface",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Clayface",
-      "words": 203,
+      "words": 241,
       "objectiveWords": 123,
       "location": "East End",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Doctor_Light",
       "slug": "WANTED_Doctor_Light",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Doctor_Light",
-      "words": 228,
+      "words": 273,
       "objectiveWords": 131,
       "location": "Historic District",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Enchanted_Statue",
       "slug": "WANTED_Enchanted_Statue",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Enchanted_Statue",
-      "words": 106,
+      "words": 145,
       "objectiveWords": 7,
       "location": "Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 3,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_General_Kordax",
       "slug": "WANTED_General_Kordax",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_General_Kordax",
-      "words": 102,
+      "words": 141,
       "objectiveWords": 44,
       "location": "Metropolis",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Heat_Wave",
       "slug": "WANTED_Heat_Wave",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Heat_Wave",
-      "words": 125,
+      "words": 166,
       "objectiveWords": 5,
-      "location": "Central City / Gotham City",
-      "maps": 0,
+      "location": "Diamond District",
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Wanted%3A_Joker_%26_Riddler_Allies",
       "slug": "Wanted_Joker_Riddler_Allies",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Wanted%3A_Joker_%26_Riddler_Allies",
-      "words": 263,
+      "words": 309,
       "objectiveWords": 31,
       "location": "Amusement Mile",
-      "maps": 0,
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Killer_Frost",
       "slug": "WANTED_Killer_Frost",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Killer_Frost",
-      "words": 70,
+      "words": 109,
       "objectiveWords": 20,
       "location": "Knightsdome",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Minotaur",
       "slug": "WANTED_Minotaur",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Minotaur",
-      "words": 224,
+      "words": 263,
       "objectiveWords": 152,
       "location": "Metropolis",
-      "maps": 0,
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Mist-Empowered_Villain",
       "slug": "WANTED_Mist-Empowered_Villain",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Mist-Empowered_Villain",
-      "words": 294,
+      "words": 339,
       "objectiveWords": 81,
       "maps": 0,
       "images": 15,
-      "reasons": []
+      "reasons": [],
+      "location": "Downtown Metropolis Battlezone / Mogo's Command Center",
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Nefarious_Villains",
@@ -11341,100 +11574,109 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Oolong_Siege_Robot",
       "slug": "WANTED_Oolong_Siege_Robot",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Oolong_Siege_Robot",
-      "words": 229,
+      "words": 268,
       "objectiveWords": 13,
       "location": "Steelworks",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Pied_Piper",
       "slug": "WANTED_Pied_Piper",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Pied_Piper",
-      "words": 242,
+      "words": 283,
       "objectiveWords": 77,
-      "location": "Central City / Gotham City",
+      "location": "Botanical Gardens",
       "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Professor_Zoom",
       "slug": "WANTED_Professor_Zoom",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Professor_Zoom",
-      "words": 166,
+      "words": 206,
       "objectiveWords": 40,
       "location": "Central City",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Second-Generation_Morrowbot",
       "slug": "WANTED_Second-Generation_Morrowbot",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Second-Generation_Morrowbot",
-      "words": 188,
+      "words": 227,
       "objectiveWords": 19,
       "location": "Arkham Asylum",
-      "maps": 0,
+      "maps": 1,
       "images": 4,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Solomon_Grundy",
       "slug": "WANTED_Solomon_Grundy",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Solomon_Grundy",
-      "words": 361,
+      "words": 401,
       "objectiveWords": 129,
       "location": "East End",
       "maps": 0,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Judge",
       "slug": "WANTED_The_Judge",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Judge",
-      "words": 158,
+      "words": 198,
       "objectiveWords": 114,
-      "location": "Metropolis",
+      "location": "Midtown",
       "maps": 0,
       "images": 0,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Top",
       "slug": "WANTED_The_Top",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Top",
-      "words": 166,
+      "words": 205,
       "objectiveWords": 37,
-      "location": "Central City / Metropolis",
-      "maps": 0,
+      "location": "Science Spire",
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Trickster",
       "slug": "WANTED_The_Trickster",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Trickster",
-      "words": 123,
+      "words": 163,
       "objectiveWords": 5,
-      "location": "Central City / Gotham City",
-      "maps": 0,
+      "location": "Ace Chemicals",
+      "maps": 1,
       "images": 2,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Weather_Wizard",
       "slug": "WANTED_Weather_Wizard",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Weather_Wizard",
-      "words": 150,
+      "words": 190,
       "objectiveWords": 5,
-      "location": "Central City / Metropolis",
-      "maps": 0,
+      "location": "Chinatown",
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/War_Games",
@@ -11452,6 +11694,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/War_with_the_Corps",
       "words": 194,
       "objectiveWords": 126,
+      "location": "Historic District",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11462,6 +11705,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Warehouse_of_the_Dead",
       "words": 198,
       "objectiveWords": 172,
+      "location": "University Warehouse",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -11505,7 +11749,8 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Wartime_Whistleblower",
       "words": 82,
       "objectiveWords": 18,
-      "maps": 0,
+      "location": "Wartime Whistleblower - source map",
+      "maps": 1,
       "images": 3,
       "reasons": []
     },
@@ -11538,7 +11783,7 @@
       "words": 232,
       "objectiveWords": 0,
       "location": "Watchtower",
-      "maps": 0,
+      "maps": 1,
       "images": 11,
       "reasons": []
     },
@@ -11564,7 +11809,8 @@
       "maps": 0,
       "images": 3,
       "reasons": [
-        "Insufficient source detail"
+        "Insufficient source detail",
+        "Missing objectives"
       ]
     },
     {
@@ -11573,7 +11819,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weapons_of_Metal_Destruction",
       "words": 140,
       "objectiveWords": 36,
-      "location": "Gotham City",
+      "location": "Metal Gotham City",
       "maps": 0,
       "images": 2,
       "reasons": []
@@ -11584,6 +11830,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weeds_of_Oblivion",
       "words": 108,
       "objectiveWords": 97,
+      "location": "Botanical Gardens",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11594,6 +11841,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weeds_Whacked",
       "words": 45,
       "objectiveWords": 0,
+      "location": "Botanical gardens",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -11602,56 +11850,61 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Reign_of_Criminals",
       "slug": "Weekly_Bounty_Reign_of_Criminals",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Reign_of_Criminals",
-      "words": 229,
+      "words": 274,
       "objectiveWords": 32,
       "location": "Doomed Metropolis",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Reign_of_Heroes",
       "slug": "Weekly_Bounty_Reign_of_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Reign_of_Heroes",
-      "words": 192,
+      "words": 237,
       "objectiveWords": 9,
       "location": "Doomed Metropolis",
       "maps": 0,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Starro_Conqueror",
       "slug": "Weekly_Bounty_Starro_Conqueror",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_Starro_Conqueror",
-      "words": 354,
+      "words": 401,
       "objectiveWords": 56,
       "location": "Central City Starro Deluge Zone",
       "maps": 0,
       "images": 3,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_The_Fearsome_Five_(Heroes)",
       "slug": "Weekly_Bounty_The_Fearsome_Five_Heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_The_Fearsome_Five_(Heroes)",
-      "words": 104,
+      "words": 150,
       "objectiveWords": 11,
       "location": "Titans Island",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_The_Fearsome_Five_(Villains)",
       "slug": "Weekly_Bounty_The_Fearsome_Five_Villains",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Weekly_Bounty%3A_The_Fearsome_Five_(Villains)",
-      "words": 134,
+      "words": 180,
       "objectiveWords": 18,
       "location": "Titans Island",
-      "maps": 0,
+      "maps": 1,
       "images": 1,
-      "reasons": []
+      "reasons": [],
+      "bountyDirectorySource": "https://dcuniverseonline.fandom.com/wiki/Bounties"
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Weekly_Mission",
@@ -11670,7 +11923,7 @@
       "words": 354,
       "objectiveWords": 57,
       "location": "Steelworks / Ace Chemicals",
-      "maps": 0,
+      "maps": 2,
       "images": 2,
       "reasons": []
     },
@@ -11701,6 +11954,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/What_Luthor_Wants...",
       "words": 110,
       "objectiveWords": 70,
+      "location": "STAR Labs Facility / Metropolis / Metrodome",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11908,6 +12162,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Wrought_With_Wrath",
       "words": 161,
       "objectiveWords": 57,
+      "location": "Gotham Wastelands",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11929,6 +12184,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Your_Armory",
       "words": 62,
       "objectiveWords": 11,
+      "location": "Journal",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -11964,5 +12220,6 @@
       "images": 4,
       "reasons": []
     }
-  ]
+  ],
+  "enrichedAt": "2026-10-21T23:58:47.599Z"
 }

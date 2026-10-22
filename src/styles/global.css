@@ -374,7 +374,8 @@ small {
   gap: 4px;
   flex-wrap: wrap;
 }
-.filters button {
+.filters button,
+.library-pagination button {
   background: var(--panel);
   border: 1px solid var(--line);
   color: var(--muted);
@@ -390,6 +391,19 @@ small {
 .filters button:hover {
   border-color: var(--orange);
   color: var(--orange);
+}
+.library-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 16px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+.library-pagination button:disabled {
+  opacity: 0.45;
+  cursor: default;
 }
 #count {
   font-size: 11px;

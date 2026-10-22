@@ -198,10 +198,35 @@ D1 reports 419 image catalog records after the six successful metadata batches.
 
 - [x] Download and hash-verify every direct Missions category article (1,107).
 - [x] Stage all mission source conversions, preserving objectives, tables, source links and useful imagery.
-- [ ] Resolve source warnings, thin pages, canonical aliases and missing location context.
-- [ ] Research exact-title YouTube references across the mission inventory and verify accepted matches.
-- [ ] Copy mission images to R2, verify public objects, and update the attribution catalog.
-- [ ] Publish substantive guides with documented source coverage; preserve existing live-edit baselines.
+- [x] Resolve source warnings, thin pages, canonical aliases and missing location context with explicit publication/hold dispositions.
+- [x] Research exact-title YouTube references across the mission inventory and verify accepted metadata matches.
+- [x] Copy mission images to R2, verify public objects, and update the attribution catalog.
+- [x] Prepare substantive guides with documented source coverage; preserve existing live-edit baselines.
 - [ ] Pass content/type/build/browser/Cloudflare checks and independent review, push main, and verify production.
 
 The source's empty headings and maintenance templates must not become wiki content. Named area evidence is distinct from an exact map point; historical versions must stay labeled. Unresolved factual gaps require additional evidence, not invented details or placeholder padding.
+
+Mission conversion evidence: 1,107 captures converted and researched; 1,019 new
+guides accepted, seven existing mission guides supplemented, two canonical aliases,
+and 79 sources held. The held entries comprise 56 without reliable location/video
+evidence, 22 with insufficient substantive objectives/detail, and one conflicting
+Bane prerequisite. All raw captures remain available for further research.
+The library now contains 1,054 articles. Of the new guides, 957 have source-backed
+location context, 101 include source maps, and 319 have 462 verified-title video
+references. A named area/instance is not an exact map pin. Video gameplay and
+route/faction/version remain unverified unless separately documented.
+
+Copied 942 additional images (1,884 original/preview objects), all byte-verified
+from the public R2 domain. Total image catalog: 1,361 records, 265,333,760 original
+and preview bytes. All 535 original editable parts across 35 earlier guides are
+unchanged; missing source reward tables and gallery images were appended.
+Pagination displays 48 results while search covers all guides. Local validation:
+58 unit tests, type/content checks and build passed. Output: 1,070 files against
+18,000 internal / 20,000 platform budget. Deployment dry run passed at
+7,746.72 KiB raw / 929.03 KiB compressed. Seven Cloudflare integration tests passed.
+Browser, independent review and production checks are recorded below when complete.
+
+D1 attribution import completed: production `media_assets` count is 1,361.
+Manual browsing found repeated map galleries; captions are now cleaned before
+deduplication, removing 30 repeated galleries while retaining map panels and
+meaningful walkthrough text. Regression coverage verifies that ordering.

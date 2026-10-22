@@ -65,3 +65,22 @@ test("image-only map sections retain their image without placeholder prose", () 
   assert.equal(map.images.length, 1);
   assert.equal(r.article.location.maps.length, 1);
 });
+
+test("mission pages without an Objectives heading still receive quest publication checks", () => {
+  const result = convertMission(
+    cache(
+      "This is a mission that begins in Metropolis.\n\n## Background\n\nLocate and defeat the target.",
+    ),
+    { ...record, title: "Aversion_Therapy" },
+  );
+  assert.equal(result.article.category, "Quests");
+});
+test("maps in the source Map section remain map references even when the filename only says Spawn", () => {
+  const d = cache(
+    "This is a mission with several possible spawn points.\n\n## Objectives\n\n- Defeat the target.\n\n## Map\n\n![Spawn positions](https://static.wikia.nocookie.net/dcuo/images/a/ab/Bounty_Spawn.png/revision/latest)",
+  );
+  d.html =
+    '<img width="400" data-image-name="Bounty_Spawn.png" src="https://static.wikia.nocookie.net/dcuo/images/a/ab/Bounty_Spawn.png/revision/latest">';
+  const result = convertMission(d, record);
+  assert.equal(result.article.location.maps.length, 1);
+});

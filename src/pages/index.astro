@@ -56,6 +56,15 @@ import articles from "../data/articles";
             </a>
           ))}
         </div>
+        <nav class="library-pagination" aria-label="Guide pages" hidden>
+          <button id="previous-guides" type="button">
+            Previous
+          </button>
+          <span id="guide-page" role="status" aria-live="polite"></span>
+          <button id="next-guides" type="button">
+            Next
+          </button>
+        </nav>
         <p id="empty" hidden>
           No guides match. Try another term or choose All.
         </p>
@@ -136,23 +145,55 @@ import articles from "../data/articles";
         filter();
         document.getElementById("library")?.scrollIntoView({ block: "start" });
       });
-    function filter() {
-      let count = 0;
-      document.querySelectorAll<HTMLAnchorElement>(".card").forEach((card) => {
-        const visible =
+    const pageSize = 48;
+    let currentPage = 1;
+    const previous =
+      document.querySelector<HTMLButtonElement>("#previous-guides")!;
+    const next = document.querySelector<HTMLButtonElement>("#next-guides")!;
+    function filter(resetPage = true) {
+      if (resetPage) currentPage = 1;
+      const cards = [...document.querySelectorAll<HTMLAnchorElement>(".card")];
+      const matching = cards.filter(
+        (card) =>
           (category === "All" || card.dataset.type === category) &&
           (card.dataset.search || "").includes(
             input.value.trim().toLowerCase(),
-          );
-        card.hidden = !visible;
-        if (visible) count++;
+          ),
+      );
+      const count = matching.length;
+      const pages = Math.max(1, Math.ceil(count / pageSize));
+      currentPage = Math.min(currentPage, pages);
+      cards.forEach((card) => {
+        card.hidden = true;
+      });
+      const start = (currentPage - 1) * pageSize;
+      matching.slice(start, start + pageSize).forEach((card) => {
+        card.hidden = false;
       });
       document.querySelector("#count")!.textContent =
-        `${count} ${count === 1 ? "guide" : "guides"}`;
+        count > pageSize
+          ? `${start + 1}-${Math.min(start + pageSize, count)} of ${count} guides`
+          : `${count} ${count === 1 ? "guide" : "guides"}`;
+      document.querySelector<HTMLElement>(".library-pagination")!.hidden =
+        pages <= 1;
+      document.querySelector("#guide-page")!.textContent =
+        `Page ${currentPage} of ${pages}`;
+      previous.disabled = currentPage === 1;
+      next.disabled = currentPage === pages;
       document.querySelector<HTMLElement>("#empty")!.hidden = count !== 0;
     }
     filter();
-    input.addEventListener("input", filter);
+    input.addEventListener("input", () => filter());
+    previous.addEventListener("click", () => {
+      currentPage--;
+      filter(false);
+      document.getElementById("library")?.scrollIntoView({ block: "start" });
+    });
+    next.addEventListener("click", () => {
+      currentPage++;
+      filter(false);
+      document.getElementById("library")?.scrollIntoView({ block: "start" });
+    });
     document
       .querySelector('a[href="/#library"]')
       ?.addEventListener("click", () => {

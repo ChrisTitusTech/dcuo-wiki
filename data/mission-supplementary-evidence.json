@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "slug": "Brother_Blue_in_Trouble",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Officer_Walden",
+      "retrieved": "2026-10-21",
+      "excerpt": "Officer Walden is found in the Giordano Botanical Gardens, just outside of Poison Ivy's greenhouse, and starts the Freelance mission Brother Blue in Trouble, but only after the completion of Weeds of Oblivion.",
+      "location": "Giordano Botanical Gardens, outside Poison Ivy's greenhouse",
+      "precision": "Mission contact position and prerequisite documented by the Officer Walden source entry"
+    },
+    {
+      "slug": "Fish_in_a_Barrel",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fearmonger_(NPC)",
+      "retrieved": "2026-10-21",
+      "excerpt": "The Fearmonger is found in the Metropolis City Hall in the Historic District, and must be talked to by villains to start Fish in a Barrel.",
+      "location": "Metropolis City Hall, Historic District",
+      "precision": "Mission contact position documented by the Fearmonger NPC source entry"
+    },
+    {
+      "slug": "Protect_and_Serve",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Doctor_Sarah_Charles",
+      "retrieved": "2026-10-21",
+      "excerpt": "Doctor Sarah Charles can be found in the Little Bohemia MPD near the Booster Gold Kiosk",
+      "location": "Little Bohemia Police Station, near the Booster Gold Kiosk",
+      "precision": "The mission names Doctor Sarah Charles in the Little Bohemia Police Station; her NPC source entry identifies the nearby kiosk"
+    }
+  ]
+}
