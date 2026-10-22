@@ -1,5 +1,6 @@
 ---
 import { sectionHasContent } from "../../../shared/import-text.mjs";
+import { guideReferenceLink } from "../../../shared/guide-links.mjs";
 import Layout from "../../layouts/Layout.astro";
 import { articleParts, renderPart } from "../../../shared/article-content.mjs";
 import ArticleEditor from "../../components/ArticleEditor.astro";
@@ -93,7 +94,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
                   ? renderPart(
                       parts.get(`section-${i}`),
                       parts.get(`section-${i}`).text,
-                      { slug: article.slug },
+                      { slug: article.slug, references: s.references },
                     )
                   : ""
               }
@@ -107,13 +108,13 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
             )}
             {s.references && (
               <details class="section-references">
-                <summary>
-                  Source wiki detail links ({s.references.length})
-                </summary>
+                <summary>Related article links ({s.references.length})</summary>
                 {s.references.map((r, index) => (
                   <>
                     {index > 0 && " · "}
-                    <a href={r.url}>{r.label}</a>
+                    <a href={guideReferenceLink(r.url, { slug: article.slug })}>
+                      {r.label}
+                    </a>
                   </>
                 ))}
               </details>
@@ -139,7 +140,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
                     set:html={renderPart(
                       parts.get(`table-${i}`),
                       parts.get(`table-${i}`).text,
-                      { slug: article.slug },
+                      { slug: article.slug, references: s.references },
                     )}
                   />
                 </div>

@@ -300,7 +300,10 @@ export async function handle(request, env, fetcher = fetch) {
           revision.part === "document"
             ? [revision.previous_content, revision.content].map((value) => {
                 const document = validateDocument(JSON.parse(value));
-                return { document, ...renderDocument(document) };
+                return {
+                  document,
+                  ...renderDocument(document, { slug: article.slug }),
+                };
               })
             : undefined;
         return json({ revision, ...(versions ? { versions } : {}) });
@@ -343,11 +346,14 @@ export async function handle(request, env, fetcher = fetch) {
       !articleRoute[3] &&
       request.method === "POST"
     ) {
-      findArticle(decodeURIComponent(articleRoute[1]));
+      const previewArticle = findArticle(decodeURIComponent(articleRoute[1]));
       const b = await bodyJson(request, DOCUMENT_BYTES * 2 + 16384);
       try {
         const document = validateDocument(b.document);
-        return json({ document, ...renderDocument(document) });
+        return json({
+          document,
+          ...renderDocument(document, { slug: previewArticle.slug }),
+        });
       } catch (error) {
         throw new HttpError(400, error.message);
       }

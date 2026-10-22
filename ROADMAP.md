@@ -561,3 +561,47 @@ acceptance compares each of the 196 public document baselines and revision IDs
 against the corrected catalog. Evidence location:
 `.import-cache/article-cleanup/live-acceptance.json`; visual proof:
 `.import-cache/proofs/coast-cleanup-live.png`.
+
+### Local guide cross-links (2026-10-22)
+
+Imported See also lists were plain text, with useful links hidden in a collapsed
+reference list. Add direct local links to matching entries and resolve source
+references to published wiki pages throughout static rendering, editor baselines,
+legacy revisions, saved full documents, previews and history rendering. Preserve
+source/history attribution and Location evidence links to the original source.
+
+A generated lookup contains published titles, source paths, faction metadata and
+visible section anchors, without importing the full article catalog into the
+editor. Build and test commands refresh it automatically. Match exact normalized
+source paths/titles; choose faction-specific missions only with known context or
+an explicit source variant. Ambiguous labels remain unlinked. Numbered feat
+continuations resolve a known source heading to the correct part; unsupported
+source fragments fall back to the local article rather than a missing anchor.
+
+The catalog audit finds 8,340 source references with local destinations across
+1,586 articles and 168 See also sections. Coast City's three visible entries link
+to Ferris Aircraft, STAR Labs Research Facility and the Hero Oan Sciencells guide.
+All resolved destinations are checked against the published catalog. Article data,
+section IDs and database contents are unchanged; a pre-deployment snapshot covers
+114 existing parts across six live articles.
+
+Local acceptance: Astro checks, 124 unit tests, 25 browser checks, 17 Cloudflare
+integration checks and deployment dry run pass. Output remains 1,686 files;
+Worker gzip is 1,869.08 KiB. Tests include actual navigation from See also,
+faction ambiguity, source/section matching, continuation parts, safe text and
+links, stored-document preservation and editor preview parity. Production
+acceptance evidence belongs in `.import-cache/guide-links/live-acceptance.json`
+and `.import-cache/proofs/guide-links-live.png`.
+
+Independent review identified mixed local/unpublished label ambiguity, table
+links missing from full-document baselines, and evidence URLs depending on a
+single unformatted text node. Retain unresolved alternatives when grouping
+labels, reuse reference-aware conversion in table cells, and preserve evidence
+links structurally within the location section and evidence paragraph. Added
+regressions cover Assist Atlanteans, both Bounties tables, partially bold labels
+and renamed evidence text. Unqualified single-faction variants require known
+matching context too.
+
+Follow-up independent review found no additional actionable regressions and
+validated baselines across the article catalog. No source article records or
+stored community documents are rewritten by this feature.

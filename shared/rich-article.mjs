@@ -1,3 +1,4 @@
+import { guideReferenceLink, guideTextParts } from "./guide-links.mjs";
 import { sectionHasContent, filledTable } from "./import-text.mjs";
 import { renderFeatText } from "./feat-meter.mjs";
 import { escapeHtml } from "./article-content.mjs";
@@ -304,14 +305,29 @@ export function documentHeadings(doc) {
   walk(doc.content);
   return entries;
 }
-export function renderDocument(doc, { editLinks = false } = {}) {
+export function renderDocument(doc, { editLinks = false, slug } = {}) {
   const headings = documentHeadings(doc);
   const headingIds = new Map(headings.map((h) => [h.node, h.id]));
-  function blocks(children = [], inherited = false) {
-    let rewardLevels = [];
+  function blocks(
+    children = [],
+    inherited = false,
+    inheritedLinks = false,
+    inheritedEvidence = false,
+  ) {
+    let rewardLevels = [],
+      linkLevels = [],
+      evidenceLevels = [];
     return children
       .map((block) => {
         if (block.type === "heading") {
+          evidenceLevels = evidenceLevels.filter(
+            (level) => level < block.attrs.level,
+          );
+          if (block.attrs.id === "location")
+            evidenceLevels.push(block.attrs.level);
+          linkLevels = linkLevels.filter((level) => level < block.attrs.level);
+          if (/^See also$/i.test(documentText(block)))
+            linkLevels.push(block.attrs.level);
           rewardLevels = rewardLevels.filter(
             (level) => level < block.attrs.level,
           );
@@ -320,21 +336,37 @@ export function renderDocument(doc, { editLinks = false } = {}) {
           )
             rewardLevels.push(block.attrs.level);
         }
-        return render(block, inherited || rewardLevels.length > 0);
+        return render(
+          block,
+          inherited || rewardLevels.length > 0,
+          inheritedLinks || linkLevels.length > 0,
+          inheritedEvidence || evidenceLevels.length > 0,
+        );
       })
       .join("");
   }
-  function render(n, decorate = false) {
+  function render(n, decorate = false, crosslink = false, evidence = false) {
     const content = () =>
-      (n.content || []).map((c) => render(c, decorate)).join("");
+      (n.content || [])
+        .map((c) => render(c, decorate, crosslink, evidence))
+        .join("");
     switch (n.type) {
       case "doc":
         return blocks(n.content);
       case "text": {
-        let html =
+        const decorateText =
           decorate && !n.marks?.some((m) => m.type === "code")
-            ? renderCurrencyText(n.text)
-            : renderFeatText(n.text);
+            ? renderCurrencyText
+            : renderFeatText;
+        const canLink =
+          crosslink && !n.marks?.some((m) => ["link", "code"].includes(m.type));
+        let html = guideTextParts(n.text, [], { slug, seeAlso: canLink })
+          .map((p) =>
+            p.href
+              ? `<a href="${escapeHtml(p.href)}">${decorateText(p.text)}</a>`
+              : decorateText(p.text),
+          )
+          .join("");
         for (const mark of n.marks || []) {
           const tag = {
             bold: "strong",
@@ -345,7 +377,7 @@ export function renderDocument(doc, { editLinks = false } = {}) {
           }[mark.type];
           html =
             mark.type === "link"
-              ? `<a href="${escapeHtml(mark.attrs.href)}" rel="noreferrer">${html}</a>`
+              ? `<a href="${escapeHtml(evidence ? mark.attrs.href : guideReferenceLink(mark.attrs.href, { slug }))}" rel="noreferrer">${html}</a>`
               : `<${tag}>${html}</${tag}>`;
         }
         return html;
@@ -354,7 +386,7 @@ export function renderDocument(doc, { editLinks = false } = {}) {
         const rewards =
           decorate ||
           /^(?:rewards?|results?|loot|drops?)\s*:/i.test(documentText(n));
-        return `<p>${(n.content || []).map((c) => render(c, rewards)).join("")}</p>`;
+        return `<p>${(n.content || []).map((c) => render(c, rewards, crosslink, evidence || /\bLocation\s+evidence\b/i.test(documentText(n)))).join("")}</p>`;
       }
       case "heading":
         return `${editLinks ? `<a class="section-edit" href="#article-editor" data-edit-part="${headingIds.get(n)}" aria-label="Edit ${escapeHtml(documentText(n))}">Edit section</a>` : ""}<h${n.attrs.level} id="${headingIds.get(n)}">${(n.content || []).map((c) => render(c, false)).join("")}</h${n.attrs.level}>`;
@@ -367,9 +399,9 @@ export function renderDocument(doc, { editLinks = false } = {}) {
       case "orderedList":
         return `<ol start="${n.attrs.start}">${content()}</ol>`;
       case "listItem":
-        return `<li>${blocks(n.content, decorate)}</li>`;
+        return `<li>${blocks(n.content, decorate, crosslink, evidence)}</li>`;
       case "blockquote":
-        return `<blockquote>${blocks(n.content, decorate)}</blockquote>`;
+        return `<blockquote>${blocks(n.content, decorate, crosslink, evidence)}</blockquote>`;
       case "codeBlock":
         return `<pre><code>${(n.content || []).map((c) => render(c, false)).join("")}</code></pre>`;
       case "image":
@@ -382,14 +414,14 @@ export function renderDocument(doc, { editLinks = false } = {}) {
         const rewards =
           decorate ||
           /rewards?|currency|cash|marks|loot|drops?|cost|price/i.test(labels);
-        return `<div class="table-scroll" tabindex="0" role="region" aria-label="Article table"><table><tbody>${(n.content || []).map((row) => render(row, rewards)).join("")}</tbody></table></div>`;
+        return `<div class="table-scroll" tabindex="0" role="region" aria-label="Article table"><table><tbody>${(n.content || []).map((row) => render(row, rewards, crosslink, evidence)).join("")}</tbody></table></div>`;
       }
       case "tableRow":
         return `<tr>${content()}</tr>`;
       case "tableCell":
       case "tableHeader": {
         const tag = n.type === "tableHeader" ? "th" : "td";
-        return `<${tag} colspan="${n.attrs.colspan}" rowspan="${n.attrs.rowspan}">${blocks(n.content, decorate)}</${tag}>`;
+        return `<${tag} colspan="${n.attrs.colspan}" rowspan="${n.attrs.rowspan}">${blocks(n.content, decorate, crosslink, evidence)}</${tag}>`;
       }
       case "youtube": {
         const video = youtubeVideo(n.attrs.url);
@@ -423,10 +455,17 @@ const heading = (label, id) => ({
   attrs: { level: 2, ...(id ? { id } : {}) },
   content: textNodes(label),
 });
-const linked = (label, href) => ({
+const linked = (label, href, context) => ({
   type: "text",
   text: label || href,
-  marks: [{ type: "link", attrs: { href: articleLink(href) } }],
+  marks: [
+    {
+      type: "link",
+      attrs: {
+        href: articleLink(context ? guideReferenceLink(href, context) : href),
+      },
+    },
+  ],
 });
 
 // Convert effective live section revisions, not just the original imported article.
@@ -434,6 +473,17 @@ export function baselineDocument(article, parts, related = []) {
   const values = new Map(parts.map((p) => [p.id, p]));
   const get = (id) => values.get(id)?.text || "";
   const content = [];
+  function referenceParagraph(value, section) {
+    return {
+      type: "paragraph",
+      content: guideTextParts(value, section.references, {
+        slug: article.slug,
+        seeAlso: /^See also$/i.test(section.title),
+      }).map((p) =>
+        p.href ? linked(p.text, p.href) : { type: "text", text: p.text },
+      ),
+    };
+  }
   function images(id) {
     for (const line of get(id).split("\n").filter(Boolean)) {
       const [label, reference] = line.split(" | ");
@@ -467,7 +517,7 @@ export function baselineDocument(article, parts, related = []) {
         type: "bulletList",
         content: items.map((item) => ({
           type: "listItem",
-          content: [paragraph(item)],
+          content: [referenceParagraph(item, section)],
         })),
       });
     if (section.images) images(`images-${i}`);
@@ -475,10 +525,10 @@ export function baselineDocument(article, parts, related = []) {
       content.push({
         type: "paragraph",
         content: [
-          { type: "text", text: "Source details: " },
+          { type: "text", text: "Related articles: " },
           ...section.references.flatMap((r, j) => [
             ...(j ? [{ type: "text", text: " | " }] : []),
-            linked(r.label, r.url),
+            linked(r.label, r.url, { slug: article.slug }),
           ]),
         ],
       });
@@ -500,7 +550,7 @@ export function baselineDocument(article, parts, related = []) {
           type: "tableRow",
           content: row.map((cell) => ({
             type: index === 0 ? "tableHeader" : "tableCell",
-            content: [paragraph(cell)],
+            content: [referenceParagraph(cell, section)],
           })),
         })),
       });

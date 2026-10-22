@@ -1,3 +1,4 @@
+import { guideTextParts } from "./guide-links.mjs";
 import { cleanImportText, missingImportText } from "./import-text.mjs";
 import { renderFeatText } from "./feat-meter.mjs";
 import { renderCurrencyText, rewardContext, isRewardPart } from "./rewards.mjs";
@@ -107,10 +108,22 @@ function url(value) {
     throw new Error("Links must be full HTTPS URLs without credentials.");
   return escapeHtml(parsed.href);
 }
-export function renderPart(part, value, { slug } = {}) {
+/** @param {any} part @param {string} value @param {{slug?: string, references?: Array<{label: string, url: string}>}} [options] */
+export function renderPart(part, value, { slug, references = [] } = {}) {
   const rewards = isRewardPart(part, slug);
   const restored = rewards ? rewardContext(slug, part, value) : null;
-  const renderText = rewards ? renderCurrencyText : renderFeatText;
+  const decorateText = rewards ? renderCurrencyText : renderFeatText;
+  const renderText = (text) =>
+    guideTextParts(text, references, {
+      slug,
+      seeAlso: /^See also$/i.test(part.title || part.caption || ""),
+    })
+      .map((p) =>
+        p.href
+          ? `<a href="${escapeHtml(p.href)}">${decorateText(p.text)}</a>`
+          : decorateText(p.text),
+      )
+      .join("");
   if (part.kind === "videos" && value === "") return "";
   if (typeof value !== "string" || value.length > 7000 || !value.trim())
     throw new Error("Enter between 1 and 7,000 characters.");

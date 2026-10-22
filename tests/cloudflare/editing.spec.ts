@@ -524,3 +524,78 @@ test("cleaned empty sections remain omitted until a legacy correction supplies r
   ).json();
   expect(JSON.stringify(restored.document)).toContain("5 Source Marks");
 });
+
+test("See also cross links survive the live Worker, full editor baseline and preview", async ({
+  page,
+  request,
+}) => {
+  const slug = "Disturbance_on_the_Coast";
+  await page.goto("/wiki/" + slug + "/");
+  await expect(
+    page.locator('#section-5 [data-live-part="section-5"] a'),
+  ).toHaveCount(3);
+  const state = await (
+    await request.get("/api/articles/" + slug + "/document")
+  ).json();
+  expect(JSON.stringify(state.document)).toContain(
+    "/wiki/Alert_T1_Oan_Sciencells_Heroes/",
+  );
+  const preview = await request.post("/api/articles/" + slug + "/preview", {
+    headers: { Origin: "http://127.0.0.1:8787" },
+    data: { document: state.document },
+  });
+  expect(preview.status()).toBe(200);
+  expect((await preview.json()).html).toContain(
+    'href="/wiki/Duo_T1_Ferris_Aircraft/"',
+  );
+  // A saved legacy/full-document source URL is localized at render time too.
+  const doc = {
+    version: 1,
+    title: "Local guide links",
+    summary: "Summary",
+    content: {
+      type: "doc",
+      content: [
+        {
+          type: "heading",
+          attrs: { level: 2 },
+          content: [{ type: "text", text: "See also" }],
+        },
+        {
+          type: "paragraph",
+          content: [{ type: "text", text: "Duo T1: Ferris Aircraft" }],
+        },
+        {
+          type: "paragraph",
+          content: [
+            {
+              type: "text",
+              text: "Oan mission",
+              marks: [
+                {
+                  type: "link",
+                  attrs: {
+                    href: "https://dcuniverseonline.fandom.com/wiki/Alert_T1:_Oan_Sciencells",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  };
+  const migrated = await request.post("/api/articles/" + slug + "/preview", {
+    headers: { Origin: "http://127.0.0.1:8787" },
+    data: { document: doc },
+  });
+  expect(migrated.status()).toBe(200);
+  const rendered = await migrated.json();
+  expect(rendered.html).toContain(
+    'href="/wiki/Alert_T1_Oan_Sciencells_Heroes/"',
+  );
+  expect(rendered.html).toContain('href="/wiki/Duo_T1_Ferris_Aircraft/"');
+  expect(JSON.stringify(rendered.document)).toContain(
+    "https://dcuniverseonline.fandom.com/wiki/Alert_T1:_Oan_Sciencells",
+  );
+});

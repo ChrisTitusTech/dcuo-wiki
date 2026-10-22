@@ -340,3 +340,26 @@ test("imported articles omit unfilled sections and display clean text and tables
   );
   await expect(page.locator("#article-body td:empty").first()).toBeVisible();
 });
+
+test("See also entries open the matching local guides directly", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Disturbance_on_the_Coast/");
+  const list = page.locator('#section-5 [data-live-part="section-5"]');
+  await expect(
+    list.getByRole("link", { name: "Duo T1: Ferris Aircraft", exact: true }),
+  ).toHaveAttribute("href", "/wiki/Duo_T1_Ferris_Aircraft/");
+  await expect(
+    list.getByRole("link", {
+      name: "Alert T1: STAR Labs Research Facility",
+      exact: true,
+    }),
+  ).toHaveAttribute("href", "/wiki/Alert_T1_STAR_Labs_Research_Facility/");
+  await list
+    .getByRole("link", { name: "Alert T1: Oan Sciencells", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/wiki\/Alert_T1_Oan_Sciencells_Heroes\//);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Alert T1: Oan Sciencells (Heroes)",
+  );
+});

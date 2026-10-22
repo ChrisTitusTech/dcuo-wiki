@@ -61,7 +61,7 @@ export async function getDocumentState(env, article) {
     document,
     revision: state.revision,
     baseHash: await hash(JSON.stringify(document)),
-    ...renderDocument(document),
+    ...renderDocument(document, { slug: article.slug }),
   };
 }
 function assetRequest(request) {
@@ -93,7 +93,10 @@ export async function serveArticle(request, env) {
     },
   });
   if (document) {
-    const { html, toc } = renderDocument(document, { editLinks: true });
+    const { html, toc } = renderDocument(document, {
+      editLinks: true,
+      slug: article.slug,
+    });
     rewriter.on("#article-body", {
       element(el) {
         el.setInnerContent(html, { html: true });
@@ -127,7 +130,11 @@ export async function serveArticle(request, env) {
     rewriter.on(`[data-live-part="${part.id}"]`, {
       element(el) {
         el.setInnerContent(
-          renderPart(part, part.text, { slug: article.slug }),
+          renderPart(part, part.text, {
+            slug: article.slug,
+            references:
+              article.sections[Number(part.id.split("-")[1])]?.references,
+          }),
           { html: true },
         );
       },
