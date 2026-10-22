@@ -83,6 +83,7 @@ test("maps in the source Map section remain map references even when the filenam
     '<img width="400" data-image-name="Bounty_Spawn.png" src="https://static.wikia.nocookie.net/dcuo/images/a/ab/Bounty_Spawn.png/revision/latest">';
   const result = convertMission(d, record);
   assert.equal(result.article.location.maps.length, 1);
+  assert.equal(result.article.location.maps[0].label, "Spawn positions");
 });
 
 test("source form placeholders do not become guide text or substantive words", () => {
@@ -121,4 +122,46 @@ test("checking the Journal after a world objective is not a menu-only location",
     record,
   );
   assert.equal(menu.article.location.label, "Journal");
+});
+
+test("equipment brands and episode titles cannot override geographic objectives or menu rewards", () => {
+  const hunt = convertMission(
+    cache(
+      "Scavenger Hunt is a mission.\n\n## Intro\n\nPrisoners at Stryker's Island have stolen Steelworks technology.\n\n## Objective\n\n- Recover bits of Steelworks non-lethal containment tech.\n- Return to the Stryker's Island staging area and speak with the Steelworks Communication Foreman.",
+    ),
+    record,
+  );
+  assert.equal(hunt.article.location.label, "Stryker's Island");
+  const reward = convertMission(
+    cache(
+      "Enchanted Coral is a mission available in the Atlantis episode. It is auto-completed at combat rating 241.\n\n## Objectives\n\nComplete this mission to collect your new Enchanted Corals",
+    ),
+    record,
+  );
+  assert.equal(reward.article.location.label, "Journal / player menus");
+  const none = convertMission(
+    cache(
+      "This is a mission available in the Atlantis episode.\n\n## Objective\n\nRecover bits of Steelworks technology.",
+    ),
+    record,
+  );
+  assert.equal(none.article.location, undefined);
+});
+
+test("named open-world variants and geographic subregions keep their explicit context", () => {
+  for (const [objective, expected] of [
+    ["Assist Catwoman in BoP: Metropolis.", "BoP: Metropolis"],
+    ["Rescue Lanterns on Mournful Mogo.", "Mournful Mogo"],
+    [
+      "Speak with Doctor Fate in the Magic Wing of the Watchtower.",
+      "Watchtower",
+    ],
+    ["Find Catwoman in Gotham's Otisburg district.", "Gotham's Otisburg"],
+  ]) {
+    const result = convertMission(
+      cache(`This is a mission.\n\n## Objective\n\n${objective}`),
+      record,
+    );
+    assert.equal(result.article.location.label, expected);
+  }
 });

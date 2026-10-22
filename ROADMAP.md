@@ -197,57 +197,51 @@ D1 reports 419 image catalog records after the six successful metadata batches.
 ## Complete mission guide conversion (authorized October 21, 2026)
 
 - [x] Download and hash-verify every direct Missions category article (1,107).
-- [x] Stage all mission source conversions, preserving objectives, tables, source links and useful imagery.
-- [x] Resolve source warnings, thin pages, canonical aliases and missing location context with explicit publication/hold dispositions.
-- [x] Research exact-title YouTube references across the mission inventory and verify accepted metadata matches.
-- [x] Copy mission images to R2, verify public objects, and update the attribution catalog.
-- [x] Prepare substantive guides with documented source coverage; preserve existing live-edit baselines.
-- [ ] Pass content/type/build/browser/Cloudflare checks and independent review, push main, and verify production.
+- [x] Convert all captures, preserving objectives, substantive tables, source links and useful imagery.
+- [x] Resolve canonical aliases and record explicit publication/hold dispositions.
+- [x] Research exact-title YouTube references across all 1,107 titles and verify accepted metadata matches.
+- [x] Copy mission images to R2, byte-verify public originals/previews and update D1 attribution.
+- [x] Prepare substantive guides and preserve existing editable parts.
+- [ ] Complete final independent review, push main and verify production.
 
-The source's empty headings and maintenance templates must not become wiki content. Named area evidence is distinct from an exact map point; historical versions must stay labeled. Unresolved factual gaps require additional evidence, not invented details or placeholder padding.
+Final candidate disposition: 1,012 new guides, seven existing mission guides
+retained, two canonical aliases and 86 held sources. The library contains 1,047
+articles. Source gaps, insufficient objectives and contradictory prerequisites
+remain explicit holds, not empty published pages. All raw captures remain cached.
+This completes the direct Missions category pass, not the full 28,636-page migration.
 
-Mission conversion evidence: 1,107 captures converted and researched; 1,019 new
-guides accepted, seven existing mission guides supplemented, two canonical aliases,
-and 79 sources held. The held entries comprise 56 without reliable location/video
-evidence, 22 with insufficient substantive objectives/detail, and one conflicting
-Bane prerequisite. All raw captures remain available for further research.
-The library now contains 1,054 articles. Of the new guides, 957 have source-backed
-location context, 101 include source maps, and 319 have 461 verified-title video
-references. A named area/instance is not an exact map pin. Video gameplay and
-route/faction/version remain unverified unless separately documented.
+Of the new guides, 944 have source-backed location context, 101 include source
+maps and 319 contain 461 verified-title video references. A named area/instance
+is distinct from an exact map pin. YouTube titles and availability are verified;
+full gameplay, route, faction/version and timestamps are not implied.
 
 Copied 942 additional images (1,884 original/preview objects), all byte-verified
-from the public R2 domain. Total image catalog: 1,361 records, 265,333,760 original
-and preview bytes. All 535 original editable parts across 35 earlier guides are
-unchanged; missing source reward tables and gallery images were appended.
-Pagination displays 48 results while search covers all guides. Local validation:
-63 unit tests, type/content checks and build passed. Output: 1,070 files against
-18,000 internal / 20,000 platform budget. Deployment dry run passed at
-7,736.41 KiB raw / 928.11 KiB compressed. Seven Cloudflare integration tests passed.
-Browser, independent review and production checks are recorded below when complete.
+from the public R2 domain. D1 confirms 1,361 attribution records; total catalog
+original/preview size is 265,333,760 bytes. No article image hotlinks remain.
+All 535 original editable parts across 35 earlier guides are unchanged; the
+missing selectable-reward table was appended to Bane Brought Down. Library
+pagination shows 48 results while search covers the full dataset.
 
-D1 attribution import completed: production `media_assets` count is 1,361.
-Manual browsing found repeated map galleries; captions are now cleaned before
-deduplication, removing 30 repeated galleries while retaining map panels and
-meaningful walkthrough text. Regression coverage verifies that ordering.
+Independent review findings corrected before publication:
+- Opposing-faction video titles are rejected in search and YouTube metadata;
+  accepted matches follow stable search-result order.
+- Research accepts environment-only credentials and reuses complete caches
+  without credentials or a local .env file.
+- Source form labels (Intro Message, Outro Message, Description) are removed
+  before substantive-content counting.
+- Journal instructions count as location evidence only for explicit menu claims.
+  Master of Disguise instead cites its linked Space/Off mission, which places
+  Jimmy Olsen in Death Metal Washington, D.C.; no exact spawn point is claimed.
+- Equipment brands and episode names cannot become destinations. Geographic
+  wording is required; named open-world variants and geographic subregions retain
+  their source context. Scavenger Hunt uses Stryker's Island, and Enchanted Coral
+  uses its menu reward objective rather than the Atlantis episode title.
 
-Independent review found opposing-faction video matches and environment-only
-credential handling. Explicitly conflicting faction titles are now rejected in
-both search and YouTube metadata; neutral titles retain the documented faction
-limitation. Accepted matches use stable search-result order. Video evidence and
-articles were regenerated, retaining all 1,019 new guides and 461 video references.
-Research now permits missing .env files, accepts environment credentials, and
-requires a key only for uncached queries. Three regression tests cover those
-cases and the complete accepted-video dataset. Manual desktop/mobile inspection
-confirmed inline R2 maps, a three-image viewer, next/close behavior and no mobile
-overflow. All 13 browser checks passed before the final faction correction;
-post-correction browser checks and repeat review are pending below.
+Manual desktop/mobile inspection confirmed inline owned maps, the three-image
+popout, next/close behavior, restored article position and no mobile overflow.
+Validation and production evidence are recorded below after the final regeneration.
 
-Repeat review identified an incidental Journal instruction incorrectly treated as
-world-location evidence. Journal fallback now requires a single explicit menu-only
-claim objective. Daily: Master of Disguise instead cites its linked Space/Off
-mission, which explicitly places Jimmy Olsen in Death Metal Washington, D.C.; the
-label states that this is shared mission-set area context, not a verified spawn
-point. Source form scaffolding (Intro Message, Outro Message, Description) is
-removed before counting substantive content. Both behaviors have regression tests;
-all 1,019 new guides remain eligible after regeneration.
+Final local gates: 65 unit tests, 13 browser tests, seven Cloudflare account/editing
+integration tests, content/type checks and the production build passed. Build:
+1,063 files / 22,565,475 bytes against 18,000 internal / 20,000 platform file limits.
+Map captions now retain meaningful source labels rather than reused filenames.

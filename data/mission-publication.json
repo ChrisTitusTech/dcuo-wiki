@@ -1,13 +1,13 @@
 {
-  "createdAt": "2026-10-22T00:08:11.134Z",
+  "createdAt": "2026-10-22T00:13:39.729Z",
   "summary": {
     "sourceArticles": 1107,
     "existing": 7,
-    "newGuides": 1019,
+    "newGuides": 1012,
     "aliases": 2,
-    "excluded": 79,
+    "excluded": 86,
     "pendingResearch": 0,
-    "totalGuides": 1054
+    "totalGuides": 1047
   },
   "records": [
     {
@@ -301,10 +301,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Ace_Chemicals_Clean_Up_Effort",
       "slug": "Ace_Chemicals_Clean_Up_Effort",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Aegidios's_Missions",
@@ -1042,7 +1040,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Birdcaged",
       "slug": "Birdcaged",
       "status": "publishable",
-      "location": false,
+      "location": true,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -1983,10 +1981,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Construction_Delays",
       "slug": "Construction_Delays",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Control_the_Convicts",
@@ -2326,7 +2322,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Deconstruction",
       "slug": "Deconstruction",
       "status": "publishable",
-      "location": false,
+      "location": true,
       "mapReferences": 0,
       "videoReferences": 1
     },
@@ -2463,10 +2459,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Divide_and_Conquer",
       "slug": "Divide_and_Conquer",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Don't_Count_Your_Starro_Before_They_Hatch..._(Heroes)",
@@ -2536,7 +2530,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Drone_Bones",
       "slug": "Drone_Bones",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -3070,7 +3064,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Fear_-_It's_a_Gas",
       "slug": "Fear_-_It_s_a_Gas",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -3078,7 +3072,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Fear_and_Loathing",
       "slug": "Fear_and_Loathing",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 1
     },
@@ -3171,10 +3165,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Find_the_Daily_Planet_Flight_Race",
       "slug": "Find_the_Daily_Planet_Flight_Race",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Fire_and_the_Sky_(Heroes)",
@@ -4283,10 +4275,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Lady_Blackhawk%3A_Area_51_Task_Force_Missions",
       "slug": "Lady_Blackhawk_Area_51_Task_Force_Missions",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Lady_Blackhawk%3A_Battlefield_Frontline_Missions",
@@ -5082,7 +5072,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/OMAC_Attack",
       "slug": "OMAC_Attack",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -5174,7 +5164,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Orbital_Justice",
       "slug": "Orbital_Justice",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 1
     },
@@ -5253,7 +5243,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Paint_the_Town_Green",
       "slug": "Paint_the_Town_Green",
       "status": "publishable",
-      "location": false,
+      "location": true,
       "mapReferences": 0,
       "videoReferences": 1
     },
@@ -6369,7 +6359,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings_(Heroes)",
       "slug": "Season_s_Greedings_Heroes",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -6377,7 +6367,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings_(Villains)",
       "slug": "Season_s_Greedings_Villains",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -6400,10 +6390,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Secure_Stryker's_Island",
       "slug": "Secure_Stryker_s_Island",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Seduced_by_Lust",
@@ -6429,7 +6417,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Seeds_of_Change",
       "slug": "Seeds_of_Change",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 1
     },
@@ -6844,10 +6832,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Stealing_from_Steel",
       "slug": "Stealing_from_Steel",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Stemming_the_Tide_(Part_1)_(Heroes)",
@@ -7177,7 +7163,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/That_Stings!",
       "slug": "That_Stings",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -7808,10 +7794,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Together_Unbroken",
       "slug": "Together_Unbroken",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Tomorrow_Will_Be_Gigantic",
@@ -7865,7 +7849,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Toyland",
       "slug": "Toyland",
       "status": "publishable",
-      "location": false,
+      "location": true,
       "mapReferences": 0,
       "videoReferences": 2
     },
@@ -7966,8 +7950,10 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Two_Sides_of_the_Coin",
       "slug": "Two_Sides_of_the_Coin",
-      "status": "excluded",
-      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
+      "status": "publishable",
+      "location": true,
+      "mapReferences": 0,
+      "videoReferences": 0
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Ultraviolet_Doom",
@@ -8344,10 +8330,8 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Warrant_Officer_Jones%3A_Area_51_Task_Force_Missions",
       "slug": "Warrant_Officer_Jones_Area_51_Task_Force_Missions",
-      "status": "publishable",
-      "location": true,
-      "mapReferences": 0,
-      "videoReferences": 0
+      "status": "excluded",
+      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Warsmith_Celandine's_Missions",
@@ -8429,7 +8413,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Weeds_Whacked",
       "slug": "Weeds_Whacked",
       "status": "publishable",
-      "location": true,
+      "location": false,
       "mapReferences": 0,
       "videoReferences": 1
     },
@@ -8680,8 +8664,10 @@
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Your_Best_Face_Forward",
       "slug": "Your_Best_Face_Forward",
-      "status": "excluded",
-      "reason": "No source-backed objective location or verified mission video; avoid publishing an unlocated duplicate."
+      "status": "publishable",
+      "location": true,
+      "mapReferences": 0,
+      "videoReferences": 0
     },
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Yuletide_Fear",

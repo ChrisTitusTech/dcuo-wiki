@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 1054,
+    "published": 1047,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -3732,8 +3732,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Ace_Chemicals_Clean_Up_Effort",
       "title": "Ace_Chemicals_Clean_Up_Effort",
-      "status": "published",
-      "slug": "Ace_Chemicals_Clean_Up_Effort",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -47673,8 +47672,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Construction_Delays",
       "title": "Construction_Delays",
-      "status": "published",
-      "slug": "Construction_Delays",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Concentrated+Power+Set+Aura+Box"
       ]
@@ -61144,8 +61142,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Divide_and_Conquer",
       "title": "Divide_and_Conquer",
-      "status": "published",
-      "slug": "Divide_and_Conquer",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ]
@@ -84632,8 +84629,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Find_the_Daily_Planet_Flight_Race",
       "title": "Find_the_Daily_Planet_Flight_Race",
-      "status": "published",
-      "slug": "Find_the_Daily_Planet_Flight_Race",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -130372,8 +130368,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lady_Blackhawk%3A_Area_51_Task_Force_Missions",
       "title": "Lady_Blackhawk:_Area_51_Task_Force_Missions",
-      "status": "published",
-      "slug": "Lady_Blackhawk_Area_51_Task_Force_Missions",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -207356,8 +207351,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Secure_Stryker's_Island",
       "title": "Secure_Stryker's_Island",
-      "status": "published",
-      "slug": "Secure_Stryker_s_Island",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Saving+Justice"
       ]
@@ -222475,8 +222469,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Stealing_from_Steel",
       "title": "Stealing_from_Steel",
-      "status": "published",
-      "slug": "Stealing_from_Steel",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -239709,8 +239702,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Together_Unbroken",
       "title": "Together_Unbroken",
-      "status": "published",
-      "slug": "Together_Unbroken",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -242320,7 +242312,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Two_Sides_of_the_Coin",
       "title": "Two_Sides_of_the_Coin",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Two_Sides_of_the_Coin",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Tracy+W.+Bush"
       ]
@@ -252428,8 +252421,7 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Warrant_Officer_Jones%3A_Area_51_Task_Force_Missions",
       "title": "Warrant_Officer_Jones:_Area_51_Task_Force_Missions",
-      "status": "published",
-      "slug": "Warrant_Officer_Jones_Area_51_Task_Force_Missions",
+      "status": "unreviewed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -258518,7 +258510,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Your_Best_Face_Forward",
       "title": "Your_Best_Face_Forward",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Your_Best_Face_Forward",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]

@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An Astro wiki for https://dcuo-wiki.com with 1,054 reviewed articles. The mission conversion adds 1,019 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
+An Astro wiki for https://dcuo-wiki.com with 1,047 reviewed articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
 
 ## Develop and validate
 
@@ -42,7 +42,7 @@ Review staged content against its source before adding a record to `src/data/art
 
 ## Mission conversion
 
-All 1,107 direct mission article captures are preserved in the ignored import cache, with capture hashes in `data/mission-downloads.json`. Conversion, enrichment and video research produce auditable records in `data/mission-conversion.json`, `data/mission-videos.json` and `data/mission-publication.json`. The current disposition is 1,019 new guides, seven existing guides supplemented, two canonical aliases and 79 held entries. Held pages lack usable source detail, location/video evidence or consistent prerequisites; they are not published as placeholders.
+All 1,107 direct mission article captures are preserved in the ignored import cache, with capture hashes in `data/mission-downloads.json`. Conversion, enrichment and video research produce auditable records in `data/mission-conversion.json`, `data/mission-videos.json` and `data/mission-publication.json`. The current disposition is 1,012 new guides, seven existing guides retained, two canonical aliases and 86 held entries. Held pages lack usable source detail, location/video evidence or consistent prerequisites; they are not published as placeholders.
 
 ```sh
 node scripts/convert-missions.mjs
@@ -62,7 +62,7 @@ The library displays 48 matching guides per page. Search and category filters co
 
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,054 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,047 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory

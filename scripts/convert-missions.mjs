@@ -114,7 +114,7 @@ export function convertMission(cache, record) {
   const objectiveText = objectiveSections.flatMap((s) => s.items).join(" ");
   // Location labels are exact excerpts from source prose, never invented coordinates.
   const areas =
-    /\b(?:Kaznia City|Kaznian Necropolis|Laughing Hound Pub|Desecrated Mausoleum|The Reckoning.s Hideout|Blüdhaven|Bludhaven|Smallville|Metrodome|Typhon.s Monster Invasion|Knights Dome|Gotham Mercy Hospital|University Warehouse|The Vault|Gotham sewers|Sentinel base|S\.T\.A\.R\. Labs Research Facility|STAR Labs Facility|Downtown Metropolis|Metal Gotham City|Death Metal Washington, D\.C\.|Arkham Island|Downtown Metropolis Battlezone|31st Century: New Earth|Earth 3 Gotham|Metropolis Anti-Matter Invasion Zone|Apokoliptic Gotham City|Old Gotham Subway|Main Observation Deck|Monitor Womb|Glenmorgan Square|8th Precinct|Oblivion Bar|Gotham Mercy General Hospital|Mogo|Ranx.s Command Center|Command and Control Center|Frozen Mogo|HIVE Base|Centennial Park|Water Treatment Facility|Earth 3: The Panopticon|Lair of the Spectre|Lust.s Territory|East End Regal Hotel|Shadowlands|Monarch Playing Card Company|Bottled D\.C\.|Titans Island|Titans Tower|War-Torn Village|War-Torn Area 51|Doomed Washington, D\.C\.|Botanical Gardens|Knightsdome|Ace Chemicals|Steelworks|Arkham Asylum|Coast City|Gorilla Island|H\.I\.V\.E\. Moon Base|Oan Sciencells|Oolong Island|Stryker.s Island Penitentiary|League of Assassins Stronghold|Cursed Gotham City|Chaos Gotham|Central City(?: Starro Deluge Zone)?|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|South Gotham|Otisburg|Chinatown|Historic District|Tomorrow District|Suicide Slums|Old Gotham|Gotham Wastelands|Gotham Under Siege|New Genesis|Patchwork Themyscira|Flashpoint Gotham City|Infernal Kahndaq|Dakota City|Doomed Metropolis|Amusement Mile|Cape Carmine|Robinson Park|Tricorner.s Yard|Crime Alley|University of Metropolis|Science Spire|Gotham University)|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|Chinatown|Burnley) (?:Police Station|MPD|Nightclub)|(?:Gotham City|Metropolis|Atlantis|Themyscira|Washington D\.C\.|Kahndaq|Thanagar|Apokolips|House of Legends|Hall of Doom|Watchtower|Area 51|Royal Hideout))(?=\W|$)/gi;
+    /\b(?:BoP: Metropolis|Homecoming: Titans Island|Mournful Mogo|Mera.s Royal Hideout|Gotham.s Otisburg|Kaznia City|Kaznian Necropolis|Laughing Hound Pub|Desecrated Mausoleum|The Reckoning.s Hideout|Blüdhaven|Bludhaven|Smallville|Metrodome|Typhon.s Monster Invasion|Knights Dome|Gotham Mercy Hospital|University Warehouse|The Vault|Gotham sewers|Sentinel base|S\.T\.A\.R\. Labs Research Facility|STAR Labs Facility|Downtown Metropolis|Metal Gotham City|Death Metal Washington, D\.C\.|Arkham Island|Downtown Metropolis Battlezone|31st Century: New Earth|Earth 3 Gotham|Metropolis Anti-Matter Invasion Zone|Apokoliptic Gotham City|Old Gotham Subway|Main Observation Deck|Monitor Womb|Glenmorgan Square|8th Precinct|Oblivion Bar|Gotham Mercy General Hospital|Mogo|Ranx.s Command Center|Command and Control Center|Frozen Mogo|HIVE Base|Centennial Park|Water Treatment Facility|Earth 3: The Panopticon|Lair of the Spectre|Lust.s Territory|East End Regal Hotel|Shadowlands|Monarch Playing Card Company|Bottled D\.C\.|Titans Island|Titans Tower|War-Torn Village|War-Torn Area 51|Doomed Washington, D\.C\.|Botanical Gardens|Knightsdome|Ace Chemicals|Steelworks|Arkham Asylum|Coast City|Gorilla Island|H\.I\.V\.E\. Moon Base|Oan Sciencells|Oolong Island|Stryker.s Island(?: Penitentiary)?|League of Assassins Stronghold|Cursed Gotham City|Chaos Gotham|Central City(?: Starro Deluge Zone)?|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|South Gotham|Otisburg|Chinatown|Historic District|Tomorrow District|Suicide Slums|Old Gotham|Gotham Wastelands|Gotham Under Siege|New Genesis|Patchwork Themyscira|Flashpoint Gotham City|Infernal Kahndaq|Dakota City|Doomed Metropolis|Amusement Mile|Cape Carmine|Robinson Park|Tricorner.s Yard|Crime Alley|University of Metropolis|Science Spire|Gotham University)|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|Chinatown|Burnley) (?:Police Station|MPD|Nightclub)|(?:Gotham City|Gotham|Metropolis|Atlantis|Themyscira|Washington D\.C\.|Kahndaq|Thanagar|Apokolips|House of Legends|Hall of Doom|Watchtower|Area 51|Royal Hideout))(?=\W|$)/gi;
   const objectiveLocations = sections
     .filter((s) =>
       /^(?:Objectives?|Background|Location|Locations)$/i.test(s.title),
@@ -145,11 +145,56 @@ export function convertMission(cache, record) {
     ...routeLocations,
     ...overviewLocations,
   ].filter((x) => !/^"|^Batman:|^Oracle:|^Calculator:/i.test(x));
+  const explicitLocationItems = new Set(
+    sections
+      .filter((s) => /^Locations?$/i.test(s.title))
+      .flatMap((s) => s.items),
+  );
+  function geographicLabels(item) {
+    return [...item.matchAll(areas)]
+      .filter((match) => {
+        const after = item.slice(match.index + match[0].length);
+        if (
+          /^\s+(?:episode|content|non-lethal|technology|tech\b|robots?\b|Communication Foreman\b)/i.test(
+            after,
+          )
+        )
+          return false;
+        if (explicitLocationItems.has(item)) return true;
+        const before = item.slice(0, match.index);
+        if (
+          /\b(?:parts?|portions?|sections?|edge|center|centre|heart|streets|rooftops|alleys|outskirts)\s+of\s+(?:the\s+)?$/i.test(
+            before,
+          )
+        )
+          return true;
+        if (
+          /\b(?:in|at|on|near)\s+(?:the\s+)?(?:\w+\s+){0,3}(?:wing|district|area|edge|level|part|side|section|portion|outskirts)\s+of\s+(?:the\s+)?$/i.test(
+            before,
+          )
+        )
+          return true;
+        if (
+          /\b(?:hideout|neighborhood|district|zone|area|city)\s+(?:of\s+)?(?:the\s+)?$/i.test(
+            before,
+          )
+        )
+          return true;
+        if (/^\s+Kiosk\b/i.test(after) && /\bUse\s+(?:the\s+)?$/i.test(before))
+          return true;
+        return (
+          /\b(?:in|on|at|to|inside|outside|near|around|through|within|towards?|into|beneath|across|under)\s+(?:(?:the|a|an|north(?:ern)?|south(?:ern)?|east(?:ern)?|west(?:ern)?|central|upper|lower|far|edge|side|part|section|area|city|of|just|near|outside|inside)\s+){0,5}$/i.test(
+            before,
+          ) ||
+          /\b(?:enter|visit|explore|infiltrate|search|secure|defend|protect|save|liberate|assault|attack(?:ing)?)\s+(?:the\s+)?$/i.test(
+            before,
+          )
+        );
+      })
+      .map((match) => match[0]);
+  }
   const matched = locationItems
-    .map((item) => ({
-      item,
-      labels: [...item.matchAll(areas)].map((m) => m[0]),
-    }))
+    .map((item) => ({ item, labels: geographicLabels(item) }))
     .filter((x) => x.labels.length);
   const quoteItems = sections
     .filter((s) =>
@@ -162,8 +207,8 @@ export function convertMission(cache, record) {
       /\b(?:head(?: over)? to|go (?:inside|to)|return to|inside|located (?:in|at)|last spotted (?:in|at))\b/i,
     );
     if (!route) continue;
-    const found = [...item.slice(route.index).matchAll(areas)][0];
-    if (found) matched.push({ item, labels: [found[0]] });
+    const labels = geographicLabels(item.slice(route.index));
+    if (labels.length) matched.push({ item, labels: [labels[0]] });
   }
   const selected = matched[0];
   const unique = selected
@@ -182,16 +227,23 @@ export function convertMission(cache, record) {
     const context = sections
       .filter((s) => /^(?:Source overview|Intro)$/i.test(s.title))
       .flatMap((s) => s.items)
-      .find((x) => !x.startsWith('"') && [...x.matchAll(areas)].length);
+      .find((x) => !x.startsWith('"') && geographicLabels(x).length);
     if (context) {
-      for (const match of context.matchAll(areas))
-        unique.push({ label: match[0], item: context });
+      for (const label of geographicLabels(context))
+        unique.push({ label, item: context });
     }
   }
   const mapSections = new Set(
     sections
       .filter((s) => /^(?:Maps?|Locations?)$/i.test(s.title))
       .flatMap((s) => (s.images || []).map((i) => i.url)),
+  );
+  const mapLabels = new Map(
+    sections
+      .filter((s) => /^(?:Maps?|Locations?)$/i.test(s.title))
+      .flatMap((s) =>
+        (s.images || []).map((image) => [image.url, image.label]),
+      ),
   );
   const maps = images
     .filter(
@@ -200,10 +252,9 @@ export function convertMission(cache, record) {
         /\bmap\b|[_ ]map[._ ]|map\.(?:jpg|png)/i.test(i.sourcePage),
     )
     .map((i) => ({
-      label: decodeURIComponent(i.sourcePage.split("File:")[1]).replaceAll(
-        "_",
-        " ",
-      ),
+      label:
+        mapLabels.get(i.sourcePage) ||
+        decodeURIComponent(i.sourcePage.split("File:")[1]).replaceAll("_", " "),
       url: i.sourcePage,
     }));
   const article = {
