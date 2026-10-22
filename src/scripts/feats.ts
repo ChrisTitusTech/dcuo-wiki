@@ -29,6 +29,7 @@ const difficulty =
 const points = document.querySelector<HTMLSelectElement>("#feat-points")!;
 const sort = document.querySelector<HTMLSelectElement>("#feat-sort")!;
 const quick = document.querySelector<HTMLInputElement>("#feat-quick")!;
+const youtube = document.querySelector<HTMLInputElement>("#feat-youtube")!;
 const sessionRoot = document.querySelector<HTMLElement>("#feat-session")!;
 let selected = new Set<string>();
 try {
@@ -71,6 +72,7 @@ for (const [key, input] of [
     input.value = value;
 }
 quick.checked = params.get("quick") === "1";
+youtube.checked = params.get("youtube") === "1";
 function renderSession() {
   const chosen = feats.filter((f) => selected.has(f.id));
   const session = featSession(chosen);
@@ -100,6 +102,7 @@ function render() {
   const matches = feats.filter(
     (f) =>
       (!quick.checked || f.effort.quick) &&
+      (!youtube.checked || f.videos.length > 0) &&
       (!group.value || f.group === group.value) &&
       (!release.value || f.releases.includes(release.value)) &&
       (!difficulty.value || f.difficulty.level === Number(difficulty.value)) &&
@@ -162,6 +165,7 @@ function render() {
   ] as const)
     if (input.value) query.set(key, input.value);
   if (quick.checked) query.set("quick", "1");
+  if (youtube.checked) query.set("youtube", "1");
   renderSession();
   history.replaceState(
     null,
@@ -169,7 +173,16 @@ function render() {
     location.pathname + (query.size ? "?" + query : ""),
   );
 }
-for (const input of [search, group, release, difficulty, points, sort, quick])
+for (const input of [
+  search,
+  group,
+  release,
+  difficulty,
+  points,
+  sort,
+  quick,
+  youtube,
+])
   input.addEventListener(input === search ? "input" : "change", () => {
     page = 1;
     if (feats.length) render();

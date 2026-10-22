@@ -127,3 +127,46 @@ test("point-farming session survives reload and quick filter excludes prepared r
   ).toBeVisible();
   await expect(page.locator('a[href*="we9yLQauGSA&t="]')).toHaveCount(5);
 });
+
+test("YouTube filter resets pagination, combines with rewards and survives shared URLs", async ({
+  page,
+}) => {
+  const withVideos = catalog.feats.filter((f) => f.videos.length);
+  await page.goto("/feats/");
+  await expect(page.locator("#feat-status")).toContainText("feats match");
+  await page.getByRole("button", { name: "Next", exact: true }).click();
+  await expect(page.locator("#feat-page")).toContainText("Page 2");
+  await page
+    .getByRole("checkbox", { name: "Has YouTube video", exact: true })
+    .check();
+  await expect(page.locator("#feat-status")).toHaveText(
+    `${withVideos.length.toLocaleString()} feats match. Showing 1-40.`,
+  );
+  await expect(page.locator("#feat-page")).toContainText("Page 1");
+  await expect(page.locator(".feat-result details")).toHaveCount(40);
+  await expect(page).toHaveURL(/youtube=1/);
+  await page.reload();
+  await expect(
+    page.getByRole("checkbox", { name: "Has YouTube video", exact: true }),
+  ).toBeChecked();
+  await expect(page.locator("#feat-status")).toContainText(
+    `${withVideos.length.toLocaleString()} feats match`,
+  );
+  await page
+    .getByRole("combobox", { name: "Feat points", exact: true })
+    .selectOption("50");
+  const matching = withVideos.filter((f) => f.points === 50).length;
+  await expect(page.locator("#feat-status")).toContainText(
+    `${matching.toLocaleString()} feats match`,
+  );
+  await expect(page.locator(".feat-result details")).toHaveCount(
+    Math.min(40, matching),
+  );
+  await page
+    .getByRole("checkbox", { name: "Has YouTube video", exact: true })
+    .uncheck();
+  await expect(page).not.toHaveURL(/youtube=1/);
+  await expect(page.locator("#feat-status")).toContainText(
+    `${catalog.feats.filter((f) => f.points === 50).length.toLocaleString()} feats match`,
+  );
+});
