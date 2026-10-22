@@ -63,3 +63,14 @@ source records that source as failed, and stops for inspection.
    popouts and preserved community corrections. Keep the file-budget guard.
    The full candidate inventory exceeds the free static-file allowance; determine
    qualifying content and storage architecture before publishing at that scale.
+
+## Editor request budget
+
+The build also generates `dist/_editor/<slug>.json` for each published source
+article. These are validated source-only documents and previews, never database
+snapshots. The Worker streams one only after checking that D1 has no revisions
+for that article. Existing corrections and whole-document edits remain on the
+live path. Prepared and live baselines use identical related-guide ordering and
+hashing, preserving conflict checks and saved drafts. Rebuild before deployment;
+missing prepared files return a clear temporary editor error. These JSON files
+count toward the static-file budget, which is checked after their generation.

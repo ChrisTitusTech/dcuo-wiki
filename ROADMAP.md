@@ -648,3 +648,23 @@ Live acceptance also caught a source heading that labeled Amazon Fury Part III
 as Episode 13 in Gotham City. Corrected the heading to Episode 27 using the
 release catalog, with correction provenance in `data/catalog-imports.json`.
 Section position and body text remain unchanged.
+
+## Free-tier editor CPU acceptance fix
+
+Production checking found that several large new guides returned Cloudflare's
+resource-limit page when building their editor baseline during the request.
+Reading pages and the tested preview routes worked. Move source-only document,
+HTML/TOC and hash preparation into the build. For an article without any D1
+revision, stream its prepared asset with `no-store`. Any saved correction keeps
+the existing live path authoritative. Missing prepared assets fail clearly.
+No database migration, permission change or hosting-plan upgrade is needed.
+
+Preserve the live path's catalog ordering for related guides so source documents
+and conflict hashes remain compatible with existing drafts. Regression coverage
+compares the actual build helper with the live baseline and checks pristine asset
+streaming, cache headers, missing assets, stored corrections and publish hashes.
+All 142 unit, 26 browser and 18 Cloudflare tests pass, together with Astro,
+content/feat validation, build and deployment dry run. Independent review passed.
+The build now contains 3,442 assets, including 1,671 prepared editor documents
+(55.9 MB total); Worker gzip remains 2,317.42 KiB. Recheck the actual deployed
+editor endpoints and preserved live corrections before reporting completion.

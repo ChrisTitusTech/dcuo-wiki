@@ -2,6 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { DatabaseSync } from "node:sqlite";
 import { readFileSync } from "node:fs";
+import articles from "../src/data/articles.json" with { type: "json" };
+import { editorBaseline } from "../scripts/editor-baseline.mjs";
 import { handle } from "../worker/index.mjs";
 import { hash, now } from "../worker/security.mjs";
 const origin = "https://dcuo-wiki.com";
@@ -56,7 +58,25 @@ async function setup() {
     DISCORD_CLIENT_SECRET: "test-only",
     CENSUS_SERVICE_ID: "testservice",
     SITE_ORIGIN: origin,
-    ASSETS: { fetch: () => new Response("asset") },
+    ASSETS: {
+      fetch: async (request) => {
+        const match = new URL(request.url).pathname.match(
+          /^\/_editor\/([A-Za-z0-9_-]+)\.json$/,
+        );
+        if (match) {
+          const article = articles.find((a) => a.slug === match[1]);
+          return article
+            ? Response.json(
+                editorBaseline(
+                  article,
+                  articles.filter((a) => article.related?.includes(a.slug)),
+                ),
+              )
+            : new Response("Missing", { status: 404 });
+        }
+        return new Response("asset");
+      },
+    },
   };
   const token = "a".repeat(64),
     user = "11111111-1111-4111-8111-111111111111";

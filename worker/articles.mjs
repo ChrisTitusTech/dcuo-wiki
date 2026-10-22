@@ -1,3 +1,4 @@
+import { pristineDocumentResponse } from "./editor-baselines.mjs";
 import { releaseSearchText } from "../shared/releases.mjs";
 import articles from "../src/data/articles.json" with { type: "json" };
 import { articleParts, renderPart } from "../shared/article-content.mjs";
@@ -48,7 +49,11 @@ export async function articleState(env, article) {
 export async function liveParts(env, article) {
   return (await articleState(env, article)).parts;
 }
-export async function getDocumentState(env, article) {
+export async function getDocumentState(env, article, { prebuilt = true } = {}) {
+  if (prebuilt) {
+    const response = await pristineDocumentResponse(env, article);
+    if (response) return response.json();
+  }
   const state = await articleState(env, article);
   const document =
     state.document ||

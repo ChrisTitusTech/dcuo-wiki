@@ -599,3 +599,19 @@ test("See also cross links survive the live Worker, full editor baseline and pre
     "https://dcuniverseonline.fandom.com/wiki/Alert_T1:_Oan_Sciencells",
   );
 });
+
+test("large untouched articles stream prepared editor documents and keep revision hashes compatible", async ({
+  request,
+}) => {
+  for (const slug of ["Allies", "Base_Items_1", "Vendors"]) {
+    const source = await request.get("/_editor/" + slug + ".json");
+    expect(source.status()).toBe(200);
+    const live = await request.get("/api/articles/" + slug + "/document");
+    expect(live.status()).toBe(200);
+    expect(live.headers()["cache-control"]).toBe("no-store");
+    const document = await live.json();
+    expect(document).toEqual(await source.json());
+    expect(document.revision).toBe(0);
+    expect(document.baseHash).toHaveLength(64);
+  }
+});

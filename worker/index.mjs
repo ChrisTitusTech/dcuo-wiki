@@ -24,6 +24,7 @@ import {
   renderDocument,
   DOCUMENT_BYTES,
 } from "../shared/rich-article.mjs";
+import { pristineDocumentResponse } from "./editor-baselines.mjs";
 import media from "../data/media.json" with { type: "json" };
 import { searchCharacters, matchCharacter } from "./census.mjs";
 const SESSION = "__Host-dcuo-session",
@@ -249,8 +250,13 @@ export async function handle(request, env, fetcher = fetch) {
       if (!env.DB) throw new HttpError(503, "Live editing is unavailable.");
       if (articleRoute[3] && articleRoute[2] !== "history")
         throw new HttpError(404, "Endpoint not found.");
-      if (articleRoute[2] === "document")
-        return json(await getDocumentState(env, article));
+      if (articleRoute[2] === "document") {
+        const response = await pristineDocumentResponse(env, article);
+        return (
+          response ||
+          json(await getDocumentState(env, article, { prebuilt: false }))
+        );
+      }
       if (articleRoute[2] === "media") {
         const query = (url.searchParams.get("q") || "")
           .toLowerCase()
