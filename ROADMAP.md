@@ -202,7 +202,7 @@ D1 reports 419 image catalog records after the six successful metadata batches.
 - [x] Research exact-title YouTube references across all 1,107 titles and verify accepted metadata matches.
 - [x] Copy mission images to R2, byte-verify public originals/previews and update D1 attribution.
 - [x] Prepare substantive guides and preserve existing editable parts.
-- [ ] Complete final independent review, push main and verify production.
+- [x] Complete final independent review, push main and verify production.
 
 Final candidate disposition: 1,012 new guides, seven existing mission guides
 retained, two canonical aliases and 86 held sources. The library contains 1,047
@@ -262,3 +262,23 @@ account JavaScript. The account script is 5,630 bytes (7,841 bytes including the
 shared layout script), with 74,515 bytes of account HTML. An eighth Cloudflare test
 checks the return-to-editor link, index schema/coverage and script size budget.
 All final local gates passed after this change.
+
+Released to main in 0b490b2 (guide batch f6fb723; reviewed fixes 1e06f4b,
+e5e3140, c93b6c1, 6f56e93 and 13eba08). The final full Codex review reported no
+actionable regressions. GitHub validation run 39699533212 and Cloudflare Workers
+Build 59821cf9-c3c1-41a6-9e41-e153c2533d75 both succeeded for that exact commit.
+Deployment dry run: 7,690.49 KiB raw / 924.26 KiB compressed.
+
+Production checks (2026-10-22 00:26 UTC): eight representative routes returned
+200, all 1,047 article URLs appeared in the sitemap, and a held source returned a
+real 404. All 66 previously captured public editable parts in Powers, Grab and
+Smash and Viva la Lucha Libre retained their text and revision values, including
+the existing Powers revision. Local comparison separately preserved all 535
+original editable parts across 35 guides.
+
+Live browsing confirmed 48 cards per page, 22 library pages, next-page navigation,
+full-text search and opening Sea Change from its matching results. Its three R2
+maps appear once; the overlay advanced from image 2 to 3 and closed back to the
+article. [Sea Change](https://dcuo-wiki.com/wiki/Sea_Change/#location) is a live
+example. No paid hosting tier was activated. The 86 held sources and the broader
+wiki migration remain explicit outstanding coverage, not published placeholders.
