@@ -512,4 +512,12 @@ against the 20,000-file platform limit. Independent review caught shared
 collectibles falling under the last faction; this was fixed and regression
 tested. Follow-up review found no actionable regressions. A concurrent build
 interfered with two browser checks; both suites passed when rerun against the
-completed build. Deployment and live acceptance follow.
+completed build.
+
+Implementation `66a7af7` is deployed. GitHub run `39826054347` and Cloudflare
+build `d3d52f8b-3528-49c6-b196-da9ddc5b5d22` passed. All 15 live documents
+match the regenerated articles; all affected full-document and legacy section
+revisions were zero before deployment. The other 1,571 article records are
+unchanged. Native inspection confirms separate Hero/Villain paths on Episode 1.
+Live evidence is in `.import-cache/story-fix/live-acceptance.json` and
+`.import-cache/proofs/story-missions-fixed-live.png`.
