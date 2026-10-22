@@ -386,7 +386,7 @@ Evidence: `.import-cache/editor/production-acceptance.json` and
 - [x] Preserve every substantive feat requirement, reward points and source notes; add completion guidance and links to matching mission guides.
 - [x] Show a separate five-step estimated difficulty meter with an explanation; never derive it from feat stars/points.
 - [x] Validate import coverage, content/editor compatibility and browser/mobile filters.
-- [ ] Complete independent review, deployment and live acceptance.
+- [x] Complete independent review, deployment and live acceptance.
 
 Keep grouped feat articles editable through the existing whole-article editor.
 Use stable anchors for individual feats and keep imported source attribution.
@@ -417,6 +417,26 @@ The session checklist excludes exact duplicates and historical entries from
 its total and keeps repeat counters and preparation out of the quick queue.
 
 Validation: 101 unit, 19 browser and 14 Cloudflare integration tests pass.
-The deploy dry run succeeds at 1,614 static files and 1,602.09 KiB compressed
+The deploy dry run succeeds at 1,614 static files and 1,664.92 KiB compressed
 Worker size. All 686 new R2 objects pass public SHA-256 checks, and D1 mirrors
 all 2,058 media records. Binary media and raw captures remain outside Git.
+
+Independent review found and verified fixes for same-name guide mismatches,
+missing summary instructions, serialized capture progress, source extra-column
+constraints, separated reward numbers, category-link checklist mismatches,
+empty image parts and quick-queue counters. The completed follow-up review
+found no remaining material regressions. A final Name-order correction sorts
+before pagination and has browser assertions for switching order modes; its
+separate review found no actionable defects. All local gates pass again.
+
+Implementation `33bba3c` is live. GitHub run `39720687349` and Cloudflare build
+`6591e283-d071-435e-bef8-000290c01d9f` passed. Production acceptance preserved
+88 pre-existing live parts/revision hashes, confirmed all 5,801 catalog entries,
+previewed three complete documents with difficulty meters, rejected anonymous
+publishing, and confirmed active Discord/Census settings. Native browser checks
+confirmed R2 map viewing and a 100-point session persisted after reload; the
+acceptance checklist was cleared afterward. Evidence:
+`.import-cache/feats/production-acceptance.json`,
+`.import-cache/feats/media-verification.json`, and
+`.import-cache/proofs/feats-live.png`. The small sorting follow-up receives a
+fresh deployment/check run; content and database state are unchanged by it.

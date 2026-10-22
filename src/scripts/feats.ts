@@ -113,6 +113,8 @@ function render() {
           .includes(t),
       ),
   );
+  if (sort.value === "name")
+    matches.sort((a, b) => a.title.localeCompare(b.title));
   if (sort.value === "priority")
     matches.sort(
       (a, b) =>

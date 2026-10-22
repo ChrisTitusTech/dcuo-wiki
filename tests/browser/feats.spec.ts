@@ -14,6 +14,20 @@ test("feats navigation, independent reward/difficulty filters, pagination and mo
   await expect(page.locator(".feat-result")).toHaveCount(
     Math.min(40, catalog.feats.length),
   );
+  const firstName = [...catalog.feats].sort((a, b) =>
+    a.title.localeCompare(b.title),
+  )[0].title;
+  await expect(page.locator(".feat-result h2").first()).toHaveText(firstName);
+  await page
+    .getByRole("combobox", { name: "Order", exact: true })
+    .selectOption("points");
+  await expect(page.locator(".feat-result .feat-points").first()).toHaveText(
+    "100 feat points",
+  );
+  await page
+    .getByRole("combobox", { name: "Order", exact: true })
+    .selectOption("name");
+  await expect(page.locator(".feat-result h2").first()).toHaveText(firstName);
   await page.getByRole("button", { name: "Next", exact: true }).click();
   await expect(page.locator("#feat-page")).toHaveText(/Page 2/);
   const feat = catalog.feats.find((f) => f.points === 50)!;
