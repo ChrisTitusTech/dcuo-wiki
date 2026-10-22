@@ -1,5 +1,7 @@
 import { showPlayerNavigation } from "./player-navigation";
-import articles from "../data/articles";
+const articles = JSON.parse(
+  document.getElementById("account-article-index")?.textContent || "[]",
+) as { title: string; slug: string }[];
 export {};
 type Character = {
   character_id: string;

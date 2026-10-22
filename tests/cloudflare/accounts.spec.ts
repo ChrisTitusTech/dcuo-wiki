@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import articles from "../../src/data/articles.json" with { type: "json" };
 const headers = {
   Cookie: `__Host-dcuo-session=${"a".repeat(64)}`,
   Origin: "http://127.0.0.1:8787",
@@ -184,4 +185,31 @@ test("signed-in character navigation opens their profile and uploaded image", as
   } finally {
     await request.delete('/api/profile/screenshot', { headers });
   }
+});
+
+test("account editor return links use only the lightweight title index", async ({
+  page,
+}) => {
+  await page.goto("/account/?page=Sea%20Change");
+  await expect(
+    page.getByRole("link", { name: "Return to edit Sea Change", exact: true }),
+  ).toHaveAttribute("href", "/wiki/Sea_Change/#article-editor");
+  const index = JSON.parse(
+    (await page.locator("#account-article-index").textContent()) || "[]",
+  );
+  expect(index).toHaveLength(articles.length);
+  for (const entry of index)
+    expect(Object.keys(entry).sort()).toEqual(["slug", "title"]);
+  const scripts = await page
+    .locator("script[src]")
+    .evaluateAll((elements) =>
+      elements.map((element) => element.getAttribute("src")!),
+    );
+  let size = 0;
+  for (const script of scripts) {
+    const response = await page.request.get(script);
+    expect(response.ok()).toBe(true);
+    size += (await response.body()).byteLength;
+  }
+  expect(size).toBeLessThan(100 * 1024);
 });

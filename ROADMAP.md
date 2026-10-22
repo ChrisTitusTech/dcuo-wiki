@@ -241,9 +241,9 @@ Manual desktop/mobile inspection confirmed inline owned maps, the three-image
 popout, next/close behavior, restored article position and no mobile overflow.
 Validation and production evidence are recorded below after the final regeneration.
 
-Final local gates: 67 unit tests, 13 browser tests, seven Cloudflare account/editing
+Final local gates: 67 unit tests, 13 browser tests, eight Cloudflare account/editing
 integration tests, content/type checks and the production build passed. Build:
-1,063 files / 22,566,766 bytes against 18,000 internal / 20,000 platform file limits.
+1,063 files / 17,981,991 bytes against 18,000 internal / 20,000 platform file limits.
 Map captions now retain meaningful source labels rather than reused filenames.
 
 The final location-name review also found prefix truncation. Location names are
@@ -255,3 +255,10 @@ Menu classification now checks every objective and gives explicit physical base
 instructions precedence over inventory steps. Lock and Load correctly points to
 the player's base. Automatic Journal gifts and explicit inventory claims retain
 menu context; beta preorder instructions are explicitly labeled historical.
+
+The expanded corpus exposed an account-page bundle regression. Account lookup now
+uses an escaped inline title/slug index, leaving all article bodies out of client
+account JavaScript. The account script is 5,630 bytes (7,841 bytes including the
+shared layout script), with 74,515 bytes of account HTML. An eighth Cloudflare test
+checks the return-to-editor link, index schema/coverage and script size budget.
+All final local gates passed after this change.

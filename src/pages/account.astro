@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import articles from "../data/articles";
+const articleIndex = articles.map(({ title, slug }) => ({ title, slug }));
 ---
 
 <Layout
@@ -147,5 +149,11 @@ import Layout from "../layouts/Layout.astro";
       without it.
     </noscript>
   </section>
+  <script
+    is:inline
+    type="application/json"
+    id="account-article-index"
+    set:html={JSON.stringify(articleIndex).replaceAll("<", "\\u003c")}
+  ></script>
   <script src="../scripts/account.ts"></script>
 </Layout>
