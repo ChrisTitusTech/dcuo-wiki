@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-22T00:16:23.845Z",
+  "createdAt": "2026-10-22T00:20:57.425Z",
   "records": [
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Missions/Heroes",
@@ -1798,7 +1798,7 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nepheritos",
       "slug": "BOUNTY_Nepheritos",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Nepheritos",
-      "words": 253,
+      "words": 252,
       "objectiveWords": 126,
       "location": "Gotham",
       "maps": 0,
@@ -1965,8 +1965,8 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Invasion_(heroes)",
       "slug": "Brainiac_Invasion_heroes",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Invasion_(heroes)",
-      "words": 34,
-      "objectiveWords": 7,
+      "words": 33,
+      "objectiveWords": 6,
       "maps": 0,
       "images": 1,
       "reasons": [
@@ -6260,7 +6260,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Lock_and_Load!",
       "words": 94,
       "objectiveWords": 45,
-      "location": "Journal / player menus",
+      "location": "Your player base / lair",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7640,8 +7640,8 @@
       "source": "https://dcuniverseonline.fandom.com/wiki/Playtest_as_Batman",
       "slug": "Playtest_as_Batman",
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Playtest_as_Batman",
-      "words": 54,
-      "objectiveWords": 17,
+      "words": 53,
+      "objectiveWords": 16,
       "location": "Journal / player menus",
       "maps": 0,
       "images": 0,
@@ -12214,5 +12214,5 @@
       "reasons": []
     }
   ],
-  "enrichedAt": "2026-10-22T00:16:24.182Z"
+  "enrichedAt": "2026-10-22T00:20:57.754Z"
 }

@@ -241,12 +241,17 @@ Manual desktop/mobile inspection confirmed inline owned maps, the three-image
 popout, next/close behavior, restored article position and no mobile overflow.
 Validation and production evidence are recorded below after the final regeneration.
 
-Final local gates: 65 unit tests, 13 browser tests, seven Cloudflare account/editing
+Final local gates: 67 unit tests, 13 browser tests, seven Cloudflare account/editing
 integration tests, content/type checks and the production build passed. Build:
-1,063 files / 22,566,271 bytes against 18,000 internal / 20,000 platform file limits.
+1,063 files / 22,566,766 bytes against 18,000 internal / 20,000 platform file limits.
 Map captions now retain meaningful source labels rather than reused filenames.
 
 The final location-name review also found prefix truncation. Location names are
 now matched longest first, preserving Downtown Metropolis Battlezone and specific
 Police Station/Nightclub destinations. All guides were regenerated with stable
 counts; regression cases cover these distinct zones and safehouses.
+
+Menu classification now checks every objective and gives explicit physical base
+instructions precedence over inventory steps. Lock and Load correctly points to
+the player's base. Automatic Journal gifts and explicit inventory claims retain
+menu context; beta preorder instructions are explicitly labeled historical.

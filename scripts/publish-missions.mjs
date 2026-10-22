@@ -145,6 +145,19 @@ for (const r of conversions.records) {
       references: [{ label: "Faction wording in the source", url: a.source }],
     });
   }
+  if (a.slug === "Playtest_as_Batman") {
+    a.summary =
+      "Historical beta reward mission: the source describes claiming Batman Exobyte Data during DCUO's preorder promotion.";
+    a.sections.unshift({
+      title: "Historical availability",
+      items: [
+        "This entry documents a beta-era promotional mission. The source does not establish current availability; its preorder instructions are historical.",
+      ],
+      references: [
+        { label: "Historical beta promotion source", url: a.source },
+      ],
+    });
+  }
   if (a.slug === "The_Petri_Dish") {
     a.summary =
       "Contain Doomsday in the Smallville alert after completing Alert T1: Smallville.";

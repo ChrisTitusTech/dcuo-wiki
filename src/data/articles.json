@@ -26263,7 +26263,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal reward mission",
-      "precision": "The source describes an automatically added Journal gift mission, without a world destination",
+      "precision": "Source menu or claim objectives: Thank you for playing DC Universe Online; please enjoy this gift from Daybreak Games!",
       "source": "https://dcuniverseonline.fandom.com/wiki/52",
       "maps": []
     },
@@ -26338,7 +26338,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Open your inventory and clain your Modern Batman Exobyte Data",
+      "precision": "Source menu or claim objectives: Open your inventory and clain your Modern Batman Exobyte Data",
       "source": "https://dcuniverseonline.fandom.com/wiki/75_Years_of_Batman",
       "maps": []
     },
@@ -30392,7 +30392,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Absorbascon Modules",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Absorbascon Modules",
       "source": "https://dcuniverseonline.fandom.com/wiki/Absorbascon_Modules",
       "maps": []
     },
@@ -46882,7 +46882,6 @@
       {
         "title": "Background",
         "items": [
-          "Objectives:",
           "Locate and defeat Nepheritos in Gotham"
         ],
         "references": [
@@ -50313,7 +50312,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Exobytes",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Exobytes",
       "source": "https://dcuniverseonline.fandom.com/wiki/Building_a_Power_Base",
       "maps": []
     },
@@ -60336,7 +60335,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Cybernetic Cores",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Cybernetic Cores",
       "source": "https://dcuniverseonline.fandom.com/wiki/Cybernetic_Cores",
       "maps": []
     },
@@ -61763,7 +61762,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Dark Phylacteries",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Dark Phylacteries",
       "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Phylactery_(Mission)",
       "maps": []
     },
@@ -62231,7 +62230,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal reward mission",
-      "precision": "The source describes an automatically added Journal gift mission, without a world destination",
+      "precision": "Source menu or claim objectives: Thank you for playing DC Universe Online: please enjoy this two year anniversary gift from SOE!",
       "source": "https://dcuniverseonline.fandom.com/wiki/DCUO%3A_Year_Two",
       "maps": []
     },
@@ -67802,7 +67801,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Enchanted Corals",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Enchanted Corals",
       "source": "https://dcuniverseonline.fandom.com/wiki/Enchanted_Coral_(Mission)",
       "maps": []
     },
@@ -84377,7 +84376,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal reward mission",
-      "precision": "The source describes an automatically added Journal gift mission, without a world destination",
+      "precision": "Source menu or claim objectives: Thank you for playing DC Universe Online; please enjoy this anniversary gift from SOE!",
       "source": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2014)",
       "maps": []
     },
@@ -84514,7 +84513,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal reward mission",
-      "precision": "The source describes an automatically added Journal gift mission, without a world destination",
+      "precision": "Source menu or claim objectives: Thank you for playing DC Universe Online; please enjoy this anniversary gift from SOE!",
       "source": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2015)",
       "maps": []
     },
@@ -84643,7 +84642,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal reward mission",
-      "precision": "The source describes an automatically added Journal gift mission, without a world destination",
+      "precision": "Source menu or claim objectives: Thank you for playing DC Universe Online; please enjoy this anniversary gift from Daybreak Games!",
       "source": "https://dcuniverseonline.fandom.com/wiki/Happy_Anniversary_(2016)",
       "maps": []
     },
@@ -94693,8 +94692,8 @@
     "reviewed": true,
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
-      "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Check your inventory and use the Armory to add it to your base items",
+      "label": "Your player base / lair",
+      "precision": "Source objective inside the player-owned base: Place your Armory in your Base, and use it to imprint a new Build",
       "source": "https://dcuniverseonline.fandom.com/wiki/Lock_and_Load!",
       "maps": []
     },
@@ -97977,7 +97976,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal reward mission",
-      "precision": "The source describes an automatically added Journal gift mission, without a world destination",
+      "precision": "Source menu or claim objectives: Thank you for playing DC Universe Online; please enjoy this gift from Daybreak Games!",
       "source": "https://dcuniverseonline.fandom.com/wiki/Membership_Has_Its_Perks",
       "maps": []
     },
@@ -99930,7 +99929,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Metal Resonators",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Metal Resonators",
       "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Resonator_(Mission)",
       "maps": []
     },
@@ -109279,8 +109278,20 @@
     "slug": "Playtest_as_Batman",
     "title": "Playtest as Batman",
     "category": "Quests",
-    "summary": "Play as Batman in a two-on-two arena! Test out his skills in Legends PvP during Beta... but remember, you have to pre-order DCUO to unlock Batman at launch. Don't miss out! Go to dcuniverseonline.com to pre-order today.",
+    "summary": "Historical beta reward mission: the source describes claiming Batman Exobyte Data during DCUO's preorder promotion.",
     "sections": [
+      {
+        "title": "Historical availability",
+        "items": [
+          "This entry documents a beta-era promotional mission. The source does not establish current availability; its preorder instructions are historical."
+        ],
+        "references": [
+          {
+            "label": "Historical beta promotion source",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Playtest_as_Batman"
+          }
+        ]
+      },
       {
         "title": "Background",
         "items": [
@@ -109300,7 +109311,6 @@
       {
         "title": "Walkthrough",
         "items": [
-          "Objectives:",
           "-With an open space in your inventory, complete this mission to claim your Batman Exobyte Data!"
         ]
       }
@@ -109312,7 +109322,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: -With an open space in your inventory, complete this mission to claim your Batman Exobyte Data!",
+      "precision": "Source menu or claim objectives: -With an open space in your inventory, complete this mission to claim your Batman Exobyte Data!",
       "source": "https://dcuniverseonline.fandom.com/wiki/Playtest_as_Batman",
       "maps": []
     },
@@ -141864,7 +141874,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Your player base / lair",
-      "precision": "The source places the mission inside the player-owned base, rather than a shared world coordinate",
+      "precision": "Source objective inside the player-owned base: In your Hideout or Lair, chase down your House Leprechaun and catch Lucky O'Blarney",
       "source": "https://dcuniverseonline.fandom.com/wiki/The_Runaround",
       "maps": []
     },
@@ -156489,7 +156499,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal / player menus",
-      "precision": "This source describes a claim or menu objective: Complete this mission to collect your new Warsuit Power Cores",
+      "precision": "Source menu or claim objectives: Complete this mission to collect your new Warsuit Power Cores",
       "source": "https://dcuniverseonline.fandom.com/wiki/Warsuit_Power_Cores",
       "maps": []
     },
@@ -161381,7 +161391,7 @@
     "license": "CC-BY-SA; see source for exceptions",
     "location": {
       "label": "Journal",
-      "precision": "Source instruction: Complete the mission in your journal to acquire your first Armory",
+      "precision": "Source menu or claim objectives: Complete the mission in your journal to acquire your first Armory",
       "source": "https://dcuniverseonline.fandom.com/wiki/Your_Armory",
       "maps": []
     },

@@ -53,7 +53,9 @@ export function convertMission(cache, record) {
         (x) =>
           !maintenance.test(x) &&
           !/^n\/a$/i.test(x) &&
-          !/^(?:(?:Intro|Outro) Message|Description)$/i.test(x.trim()) &&
+          !/^(?:(?:Intro|Outro) Message|Description|Objectives?:)$/i.test(
+            x.trim(),
+          ) &&
           !/^Source-listed entries\./.test(x),
       ),
     }))
@@ -335,34 +337,74 @@ export function convertMission(cache, record) {
         maps: [],
       };
   }
-  if (!article.location) {
-    const uiObjective = objectiveSections
-      .flatMap((s) => s.items)
-      .find((x) =>
-        /\b(?:inventory|style menu|style tab|claim|collect your|open your|journal)\b/i.test(
-          x,
+  let instructions = objectiveSections
+    .flatMap((section) => section.items)
+    .filter((item) => !item.startsWith('"'));
+  const allText = sections.flatMap((section) => section.items).join(" ");
+  const automaticGift =
+    /automatically (?:appeared|appearing).*journal/i.test(allText) &&
+    /gift|reward/i.test(allText);
+  if (!instructions.length)
+    instructions = sections
+      .filter((section) => section.title === "Source overview")
+      .flatMap((section) => section.items)
+      .filter((item) =>
+        /^-?With an open space in your inventory, complete this mission to claim\b/i.test(
+          item,
         ),
       );
+  const baseInstruction = instructions.find((item) =>
+    /\b(?:in|at|to|inside|into)\s+(?:your|the player's)\s+(?:base|hideout|lair)\b(?!\s+items)/i.test(
+      item,
+    ),
+  );
+  if (!article.location && baseInstruction)
+    article.location = {
+      label: "Your player base / lair",
+      precision:
+        "Source objective inside the player-owned base: " + baseInstruction,
+      source: record.url,
+      maps: [],
+    };
+  function menuInstruction(item) {
     if (
-      uiObjective &&
-      /automatically|auto-completed|gift|collect your|inventory|style menu|style tab/i.test(
-        summary + " " + uiObjective,
+      /\b(?:go|travel|return|defeat|destroy|speak|talk|locate|place|enter|find|search)\b/i.test(
+        item,
       )
     )
-      article.location = {
-        label: "Journal / player menus",
-        precision:
-          "This source describes a claim or menu objective: " + uiObjective,
-        source: record.url,
-        maps: [],
-      };
+      return false;
+    if (automaticGift && /^Thank you for playing.*gift/i.test(item))
+      return true;
+    if (
+      /^Complete (?:this|the) mission to (?:collect|claim|acquire)\b/i.test(
+        item,
+      )
+    )
+      return true;
+    const hasMenu =
+      /\b(?:inventory|style menu|style tab|augments tab|mail|journal)\b/i.test(
+        item,
+      );
+    return hasMenu && /\b(?:open|check|equip|claim|use|complete)\b/i.test(item);
   }
+  const onlyMenuInstructions =
+    instructions.length > 0 && instructions.every(menuInstruction);
+  if (!article.location && onlyMenuInstructions)
+    article.location = {
+      label: automaticGift
+        ? "Journal reward mission"
+        : instructions.every((item) => /\bjournal\b/i.test(item))
+          ? "Journal"
+          : "Journal / player menus",
+      precision: "Source menu or claim objectives: " + instructions.join("; "),
+      source: record.url,
+      maps: [],
+    };
   if (
     !article.location &&
-    /automatically (?:appeared|appearing).*journal/i.test(
-      sections.flatMap((s) => s.items).join(" "),
-    ) &&
-    /gift|reward/i.test(sections.flatMap((s) => s.items).join(" "))
+    (!instructions.length || onlyMenuInstructions) &&
+    /automatically (?:appeared|appearing).*journal/i.test(allText) &&
+    /gift|reward/i.test(allText)
   )
     article.location = {
       label: "Journal reward mission",
@@ -371,27 +413,10 @@ export function convertMission(cache, record) {
       source: record.url,
       maps: [],
     };
-  if (!article.location) {
-    const instructions = objectiveSections.flatMap((s) => s.items);
-    const journal =
-      instructions.length === 1 &&
-      /^Complete (?:the|this) mission in your journal to (?:acquire|claim|collect)\b/i.test(
-        instructions[0],
-      )
-        ? instructions[0]
-        : undefined;
-    if (journal)
-      article.location = {
-        label: "Journal",
-        precision: "Source instruction: " + journal,
-        source: record.url,
-        maps: [],
-      };
-  }
   if (
     !article.location &&
-    /(?:player.s base|your Hideout or Lair)/i.test(
-      sections.flatMap((s) => s.items).join(" "),
+    /(?:inside|in|at)\s+(?:the\s+)?player.s base|your Hideout or Lair/i.test(
+      allText,
     )
   )
     article.location = {

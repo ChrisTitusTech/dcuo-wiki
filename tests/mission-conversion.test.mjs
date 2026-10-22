@@ -174,3 +174,48 @@ test("named open-world variants and geographic subregions keep their explicit co
     assert.equal(result.article.location.label, expected);
   }
 });
+
+test("inventory steps cannot hide later physical objectives", () => {
+  const mixed = convertMission(
+    cache(
+      "Lock and Load is an Armory tutorial.\n\n## Objective\n\n- Check your inventory and use the Armory to add it to your base items.\n- Place your Armory in your Base and imprint a Build.\n- Use the Generator located in your Base.",
+    ),
+    record,
+  );
+  assert.equal(mixed.article.location.label, "Your player base / lair");
+  assert.match(
+    mixed.article.location.precision,
+    /Place your Armory in your Base/,
+  );
+  const unknown = convertMission(
+    cache(
+      "This is a gift mission.\n\n## Objectives\n\n- Check your inventory.\n- Speak to the contact at an unspecified location.",
+    ),
+    record,
+  );
+  assert.equal(unknown.article.location, undefined);
+});
+
+test("explicit automatic gifts and standalone inventory claims retain menu context", () => {
+  const gift = convertMission(
+    cache(
+      "This gift automatically appeared in the player's journal.\n\n## Objectives\n\nThank you for playing DC Universe Online; please enjoy this gift!",
+    ),
+    record,
+  );
+  assert.equal(gift.article.location.label, "Journal reward mission");
+  const claim = convertMission(
+    cache(
+      "## Walkthrough\n\nObjectives:\n\n-With an open space in your inventory, complete this mission to claim your Batman Exobyte Data!",
+    ),
+    record,
+  );
+  assert.equal(claim.article.location.label, "Journal / player menus");
+  const physical = convertMission(
+    cache(
+      "A mission about stolen property.\n\n## Objective\n\nFind the stolen inventory at an unknown location.",
+    ),
+    record,
+  );
+  assert.equal(physical.article.location, undefined);
+});
