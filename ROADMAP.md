@@ -447,7 +447,7 @@ fresh deployment/check run; content and database state are unchanged by it.
 - [x] Reuse source captures, fill missing story sources with Firecrawl, and record provenance. Include substantive narrative and mission links; omit future unnamed chapters and empty entries.
 - [x] Provide readable story pages and release-order navigation without implying that parallel classic arcs have one mandatory order.
 - [x] Validate complete coverage, guide links, search/filter behavior, mobile layout, existing article preservation and independent review.
-- [ ] Push to main and verify the live Story tab, article editor and existing edits.
+- [x] Push to main and verify the live Story tab, article editor and existing edits.
 
 Scope: story summaries and source-documented mission/instance sequences, not a
 transcript of every conversation or an invented universal mission order.
@@ -477,3 +477,14 @@ tests, Astro checks, and deployment dry run. Output has 1,686 files against the
 confirmed Story navigation, original-game layout, mentor level 5/15/30 labels
 and the numbered Murder in Kaznia / Dead Reckoning chapter chains. Release
 checks compare 152 pre-existing live parts across six sampled articles.
+
+Story implementation `e1fcff3` is deployed. GitHub validation run `39816240623`
+and Cloudflare build `dec100f7-b4fb-456d-a41c-ab7ea6d5c564` passed. Live
+acceptance confirms 73 Story links, a public Story sitemap entry and the live
+index renderer, preserves all 152 sampled existing parts/revision hashes,
+previews three full documents, rejects anonymous publishing with 401 and
+confirms active Discord/Census configuration. Native inspection verified the
+six-chapter filter, Wrath of the Worldkillers search and its complete article
+editor. No production test correction was published. Evidence is in
+`.import-cache/story/production-acceptance.json` and
+`.import-cache/proofs/story-live.png`.
