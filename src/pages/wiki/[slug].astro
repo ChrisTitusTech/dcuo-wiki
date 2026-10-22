@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import ArticleEditor from "../../components/ArticleEditor.astro";
 import { renderMapLinks } from "../../../shared/media.mjs";
+import { releasesFor, releaseHref } from "../../../shared/releases.mjs";
 import articles from "../../data/articles";
 export function getStaticPaths() {
   return articles.map((article) => ({
@@ -18,7 +19,9 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Main page</a>
       <span>/</span>
-      <a href={`/?category=${encodeURIComponent(article.category)}#library`}>
+      <a
+        href={`/guides/?category=${encodeURIComponent(article.category)}#library`}
+      >
         {article.category}
       </a>
     </nav>
@@ -32,6 +35,11 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       <a href="#article-editor">Edit this page</a>
       <a href={article.history}>Source history ↗</a>
     </div>
+    <nav class="release-links" aria-label="Content release">
+      {releasesFor(article.slug).map((release) => (
+        <a href={releaseHref(release.id)}>{release.label}</a>
+      ))}
+    </nav>
   </div>
   <div class="article-grid">
     <aside class="toc">

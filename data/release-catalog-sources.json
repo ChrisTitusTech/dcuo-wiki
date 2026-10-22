@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+      "cacheFile": ".import-cache/releases/Chapter.json",
+      "retrieved": "2026-10-22T00:31:06.141Z",
+      "sha256": "ea81ce7af4eabde6db44559823b096030a604ef96cb1fff1fd3b5c8f3d9113eb"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode",
+      "cacheFile": ".import-cache/releases/Episode.json",
+      "retrieved": "2026-10-22T00:31:06.114Z",
+      "sha256": "b3bc12adc2a2079a84d17aff6113bc437fb4954325be569705619ad6cbeea29d"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Events",
+      "cacheFile": ".import-cache/releases/Events.json",
+      "retrieved": "2026-10-22T00:34:23.669Z",
+      "sha256": "0cfbc44626bd6d672576fabeee4b088931eb14eb4cf2412c2fe1ab0042195027"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import GuideLibrary from "../../components/GuideLibrary.astro";
+---
+
+<Layout
+  title="Guides & missions"
+  description="Find DC Universe Online mission guides by category, Episode, DLC, story arc or chapter."
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Main page</a>
+    <span>/</span>
+    <span>Guides</span>
+  </nav>
+  <h1>Guides &amp; missions</h1>
+  <p class="lede">
+    Search walkthroughs, locations and maps. Filter by Episode, DLC, chapter or
+    event to find your next mission.
+  </p>
+  <GuideLibrary title="Guide library" />
+</Layout>

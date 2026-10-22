@@ -1,0 +1,71 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import GuideLibrary from "../../components/GuideLibrary.astro";
+import articles from "../../data/articles";
+import {
+  releases,
+  releaseIdsFor,
+  releaseHref,
+} from "../../../shared/releases.mjs";
+export function getStaticPaths() {
+  return releases
+    .map((release) => ({
+      release,
+      matching: articles.filter((a) =>
+        releaseIdsFor(a.slug).includes(release.id),
+      ),
+    }))
+    .filter(({ matching }) => matching.length)
+    .map(({ release, matching }) => ({
+      params: { release: release.id },
+      props: { release, matching },
+    }));
+}
+const { release, matching } = Astro.props;
+const parent = releases.find((r) => r.id === release.arc);
+const chapters = releases.filter((r) => r.arc === release.id);
+---
+
+<Layout
+  title={release.label}
+  description={`Mission guides and walkthroughs for ${release.label} in DC Universe Online.`}
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/guides/">Guides</a>
+    <span>/</span>
+    <a href="/releases/">Releases</a>
+    {parent && (
+      <>
+        <span>/</span>
+        <a href={releaseHref(parent.id)}>{parent.title}</a>
+      </>
+    )}
+  </nav>
+  <h1>{release.label}</h1>
+  {release.summary && <p class="release-overview">{release.summary}</p>}
+  {chapters.length > 0 && (
+    <nav class="release-links" aria-label="Story arc chapters">
+      {chapters.map((chapter) =>
+        articles.some((a) => releaseIdsFor(a.slug).includes(chapter.id)) ? (
+          <a href={releaseHref(chapter.id)}>
+            Chapter {chapter.number}: {chapter.title}
+          </a>
+        ) : (
+          <span>
+            Chapter {chapter.number}: {chapter.title} (not yet covered)
+          </span>
+        ),
+      )}
+    </nav>
+  )}
+  <p class="release-source">
+    <a href={release.source}>Source release details ↗</a> ·{" "}
+    <a href={release.catalogSource}>Source catalog ↗</a> ·{" "}
+    <a href="/about/">Attribution &amp; license</a>
+  </p>
+  <GuideLibrary
+    articles={matching}
+    title="Guides in this release"
+    fixedRelease={release.id}
+  />
+</Layout>

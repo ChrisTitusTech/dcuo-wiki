@@ -282,3 +282,13 @@ maps appear once; the overlay advanced from image 2 to 3 and closed back to the
 article. [Sea Change](https://dcuo-wiki.com/wiki/Sea_Change/#location) is a live
 example. No paid hosting tier was activated. The 86 held sources and the broader
 wiki migration remain explicit outstanding coverage, not published placeholders.
+
+## Guides hub and release navigation (authorized October 21, 2026)
+
+- [x] Build sourced Episode/DLC, story-arc/chapter and event release catalog.
+- [x] Assign every published mission using source badges, explicit introductions and verified content/mission relationships; record unresolved cases without guessing.
+- [x] Add a dedicated Guides hub, release/chapter filters, release landing pages and article release navigation.
+- [x] Preserve all existing editable content and keep account/browser bundles lightweight.
+- [ ] Pass local gates, independent review, main deployment and live navigation checks.
+
+Validation before deployment: all 1,047 guides (1,006 quests) have audited assignments across 75 catalog groups. The catalog includes 48 Episodes, six chapters, two parent arcs, seasonal/special events and core/system content. There are 59 populated release landing pages; 16 unpopulated catalog entries link to source details without empty pages. Source capture hashes verified for 85 release/context pages. All article JSON remains unchanged, preserving editable part hashes. Astro check: 0 errors; 69 unit tests, 15 browser tests and 9 Cloudflare integration tests passed. Deployment dry run passed at 1,124 generated files and 946.83 KiB compressed Worker. Independent Codex review completed with no actionable findings; it independently repeated type, unit, build and browser checks. Production navigation and deployment checks pending.

@@ -141,3 +141,18 @@ test("article editor publishes selected text and preserves a rejected draft", as
     fullPage: true,
   });
 });
+
+test("live corrections appear on the guides hub and release pages with release search labels", async ({
+  page,
+}) => {
+  for (const path of ["/guides/", "/releases/game-systems/"]) {
+    await page.goto(path);
+    await page.getByRole("searchbox").fill("Live fixture power correction");
+    await expect(page.locator(".card:visible")).toHaveCount(1);
+    await expect(page.locator(".card:visible p")).toContainText(
+      "Live fixture power correction",
+    );
+    await page.getByRole("searchbox").fill("Game systems & updates");
+    await expect(page.locator('.card[href="/wiki/Powers/"]')).toBeVisible();
+  }
+});

@@ -1,0 +1,3791 @@
+[
+  {
+    "id": "episode-1",
+    "kind": "episode",
+    "number": 1,
+    "title": "Fight for the Light",
+    "label": "Episode 1: Fight for the Light",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Fight_for_the_Light",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_1",
+      "https://dcuniverseonline.fandom.com/wiki/Fight_for_the_Light"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Ferris Aircraft Tier 1 Duo; Oan Sciencells Tier 1 Alert; S.T.A.R. Labs Research Facility Tier 1 Alert; Coast City Tier 1 Alert.",
+    "content": [
+      {
+        "label": "Ferris Aircraft Tier 1 Duo",
+        "links": [
+          {
+            "label": "Ferris Aircraft",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ferris_Aircraft_(Duo)"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Oan Sciencells Tier 1 Alert",
+        "links": [
+          {
+            "label": "Oan Sciencells",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Oan_Sciencells_(Alert)"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "S.T.A.R. Labs Research Facility Tier 1 Alert",
+        "links": [
+          {
+            "label": "S.T.A.R. Labs Research Facility",
+            "url": "https://dcuniverseonline.fandom.com/wiki/S.T.A.R._Labs_Research_Facility_(Alert)"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Coast City Tier 1 Alert",
+        "links": [
+          {
+            "label": "Coast City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Coast_City_(Alert)"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-2",
+    "kind": "episode",
+    "number": 2,
+    "title": "Lightning Strikes",
+    "label": "Episode 2: Lightning Strikes",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Lightning_Strikes",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_2",
+      "https://dcuniverseonline.fandom.com/wiki/Lightning_Strikes"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Central City open world access with daily Tier 1 missions; Flashback Tier 1 Duo; 9 daily Tier 1 Bounties.",
+    "content": [
+      {
+        "label": "Central City open world access with daily Tier 1 missions",
+        "links": [
+          {
+            "label": "Central City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Central_City"
+          }
+        ]
+      },
+      {
+        "label": "Flashback Tier 1 Duo",
+        "links": [
+          {
+            "label": "Flashback",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Central_City_Police_Department"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "9 daily Tier 1 Bounties",
+        "links": [
+          {
+            "label": "Bounties",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Bounties"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-3",
+    "kind": "episode",
+    "number": 3,
+    "title": "The Battle for Earth",
+    "label": "Episode 3: The Battle for Earth",
+    "source": "https://dcuniverseonline.fandom.com/wiki/The_Battle_for_Earth",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_3",
+      "https://dcuniverseonline.fandom.com/wiki/The_Battle_for_Earth"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Riverfront Center Tier 1 Duo; Gotham Hospital Tier 1 Duo; Riverside Hotel Tier 1 Duo; South Gotham Courthouse Tier 1 Alert; Gates of Tartarus Tier 1 Raid; The Prime Battleground Tier 1 Raid; Battle for South Gotham daily Tier 1 missions.",
+    "content": [
+      {
+        "label": "Riverfront Center Tier 1 Duo",
+        "links": [
+          {
+            "label": "Riverfront Center",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Riverfront_Center"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Gotham Hospital Tier 1 Duo",
+        "links": [
+          {
+            "label": "Gotham Hospital",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Hospital"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Riverside Hotel Tier 1 Duo",
+        "links": [
+          {
+            "label": "Riverside Hotel",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Riverside_Hotel"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "South Gotham Courthouse Tier 1 Alert",
+        "links": [
+          {
+            "label": "South Gotham Courthouse",
+            "url": "https://dcuniverseonline.fandom.com/wiki/South_Gotham_Courthouse"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Gates of Tartarus Tier 1 Raid",
+        "links": [
+          {
+            "label": "Gates of Tartarus",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gates_of_Tartarus"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "The Prime Battleground Tier 1 Raid",
+        "links": [
+          {
+            "label": "The Prime Battleground",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Prime_Battleground"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Battle for South Gotham daily Tier 1 missions",
+        "links": [
+          {
+            "label": "Battle for South Gotham",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Battle_for_South_Gotham"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-4",
+    "kind": "episode",
+    "number": 4,
+    "title": "The Last Laugh",
+    "label": "Episode 4: The Last Laugh",
+    "source": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(DLC)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_4",
+      "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(DLC)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Shady Nightclub Tier 2 hero Duo; Police Station Tier 2 villain Duo.",
+    "content": [
+      {
+        "label": "Shady Nightclub Tier 2 hero Duo",
+        "links": [
+          {
+            "label": "Shady Nightclub",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Shady_Nightclub"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Police Station Tier 2 villain Duo",
+        "links": [
+          {
+            "label": "Police Station",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Police_Station"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-5",
+    "kind": "episode",
+    "number": 5,
+    "title": "Hand of Fate",
+    "label": "Episode 5: Hand of Fate",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_5",
+      "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate",
+      "https://dcuniverseonline.fandom.com/wiki/The_Hand_of_Fate"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Wayward Souls Tier 2 4-Player hero Operation; Soul Alchemy Tier 2 4-Player villain Operation; With a Vengeance Tier 2 8-Player hero Operation; A Black Dawn Tier 2 8-Player hero Operation; Unpaid Dues Tier 2 8-Player villain Operation; Seeds of Rot Tier 2 8-Player villain Operation.",
+    "content": [
+      {
+        "label": "Wayward Souls Tier 2 4-Player hero Operation",
+        "links": [
+          {
+            "label": "Wayward Souls",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Wayward_Souls"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Soul Alchemy Tier 2 4-Player villain Operation",
+        "links": [
+          {
+            "label": "Soul Alchemy",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Soul_Alchemy"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "With a Vengeance Tier 2 8-Player hero Operation",
+        "links": [
+          {
+            "label": "With a Vengeance",
+            "url": "https://dcuniverseonline.fandom.com/wiki/With_a_Vengeance"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "A Black Dawn Tier 2 8-Player hero Operation",
+        "links": [
+          {
+            "label": "A Black Dawn",
+            "url": "https://dcuniverseonline.fandom.com/wiki/A_Black_Dawn"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Unpaid Dues Tier 2 8-Player villain Operation",
+        "links": [
+          {
+            "label": "Unpaid Dues",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Unpaid_Dues"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Seeds of Rot Tier 2 8-Player villain Operation",
+        "links": [
+          {
+            "label": "Seeds of Rot",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Seeds_of_Rot"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-6",
+    "kind": "episode",
+    "number": 6,
+    "title": "Home Turf",
+    "label": "Episode 6: Home Turf",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Home_Turf",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_6",
+      "https://dcuniverseonline.fandom.com/wiki/Home_Turf"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Ace Chemicals daily Tier 2 hero missions; Stryker's Island daily Tier 2 hero missions; Arkham Island daily Tier 2 villain missions; Steelworks daily Tier 2 villain missions; Daily Tier 2 Bounties.",
+    "content": [
+      {
+        "label": "Ace Chemicals daily Tier 2 hero missions",
+        "links": [
+          {
+            "label": "Ace Chemicals",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ace_Chemicals"
+          }
+        ]
+      },
+      {
+        "label": "Stryker's Island daily Tier 2 hero missions",
+        "links": [
+          {
+            "label": "Stryker's Island",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Stryker%27s_Island"
+          }
+        ]
+      },
+      {
+        "label": "Arkham Island daily Tier 2 villain missions",
+        "links": [
+          {
+            "label": "Arkham Island",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Arkham_Island"
+          }
+        ]
+      },
+      {
+        "label": "Steelworks daily Tier 2 villain missions",
+        "links": [
+          {
+            "label": "Steelworks",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Steelworks"
+          }
+        ]
+      },
+      {
+        "label": "Daily Tier 2 Bounties",
+        "links": [
+          {
+            "label": "Bounties",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Bounty"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-7",
+    "kind": "episode",
+    "number": 7,
+    "title": "Origin Crisis",
+    "label": "Episode 7: Origin Crisis",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Origin_Crisis",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_7",
+      "https://dcuniverseonline.fandom.com/wiki/Origin_Crisis"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Iconic Anomaly: The Hunt Tier 2 Challenge; Iconic Anomaly: Test Subject #1 Tier 2 Challenge; Brothers in Arms Tier 2 4-Player Operation; Family Reunion Tier 2 4-Player Operation; Nexus of Reality Tier 2 Raid; Paradox Wave Tier 2 Raid.",
+    "content": [
+      {
+        "label": "Iconic Anomaly: The Hunt Tier 2 Challenge",
+        "links": [
+          {
+            "label": "Iconic Anomaly: The Hunt",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Iconic_Anomaly:_The_Hunt"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Iconic Anomaly: Test Subject #1 Tier 2 Challenge",
+        "links": [
+          {
+            "label": "Iconic Anomaly: Test Subject #1",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Iconic_Anomaly:_Test_Subject_No._1"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Brothers in Arms Tier 2 4-Player Operation",
+        "links": [
+          {
+            "label": "Brothers in Arms",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brothers_in_Arms"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Family Reunion Tier 2 4-Player Operation",
+        "links": [
+          {
+            "label": "Family Reunion",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Family_Reunion"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Nexus of Reality Tier 2 Raid",
+        "links": [
+          {
+            "label": "Nexus of Reality",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Nexus_of_Reality"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Paradox Wave Tier 2 Raid",
+        "links": [
+          {
+            "label": "Paradox Wave",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Paradox_Wave"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-8",
+    "kind": "episode",
+    "number": 8,
+    "title": "Sons of Trigon",
+    "label": "Episode 8: Sons of Trigon",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Sons_of_Trigon",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_8",
+      "https://dcuniverseonline.fandom.com/wiki/Sons_of_Trigon"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Gotham Wastelands access with daily Tier 2 missions; Tunnel of Lust Tier 2 Duo; Ruined Cathedral Tier 2 Duo; Knightsdome Arena Tier 2 Duo; Trigon’s Prison Tier 2 Alert; Raven weekly Tier 2 Bounty.",
+    "content": [
+      {
+        "label": "Gotham Wastelands access with daily Tier 2 missions",
+        "links": [
+          {
+            "label": "Gotham Wastelands",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Wastelands"
+          }
+        ]
+      },
+      {
+        "label": "Tunnel of Lust Tier 2 Duo",
+        "links": [
+          {
+            "label": "Tunnel of Lust",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Tunnel_of_Lust"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Ruined Cathedral Tier 2 Duo",
+        "links": [
+          {
+            "label": "Ruined Cathedral",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ruined_Cathedral"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Knightsdome Arena Tier 2 Duo",
+        "links": [
+          {
+            "label": "Knightsdome Arena",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Knightsdome_Arena"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Trigon’s Prison Tier 2 Alert",
+        "links": [
+          {
+            "label": "Trigon’s Prison",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Trigon%E2%80%99s_Prison"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Raven weekly Tier 2 Bounty",
+        "links": [
+          {
+            "label": "Raven",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raven"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-9",
+    "kind": "episode",
+    "number": 9,
+    "title": "War of the Light Part I",
+    "label": "Episode 9: War of the Light Part I",
+    "source": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_I",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_9",
+      "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_I"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Mist Recovery Tier 2 4-Player Operation; Strike Team Tier 2 4-Player Operation; Assault and Battery Tier 2 8-Player Operation; Mogo's Command Center or Ranx's Command Center access; Downtown Metropolis Battlezone open world access with weekly Tier 2 missions.",
+    "content": [
+      {
+        "label": "Mist Recovery Tier 2 4-Player Operation",
+        "links": [
+          {
+            "label": "Mist Recovery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mist_Recovery"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Strike Team Tier 2 4-Player Operation",
+        "links": [
+          {
+            "label": "Strike Team",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Strike_Team"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Assault and Battery Tier 2 8-Player Operation",
+        "links": [
+          {
+            "label": "Assault and Battery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Assault_and_Battery"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Mogo's Command Center or Ranx's Command Center access",
+        "links": [
+          {
+            "label": "Mogo's Command Center",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mogo%27s_Command_Center"
+          },
+          {
+            "label": "Ranx's Command Center",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ranx%27s_Command_Center"
+          }
+        ]
+      },
+      {
+        "label": "Downtown Metropolis Battlezone open world access with weekly Tier 2 missions",
+        "links": [
+          {
+            "label": "Downtown Metropolis Battlezone",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Downtown_Metropolis_Battlezone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-10",
+    "kind": "episode",
+    "number": 10,
+    "title": "Amazon Fury Part I",
+    "label": "Episode 10: Amazon Fury Part I",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_I",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_10",
+      "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_I"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Aegis of Truth Tier 2 Challenge; Circe’s Trial Tier 2 Challenge; Port of Paradise Tier 2 Duo; Supply Lines Tier 2 Duo; Gotham Under Siege open world access with daily Tier 2 missions; Themyscira Divided Tier 2 Alert.",
+    "content": [
+      {
+        "label": "Aegis of Truth Tier 2 Challenge",
+        "links": [
+          {
+            "label": "Aegis of Truth",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Aegis_of_Truth"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Circe’s Trial Tier 2 Challenge",
+        "links": [
+          {
+            "label": "Circe’s Trial",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Circe%E2%80%99s_Trial"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Port of Paradise Tier 2 Duo",
+        "links": [
+          {
+            "label": "Port of Paradise",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Port_of_Paradise"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Supply Lines Tier 2 Duo",
+        "links": [
+          {
+            "label": "Supply Lines",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Supply_Lines"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Gotham Under Siege open world access with daily Tier 2 missions",
+        "links": [
+          {
+            "label": "Gotham Under Siege",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege"
+          }
+        ]
+      },
+      {
+        "label": "Themyscira Divided Tier 2 Alert",
+        "links": [
+          {
+            "label": "Themyscira Divided",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Themyscira_Divided"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-11",
+    "kind": "episode",
+    "number": 11,
+    "title": "Halls of Power Part I",
+    "label": "Episode 11: Halls of Power Part I",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_I",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_11",
+      "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_I"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Intergang Crime Wave Tier 2 4-Player Operation; Security Breach Tier 2 Alert; Artifacts from the Past Tier 2 8-Player Operation; Relics of Urgrund Tier 2 Raid; Lockdown Tier 2 Raid.",
+    "content": [
+      {
+        "label": "Intergang Crime Wave Tier 2 4-Player Operation",
+        "links": [
+          {
+            "label": "Intergang Crime Wave",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Intergang_Crime_Wave"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Security Breach Tier 2 Alert",
+        "links": [
+          {
+            "label": "Security Breach",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Security_Breach"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Artifacts from the Past Tier 2 8-Player Operation",
+        "links": [
+          {
+            "label": "Artifacts from the Past",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Artifacts_from_the_Past"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Relics of Urgrund Tier 2 Raid",
+        "links": [
+          {
+            "label": "Relics of Urgrund",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Relics_of_Urgrund"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Lockdown Tier 2 Raid",
+        "links": [
+          {
+            "label": "Lockdown",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Lockdown"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-12",
+    "kind": "episode",
+    "number": 12,
+    "title": "War of the Light Part II",
+    "label": "Episode 12: War of the Light Part II",
+    "source": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_II",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_12",
+      "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_II"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Spark of Parallax Tier 3 Challenge; Spark of Ion Tier 3 Duo; Zamaron Conversion Chamber Tier 3 Alert; Avarice Impurity Tier 3 4-Player hero Operation; Rage Impurity Tier 3 4-Player villain Operation; Love and War Tier 3 8-Player Operation; Metropolis Battlezone open world access with daily Tier 3 missions.",
+    "content": [
+      {
+        "label": "Spark of Parallax Tier 3 Challenge",
+        "links": [
+          {
+            "label": "Spark of Parallax",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Spark_of_Parallax"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Spark of Ion Tier 3 Duo",
+        "links": [
+          {
+            "label": "Spark of Ion",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Spark_of_Ion"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Zamaron Conversion Chamber Tier 3 Alert",
+        "links": [
+          {
+            "label": "Zamaron Conversion Chamber",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Zamaron_Conversion_Chamber"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Avarice Impurity Tier 3 4-Player hero Operation",
+        "links": [
+          {
+            "label": "Avarice Impurity",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Avarice_Impurity"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Rage Impurity Tier 3 4-Player villain Operation",
+        "links": [
+          {
+            "label": "Rage Impurity",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Rage_Impurity"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Love and War Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "Love and War",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Love_and_War"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metropolis Battlezone open world access with daily Tier 3 missions",
+        "links": [
+          {
+            "label": "Metropolis Battlezone",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Battlezone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-13",
+    "kind": "episode",
+    "number": 13,
+    "title": "Amazon Fury Part II",
+    "label": "Episode 13: Amazon Fury Part II",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_13",
+      "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Return to the Nexus Tier 3 Operation; Act of Defiance Tier 3 Operation; Labyrinth of Lost Souls Tier 3 Raid; Halls of Hades Tier 3 Raid; Throne of the Dead Tier 3 Raid; Gotham Under Siege open world access with daily Tier 3 mission.",
+    "content": [
+      {
+        "label": "Return to the Nexus Tier 3 Operation",
+        "links": [
+          {
+            "label": "Return to the Nexus",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Return_to_the_Nexus"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Act of Defiance Tier 3 Operation",
+        "links": [
+          {
+            "label": "Act of Defiance",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Act_of_Defiance"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Labyrinth of Lost Souls Tier 3 Raid",
+        "links": [
+          {
+            "label": "Labyrinth of Lost Souls",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Labyrinth_of_Lost_Souls"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Halls of Hades Tier 3 Raid",
+        "links": [
+          {
+            "label": "Halls of Hades",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Hades"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Throne of the Dead Tier 3 Raid",
+        "links": [
+          {
+            "label": "Throne of the Dead",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Throne_of_the_Dead"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Gotham Under Siege open world access with daily Tier 3 mission",
+        "links": [
+          {
+            "label": "Gotham Under Siege",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-14",
+    "kind": "episode",
+    "number": 14,
+    "title": "Halls of Power Part II",
+    "label": "Episode 14: Halls of Power Part II",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_II",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_14",
+      "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_II"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Resource Recovery Tier 3 Duo; League Hall: Malfunction Tier 3 Duo; Fatal Exams Tier 3 4-Player Operation; New Genesis Now Tier 3 8-Player Operation; Happiness Home Tier 3 Raid; New Genesis open world access with daily Tier 3 missions.",
+    "content": [
+      {
+        "label": "Resource Recovery Tier 3 Duo",
+        "links": [
+          {
+            "label": "Resource Recovery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Resource_Recovery"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "League Hall: Malfunction Tier 3 Duo",
+        "links": [
+          {
+            "label": "League Hall: Malfunction",
+            "url": "https://dcuniverseonline.fandom.com/wiki/League_Hall:_Malfunction"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Fatal Exams Tier 3 4-Player Operation",
+        "links": [
+          {
+            "label": "Fatal Exams",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Fatal_Exams"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "New Genesis Now Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "New Genesis Now",
+            "url": "https://dcuniverseonline.fandom.com/wiki/New_Genesis_Now"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Happiness Home Tier 3 Raid",
+        "links": [
+          {
+            "label": "Happiness Home",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Happiness_Home"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "New Genesis open world access with daily Tier 3 missions",
+        "links": [
+          {
+            "label": "New Genesis",
+            "url": "https://dcuniverseonline.fandom.com/wiki/New_Genesis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-15",
+    "kind": "episode",
+    "number": 15,
+    "title": "Bombshell Paradox & Corrupted Zamaron",
+    "label": "Episode 15: Bombshell Paradox & Corrupted Zamaron",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_15:_Bombshell_Paradox_%26_Corrupted_Zamaron",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_15:_Bombshell_Paradox_%26_Corrupted_Zamaron"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Corrupted Zamaron Tier 3 Duo; The Bombshell Paradox Tier 3 8-Player Operation.",
+    "content": [
+      {
+        "label": "Corrupted Zamaron Tier 3 Duo",
+        "links": [
+          {
+            "label": "Corrupted Zamaron",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Corrupted_Zamaron"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "The Bombshell Paradox Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "The Bombshell Paradox",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Bombshell_Paradox"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-16",
+    "kind": "episode",
+    "number": 16,
+    "title": "Desecrated Cathedral & Oa Under Siege",
+    "label": "Episode 16: Desecrated Cathedral & Oa Under Siege",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_16:_Desecrated_Cathedral_%26_Oa_Under_Siege",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_16:_Desecrated_Cathedral_%26_Oa_Under_Siege"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Oa Under Siege Tier 3 solo mission; Desecrated Cathedral Tier 3 Alert.",
+    "content": [
+      {
+        "label": "Oa Under Siege Tier 3 solo mission",
+        "links": [
+          {
+            "label": "Oa Under Siege",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Oa_Under_Siege"
+          }
+        ]
+      },
+      {
+        "label": "Desecrated Cathedral Tier 3 Alert",
+        "links": [
+          {
+            "label": "Desecrated Cathedral",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Desecrated_Cathedral"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-17",
+    "kind": "episode",
+    "number": 17,
+    "title": "Flash Museum Burglary & Unholy Matrimony",
+    "label": "Episode 17: Flash Museum Burglary & Unholy Matrimony",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_17:_Flash_Museum_Burglary_%26_Unholy_Matrimony",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_17:_Flash_Museum_Burglary_%26_Unholy_Matrimony"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Flash Museum Burglary Tier 3 Duo; Unholy Matrimony Tier 3 8-Player Operation.",
+    "content": [
+      {
+        "label": "Flash Museum Burglary Tier 3 Duo",
+        "links": [
+          {
+            "label": "Flash Museum Burglary",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Flash_Museum_Burglary"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Unholy Matrimony Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "Unholy Matrimony",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Unholy_Matrimony"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-18",
+    "kind": "episode",
+    "number": 18,
+    "title": "Blackest Day & The Demon's Pit",
+    "label": "Episode 18: Blackest Day & The Demon's Pit",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_18:_Blackest_Day_%26_The_Demon%27s_Pit",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_18:_Blackest_Day_%26_The_Demon%27s_Pit"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: The Demon's Pit Tier 3 Duo; Blackest Day Tier 3 8-Player Operation.",
+    "content": [
+      {
+        "label": "The Demon's Pit Tier 3 Duo",
+        "links": [
+          {
+            "label": "The Demon's Pit",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Demon%27s_Pit"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Blackest Day Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "Blackest Day",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Blackest_Day"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-19",
+    "kind": "episode",
+    "number": 19,
+    "title": "The Demon's Plan & Deep Desires",
+    "label": "Episode 19: The Demon's Plan & Deep Desires",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_19:_The_Demon%27s_Plan_%26_Deep_Desires",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_19:_The_Demon%27s_Plan_%26_Deep_Desires"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Deep Desires Tier 3 Challenge; The Demon's Plan Tier 3 Alert.",
+    "content": [
+      {
+        "label": "Deep Desires Tier 3 Challenge",
+        "links": [
+          {
+            "label": "Deep Desires",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Deep_Desires"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "The Demon's Plan Tier 3 Alert",
+        "links": [
+          {
+            "label": "The Demon's Plan",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Demon%27s_Plan"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-20",
+    "kind": "episode",
+    "number": 20,
+    "title": "Blackest Night & Wastelands Wonderland",
+    "label": "Episode 20: Blackest Night & Wastelands Wonderland",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_20:_Blackest_Night_%26_Wastelands_Wonderland",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_20:_Blackest_Night_%26_Wastelands_Wonderland"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Wastelands Wonderland Tier 3 Duo; Blackest Night Tier 3 8-Player Operation.",
+    "content": [
+      {
+        "label": "Wastelands Wonderland Tier 3 Duo",
+        "links": [
+          {
+            "label": "Wastelands Wonderland",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Wastelands_Wonderland"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Blackest Night Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "Blackest Night",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Blackest_Night"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-21",
+    "kind": "episode",
+    "number": 21,
+    "title": "The First Piece & Prison Break",
+    "label": "Episode 21: The First Piece & Prison Break",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_21:_The_First_Piece_%26_Prison_Break",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_21:_The_First_Piece_%26_Prison_Break"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: The First Piece Tier 3 2-Player Operation; Prison Break Tier 3 8-Player Operation.",
+    "content": [
+      {
+        "label": "The First Piece Tier 3 2-Player Operation",
+        "links": [
+          {
+            "label": "The First Piece",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_First_Piece"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Prison Break Tier 3 8-Player Operation",
+        "links": [
+          {
+            "label": "Prison Break",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Prison_Break"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-22",
+    "kind": "episode",
+    "number": 22,
+    "title": "Phantom Zone & Science Spire",
+    "label": "Episode 22: Phantom Zone & Science Spire",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_22:_Phantom_Zone_%26_Science_Spire",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_22:_Phantom_Zone_%26_Science_Spire"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: The Phantom Zone Tier 3 4-Player Operation; The Science Spire Tier 3 Challenge.",
+    "content": [
+      {
+        "label": "The Phantom Zone Tier 3 4-Player Operation",
+        "links": [
+          {
+            "label": "The Phantom Zone",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Phantom_Zone"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "The Science Spire Tier 3 Challenge",
+        "links": [
+          {
+            "label": "The Science Spire",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Science_Spire"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-23",
+    "kind": "episode",
+    "number": 23,
+    "title": "Brainiac's Bottle Ship & The Will of Darkseid",
+    "label": "Episode 23: Brainiac's Bottle Ship & The Will of Darkseid",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_23:_Brainiac%27s_Bottle_Ship_%26_The_Will_of_Darkseid",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_23:_Brainiac%27s_Bottle_Ship_%26_The_Will_of_Darkseid"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: The Will of Darkseid Tier 4 2-Player Operation; Brainiac's Bottle Ship Tier 4 8-Player Operation.",
+    "content": [
+      {
+        "label": "The Will of Darkseid Tier 4 2-Player Operation",
+        "links": [
+          {
+            "label": "The Will of Darkseid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Will_of_Darkseid"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Brainiac's Bottle Ship Tier 4 8-Player Operation",
+        "links": [
+          {
+            "label": "Brainiac's Bottle Ship",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac%27s_Bottle_Ship"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-24",
+    "kind": "episode",
+    "number": 24,
+    "title": "Darkseid's War Factory & Harley's Heist",
+    "label": "Episode 24: Darkseid's War Factory & Harley's Heist",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_24:_Darkseid%27s_War_Factory_%26_Harley%27s_Heist",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_24:_Darkseid%27s_War_Factory_%26_Harley%27s_Heist"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Harley's Heist Tier 4 Duo; Darkseid's War Factory Tier 4 Raid.",
+    "content": [
+      {
+        "label": "Harley's Heist Tier 4 Duo",
+        "links": [
+          {
+            "label": "Harley's Heist",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Harley%27s_Heist"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Darkseid's War Factory Tier 4 Raid",
+        "links": [
+          {
+            "label": "Darkseid's War Factory",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Darkseid%27s_War_Factory"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-25",
+    "kind": "episode",
+    "number": 25,
+    "title": "Iceberg Lounge & A Rip in Time",
+    "label": "Episode 25: Iceberg Lounge & A Rip in Time",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_25:_Iceberg_Lounge_%26_A_Rip_in_Time",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_25:_Iceberg_Lounge_%26_A_Rip_in_Time"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Iceberg Lounge Tier 4 Challenge; A Rip in Time Tier 4 4-player Operation.",
+    "content": [
+      {
+        "label": "Iceberg Lounge Tier 4 Challenge",
+        "links": [
+          {
+            "label": "Iceberg Lounge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Iceberg_Lounge"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "A Rip in Time Tier 4 4-player Operation",
+        "links": [
+          {
+            "label": "A Rip in Time",
+            "url": "https://dcuniverseonline.fandom.com/wiki/A_Rip_in_Time"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-26",
+    "kind": "episode",
+    "number": 26,
+    "title": "Wayne Manor Gala & Kandor Central Tower",
+    "label": "Episode 26: Wayne Manor Gala & Kandor Central Tower",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Episode_26:_Wayne_Manor_Gala_%26_Kandor_Central_Tower",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_26:_Wayne_Manor_Gala_%26_Kandor_Central_Tower"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Wayne Manor Gala Tier 4 Duo; Kandor Central Tower Tier 4 Raid.",
+    "content": [
+      {
+        "label": "Wayne Manor Gala Tier 4 Duo",
+        "links": [
+          {
+            "label": "Wayne Manor Gala",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Wayne_Manor_Gala"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Kandor Central Tower Tier 4 Raid",
+        "links": [
+          {
+            "label": "Kandor Central Tower",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Kandor_Central_Tower"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-27",
+    "kind": "episode",
+    "number": 27,
+    "title": "Amazon Fury Part III",
+    "label": "Episode 27: Amazon Fury Part III",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_27",
+      "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Raising Hades : Tier 4 Duo; Underworld Trials : Tier 4 4-player Operation; Olympus : Tier 4 Raid; God of Monsters : Tier 4 Raid; Typhon's Monster Invasion open world access with daily and weekly Tier 4 missions.",
+    "content": [
+      {
+        "label": "Raising Hades : Tier 4 Duo",
+        "links": [
+          {
+            "label": "Raising Hades",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raising_Hades"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Underworld Trials : Tier 4 4-player Operation",
+        "links": [
+          {
+            "label": "Underworld Trials",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Underworld_Trials"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Olympus : Tier 4 Raid",
+        "links": [
+          {
+            "label": "Olympus",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Olympus"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "God of Monsters : Tier 4 Raid",
+        "links": [
+          {
+            "label": "God of Monsters",
+            "url": "https://dcuniverseonline.fandom.com/wiki/God_of_Monsters"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Typhon's Monster Invasion open world access with daily and weekly Tier 4 missions",
+        "links": [
+          {
+            "label": "Typhon's Monster Invasion",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Typhon%27s_Monster_Invasion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-28",
+    "kind": "episode",
+    "number": 28,
+    "title": "Age of Justice",
+    "label": "Episode 28: Age of Justice",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Age_of_Justice",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_28",
+      "https://dcuniverseonline.fandom.com/wiki/Age_of_Justice"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Saving Justice Tier 4 4-player Operation; War Crimes Tier 4 4-player Operation; Justice For All Tier 4 Raid; Ultimate Soldier Tier 4 Raid; Time-Torn Area 51 open world access with daily and weekly Tier 4 missions; War-Torn Village open world access with daily and weekly Tier 4 missions.",
+    "content": [
+      {
+        "label": "Saving Justice Tier 4 4-player Operation",
+        "links": [
+          {
+            "label": "Saving Justice",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Saving_Justice"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "War Crimes Tier 4 4-player Operation",
+        "links": [
+          {
+            "label": "War Crimes",
+            "url": "https://dcuniverseonline.fandom.com/wiki/War_Crimes"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Justice For All Tier 4 Raid",
+        "links": [
+          {
+            "label": "Justice For All",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Justice_For_All_(Raid)"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Ultimate Soldier Tier 4 Raid",
+        "links": [
+          {
+            "label": "Ultimate Soldier",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Ultimate_Soldier_(Operation)"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Time-Torn Area 51 open world access with daily and weekly Tier 4 missions",
+        "links": [
+          {
+            "label": "Time-Torn Area 51",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Time-Torn_Area_51"
+          }
+        ]
+      },
+      {
+        "label": "War-Torn Village open world access with daily and weekly Tier 4 missions",
+        "links": [
+          {
+            "label": "War-Torn Village",
+            "url": "https://dcuniverseonline.fandom.com/wiki/War-Torn_Village"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-29",
+    "kind": "episode",
+    "number": 29,
+    "title": "Riddled with Crime",
+    "label": "Episode 29: Riddled with Crime",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Riddled_with_Crime",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_29",
+      "https://dcuniverseonline.fandom.com/wiki/Riddled_with_Crime"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Turf War: Team Joker Tier 4 Duo; Turf War: Team Riddler Tier 4 Duo; Rise of the Bat Tier 4 4-player Operation; Gotham City Zoo Tier 4 Raid; Amusement Mile's Gang War open world access with daily and weekly Tier 4 missions.",
+    "content": [
+      {
+        "label": "Turf War: Team Joker Tier 4 Duo",
+        "links": [
+          {
+            "label": "Turf War: Team Joker",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Turf_War:_Team_Joker"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Turf War: Team Riddler Tier 4 Duo",
+        "links": [
+          {
+            "label": "Turf War: Team Riddler",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Turf_War:_Team_Riddler"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Rise of the Bat Tier 4 4-player Operation",
+        "links": [
+          {
+            "label": "Rise of the Bat",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Rise_of_the_Bat"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Gotham City Zoo Tier 4 Raid",
+        "links": [
+          {
+            "label": "Gotham City Zoo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_City_Zoo"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Amusement Mile's Gang War open world access with daily and weekly Tier 4 missions",
+        "links": [
+          {
+            "label": "Amusement Mile's Gang War",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Amusement_Mile%27s_Gang_War"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-30",
+    "kind": "episode",
+    "number": 30,
+    "title": "Earth 3",
+    "label": "Episode 30: Earth 3",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Earth_3",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_30",
+      "https://dcuniverseonline.fandom.com/wiki/Earth_3",
+      "https://dcuniverseonline.fandom.com/wiki/Earth_3_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Earth 3: The Visitor Tier 4 2-player Operation; Earth 3: Injustice System Tier 4 Alert; Earth 3: The Panopticon Tier 4 Raid; Earth 3: The Escape Tier 4 Raid; Earth 3 Gotham open world access with daily and weekly Tier 4 missions.",
+    "content": [
+      {
+        "label": "Earth 3: The Visitor Tier 4 2-player Operation",
+        "links": [
+          {
+            "label": "Earth 3: The Visitor",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3:_The_Visitor"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Earth 3: Injustice System Tier 4 Alert",
+        "links": [
+          {
+            "label": "Earth 3: Injustice System",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3:_Injustice_System"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Earth 3: The Panopticon Tier 4 Raid",
+        "links": [
+          {
+            "label": "Earth 3: The Panopticon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3:_The_Panopticon"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Earth 3: The Escape Tier 4 Raid",
+        "links": [
+          {
+            "label": "Earth 3: The Escape",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3:_The_Escape"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Earth 3 Gotham open world access with daily and weekly Tier 4 missions",
+        "links": [
+          {
+            "label": "Earth 3 Gotham",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3_Gotham"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-31",
+    "kind": "episode",
+    "number": 31,
+    "title": "Deluge",
+    "label": "Episode 31: Deluge",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Deluge",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_31",
+      "https://dcuniverseonline.fandom.com/wiki/Deluge"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Stemming the Tide Tier 5 1-player Operation; Starro: Spreading Spores Tier 5 Duo; Starro: Invasion! Tier 5 Alert; Starro: The Threat Below Tier 5 Raid; Starro: Spindrift Station Tier 5 Raid; Central City Starro Deluge Zone open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "Stemming the Tide Tier 5 1-player Operation",
+        "links": [
+          {
+            "label": "Stemming the Tide",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Stemming_the_Tide"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Starro: Spreading Spores Tier 5 Duo",
+        "links": [
+          {
+            "label": "Starro: Spreading Spores",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Starro:_Spreading_Spores"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Starro: Invasion! Tier 5 Alert",
+        "links": [
+          {
+            "label": "Starro: Invasion!",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Starro:_Invasion!"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Starro: The Threat Below Tier 5 Raid",
+        "links": [
+          {
+            "label": "Starro: The Threat Below",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Starro:_The_Threat_Below"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Starro: Spindrift Station Tier 5 Raid",
+        "links": [
+          {
+            "label": "Starro: Spindrift Station",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Starro:_Spindrift_Station"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Central City Starro Deluge Zone open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "Central City Starro Deluge Zone",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Central_City_Starro_Deluge_Zone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "death-of-superman",
+    "kind": "bonus",
+    "title": "The Death of Superman",
+    "label": "The Death of Superman",
+    "source": "https://dcuniverseonline.fandom.com/wiki/The_Death_of_Superman",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/The_Death_of_Superman"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: The Last Son of Krypton Tier 4 Challenge; Doomsday Tier 4 Raid; Doomed Metropolis open world access with daily and weekly Tier 4 missions.",
+    "content": [
+      {
+        "label": "The Last Son of Krypton Tier 4 Challenge",
+        "links": [
+          {
+            "label": "The Last Son of Krypton",
+            "url": "https://dcuniverseonline.fandom.com/wiki/The_Last_Son_of_Krypton"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Doomsday Tier 4 Raid",
+        "links": [
+          {
+            "label": "Doomsday",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Doomsday_(Raid)"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Doomed Metropolis open world access with daily and weekly Tier 4 missions",
+        "links": [
+          {
+            "label": "Doomed Metropolis",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Doomed_Metropolis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-32",
+    "kind": "episode",
+    "number": 32,
+    "title": "Teen Titans: The Judas Contract",
+    "label": "Episode 32: Teen Titans: The Judas Contract",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Teen_Titans:_The_Judas_Contract",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_32",
+      "https://dcuniverseonline.fandom.com/wiki/Teen_Titans:_The_Judas_Contract"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Titans Training Sim Tier 5 Duo; Titans Targeted! Tier 5 Alert; Titans: H.I.V.E. Reborn Tier 5 Raid; Titans: The Machine Tier 5 Raid; Titans Island open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "Titans Training Sim Tier 5 Duo",
+        "links": [
+          {
+            "label": "Titans Training Sim",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Titans_Training_Sim"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Titans Targeted! Tier 5 Alert",
+        "links": [
+          {
+            "label": "Titans Targeted!",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Titans_Targeted!"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Titans: H.I.V.E. Reborn Tier 5 Raid",
+        "links": [
+          {
+            "label": "Titans: H.I.V.E. Reborn",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Titans:_H.I.V.E._Reborn"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Titans: The Machine Tier 5 Raid",
+        "links": [
+          {
+            "label": "Titans: The Machine",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Titans:_The_Machine"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Titans Island open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "Titans Island",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Titans_Island"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-33",
+    "kind": "episode",
+    "number": 33,
+    "title": "Atlantis",
+    "label": "Episode 33: Atlantis",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Episode)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_33",
+      "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Atlantis: Royal Palace Tier 5 Challenge; Atlantis: Silent School Tier 5 Alert; Atlantis: Crown of Thorns Tier 5 Raid; Atlantis: The Throne Tier 5 8-player Operation; Atlantis open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "Atlantis: Royal Palace Tier 5 Challenge",
+        "links": [
+          {
+            "label": "Atlantis: Royal Palace",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis:_Royal_Palace"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Atlantis: Silent School Tier 5 Alert",
+        "links": [
+          {
+            "label": "Atlantis: Silent School",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis:_Silent_School"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Atlantis: Crown of Thorns Tier 5 Raid",
+        "links": [
+          {
+            "label": "Atlantis: Crown of Thorns",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis:_Crown_of_Thorns"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Atlantis: The Throne Tier 5 8-player Operation",
+        "links": [
+          {
+            "label": "Atlantis: The Throne",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis:_The_Throne"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Atlantis open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "Atlantis",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Location)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-34",
+    "kind": "episode",
+    "number": 34,
+    "title": "Justice League Dark",
+    "label": "Episode 34: Justice League Dark",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Episode)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_34",
+      "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: JLD: Pub Crawl Tier 5 Duo; JLD: Darkness Rising Tier 5 4-player Operation; JLD: Fellowship of the Arcane Tier 5 8-player Operation; JLD: Shattered Gotham Tier 5 Raid; Chaos Gotham open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "JLD: Pub Crawl Tier 5 Duo",
+        "links": [
+          {
+            "label": "JLD: Pub Crawl",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLD:_Pub_Crawl"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "JLD: Darkness Rising Tier 5 4-player Operation",
+        "links": [
+          {
+            "label": "JLD: Darkness Rising",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLD:_Darkness_Rising"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "JLD: Fellowship of the Arcane Tier 5 8-player Operation",
+        "links": [
+          {
+            "label": "JLD: Fellowship of the Arcane",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLD:_Fellowship_of_the_Arcane"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "JLD: Shattered Gotham Tier 5 Raid",
+        "links": [
+          {
+            "label": "JLD: Shattered Gotham",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLD:_Shattered_Gotham"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Chaos Gotham open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "Chaos Gotham",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Chaos_Gotham"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-35",
+    "kind": "episode",
+    "number": 35,
+    "title": "Metal Part I",
+    "label": "Episode 35: Metal Part I",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_35",
+      "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Metal Pt. I: Scarlet Speedster Tier 5 1-player Operation; Metal Pt. I: Batcave Breach Tier 5 4-player Operation; Metal Pt. I: False Idols Tier 5 8-player Operation; Metal Pt. I: Monsters of Metal Tier 5 8-player Operation; Metal Gotham City open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "Metal Pt. I: Scarlet Speedster Tier 5 1-player Operation",
+        "links": [
+          {
+            "label": "Metal Pt. I: Scarlet Speedster",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._I:_Scarlet_Speedster"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metal Pt. I: Batcave Breach Tier 5 4-player Operation",
+        "links": [
+          {
+            "label": "Metal Pt. I: Batcave Breach",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._I:_Batcave_Breach"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metal Pt. I: False Idols Tier 5 8-player Operation",
+        "links": [
+          {
+            "label": "Metal Pt. I: False Idols",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._I:_False_Idols"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metal Pt. I: Monsters of Metal Tier 5 8-player Operation",
+        "links": [
+          {
+            "label": "Metal Pt. I: Monsters of Metal",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._I:_Monsters_of_Metal"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metal Gotham City open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "Metal Gotham City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Gotham_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-36",
+    "kind": "episode",
+    "number": 36,
+    "title": "Metal Part II",
+    "label": "Episode 36: Metal Part II",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_36",
+      "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Metal Pt. II: Batscape Tier 5 2-player Operation; Metal Pt. II: Damage Control Tier 5 4-player Operation; Metal Pt. II: The Phoenix Cannon Tier 5 Raid; Metal Pt. II: Into the Dark Multiverse Tier 5 Raid; Thanagar open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "Metal Pt. II: Batscape Tier 5 2-player Operation",
+        "links": [
+          {
+            "label": "Metal Pt. II: Batscape",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._II:_Batscape"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metal Pt. II: Damage Control Tier 5 4-player Operation",
+        "links": [
+          {
+            "label": "Metal Pt. II: Damage Control",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._II:_Damage_Control"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Metal Pt. II: The Phoenix Cannon Tier 5 Raid",
+        "links": [
+          {
+            "label": "Metal Pt. II: The Phoenix Cannon",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._II:_The_Phoenix_Cannon"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Metal Pt. II: Into the Dark Multiverse Tier 5 Raid",
+        "links": [
+          {
+            "label": "Metal Pt. II: Into the Dark Multiverse",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Pt._II:_Into_the_Dark_Multiverse"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Thanagar open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "Thanagar",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Thanagar_(Location)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-37",
+    "kind": "episode",
+    "number": 37,
+    "title": "Birds of Prey",
+    "label": "Episode 37: Birds of Prey",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Episode)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_37",
+      "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: BoP: LexCorp Tower Tier 5 Challenge; BoP: Volcano Mining Facility Tier 5 Alert; BoP: The Clock Tower Tier 5 Raid; BoP: Fire & Brimstone Tier 5 Raid; BoP: Metropolis open world access with daily and weekly Tier 5 missions.",
+    "content": [
+      {
+        "label": "BoP: LexCorp Tower Tier 5 Challenge",
+        "links": [
+          {
+            "label": "BoP: LexCorp Tower",
+            "url": "https://dcuniverseonline.fandom.com/wiki/BoP:_LexCorp_Tower"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "BoP: Volcano Mining Facility Tier 5 Alert",
+        "links": [
+          {
+            "label": "BoP: Volcano Mining Facility",
+            "url": "https://dcuniverseonline.fandom.com/wiki/BoP:_Volcano_Mining_Facility"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "BoP: The Clock Tower Tier 5 Raid",
+        "links": [
+          {
+            "label": "BoP: The Clock Tower",
+            "url": "https://dcuniverseonline.fandom.com/wiki/BoP:_The_Clock_Tower"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "BoP: Fire & Brimstone Tier 5 Raid",
+        "links": [
+          {
+            "label": "BoP: Fire & Brimstone",
+            "url": "https://dcuniverseonline.fandom.com/wiki/BoP:_Fire_%26_Brimstone"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "BoP: Metropolis open world access with daily and weekly Tier 5 missions",
+        "links": [
+          {
+            "label": "BoP: Metropolis",
+            "url": "https://dcuniverseonline.fandom.com/wiki/BoP:_Metropolis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-38",
+    "kind": "episode",
+    "number": 38,
+    "title": "Wonderverse",
+    "label": "Episode 38: Wonderverse",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Wonderverse",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_38",
+      "https://dcuniverseonline.fandom.com/wiki/Wonderverse"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Wonderverse: Temples of Source Power Tier 6 Challenge; Wonderverse: Crypt of Penthesilea Tier 6 4-player Operation; Wonderverse: Fractured God Sphere Tier 6 Raid; Patchwork Themyscira open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "Wonderverse: Temples of Source Power Tier 6 Challenge",
+        "links": [
+          {
+            "label": "Wonderverse: Temples of Source Power",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Wonderverse:_Temples_of_Source_Power"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Wonderverse: Crypt of Penthesilea Tier 6 4-player Operation",
+        "links": [
+          {
+            "label": "Wonderverse: Crypt of Penthesilea",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Wonderverse:_Crypt_of_Penthesilea"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "Wonderverse: Fractured God Sphere Tier 6 Raid",
+        "links": [
+          {
+            "label": "Wonderverse: Fractured God Sphere",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Wonderverse:_Fractured_God_Sphere"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Patchwork Themyscira open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Patchwork Themyscira",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Patchwork_Themyscira"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-39",
+    "kind": "episode",
+    "number": 39,
+    "title": "Long Live the Legion",
+    "label": "Episode 39: Long Live the Legion",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_39",
+      "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Legion: HQ Orientation Tier 6 Alert; Legion: Convergence of Unmaking Tier 6 Raid; 31st Century: New Earth open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "Legion: HQ Orientation Tier 6 Alert",
+        "links": [
+          {
+            "label": "Legion: HQ Orientation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Legion:_HQ_Orientation"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Legion: Convergence of Unmaking Tier 6 Raid",
+        "links": [
+          {
+            "label": "Legion: Convergence of Unmaking",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Legion:_Convergence_of_Unmaking"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "31st Century: New Earth open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "31st Century: New Earth",
+            "url": "https://dcuniverseonline.fandom.com/wiki/31st_Century:_New_Earth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-40",
+    "kind": "episode",
+    "number": 40,
+    "title": "World of Flashpoint",
+    "label": "Episode 40: World of Flashpoint",
+    "source": "https://dcuniverseonline.fandom.com/wiki/World_of_Flashpoint",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Episode_40",
+      "https://dcuniverseonline.fandom.com/wiki/World_of_Flashpoint"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: FP: Queen's Row Penitentiary Tier 6 Duo; FP: The Royal War Tier 6 4-player Operation; FP: Flashtastic Voyage Tier 6 Raid; FP: Flash to the Future Tier 6 Raid; Flashpoint Gotham City open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "FP: Queen's Row Penitentiary Tier 6 Duo",
+        "links": [
+          {
+            "label": "FP: Queen's Row Penitentiary",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FP:_Queen%27s_Row_Penitentiary"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "FP: The Royal War Tier 6 4-player Operation",
+        "links": [
+          {
+            "label": "FP: The Royal War",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FP:_The_Royal_War"
+          },
+          {
+            "label": "Operation",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Operation"
+          }
+        ]
+      },
+      {
+        "label": "FP: Flashtastic Voyage Tier 6 Raid",
+        "links": [
+          {
+            "label": "FP: Flashtastic Voyage",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FP:_Flashtastic_Voyage"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "FP: Flash to the Future Tier 6 Raid",
+        "links": [
+          {
+            "label": "FP: Flash to the Future",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FP:_Flash_to_the_Future"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Flashpoint Gotham City open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Flashpoint Gotham City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Flashpoint_Gotham_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-41",
+    "kind": "episode",
+    "number": 41,
+    "title": "House of Legends",
+    "label": "Episode 41: House of Legends",
+    "source": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends_(Episode)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/House_of_Legends_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: House of Legends access; Introduction of Omnibus content; Introduction of the Save the Universe event; Introduction of Allies: Call For Allies.",
+    "content": [
+      {
+        "label": "House of Legends access",
+        "links": [
+          {
+            "label": "House of Legends",
+            "url": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends"
+          }
+        ]
+      },
+      {
+        "label": "Introduction of Omnibus content",
+        "links": [
+          {
+            "label": "Omnibus",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Omnibus"
+          }
+        ]
+      },
+      {
+        "label": "Introduction of the Save the Universe event",
+        "links": [
+          {
+            "label": "Save the Universe",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Save_the_Universe"
+          }
+        ]
+      },
+      {
+        "label": "Introduction of Allies: Call For Allies",
+        "links": [
+          {
+            "label": "Allies",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Allies"
+          },
+          {
+            "label": "Call For Allies",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Call_For_Allies"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-42",
+    "kind": "episode",
+    "number": 42,
+    "title": "Legion of Doom",
+    "label": "Episode 42: Legion of Doom",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Doom_(Episode)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Legion_of_Doom_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Legion of Doom: Umbrax the Ultraviolet Tier 6 Duo; Legion of Doom: The One Who Waits Tier 6 Alert; Legion of Doom: The Sixth Dimension Tier 6 Raid; Doomed Washington, D.C. open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "Legion of Doom: Umbrax the Ultraviolet Tier 6 Duo",
+        "links": [
+          {
+            "label": "Legion of Doom: Umbrax the Ultraviolet",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Doom_-_Umbrax_the_Ultraviolet"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Legion of Doom: The One Who Waits Tier 6 Alert",
+        "links": [
+          {
+            "label": "Legion of Doom: The One Who Waits",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Doom_-_The_One_Who_Waits"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Legion of Doom: The Sixth Dimension Tier 6 Raid",
+        "links": [
+          {
+            "label": "Legion of Doom: The Sixth Dimension",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Doom_-_The_Sixth_Dimension"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Doomed Washington, D.C. open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Doomed Washington, D.C.",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Doomed_Washington,_D.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-43",
+    "kind": "episode",
+    "number": 43,
+    "title": "Dark Knights",
+    "label": "Episode 43: Dark Knights",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Episode)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Episode)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Dark Knights: New Apokolips Tier 6 Duo; Dark Knights: Return to Earth 3 Tier 6 Alert; Dark Knights: The Source Wall Tier 6 Raid; Death Metal Washington, D.C. open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "Dark Knights: New Apokolips Tier 6 Duo",
+        "links": [
+          {
+            "label": "Dark Knights: New Apokolips",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights:_New_Apokolips"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Dark Knights: Return to Earth 3 Tier 6 Alert",
+        "links": [
+          {
+            "label": "Dark Knights: Return to Earth 3",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights:_Return_to_Earth_3"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Dark Knights: The Source Wall Tier 6 Raid",
+        "links": [
+          {
+            "label": "Dark Knights: The Source Wall",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights:_The_Source_Wall"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Death Metal Washington, D.C. open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Death Metal Washington, D.C.",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Death_Metal_Washington,_D.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-44",
+    "kind": "episode",
+    "number": 44,
+    "title": "The Sins of Black Adam",
+    "label": "Episode 44: The Sins of Black Adam",
+    "source": "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: SoBA: The Treachery of Black Adam Tier 6 Challenge; SoBA: Godseye Pyramid Tier 6 Alert; SoBA: Rock of Eternity Tier 6 Raid; SoBA: Neron's Underworld Tier 6 Raid; Infernal Kahndaq open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "SoBA: The Treachery of Black Adam Tier 6 Challenge",
+        "links": [
+          {
+            "label": "SoBA: The Treachery of Black Adam",
+            "url": "https://dcuniverseonline.fandom.com/wiki/SoBA:_The_Treachery_of_Black_Adam"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "SoBA: Godseye Pyramid Tier 6 Alert",
+        "links": [
+          {
+            "label": "SoBA: Godseye Pyramid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/SoBA:_Godseye_Pyramid"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "SoBA: Rock of Eternity Tier 6 Raid",
+        "links": [
+          {
+            "label": "SoBA: Rock of Eternity",
+            "url": "https://dcuniverseonline.fandom.com/wiki/SoBA:_Rock_of_Eternity"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "SoBA: Neron's Underworld Tier 6 Raid",
+        "links": [
+          {
+            "label": "SoBA: Neron's Underworld",
+            "url": "https://dcuniverseonline.fandom.com/wiki/SoBA:_Neron%27s_Underworld"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Infernal Kahndaq open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Infernal Kahndaq",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Infernal_Kahndaq"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-45",
+    "kind": "episode",
+    "number": 45,
+    "title": "Shock to the System",
+    "label": "Episode 45: Shock to the System",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Shock: Abandoned Subway Tier 6 Duo; Shock: Meta-Therapy Clinic Tier 6 Alert; Shock: The Terrorium Tier 6 Raid; Dakota City open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "Shock: Abandoned Subway Tier 6 Duo",
+        "links": [
+          {
+            "label": "Shock: Abandoned Subway",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Shock:_Abandoned_Subway"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Shock: Meta-Therapy Clinic Tier 6 Alert",
+        "links": [
+          {
+            "label": "Shock: Meta-Therapy Clinic",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Shock:_Meta-Therapy_Clinic"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Shock: The Terrorium Tier 6 Raid",
+        "links": [
+          {
+            "label": "Shock: The Terrorium",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Shock:_The_Terrorium"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Dakota City open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Dakota City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Dakota_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-46",
+    "kind": "episode",
+    "number": 46,
+    "title": "Justice League Dark Cursed",
+    "label": "Episode 46: Justice League Dark Cursed",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: JLDC: Town Square Theater Tier 6 Challenge; JLDC: Cursed House of Mystery Tier 6 Alert; JLDC: Cursed Themyscira Tier 6 Raid; Cursed Gotham City open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "JLDC: Town Square Theater Tier 6 Challenge",
+        "links": [
+          {
+            "label": "JLDC: Town Square Theater",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLDC:_Town_Square_Theater"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "JLDC: Cursed House of Mystery Tier 6 Alert",
+        "links": [
+          {
+            "label": "JLDC: Cursed House of Mystery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLDC:_Cursed_House_of_Mystery"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "JLDC: Cursed Themyscira Tier 6 Raid",
+        "links": [
+          {
+            "label": "JLDC: Cursed Themyscira",
+            "url": "https://dcuniverseonline.fandom.com/wiki/JLDC:_Cursed_Themyscira"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Cursed Gotham City open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Cursed Gotham City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Cursed_Gotham_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-47",
+    "kind": "episode",
+    "number": 47,
+    "title": "Brainiac Returns",
+    "label": "Episode 47: Brainiac Returns",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Brainiac: Overrun Area 51 Tier 6 Duo; Brainiac: Hall of Doom Tier 6 Alert; Brainiac: Hall of Justice Tier 6 Raid; Brainiac: The Command Ship Tier 6 Raid; Bottled D.C. open world access with daily and weekly Tier 6 missions.",
+    "content": [
+      {
+        "label": "Brainiac: Overrun Area 51 Tier 6 Duo",
+        "links": [
+          {
+            "label": "Brainiac: Overrun Area 51",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac:_Overrun_Area_51"
+          },
+          {
+            "label": "Duo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Duo"
+          }
+        ]
+      },
+      {
+        "label": "Brainiac: Hall of Doom Tier 6 Alert",
+        "links": [
+          {
+            "label": "Brainiac: Hall of Doom",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac:_Hall_of_Doom"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Brainiac: Hall of Justice Tier 6 Raid",
+        "links": [
+          {
+            "label": "Brainiac: Hall of Justice",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac:_Hall_of_Justice"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Brainiac: The Command Ship Tier 6 Raid",
+        "links": [
+          {
+            "label": "Brainiac: The Command Ship",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac:_The_Command_Ship"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Bottled D.C. open world access with daily and weekly Tier 6 missions",
+        "links": [
+          {
+            "label": "Bottled D.C.",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Bottled_D.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "episode-48",
+    "kind": "episode",
+    "number": 48,
+    "title": "Harley Quinn vs. Apokolips",
+    "label": "Episode 48: Harley Quinn vs. Apokolips",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Episode",
+    "summary": "Source-listed content: Apokolips: New Genesis Undercity Tier 7 Challenge; Apokolips: Besieged Clock Tower Tier 7 Alert; Apokolips: Subjukator Construction Site Tier 7 Raid; Apokoliptic Gotham City open world access with daily and weekly Tier 7 missions.",
+    "content": [
+      {
+        "label": "Apokolips: New Genesis Undercity Tier 7 Challenge",
+        "links": [
+          {
+            "label": "Apokolips: New Genesis Undercity",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Apokolips:_New_Genesis_Undercity"
+          },
+          {
+            "label": "Challenge",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Challenge"
+          }
+        ]
+      },
+      {
+        "label": "Apokolips: Besieged Clock Tower Tier 7 Alert",
+        "links": [
+          {
+            "label": "Apokolips: Besieged Clock Tower",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Apokolips:_Besieged_Clock_Tower"
+          },
+          {
+            "label": "Alert",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Alert"
+          }
+        ]
+      },
+      {
+        "label": "Apokolips: Subjukator Construction Site Tier 7 Raid",
+        "links": [
+          {
+            "label": "Apokolips: Subjukator Construction Site",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Apokolips:_Subjukator_Construction_Site"
+          },
+          {
+            "label": "Raid",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Raid"
+          }
+        ]
+      },
+      {
+        "label": "Apokoliptic Gotham City open world access with daily and weekly Tier 7 missions",
+        "links": [
+          {
+            "label": "Apokoliptic Gotham City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Apokoliptic_Gotham_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "light-and-rain",
+    "kind": "arc",
+    "title": "Light and Rain",
+    "label": "Light and Rain",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Light_and_Rain",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Light_and_Rain"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Story arc containing the chapters listed in the source chapter catalog."
+  },
+  {
+    "id": "light-and-rain-chapter-1",
+    "kind": "chapter",
+    "number": 1,
+    "arc": "light-and-rain",
+    "title": "Day of Reckoning",
+    "label": "Light and Rain - Chapter 1: Day of Reckoning",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Day_of_Reckoning",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Day_of_Reckoning"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Source-listed content: DoR: Kaznian Necropolis Assault Tier 7 Alert; DoR: Kaznian Necropolis Onslaught Tier 7 Raid; DoR: Desecrated Mausoleum Tier 7 Challenge; DoR: Flashback: Neron's Underworld Tier 7 Raid; Kaznia City open world access with daily and weekly Tier 7 missions.",
+    "content": [
+      {
+        "label": "DoR: Kaznian Necropolis Assault Tier 7 Alert",
+        "links": [
+          {
+            "label": "DoR: Kaznian Necropolis Assault",
+            "url": "https://dcuniverseonline.fandom.com/wiki/DoR:_Kaznian_Necropolis_Assault"
+          }
+        ]
+      },
+      {
+        "label": "DoR: Kaznian Necropolis Onslaught Tier 7 Raid",
+        "links": [
+          {
+            "label": "DoR: Kaznian Necropolis Onslaught",
+            "url": "https://dcuniverseonline.fandom.com/wiki/DoR:_Kaznian_Necropolis_Onslaught"
+          }
+        ]
+      },
+      {
+        "label": "DoR: Desecrated Mausoleum Tier 7 Challenge",
+        "links": [
+          {
+            "label": "DoR: Desecrated Mausoleum",
+            "url": "https://dcuniverseonline.fandom.com/wiki/DoR:_Desecrated_Mausoleum"
+          }
+        ]
+      },
+      {
+        "label": "DoR: Flashback: Neron's Underworld Tier 7 Raid",
+        "links": [
+          {
+            "label": "DoR: Flashback: Neron's Underworld",
+            "url": "https://dcuniverseonline.fandom.com/wiki/DoR:_Flashback:_Neron%27s_Underworld"
+          }
+        ]
+      },
+      {
+        "label": "Kaznia City open world access with daily and weekly Tier 7 missions",
+        "links": [
+          {
+            "label": "Kaznia City",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Kaznia_City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "light-and-rain-chapter-2",
+    "kind": "chapter",
+    "number": 2,
+    "arc": "light-and-rain",
+    "title": "Fearful Day",
+    "label": "Light and Rain - Chapter 2: Fearful Day",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Fearful_Day",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Fearful_Day"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Source-listed content: FD: Protecting Mogo Tier 7 Alert; FD: Defending Mogo Tier 7 Raid; FD: Hidden Lantern Village Tier 7 Challenge; FD: Flashback: Strike Team Tier 7 Alert; FD: Flashback: Assault and Battery Tier 7 8-player Operation; Mogo open world access with daily and weekly Tier 7 missions.",
+    "content": [
+      {
+        "label": "FD: Protecting Mogo Tier 7 Alert",
+        "links": [
+          {
+            "label": "FD: Protecting Mogo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FD:_Protecting_Mogo"
+          }
+        ]
+      },
+      {
+        "label": "FD: Defending Mogo Tier 7 Raid",
+        "links": [
+          {
+            "label": "FD: Defending Mogo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FD:_Defending_Mogo"
+          }
+        ]
+      },
+      {
+        "label": "FD: Hidden Lantern Village Tier 7 Challenge",
+        "links": [
+          {
+            "label": "FD: Hidden Lantern Village",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FD:_Hidden_Lantern_Village"
+          }
+        ]
+      },
+      {
+        "label": "FD: Flashback: Strike Team Tier 7 Alert",
+        "links": [
+          {
+            "label": "FD: Flashback: Strike Team",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FD:_Flashback:_Strike_Team"
+          }
+        ]
+      },
+      {
+        "label": "FD: Flashback: Assault and Battery Tier 7 8-player Operation",
+        "links": [
+          {
+            "label": "FD: Flashback: Assault and Battery",
+            "url": "https://dcuniverseonline.fandom.com/wiki/FD:_Flashback:_Assault_and_Battery"
+          }
+        ]
+      },
+      {
+        "label": "Mogo open world access with daily and weekly Tier 7 missions",
+        "links": [
+          {
+            "label": "Mogo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mogo_(Fearful_Day)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "light-and-rain-chapter-3",
+    "kind": "chapter",
+    "number": 3,
+    "arc": "light-and-rain",
+    "title": "Raging Night",
+    "label": "Light and Rain - Chapter 3: Raging Night",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Raging_Night",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Raging_Night"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Source-listed content: RN: Nekron's Lair Tier 7 Challenge; RN: Book of the Black Alert Tier 7 Alert; RN: Book of the Black Tier 7 Raid; RN Flashback: Corrupted Zamaron Tier 7 Duo; RN Flashback: Blackest Night Tier 7 8-player Operation; Mournful Mogo open world access with daily and weekly Tier 7 missions.",
+    "content": [
+      {
+        "label": "RN: Nekron's Lair Tier 7 Challenge",
+        "links": [
+          {
+            "label": "RN: Nekron's Lair",
+            "url": "https://dcuniverseonline.fandom.com/wiki/RN:_Nekron%27s_Lair"
+          }
+        ]
+      },
+      {
+        "label": "RN: Book of the Black Alert Tier 7 Alert",
+        "links": []
+      },
+      {
+        "label": "RN: Book of the Black Tier 7 Raid",
+        "links": [
+          {
+            "label": "RN: Book of the Black",
+            "url": "https://dcuniverseonline.fandom.com/wiki/RN:_Book_of_the_Black"
+          }
+        ]
+      },
+      {
+        "label": "RN Flashback: Corrupted Zamaron Tier 7 Duo",
+        "links": [
+          {
+            "label": "RN Flashback: Corrupted Zamaron",
+            "url": "https://dcuniverseonline.fandom.com/wiki/RN_Flashback:_Corrupted_Zamaron"
+          }
+        ]
+      },
+      {
+        "label": "RN Flashback: Blackest Night Tier 7 8-player Operation",
+        "links": [
+          {
+            "label": "RN Flashback: Blackest Night",
+            "url": "https://dcuniverseonline.fandom.com/wiki/RN_Flashback:_Blackest_Night"
+          }
+        ]
+      },
+      {
+        "label": "Mournful Mogo open world access with daily and weekly Tier 7 missions",
+        "links": [
+          {
+            "label": "Mournful Mogo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Mournful_Mogo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "light-and-rain-chapter-4",
+    "kind": "chapter",
+    "number": 4,
+    "arc": "light-and-rain",
+    "title": "Hope Burns Bright",
+    "label": "Light and Rain - Chapter 4: Hope Burns Bright",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Source-listed content: HBB: Matron's Orphanage Alert Tier 7 Alert; HBB: Matron's Orphanage Tier 7 Raid; HBB: Summit of Sorrow Tier 7 Challenge; HBB Flashback: Zamaron Conversion Chamber Tier 7 Alert; HBB Flashback: Love and War Tier 7 8-player Operation; Frozen Mogo open world access with daily and weekly Tier 7 missions.",
+    "content": [
+      {
+        "label": "HBB: Matron's Orphanage Alert Tier 7 Alert",
+        "links": []
+      },
+      {
+        "label": "HBB: Matron's Orphanage Tier 7 Raid",
+        "links": []
+      },
+      {
+        "label": "HBB: Summit of Sorrow Tier 7 Challenge",
+        "links": [
+          {
+            "label": "HBB: Summit of Sorrow",
+            "url": "https://dcuniverseonline.fandom.com/wiki/HBB:_Summit_of_Sorrow"
+          }
+        ]
+      },
+      {
+        "label": "HBB Flashback: Zamaron Conversion Chamber Tier 7 Alert",
+        "links": [
+          {
+            "label": "HBB Flashback: Zamaron Conversion Chamber",
+            "url": "https://dcuniverseonline.fandom.com/wiki/HBB_Flashback:_Zamaron_Conversion_Chamber"
+          }
+        ]
+      },
+      {
+        "label": "HBB Flashback: Love and War Tier 7 8-player Operation",
+        "links": [
+          {
+            "label": "HBB Flashback: Love and War",
+            "url": "https://dcuniverseonline.fandom.com/wiki/HBB_Flashback:_Love_and_War"
+          }
+        ]
+      },
+      {
+        "label": "Frozen Mogo open world access with daily and weekly Tier 7 missions",
+        "links": [
+          {
+            "label": "Frozen Mogo",
+            "url": "https://dcuniverseonline.fandom.com/wiki/Frozen_Mogo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "children-of-krypton",
+    "kind": "arc",
+    "title": "Children of Krypton",
+    "label": "Children of Krypton",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Children_of_Krypton",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Children_of_Krypton"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Story arc containing the chapters listed in the source chapter catalog."
+  },
+  {
+    "id": "children-of-krypton-chapter-1",
+    "kind": "chapter",
+    "number": 1,
+    "arc": "children-of-krypton",
+    "title": "Shadows Over Argo",
+    "label": "Children of Krypton - Chapter 1: Shadows Over Argo",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Chapter",
+    "summary": "Source-listed content: TBA.",
+    "content": [
+      {
+        "label": "TBA",
+        "links": []
+      }
+    ]
+  },
+  {
+    "id": "children-of-krypton-chapter-2",
+    "kind": "chapter",
+    "number": 2,
+    "arc": "children-of-krypton",
+    "title": "Wrath of the Worldkillers",
+    "label": "Children of Krypton - Chapter 2: Wrath of the Worldkillers",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Children_of_Krypton",
+    "summary": "Chapter 2 of Children of Krypton, listed in the source arc catalog for October 2026."
+  },
+  {
+    "id": "anti-monitor",
+    "kind": "event",
+    "title": "Attack of the Anti-Monitor",
+    "label": "Attack of the Anti-Monitor",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Attack_of_the_Anti-Monitor",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Attack_of_the_Anti-Monitor"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "valentines",
+    "kind": "event",
+    "title": "Valentine's Day",
+    "label": "Valentine's Day",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Valentine's_Day_Event",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Valentine's_Day_Event",
+      "https://dcuniverseonline.fandom.com/wiki/Love_Conquers_All",
+      "https://dcuniverseonline.fandom.com/wiki/Valentine%27s_Day_Event"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "st-patricks",
+    "kind": "event",
+    "title": "Mxyzptlk's Mischief",
+    "label": "Mxyzptlk's Mischief",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Mxyzptlk's_Mischief",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Mxyzptlk's_Mischief",
+      "https://dcuniverseonline.fandom.com/wiki/Mxyzptlk%27s_Mischief"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "spring",
+    "kind": "event",
+    "title": "Springtime",
+    "label": "Springtime",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Springtime",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Springtime",
+      "https://dcuniverseonline.fandom.com/wiki/Spring_Seasonal_Event"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "summer",
+    "kind": "event",
+    "title": "Tides of War",
+    "label": "Tides of War",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Tides_of_War",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Tides_of_War"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "homecoming",
+    "kind": "event",
+    "title": "Homecoming",
+    "label": "Homecoming",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Homecoming",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Homecoming"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "halloween",
+    "kind": "event",
+    "title": "The Witching Hour",
+    "label": "The Witching Hour",
+    "source": "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour",
+      "https://dcuniverseonline.fandom.com/wiki/Halloween_Seasonal_Event"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "winter",
+    "kind": "event",
+    "title": "Season's Greedings",
+    "label": "Season's Greedings",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings",
+      "https://dcuniverseonline.fandom.com/wiki/Winter_Seasonal_Event",
+      "https://dcuniverseonline.fandom.com/wiki/Winter_Holidays"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "batman-day",
+    "kind": "event",
+    "title": "Batman Day",
+    "label": "Batman Day",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Batman_Day",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Batman_Day",
+      "https://dcuniverseonline.fandom.com/wiki/BatmanDay",
+      "https://dcuniverseonline.fandom.com/wiki/Batman_Day_Celebration"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "wonder-woman-day",
+    "kind": "event",
+    "title": "Wonder Woman Day",
+    "label": "Wonder Woman Day",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day",
+      "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day_Celebration"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "save-the-universe",
+    "kind": "event",
+    "title": "Save the Universe",
+    "label": "Save the Universe",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Save_the_Universe",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Save_the_Universe"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "superman-day",
+    "kind": "event",
+    "title": "Superman Day Celebration",
+    "label": "Superman Day Celebration",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Superman_Day_Celebration",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Superman_Day_Celebration"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "starro-event",
+    "kind": "event",
+    "title": "Starro the Conqueror (2017 event)",
+    "label": "Starro the Conqueror (2017 event)",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Starro_the_Conqueror",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Starro_the_Conqueror"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "celebrate-pride",
+    "kind": "event",
+    "title": "Celebrate Pride",
+    "label": "Celebrate Pride",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Celebrate_Pride",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Celebrate_Pride"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "anniversary-gifts",
+    "kind": "event",
+    "title": "Anniversary & celebration gifts",
+    "label": "Anniversary & celebration gifts",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Events"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "outsiders-ops",
+    "kind": "event",
+    "title": "Outsiders Ops",
+    "label": "Outsiders Ops",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Outsiders_Ops",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Outsiders_Ops"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Events",
+    "summary": "Seasonal or special event content, separate from numbered Episodes."
+  },
+  {
+    "id": "core-game",
+    "kind": "core",
+    "title": "Core game & progression",
+    "label": "Core game & progression",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
+    "summary": "Classic story arcs, early progression and original game missions."
+  },
+  {
+    "id": "game-systems",
+    "kind": "system",
+    "title": "Game systems & updates",
+    "label": "Game systems & updates",
+    "source": "https://dcuniverseonline.fandom.com/wiki/Game_Updates",
+    "aliases": [
+      "https://dcuniverseonline.fandom.com/wiki/Game_Updates",
+      "https://dcuniverseonline.fandom.com/wiki/Updates"
+    ],
+    "catalogSource": "https://dcuniverseonline.fandom.com/wiki/Game_Updates",
+    "summary": "General game systems, tutorials and update missions."
+  }
+]

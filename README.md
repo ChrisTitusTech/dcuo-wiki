@@ -60,6 +60,27 @@ Cached captures and YouTube metadata are needed for reproducible conversion. Sea
 
 The library displays 48 matching guides per page. Search and category filters cover the entire published library and reset pagination.
 
+## Guides and release organization
+
+The main library is at `/guides/`; `/releases/` lists numbered Episodes/DLCs, story arcs and chapters, events, core progression and game systems. Category, release and full-text filters combine, reset pagination and can be shared through the URL. Article headers link to their content release. Only releases with published guides get their own landing page; the catalog identifies releases that are not yet covered.
+
+`src/data/releases.json` is the release catalog, and `src/data/guide-releases.json` supplies article assignments without changing editable article parts. `data/guide-release-assignments.json` records the source evidence for every assignment. Classic Lantern missions, legacy anniversary gifts and free game updates are kept distinct from similarly named DLCs/events. Chapter filters include their parent story arc. Numbered briefing parts called "Episode I/II" are not DLC episode numbers.
+
+```sh
+# Fetch catalog inputs, then release pages and classic mission directories.
+# Existing complete captures are reused; Firecrawl credentials are needed only for misses.
+node scripts/download-release-sources.mjs --catalog
+node scripts/build-release-catalog.mjs
+node scripts/download-release-sources.mjs
+node scripts/build-release-catalog.mjs
+node scripts/assign-guide-releases.mjs
+npm run validate
+npm run test:browser
+npm run test:cloudflare
+```
+
+The assignment builder prefers source release badges, then explicit introductory release links and exact mission membership in release/classic-story lists. It can inherit an unambiguous association from another mission in the introduction; shared NPCs and general locations do not establish membership. Reviewed exceptions and their reasons live in `data/release-assignment-overrides.json`. Unresolved assignments fail the builder, and publication validation rejects guides without valid release metadata. Source capture manifests are `data/release-catalog-sources.json` and `data/release-sources.json`. Adding a new release requires updating the catalog parser/curated entries and verifying the source; do not guess an Episode number or publish a future TBA chapter.
+
 ## Discovery and inventory
 
 `data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,047 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.

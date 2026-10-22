@@ -1,0 +1,124 @@
+[
+  {
+    "ids": [
+      "core-game"
+    ],
+    "slugs": [
+      "Further_Crises"
+    ],
+    "reason": "Omnibus progression unlocks classic and existing tier content. The House of Legends badge identifies the progression revamp, not the original release of its unlocked missions.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/Further_Crises",
+      "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)"
+    ]
+  },
+  {
+    "ids": [
+      "core-game"
+    ],
+    "slugs": [
+      "A_Daily_Dose_of_Heroism",
+      "A_Daily_Dose_of_Villainy"
+    ],
+    "reason": "Street-level heroic/villainous acts in original Gotham City and Metropolis; the mission walkthrough describes core city activities, not a DLC world.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/A_Daily_Dose_of_Heroism",
+      "https://dcuniverseonline.fandom.com/wiki/A_Daily_Dose_of_Villainy"
+    ]
+  },
+  {
+    "ids": [
+      "core-game"
+    ],
+    "slugs": [
+      "Alert_T1_Smallville",
+      "BOUNTY_Metropolis_Villians",
+      "Fate_Falls",
+      "Faust_Falls",
+      "Fear_-_It_s_a_Gas",
+      "JLA_in_Trouble",
+      "No_Laughing_Matter",
+      "Power_Lunch",
+      "The_Justice_League",
+      "Weeds_Whacked",
+      "What_Fate_Awaits"
+    ],
+    "reason": "Reviewed against classic story arcs and the individual walkthrough: original city/mentor progression, level-30 mentor finale, or introductory classic alert. Shared NPCs and House of Legends transport destinations do not establish DLC membership.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
+      "https://dcuniverseonline.fandom.com/wiki/Arkham_Unleashed",
+      "https://dcuniverseonline.fandom.com/wiki/Legacy_of_Krypton",
+      "https://dcuniverseonline.fandom.com/wiki/Hearts_of_Darkness",
+      "https://dcuniverseonline.fandom.com/wiki/Sins_of_the_Father"
+    ]
+  },
+  {
+    "ids": [
+      "game-systems"
+    ],
+    "slugs": [
+      "The_Demon_s_Head",
+      "Playtest_as_Batman",
+      "Membership_Has_Its_Perks",
+      "Artifacts_Mission"
+    ],
+    "reason": "Free game update, system introduction or promotional reward, rather than a numbered DLC. The Demons Head introduces League of Assassins Stronghold; Playtest as Batman is explicitly historical beta promotion; membership and artifacts are account/game systems.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/Game_Updates",
+      "https://dcuniverseonline.fandom.com/wiki/Playtest_as_Batman",
+      "https://dcuniverseonline.fandom.com/wiki/Membership_Has_Its_Perks",
+      "https://dcuniverseonline.fandom.com/wiki/Artifacts_(Mission)"
+    ]
+  },
+  {
+    "ids": [
+      "anniversary-gifts"
+    ],
+    "slugs": [
+      "75_Years_of_Batman",
+      "DCUO_Year_Two",
+      "Happy_Anniversary_2014",
+      "Happy_Anniversary_2015",
+      "Happy_Anniversary_2016"
+    ],
+    "reason": "Historical anniversary or celebration gift missions, explicitly dated in their source introductions. These predate the recurring Anti-Monitor event and are not assigned to it.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/Events"
+    ]
+  },
+  {
+    "ids": [
+      "core-game"
+    ],
+    "slugs": [
+      "Cape_Carmine_Lighthouse",
+      "Viva_la_Lucha_Libre",
+      "Til_Death_Do_Us_Part_Episode_I",
+      "Til_Death_Do_Us_Part_Episode_II",
+      "The_Precipice_of_Fear",
+      "Gorilla_Bomb_Components",
+      "Missions_Heroes",
+      "Missions_Villains",
+      "Attack_Brainiac",
+      "Mentor-based_Missions",
+      "Story_Arcs_Classic_Game"
+    ],
+    "reason": "Classic game mission directories, tutorial progression, original-city location or briefing/investigation tied to classic story arcs. The Episode I/II names on these briefings are collection parts, not numbered DLC Episodes.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)"
+    ]
+  },
+  {
+    "ids": [
+      "episode-5"
+    ],
+    "slugs": [
+      "Arcane_Edict"
+    ],
+    "reason": "Arcane Edict documents the Magic Missives/Reports of Black Arts mission system from Hand of Fate. Mission-specific source badges independently place its missions in Episode 5.",
+    "sources": [
+      "https://dcuniverseonline.fandom.com/wiki/Arcane_Edict",
+      "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate"
+    ]
+  }
+]

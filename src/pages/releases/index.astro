@@ -1,0 +1,102 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import articles from "../../data/articles";
+import {
+  releases,
+  releaseIdsFor,
+  releaseHref,
+} from "../../../shared/releases.mjs";
+const count = (id: string) =>
+  articles.filter((a) => releaseIdsFor(a.slug).includes(id)).length;
+const groups = [
+  {
+    label: "Core game & systems",
+    entries: releases.filter((r) => ["core", "system"].includes(r.kind)),
+  },
+  {
+    label: "Episodes & DLCs",
+    entries: releases.filter((r) => r.kind === "episode"),
+  },
+  {
+    label: "Additional story content",
+    entries: releases.filter((r) => r.kind === "bonus"),
+  },
+  ...releases
+    .filter((r) => r.kind === "arc")
+    .map((arc) => ({
+      label: arc.title,
+      entries: [arc, ...releases.filter((r) => r.arc === arc.id)],
+    })),
+  {
+    label: "Seasonal & special events",
+    entries: releases.filter((r) => r.kind === "event"),
+  },
+];
+---
+
+<Layout
+  title="Episodes, DLCs & chapters"
+  description="Browse DC Universe Online guides by content release, Episode, story arc, chapter and event."
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/guides/">Guides</a>
+    <span>/</span>
+    <span>Releases</span>
+  </nav>
+  <h1>Episodes, DLCs &amp; chapters</h1>
+  <p class="lede">
+    Numbered Episodes run from Fight for the Light through Harley Quinn vs.
+    Apokolips. Later releases use story arcs and chapters. Guide counts reflect
+    our current library.
+  </p>
+  {groups.map((group) => (
+    <section class="release-group">
+      <h2>{group.label}</h2>
+      <div class="table-scroll">
+        <table class="release-table">
+          <thead>
+            <tr>
+              <th scope="col">Content release</th>
+              <th scope="col">Guides</th>
+              <th scope="col">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {group.entries.map((release) => (
+              <tr>
+                <th scope="row">
+                  {count(release.id) ? (
+                    <a href={releaseHref(release.id)}>{release.label}</a>
+                  ) : (
+                    release.label
+                  )}
+                </th>
+                <td>{count(release.id) || "Not yet covered"}</td>
+                <td>
+                  <a href={release.source}>Release details ↗</a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+  <p class="notice">
+    Mission assignments use source release badges, content lists and mission
+    context. Core progression, game systems and events have their own groups. A
+    release with no imported guides links to its source rather than an empty
+    guide page.
+  </p>
+  <p>
+    Release catalogs:{" "}
+    <a href="https://dcuniverseonline.fandom.com/wiki/Episode">Episodes</a> ·{" "}
+    <a href="https://dcuniverseonline.fandom.com/wiki/Chapter">Chapters</a> ·{" "}
+    <a href="https://dcuniverseonline.fandom.com/wiki/Children_of_Krypton">
+      Children of Krypton
+    </a>{" "}
+    · <a href="https://dcuniverseonline.fandom.com/wiki/Events">Events</a>.
+    Source information from the DC Universe Online Wiki, used under{" "}
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.
+  </p>
+</Layout>

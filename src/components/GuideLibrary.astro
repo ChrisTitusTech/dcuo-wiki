@@ -1,0 +1,139 @@
+---
+import type { Article } from "../data/articles";
+import allArticles from "../data/articles";
+import {
+  releases,
+  releasesFor,
+  releaseIdsFor,
+  releaseSearchText,
+} from "../../shared/releases.mjs";
+interface Props {
+  articles?: Article[];
+  title?: string;
+  fixedRelease?: string;
+}
+const {
+  articles = allArticles,
+  title = "Explore the wiki",
+  fixedRelease = "",
+} = Astro.props;
+const countFor = (id: string) =>
+  allArticles.filter((article) => releaseIdsFor(article.slug).includes(id))
+    .length;
+const groups = [
+  {
+    label: "Core game & systems",
+    entries: releases.filter((r) => ["core", "system"].includes(r.kind)),
+  },
+  {
+    label: "Episodes / DLCs",
+    entries: releases.filter((r) => r.kind === "episode"),
+  },
+  {
+    label: "Additional story content",
+    entries: releases.filter((r) => r.kind === "bonus"),
+  },
+  ...releases
+    .filter((r) => r.kind === "arc")
+    .map((arc) => ({
+      label: arc.title,
+      entries: [arc, ...releases.filter((r) => r.arc === arc.id)],
+    })),
+  {
+    label: "Seasonal & special events",
+    entries: releases.filter((r) => r.kind === "event"),
+  },
+];
+---
+
+<section id="library" data-fixed-release={fixedRelease}>
+  <div class="section-heading">
+    <h2>{title}</h2>
+    <span class="badge">{articles.length} guides</span>
+  </div>
+  <div class="filters" aria-label="Filter guides">
+    {["All", ...new Set(articles.map((article) => article.category))].map(
+      (category) => (
+        <button data-category={category} aria-pressed={category === "All"}>
+          {category}
+        </button>
+      ),
+    )}
+  </div>
+  <div class="release-filter">
+    {!fixedRelease ? (
+      <label for="release-filter">
+        Episode / DLC / chapter
+        <select id="release-filter" name="release">
+          <option value="">All content releases</option>
+          {groups
+            .filter((group) => group.entries.length)
+            .map((group) => (
+              <optgroup label={group.label}>
+                {group.entries.map((release) => (
+                  <option value={release.id} disabled={!countFor(release.id)}>
+                    {release.label} ({countFor(release.id)})
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+        </select>
+      </label>
+    ) : (
+      <a href="/guides/#library">Choose another release</a>
+    )}
+    <a href="/releases/">Browse releases &amp; chapters</a>
+  </div>
+  <p id="count" role="status" aria-live="polite">
+    {articles.length} guides
+  </p>
+  <div class="cards">
+    {articles.map((article) => (
+      <a
+        class="card"
+        href={`/wiki/${article.slug}/`}
+        data-type={article.category}
+        data-releases={releaseIdsFor(article.slug).join(" ")}
+        data-search={[
+          article.title,
+          article.category,
+          article.summary,
+          releaseSearchText(article.slug),
+          ...article.sections.flatMap((section) => [
+            ...section.items,
+            ...(section.table?.rows.flat() || []),
+          ]),
+        ]
+          .join(" ")
+          .toLowerCase()}
+      >
+        <div class="eyebrow">{article.category}</div>
+        <h3>{article.title}</h3>
+        {releasesFor(article.slug).length > 0 && (
+          <div class="card-release">
+            {releasesFor(article.slug)
+              .map((release) => release.label)
+              .join(" / ")}
+          </div>
+        )}
+        <p>{article.summary}</p>
+        <span class="card-link">
+          Read guide <span aria-hidden="true">↗</span>
+        </span>
+      </a>
+    ))}
+  </div>
+  <nav class="library-pagination" aria-label="Guide pages" hidden>
+    <button id="previous-guides" type="button">
+      Previous
+    </button>
+    <span id="guide-page" role="status" aria-live="polite"></span>
+    <button id="next-guides" type="button">
+      Next
+    </button>
+  </nav>
+  <p id="empty" hidden>
+    No guides match. Try another term, category or content release.
+  </p>
+</section>
+<script src="../scripts/guide-library.ts"></script>

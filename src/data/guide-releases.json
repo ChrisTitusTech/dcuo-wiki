@@ -1,0 +1,3145 @@
+{
+  "52": [
+    "core-game"
+  ],
+  "Powers": [
+    "game-systems"
+  ],
+  "Investigations": [
+    "game-systems"
+  ],
+  "Collections": [
+    "game-systems"
+  ],
+  "Grab_and_Smash": [
+    "episode-5"
+  ],
+  "Cape_Carmine_Lighthouse": [
+    "core-game"
+  ],
+  "Viva_la_Lucha_Libre": [
+    "core-game"
+  ],
+  "Out_in_the_Streets": [
+    "core-game"
+  ],
+  "House_of_Venom": [
+    "core-game"
+  ],
+  "Feats": [
+    "game-systems"
+  ],
+  "Equipment": [
+    "game-systems"
+  ],
+  "Weapon_Mastery": [
+    "game-systems"
+  ],
+  "Artifacts": [
+    "game-systems"
+  ],
+  "Til_Death_Do_Us_Part_Episode_I": [
+    "core-game"
+  ],
+  "Til_Death_Do_Us_Part_Episode_II": [
+    "core-game"
+  ],
+  "Punks_n_Robbers": [
+    "core-game"
+  ],
+  "Poisoned_Bait": [
+    "core-game"
+  ],
+  "Beatdown_for_Bane": [
+    "core-game"
+  ],
+  "The_Precipice_of_Fear": [
+    "core-game"
+  ],
+  "Gorilla_Bomb_Components": [
+    "core-game"
+  ],
+  "Bane_Brought_Down": [
+    "core-game"
+  ],
+  "Fire_Power": [
+    "game-systems"
+  ],
+  "Gadgets": [
+    "game-systems"
+  ],
+  "Ice": [
+    "game-systems"
+  ],
+  "Mental": [
+    "game-systems"
+  ],
+  "Nature": [
+    "game-systems"
+  ],
+  "Sorcery": [
+    "game-systems"
+  ],
+  "Celestial": [
+    "game-systems"
+  ],
+  "Atomic": [
+    "game-systems"
+  ],
+  "Earth_Power": [
+    "game-systems"
+  ],
+  "Electricity": [
+    "game-systems"
+  ],
+  "Light": [
+    "game-systems"
+  ],
+  "Munitions": [
+    "game-systems"
+  ],
+  "Quantum": [
+    "game-systems"
+  ],
+  "Rage": [
+    "game-systems"
+  ],
+  "Water": [
+    "game-systems"
+  ],
+  "Missions_Heroes": [
+    "core-game"
+  ],
+  "Missions_Villains": [
+    "core-game"
+  ],
+  "75_Years_of_Batman": [
+    "anniversary-gifts"
+  ],
+  "A_Brainiac_Mind": [
+    "episode-47"
+  ],
+  "A_Crook_s_Best_Friend": [
+    "core-game"
+  ],
+  "A_Daily_Dose_of_Heroism": [
+    "core-game"
+  ],
+  "A_Daily_Dose_of_Villainy": [
+    "core-game"
+  ],
+  "A_Day_in_the_Life": [
+    "episode-37"
+  ],
+  "A_Fan-Tastic_Rescue": [
+    "episode-32"
+  ],
+  "A_Fool_and_His_Gold": [
+    "st-patricks"
+  ],
+  "A_Gentleman_s_Disagreement": [
+    "episode-46"
+  ],
+  "A_Glowing_Love": [
+    "valentines"
+  ],
+  "A_Helping_Hand": [
+    "death-of-superman"
+  ],
+  "A_Just_Reward_Runed_Boots": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Runic_Cape": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Runic_Epaulets": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Runic_Fists": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Runic_Helm": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Runic_Leggings": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Runic_Shirt": [
+    "episode-5"
+  ],
+  "A_Just_Reward_Waist_Runes": [
+    "episode-5"
+  ],
+  "A_Reckoning_is_Beckoning_Heroes": [
+    "death-of-superman"
+  ],
+  "A_Reckoning_is_Beckoning_Villains": [
+    "death-of-superman"
+  ],
+  "A_Twisted_Web": [
+    "core-game"
+  ],
+  "A_World_Past_Hope_And_Fear": [
+    "anti-monitor"
+  ],
+  "A_R_G_U_S_Alert": [
+    "episode-41"
+  ],
+  "A_R_G_U_S_Anti-Magic_Cannon": [
+    "episode-34"
+  ],
+  "A_R_G_U_S_On_Duty": [
+    "episode-41"
+  ],
+  "A_R_G_U_S_Outfit_and_Deploy": [
+    "episode-41"
+  ],
+  "A_R_G_U_S_Raid": [
+    "episode-41"
+  ],
+  "A_R_G_U_S_Solos_Duos": [
+    "episode-41"
+  ],
+  "Absorbascon_Modules": [
+    "episode-36"
+  ],
+  "Aegidios_s_Missions": [
+    "episode-10"
+  ],
+  "Afflicted_Nicked_Dead": [
+    "death-of-superman"
+  ],
+  "Affliction_Eviction": [
+    "death-of-superman"
+  ],
+  "Agents_of_Doom": [
+    "episode-42"
+  ],
+  "Alert_T1_Area_51": [
+    "core-game"
+  ],
+  "Alert_T1_Arkham_Asylum_Heroes": [
+    "core-game"
+  ],
+  "Alert_T1_Arkham_Asylum_Villains": [
+    "core-game"
+  ],
+  "Alert_T1_Bl_dhaven": [
+    "core-game"
+  ],
+  "Alert_T1_Coast_City_Heroes": [
+    "episode-1"
+  ],
+  "Alert_T1_Coast_City_Villains": [
+    "episode-1"
+  ],
+  "Alert_T1_Gorilla_Island": [
+    "core-game"
+  ],
+  "Alert_T1_HIVE_Moon_Base": [
+    "core-game"
+  ],
+  "Alert_T1_League_of_Assassins_Stronghold": [
+    "core-game"
+  ],
+  "Alert_T1_Oan_Sciencells_Heroes": [
+    "episode-1"
+  ],
+  "Alert_T1_Oan_Sciencells_Villains": [
+    "episode-1"
+  ],
+  "Alert_T1_Oolong_Island": [
+    "core-game"
+  ],
+  "Alert_T1_Smallville": [
+    "core-game"
+  ],
+  "Alert_T1_South_Gotham_Courthouse": [
+    "episode-3"
+  ],
+  "Alert_T1_STAR_Labs_Research_Facility": [
+    "episode-1"
+  ],
+  "Alert_T1_Stryker_s_Island_Penitentiary_Heroes": [
+    "core-game"
+  ],
+  "Alert_T1_Stryker_s_Island_Penitentiary_Villains": [
+    "core-game"
+  ],
+  "All_s_Well_That_Ends_Well": [
+    "death-of-superman"
+  ],
+  "Allied_Commander_Pearce_Battlefield_Frontline_Missions": [
+    "episode-28"
+  ],
+  "Ally_Fortify": [
+    "episode-28"
+  ],
+  "Ally_Rally": [
+    "episode-28"
+  ],
+  "Ally_Resupply": [
+    "episode-28"
+  ],
+  "Ammo_Depot": [
+    "episode-28"
+  ],
+  "An_Escaped_Experiment": [
+    "episode-37"
+  ],
+  "An_Iconic_Anomaly_Heroes": [
+    "episode-7"
+  ],
+  "An_Iconic_Anomaly_Villains": [
+    "episode-7"
+  ],
+  "And_Be_Quick_About_It_Heroes": [
+    "episode-31"
+  ],
+  "And_Be_Quick_About_It_Villains": [
+    "episode-31"
+  ],
+  "Animal_Heads_I_Win_Tails_You_Lose": [
+    "episode-44"
+  ],
+  "Animal_Rescue": [
+    "episode-37"
+  ],
+  "Another_Fine_Myth": [
+    "episode-46"
+  ],
+  "Answer_Nightwing_s_Call": [
+    "episode-35"
+  ],
+  "Anti-Matter_Anniversary": [
+    "anti-monitor"
+  ],
+  "Anti-Matter_Matters_Heroes": [
+    "anti-monitor"
+  ],
+  "Anti-Matter_Matters_Villains": [
+    "anti-monitor"
+  ],
+  "Apokolips_No": [
+    "episode-38"
+  ],
+  "Apokoliptian_Apparatus": [
+    "episode-48"
+  ],
+  "Apokoliptic_Appropriations": [
+    "episode-45"
+  ],
+  "Arcane_Edict": [
+    "episode-5"
+  ],
+  "Armed_in_a_Major_Way": [
+    "episode-45"
+  ],
+  "Arrested_Embezzlement": [
+    "episode-29"
+  ],
+  "Artifact_-_Gem_of_Horus": [
+    "episode-36"
+  ],
+  "Artifact_-_Page_of_Destiny": [
+    "episode-36"
+  ],
+  "Artifact_-_The_La-Mort_Card": [
+    "episode-36"
+  ],
+  "Artifact_-_The_Strategist_Card": [
+    "episode-36"
+  ],
+  "Artifact_-_The_Transformation_Card": [
+    "episode-36"
+  ],
+  "Artifacts_Mission": [
+    "game-systems"
+  ],
+  "Assist_Atlanteans": [
+    "episode-33"
+  ],
+  "Assist_the_Titans": [
+    "episode-32"
+  ],
+  "Assuming_Control": [
+    "episode-5"
+  ],
+  "Atlantis_Heroes": [
+    "episode-33"
+  ],
+  "Atlantis_Villains": [
+    "episode-33"
+  ],
+  "Attack_Brainiac": [
+    "core-game"
+  ],
+  "Attack_Brainiac_Part_One_Magic_Villains": [
+    "core-game"
+  ],
+  "Aversion_Therapy": [
+    "core-game"
+  ],
+  "Avian_Extermination": [
+    "episode-43"
+  ],
+  "Bad_Medicine": [
+    "core-game"
+  ],
+  "Bag_of_Chips": [
+    "episode-6"
+  ],
+  "Bane_s_Back_villain_mission": [
+    "core-game"
+  ],
+  "Bane_Banished": [
+    "core-game"
+  ],
+  "Batman_Day_Celebration": [
+    "batman-day"
+  ],
+  "Batman_Day_Daily_Alert": [
+    "batman-day"
+  ],
+  "Batman_Day_Daily_Raid": [
+    "batman-day"
+  ],
+  "Batman_Day_Daily_Solo_or_Duo": [
+    "batman-day"
+  ],
+  "Batman_s_Missions": [
+    "episode-30"
+  ],
+  "Bats_in_the_Belfry_Mission": [
+    "halloween"
+  ],
+  "Battle_for_South_Gotham": [
+    "episode-3"
+  ],
+  "Batwoman_s_Clandestine_Ops": [
+    "episode-29"
+  ],
+  "Beast_Taming": [
+    "anti-monitor"
+  ],
+  "Beastly_Spirit": [
+    "episode-5"
+  ],
+  "Beasts_Begone": [
+    "episode-5"
+  ],
+  "Beasts_of_War": [
+    "anti-monitor"
+  ],
+  "Beat_the_Heat": [
+    "core-game"
+  ],
+  "Bee_Aggressive": [
+    "core-game"
+  ],
+  "Beware_My_Power": [
+    "core-game"
+  ],
+  "Big_Cat_Hunter": [
+    "core-game"
+  ],
+  "Biotic_Armor_Research": [
+    "core-game"
+  ],
+  "Birdbath_Buster": [
+    "episode-43"
+  ],
+  "Birdcaged": [
+    "core-game"
+  ],
+  "Birds_of_a_Feather": [
+    "episode-36"
+  ],
+  "Birds_of_Prey_Heroes": [
+    "episode-37"
+  ],
+  "Birds_of_Prey_Villains": [
+    "episode-37"
+  ],
+  "Black_Canary_s_Setlist": [
+    "episode-37"
+  ],
+  "Blasts_From_the_Past": [
+    "episode-3"
+  ],
+  "Blind_Eye": [
+    "core-game"
+  ],
+  "Blood_In_Blood_Out": [
+    "episode-36"
+  ],
+  "Blood_Runs_Cold": [
+    "core-game"
+  ],
+  "Boardwalk_Assault": [
+    "core-game"
+  ],
+  "Boom_Goes_the_Ordnance": [
+    "episode-28"
+  ],
+  "Bounties": [
+    "game-systems"
+  ],
+  "BOUNTY_Ace_Chemicals_Experiment": [
+    "episode-6"
+  ],
+  "Bounty_Arkillo_Mogo": [
+    "light-and-rain-chapter-2"
+  ],
+  "BOUNTY_Black_Canary_and_Green_Arrow": [
+    "core-game"
+  ],
+  "BOUNTY_Black_Lightning": [
+    "episode-2"
+  ],
+  "Bounty_Brainiac_Sub-Avatar": [
+    "episode-47"
+  ],
+  "BOUNTY_Cyborg": [
+    "episode-2"
+  ],
+  "Bounty_Daemon_Lord": [
+    "episode-34"
+  ],
+  "BOUNTY_Doctor_Fate": [
+    "core-game"
+  ],
+  "BOUNTY_Donna_Troy": [
+    "episode-2"
+  ],
+  "BOUNTY_Fire": [
+    "core-game"
+  ],
+  "BOUNTY_Full_House": [
+    "core-game"
+  ],
+  "BOUNTY_Hawkman_and_Hawkgirl": [
+    "core-game"
+  ],
+  "Bounty_Invasion_Force": [
+    "episode-28"
+  ],
+  "Bounty_Joker_Riddler_Allies": [
+    "episode-29"
+  ],
+  "BOUNTY_Kid_Flash": [
+    "episode-2"
+  ],
+  "BOUNTY_Kilowog": [
+    "core-game"
+  ],
+  "BOUNTY_Metropolis_Villians": [
+    "core-game"
+  ],
+  "BOUNTY_Mist-Empowered_Hero": [
+    "episode-9"
+  ],
+  "BOUNTY_Nepheritos": [
+    "core-game"
+  ],
+  "BOUNTY_New_Genesis_Protector": [
+    "episode-14"
+  ],
+  "BOUNTY_Nightwing": [
+    "episode-2"
+  ],
+  "Bounty_Paradoxical_Predicament": [
+    "episode-28"
+  ],
+  "BOUNTY_Power_Girl": [
+    "core-game"
+  ],
+  "BOUNTY_Raven": [
+    "episode-2"
+  ],
+  "BOUNTY_Starfire": [
+    "episode-2"
+  ],
+  "BOUNTY_Static": [
+    "episode-2"
+  ],
+  "BOUNTY_Stryker_s_Critical_Defender": [
+    "episode-6"
+  ],
+  "BOUNTY_Superman": [
+    "episode-12"
+  ],
+  "Bounty_The_Crime_Syndicate": [
+    "episode-30"
+  ],
+  "BOUNTY_The_Flash": [
+    "core-game"
+  ],
+  "BOUNTY_The_Flash_Central_City": [
+    "episode-2"
+  ],
+  "Bounty_Titans_Go_Metal": [
+    "episode-35"
+  ],
+  "Brainiac_Returns_Part_1_Heroes": [
+    "episode-47"
+  ],
+  "Brainiac_Returns_Part_1_Villains": [
+    "episode-47"
+  ],
+  "Brainiac_Returns_Part_2": [
+    "episode-47"
+  ],
+  "Breaking_Steel": [
+    "episode-6"
+  ],
+  "Breaking_the_Crime_Wave": [
+    "episode-30"
+  ],
+  "Bridge_to_Nowhere": [
+    "episode-6"
+  ],
+  "Bring_the_Fear": [
+    "core-game"
+  ],
+  "Brother_Blue_in_Trouble": [
+    "core-game"
+  ],
+  "Building_a_Power_Base": [
+    "core-game"
+  ],
+  "Burn_Like_His_Power": [
+    "core-game"
+  ],
+  "Burning_Bridges": [
+    "episode-6"
+  ],
+  "Busted_Again": [
+    "episode-35"
+  ],
+  "Buzz_Kill_Villains": [
+    "core-game"
+  ],
+  "By_the_Shores_of_Little_Bohemia_Heroes": [
+    "summer"
+  ],
+  "By_the_Shores_of_Little_Bohemia_Villains": [
+    "summer"
+  ],
+  "Call_For_Allies": [
+    "episode-41"
+  ],
+  "Call_of_the_Wild": [
+    "core-game"
+  ],
+  "Campaign_Reform": [
+    "episode-30"
+  ],
+  "Can_You_Hear_Me_Now": [
+    "episode-28"
+  ],
+  "Canary_s_Weekly_mission_for_Catwoman": [
+    "episode-37"
+  ],
+  "Canary_s_Weekly_mission_for_Harley_Quinn": [
+    "episode-37"
+  ],
+  "Canary_s_Weekly_mission_for_Huntress": [
+    "episode-37"
+  ],
+  "Canary_s_Weekly_mission_for_Poison_Ivy": [
+    "episode-37"
+  ],
+  "Carnival_at_the_Amusement": [
+    "episode-8"
+  ],
+  "Cat_s_Eye": [
+    "core-game"
+  ],
+  "Catch_Catwoman": [
+    "episode-10"
+  ],
+  "Catch_Cheetah": [
+    "episode-10"
+  ],
+  "Catch_Killer_Croc": [
+    "episode-10"
+  ],
+  "Catch_Mister_Freeze": [
+    "episode-10"
+  ],
+  "Catch_of_the_Day": [
+    "episode-33"
+  ],
+  "Catching_a_Killer": [
+    "light-and-rain-chapter-1"
+  ],
+  "Caught_A_Drift_Heroes": [
+    "episode-33"
+  ],
+  "Caught_A_Drift_Villains": [
+    "episode-33"
+  ],
+  "Celebrate_Pride": [
+    "celebrate-pride"
+  ],
+  "Cell_Blockade": [
+    "episode-6"
+  ],
+  "Chaos_in_BoP_Metropolis_Heroes": [
+    "episode-37"
+  ],
+  "Chaos_in_BoP_Metropolis_Villains": [
+    "episode-37"
+  ],
+  "Chaos_in_Gotham_City_Heroes": [
+    "episode-34"
+  ],
+  "Chaos_in_Gotham_City_Villains": [
+    "episode-34"
+  ],
+  "Chat_With_The_Commish": [
+    "core-game"
+  ],
+  "Check_In_with_Nightwing": [
+    "episode-48"
+  ],
+  "Chemo-cal_Equilibrium": [
+    "episode-45"
+  ],
+  "Chemo-Therapy": [
+    "core-game"
+  ],
+  "Chicken_of_the_Sea": [
+    "episode-33"
+  ],
+  "Chiropteralloy": [
+    "episode-35"
+  ],
+  "Circe_s_Panthemonium": [
+    "episode-38"
+  ],
+  "Citizen_Collection": [
+    "core-game"
+  ],
+  "Citizen_Souffle": [
+    "episode-27"
+  ],
+  "Citizens_in_the_Shadows": [
+    "episode-39"
+  ],
+  "Claw_of_Aelkh_nd_Mission": [
+    "episode-34"
+  ],
+  "Cleaning_out_the_Gutters": [
+    "episode-27"
+  ],
+  "Cleaning_the_Gutters": [
+    "episode-27"
+  ],
+  "Cleaning_the_Yard": [
+    "episode-6"
+  ],
+  "Clinical_Strike": [
+    "core-game"
+  ],
+  "Closing_the_Causeway": [
+    "episode-27"
+  ],
+  "Clubhouse_Clout_Meta_Villain_Mission": [
+    "core-game"
+  ],
+  "Clue_Three": [
+    "core-game"
+  ],
+  "Coffin_Crashin": [
+    "episode-44"
+  ],
+  "Cold_Comfort": [
+    "core-game"
+  ],
+  "Cold_Contender": [
+    "core-game"
+  ],
+  "Cold_Thievery": [
+    "episode-29"
+  ],
+  "Coldest_Cuts": [
+    "core-game"
+  ],
+  "Communication_Breakdown_level_5": [
+    "core-game"
+  ],
+  "Conduit_of_the_Soul": [
+    "core-game"
+  ],
+  "Confronting_the_Cult": [
+    "episode-36"
+  ],
+  "Confronting_the_General": [
+    "episode-48"
+  ],
+  "Conquer_the_Conquerors_Heroes": [
+    "episode-31"
+  ],
+  "Conquer_the_Conquerors_Villains": [
+    "episode-31"
+  ],
+  "Conqueror_Counterstrike": [
+    "episode-38"
+  ],
+  "Construct_of_Doom": [
+    "episode-42"
+  ],
+  "Control_the_Convicts": [
+    "episode-6"
+  ],
+  "Controlling_Your_Daemons": [
+    "episode-34"
+  ],
+  "Conversion_Vortices": [
+    "core-game"
+  ],
+  "Cops_Behind_Bars": [
+    "core-game"
+  ],
+  "Cough_Up_the_Cash": [
+    "core-game"
+  ],
+  "Cram_Session": [
+    "core-game"
+  ],
+  "Crime_Spree": [
+    "episode-37"
+  ],
+  "Crushing_Sorrow_Ghostly_Anomaly": [
+    "light-and-rain-chapter-3"
+  ],
+  "Crushing_Sorrow_Rescue_Mission": [
+    "light-and-rain-chapter-3"
+  ],
+  "Crushing_Sorrow_Searching_for_Survivors": [
+    "light-and-rain-chapter-3"
+  ],
+  "Crushing_Sorrow_Supply_Run": [
+    "light-and-rain-chapter-3"
+  ],
+  "Crushing_Sorrow_Tracking_Walker": [
+    "light-and-rain-chapter-3"
+  ],
+  "Curious_Gorge": [
+    "episode-5"
+  ],
+  "Cybernetic_Cores": [
+    "episode-32"
+  ],
+  "Cyborg_Support": [
+    "episode-32"
+  ],
+  "Cyborg_s_Missions": [
+    "episode-30"
+  ],
+  "Daemonic_Incursion": [
+    "episode-34"
+  ],
+  "Daily_Justice": [
+    "episode-42"
+  ],
+  "Daily_Mission": [
+    "game-systems"
+  ],
+  "Daily_Master_of_Disguise": [
+    "episode-43"
+  ],
+  "Danger_Crawling": [
+    "episode-47"
+  ],
+  "Daring_Rescue": [
+    "light-and-rain-chapter-4"
+  ],
+  "Dark_Knights_Mission": [
+    "episode-43"
+  ],
+  "Dark_Nights_in_Gotham_City_Heroes": [
+    "episode-35"
+  ],
+  "Dark_Nights_in_Gotham_City_Villains": [
+    "episode-35"
+  ],
+  "Dark_Phylactery_Mission": [
+    "episode-34"
+  ],
+  "Dark_Shadows": [
+    "core-game"
+  ],
+  "Data_Theft": [
+    "episode-6"
+  ],
+  "DCUO_Year_Two": [
+    "anniversary-gifts"
+  ],
+  "De-Constructed": [
+    "core-game"
+  ],
+  "Dead_King_s_Scepter_Mission": [
+    "episode-33"
+  ],
+  "Dead_Reckoning_Demonic_Influence": [
+    "light-and-rain-chapter-1"
+  ],
+  "Dead_Reckoning_Hiding_Out": [
+    "light-and-rain-chapter-1"
+  ],
+  "Dead_Reckoning_Reckless_Vigilantes": [
+    "light-and-rain-chapter-1"
+  ],
+  "Deadly_Mischief": [
+    "core-game"
+  ],
+  "Deadly_Pride": [
+    "episode-44"
+  ],
+  "Death_From_Above": [
+    "episode-6"
+  ],
+  "Death_Metal_Swan_Song": [
+    "episode-43"
+  ],
+  "Deconstruction": [
+    "episode-3"
+  ],
+  "Deconstruction_Work": [
+    "episode-6"
+  ],
+  "Deep_Sea_Corruption": [
+    "episode-33"
+  ],
+  "Deeper_Into_Doom": [
+    "core-game"
+  ],
+  "Defeat_Brother_Eye": [
+    "core-game"
+  ],
+  "Defend_the_Defenses": [
+    "episode-6"
+  ],
+  "Deliberate_Acts_of_Violence": [
+    "episode-6"
+  ],
+  "Demonic_Repossession": [
+    "episode-44"
+  ],
+  "Demons_on_the_Loose": [
+    "core-game"
+  ],
+  "Detoxic_Avenger": [
+    "core-game"
+  ],
+  "Devolve_and_Conquer": [
+    "core-game"
+  ],
+  "Dirty_Job": [
+    "episode-6"
+  ],
+  "Dispelling_Darkness": [
+    "episode-34"
+  ],
+  "Disturbance_on_the_Coast": [
+    "episode-1"
+  ],
+  "Disturbing_the_Peacekeepers": [
+    "core-game"
+  ],
+  "Don_t_Count_Your_Starro_Before_They_Hatch_Heroes": [
+    "episode-31"
+  ],
+  "Don_t_Count_Your_Starro_Before_They_Hatch_Villains": [
+    "episode-31"
+  ],
+  "Don_t_Fear_the_Reaper": [
+    "episode-28"
+  ],
+  "Don_t_Mess_with_LexCorp": [
+    "core-game"
+  ],
+  "Doomed_Metropolis_Part_1_Heroes": [
+    "death-of-superman"
+  ],
+  "Doomed_Metropolis_Part_1_Villains": [
+    "death-of-superman"
+  ],
+  "Doomed_Metropolis_Part_2_Heroes": [
+    "death-of-superman"
+  ],
+  "Dredging_the_Trenches": [
+    "episode-27"
+  ],
+  "Drone_Bones": [
+    "core-game"
+  ],
+  "Duo_T1_Ferris_Aircraft": [
+    "episode-1"
+  ],
+  "Duo_T1_Flashback_Heroes": [
+    "episode-2"
+  ],
+  "Duo_T1_Flashback_Villains": [
+    "episode-2"
+  ],
+  "Earth_3_Heroes": [
+    "episode-30"
+  ],
+  "Earth_3_Emergency_Heroes": [
+    "episode-30"
+  ],
+  "Earth_3_Emergency_Villains": [
+    "episode-30"
+  ],
+  "Eavesdropping": [
+    "episode-30"
+  ],
+  "Echoes_of_Umbrax": [
+    "episode-43"
+  ],
+  "Egg_Beater": [
+    "episode-27"
+  ],
+  "Election_Fraud": [
+    "episode-30"
+  ],
+  "Emotional_Baggage": [
+    "valentines"
+  ],
+  "EMPty_Parts": [
+    "core-game"
+  ],
+  "Enchanted_Coral_Mission": [
+    "episode-33"
+  ],
+  "Endangered_Hawks": [
+    "episode-36"
+  ],
+  "Enough_Envy": [
+    "episode-8"
+  ],
+  "Enter_The_Flashpoint_Heroes": [
+    "episode-40"
+  ],
+  "Enter_The_Flashpoint_Villains": [
+    "episode-40"
+  ],
+  "Envy_To_Die_For": [
+    "episode-8"
+  ],
+  "Envy_To_Share": [
+    "episode-8"
+  ],
+  "Envy_Envy_Everywhere": [
+    "episode-8"
+  ],
+  "Exo-Research_Recovery": [
+    "core-game"
+  ],
+  "Exobyte_Extraction": [
+    "core-game"
+  ],
+  "Exobytes_Gone_Awry": [
+    "anti-monitor"
+  ],
+  "Explore_Mxyzptlk_s_Metropolis_Haunts": [
+    "st-patricks"
+  ],
+  "Explore_Thanagar": [
+    "episode-36"
+  ],
+  "Explore_Titans_Island": [
+    "episode-32"
+  ],
+  "Explore_Arkham_Island": [
+    "core-game"
+  ],
+  "Explore_Downtown_Metropolis": [
+    "core-game"
+  ],
+  "Explore_Gotham_University": [
+    "core-game"
+  ],
+  "Explore_Gotham_s_Amusement_Mile": [
+    "core-game"
+  ],
+  "Explore_Gotham_s_Giordano_Gardens": [
+    "core-game"
+  ],
+  "Explore_Gotham_s_Otisburg_Neighborhood": [
+    "core-game"
+  ],
+  "Explore_Gotham_s_Robinson_Park": [
+    "core-game"
+  ],
+  "Explore_Gotham_s_Waterfront": [
+    "core-game"
+  ],
+  "Explore_Metropolis_Metro_Station": [
+    "core-game"
+  ],
+  "Explore_Metropolis_University": [
+    "core-game"
+  ],
+  "Explore_Metropolis_s_Centennial_Park": [
+    "core-game"
+  ],
+  "Explore_Metropolis_s_Chinatown_Neighborhood": [
+    "core-game"
+  ],
+  "Explore_Metropolis_s_Historic_District": [
+    "core-game"
+  ],
+  "Explore_Metropolis_s_Suicide_Slums": [
+    "core-game"
+  ],
+  "Explore_The_Metropolis_General_Hospital": [
+    "core-game"
+  ],
+  "Explore_The_Metropolis_Metrodome": [
+    "core-game"
+  ],
+  "Explore_The_Metropolis_Science_Police_HQ": [
+    "core-game"
+  ],
+  "Explore_The_Queensland_Boardwalk_in_Metropolis": [
+    "core-game"
+  ],
+  "Explore_Tomorrow_District": [
+    "core-game"
+  ],
+  "Explore_Wayne_Legacy_in_Gotham_s_East_End": [
+    "core-game"
+  ],
+  "Eye_of_Gemini_Mission": [
+    "episode-33"
+  ],
+  "Eye_Spy": [
+    "core-game"
+  ],
+  "Facing_Faust": [
+    "light-and-rain-chapter-1"
+  ],
+  "Fallen_Comrades": [
+    "core-game"
+  ],
+  "Fallen_Stars_Heroes": [
+    "episode-31"
+  ],
+  "Fallen_Stars_Villains": [
+    "episode-31"
+  ],
+  "Falling_STARs": [
+    "core-game"
+  ],
+  "Fate_Falls": [
+    "core-game"
+  ],
+  "Fate_Finds_a_Way": [
+    "episode-5"
+  ],
+  "Fateful_Demise": [
+    "core-game"
+  ],
+  "Fateful_Omen": [
+    "core-game"
+  ],
+  "Faust_Falls": [
+    "core-game"
+  ],
+  "Faustian_Bargain_Mission": [
+    "episode-5"
+  ],
+  "Faustian_Desires": [
+    "core-game"
+  ],
+  "Faustian_Fakeout": [
+    "core-game"
+  ],
+  "Faustian_Uprising": [
+    "core-game"
+  ],
+  "Fear_-_It_s_a_Gas": [
+    "core-game"
+  ],
+  "Fear_and_Loathing": [
+    "core-game"
+  ],
+  "Fear_Burns": [
+    "core-game"
+  ],
+  "Fear_is_Yellow_Mission": [
+    "core-game"
+  ],
+  "Fear_Itself": [
+    "core-game"
+  ],
+  "Fearsome_Opportunities": [
+    "episode-45"
+  ],
+  "Feel_the_Fear": [
+    "core-game"
+  ],
+  "Fields_of_Wrath": [
+    "episode-8"
+  ],
+  "Fighting_the_Food_Chain": [
+    "episode-43"
+  ],
+  "Final_Exams": [
+    "core-game"
+  ],
+  "Find_Big_Barda": [
+    "episode-48"
+  ],
+  "Find_Some_or_Fear_Some": [
+    "episode-45"
+  ],
+  "Fire_and_the_Sky_Heroes": [
+    "episode-10"
+  ],
+  "Fire_Walker": [
+    "episode-28"
+  ],
+  "Fire_s_Out": [
+    "core-game"
+  ],
+  "First_Frost": [
+    "core-game"
+  ],
+  "First_Second_and_Third_Aid": [
+    "episode-35"
+  ],
+  "Fish_Food": [
+    "core-game"
+  ],
+  "Fish_in_a_Barrel": [
+    "core-game"
+  ],
+  "Fish_out_of_Water": [
+    "core-game"
+  ],
+  "Five_Deadly_Sins": [
+    "core-game"
+  ],
+  "Fixing_the_Game": [
+    "episode-6"
+  ],
+  "Flash_of_Doom": [
+    "episode-40"
+  ],
+  "Flashpoint_Foes": [
+    "anti-monitor"
+  ],
+  "Flock_Stock_and_Barrel_Heroes": [
+    "episode-10"
+  ],
+  "Floral_Affliction": [
+    "core-game"
+  ],
+  "Followers_of_Doom": [
+    "episode-42"
+  ],
+  "Foraging_for_Food": [
+    "episode-27"
+  ],
+  "Force_and_Fury": [
+    "episode-40"
+  ],
+  "Fowl_Natured": [
+    "episode-27"
+  ],
+  "Fratricide": [
+    "core-game"
+  ],
+  "Freedom_Force": [
+    "episode-28"
+  ],
+  "Fresh_Meat": [
+    "core-game"
+  ],
+  "From_Apex_to_Zenith": [
+    "episode-43"
+  ],
+  "Frostbitten": [
+    "episode-6"
+  ],
+  "Frozen_Assets": [
+    "core-game"
+  ],
+  "Frozen_with_Fear": [
+    "episode-6"
+  ],
+  "Fueling_the_Past": [
+    "episode-28"
+  ],
+  "Fun_for_Girls_and_Boys": [
+    "core-game"
+  ],
+  "Fundamentals_of_Arkham_101": [
+    "episode-6"
+  ],
+  "Further_Crises": [
+    "core-game"
+  ],
+  "Fury_of_the_Amazons_Heroes": [
+    "episode-10"
+  ],
+  "Fury_of_the_Amazons_Villains": [
+    "episode-10"
+  ],
+  "Fury_of_the_Amazons_III_Gods_and_Monsters_Heroes": [
+    "episode-27"
+  ],
+  "Fury_of_the_Amazons_III_Journey_to_Olympus_Heroes": [
+    "episode-27"
+  ],
+  "Fury_of_the_Amazons_III_Journey_to_Olympus_Villains": [
+    "episode-27"
+  ],
+  "Garden_of_Eat_Em": [
+    "core-game"
+  ],
+  "Gateway_Closure": [
+    "episode-27"
+  ],
+  "GCPD_Detective_Ponzi_s_Missions": [
+    "episode-29"
+  ],
+  "GCPD_Officer_Lebowski_s_Missions": [
+    "episode-29"
+  ],
+  "Get_Up_Go_Fight": [
+    "death-of-superman"
+  ],
+  "Get_Your_Heart_Racing": [
+    "valentines"
+  ],
+  "Ghostly_Apparel": [
+    "episode-46"
+  ],
+  "Gifts_of_Doom": [
+    "episode-42"
+  ],
+  "Giganta_Girl_villain_mission": [
+    "core-game"
+  ],
+  "Gigantic_Promises": [
+    "core-game"
+  ],
+  "Gluttony": [
+    "core-game"
+  ],
+  "Godly_Power": [
+    "episode-27"
+  ],
+  "Godly_Subversion": [
+    "episode-27"
+  ],
+  "Going_Viral": [
+    "episode-30"
+  ],
+  "Gordon_Wants_a_Word": [
+    "core-game"
+  ],
+  "Gorge_Yourself": [
+    "core-game"
+  ],
+  "Gorgons_Come_Out_And_Play": [
+    "episode-27"
+  ],
+  "Gorilla_Warfare": [
+    "core-game"
+  ],
+  "Gorillas_By_The_Sea": [
+    "core-game"
+  ],
+  "Gorillas_in_the_Midst": [
+    "episode-5"
+  ],
+  "Gorillas_with_Attitude_Heroes": [
+    "core-game"
+  ],
+  "Gorillas_with_Attitude_Villains": [
+    "core-game"
+  ],
+  "Gotham_War_Front_Heroes": [
+    "episode-10"
+  ],
+  "Gotham_War_Front_Villains": [
+    "episode-10"
+  ],
+  "Gotham_s_Bane": [
+    "core-game"
+  ],
+  "Gotham_s_Invaders": [
+    "episode-27"
+  ],
+  "Gotta_Get_Up_Gotta_Go": [
+    "episode-39"
+  ],
+  "Grated_Gorgons": [
+    "episode-27"
+  ],
+  "Greed_Mission": [
+    "core-game"
+  ],
+  "Green_Lantern_s_Light": [
+    "core-game"
+  ],
+  "Grimorium_Verum_Mission": [
+    "episode-34"
+  ],
+  "Growing_Pains": [
+    "episode-36"
+  ],
+  "Guiding_Light": [
+    "episode-36"
+  ],
+  "Habeas_Corpus": [
+    "episode-6"
+  ],
+  "Hack-a-thon": [
+    "episode-43"
+  ],
+  "Hall_of_Doom_Armory_Alert": [
+    "core-game"
+  ],
+  "Happy_Anniversary_2014": [
+    "anniversary-gifts"
+  ],
+  "Happy_Anniversary_2015": [
+    "anniversary-gifts"
+  ],
+  "Happy_Anniversary_2016": [
+    "anniversary-gifts"
+  ],
+  "Hardcorps": [
+    "core-game"
+  ],
+  "Harley_Quinn_vs_Apokolips_Part_1": [
+    "episode-48"
+  ],
+  "Harley_Quinn_vs_Apokolips_Part_2": [
+    "episode-48"
+  ],
+  "Hazardous_Materials": [
+    "episode-6"
+  ],
+  "He_Wants_a_Devolution": [
+    "core-game"
+  ],
+  "Heads_You_Won": [
+    "core-game"
+  ],
+  "Heal_Em_and_Tag_Em": [
+    "episode-28"
+  ],
+  "Heart_and_Soul": [
+    "core-game"
+  ],
+  "Hecate_s_Moon-Touched_Gorgon": [
+    "episode-46"
+  ],
+  "Hellspore_Convoy": [
+    "episode-48"
+  ],
+  "Help_Cyborg": [
+    "episode-32"
+  ],
+  "Help_Raven": [
+    "episode-32"
+  ],
+  "Here_There_Be_Monsters": [
+    "episode-27"
+  ],
+  "Hoard_of_the_Batmage": [
+    "episode-43"
+  ],
+  "Hold_the_Line_Villains": [
+    "core-game"
+  ],
+  "Hold_the_Line": [
+    "episode-6"
+  ],
+  "Holding_the_Line_Heroes": [
+    "episode-10"
+  ],
+  "Homecoming_Mission": [
+    "homecoming"
+  ],
+  "Homecoming_Game_On": [
+    "homecoming"
+  ],
+  "Homecoming_Invasion": [
+    "homecoming"
+  ],
+  "Hospital_Havok": [
+    "core-game"
+  ],
+  "Hostile_Takeover_at_Steelworks": [
+    "episode-6"
+  ],
+  "Hot_Dog_Zombie": [
+    "core-game"
+  ],
+  "Hot-Headed_Road_Rage": [
+    "core-game"
+  ],
+  "Hotel_Hell": [
+    "episode-5"
+  ],
+  "How_to_Train_Your_Seahorse": [
+    "episode-33"
+  ],
+  "Hungry_Hungry_Starro_Heroes": [
+    "episode-31"
+  ],
+  "Hungry_Hungry_Starro_Villains": [
+    "episode-31"
+  ],
+  "Hunt_Down_Donna_Troy": [
+    "episode-10"
+  ],
+  "Hydra_Havok": [
+    "episode-38"
+  ],
+  "I_Beam_You": [
+    "episode-30"
+  ],
+  "I_Need_a_Botanist": [
+    "episode-37"
+  ],
+  "Ice_Heist_Baby": [
+    "core-game"
+  ],
+  "If_I_Only_Had_a_Heart": [
+    "episode-6"
+  ],
+  "In_Blackest_Day": [
+    "core-game"
+  ],
+  "In_Brightest_Day": [
+    "core-game"
+  ],
+  "In_Jacob_We_Lust": [
+    "episode-8"
+  ],
+  "In_Limbo": [
+    "core-game"
+  ],
+  "In_Lust_She_Trusts": [
+    "core-game"
+  ],
+  "Industrial_Sabotage": [
+    "episode-6"
+  ],
+  "Infection_Protection_Heroes": [
+    "death-of-superman"
+  ],
+  "Infection_Protection_Villains": [
+    "death-of-superman"
+  ],
+  "Infiltrating_Ace": [
+    "episode-6"
+  ],
+  "Injustice_in_Just_Us": [
+    "episode-44"
+  ],
+  "Insane_Clown_Possession": [
+    "episode-5"
+  ],
+  "Insecurity_Cameras": [
+    "episode-6"
+  ],
+  "Intel_Drops_Heroes": [
+    "death-of-superman"
+  ],
+  "Intel_Drops_Villains": [
+    "death-of-superman"
+  ],
+  "Into_the_Breach": [
+    "episode-6"
+  ],
+  "Isis_Unveiled": [
+    "core-game"
+  ],
+  "JLA_in_Trouble": [
+    "core-game"
+  ],
+  "Journal": [
+    "game-systems"
+  ],
+  "JSA_-_Jacked": [
+    "core-game"
+  ],
+  "Justice_League_Dark_Heroes": [
+    "episode-34"
+  ],
+  "Justice_League_Dark_Villains": [
+    "episode-34"
+  ],
+  "Justice_League_Dark_Cursed_Pt_1": [
+    "episode-46"
+  ],
+  "Justice_League_Dark_Cursed_Pt_2": [
+    "episode-46"
+  ],
+  "Kahndaq_Mission": [
+    "core-game"
+  ],
+  "Lady_Blackhawk_Battlefield_Frontline_Missions": [
+    "episode-28"
+  ],
+  "Lady_In_Waiting": [
+    "core-game"
+  ],
+  "Lantern_Assistance": [
+    "episode-43"
+  ],
+  "Lantern_in_Need": [
+    "episode-36"
+  ],
+  "Later_Alligator": [
+    "core-game"
+  ],
+  "Laugh_Riot": [
+    "core-game"
+  ],
+  "Lava_and_Brimstone": [
+    "episode-48"
+  ],
+  "Lazy_Magents": [
+    "episode-34"
+  ],
+  "Legion_in_Need": [
+    "episode-39"
+  ],
+  "Legion_of_Hunted_Heroes": [
+    "episode-39"
+  ],
+  "Less_Possessed": [
+    "episode-34"
+  ],
+  "Lethal_Pod-Cast": [
+    "core-game"
+  ],
+  "LexCorp_Environmental_Health_Specialist_Missions": [
+    "episode-31"
+  ],
+  "LexCorp_Forensic_Scientist_Missions": [
+    "episode-31"
+  ],
+  "LexCorp_Microbiologist_Missions": [
+    "episode-31"
+  ],
+  "Lifting_the_Curse": [
+    "episode-46"
+  ],
+  "Light_Em_Up": [
+    "episode-36"
+  ],
+  "Lighten_the_Load": [
+    "episode-43"
+  ],
+  "Lighthouse_Cleanup": [
+    "core-game"
+  ],
+  "Like_Fish_In_A_Net": [
+    "episode-33"
+  ],
+  "Lock_and_Load": [
+    "core-game"
+  ],
+  "Logic_Loses": [
+    "core-game"
+  ],
+  "Long_Live_the_Legion_Heroes": [
+    "episode-39"
+  ],
+  "Loose_Cannons": [
+    "episode-28"
+  ],
+  "Losing_Inhibitions": [
+    "core-game"
+  ],
+  "Loss_of_Leadership_Heroes": [
+    "episode-33"
+  ],
+  "Lost_and_Found": [
+    "core-game"
+  ],
+  "Lost_Souls": [
+    "episode-34"
+  ],
+  "Love_is_in_the_Air": [
+    "valentines"
+  ],
+  "Love_is_Thicker_than_Water": [
+    "valentines"
+  ],
+  "Lower_the_Boom": [
+    "episode-36"
+  ],
+  "Lunar_Eclipse": [
+    "core-game"
+  ],
+  "Lunatic_Fringe": [
+    "core-game"
+  ],
+  "Lust_At_First_Sight": [
+    "episode-8"
+  ],
+  "Lust_Imp_Ire": [
+    "episode-8"
+  ],
+  "Lust_or_Combust": [
+    "episode-8"
+  ],
+  "Magents_of_Chaos": [
+    "episode-34"
+  ],
+  "Magic_Gone_Wild": [
+    "episode-39"
+  ],
+  "Mainliner": [
+    "core-game"
+  ],
+  "Make_Them_Mad": [
+    "episode-6"
+  ],
+  "Manacles_of_Force_Mission": [
+    "episode-33"
+  ],
+  "Mane_Man": [
+    "episode-5"
+  ],
+  "Maximum_Overload": [
+    "core-game"
+  ],
+  "Measure_for_Measure": [
+    "episode-38"
+  ],
+  "Mechanical_Mech": [
+    "episode-6"
+  ],
+  "Medical_Misinformation": [
+    "core-game"
+  ],
+  "Meet_the_Robins": [
+    "episode-43"
+  ],
+  "Membership_Has_Its_Perks": [
+    "game-systems"
+  ],
+  "Memento_of_the_Goddess": [
+    "episode-5"
+  ],
+  "Mentor-based_Missions": [
+    "core-game"
+  ],
+  "Message_in_a_Bottle": [
+    "core-game"
+  ],
+  "Meta_Malpractice": [
+    "core-game"
+  ],
+  "Metal_Massacre": [
+    "episode-35"
+  ],
+  "Metal_Part_I_Heroes": [
+    "episode-35"
+  ],
+  "Metal_Part_I_Villains": [
+    "episode-35"
+  ],
+  "Metal_Part_II_Heroes": [
+    "episode-36"
+  ],
+  "Metal_Part_II_Villains": [
+    "episode-36"
+  ],
+  "Metal_Resonator_Mission": [
+    "episode-35"
+  ],
+  "Metropolis_Melt_down": [
+    "episode-39"
+  ],
+  "Military_Ties": [
+    "episode-36"
+  ],
+  "Miming_Metal": [
+    "episode-35"
+  ],
+  "Mission_collections": [
+    "game-systems"
+  ],
+  "Mission_Set": [
+    "game-systems"
+  ],
+  "Monitoring_the_Situation_Heroes": [
+    "anti-monitor"
+  ],
+  "Monitoring_the_Situation_Heroes_2017-2020": [
+    "anti-monitor"
+  ],
+  "Monitoring_the_Situation_Villains": [
+    "anti-monitor"
+  ],
+  "Monitoring_the_Situation_Villains_2017-2020": [
+    "anti-monitor"
+  ],
+  "Monsters_Inc": [
+    "episode-27"
+  ],
+  "Moonstone_Tablets": [
+    "episode-46"
+  ],
+  "Mordru_s_Wild_Magic": [
+    "episode-39"
+  ],
+  "Morrow_s_Notes": [
+    "episode-6"
+  ],
+  "Municipal_Resposibility": [
+    "episode-30"
+  ],
+  "Murder_in_Kaznia_Citizen_s_Arrest": [
+    "light-and-rain-chapter-1"
+  ],
+  "Murder_in_Kaznia_Crime_Scene_Investigation": [
+    "light-and-rain-chapter-1"
+  ],
+  "Murder_in_Kaznia_Witness_Protection": [
+    "light-and-rain-chapter-1"
+  ],
+  "Mutation_101": [
+    "core-game"
+  ],
+  "MutilAid": [
+    "core-game"
+  ],
+  "Mxyleprechauns": [
+    "st-patricks"
+  ],
+  "My_Envy_Is_Your_Envy": [
+    "episode-8"
+  ],
+  "Mystic_Symbol_of_the_Seven_Mission": [
+    "episode-34"
+  ],
+  "Nekron_s_Raging_Night": [
+    "light-and-rain-chapter-3"
+  ],
+  "New_Genesis_Assault": [
+    "episode-14"
+  ],
+  "New_Genesis_Defense": [
+    "episode-14"
+  ],
+  "Night_Terrors": [
+    "core-game"
+  ],
+  "Nightfall": [
+    "core-game"
+  ],
+  "Nightwing_s_Missions": [
+    "episode-29"
+  ],
+  "No_Joke": [
+    "core-game"
+  ],
+  "No_Laughing_Matter": [
+    "core-game"
+  ],
+  "No_More_Monkey_Business": [
+    "core-game"
+  ],
+  "Occult_Gestalt_Heroes": [
+    "episode-34"
+  ],
+  "Occult_Gestalt_Villains": [
+    "episode-34"
+  ],
+  "Olympus_Descends": [
+    "episode-38"
+  ],
+  "OMAC_Attack": [
+    "core-game"
+  ],
+  "On_Fire": [
+    "core-game"
+  ],
+  "On_the_Hunt": [
+    "episode-37"
+  ],
+  "Once_More_With_Rockets": [
+    "core-game"
+  ],
+  "One_of_Us": [
+    "core-game"
+  ],
+  "One_Two_Three_Four_Five": [
+    "episode-45"
+  ],
+  "Opposition_Abolition_Heroes": [
+    "death-of-superman"
+  ],
+  "Opposition_Abolition_Villains": [
+    "death-of-superman"
+  ],
+  "Orb_of_Arion_Mission": [
+    "episode-33"
+  ],
+  "Orbital_Apex": [
+    "episode-43"
+  ],
+  "Orbital_Justice": [
+    "core-game"
+  ],
+  "Origin_Endangered": [
+    "episode-7"
+  ],
+  "Original_Synn": [
+    "episode-36"
+  ],
+  "Origins_in_Crisis": [
+    "episode-7"
+  ],
+  "Otherworldly_Visitor": [
+    "episode-5"
+  ],
+  "Outbreak": [
+    "episode-6"
+  ],
+  "Outsiders_Ops_Mission": [
+    "outsiders-ops"
+  ],
+  "Overstepped_Boundaries": [
+    "episode-40"
+  ],
+  "Overzealous_Security": [
+    "episode-5"
+  ],
+  "Paint_the_Town_Green": [
+    "spring"
+  ],
+  "Panic_Attack": [
+    "core-game"
+  ],
+  "Panphobia": [
+    "core-game"
+  ],
+  "Para-Demonic_Purge": [
+    "episode-48"
+  ],
+  "Paradox_Repeating": [
+    "episode-40"
+  ],
+  "Paradoxical_Punch-Up": [
+    "anti-monitor"
+  ],
+  "Paradoxology": [
+    "episode-7"
+  ],
+  "Paranormal_Activity": [
+    "core-game"
+  ],
+  "Paranormal_Paramedic": [
+    "episode-5"
+  ],
+  "Paraskeve_the_Architect_s_Missions": [
+    "episode-10"
+  ],
+  "Party_Crashers": [
+    "core-game"
+  ],
+  "Patchwork_Themyscira_Heroes": [
+    "episode-38"
+  ],
+  "Patchwork_Themyscira_Villains": [
+    "episode-38"
+  ],
+  "Payback_With_Chemical_Compound_Interest_Heroes": [
+    "episode-31"
+  ],
+  "Payback_With_Chemical_Compound_Interest_Villains": [
+    "episode-31"
+  ],
+  "Penance": [
+    "core-game"
+  ],
+  "Perpetual_Preparation": [
+    "save-the-universe",
+    "episode-41"
+  ],
+  "Perpetual_Prize": [
+    "episode-42"
+  ],
+  "Philosopher_s_Stone_Mission": [
+    "episode-34"
+  ],
+  "Plan_Bee": [
+    "episode-5"
+  ],
+  "Playing_Joker_s_Game": [
+    "core-game"
+  ],
+  "Playing_With_a_Full_Deck": [
+    "core-game"
+  ],
+  "Playtest_as_Batman": [
+    "game-systems"
+  ],
+  "Pod_Hunting": [
+    "episode-34"
+  ],
+  "Podnormous": [
+    "episode-34"
+  ],
+  "Poison_Tongue_s_Missions": [
+    "episode-29"
+  ],
+  "Poisonous_Desire_Heroes": [
+    "spring"
+  ],
+  "Poisonous_Desire_Villains": [
+    "spring"
+  ],
+  "Population_Control": [
+    "episode-27"
+  ],
+  "Power_Hungry_Heroes": [
+    "episode-31"
+  ],
+  "Power_Hungry_Villains": [
+    "episode-31"
+  ],
+  "Power_Lunch": [
+    "core-game"
+  ],
+  "Power_Ring_Hunter": [
+    "core-game"
+  ],
+  "Powering_Down_Heroes": [
+    "episode-47"
+  ],
+  "Powering_Down_Villains": [
+    "episode-47"
+  ],
+  "Preventing_Apokolips": [
+    "episode-48"
+  ],
+  "Priestess_Sophia_s_Missions": [
+    "episode-10"
+  ],
+  "Primal_Propaganda": [
+    "episode-6"
+  ],
+  "Prison_Break_Breakup": [
+    "episode-40"
+  ],
+  "Prisoners_of_War_Heroes": [
+    "episode-10"
+  ],
+  "Prisoners_of_War_Villains": [
+    "episode-10"
+  ],
+  "ProbeTek_in_Defect": [
+    "episode-39"
+  ],
+  "Prochoros_s_Missions": [
+    "episode-10"
+  ],
+  "Project_Mayhem": [
+    "episode-29"
+  ],
+  "Proportional_Response": [
+    "episode-6"
+  ],
+  "Protect_and_Serve": [
+    "core-game"
+  ],
+  "Protecting_the_Green": [
+    "spring"
+  ],
+  "Protection_Money": [
+    "core-game"
+  ],
+  "Prototype_Weapons": [
+    "core-game"
+  ],
+  "Psycho_Slip-Ups": [
+    "core-game"
+  ],
+  "Psychosomatic_Illness": [
+    "core-game"
+  ],
+  "Purge_the_Merge": [
+    "anti-monitor"
+  ],
+  "Quick_Chaos": [
+    "episode-30"
+  ],
+  "Quid_Pro_Quo_Runed_Boots": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Runic_Cape": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Runic_Epaulets": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Runic_Fists": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Runic_Helm": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Runic_Leggings": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Runic_Shirt": [
+    "episode-5"
+  ],
+  "Quid_Pro_Quo_Waist_Runes": [
+    "episode-5"
+  ],
+  "Radio_Star_fish_Heroes": [
+    "episode-31"
+  ],
+  "Radio_Star_fish_Villains": [
+    "episode-31"
+  ],
+  "Raid_T1_Brainiac_Sub-Construct": [
+    "core-game"
+  ],
+  "Raid_T1_Inner_Sanctum": [
+    "core-game"
+  ],
+  "Raid_T1_Kahndaq": [
+    "core-game"
+  ],
+  "Raid_T1_Outer_Caverns": [
+    "core-game"
+  ],
+  "Raid_T1_Power_Core": [
+    "core-game"
+  ],
+  "Raid_T1_Sunstone_Matrix": [
+    "core-game"
+  ],
+  "Raid_T1_The_Chasm_Heroes": [
+    "core-game"
+  ],
+  "Raid_T1_The_Chasm_Villains": [
+    "core-game"
+  ],
+  "Raid_T1_The_Gates_of_Tartarus": [
+    "episode-3"
+  ],
+  "Raid_T1_The_Prime_Battleground": [
+    "episode-3"
+  ],
+  "Rain_on_our_Parade": [
+    "episode-2"
+  ],
+  "Rain_on_their_Parade": [
+    "episode-2"
+  ],
+  "Random_Sample": [
+    "episode-6"
+  ],
+  "Rare_Blood": [
+    "core-game"
+  ],
+  "Rath_Propaganda_Heroes": [
+    "episode-33"
+  ],
+  "Rath_Propaganda_Villains": [
+    "episode-33"
+  ],
+  "Rats_A_Zombie": [
+    "core-game"
+  ],
+  "Raven_Bound_hero_mission": [
+    "core-game"
+  ],
+  "Raven_Bound_villain_mission": [
+    "core-game"
+  ],
+  "Raven_Support": [
+    "episode-32"
+  ],
+  "Raven_Unleashed_hero_mission": [
+    "core-game"
+  ],
+  "Raven_Unleashed_villain_mission": [
+    "core-game"
+  ],
+  "Reaping_Evil": [
+    "core-game"
+  ],
+  "Reflections": [
+    "core-game"
+  ],
+  "Refurbished_Robots": [
+    "episode-6"
+  ],
+  "Relic_Recovery": [
+    "episode-33"
+  ],
+  "Report_to_Harley_Quinn": [
+    "episode-48"
+  ],
+  "Rescue_Atlanteans": [
+    "episode-33"
+  ],
+  "Research_Development": [
+    "core-game"
+  ],
+  "Residential_Evil": [
+    "episode-30"
+  ],
+  "Resist_and_Assist_Heroes": [
+    "episode-47"
+  ],
+  "Resist_and_Assist_Villains": [
+    "episode-47"
+  ],
+  "Resistance_Assistance": [
+    "episode-40"
+  ],
+  "Rest_in_Pieces": [
+    "anti-monitor"
+  ],
+  "Restless_Dead": [
+    "episode-46"
+  ],
+  "Retribution_at_the_Cathedral": [
+    "episode-8"
+  ],
+  "Riddle_Me_This": [
+    "core-game"
+  ],
+  "Riddled_With_Traps": [
+    "episode-35"
+  ],
+  "Rift_It_Up": [
+    "episode-35"
+  ],
+  "Ring_Hog": [
+    "episode-36"
+  ],
+  "Ring_in_the_Holidays_Heroes": [
+    "winter"
+  ],
+  "Ring_in_the_Holidays_Villains": [
+    "winter"
+  ],
+  "Rise_of_the_Tomb_Raiders": [
+    "episode-44"
+  ],
+  "Risky_Calculation_Heroes": [
+    "episode-37"
+  ],
+  "Risky_Calculation_Villains": [
+    "episode-37"
+  ],
+  "Robo_Royale": [
+    "episode-32"
+  ],
+  "Rock_Em": [
+    "episode-32"
+  ],
+  "Rocked_Residents": [
+    "episode-27"
+  ],
+  "Running_with_Metal_Bulls": [
+    "episode-35"
+  ],
+  "Rush_Week": [
+    "core-game"
+  ],
+  "Safehouses_Unsafe": [
+    "episode-4"
+  ],
+  "Salvage_Operation": [
+    "episode-40"
+  ],
+  "Savage_Defector_Battlefield_Frontline_Missions": [
+    "episode-28"
+  ],
+  "Save_the_Universe_Mission": [
+    "save-the-universe",
+    "episode-41"
+  ],
+  "Save_the_World": [
+    "core-game"
+  ],
+  "Saving_Citizens": [
+    "episode-27"
+  ],
+  "Saving_the_Society": [
+    "core-game"
+  ],
+  "Saving_the_Souls_of_the_Students": [
+    "core-game"
+  ],
+  "Savory_Citizens": [
+    "episode-27"
+  ],
+  "Scavenger_Hunt": [
+    "episode-6"
+  ],
+  "Science_of_Crime": [
+    "core-game"
+  ],
+  "Science_Spire_Blitz": [
+    "anti-monitor"
+  ],
+  "Scrap_Metal": [
+    "episode-36"
+  ],
+  "Scry_Havoc_Heroes": [
+    "episode-10"
+  ],
+  "Sea_Change": [
+    "episode-6"
+  ],
+  "Sea_of_Love": [
+    "valentines"
+  ],
+  "Search_and_Destroy": [
+    "episode-6"
+  ],
+  "Search_and_Seizure": [
+    "episode-4"
+  ],
+  "Season_s_Greedings_Heroes": [
+    "winter"
+  ],
+  "Season_s_Greedings_Villains": [
+    "winter"
+  ],
+  "Season_s_Greedings_Vault": [
+    "winter"
+  ],
+  "Secure_Area_51": [
+    "core-game"
+  ],
+  "Seduced_by_Lust": [
+    "episode-8"
+  ],
+  "Seeds_of_Change": [
+    "core-game"
+  ],
+  "Seek_and_Destroy": [
+    "episode-28"
+  ],
+  "Self_Possessed": [
+    "episode-34"
+  ],
+  "Senator_Melantha_s_Missions": [
+    "episode-10"
+  ],
+  "Sentinels_of_Order": [
+    "episode-34"
+  ],
+  "Sewer_Sweep": [
+    "episode-27"
+  ],
+  "Sewers_in_Spring_Heroes": [
+    "spring"
+  ],
+  "Sewers_in_Spring_Villains": [
+    "spring"
+  ],
+  "Shadow_of_their_Leader": [
+    "episode-45"
+  ],
+  "Shards_of_Influence": [
+    "core-game"
+  ],
+  "Shattered_Heart": [
+    "valentines"
+  ],
+  "Shock_the_Pool_Heroes": [
+    "episode-31"
+  ],
+  "Shock_the_Pool_Villains": [
+    "episode-31"
+  ],
+  "Shock_to_the_System_Pt_1": [
+    "episode-45"
+  ],
+  "Shock_to_the_System_Pt_2": [
+    "episode-45"
+  ],
+  "Shooting_Starfish_in_a_Barrel_Heroes": [
+    "episode-31"
+  ],
+  "Shooting_Starfish_in_a_Barrel_Villains": [
+    "episode-31"
+  ],
+  "Sigils_of_Safeguarding": [
+    "episode-34"
+  ],
+  "Sigils_of_Strength": [
+    "episode-34"
+  ],
+  "Situation_Report_World_of_Flashpoint": [
+    "episode-40"
+  ],
+  "Smash_and_Grab": [
+    "core-game"
+  ],
+  "So_Sayeth_Cain": [
+    "episode-5"
+  ],
+  "Soldier_of_Misfortune": [
+    "episode-5"
+  ],
+  "Solitary_Riot": [
+    "episode-6"
+  ],
+  "Something_s_Fishy": [
+    "core-game"
+  ],
+  "SOolong_Farewell": [
+    "core-game"
+  ],
+  "Soul_Alchemy": [
+    "episode-5"
+  ],
+  "Soul_Catcher": [
+    "core-game"
+  ],
+  "Soul_Collector": [
+    "episode-34"
+  ],
+  "Soul_Siphoners": [
+    "core-game"
+  ],
+  "Source_Infusion": [
+    "core-game"
+  ],
+  "Source_of_Doom": [
+    "episode-42"
+  ],
+  "Space_Off": [
+    "episode-43"
+  ],
+  "Special_Agent_Anderson_Area_51_Task_Force_Missions": [
+    "episode-28"
+  ],
+  "Special_Mission_from_Commander_Adonia": [
+    "episode-10"
+  ],
+  "Special_Mission_from_General_Ptolema": [
+    "episode-10"
+  ],
+  "Spectral_Embrace": [
+    "core-game"
+  ],
+  "Spies_Like_Us": [
+    "episode-34"
+  ],
+  "Spin_the_Bottle": [
+    "core-game"
+  ],
+  "Springtime_Vault": [
+    "spring"
+  ],
+  "Squawking_out_the_Gang_War": [
+    "episode-40"
+  ],
+  "STAR_Labs_Environmental_Health_Specialist_Missions": [
+    "episode-31"
+  ],
+  "STAR_Labs_Forensic_Scientist_Missions": [
+    "episode-31"
+  ],
+  "STAR_Labs_Microbiologist_Missions": [
+    "episode-31"
+  ],
+  "Star_Sapphire_Support": [
+    "valentines"
+  ],
+  "Starro_Appreciation_Heroes": [
+    "episode-31"
+  ],
+  "Starro_Appreciation_Villains": [
+    "episode-31"
+  ],
+  "Starro_the_Conqueror_Heroes": [
+    "starro-event"
+  ],
+  "Starro_the_Conqueror_Villains": [
+    "starro-event"
+  ],
+  "Stemming_the_Tide_Part_1_Heroes": [
+    "episode-31"
+  ],
+  "Stemming_the_Tide_Part_1_Villains": [
+    "episode-31"
+  ],
+  "Stemming_the_Tide_Part_2_Heroes": [
+    "episode-31"
+  ],
+  "Stemming_the_Tide_Part_2_Villains": [
+    "episode-31"
+  ],
+  "Stirring_the_HIVE": [
+    "core-game"
+  ],
+  "Stone_Society": [
+    "episode-27"
+  ],
+  "Storming_the_Ivory_Tower": [
+    "core-game"
+  ],
+  "Story_Arcs_Classic_Game": [
+    "core-game"
+  ],
+  "Story_Missions": [
+    "game-systems"
+  ],
+  "Strait_to_Metropolis_Heroes": [
+    "summer"
+  ],
+  "Strait_to_Metropolis_Villains": [
+    "summer"
+  ],
+  "Street_Cleaning": [
+    "episode-27"
+  ],
+  "Street_Sweeping": [
+    "episode-29"
+  ],
+  "Streetside_Abductions": [
+    "core-game"
+  ],
+  "Strolling_Through_the_Gas": [
+    "episode-28"
+  ],
+  "Stryker_s_Island_Lockdown_Mission": [
+    "core-game"
+  ],
+  "Sub-Contract_Exotic_Metals": [
+    "episode-35"
+  ],
+  "Suggestion_Box_Heroes": [
+    "episode-10"
+  ],
+  "Suit_Up": [
+    "episode-6"
+  ],
+  "Superman_Celebration_Daily_Alert": [
+    "superman-day"
+  ],
+  "Superman_Celebration_Daily_Raid": [
+    "superman-day"
+  ],
+  "Superman_Celebration_Daily_Solo_or_Duo": [
+    "superman-day"
+  ],
+  "Superman_s_Doom": [
+    "core-game"
+  ],
+  "Supplies_in_Demand_Heroes": [
+    "episode-10"
+  ],
+  "Supplies_in_Demand_Villains": [
+    "episode-10"
+  ],
+  "Supply_Drop_Mission": [
+    "episode-6"
+  ],
+  "Swarm_Attack": [
+    "episode-33"
+  ],
+  "Sweeter_Than_Honey": [
+    "core-game"
+  ],
+  "Syndicate_Surveillance": [
+    "episode-30"
+  ],
+  "T-Spheres": [
+    "episode-35"
+  ],
+  "Take_Down_the_Drift_Heroes": [
+    "episode-33"
+  ],
+  "Take_Down_the_Drift_Villains": [
+    "episode-33"
+  ],
+  "Take_Pride_Heroes": [
+    "episode-8"
+  ],
+  "Take_Pride_Villains": [
+    "episode-8"
+  ],
+  "Talia_al_Ghul_s_Clandestine_Ops": [
+    "episode-29"
+  ],
+  "Teen_Titans_Judas_Contract_Heroes": [
+    "episode-32"
+  ],
+  "Teen_Titans_Judas_Contract_Villains": [
+    "episode-32"
+  ],
+  "Tentacled": [
+    "episode-34"
+  ],
+  "Testing_1_2_3": [
+    "core-game"
+  ],
+  "That_Stings": [
+    "core-game"
+  ],
+  "The_Age_of_Sin_Begins": [
+    "episode-8"
+  ],
+  "The_Awakening": [
+    "core-game"
+  ],
+  "The_Ballad_of_Barbatos": [
+    "episode-43"
+  ],
+  "The_Bee_in_the_Moon_Heroes": [
+    "core-game"
+  ],
+  "The_Bee_in_the_Moon_Villains": [
+    "core-game"
+  ],
+  "The_Big_Payback": [
+    "core-game"
+  ],
+  "The_Bigger_They_Are": [
+    "core-game"
+  ],
+  "The_Curse_of_Gotham_City": [
+    "episode-46"
+  ],
+  "The_Day_the_Island_Stood_Still": [
+    "episode-32"
+  ],
+  "The_Demon_Inside_villain_mission": [
+    "core-game"
+  ],
+  "The_Demon_s_Head": [
+    "game-systems"
+  ],
+  "The_Face_of_Evil": [
+    "light-and-rain-chapter-1"
+  ],
+  "The_Fates_Aligned": [
+    "core-game"
+  ],
+  "The_Faust_Finale": [
+    "core-game"
+  ],
+  "The_First_Clue": [
+    "core-game"
+  ],
+  "The_Hunt_for_Grodd": [
+    "core-game"
+  ],
+  "The_Joker_s_Problem": [
+    "core-game"
+  ],
+  "The_Justice_League": [
+    "core-game"
+  ],
+  "The_King_and_Queen_of_Kahndaq": [
+    "episode-44"
+  ],
+  "The_Last_Laugh_mission": [
+    "core-game"
+  ],
+  "The_Last_Stand": [
+    "episode-43"
+  ],
+  "The_Lost_Collection": [
+    "death-of-superman"
+  ],
+  "The_Missing_Riddle": [
+    "episode-29"
+  ],
+  "The_New_Gods_Heroes": [
+    "episode-11"
+  ],
+  "The_New_Gods_Villains": [
+    "episode-11"
+  ],
+  "The_New_Gods_II_Heroes": [
+    "episode-14"
+  ],
+  "The_New_Gods_II_Villains": [
+    "episode-14"
+  ],
+  "The_Newbie_in_Sector_2682": [
+    "episode-36"
+  ],
+  "The_Ninth_Triage": [
+    "episode-33"
+  ],
+  "The_Perils_of_Zatanna": [
+    "core-game"
+  ],
+  "The_Petri_Dish": [
+    "core-game"
+  ],
+  "The_Religion_of_Crime_Heroes": [
+    "core-game"
+  ],
+  "The_Riddle_Solved": [
+    "core-game"
+  ],
+  "The_Root_of_Evil": [
+    "core-game"
+  ],
+  "The_Runaround": [
+    "st-patricks"
+  ],
+  "The_Shipment_News": [
+    "episode-35"
+  ],
+  "The_Sins_of_Black_Adam_Pt_1": [
+    "episode-44"
+  ],
+  "The_Sins_of_Black_Adam_Pt_2": [
+    "episode-44"
+  ],
+  "The_Sons_of_Trigon_Mission": [
+    "episode-8"
+  ],
+  "The_Spoils_of_War": [
+    "episode-8"
+  ],
+  "The_Sum_of_Its_Parts": [
+    "episode-9"
+  ],
+  "The_Super-Plan": [
+    "core-game"
+  ],
+  "The_Trappings_of_Chaos_Heroes": [
+    "episode-34"
+  ],
+  "The_Trappings_of_Chaos_Villains": [
+    "episode-34"
+  ],
+  "The_Truth_Hurts": [
+    "core-game"
+  ],
+  "The_Typhon_Underground": [
+    "episode-27"
+  ],
+  "The_War_Against_War": [
+    "episode-38"
+  ],
+  "The_Witching_Hour_Heroes": [
+    "halloween"
+  ],
+  "The_Witching_Hour_Villains": [
+    "halloween"
+  ],
+  "The_Witching_Hour_Vault": [
+    "halloween"
+  ],
+  "The_World_of_Tomorrow": [
+    "core-game"
+  ],
+  "They_ll_Be_Back": [
+    "episode-32"
+  ],
+  "Thief_of_Souls": [
+    "core-game"
+  ],
+  "Things_That_Go_BOOM": [
+    "core-game"
+  ],
+  "Thrash_Metal": [
+    "episode-36"
+  ],
+  "Thrasher_s_Defense": [
+    "episode-36"
+  ],
+  "Threat_in_South_Gotham": [
+    "episode-3"
+  ],
+  "Tick_Tick_Boom": [
+    "episode-28"
+  ],
+  "Tidal_Waves": [
+    "core-game"
+  ],
+  "Tides_of_War_Heroes": [
+    "summer"
+  ],
+  "Tides_of_War_Villains": [
+    "summer"
+  ],
+  "Tides_of_War_Vault": [
+    "summer"
+  ],
+  "Time_After_Time_Portal": [
+    "episode-28"
+  ],
+  "Timid_Sentinels": [
+    "episode-34"
+  ],
+  "Titans_Tower_Troubles": [
+    "episode-32"
+  ],
+  "Titans_Tower_Troubles_Heroes": [
+    "episode-32"
+  ],
+  "Titans_Tower_Troubles_Villains": [
+    "episode-32"
+  ],
+  "To_Catch_a_Thief": [
+    "core-game"
+  ],
+  "To_Dakota_City": [
+    "episode-45"
+  ],
+  "To_Hell_Demon": [
+    "episode-5"
+  ],
+  "To_Protect_and_To_Serve": [
+    "episode-35"
+  ],
+  "To_the_Nth_Power": [
+    "episode-36"
+  ],
+  "To_the_Shore": [
+    "episode-32"
+  ],
+  "To_the_Skies_Heroes": [
+    "episode-47"
+  ],
+  "To_the_Skies_Villains": [
+    "episode-47"
+  ],
+  "Tomorrow_Will_Be_Gigantic": [
+    "core-game"
+  ],
+  "Tortured_Titans": [
+    "core-game"
+  ],
+  "Tour_of_Duty_Heroes": [
+    "episode-10"
+  ],
+  "Tour_of_Duty_Villains": [
+    "episode-10"
+  ],
+  "Tower_Defense": [
+    "episode-32"
+  ],
+  "Toxic_Trouble": [
+    "episode-6"
+  ],
+  "Toyland": [
+    "core-game"
+  ],
+  "Toyman_s_Time_Out": [
+    "core-game"
+  ],
+  "Traffic_Stop": [
+    "episode-30"
+  ],
+  "Tragic_Comedy": [
+    "episode-5"
+  ],
+  "Trigon_the_Terrible": [
+    "episode-8"
+  ],
+  "Trigon_s_Blood_Heroes": [
+    "core-game"
+  ],
+  "Trigon_s_Blood_Villains": [
+    "core-game"
+  ],
+  "Trouble_in_the_31st_Century_New_Earth": [
+    "episode-39"
+  ],
+  "Trouble_on_Thanagar_Heroes": [
+    "episode-36"
+  ],
+  "Trouble_on_Thanagar_Villains": [
+    "episode-36"
+  ],
+  "Turn_Over_Every_Stone": [
+    "episode-37"
+  ],
+  "Turn_the_Tide": [
+    "episode-28"
+  ],
+  "Two_Sides_of_the_Coin": [
+    "core-game"
+  ],
+  "Ultraviolet_Doom": [
+    "episode-42"
+  ],
+  "Un-Metalled": [
+    "episode-35"
+  ],
+  "Uncivil_Engineering": [
+    "episode-3"
+  ],
+  "Under_a_Red_Sun_Lamp": [
+    "core-game"
+  ],
+  "Under_Siege": [
+    "episode-47"
+  ],
+  "Undercover_Havok": [
+    "episode-28"
+  ],
+  "Understanding_Your_Daemons": [
+    "episode-34"
+  ],
+  "Unfrozen_Heart": [
+    "valentines"
+  ],
+  "Unguarded_Towers": [
+    "episode-6"
+  ],
+  "Unstable_Technology": [
+    "core-game"
+  ],
+  "Urban_Liberation": [
+    "episode-48"
+  ],
+  "UV_UndercoVer": [
+    "episode-43"
+  ],
+  "Vault_Ambush": [
+    "core-game"
+  ],
+  "Vengeful_Spirits": [
+    "core-game"
+  ],
+  "Vices_over_Virtues": [
+    "episode-8"
+  ],
+  "Vines_of_Wrath": [
+    "episode-6"
+  ],
+  "Viral_Video": [
+    "episode-4"
+  ],
+  "Virtues_over_Vices": [
+    "episode-8"
+  ],
+  "WANTED_Abra_Kadabra": [
+    "episode-2"
+  ],
+  "WANTED_Apokoliptian_Commander": [
+    "episode-14"
+  ],
+  "WANTED_Arkillo": [
+    "core-game"
+  ],
+  "WANTED_Avatar_of_Sin": [
+    "core-game"
+  ],
+  "WANTED_Bizarro": [
+    "core-game"
+  ],
+  "WANTED_Captain_Boomerang": [
+    "episode-2"
+  ],
+  "WANTED_Captain_Cold": [
+    "episode-2"
+  ],
+  "WANTED_Clayface": [
+    "core-game"
+  ],
+  "WANTED_Doctor_Light": [
+    "episode-12"
+  ],
+  "WANTED_Enchanted_Statue": [
+    "core-game"
+  ],
+  "WANTED_General_Kordax": [
+    "core-game"
+  ],
+  "WANTED_Heat_Wave": [
+    "episode-2"
+  ],
+  "Wanted_Joker_Riddler_Allies": [
+    "episode-29"
+  ],
+  "WANTED_Killer_Frost": [
+    "core-game"
+  ],
+  "WANTED_Minotaur": [
+    "core-game"
+  ],
+  "WANTED_Mist-Empowered_Villain": [
+    "episode-9"
+  ],
+  "WANTED_Oolong_Siege_Robot": [
+    "episode-6"
+  ],
+  "WANTED_Pied_Piper": [
+    "episode-2"
+  ],
+  "WANTED_Professor_Zoom": [
+    "episode-2"
+  ],
+  "WANTED_Second-Generation_Morrowbot": [
+    "episode-6"
+  ],
+  "WANTED_Solomon_Grundy": [
+    "core-game"
+  ],
+  "WANTED_The_Judge": [
+    "core-game"
+  ],
+  "WANTED_The_Top": [
+    "episode-2"
+  ],
+  "WANTED_The_Trickster": [
+    "episode-2"
+  ],
+  "WANTED_Weather_Wizard": [
+    "episode-2"
+  ],
+  "War_with_the_Corps": [
+    "core-game"
+  ],
+  "Warehouse_of_the_Dead": [
+    "core-game"
+  ],
+  "Warsmith_Celandine_s_Missions": [
+    "episode-10"
+  ],
+  "Warsuit_Power_Cores": [
+    "episode-37"
+  ],
+  "Wartime_Whistleblower": [
+    "episode-28"
+  ],
+  "Watch_Your_Step_Heroes": [
+    "episode-10"
+  ],
+  "Watch_Your_Step_Villains": [
+    "episode-10"
+  ],
+  "Watchtower_Containment_Facility": [
+    "core-game"
+  ],
+  "Weapons_of_Metal_Destruction": [
+    "episode-35"
+  ],
+  "Weeds_of_Oblivion": [
+    "core-game"
+  ],
+  "Weeds_Whacked": [
+    "core-game"
+  ],
+  "Weekly_Bounty_Reign_of_Criminals": [
+    "death-of-superman"
+  ],
+  "Weekly_Bounty_Reign_of_Heroes": [
+    "death-of-superman"
+  ],
+  "Weekly_Bounty_Starro_Conqueror": [
+    "episode-31"
+  ],
+  "Weekly_Bounty_The_Fearsome_Five_Heroes": [
+    "episode-32"
+  ],
+  "Weekly_Bounty_The_Fearsome_Five_Villains": [
+    "episode-32"
+  ],
+  "Weekly_Mission": [
+    "game-systems"
+  ],
+  "Weird_Science": [
+    "episode-6"
+  ],
+  "Welcome_to_the_Watchtower": [
+    "core-game"
+  ],
+  "What_Fate_Awaits": [
+    "core-game"
+  ],
+  "What_Luthor_Wants": [
+    "core-game"
+  ],
+  "What_s_a_Diadem": [
+    "episode-44"
+  ],
+  "What_s_In_The_Box": [
+    "core-game"
+  ],
+  "What_s_the_Anti-Matter": [
+    "anti-monitor"
+  ],
+  "When_Plants_Attack": [
+    "episode-6"
+  ],
+  "Winter_Plunderland": [
+    "winter"
+  ],
+  "Wonder_Woman_Day_Celebration": [
+    "wonder-woman-day"
+  ],
+  "Wonder_Woman_Day_Daily_Alert": [
+    "wonder-woman-day"
+  ],
+  "Wonder_Woman_Day_Daily_Raid": [
+    "wonder-woman-day"
+  ],
+  "Wonder_Woman_Day_Daily_Solo_or_Duo": [
+    "wonder-woman-day"
+  ],
+  "Wonder_Woman_s_Missions": [
+    "episode-30"
+  ],
+  "Wonderverse_Heroes": [
+    "episode-38"
+  ],
+  "Wonderverse_Villains": [
+    "episode-38"
+  ],
+  "Wrath_and_Desecration": [
+    "core-game"
+  ],
+  "Wrath_Not_Taken": [
+    "episode-8"
+  ],
+  "Wrath_Reduced": [
+    "episode-8"
+  ],
+  "Wrath_Within": [
+    "episode-8"
+  ],
+  "Wrought_With_Wrath": [
+    "episode-8"
+  ],
+  "You_Have_My_Axe": [
+    "episode-43"
+  ],
+  "Your_Armory": [
+    "core-game"
+  ],
+  "Your_Best_Face_Forward": [
+    "core-game"
+  ],
+  "Yuletide_Fear": [
+    "winter"
+  ],
+  "Zombie_Benefits": [
+    "core-game"
+  ]
+}

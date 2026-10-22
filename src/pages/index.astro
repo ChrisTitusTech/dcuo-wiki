@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import articles from "../data/articles";
+import GuideLibrary from "../components/GuideLibrary.astro";
 ---
 
 <Layout title="Explore DC Universe Online">
@@ -14,69 +15,7 @@ import articles from "../data/articles";
   </section>
   <div class="home-columns">
     <div>
-      <section id="library">
-        <div class="section-heading">
-          <h2>Explore the wiki</h2>
-          <span class="badge">{articles.length} reviewed guides</span>
-        </div>
-        <div class="filters" aria-label="Filter guides">
-          {["All", ...new Set(articles.map((a) => a.category))].map((c) => (
-            <button data-category={c} aria-pressed={c === "All"}>
-              {c}
-            </button>
-          ))}
-        </div>
-        <p id="count" role="status" aria-live="polite">
-          {articles.length} guides
-        </p>
-        <div class="cards">
-          {articles.map((a) => (
-            <a
-              class="card"
-              href={`/wiki/${a.slug}/`}
-              data-type={a.category}
-              data-search={[
-                a.title,
-                a.category,
-                a.summary,
-                ...a.sections.flatMap((s) => [
-                  ...s.items,
-                  ...(s.table?.rows.flat() || []),
-                ]),
-              ]
-                .join(" ")
-                .toLowerCase()}
-            >
-              <div class="eyebrow">{a.category}</div>
-              <h3>{a.title}</h3>
-              <p>{a.summary}</p>
-              <span class="card-link">
-                Read guide <span aria-hidden="true">↗</span>
-              </span>
-            </a>
-          ))}
-        </div>
-        <nav class="library-pagination" aria-label="Guide pages" hidden>
-          <button id="previous-guides" type="button">
-            Previous
-          </button>
-          <span id="guide-page" role="status" aria-live="polite"></span>
-          <button id="next-guides" type="button">
-            Next
-          </button>
-        </nav>
-        <p id="empty" hidden>
-          No guides match. Try another term or choose All.
-        </p>
-        <aside class="notice">
-          <strong>Coverage that earns its place.</strong>
-          <p>
-            This is an exploratory edition, not a complete mirror. Empty entries
-            stay out. Quest locations and video matches are checked before
-            publication. <a href="/about/">See our coverage standards.</a>
-          </p>
-        </aside>
-      </section>
+      <GuideLibrary />
     </div>
     <aside class="home-rail">
       <section class="wiki-panel">
@@ -123,104 +62,4 @@ import articles from "../data/articles";
       </section>
     </aside>
   </div>
-  <script>
-    const input = document.querySelector<HTMLInputElement>("#search")!;
-    const params = new URLSearchParams(location.search);
-    const allowed = [
-      ...document.querySelectorAll<HTMLButtonElement>("[data-category]"),
-    ].map((b) => b.dataset.category);
-    let category = allowed.includes(params.get("category") || "")
-      ? params.get("category")!
-      : "All";
-    input.value = params.get("q") || "";
-    document
-      .querySelectorAll<HTMLButtonElement>("[data-category]")
-      .forEach((b) =>
-        b.setAttribute("aria-pressed", String(b.dataset.category === category)),
-      );
-    document
-      .querySelector(".global-search")
-      ?.addEventListener("submit", (event) => {
-        event.preventDefault();
-        filter();
-        document.getElementById("library")?.scrollIntoView({ block: "start" });
-      });
-    const pageSize = 48;
-    let currentPage = 1;
-    const previous =
-      document.querySelector<HTMLButtonElement>("#previous-guides")!;
-    const next = document.querySelector<HTMLButtonElement>("#next-guides")!;
-    function filter(resetPage = true) {
-      if (resetPage) currentPage = 1;
-      const cards = [...document.querySelectorAll<HTMLAnchorElement>(".card")];
-      const matching = cards.filter(
-        (card) =>
-          (category === "All" || card.dataset.type === category) &&
-          (card.dataset.search || "").includes(
-            input.value.trim().toLowerCase(),
-          ),
-      );
-      const count = matching.length;
-      const pages = Math.max(1, Math.ceil(count / pageSize));
-      currentPage = Math.min(currentPage, pages);
-      cards.forEach((card) => {
-        card.hidden = true;
-      });
-      const start = (currentPage - 1) * pageSize;
-      matching.slice(start, start + pageSize).forEach((card) => {
-        card.hidden = false;
-      });
-      document.querySelector("#count")!.textContent =
-        count > pageSize
-          ? `${start + 1}-${Math.min(start + pageSize, count)} of ${count} guides`
-          : `${count} ${count === 1 ? "guide" : "guides"}`;
-      document.querySelector<HTMLElement>(".library-pagination")!.hidden =
-        pages <= 1;
-      document.querySelector("#guide-page")!.textContent =
-        `Page ${currentPage} of ${pages}`;
-      previous.disabled = currentPage === 1;
-      next.disabled = currentPage === pages;
-      document.querySelector<HTMLElement>("#empty")!.hidden = count !== 0;
-    }
-    filter();
-    input.addEventListener("input", () => filter());
-    previous.addEventListener("click", () => {
-      currentPage--;
-      filter(false);
-      document.getElementById("library")?.scrollIntoView({ block: "start" });
-    });
-    next.addEventListener("click", () => {
-      currentPage++;
-      filter(false);
-      document.getElementById("library")?.scrollIntoView({ block: "start" });
-    });
-    document
-      .querySelector('a[href="/#library"]')
-      ?.addEventListener("click", () => {
-        input.value = "";
-        category = "All";
-        document
-          .querySelectorAll<HTMLButtonElement>("[data-category]")
-          .forEach((button) =>
-            button.setAttribute(
-              "aria-pressed",
-              String(button.dataset.category === "All"),
-            ),
-          );
-        filter();
-      });
-    document
-      .querySelectorAll<HTMLButtonElement>("[data-category]")
-      .forEach((button) =>
-        button.addEventListener("click", () => {
-          category = button.dataset.category!;
-          document
-            .querySelectorAll("[data-category]")
-            .forEach((b) =>
-              b.setAttribute("aria-pressed", String(b === button)),
-            );
-          filter();
-        }),
-      );
-  </script>
 </Layout>

@@ -1,0 +1,514 @@
+{
+  "records": [
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part",
+      "cacheFile": ".import-cache/f1f12c0ec7c6d1d6907081f2ba48dfc3a402efb85fb97ac9ccf24045bbd20674.json",
+      "retrieved": "2026-10-21T04:25:46.788Z",
+      "sha256": "046af70c87f1ec219b92e662800b3ad994c3ec2b75cf94cb707d41f5547eb76f"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Age_of_Justice",
+      "cacheFile": ".import-cache/c1a4af6575f933292c1faef10742693dbf62219873d6c0796959664318366c12.json",
+      "retrieved": "2026-10-22T00:35:26.170Z",
+      "sha256": "56e15d4ae8f8bdb4b9a35765df169d5f1fb6fe823fa655ccd6100615233b2b3a"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_I",
+      "cacheFile": ".import-cache/7d02c960ecce13ec4152046f6babdc5ec9a4a4222739ee5b1fad0643e8c2c0ab.json",
+      "retrieved": "2026-10-22T00:33:27.920Z",
+      "sha256": "4f6264110c48e816de41bdd039ca158ea1c755cc910709065471c97d32072499"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+      "cacheFile": ".import-cache/d1c723b071ad07573bd19c17653c35411ac96c02fefabe25e43580cf97872946.json",
+      "retrieved": "2026-10-22T00:34:19.577Z",
+      "sha256": "bec2ac7c57ff284c0c6784982b7fa60a2ecfc72fcb903098d922ca533466231f"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III",
+      "cacheFile": ".import-cache/477f5fa10326161c71f5cbc91d1f2ab9e0d92e3b8806707d00238f255085b828.json",
+      "retrieved": "2026-10-22T00:35:24.526Z",
+      "sha256": "4ab00e8dbc48e87d69e52f76455c1cfb134cc21f5c896a27ed4bf2e94c90c6e5"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Arkham_Unleashed",
+      "cacheFile": ".import-cache/51af9592c69fd0dd6f07ce9ca2b7ae3e44562bb2f593cadbc4dadade423d8804.json",
+      "retrieved": "2026-10-22T00:41:55.047Z",
+      "sha256": "2ab00fb0ea5254f5ac1a125e7c739d82d2407901f90c19e9d7b28f416b48fea8"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Episode)",
+      "cacheFile": ".import-cache/9a067a310cf3c242bba5aa75bc5e08bc4a6e0e51af0fcecd41491ece67ae3585.json",
+      "retrieved": "2026-10-22T00:36:21.520Z",
+      "sha256": "a09c2daaa43787e99e3754eda18dd2cd7af50940196f9422b147719eeab553bb"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Attack_of_the_Anti-Monitor",
+      "cacheFile": ".import-cache/5d788b94ca3ffa081a4b22ec834d6a9f61811e436192e31a6b4b2946e9d8ae3f.json",
+      "retrieved": "2026-10-22T00:40:24.382Z",
+      "sha256": "cb0b583021bb7ccbe40e4ec350c0e4b714207869c11500585285fe5360ac518b"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Batman_Day",
+      "cacheFile": ".import-cache/11d2d948726c96211025cac192bfdcaba2135e25e9f9c188a4a010da267bca2e.json",
+      "retrieved": "2026-10-22T00:40:31.476Z",
+      "sha256": "e91e40710369ce670426e420f92544c84b1fb58d2330eb25f4a01d0279a654fe"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Beginning_of_the_End",
+      "cacheFile": ".import-cache/fa430af4d512f9f4ff3f3679243fb5ce41a1606dfedfc9d5218ef8513e168d62.json",
+      "retrieved": "2026-10-22T00:41:56.030Z",
+      "sha256": "6467377da8bbc62b893dda66c4b74db7152e920a0169b1a6e8ae86642f29e834"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Episode)",
+      "cacheFile": ".import-cache/b9da453391f2fe351c853a5eef8b807569e50b4269ce3bf8f5e1964506b657fb.json",
+      "retrieved": "2026-10-22T00:36:24.056Z",
+      "sha256": "7abaf8f620acb31992cc4ee5e049840812dd47a0703ee016cf440d51d4480b39"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns",
+      "cacheFile": ".import-cache/b1e614b7d099919cf8655e3d2354dab19e8e4054d985f2f65805d8ae4819ec7b.json",
+      "retrieved": "2026-10-22T00:37:24.335Z",
+      "sha256": "afa13e7ebec564a1c0e4b2e1221b347d9ebdd06c7833b23bf158772b666cf9cd"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Celebrate_Pride",
+      "cacheFile": ".import-cache/8ef09c8280a80803a39c87d070c17b29e228aaa4beddfd68c9d266c7a2130eb8.json",
+      "retrieved": "2026-10-21T14:26:43.133Z",
+      "sha256": "ef7be2efafc2116e96a86588a58b284844147c4639e66543b6d364c681c3c28a"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Children_of_Krypton",
+      "cacheFile": ".import-cache/1535abab9c123c3a766eb6a5ac3ddf1b8ce28531d379bcb1380b11bfd4459eb4.json",
+      "retrieved": "2026-10-22T00:38:21.083Z",
+      "sha256": "99f0fbbbacf361faf68ccea98bc732cc36e0c8463c844fcd78c480f6a59a928e"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Episode)",
+      "cacheFile": ".import-cache/ae6aeea736a428e9b6bbcf6071d1d55b9067ecc09720f4615166707324b3f2cf.json",
+      "retrieved": "2026-10-22T00:37:20.220Z",
+      "sha256": "239dfcde1a0364c902c0686666e87dce7009642c40224bfb38952137e38aee22"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Day_of_Reckoning",
+      "cacheFile": ".import-cache/ede57e7d5c20ef5a466ca632c1e5c1ffd0a250c99fffa5ed8e3af9f82a9acb35.json",
+      "retrieved": "2026-10-22T00:38:18.931Z",
+      "sha256": "9aaa10ed198dfabbf23a497ae98cae735a62f957a32f8fc8c08a5d43b5cc272e"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Deluge",
+      "cacheFile": ".import-cache/2c327fa9236868e208d575f392c64998383026e968e3425b0b7c5f859dd6cc49.json",
+      "retrieved": "2026-10-22T00:36:16.365Z",
+      "sha256": "8c3e2c6bb2026c22179469c1f218511933d280e656fbf1a9145848f489e86c53"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Dying_of_the_Light",
+      "cacheFile": ".import-cache/c8b7dbf8178ee9075a579f572c67766ece55c21695522bd0063a29a494749fea.json",
+      "retrieved": "2026-10-22T00:41:53.327Z",
+      "sha256": "9857f84fd766a8a30119584a91f190ffac4577b7b67efd6a2915c21073518a16"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3",
+      "cacheFile": ".import-cache/f4c3776bcfd9100f84a01e2e3b41be3e02cb17c08583d45c7cc3313d30c9e004.json",
+      "retrieved": "2026-10-22T00:36:19.661Z",
+      "sha256": "4e44399b5fed7958932b77d8a223e15feae487972168bbb2062e5f92c5ff50a5"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_15%3A_Bombshell_Paradox_%26_Corrupted_Zamaron",
+      "cacheFile": ".import-cache/64bc62d21766cf6e0a73969003b31c5a2de67228d5f3d259618bac21f29aaaa8.json",
+      "retrieved": "2026-10-22T00:34:29.450Z",
+      "sha256": "40c60ec7d98a9bb7a33b22f5ae9e93d442422791bbe8dd7385b353ceb9009c72"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_16%3A_Desecrated_Cathedral_%26_Oa_Under_Siege",
+      "cacheFile": ".import-cache/031588f93b1a339068f776e2cbb2f9bab0b86b81f220c04239f53ade8d0550fd.json",
+      "retrieved": "2026-10-22T00:34:21.428Z",
+      "sha256": "c176efc0ccff7afcc9a595884df6b6a9d022b153e1799fb8991376237dd5a299"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_17%3A_Flash_Museum_Burglary_%26_Unholy_Matrimony",
+      "cacheFile": ".import-cache/af9406f42b1fbb294fb34200bfac1734359d5b92207a35b53c62931e354e2828.json",
+      "retrieved": "2026-10-22T00:34:22.211Z",
+      "sha256": "e571feb5fac5faf4e048193ce2f97b857110e002eb1740d9e378b576fbacb4f9"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_18%3A_Blackest_Day_%26_The_Demon's_Pit",
+      "cacheFile": ".import-cache/a8c8c330f7a2021d0b560528c016279e30f357c2d022b3ebf331e6464d236614.json",
+      "retrieved": "2026-10-22T00:34:29.327Z",
+      "sha256": "a3ac5d41294e64d398e6340c51d5bd6141f00b65dee1f9ab166a9da0bf950110"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_19%3A_The_Demon's_Plan_%26_Deep_Desires",
+      "cacheFile": ".import-cache/28f268041d0051e910273b0ccdd26312e74a9b677e7bc620bf4198b1767285a2.json",
+      "retrieved": "2026-10-22T00:34:24.391Z",
+      "sha256": "4744b3411057e381d617b099c3dfdec4a5e72aae5d22e809ed4e33c2bca978e9"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_20%3A_Blackest_Night_%26_Wastelands_Wonderland",
+      "cacheFile": ".import-cache/d6aab9085608c6e4110486a4499d038b0d1bb0e4304330a314888e2d58b911aa.json",
+      "retrieved": "2026-10-22T00:35:16.125Z",
+      "sha256": "4b5d1373032ea68bc77ee2d392b4c1bff97c479f68f89efc18eb3dd0303ce6f4"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_21%3A_The_First_Piece_%26_Prison_Break",
+      "cacheFile": ".import-cache/96b01736b37079fc44b2f08365867356f0b8da1c3b2d6a40f47ed2a6d3590e9a.json",
+      "retrieved": "2026-10-22T00:35:16.760Z",
+      "sha256": "d6869c08e791e6b047528233fc8b22a934cb79940c619133c2a6121fe29f3e9d"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_22%3A_Phantom_Zone_%26_Science_Spire",
+      "cacheFile": ".import-cache/29706aee134a70e71c20abb665fdca3f53ec616dd886ab78c93f6ff68378592d.json",
+      "retrieved": "2026-10-22T00:35:19.997Z",
+      "sha256": "fc559ba3b6a4ddf33d427f557acd9ba5706e696a1ec6051a62e0196de2aeb808"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_23%3A_Brainiac's_Bottle_Ship_%26_The_Will_of_Darkseid",
+      "cacheFile": ".import-cache/a43869de2b7eec82123c06899e3c315be8d56512d8881f8ab37194bcdd70194a.json",
+      "retrieved": "2026-10-22T00:35:17.759Z",
+      "sha256": "dd27999787cb90f9999626ac32910fcf8fda98c1f2a5cf59221e5b2a8bb990b0"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_24%3A_Darkseid's_War_Factory_%26_Harley's_Heist",
+      "cacheFile": ".import-cache/21d4bc22fd1ede7867c9675c3ffc58de303539d7920a01f7110b4c1e7581986e.json",
+      "retrieved": "2026-10-22T00:35:21.746Z",
+      "sha256": "db214135a42ddf3fa67b846a5b476ce6454c7efbf774ada039f873867c49f979"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_25%3A_Iceberg_Lounge_%26_A_Rip_in_Time",
+      "cacheFile": ".import-cache/5e7da215ccfa5fc6edf9cb3567390c005cc93f3bf36adb11dc619b4876b55f8a.json",
+      "retrieved": "2026-10-22T00:35:22.912Z",
+      "sha256": "d18533804eddfa56430884b16d4f7691b7ea2b25adf2e5c19cf28afac7f55046"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Episode_26%3A_Wayne_Manor_Gala_%26_Kandor_Central_Tower",
+      "cacheFile": ".import-cache/05c428b698ba1f63ff2c24b283ec4781f7dfe367dc7dd426d0c87c2315161c21.json",
+      "retrieved": "2026-10-22T00:35:23.475Z",
+      "sha256": "c7c340547f3ea124b87cba60a2fbf6b1de851a17c7fb62e655e319d9ab1995b9"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Events",
+      "cacheFile": ".import-cache/ecff328d42bd91a2c9aeb587c6ad05f2bbd8c874872a50c24b9c7dd63260868e.json",
+      "retrieved": "2026-10-22T00:45:07.997Z",
+      "sha256": "0cfbc44626bd6d672576fabeee4b088931eb14eb4cf2412c2fe1ab0042195027"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Fearful_Day",
+      "cacheFile": ".import-cache/d817b1e86f5db6e96b98573e888282c49b1300127b086006fdc115f3bc7b1aec.json",
+      "retrieved": "2026-10-22T00:38:17.773Z",
+      "sha256": "6db6c5582f1986af47bb41ef43f0f669cfd9fe24f8623286202ef6da24126349"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Fight_for_the_Light",
+      "cacheFile": ".import-cache/0b21455da9d556570b3db896b4840f048a1ba9400271cb68e77f40360eef60ee.json",
+      "retrieved": "2026-10-22T00:33:17.227Z",
+      "sha256": "53b1d8e14de6de8e754877841fa53e2a9817c8826193a9db0680a714592077ab"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Game_Updates",
+      "cacheFile": ".import-cache/3811a7171dfae93fbad09a84b23811e96ca4e145cb2f09f25d17d58cb376a46e.json",
+      "retrieved": "2026-10-22T00:41:17.900Z",
+      "sha256": "43cb2df0770d7bcce648772c606359ea78e3c9955c7aa58358166f842a090ad9"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Gotham's_Gang_War",
+      "cacheFile": ".import-cache/cab69a5d3145ecdf12fee1e1d082a2c7fdf0d9b45ef9f84d8e4cf8f4c40b3025.json",
+      "retrieved": "2026-10-22T00:41:53.935Z",
+      "sha256": "3cd4fb102af0402b418724329398a9b3b87f2d32454e8b73a9f70647be701bd8"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_I",
+      "cacheFile": ".import-cache/cb7aef3bfe56b16e6b7207b47c0cab694a0624658bab9fa2ca38d586bf11ec85.json",
+      "retrieved": "2026-10-22T00:34:15.622Z",
+      "sha256": "eba2291b16a6bd256d33af856b0a71ffab6e1c7426596a4f0d853d1b6f7053e6"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_II",
+      "cacheFile": ".import-cache/53f462daa22a839c0f3a904d57adfde24e56ac22f7eeb42d223169418ca49226.json",
+      "retrieved": "2026-10-22T00:34:19.915Z",
+      "sha256": "61a088e9a684e29e6af11c477a4c6455651841d4ab214abc47be609161225686"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate",
+      "cacheFile": ".import-cache/3bc4a03408fcd119a1a4b42b11af9f6526ca39291dde8ea5043caa103e6a5571.json",
+      "retrieved": "2026-10-22T00:33:18.746Z",
+      "sha256": "915811d2a8fb0b4d31aad090182a3413f8241b2ba3e9cdae17417996d196d4e6"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips",
+      "cacheFile": ".import-cache/b324177be6529af172194a5b22e18a89d701463c40897623b21c4711dc44e977.json",
+      "retrieved": "2026-10-22T00:37:24.454Z",
+      "sha256": "94fe6942703042361dc4d853a9433444f6f48354c1c82bd532b3fee77c9b5f9b"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Hearts_of_Darkness",
+      "cacheFile": ".import-cache/7239611365e55382b30328721b8362120d2611c38c9f9c82843cdb3c9755eb5b.json",
+      "retrieved": "2026-10-22T00:42:01.517Z",
+      "sha256": "2545351bf9336347e2494b2ce9683b6fd12893e622c09eb74e546aebe5eac465"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Home_Turf",
+      "cacheFile": ".import-cache/6ddccf0e9dacfb28143e35d8acdb6958fdf96e7eba6b781cdc1136d594f123c8.json",
+      "retrieved": "2026-10-22T00:33:23.719Z",
+      "sha256": "5b72f867cee107bc82e32775c7884bc1ad980a2bdf3342c761377d7038e11eb0"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Homecoming",
+      "cacheFile": ".import-cache/c4767c1fcd31abf06525b3de382e0620bb8129cecad697fbc8c4ca55462f7814.json",
+      "retrieved": "2026-10-22T00:40:27.384Z",
+      "sha256": "86a8af42ed81c5d1ff35561b292b56f52883c9b71e04e56cd8f1d1bc23044efb"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright",
+      "cacheFile": ".import-cache/40473857fd9590184f89febcf81d473fac577f4c2bf5e8328772eb63c1bc4e7e.json",
+      "retrieved": "2026-10-22T00:38:21.949Z",
+      "sha256": "0a5c5db63bb66d94f7bb85d00b2496d2655b84cf8f601e02baae44cc34db0c79"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends_(Episode)",
+      "cacheFile": ".import-cache/b99e16110f5a618cf822e6083f8a9f2ad8d094a35fc63ebbad03a723716bacb5.json",
+      "retrieved": "2026-10-22T00:37:16.248Z",
+      "sha256": "d7962b44252479752c46c25c539c7a1b9e1b396bb6dc8ada986f60131065de99"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Episode)",
+      "cacheFile": ".import-cache/e1dcfd98b8d97eded119e52d6ee427d8b79d5e6e178ea462b4d5e6232a6dd8f9.json",
+      "retrieved": "2026-10-22T00:36:26.049Z",
+      "sha256": "c3c06a92ec217967ae7c341b8865619500cfad0dd594064d6d1bf12f66269c37"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed",
+      "cacheFile": ".import-cache/fa582a9bb1409d6c37ae781d3b80a2ba483a0fc453c53b2ce2a93bce085f809d.json",
+      "retrieved": "2026-10-22T00:37:22.604Z",
+      "sha256": "483348ffdc0f54f2ce1944664ceb7c913e440ce26671481bb91e5e800cce1429"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Legacy_of_Krypton",
+      "cacheFile": ".import-cache/7dbaeef96e5efe05fc3d350eedf866723b93db85e61fa4d88784ee9bd5908432.json",
+      "retrieved": "2026-10-22T00:42:21.829Z",
+      "sha256": "d20eb2dc3f42fd7362955d3283eb36ab7ef6fe7b7816a6eba9ddc668a6f7fd38"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Doom_(Episode)",
+      "cacheFile": ".import-cache/a3f10faf3a3971735cb9a09d190655f314dd4cf958b15457315dcf0883c5743d.json",
+      "retrieved": "2026-10-22T00:37:19.256Z",
+      "sha256": "2003051be0519c6bce7185c26ec96dff300ff2678cade04774944615820c1ec3"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Light_and_Rain",
+      "cacheFile": ".import-cache/e7bf5bd1708323651e78c38b8445888b23c02308b6d0a371a46b3e658aeee255.json",
+      "retrieved": "2026-10-22T00:38:17.435Z",
+      "sha256": "bf180478bd92d5965ebb503709b8f88f34825ccd3f52ac4703934d2733095024"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Lightning_Strikes",
+      "cacheFile": ".import-cache/fb163e4847e36f249d91f94b4fd970e133c2bbeb0faa3244a71c8a04196fa36c.json",
+      "retrieved": "2026-10-22T00:33:16.159Z",
+      "sha256": "932344d3898edfa983a3292cfb51501edd01a4c8a710d35e65da03192cc3bcdd"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion",
+      "cacheFile": ".import-cache/88f96d2b6fdf7e676404dbf16978338e8e46c247d6763f49cdb54181e9319c6f.json",
+      "retrieved": "2026-10-22T00:37:17.156Z",
+      "sha256": "223ef59f554301be4bde3eb4bb0b0458b5d2fa36ccb71072be2d1678513bb9f8"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I",
+      "cacheFile": ".import-cache/eda75900d6881da3ec895977844e5e04e330e752585352d84a2a474ada3bf676.json",
+      "retrieved": "2026-10-22T00:36:22.191Z",
+      "sha256": "aa9a8bb936cb90bae219873d098c4bef463b437e808df9f5152b877bfdaaba07"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II",
+      "cacheFile": ".import-cache/9865c45fe080cfe5306d7017b2f06ea5cae868e7407aed3d74e609d12838a6a7.json",
+      "retrieved": "2026-10-22T00:36:23.936Z",
+      "sha256": "00525c3d1125e3396504e354698ba4d9a444b36e36cdf5cfc212ea6302a9d53f"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Mxyzptlk's_Mischief",
+      "cacheFile": ".import-cache/718c0fb6f0d059024f2407b5813277cce9be3fcfed50626798977c195188029e.json",
+      "retrieved": "2026-10-22T00:40:16.840Z",
+      "sha256": "a8d720ec6c81b275e075cbf169525e05a0631993e65e041f7cda012830ad4ad9"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Origin_Crisis",
+      "cacheFile": ".import-cache/88bd07d586396e954e066c9c4a0734e2fc7e6f408a745dfd8b1882c4671e9d8e.json",
+      "retrieved": "2026-10-22T00:33:26.497Z",
+      "sha256": "0c7e4feb6cd29493ed24b8e1348582afce7390b977a4645312737aa972fd156d"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Outsiders_Ops",
+      "cacheFile": ".import-cache/3b154ad5be8ad15c817f041a62c5f5d64d4fe6b375617707c76702b9c52d5746.json",
+      "retrieved": "2026-10-22T00:41:17.071Z",
+      "sha256": "8bcf536da156536a883144e053111f7bdaff8cd4b47c953f70975a5e99cc4045"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Punchline_(story_arc)",
+      "cacheFile": ".import-cache/47223a946640601b814c34979ff11d08e0c374867fe11678e80d5fb7ba0b82dc.json",
+      "retrieved": "2026-10-22T00:41:57.412Z",
+      "sha256": "026b868460ea2488587e198f2ed4f29c0443232d512436c0110eed2a934fc52c"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Raging_Night",
+      "cacheFile": ".import-cache/4ddbf6db831cc15cb83765d3575e7ffb645ae3aa0f7a8792a02860fd4164ec9f.json",
+      "retrieved": "2026-10-22T00:38:22.785Z",
+      "sha256": "76399813d61d0aed95f5761e09e5159529d91cf1f078f9162c64d70b241aae9d"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Riddled_with_Crime",
+      "cacheFile": ".import-cache/096ff56eb7f18f88745ca57f7c5c3a928cec976f2d722489d6db35084a357a3f.json",
+      "retrieved": "2026-10-22T00:35:25.062Z",
+      "sha256": "5be1da4d1902030fc47cafff30473c880647135f0ab1c4272437f41a968ff801"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Save_the_Universe",
+      "cacheFile": ".import-cache/dd9e07461ccf52a368df15ef16fb9df8c82e156972a550d9fc6b380e60d7d499.json",
+      "retrieved": "2026-10-22T00:41:19.499Z",
+      "sha256": "e86209515c4591ceca779b1d6e5334b9bc2a383721f914a884657bc272d4b732"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings",
+      "cacheFile": ".import-cache/1661d9e61309a8d260ee639f42bdd364ece816726e9e06a3299a57b396373436.json",
+      "retrieved": "2026-10-22T00:40:26.900Z",
+      "sha256": "01025c051a6c42196683faa162e1de882a1be26410dceb6b891a655ce0a72278"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo",
+      "cacheFile": ".import-cache/c0c24562e0609f7dcd744863466eb080f1a765fbb420d14006ecb293da7945af.json",
+      "retrieved": "2026-10-22T00:38:23.643Z",
+      "sha256": "4c8d3ddaec5ab6e4c3c355d475e46f8c5758adc37946ed9a2c9589a83226b529"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System",
+      "cacheFile": ".import-cache/0f49dba47f041d42ea5e1f538fb546111ae7bafcabd0114aca9397d0596e9b83.json",
+      "retrieved": "2026-10-22T00:37:22.491Z",
+      "sha256": "f7cd34b283e8efd6132392cd831a5330614130d44c7ee2d32d8bdf2f4efaa8f9"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Sins_of_the_Father",
+      "cacheFile": ".import-cache/f6d5ff7fd0ba047ef2c2a0bf54baa43e78e30f4efdbacfff781c70328ec926dc.json",
+      "retrieved": "2026-10-22T00:42:18.343Z",
+      "sha256": "ace5591cf62cdba9b6d7d8e788146045cacce60bc6a5e6946e9eec4e800bcadc"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Sons_of_Trigon",
+      "cacheFile": ".import-cache/def2141f956b9ce3490c77bf7f220aea18422a98a8250eacab0166ee8cdbaa58.json",
+      "retrieved": "2026-10-22T00:33:23.391Z",
+      "sha256": "d1ff6209c31b55bad1635f9eb7f9fae0adcf82303e157b23c3251d006852f002"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Springtime",
+      "cacheFile": ".import-cache/cbf9d0471fc423e2015b1a15449319a16b934c9ed44d73e7f259ad6e967d8477.json",
+      "retrieved": "2026-10-22T00:40:18.653Z",
+      "sha256": "d48495a82e3e5c81952528c0c75f106e4551416cc92766671dc0f9b2971501db"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Starro_the_Conqueror",
+      "cacheFile": ".import-cache/d21fe7fd2df4f998ea68027de4f3c33dba91263d4581714b1e616a44f63790c6.json",
+      "retrieved": "2026-10-22T00:42:26.670Z",
+      "sha256": "84e2f2860e209ec2a5e2ae16d7407d23c7693e71511ce244360df033968721ad"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Story_Arcs_(Classic_Game)",
+      "cacheFile": ".import-cache/d6b7c840020f24a514cb3820536e69d030f1d7a0f57554e0ad478da4ad544cc2.json",
+      "retrieved": "2026-10-21T14:50:53.856Z",
+      "sha256": "a2f428347b82a75dfa6e6bf99ac3d52284dae6e0c2fa374fa0e4c872f1ef1b6b"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Superman_Day_Celebration",
+      "cacheFile": ".import-cache/48b9cd87e451d522367db455874583edd4341e23c75893e1be28686c84e25ac4.json",
+      "retrieved": "2026-10-22T00:42:28.790Z",
+      "sha256": "9aef6515cd802b7efd61ca1db8d920c2afa469b668ce797b2b696f276714e126"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Survival_of_the_Fittest",
+      "cacheFile": ".import-cache/eb4393e3d3d67c252c0b3d31283e7b1bf51d840336124a7ff6811981fb843c97.json",
+      "retrieved": "2026-10-22T00:42:19.801Z",
+      "sha256": "3b2d8d9abab0114fc120907c78b9ceb2fc4cfb3e1c7f0cef05c78ad74d7ea8ee"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Teen_Titans%3A_The_Judas_Contract",
+      "cacheFile": ".import-cache/852530cbab35264acd370a3b2d1f746dd53df78a2581a55860bd748f787f882e.json",
+      "retrieved": "2026-10-22T00:36:18.480Z",
+      "sha256": "03a00964e464f49be5fedf73cab00fee9b303e15eb06635e46e247487c257608"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/The_Battle_for_Earth",
+      "cacheFile": ".import-cache/764cffbd35d1fd4ddb43aef6250694f77794876566830dcbe7da27cf54c5c9ab.json",
+      "retrieved": "2026-10-22T00:33:15.686Z",
+      "sha256": "60e8564e0cbc0a0a37f010216b750067ad69d200f2134a59169e46f6292d19bf"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/The_Death_of_Superman",
+      "cacheFile": ".import-cache/0aa00dce6d2ae2d2559acf899659736ff582a5009cb1e4785bd6f5525ce7cf20.json",
+      "retrieved": "2026-10-22T00:36:20.316Z",
+      "sha256": "8e04bc5c73713ac8b52f5f285d072e808f52e65e66f3b19ee89a4e7ffb6112d8"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(DLC)",
+      "cacheFile": ".import-cache/3204d1ae7cbf47bf2e7cf4ab433edf57eb80c44cb6bb0e5801b75cb93a9c1ecc.json",
+      "retrieved": "2026-10-22T00:33:19.126Z",
+      "sha256": "a71382c6bfb29483f444bed3bbfb512eafe352e8a5f52618006378b70c4e94ca"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam",
+      "cacheFile": ".import-cache/c6cbe97fd2d0cdc402eb850a16663d10c8782bfb1595a5edd85eea9b009f517f.json",
+      "retrieved": "2026-10-22T00:37:21.126Z",
+      "sha256": "8847c1a841ceb342864181a9753a290cde55a5100926adbcbadab70cf8c3fe6a"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour",
+      "cacheFile": ".import-cache/ff34e6e49c83fa9b896501b7058eaaa22bab67fdafc6a62c74d349b26cf72650.json",
+      "retrieved": "2026-10-22T00:40:24.896Z",
+      "sha256": "50828b053a4241c117ca65ea599477653c47b83b85052392ff130a3474d2dbb7"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Tides_of_War",
+      "cacheFile": ".import-cache/84cc4b30b4fe2708a02dd7074377974b03b39ba3c02cc6b27aeed08e9cece466.json",
+      "retrieved": "2026-10-22T00:40:23.094Z",
+      "sha256": "ad73db324a0c898c91db72715873c312d6258c371f85a48f3ce86c77cfb55581"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Valentine's_Day_Event",
+      "cacheFile": ".import-cache/37084b4a742befdbc6d27be6168e7ba658fda61d96d837d8653f0608aeeecb33.json",
+      "retrieved": "2026-10-22T00:40:18.863Z",
+      "sha256": "e6b4f9f8dfb75dd8c1bacb51ba767c19191f423a8965f1e2d57885428f499408"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_I",
+      "cacheFile": ".import-cache/b6f98ef6af750f647e98d2bcd2e35f6142da2a00d2c3a5df4a2c0f4d8095b6d1.json",
+      "retrieved": "2026-10-22T00:33:24.930Z",
+      "sha256": "0274563882ef2b8e6117276c15d02a9ce4315769060079b14df4efc09565da09"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_II",
+      "cacheFile": ".import-cache/9423fd94285ec6edce4264830decb3856867d8d4a0be34755c805cd389ad2980.json",
+      "retrieved": "2026-10-22T00:34:15.564Z",
+      "sha256": "d80a93f38f8a75e166abd95f81403a704f40eb8609b6914f44208f3ecbdc3871"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Wonder_Woman_Day",
+      "cacheFile": ".import-cache/d1905e0f656b36891ae3b0564fb90bb125d14d64f5474b8028326b977c629142.json",
+      "retrieved": "2026-10-22T00:41:18.827Z",
+      "sha256": "e7edebebef750399456abc76815797eb1a74917064d4e28e639d0fd48db142d2"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Wonderverse",
+      "cacheFile": ".import-cache/73f811a171097ef818eb0f57557b4d0eb9dccb1ef71d4b500a7af88d855be126.json",
+      "retrieved": "2026-10-22T00:36:25.671Z",
+      "sha256": "b307e1f75ba4acbdfd74ec9d4a59a0b640fd56176eee2c47c605fef111755489"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/World_of_Flashpoint",
+      "cacheFile": ".import-cache/323e7425e48d8bab446383c1f7fee0c60c92c91742de1c4d55da781cd80d037a.json",
+      "retrieved": "2026-10-22T00:37:18.049Z",
+      "sha256": "ab5d3f97d489444af65f1f6994f800babf7263e0b30d9e6b3ca5f0fd73a13a70"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Wrath_of_the_Worldkillers",
+      "cacheFile": ".import-cache/169b5c9e5e4ee029e9c0ce0ad1dbae23978b29f4867a1e53c3899adb064774b1.json",
+      "retrieved": "2026-10-22T00:40:17.120Z",
+      "sha256": "1dcc0d8ecc48166954d1d9e5bb3ce2aaf45c3317853cd10cf50b3d7ff2d6017a"
+    }
+  ]
+}

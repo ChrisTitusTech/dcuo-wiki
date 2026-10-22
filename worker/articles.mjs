@@ -1,3 +1,4 @@
+import { releaseSearchText } from "../shared/releases.mjs";
 import articles from "../src/data/articles.json" with { type: "json" };
 import { articleParts, renderPart } from "../shared/article-content.mjs";
 import { hash, HttpError } from "./security.mjs";
@@ -102,7 +103,12 @@ export async function serveIndex(request, env) {
       element(el) {
         el.setAttribute(
           "data-search",
-          [article.title, article.category, ...parts.map((p) => p.text)]
+          [
+            article.title,
+            article.category,
+            releaseSearchText(article.slug),
+            ...parts.map((p) => p.text),
+          ]
             .join(" ")
             .toLowerCase(),
         );

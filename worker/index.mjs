@@ -223,7 +223,12 @@ export async function handle(request, env, fetcher = fetch) {
   const url = new URL(request.url),
     path = url.pathname;
   try {
-    if (path === "/" && ["GET", "HEAD"].includes(request.method))
+    if (
+      (path === "/" ||
+        /^\/guides\/?$/.test(path) ||
+        /^\/releases\/[^/]+\/?$/.test(path)) &&
+      ["GET", "HEAD"].includes(request.method)
+    )
       return await serveIndex(request, env);
     if (path.startsWith("/wiki/") && ["GET", "HEAD"].includes(request.method))
       return await serveArticle(request, env);
