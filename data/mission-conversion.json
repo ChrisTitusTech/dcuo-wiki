@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-22T00:13:39.017Z",
+  "createdAt": "2026-10-22T00:16:23.845Z",
   "records": [
     {
       "source": "https://dcuniverseonline.fandom.com/wiki/Missions/Heroes",
@@ -147,7 +147,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/A_Glowing_Love",
       "words": 202,
       "objectiveWords": 13,
-      "location": "East End / Gotham City",
+      "location": "East End Police Station / Gotham City",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1172,7 +1172,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bane_Brought_Down",
       "words": 122,
       "objectiveWords": 41,
-      "location": "East End",
+      "location": "East End Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -1208,7 +1208,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Bane%2C_Banished!",
       "words": 133,
       "objectiveWords": 0,
-      "location": "North Burnley",
+      "location": "North Burnley Nightclub",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -1743,7 +1743,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Kid_Flash",
       "words": 241,
       "objectiveWords": 98,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Nightclub",
       "maps": 1,
       "images": 2,
       "reasons": [],
@@ -1777,7 +1777,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/BOUNTY%3A_Metropolis_Villians",
       "words": 57,
       "objectiveWords": 23,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia MPD",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2427,7 +2427,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Chat_With_The_Commish",
       "words": 92,
       "objectiveWords": 34,
-      "location": "East End",
+      "location": "East End Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -2603,7 +2603,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Clubhouse_Clout_(Meta_Villain_Mission)",
       "words": 363,
       "objectiveWords": 237,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Nightclub",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -2646,7 +2646,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Cold_Comfort",
       "words": 109,
       "objectiveWords": 85,
-      "location": "North Burnley / Gotham",
+      "location": "North Burnley Nightclub / Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -3066,7 +3066,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Danger_Pay",
       "words": 19,
       "objectiveWords": 6,
-      "location": "Midtown / Metropolis",
+      "location": "Midtown Nightclub / Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": [
@@ -3616,7 +3616,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Duty_Never_Done",
       "words": 21,
       "objectiveWords": 5,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Police Station",
       "maps": 0,
       "images": 0,
       "reasons": [
@@ -4005,7 +4005,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Explore%3A_Metropolis_Metro_Station!",
       "words": 88,
       "objectiveWords": 41,
-      "location": "Metropolis",
+      "location": "Chinatown Police Station / Chinatown Nightclub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4379,7 +4379,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fearmonger",
       "words": 31,
       "objectiveWords": 8,
-      "location": "Midtown",
+      "location": "Midtown Nightclub",
       "maps": 0,
       "images": 0,
       "reasons": [
@@ -4403,7 +4403,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Feel_the_Fear",
       "words": 80,
       "objectiveWords": 53,
-      "location": "Midtown",
+      "location": "Midtown Nightclub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4436,7 +4436,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Final_Exams",
       "words": 84,
       "objectiveWords": 56,
-      "location": "Diamond District",
+      "location": "Diamond District Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4501,7 +4501,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fire's_Out",
       "words": 58,
       "objectiveWords": 49,
-      "location": "East End",
+      "location": "East End Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4512,7 +4512,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/First_Frost",
       "words": 78,
       "objectiveWords": 59,
-      "location": "North Burnley",
+      "location": "North Burnley Nightclub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -4677,7 +4677,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Fratricide",
       "words": 71,
       "objectiveWords": 43,
-      "location": "Midtown",
+      "location": "Midtown MPD",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5007,7 +5007,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gordon_Wants_a_Word",
       "words": 82,
       "objectiveWords": 37,
-      "location": "East End",
+      "location": "East End Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5051,7 +5051,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Gorillas_By_The_Sea",
       "words": 191,
       "objectiveWords": 11,
-      "location": "Little Bohemia / Metropolis",
+      "location": "Little Bohemia MPD / Little Bohemia / Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5196,7 +5196,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Green_Lantern's_Light",
       "words": 118,
       "objectiveWords": 88,
-      "location": "Midtown / Metropolis",
+      "location": "Midtown Police Station / Metropolis",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -5316,7 +5316,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Hardcorps",
       "words": 77,
       "objectiveWords": 55,
-      "location": "Midtown",
+      "location": "Midtown Nightclub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7079,7 +7079,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/No_More_Monkey_Business",
       "words": 184,
       "objectiveWords": 9,
-      "location": "Little Bohemia / Metropolis",
+      "location": "Little Bohemia / Metropolis / Little Bohemia Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -7160,7 +7160,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/On_Fire",
       "words": 78,
       "objectiveWords": 53,
-      "location": "East End",
+      "location": "East End Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -8379,7 +8379,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Reap_What_You_Sow",
       "words": 15,
       "objectiveWords": 7,
-      "location": "East End",
+      "location": "East End Police Station",
       "maps": 0,
       "images": 1,
       "reasons": [
@@ -8717,7 +8717,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Rush_Week",
       "words": 358,
       "objectiveWords": 246,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Nightclub",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -9934,7 +9934,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Sweeter_Than_Honey",
       "words": 226,
       "objectiveWords": 89,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Nightclub / Little Bohemia",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10141,7 +10141,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Bigger_They_Are...",
       "words": 111,
       "objectiveWords": 47,
-      "location": "Chinatown",
+      "location": "Chinatown Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10239,7 +10239,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Faust_Finale",
       "words": 208,
       "objectiveWords": 75,
-      "location": "Chinatown",
+      "location": "Chinatown Police Station",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10460,7 +10460,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Riddle_Solved",
       "words": 73,
       "objectiveWords": 61,
-      "location": "East End / Gotham",
+      "location": "East End police station / Gotham",
       "maps": 0,
       "images": 0,
       "reasons": []
@@ -10559,7 +10559,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Sum_of_Its_Parts",
       "words": 88,
       "objectiveWords": 21,
-      "location": "Downtown Metropolis",
+      "location": "Downtown Metropolis Battlezone",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -10952,7 +10952,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/Tomorrow_Will_Be_Gigantic",
       "words": 67,
       "objectiveWords": 9,
-      "location": "Chinatown",
+      "location": "Chinatown nightclub",
       "maps": 0,
       "images": 1,
       "reasons": []
@@ -11440,7 +11440,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Captain_Cold",
       "words": 225,
       "objectiveWords": 5,
-      "location": "Midtown",
+      "location": "Midtown Police Station",
       "maps": 1,
       "images": 1,
       "reasons": [],
@@ -11630,7 +11630,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_The_Judge",
       "words": 198,
       "objectiveWords": 114,
-      "location": "Midtown",
+      "location": "Midtown MPD",
       "maps": 0,
       "images": 0,
       "reasons": [],
@@ -11666,7 +11666,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/WANTED%3A_Weather_Wizard",
       "words": 190,
       "objectiveWords": 5,
-      "location": "Chinatown",
+      "location": "Chinatown Police Station",
       "maps": 1,
       "images": 1,
       "reasons": [],
@@ -11957,7 +11957,7 @@
       "canonical": "https://dcuniverseonline.fandom.com/wiki/What_News%3F",
       "words": 13,
       "objectiveWords": 4,
-      "location": "Little Bohemia",
+      "location": "Little Bohemia Nightclub",
       "maps": 0,
       "images": 1,
       "reasons": [
@@ -12214,5 +12214,5 @@
       "reasons": []
     }
   ],
-  "enrichedAt": "2026-10-22T00:13:39.353Z"
+  "enrichedAt": "2026-10-22T00:16:24.182Z"
 }

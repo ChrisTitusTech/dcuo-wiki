@@ -151,6 +151,15 @@ test("equipment brands and episode titles cannot override geographic objectives 
 test("named open-world variants and geographic subregions keep their explicit context", () => {
   for (const [objective, expected] of [
     ["Assist Catwoman in BoP: Metropolis.", "BoP: Metropolis"],
+    [
+      "Travel to Downtown Metropolis Battlezone and defeat enemies.",
+      "Downtown Metropolis Battlezone",
+    ],
+    [
+      "Speak with Nightwing in the East End Police Station.",
+      "East End Police Station",
+    ],
+    ["Return to the Little Bohemia Nightclub.", "Little Bohemia Nightclub"],
     ["Rescue Lanterns on Mournful Mogo.", "Mournful Mogo"],
     [
       "Speak with Doctor Fate in the Magic Wing of the Watchtower.",

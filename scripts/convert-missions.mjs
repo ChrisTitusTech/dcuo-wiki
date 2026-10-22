@@ -3,6 +3,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { parse } from "parse5";
 import { convertReference } from "./convert-reference.mjs";
 import { htmlTables } from "./html-tables.mjs";
+import { missionAreaPattern } from "./mission-locations.mjs";
 import { classifyURL } from "./wiki-urls.mjs";
 export const normalizeTitle = (s) =>
   s
@@ -113,8 +114,7 @@ export function convertMission(cache, record) {
   );
   const objectiveText = objectiveSections.flatMap((s) => s.items).join(" ");
   // Location labels are exact excerpts from source prose, never invented coordinates.
-  const areas =
-    /\b(?:BoP: Metropolis|Homecoming: Titans Island|Mournful Mogo|Mera.s Royal Hideout|Gotham.s Otisburg|Kaznia City|Kaznian Necropolis|Laughing Hound Pub|Desecrated Mausoleum|The Reckoning.s Hideout|Blüdhaven|Bludhaven|Smallville|Metrodome|Typhon.s Monster Invasion|Knights Dome|Gotham Mercy Hospital|University Warehouse|The Vault|Gotham sewers|Sentinel base|S\.T\.A\.R\. Labs Research Facility|STAR Labs Facility|Downtown Metropolis|Metal Gotham City|Death Metal Washington, D\.C\.|Arkham Island|Downtown Metropolis Battlezone|31st Century: New Earth|Earth 3 Gotham|Metropolis Anti-Matter Invasion Zone|Apokoliptic Gotham City|Old Gotham Subway|Main Observation Deck|Monitor Womb|Glenmorgan Square|8th Precinct|Oblivion Bar|Gotham Mercy General Hospital|Mogo|Ranx.s Command Center|Command and Control Center|Frozen Mogo|HIVE Base|Centennial Park|Water Treatment Facility|Earth 3: The Panopticon|Lair of the Spectre|Lust.s Territory|East End Regal Hotel|Shadowlands|Monarch Playing Card Company|Bottled D\.C\.|Titans Island|Titans Tower|War-Torn Village|War-Torn Area 51|Doomed Washington, D\.C\.|Botanical Gardens|Knightsdome|Ace Chemicals|Steelworks|Arkham Asylum|Coast City|Gorilla Island|H\.I\.V\.E\. Moon Base|Oan Sciencells|Oolong Island|Stryker.s Island(?: Penitentiary)?|League of Assassins Stronghold|Cursed Gotham City|Chaos Gotham|Central City(?: Starro Deluge Zone)?|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|South Gotham|Otisburg|Chinatown|Historic District|Tomorrow District|Suicide Slums|Old Gotham|Gotham Wastelands|Gotham Under Siege|New Genesis|Patchwork Themyscira|Flashpoint Gotham City|Infernal Kahndaq|Dakota City|Doomed Metropolis|Amusement Mile|Cape Carmine|Robinson Park|Tricorner.s Yard|Crime Alley|University of Metropolis|Science Spire|Gotham University)|(?:East End|Little Bohemia|Midtown|Diamond District|North Burnley|Chinatown|Burnley) (?:Police Station|MPD|Nightclub)|(?:Gotham City|Gotham|Metropolis|Atlantis|Themyscira|Washington D\.C\.|Kahndaq|Thanagar|Apokolips|House of Legends|Hall of Doom|Watchtower|Area 51|Royal Hideout))(?=\W|$)/gi;
+  const areas = missionAreaPattern();
   const objectiveLocations = sections
     .filter((s) =>
       /^(?:Objectives?|Background|Location|Locations)$/i.test(s.title),
