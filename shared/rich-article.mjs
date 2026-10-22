@@ -1,3 +1,4 @@
+import { renderFeatText } from "./feat-meter.mjs";
 import { escapeHtml } from "./article-content.mjs";
 import { mediaAsset, renderMapLinks } from "./media.mjs";
 import { rewardContext, renderCurrencyText } from "./rewards.mjs";
@@ -332,7 +333,7 @@ export function renderDocument(doc, { editLinks = false } = {}) {
         let html =
           decorate && !n.marks?.some((m) => m.type === "code")
             ? renderCurrencyText(n.text)
-            : escapeHtml(n.text);
+            : renderFeatText(n.text);
         for (const mark of n.marks || []) {
           const tag = {
             bold: "strong",

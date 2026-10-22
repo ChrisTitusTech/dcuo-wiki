@@ -1,0 +1,156 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import videos from "../../../data/feat-video-research.json";
+import "../../styles/feats.css";
+---
+
+<Layout
+  title="Feat point-farming plan"
+  description="Plan DCUO feat sessions around preparation, nearby objectives, instance conditions and verified video chapters."
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/feats/">Feats</a>
+    <span>/</span>
+    <span>Point-farming plan</span>
+  </nav>
+  <h1>Build points with fewer wasted runs</h1>
+  <p class="lede">
+    Start with unearned objectives you can finish now, group nearby tasks, then
+    prepare coordinated instance attempts.
+  </p>
+  <p>
+    This order is an editorial plan based on documented requirements. It is not
+    a measured points-per-minute ranking. Your unlocked content, character,
+    completed feats, currency and group change the best route.
+  </p>
+  <ol class="farming-sequence">
+    <li>
+      <h2>Check your character before picking targets</h2>
+      <p>
+        Open the in-game Feats menu and remove completed objectives from your
+        list. Check faction, movement mode, level or combat rating, content
+        access and event availability. Keep reward stars separate from our
+        estimated difficulty bars.
+      </p>
+      <p>
+        <a href="/feats/?sort=priority&amp;quick=1">
+          Find higher-reward quick objectives
+        </a>
+        . The quick queue excludes explicit item preparation, counters,
+        progression and group conditions; it is a shortlist to inspect, not a
+        guarantee of a short completion time.
+      </p>
+    </li>
+    <li>
+      <h2>Finish a local sweep before travelling</h2>
+      <p>
+        Combine exploration checkpoints and other nearby objectives with
+        missions you already need. Open the linked map and objective list before
+        leaving. Add candidates to your session checklist, finish the local
+        area, then travel to the next group.
+      </p>
+      <p>
+        <a href="/feats/?group=Exploration%20Feats&amp;sort=priority">
+          Exploration objectives
+        </a>{" "}
+        ·{" "}
+        <a href="/feats/?group=Races%20Feats&amp;sort=priority">
+          Race objectives
+        </a>
+      </p>
+    </li>
+    <li>
+      <h2>Make a shopping list instead of buying blindly</h2>
+      <p>
+        Check partially completed style sets first. Separate items you can
+        afford now from Source Mark, event-currency, collection, crafting and
+        random-drop goals. Record missing pieces and exact costs in game; keep
+        expensive or unavailable sets out of a quick-objective session.
+      </p>
+      <p>
+        <a href="/feats/?q=styles&amp;sort=points">
+          Find style-set rewards and source lists
+        </a>
+        . Use the vendor-circuit video below for a preparation method, then
+        confirm the current vendor inventory and currency yourself.
+      </p>
+    </li>
+    <li>
+      <h2>Read every instance condition before queuing</h2>
+      <p>
+        Group feats by the actual mission or instance in your session checklist.
+        Pick the required Normal, Elite or Elite Plus variant and agree who
+        handles each mechanic. Compare timing, optional-enemy and no-knockout
+        conditions before the first pull.
+      </p>
+      <p>
+        Some objectives conflict, such as defeating an optional target versus
+        keeping it alive. Plan separate attempts when necessary. Related guides
+        and videos provide context; an instance video does not prove that every
+        feat is demonstrated.
+      </p>
+    </li>
+    <li>
+      <h2>Build counters while doing other useful content</h2>
+      <p>
+        Track repeat-completion, bounty, salvage and collection counters
+        alongside your chosen sessions. Check progress after the attempt. Read
+        all prerequisite feats before chasing a meta-feat reward; do not count
+        the same faction alternative or archived version twice.
+      </p>
+    </li>
+    <li>
+      <h2>Confirm the award and adjust the next session</h2>
+      <p>
+        Verify the feat popup or menu completion before checking an objective
+        off your personal list. Every 100 feat points gives one skill point. The
+        session total shows potential points from selected objectives, rather
+        than points already earned or a prediction of your exact skill-point
+        gain.
+      </p>
+      <p>
+        <a href="/feats/?sort=priority">Build your session checklist</a>
+      </p>
+    </li>
+  </ol>
+  <section>
+    <h2>Timestamped preparation walkthrough</h2>
+    {videos.records.map((v) => (
+      <article>
+        <h3>
+          <a href={v.url}>{v.title}</a>
+        </h3>
+        <p>
+          {v.evidence} Checked {videos.checked}. Chapters were checked against
+          English automatic captions; the gameplay was not independently
+          retested.
+        </p>
+        <iframe
+          class="farming-video"
+          src="https://www.youtube-nocookie.com/embed/we9yLQauGSA?start=13"
+          title={v.title}
+          loading="lazy"
+          allow="encrypted-media; picture-in-picture; fullscreen"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <ol>
+          {v.chapters.map((c) => (
+            <li>
+              <a href={`${v.url}&t=${c.startSeconds}s`}>
+                {Math.floor(c.startSeconds / 60)}:
+                {String(c.startSeconds % 60).padStart(2, "0")} - {c.title}
+              </a>
+              <p>{c.instruction}</p>
+            </li>
+          ))}
+        </ol>
+      </article>
+    ))}
+  </section>
+  <p>
+    <a href="/wiki/Feats/">Feat-point and skill-point reference</a> ·{" "}
+    <a href="/guides/">Mission guide library</a> ·{" "}
+    <a href="/releases/">Episodes and chapters</a>
+  </p>
+</Layout>

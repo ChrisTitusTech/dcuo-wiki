@@ -378,3 +378,45 @@ browser inspection confirmed the complete visual editor, full HTML source with
 maps/gallery/videos, and rendered preview. No production test edit was created.
 Evidence: `.import-cache/editor/production-acceptance.json` and
 `.import-cache/proofs/full-article-editor-live.jpg`.
+
+## Complete feat catalog (authorized October 21, 2026)
+
+- [x] Rename Progression navigation to Feats and provide a dedicated searchable catalog.
+- [x] Download linked feat source pages with Firecrawl, record coverage, and omit empty pages.
+- [x] Preserve every substantive feat requirement, reward points and source notes; add completion guidance and links to matching mission guides.
+- [x] Show a separate five-step estimated difficulty meter with an explanation; never derive it from feat stars/points.
+- [x] Validate import coverage, content/editor compatibility and browser/mobile filters.
+- [ ] Complete independent review, deployment and live acceptance.
+
+Keep grouped feat articles editable through the existing whole-article editor.
+Use stable anchors for individual feats and keep imported source attribution.
+Do not invent missing requirements or claim source completion strategies where
+only a requirement is documented. Publish only after local gates and review;
+verify Cloudflare and GitHub checks at the deployed main commit.
+
+Additional acceptance requested during import: organize feat farming into useful
+sessions, cross-reference matching mission guides, and check YouTube coverage.
+Show prerequisites, exact success/failure conditions, repeat/currency/event
+constraints and point rewards before the attempt. Keep long counters and costly
+or random collections out of the quick-objective queue. Rank by documented
+requirements and clearly label estimated effort; do not invent points per minute,
+compatibility between contradictory objectives or video timestamps.
+
+Local acceptance: 5,801 feat entries in 94 groups, 436 new articles including
+160 individual walkthroughs, and 310 prose item-list supplements. The complete
+Firecrawl manifest covers 424 URLs: 342 successful captures and 82 confirmed
+HTTP 404 pages omitted. Eleven rows without substantive source requirements
+are rejected. Existing 1,079 articles retain their content; Feats changes only
+its category and appends an explanation without moving existing sections.
+
+The resource audit links 367 entries to mission/instance guides, three to
+feat-named video titles and 305 to explicitly labeled instance overviews. One
+preparation video's automatic transcript supports five checked chapter links.
+These are documented planning methods, not measured points-per-minute claims.
+The session checklist excludes exact duplicates and historical entries from
+its total and keeps repeat counters and preparation out of the quick queue.
+
+Validation: 101 unit, 19 browser and 14 Cloudflare integration tests pass.
+The deploy dry run succeeds at 1,614 static files and 1,602.09 KiB compressed
+Worker size. All 686 new R2 objects pass public SHA-256 checks, and D1 mirrors
+all 2,058 media records. Binary media and raw captures remain outside Git.

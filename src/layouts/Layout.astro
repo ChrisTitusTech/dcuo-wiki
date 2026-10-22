@@ -89,7 +89,13 @@ const home = Astro.url.pathname === "/";
           <h2>Browse the wiki</h2>
           <nav aria-label="Categories">
             {categories.map((c) => (
-              <a href={`/?category=${encodeURIComponent(c)}#library`}>
+              <a
+                href={
+                  c === "Feats"
+                    ? "/feats/"
+                    : `/?category=${encodeURIComponent(c)}#library`
+                }
+              >
                 {c}
                 <span>{articles.filter((a) => a.category === c).length}</span>
               </a>

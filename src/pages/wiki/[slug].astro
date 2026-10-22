@@ -37,6 +37,13 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       <a href="#article-editor">Edit this page</a>
       <a href={article.history}>Source history ↗</a>
     </div>
+    {article.category === "Feats" && (
+      <p>
+        <a href="/feats/">
+          Find feats, completion plans and difficulty estimates
+        </a>
+      </p>
+    )}
     <nav class="release-links" aria-label="Content release">
       {releasesFor(article.slug).map((release) => (
         <a href={releaseHref(release.id)}>{release.label}</a>

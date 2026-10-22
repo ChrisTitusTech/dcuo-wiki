@@ -3,6 +3,7 @@ const input = document.querySelector<HTMLInputElement>("#search")!;
 const releaseSelect =
   document.querySelector<HTMLSelectElement>("#release-filter");
 const params = new URLSearchParams(location.search);
+if (params.get("category") === "Progression") params.set("category", "Feats");
 const categoryButtons = [
   ...root.querySelectorAll<HTMLButtonElement>("[data-category]"),
 ];

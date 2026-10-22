@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 1079,
+    "published": 1332,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -549,7 +549,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/15_Crazy_Nights_(Feat)",
       "title": "15_Crazy_Nights_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "15_Crazy_Nights_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -1284,7 +1285,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/6d%2C_7d..._Whatever_It_Takes_(Feat)",
       "title": "6d,_7d..._Whatever_It_Takes_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "6d_7d_Whatever_It_Takes_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -1479,7 +1481,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/99_Fearsome_Balloons_(Feat)",
       "title": "99_Fearsome_Balloons_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "99_Fearsome_Balloons_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -5556,7 +5559,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Age_of_Justice_Feats",
       "title": "Age_of_Justice_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Age_of_Justice_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke"
       ]
@@ -6406,7 +6410,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Alerts_Feats",
       "title": "Alerts_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Alerts_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke"
       ]
@@ -6415,7 +6420,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Alerts_Feats_(Old)",
       "title": "Alerts_Feats_(Old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Alerts_Feats_Old",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke"
       ]
@@ -6595,7 +6601,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/All_of_the_Lights_(Feat)",
       "title": "All_of_the_Lights_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "All_of_the_Lights_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -6649,7 +6656,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/All_the_Trimmings_(Feat)",
       "title": "All_the_Trimmings_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "All_the_Trimmings_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -7038,7 +7046,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Allies_Feats",
       "title": "Allies_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Allies_Feats_7",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -7915,7 +7924,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_I_Feats",
       "title": "Amazon_Fury_Part_I_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Amazon_Fury_Part_I_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -7942,7 +7952,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II_Feats",
       "title": "Amazon_Fury_Part_II_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Amazon_Fury_Part_II_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -7960,7 +7971,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III_Feats",
       "title": "Amazon_Fury_Part_III_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Amazon_Fury_Part_III_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -9293,7 +9305,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/An_Angry_Elf..._(Feat)",
       "title": "An_Angry_Elf..._(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "An_Angry_Elf_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -10166,7 +10179,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Anti-Claus_(Feat)",
       "title": "Anti-Claus_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Anti-Claus_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=And+Be+Quick+About+It%21+%28Heroes%29"
       ]
@@ -10853,7 +10867,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Apokolips_Enthusiast_(Feat)",
       "title": "Apokolips_Enthusiast_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Apokolips_Enthusiast_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=And+Be+Quick+About+It%21+%28Heroes%29"
       ]
@@ -12496,7 +12511,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Argo_Tourist_(Feat)",
       "title": "Argo_Tourist_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Argo_Tourist_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=And+Be+Quick+About+It%21+%28Heroes%29"
       ]
@@ -15591,7 +15607,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis_Feats",
       "title": "Atlantis_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Atlantis_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Arkham+Island+Official+Souvenir"
       ]
@@ -16251,7 +16268,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Attack_of_the_Anti-Monitor_Feats",
       "title": "Attack_of_the_Anti-Monitor_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Attack_of_the_Anti-Monitor_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -17036,7 +17054,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Azarath_Metrion_Zinthos_(Feat)",
       "title": "Azarath_Metrion_Zinthos_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Azarath_Metrion_Zinthos_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -17441,7 +17460,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bad_Guy_Buster_(Feat)",
       "title": "Bad_Guy_Buster_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Bad_Guy_Buster_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -18153,7 +18173,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Barnacle_Blast_(Feat)",
       "title": "Barnacle_Blast_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Barnacle_Blast_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -19927,7 +19948,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bases_Feats",
       "title": "Bases_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Bases_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Base+Items%3A+Cinema"
       ]
@@ -20152,7 +20174,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bat_Tracking_(Feat)",
       "title": "Bat_Tracking_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Bat_Tracking_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Base+Items%3A+Cinema"
       ]
@@ -21437,7 +21460,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Batman_vs._Apokolips_(Feat)",
       "title": "Batman_vs._Apokolips_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Batman_vs_Apokolips_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Base+Items%3A+Cinema"
       ]
@@ -22916,7 +22940,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/BeeHIVE_Yourself_(Feat)",
       "title": "BeeHIVE_Yourself_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "BeeHIVE_Yourself_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Battle+Lust+Aura+-+Hands%2C+Head%2C+Feet"
       ]
@@ -23258,7 +23283,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Beneath_the_Wreath_(Feat)",
       "title": "Beneath_the_Wreath_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Beneath_the_Wreath_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Battle+Lust+Aura+-+Hands%2C+Head%2C+Feet"
       ]
@@ -24563,7 +24589,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_Feats",
       "title": "Birds_of_Prey_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Birds_of_Prey_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Battle+Lust+Aura+-+Hands%2C+Head%2C+Feet"
       ]
@@ -27658,7 +27685,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bombs%2C_Ahoy!_(Feat)",
       "title": "Bombs,_Ahoy!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Bombs_Ahoy_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Black+Large+Crystal"
       ]
@@ -30870,7 +30898,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns_Feats",
       "title": "Brainiac_Returns_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Brainiac_Returns_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bombshell+Platinum+Poster+%28Purchased%29"
       ]
@@ -33550,7 +33579,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Busy_Work_(Feat)",
       "title": "Busy_Work_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Busy_Work_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bridge+to+Nowhere"
       ]
@@ -35853,7 +35883,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Casting_a_Long_Shadow_(Feat)",
       "title": "Casting_a_Long_Shadow_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Casting_a_Long_Shadow_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Campaign"
       ]
@@ -38446,7 +38477,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Checking_It_Twice_(Feat)",
       "title": "Checking_It_Twice_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Checking_It_Twice_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ]
@@ -38599,7 +38631,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Cheetahs_Never_Win_(Feat)",
       "title": "Cheetahs_Never_Win_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Cheetahs_Never_Win_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ]
@@ -38635,7 +38668,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Chemical_Spill_(Feat)",
       "title": "Chemical_Spill_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Chemical_Spill_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ]
@@ -39097,7 +39131,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Chillin_like_a_Villain_(Feat)",
       "title": "Chillin_like_a_Villain_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Chillin_like_a_Villain_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ]
@@ -41071,7 +41106,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Clock_Watcher_(Feat)",
       "title": "Clock_Watcher_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Clock_Watcher_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Cleansed+Malediction"
       ]
@@ -48760,7 +48796,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Cool_Off!_(Feat)",
       "title": "Cool_Off!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Cool_Off_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Concentrated+Power+Set+Aura+Box"
       ]
@@ -48805,7 +48842,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Cooperate_to_Eliminate_(Feat)",
       "title": "Cooperate_to_Eliminate_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Cooperate_to_Eliminate_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Concentrated+Power+Set+Aura+Box"
       ]
@@ -52334,7 +52372,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Cue_the_Ski_Chase_(Feat)",
       "title": "Cue_the_Ski_Chase_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Cue_the_Ski_Chase_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Creeping+Thorned+Vine"
       ]
@@ -53337,7 +53376,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Cyclone_Chaser_(Feat)",
       "title": "Cyclone_Chaser_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Cyclone_Chaser_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Creeping+Thorned+Vine"
       ]
@@ -54694,7 +54734,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_Feats",
       "title": "Dark_Knights_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Dark_Knights_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=DCPIII%2FSandbox-DoRTest"
       ]
@@ -55564,7 +55605,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Day_of_Reckoning_Feats",
       "title": "Day_of_Reckoning_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Day_of_Reckoning_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -57093,7 +57135,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Death_Blossom_(Feat)",
       "title": "Death_Blossom_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Death_Blossom_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -57266,7 +57309,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Death_of_Superman_Feats",
       "title": "Death_of_Superman_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Death_of_Superman_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -57565,7 +57609,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Decked_Halls_(Feat)",
       "title": "Decked_Halls_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Decked_Halls_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -58122,7 +58167,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Deluge_Feats",
       "title": "Deluge_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Deluge_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -59754,7 +59800,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Detox_(Feat)",
       "title": "Detox_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Detox_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ]
@@ -59954,7 +60001,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Devil_in_the_Details_(Feat)",
       "title": "Devil_in_the_Details_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Devil_in_the_Details_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ]
@@ -60497,7 +60545,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Digital_Pact_(Feat)",
       "title": "Digital_Pact_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Digital_Pact_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ]
@@ -60641,7 +60690,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dimensional_Fink_(Feat)",
       "title": "Dimensional_Fink_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Dimensional_Fink_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ]
@@ -61457,7 +61507,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Do_the_Light_Thing_(Feat)",
       "title": "Do_the_Light_Thing_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Do_the_Light_Thing_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ]
@@ -65434,7 +65485,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Drink_Up!_(Feat)",
       "title": "Drink_Up!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Drink_Up_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dominance+%26+Precision+V"
       ]
@@ -65970,7 +66022,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Duos_Feats",
       "title": "Duos_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Duos_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -66658,7 +66711,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3_Feats",
       "title": "Earth_3_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Earth_3_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -67039,7 +67093,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Eat_the_House_and_Home_(Feat)",
       "title": "Eat_the_House_and_Home_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Eat_the_House_and_Home_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -67403,7 +67458,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Electric_Avenue_(Feat)",
       "title": "Electric_Avenue_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Electric_Avenue_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -77592,7 +77648,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Envirotech_Thanks_You_(Feat)",
       "title": "Envirotech_Thanks_You_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Envirotech_Thanks_You_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77757,7 +77814,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_15_Feats",
       "title": "Episode_15_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_15_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77793,7 +77851,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_16_Feats",
       "title": "Episode_16_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_16_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77829,7 +77888,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_17_Feats",
       "title": "Episode_17_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_17_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77865,7 +77925,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_18_Feats",
       "title": "Episode_18_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_18_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77901,7 +77962,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_19_Feats",
       "title": "Episode_19_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_19_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77946,7 +78008,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_20_Feats",
       "title": "Episode_20_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_20_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77982,7 +78045,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_21_Feats",
       "title": "Episode_21_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_21_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78018,7 +78082,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_22_Feats",
       "title": "Episode_22_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_22_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78054,7 +78119,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_23_Feats",
       "title": "Episode_23_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_23_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78090,7 +78156,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_24_Feats",
       "title": "Episode_24_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_24_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78126,7 +78193,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_25_Feats",
       "title": "Episode_25_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_25_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78162,7 +78230,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_26_Feats",
       "title": "Episode_26_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Episode_26_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -79270,7 +79339,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Ever_Present_(Feat)",
       "title": "Ever_Present_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Ever_Present_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -79288,7 +79358,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Everyday_Hero_(Feat)",
       "title": "Everyday_Hero_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Everyday_Hero_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -80615,7 +80686,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Exploration_Feats",
       "title": "Exploration_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Exploration_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -80624,7 +80696,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Exploration_Feats_(old)",
       "title": "Exploration_Feats_(old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Exploration_Feats_old_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -82230,7 +82303,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fancy_Facsimile_(Feat)",
       "title": "Fancy_Facsimile_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fancy_Facsimile_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -82257,7 +82331,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fancy_Lad_(Feat)",
       "title": "Fancy_Lad_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fancy_Lad_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -82920,7 +82995,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fearful_Day_Feats",
       "title": "Fearful_Day_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fearful_Day_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -83995,7 +84071,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fight_for_the_Light_Feats",
       "title": "Fight_for_the_Light_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fight_for_the_Light_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -84629,7 +84706,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Find_the_Bat-Signal_(Feat)",
       "title": "Find_the_Bat-Signal_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Find_the_Bat-Signal_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -84910,7 +84988,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fire_Sale_(Feat)",
       "title": "Fire_Sale_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fire_Sale_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -85146,7 +85225,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/First_Bad_Seeds_Graffiti_Site_(Feat)",
       "title": "First_Bad_Seeds_Graffiti_Site_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "First_Bad_Seeds_Graffiti_Site_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -85174,7 +85254,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/First_Try_(Feat)",
       "title": "First_Try_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "First_Try_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -85314,7 +85395,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/FIVE_GOLDEN_RINGS!_Of_Fear..._(Feat)",
       "title": "FIVE_GOLDEN_RINGS!_Of_Fear..._(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "FIVE_GOLDEN_RINGS_Of_Fear_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -86028,7 +86110,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Flashback_or_Save_the_Universe_Feats",
       "title": "Flashback_or_Save_the_Universe_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Flashback_or_Save_the_Universe_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -87181,7 +87264,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Flight_to_Fights_(Feat)",
       "title": "Flight_to_Fights_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Flight_to_Fights_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Fighter%27s+Vanadium+Signet"
       ]
@@ -87813,7 +87897,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Follow_the_Light_(Feat)",
       "title": "Follow_the_Light_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Follow_the_Light_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Flying+Soul+Bow"
       ]
@@ -88842,7 +88927,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Four-Star_General_(Feat)",
       "title": "Four-Star_General_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Four-Star_General_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Flying+Soul+Bow"
       ]
@@ -88851,7 +88937,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fourth_Bad_Seeds_Graffiti_Site_(Feat)",
       "title": "Fourth_Bad_Seeds_Graffiti_Site_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fourth_Bad_Seeds_Graffiti_Site_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Flying+Soul+Bow"
       ]
@@ -89196,7 +89283,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Freedom_of_Power_Treaty_(Feat)",
       "title": "Freedom_of_Power_Treaty_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Freedom_of_Power_Treaty_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Flying+Soul+Bow"
       ]
@@ -89817,7 +89905,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fresh_Faced_Recruit_(Feat)",
       "title": "Fresh_Faced_Recruit_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Fresh_Faced_Recruit_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Flying+Soul+Bow"
       ]
@@ -89981,7 +90070,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/From_the_Land_of_Ice_and_Snow_(Feat)",
       "title": "From_the_Land_of_Ice_and_Snow_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "From_the_Land_of_Ice_and_Snow_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Flying+Soul+Bow"
       ]
@@ -94439,7 +94529,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/General_Feats",
       "title": "General_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "General_Feats_7",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Garland+of+Life"
       ]
@@ -94448,7 +94539,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/General_Feats_(Old)",
       "title": "General_Feats_(Old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "General_Feats_Old_8",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Garland+of+Life"
       ]
@@ -94790,7 +94882,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Get_All_the_Choppas_(Feat)",
       "title": "Get_All_the_Choppas_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Get_All_the_Choppas_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Garland+of+Life"
       ]
@@ -94799,7 +94892,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Get_to_the_Flashpoint_(Feat)",
       "title": "Get_to_the_Flashpoint_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Get_to_the_Flashpoint_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Garland+of+Life"
       ]
@@ -104480,7 +104574,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_I_Feats",
       "title": "Halls_of_Power_Part_I_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Halls_of_Power_Part_I_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -104498,7 +104593,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_II_Feats",
       "title": "Halls_of_Power_Part_II_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Halls_of_Power_Part_II_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -104822,7 +104918,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate_Feats",
       "title": "Hand_of_Fate_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Hand_of_Fate_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -105500,7 +105597,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Happy_Fraggin'_Holidays_(Feat)",
       "title": "Happy_Fraggin'_Holidays_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Happy_Fraggin_Holidays_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -105789,7 +105887,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Harley_Obsessive_at_All_(Feat)",
       "title": "Harley_Obsessive_at_All_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Harley_Obsessive_at_All_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -105951,7 +106050,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips_Feats",
       "title": "Harley_Quinn_vs._Apokolips_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Harley_Quinn_vs_Apokolips_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Harley+Quinn+vs.+Apokolips%3A+Loot+Cache"
       ]
@@ -106866,7 +106966,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/He's_Checking_It_Twice_(Feat)",
       "title": "He's_Checking_It_Twice_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "He_s_Checking_It_Twice_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Harley+Quinn+vs.+Apokolips%3A+Loot+Cache"
       ]
@@ -111410,7 +111511,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/HMMM..._BOP%3F_(Feat)",
       "title": "HMMM..._BOP?_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "HMMM_BOP_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -111503,7 +111605,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hold_this_Thread_(Feat)",
       "title": "Hold_this_Thread_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Hold_this_Thread_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -111621,7 +111724,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Holiday_Hijinks_(Feat)",
       "title": "Holiday_Hijinks_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Holiday_Hijinks_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -112206,7 +112310,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Home_for_the_Holidays_(Feat)",
       "title": "Home_for_the_Holidays_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Home_for_the_Holidays_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -112269,7 +112374,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Home_Turf_Feats",
       "title": "Home_Turf_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Home_Turf_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -112278,7 +112384,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Home_Turf_Feats_(old)",
       "title": "Home_Turf_Feats_(old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Home_Turf_Feats_old_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -112333,7 +112440,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Homecoming_Feats",
       "title": "Homecoming_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Homecoming_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -112668,7 +112776,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright_Feats",
       "title": "Hope_Burns_Bright_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Hope_Burns_Bright_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hoodie"
       ]
@@ -120297,7 +120406,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends_Feats",
       "title": "House_of_Legends_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "House_of_Legends_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -121216,7 +121326,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/I_Am_Legion_(Feat)",
       "title": "I_Am_Legion_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "I_Am_Legion_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -121643,7 +121754,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Ice_to_Meet_Hue_(Feat)",
       "title": "Ice_to_Meet_Hue_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Ice_to_Meet_Hue_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -122040,7 +122152,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Iconic_Styles_Feats",
       "title": "Iconic_Styles_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Iconic_Styles_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -122148,7 +122261,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/If_a_Tree_Falls_(Feat)",
       "title": "If_a_Tree_Falls_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "If_a_Tree_Falls_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -122613,7 +122727,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/In_the_Mist_(Feat)_(Heroes)",
       "title": "In_the_Mist_(Feat)_(Heroes)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "In_the_Mist_Feat_Heroes",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -123039,7 +123154,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Infernal_Decorator_(Feat)",
       "title": "Infernal_Decorator_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Infernal_Decorator_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -124137,7 +124253,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Invasive_Devices_of_Apokolips_(Feat)",
       "title": "Invasive_Devices_of_Apokolips_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Invasive_Devices_of_Apokolips_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -124950,7 +125067,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/It's_In_The_Cards_(Feat)",
       "title": "It's_In_The_Cards_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "It_s_In_The_Cards_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -125886,7 +126004,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Jingle_Bells!_Batman_Smells!_(Feat)",
       "title": "Jingle_Bells!_Batman_Smells!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Jingle_Bells_Batman_Smells_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -126490,7 +126609,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Joker's_Mayhem_Feats",
       "title": "Joker's_Mayhem_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Joker_s_Mayhem_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -126608,7 +126728,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Jolly_Justice_(Feat)",
       "title": "Jolly_Justice_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Jolly_Justice_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -126763,7 +126884,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Judas_Contract_Feats",
       "title": "Judas_Contract_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Judas_Contract_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -126961,7 +127083,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Just_Getting_Started_(Feat)",
       "title": "Just_Getting_Started_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Just_Getting_Started_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -126970,7 +127093,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Just-Ice_League_(Feat)",
       "title": "Just-Ice_League_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Just-Ice_League_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -127143,7 +127267,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed_Feats",
       "title": "Justice_League_Dark_Cursed_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Justice_League_Dark_Cursed_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -127208,7 +127333,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Feats",
       "title": "Justice_League_Dark_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Justice_League_Dark_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -128308,7 +128434,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Keeping_Booster_Busy_(Feat)",
       "title": "Keeping_Booster_Busy_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Keeping_Booster_Busy_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -128479,7 +128606,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Kick_D'etat_(Feat)",
       "title": "Kick_D'etat_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Kick_D_etat_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -128914,7 +129042,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Kltpzyxm_(Feat)",
       "title": "Kltpzyxm_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Kltpzyxm_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -129328,7 +129457,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Krypt-phony-an_(Feat)",
       "title": "Krypt-phony-an_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Krypt-phony-an_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -132542,7 +132672,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Legends_PvE_Feats",
       "title": "Legends_PvE_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Legends_PvE_Feats_10",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ]
@@ -132912,7 +133043,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Doom_Feats",
       "title": "Legion_of_Doom_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Legion_of_Doom_Feats_5",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ]
@@ -135616,7 +135748,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lightning_Strikes_Feats",
       "title": "Lightning_Strikes_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Lightning_Strikes_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -136708,7 +136841,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lois_Lane_Reporting_(Feat)",
       "title": "Lois_Lane_Reporting_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Lois_Lane_Reporting_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -136817,7 +136951,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion_Feats",
       "title": "Long_Live_the_Legion_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Long_Live_the_Legion_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -137344,7 +137479,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Love_Conquers_All_Feats",
       "title": "Love_Conquers_All_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Love_Conquers_All_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -139262,7 +139398,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Magnetic_Personality_(Feat)",
       "title": "Magnetic_Personality_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Magnetic_Personality_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Lovestruck+Painter"
       ]
@@ -142189,7 +142326,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Medieval_Mercenary_(Feat)",
       "title": "Medieval_Mercenary_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Medieval_Mercenary_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Manor+Lair"
       ]
@@ -143522,7 +143660,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I_Feats",
       "title": "Metal_Part_I_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Metal_Part_I_Feats_5",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Metal+Part+I"
       ]
@@ -143614,7 +143753,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II_Feats",
       "title": "Metal_Part_II_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Metal_Part_II_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Metal+Part+I"
       ]
@@ -148183,7 +148323,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Missions_Feats",
       "title": "Missions_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Missions_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Might+v43.4+Mod"
       ]
@@ -148599,7 +148740,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Mister_Mxyzptlk's_Mischief_Feats",
       "title": "Mister_Mxyzptlk's_Mischief_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Mister_Mxyzptlk_s_Mischief_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Might+v43.4+Mod"
       ]
@@ -150875,7 +151017,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Multi-dimensional_(Feat)",
       "title": "Multi-dimensional_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Multi-dimensional_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ]
@@ -153275,7 +153418,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Network_Hackery_(Feat)",
       "title": "Network_Hackery_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Network_Hackery_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -153302,7 +153446,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Network_Restoration_(Feat)",
       "title": "Network_Restoration_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Network_Restoration_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -154345,7 +154490,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Nine_Lights_of_Lovin'_(Feat)",
       "title": "Nine_Lights_of_Lovin'_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Nine_Lights_of_Lovin_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -154833,7 +154979,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/No_Monkeying_Around_(Feat)",
       "title": "No_Monkeying_Around_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "No_Monkeying_Around_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -154924,7 +155071,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Nobody_Burns_Me_(Feat)",
       "title": "Nobody_Burns_Me_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Nobody_Burns_Me_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -155068,7 +155216,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Northern_Lights_(Feat)",
       "title": "Northern_Lights_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Northern_Lights_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -155077,7 +155226,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Not_In_My_City!_(Feat)",
       "title": "Not_In_My_City!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Not_In_My_City_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -158959,7 +159109,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Origin_Crisis_Feats",
       "title": "Origin_Crisis_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Origin_Crisis_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Oasis+Khadga"
       ]
@@ -159715,7 +159866,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Outsiders_Ops_Feats",
       "title": "Outsiders_Ops_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Outsiders_Ops_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Otherworldly+Armored+Vest"
       ]
@@ -159787,7 +159939,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Over_the_Rainbow_(Feat)",
       "title": "Over_the_Rainbow_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Over_the_Rainbow_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Otherworldly+Armored+Vest"
       ]
@@ -163131,7 +163284,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Phantom_Zone_Enforcer_(Feat)",
       "title": "Phantom_Zone_Enforcer_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Phantom_Zone_Enforcer_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Perpetua+Necklace+Accessory"
       ]
@@ -179900,7 +180054,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Plant_Protector_(Feat)",
       "title": "Plant_Protector_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Plant_Protector_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Plans%3A+Static+Grenade+V"
       ]
@@ -180737,7 +180892,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Player_vs._Player_Feats",
       "title": "Player_vs._Player_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Player_vs_Player_Feats_7",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Plans%3A+Static+Grenade+V"
       ]
@@ -180746,7 +180902,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Player_vs._Player_Feats_(old)",
       "title": "Player_vs._Player_Feats_(old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Player_vs_Player_Feats_old_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Plans%3A+Static+Grenade+V"
       ]
@@ -182350,7 +182507,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Pot_of_Gold_(Feat)",
       "title": "Pot_of_Gold_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Pot_of_Gold_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Poison+Tongue%27s+Missions"
       ]
@@ -182512,7 +182670,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Pour_One_Out_(Feat)",
       "title": "Pour_One_Out_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Pour_One_Out_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Poison+Tongue%27s+Missions"
       ]
@@ -191549,7 +191708,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/R.I.P._Santa_(Feat)",
       "title": "R.I.P._Santa_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "R_I_P_Santa_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -191603,7 +191763,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/R%26D_Feats_(Old)",
       "title": "R&D_Feats_(Old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "R_D_Feats_Old_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -191819,7 +191980,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Races_Feats",
       "title": "Races_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Races_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -192164,7 +192326,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Raging_Night_Feats",
       "title": "Raging_Night_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Raging_Night_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -192399,7 +192562,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Raids_Feats",
       "title": "Raids_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Raids_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -192554,7 +192718,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Rainbows_in_the_Mist_(Feat)",
       "title": "Rainbows_in_the_Mist_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Rainbows_in_the_Mist_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -193232,7 +193397,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Re-Evolver_(Feat)",
       "title": "Re-Evolver_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Re-Evolver_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -196432,7 +196598,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Renown_Feats",
       "title": "Renown_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Renown_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Recruit"
       ]
@@ -200522,7 +200689,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Riddled_with_Crime_Feats",
       "title": "Riddled_with_Crime_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Riddled_with_Crime_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Retro-Futuristic"
       ]
@@ -202252,7 +202420,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Rogue_Leader_(Feat)",
       "title": "Rogue_Leader_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Rogue_Leader_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Retro-Futuristic"
       ]
@@ -202261,7 +202430,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Rogue_Red_Balloons_(Feat)",
       "title": "Rogue_Red_Balloons_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Rogue_Red_Balloons_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Retro-Futuristic"
       ]
@@ -202459,7 +202629,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Rokking_It_(Feat)",
       "title": "Rokking_It_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Rokking_It_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Retro-Futuristic"
       ]
@@ -203152,7 +203323,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Rubble_Rubble_Toil_and_Trouble_(Feat)",
       "title": "Rubble_Rubble_Toil_and_Trouble_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Rubble_Rubble_Toil_and_Trouble_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Royal+Guardsman"
       ]
@@ -204794,7 +204966,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Santa's_Little_Helper_(Feat)",
       "title": "Santa's_Little_Helper_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Santa_s_Little_Helper_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Royal+Guardsman"
       ]
@@ -207125,7 +207298,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Season's_Greedings_Feats",
       "title": "Season's_Greedings_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Season_s_Greedings_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Saving+Justice"
       ]
@@ -207153,7 +207327,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Seasonal_%26_Event_Feats",
       "title": "Seasonal_&_Event_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Seasonal_Event_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Saving+Justice"
       ]
@@ -207189,7 +207364,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Second_Bad_Seeds_Graffiti_Site_(Feat)",
       "title": "Second_Bad_Seeds_Graffiti_Site_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Second_Bad_Seeds_Graffiti_Site_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Saving+Justice"
       ]
@@ -209172,7 +209348,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Shadows_Over_Argo_Feats",
       "title": "Shadows_Over_Argo_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Shadows_Over_Argo_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -210290,7 +210467,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Shimmer_Me_Timbers_(Feat)",
       "title": "Shimmer_Me_Timbers_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Shimmer_Me_Timbers_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -210416,7 +210594,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Shiruta_Tourist_(Feat)",
       "title": "Shiruta_Tourist_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Shiruta_Tourist_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -210823,7 +211002,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System_Feats",
       "title": "Shock_to_the_System_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Shock_to_the_System_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -211466,7 +211646,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sick_Burn_(Feat)",
       "title": "Sick_Burn_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Sick_Burn_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -212648,7 +212829,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Six_Savage_Truths_(Feat)",
       "title": "Six_Savage_Truths_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Six_Savage_Truths_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Side+Quests"
       ]
@@ -214602,7 +214784,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Snow_Place_Like_Home_(Feat)",
       "title": "Snow_Place_Like_Home_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Snow_Place_Like_Home_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Side+Quests"
       ]
@@ -214647,7 +214830,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Snowball_Fight!_(Feat)",
       "title": "Snowball_Fight!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Snowball_Fight_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -214755,7 +214939,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/So_Metal_(Feat)",
       "title": "So_Metal_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "So_Metal_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -214846,7 +215031,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sock'em!_(Feat)",
       "title": "Sock'em!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Sock_em_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -215667,7 +215853,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Solo_Feats_(Old)",
       "title": "Solo_Feats_(Old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Solo_Feats_Old_8",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -215703,7 +215890,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Solos_Feats",
       "title": "Solos_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Solos_Feats_6",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -215893,7 +216081,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sons_of_Trigon_Feats",
       "title": "Sons_of_Trigon_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Sons_of_Trigon_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -216649,7 +216838,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Source_of_Robot_Parts_(Feat)",
       "title": "Source_of_Robot_Parts_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Source_of_Robot_Parts_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -218401,7 +218591,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Spikes_Spikes_Baby_(Feat)",
       "title": "Spikes_Spikes_Baby_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Spikes_Spikes_Baby_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ]
@@ -219095,7 +219286,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Springtime_Feats",
       "title": "Springtime_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Springtime_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ]
@@ -221200,7 +221392,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Starro_Event_Feats",
       "title": "Starro_Event_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Starro_Event_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ]
@@ -221281,7 +221474,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Starro_Stopper_(Feat)",
       "title": "Starro_Stopper_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Starro_Stopper_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ]
@@ -221625,7 +221819,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Starstruck_(Feat)",
       "title": "Starstruck_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Starstruck_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ]
@@ -221661,7 +221856,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Starting_with_the_Man_in_the_Mirror_(Feat)",
       "title": "Starting_with_the_Man_in_the_Mirror_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Starting_with_the_Man_in_the_Mirror_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ]
@@ -223232,7 +223428,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Stocks_of_Stockings_(Feat)",
       "title": "Stocks_of_Stockings_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Stocks_of_Stockings_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -223704,7 +223901,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Story_of_a_Blade_(Feat)",
       "title": "Story_of_a_Blade_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_of_a_Blade_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -223850,7 +224048,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Street_Art%3A_Bad_Seeds_Graffiti_(Feat)",
       "title": "Street_Art:_Bad_Seeds_Graffiti_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Street_Art_Bad_Seeds_Graffiti_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -224326,7 +224525,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Styles_Feats",
       "title": "Styles_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Styles_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -224372,7 +224572,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sub-Zero_Social_Hour_(Feat)",
       "title": "Sub-Zero_Social_Hour_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Sub-Zero_Social_Hour_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -228071,7 +228272,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Survival_Mode_Feats",
       "title": "Survival_Mode_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Survival_Mode_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -228585,7 +228787,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sweater_Weather_(Feat)",
       "title": "Sweater_Weather_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Sweater_Weather_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -230111,7 +230314,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Take_One_Down%2C_Pass_it_Around_(Feat)",
       "title": "Take_One_Down,_Pass_it_Around_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Take_One_Down_Pass_it_Around_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -230158,7 +230362,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Taken_for_Granite_(Feat)",
       "title": "Taken_for_Granite_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Taken_for_Granite_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -233279,7 +233484,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/That's_a_Gneiss_Rock!_(Feat)",
       "title": "That's_a_Gneiss_Rock!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "That_s_a_Gneiss_Rock_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -233480,7 +233686,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Battle_for_Earth_Feats",
       "title": "The_Battle_for_Earth_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Battle_for_Earth_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -233764,7 +233971,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Cold_Crusader_(Feat)",
       "title": "The_Cold_Crusader_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Cold_Crusader_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -233855,7 +234063,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Dark_Knight_vs._Apokolips_(Feat)",
       "title": "The_Dark_Knight_vs._Apokolips_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Dark_Knight_vs_Apokolips_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -234215,7 +234424,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_First_Light_of_the_First_Ring_(Feat)",
       "title": "The_First_Light_of_the_First_Ring_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_First_Light_of_the_First_Ring_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -234615,7 +234825,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Ice_is_Right_(Feat)",
       "title": "The_Ice_is_Right_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Ice_is_Right_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -234624,7 +234835,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Iceman_Cometh_(Feat)",
       "title": "The_Iceman_Cometh_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Iceman_Cometh_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -234745,7 +234957,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Knight_Shift_(Feat)",
       "title": "The_Knight_Shift_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Knight_Shift_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -234781,7 +234994,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Lantern_that_Stole_Christmas_(Feat)",
       "title": "The_Lantern_that_Stole_Christmas_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Lantern_that_Stole_Christmas_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -234845,7 +235059,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_Feats",
       "title": "The_Last_Laugh_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Last_Laugh_Feats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -234854,7 +235069,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_Feats_(old)",
       "title": "The_Last_Laugh_Feats_(old)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Last_Laugh_Feats_old_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -235370,7 +235586,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Plane!_The_Plane!_(Feat)",
       "title": "The_Plane!_The_Plane!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Plane_The_Plane_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -235435,7 +235652,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Question_Finally_Answered_(Feat)",
       "title": "The_Question_Finally_Answered_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Question_Finally_Answered_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -235765,7 +235983,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam_Feats",
       "title": "The_Sins_of_Black_Adam_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Sins_of_Black_Adam_Feats_5",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -236059,7 +236278,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Times_They_Are_A-Changin'_(Feat)",
       "title": "The_Times_They_Are_A-Changin'_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Times_They_Are_A-Changin_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -236310,7 +236530,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Witching_Hour_Feats",
       "title": "The_Witching_Hour_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "The_Witching_Hour_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -236636,7 +236857,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Theme_Styles_Feats",
       "title": "Theme_Styles_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Theme_Styles_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -237314,7 +237536,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Third_Bad_Seeds_Graffiti_Site_(Feat)",
       "title": "Third_Bad_Seeds_Graffiti_Site_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Third_Bad_Seeds_Graffiti_Site_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -237530,7 +237753,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Those_Wonderful_Toys_(Feat)",
       "title": "Those_Wonderful_Toys_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Those_Wonderful_Toys_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -237731,7 +237955,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Thrice_is_Not_Nice_(Feat)",
       "title": "Thrice_is_Not_Nice_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Thrice_is_Not_Nice_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -238042,7 +238267,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tides_of_War_Feats",
       "title": "Tides_of_War_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Tides_of_War_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -238241,7 +238467,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Timber!_(Feat)",
       "title": "Timber!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Timber_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -238296,7 +238523,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Time_Capsules_Feats",
       "title": "Time_Capsules_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Time_Capsules_Feats_23",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -239983,7 +240211,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Top_of_the_World_(Feat)",
       "title": "Top_of_the_World_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Top_of_the_World_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Third+World+Engine"
       ]
@@ -240567,7 +240796,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tragedy_in_Chaos_(Feat)",
       "title": "Tragedy_in_Chaos_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Tragedy_in_Chaos_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Tracy+W.+Bush"
       ]
@@ -242061,7 +242291,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Turret_Defense_(Feat)",
       "title": "Turret_Defense_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Turret_Defense_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Tracy+W.+Bush"
       ]
@@ -242160,7 +242391,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Twelve_Days_of_Larfleeze_(Feat)",
       "title": "Twelve_Days_of_Larfleeze_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Twelve_Days_of_Larfleeze_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Tracy+W.+Bush"
       ]
@@ -245738,7 +245970,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Up_All_Light_(Feat)",
       "title": "Up_All_Light_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Up_All_Light_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Unattuned+Captain%27s+Breastplate"
       ]
@@ -248353,7 +248586,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Visions_of_the_Corrupt_(Feat)",
       "title": "Visions_of_the_Corrupt_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Visions_of_the_Corrupt_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vaulty+the+Snowman"
       ]
@@ -248362,7 +248596,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Visions_of_the_Cursed_(Feat)",
       "title": "Visions_of_the_Cursed_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Visions_of_the_Cursed_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vaulty+the+Snowman"
       ]
@@ -248371,7 +248606,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Visions_of_the_Fallen_(Feat)",
       "title": "Visions_of_the_Fallen_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Visions_of_the_Fallen_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vaulty+the+Snowman"
       ]
@@ -251127,7 +251363,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Waddle_Waddle_(Feat)",
       "title": "Waddle_Waddle_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Waddle_Waddle_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -251235,7 +251472,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Walking_on_Sunshine_(Feat)",
       "title": "Walking_on_Sunshine_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Walking_on_Sunshine_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -252043,7 +252281,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_I_Feats",
       "title": "War_of_the_Light_Part_I_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "War_of_the_Light_Part_I_Feats_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -252070,7 +252309,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_II_Feats",
       "title": "War_of_the_Light_Part_II_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "War_of_the_Light_Part_II_Feats_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -254301,7 +254541,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/What's_Cooler_than_Being_Cool%3F_(Feat)",
       "title": "What's_Cooler_than_Being_Cool?_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "What_s_Cooler_than_Being_Cool_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -254403,7 +254644,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Where's_ME_gold%3F_(Feat)",
       "title": "Where's_ME_gold?_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Where_s_ME_gold_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -254430,7 +254672,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Whip_from_the_Hip_(Feat)",
       "title": "Whip_from_the_Hip_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Whip_from_the_Hip_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -254980,7 +255223,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Who_Are_You_Calling_a_Snowflake%3F_(Feat)",
       "title": "Who_Are_You_Calling_a_Snowflake?_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Who_Are_You_Calling_a_Snowflake_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -254989,7 +255233,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Who_Brought_the_Fruitcake%3F_(Feat)",
       "title": "Who_Brought_the_Fruitcake?_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Who_Brought_the_Fruitcake_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -255745,7 +255990,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Winter_Is_Coming_(Feat)",
       "title": "Winter_Is_Coming_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Winter_Is_Coming_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -255899,7 +256145,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Winter_Wonder_Land_(Feat)",
       "title": "Winter_Wonder_Land_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Winter_Wonder_Land_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -256941,7 +257188,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wonderverse_Feats",
       "title": "Wonderverse_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Wonderverse_Feats_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]
@@ -257310,7 +257558,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/World_of_Flashpoint_Feats",
       "title": "World_of_Flashpoint_Feats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "World_of_Flashpoint_Feats_5",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]
@@ -257688,7 +257937,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wouldn't_it_Be_Ice_(Feat)",
       "title": "Wouldn't_it_Be_Ice_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Wouldn_t_it_Be_Ice_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]
@@ -257697,7 +257947,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wrap_God_(Feat)",
       "title": "Wrap_God_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Wrap_God_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]
@@ -258468,7 +258719,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Yoink!_(Feat)",
       "title": "Yoink!_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Yoink_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]
@@ -258486,7 +258738,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/You_Got_Jammed_(Feat)",
       "title": "You_Got_Jammed_(Feat)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "You_Got_Jammed_Feat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]

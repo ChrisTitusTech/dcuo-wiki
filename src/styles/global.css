@@ -1115,3 +1115,10 @@ html.image-viewer-open { overflow: hidden; }
 .rich-article, #article-body { overflow-wrap: anywhere; }
 .rich-article .table-scroll p, #article-body .table-scroll p { margin: .25rem 0; }
 #article-toc .toc-subheading { padding-left: .8rem; font-size: .85rem; }
+
+/* Five bars communicate estimated effort; feat reward stars remain separate. */
+.difficulty-meter { display: inline-flex; gap: 3px; align-items: center; vertical-align: middle; margin-right: .3rem; }
+.difficulty-meter > span { display: block; width: 10px; height: 14px; border: 1px solid #8293a3; background: transparent; border-radius: 2px; }
+.difficulty-meter > .filled { background: #2389bb; border-color: #2389bb; }
+.difficulty-meter[aria-valuenow="4"] > .filled { background: #b56b17; border-color: #b56b17; }
+.difficulty-meter[aria-valuenow="5"] > .filled { background: #c24545; border-color: #c24545; }

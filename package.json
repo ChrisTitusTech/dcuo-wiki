@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "check": "astro check",
-    "build": "node scripts/inventory.mjs --check && node scripts/validate-content.mjs && astro build && node scripts/check-budget.mjs",
+    "build": "node scripts/inventory.mjs --check && node scripts/validate-content.mjs && node scripts/validate-feats.mjs && astro build && node scripts/check-budget.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "test": "node --test tests/*.test.mjs",
     "test:browser": "playwright test",

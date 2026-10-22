@@ -1,0 +1,63 @@
+{
+  "checked": "2026-10-22",
+  "records": [
+    {
+      "url": "https://www.youtube.com/watch?v=we9yLQauGSA",
+      "title": "Need More Skill Points? The Easiest Feats in DCUO (Quick Guide) DC Universe Tips and Tricks",
+      "scope": "Vendor style and salvage preparation route",
+      "status": "transcript-reviewed",
+      "evidence": "Reviewed the English auto-generated transcript. Supports a vendor style circuit and optional salvage planning; does not establish guaranteed point totals, costs or current vendor inventory.",
+      "chapters": [
+        {
+          "title": "Start a faction-appropriate vendor circuit",
+          "startSeconds": 13,
+          "instruction": "Use Gotham and Metropolis safehouse vendors for your faction. Check which styles are uncollected and which complete an unfinished set before purchasing."
+        },
+        {
+          "title": "Collect styles before moving to the next vendor",
+          "startSeconds": 95,
+          "instruction": "Collect the intended styles and restore your normal equipment before continuing. Verify the style and set counters in the Feats menu."
+        },
+        {
+          "title": "Optional salvage pass",
+          "startSeconds": 254,
+          "instruction": "If pursuing salvage feats, check eligibility and protect equipped, valuable and uncollected items before salvaging spare gear. This is optional and consumes the item."
+        },
+        {
+          "title": "Reduce travel between safehouses",
+          "startSeconds": 317,
+          "instruction": "Use safehouse transport to continue the circuit instead of repeatedly returning to the city warp menu."
+        },
+        {
+          "title": "Separate Source Mark purchases from the cash circuit",
+          "startSeconds": 508,
+          "instruction": "Inspect currency costs when moving to headquarters vendors. Make a separate plan for Source Mark purchases rather than spending the currency on an unchecked shopping list."
+        }
+      ]
+    }
+  ],
+  "named": [
+    {
+      "feat": "Fanboy",
+      "url": "https://www.youtube.com/watch?v=cKN2R3CoWyw",
+      "title": "Fanboy Feat Guide DCUO Open World Part 3",
+      "status": "title-verified",
+      "checked": "2026-10-22",
+      "evidence": "The public video title names this feat. No transcript was available for mechanical or timestamp verification; use the written requirement and map as the primary instructions."
+    },
+    {
+      "feat": "More Than You Can Chew",
+      "url": "https://www.youtube.com/watch?v=5A_XB4GLk78",
+      "title": "More Than You Can Chew Feat Guide DCUO Open world Feats Part 4",
+      "status": "title-verified",
+      "checked": "2026-10-22",
+      "evidence": "The public video title names this feat. No transcript was available for mechanical or timestamp verification; use the written requirement and map as the primary instructions."
+    }
+  ],
+  "unavailableTranscripts": [
+    "https://www.youtube.com/watch?v=FKL0d5bjP6Q",
+    "https://www.youtube.com/watch?v=95tFFpWEqGY",
+    "https://www.youtube.com/watch?v=xbQbIlt24vQ",
+    "https://www.youtube.com/watch?v=5A_XB4GLk78"
+  ]
+}

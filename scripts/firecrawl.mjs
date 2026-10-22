@@ -60,8 +60,12 @@ export async function scrape(
         body.data.metadata.statusCode !== 200) ||
       typeof body.data?.markdown !== "string" ||
       !body.data.markdown.trim()
-    )
-      throw new Error("No article content returned");
+    ) {
+      const error=new Error('No article content returned');
+      error.sourceStatus=body.data?.metadata?.statusCode;
+      error.capture=body.data;
+      throw error;
+    }
     return body.data;
   }
 }

@@ -1,3 +1,4 @@
+import { renderFeatText } from "./feat-meter.mjs";
 import { renderCurrencyText, rewardContext, isRewardPart } from "./rewards.mjs";
 import { renderMapLinks } from "./media.mjs";
 // Plain-text editing formats shared by static pages, the editor, and the Worker.
@@ -108,7 +109,7 @@ function url(value) {
 export function renderPart(part, value, { slug } = {}) {
   const rewards = isRewardPart(part, slug);
   const restored = rewards ? rewardContext(slug, part, value) : null;
-  const renderText = rewards ? renderCurrencyText : escapeHtml;
+  const renderText = rewards ? renderCurrencyText : renderFeatText;
   if (part.kind === "videos" && value === "")
     return "<p>No verified walkthrough listed.</p>";
   if (typeof value !== "string" || value.length > 7000 || !value.trim())

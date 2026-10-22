@@ -1,0 +1,235 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import catalog from "../../data/feats.json";
+import { releases } from "../../../shared/releases.mjs";
+import { difficultyMeter } from "../../../shared/feat-meter.mjs";
+import "../../styles/feats.css";
+const featured = catalog.feats.slice(0, 40);
+const used = new Set(catalog.feats.flatMap((f) => f.releases));
+---
+
+<Layout
+  title="Feats"
+  description="Find DC Universe Online feats, exact requirements, completion plans and estimated difficulty. Filter by category, Episode, DLC or chapter."
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Main page</a>
+    <span>/</span>
+    <span>Feats</span>
+  </nav>
+  <div class="section-heading">
+    <h1>Feats</h1>
+    <span class="badge">
+      {catalog.feats.length.toLocaleString()} feat entries
+    </span>
+  </div>
+  <p class="lede">
+    Find your next skill point. Search requirements, choose your content and
+    plan the attempt.
+  </p>
+  <div class="feat-explainer">
+    <p>
+      <strong>Difficulty: five bars, not stars.</strong> Our estimates reflect
+      mechanics, coordination and time investment. 1 Simple / 2 Routine / 3
+      Demanding / 4 Hard / 5 Extreme. Gear, group, luck and availability can
+      change the effort.
+    </p>
+    <p>
+      <strong>Feat points are separate:</strong> 1 star = 10, 2 = 25, 3 = 50 and
+      special 4-star rewards = 100. Every 100 feat points earns a skill point.{" "}
+      <a href="/wiki/Feats/">How feats work</a>
+    </p>
+    <p>
+      Completion plans explain the source requirement and offer planning advice.
+      They are not verified encounter walkthroughs. Follow each entry's guide
+      for source evidence and linked missions.
+    </p>
+  </div>
+  <p>
+    <a href="/feats/point-farming/">
+      Point-farming route: preparation, checkpoints and timestamped video
+      guidance
+    </a>
+  </p>
+  <section class="feat-session" aria-label="Your feat session">
+    <details>
+      <summary>
+        Build a point-farming session{" "}
+        <span id="session-total">No feats selected</span>
+      </summary>
+      <p>
+        Select unearned feats from the results. This local checklist groups
+        related content to reduce travel. Check faction, access and conflicting
+        objectives before queuing; a bundle may require several runs. Totals
+        exclude exact duplicate objectives and archived source versions.
+      </p>
+      <div id="feat-session"></div>
+      <button id="clear-feat-session" type="button">
+        Clear session
+      </button>
+    </details>
+  </section>
+  <section aria-label="Find feats" class="feat-library">
+    <div class="feat-controls">
+      <label for="feat-search">
+        Find a feat
+        <input
+          id="feat-search"
+          type="search"
+          placeholder="Name, boss, requirement, location..."
+          autocomplete="off"
+        />
+      </label>
+      <label for="feat-group">
+        Category / content
+        <select id="feat-group">
+          <option value="">All categories</option>
+          {catalog.groups.map((g) => (
+            <option value={g.title}>
+              {g.title} ({g.count})
+            </option>
+          ))}
+        </select>
+      </label>
+      <label for="feat-release">
+        Episode / DLC / chapter
+        <select id="feat-release">
+          <option value="">All releases</option>
+          {releases
+            .filter((r) => used.has(r.id))
+            .map((r) => (
+              <option value={r.id}>{r.label}</option>
+            ))}
+        </select>
+      </label>
+      <label for="feat-difficulty">
+        Estimated difficulty
+        <select id="feat-difficulty">
+          <option value="">All difficulties</option>
+          {["Simple", "Routine", "Demanding", "Hard", "Extreme"].map(
+            (label, i) => (
+              <option value={i + 1}>
+                {i + 1}/5 / {label}
+              </option>
+            ),
+          )}
+        </select>
+      </label>
+      <label for="feat-points">
+        Feat points
+        <select id="feat-points">
+          <option value="">All rewards</option>
+          {[10, 25, 50, 100].map((p) => (
+            <option value={p}>{p} points</option>
+          ))}
+          <option value="none">Other / not stated</option>
+        </select>
+      </label>
+    </div>
+    <div class="feat-plan-controls">
+      <label for="feat-sort">
+        Order
+        <select id="feat-sort">
+          <option value="name">Name</option>
+          <option value="priority">
+            Higher points / lower estimated effort
+          </option>
+          <option value="points">Most feat points</option>
+          <option value="difficulty">Lowest estimated difficulty</option>
+        </select>
+      </label>
+      <label>
+        <input type="checkbox" id="feat-quick" /> Quick objectives only (exclude
+        preparation, counters and groups)
+      </label>
+    </div>
+    <p id="feat-status" role="status">
+      Showing the first {featured.length} entries. Browse all category guides
+      below.
+    </p>
+    <div id="feat-results" class="feat-results">
+      {featured.map((f) => (
+        <article class="feat-result">
+          <div class="feat-result-heading">
+            <h2>
+              <a href={f.detailHref || f.href}>{f.title}</a>
+            </h2>
+            <strong class="feat-points">
+              {f.points === null ? f.reward : `${f.points} feat points`}
+            </strong>
+          </div>
+          <p class="feat-context">
+            {f.group}
+            {f.context !== "Feats" ? ` / ${f.context}` : ""}
+          </p>
+          <p>{f.requirement}</p>
+          <p class="feat-rating">
+            <Fragment
+              set:html={difficultyMeter(f.difficulty.level, f.difficulty.label)}
+            />{" "}
+            <span>
+              Estimated {f.difficulty.level}/5 / {f.difficulty.label}
+            </span>
+          </p>
+          <a class="feat-plan-link" href={f.detailHref || f.href}>
+            How to get this feat >
+          </a>
+        </article>
+      ))}
+    </div>
+    <div class="feat-pagination" id="feat-pagination" hidden>
+      <button id="feat-previous" type="button">
+        Previous
+      </button>
+      <span id="feat-page"></span>
+      <button id="feat-next" type="button">
+        Next
+      </button>
+    </div>
+    <noscript>
+      <p>
+        Search requires JavaScript. Every imported feat remains accessible in
+        the category guides below.
+      </p>
+    </noscript>
+  </section>
+  <section class="feat-categories">
+    <h2>All feat category guides</h2>
+    <p>
+      These are complete, editable articles. Open a part to read requirements,
+      completion plans, reward points and source links.
+    </p>
+    <div class="feat-category-grid">
+      {catalog.groups.map((g) => (
+        <details>
+          <summary>
+            {g.title} <span>{g.count}</span>
+          </summary>
+          <ul>
+            {g.guides.map((a) => (
+              <li>
+                <a href={`/wiki/${a.slug}/`}>{a.title}</a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      ))}
+    </div>
+  </section>
+  <section>
+    <h2>Dedicated feat walkthroughs</h2>
+    <details>
+      <summary>{catalog.walkthroughs.length} detailed source guides</summary>
+      <ul>
+        {catalog.walkthroughs.map((a) => (
+          <li>
+            <a href={`/wiki/${a.slug}/`}>{a.title}</a>
+          </li>
+        ))}
+      </ul>
+    </details>
+  </section>
+  <script>
+    import "../../scripts/feats";
+  </script>
+</Layout>

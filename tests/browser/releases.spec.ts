@@ -1,6 +1,11 @@
 import { test, expect } from "@playwright/test";
 import articles from "../../src/data/articles.json" with { type: "json" };
 import { releaseIdsFor } from "../../shared/releases.mjs";
+const releaseCount = (id: string) =>
+  Math.min(
+    48,
+    articles.filter((a) => releaseIdsFor(a.slug).includes(id)).length,
+  );
 test("guides hub combines release, category and search; shareable filters reset pagination", async ({
   page,
 }) => {
@@ -47,7 +52,9 @@ test("release catalog and arc chapters connect to missions without empty release
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Episode 1: Fight for the Light",
   );
-  await expect(page.locator(".card:visible")).toHaveCount(7);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    releaseCount("episode-1"),
+  );
   await page
     .getByRole("link", { name: /Alert T1: Oan Sciencells.*Heroes/ })
     .click();
@@ -55,7 +62,9 @@ test("release catalog and arc chapters connect to missions without empty release
     page.getByRole("navigation", { name: "Content release" }).getByRole("link"),
   ).toHaveAttribute("href", "/releases/episode-1/");
   await page.goto("/guides/?release=light-and-rain-chapter-3");
-  await expect(page.locator(".card:visible")).toHaveCount(6);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    releaseCount("light-and-rain-chapter-3"),
+  );
   await page.locator(".card:visible").first().click();
   await page
     .getByRole("navigation", { name: "Content release" })
@@ -65,7 +74,9 @@ test("release catalog and arc chapters connect to missions without empty release
     .getByRole("navigation", { name: "Breadcrumb" })
     .getByRole("link", { name: "Light and Rain", exact: true })
     .click();
-  await expect(page.locator(".card:visible")).toHaveCount(17);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    releaseCount("light-and-rain"),
+  );
   await expect(
     page
       .getByRole("navigation", { name: "Story arc chapters" })
@@ -92,7 +103,9 @@ test("previously empty Episodes contain instance guides with maps and explicit r
   page,
 }) => {
   await page.goto("/releases/episode-13/");
-  await expect(page.locator(".card:visible")).toHaveCount(6);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    releaseCount("episode-13"),
+  );
   await page
     .getByRole("link", { name: /Instances Return to the Nexus/ })
     .click();
@@ -107,11 +120,9 @@ test("previously empty Episodes contain instance guides with maps and explicit r
     /^https:\/\/images\.dcuo-wiki\.com\//,
   );
   await page.goto("/wiki/BOUNTY_New_Genesis_Protector/");
-  const rewards = page
-    .locator("section")
-    .filter({
-      has: page.getByRole("heading", { name: "Rewards", exact: true }),
-    });
+  const rewards = page.locator("section").filter({
+    has: page.getByRole("heading", { name: "Rewards", exact: true }),
+  });
   await expect(rewards).toContainText("1 Source Mark");
   await expect(rewards.locator(".reward-currency img").first()).toHaveAttribute(
     "src",

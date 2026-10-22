@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An Astro wiki for https://dcuo-wiki.com with 1,079 reviewed articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
+An Astro wiki for https://dcuo-wiki.com with 1,515 published articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
 
 ## Develop and validate
 
@@ -100,9 +100,35 @@ npm run validate
 
 The reward builder reads cached mission/instance captures and the Currency source capture at `.import-cache/release-guides/currency-source.json`. It restores currency labels dropped when the source used icons alone, and builds the currency icon registry. Reward display uses source context only when the current editable part still matches its original text. Player corrections retain their amounts and named currencies receive the same safe icon rendering. Historical currencies are retained by name; quantities are not converted or invented. Existing article parts and revision hashes remain unchanged. Upload and verify new media originals/previews and upsert D1 metadata using the [image storage workflow](docs/MEDIA.md) before deploying.
 
+## Feats and point farming
+
+The current feat import contains 5,801 entries across 94 groups, including faction and historical variants, with 160 individual walkthroughs. It inspects 424 source URLs: 342 successful captures and 82 confirmed 404 pages omitted. Eleven source rows lack substantive requirements and remain rejected. This is source coverage, not a claim that every current in-game feat has a verified walkthrough.
+
+`/feats/` provides individual objectives, separate reward-point and estimated-difficulty filters, content-release filters, and a local session checklist. The quick-objective queue excludes explicit item preparation, repeat counters, progression, group, seasonal and random-drop requirements. Priority scores are estimates from requirements, not measured points per minute. Grouped objectives may conflict and can require separate attempts; the checklist totals potential points and deduplicates identical named objectives. It does not infer which feats a character already owns.
+
+`/feats/point-farming/` explains preparation and attempt order. Source objectives and reward tiers stay intact. Five difficulty bars are provisional estimates of mechanics and effort, independent of the game's reward stars. Detailed source walkthroughs retain maps, images and source notes where available. Do not treat generic planning advice as a verified encounter strategy.
+
+```sh
+# Resumable Firecrawl discovery, with account-rate pacing and cached captures:
+node scripts/download-feats.mjs
+# Full conversion rejects unresolved downloads; partial imports cannot pass build:
+node scripts/import-feats.mjs
+node scripts/build-feat-resources.mjs
+node scripts/import-media.mjs --new-only
+npm run inventory
+npm run validate
+npm run test:browser
+npm run test:cloudflare
+npm run deploy:check
+```
+
+Upload and verify new R2 originals/previews and mirror their provenance in D1 before publication, using [the image workflow](docs/MEDIA.md). `data/feat-sources.json` records captures, aliases and missing/empty source pages. `data/feat-import.json` audits parsed rows, rejected placeholders and individual walkthrough dispositions. Category rows remain available when a linked individual source page is missing. The importer preserves existing article parts and community revision hashes; it appends the Feats explanation without changing original section IDs.
+
+`data/feat-resource-audit.json` distinguishes exact feat-name videos from related mission/instance overviews. `data/feat-video-research.json` records reviewed evidence and five transcript-checked preparation chapters. A matching title proves neither mechanics nor a successful feat attempt; only the reviewed preparation video has checked timestamps. Exact named-source links or corroborating objectives are required before attaching a same-name walkthrough. Rebuild resources after conversion, then validate and review the resulting catalog before deployment.
+
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,079 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,515 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory
