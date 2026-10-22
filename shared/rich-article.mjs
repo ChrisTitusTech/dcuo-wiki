@@ -305,12 +305,29 @@ export function documentHeadings(doc) {
 export function renderDocument(doc, { editLinks = false } = {}) {
   const headings = documentHeadings(doc);
   const headingIds = new Map(headings.map((h) => [h.node, h.id]));
-  function render(n, decorate = true) {
+  function blocks(children = [], inherited = false) {
+    let rewardLevels = [];
+    return children
+      .map((block) => {
+        if (block.type === "heading") {
+          rewardLevels = rewardLevels.filter(
+            (level) => level < block.attrs.level,
+          );
+          if (
+            /\b(?:rewards?|results?|loot|drops?)\b/i.test(documentText(block))
+          )
+            rewardLevels.push(block.attrs.level);
+        }
+        return render(block, inherited || rewardLevels.length > 0);
+      })
+      .join("");
+  }
+  function render(n, decorate = false) {
     const content = () =>
       (n.content || []).map((c) => render(c, decorate)).join("");
     switch (n.type) {
       case "doc":
-        return content();
+        return blocks(n.content);
       case "text": {
         let html =
           decorate && !n.marks?.some((m) => m.type === "code")
@@ -331,8 +348,12 @@ export function renderDocument(doc, { editLinks = false } = {}) {
         }
         return html;
       }
-      case "paragraph":
-        return `<p>${content()}</p>`;
+      case "paragraph": {
+        const rewards =
+          decorate ||
+          /^(?:rewards?|results?|loot|drops?)\s*:/i.test(documentText(n));
+        return `<p>${(n.content || []).map((c) => render(c, rewards)).join("")}</p>`;
+      }
       case "heading":
         return `${editLinks ? `<a class="section-edit" href="#article-editor" data-edit-part="${headingIds.get(n)}" aria-label="Edit ${escapeHtml(documentText(n))}">Edit section</a>` : ""}<h${n.attrs.level} id="${headingIds.get(n)}">${(n.content || []).map((c) => render(c, false)).join("")}</h${n.attrs.level}>`;
       case "hardBreak":
@@ -344,21 +365,29 @@ export function renderDocument(doc, { editLinks = false } = {}) {
       case "orderedList":
         return `<ol start="${n.attrs.start}">${content()}</ol>`;
       case "listItem":
-        return `<li>${content()}</li>`;
+        return `<li>${blocks(n.content, decorate)}</li>`;
       case "blockquote":
-        return `<blockquote>${content()}</blockquote>`;
+        return `<blockquote>${blocks(n.content, decorate)}</blockquote>`;
       case "codeBlock":
         return `<pre><code>${(n.content || []).map((c) => render(c, false)).join("")}</code></pre>`;
       case "image":
         return renderMapLinks([[n.attrs.alt, n.attrs.src]]);
-      case "table":
-        return `<div class="table-scroll" tabindex="0" role="region" aria-label="Article table"><table><tbody>${content()}</tbody></table></div>`;
+      case "table": {
+        const labels = (n.content[0]?.content || [])
+          .filter((cell) => cell.type === "tableHeader")
+          .map(documentText)
+          .join(" ");
+        const rewards =
+          decorate ||
+          /rewards?|currency|cash|marks|loot|drops?|cost|price/i.test(labels);
+        return `<div class="table-scroll" tabindex="0" role="region" aria-label="Article table"><table><tbody>${(n.content || []).map((row) => render(row, rewards)).join("")}</tbody></table></div>`;
+      }
       case "tableRow":
         return `<tr>${content()}</tr>`;
       case "tableCell":
       case "tableHeader": {
         const tag = n.type === "tableHeader" ? "th" : "td";
-        return `<${tag} colspan="${n.attrs.colspan}" rowspan="${n.attrs.rowspan}">${content()}</${tag}>`;
+        return `<${tag} colspan="${n.attrs.colspan}" rowspan="${n.attrs.rowspan}">${blocks(n.content, decorate)}</${tag}>`;
       }
       case "youtube": {
         const video = youtubeVideo(n.attrs.url);

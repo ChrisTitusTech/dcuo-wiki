@@ -346,7 +346,7 @@ JSON while bounding nested structure, links, tables and media. Source HTML is
 parsed into the supported editor schema; the server independently validates
 that schema and renders safe HTML. Existing R2 provenance remains attached.
 
-Local acceptance: all 1,079 articles convert; 83 unit tests, 16 site browser
+Local acceptance: all 1,079 articles convert; 85 unit tests, 16 site browser
 tests and 14 Cloudflare integration tests pass. The largest article completes
 the visual/source/preview flow, and published fixture headings, tables, media,
 history restore and deliberately reviewed conflict publishing are covered.
@@ -355,3 +355,15 @@ editor fits its viewport. The initial independent review identified long legacy
 summaries, fully spanned empty table rows, and generated section anchors; all
 three now have regression coverage. Legacy summaries up to 7,000 characters
 are retained, while full article bodies use the larger document limit.
+
+The completed follow-up navigation review found no actionable regressions.
+Reward currency decoration is limited to reward sections, explicit reward
+paragraphs and currency/reward tables, preserving the earlier currency work
+without adding currency icons to ordinary narrative words. The editor build
+contains 1,174 assets, well below the 20,000 platform limit.
+
+Final focused review found no actionable regressions and independently passed
+all seven rich-document tests. Whole-document guide-card titles, summaries and
+body search are covered by the Cloudflare fixture tests. Final local gates:
+85 unit, 16 site browser, 14 Cloudflare integration tests; deploy dry run at
+9,074.95 KiB raw / 1,100.62 KiB compressed. Production acceptance is pending.

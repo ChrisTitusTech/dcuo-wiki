@@ -243,6 +243,15 @@ test("full article revisions render live titles, body, contents, search, and res
   page,
   request,
 }) => {
+  await page.goto("/guides/");
+  await page.getByRole("searchbox").fill("Live full-article fixture");
+  await expect(page.locator(".card:visible")).toHaveCount(1);
+  await expect(page.locator(".card:visible h3")).toHaveText(
+    "Live fixture Grab and Smash guide",
+  );
+  await expect(page.locator(".card:visible p")).toContainText(
+    "A full-article fixture summary",
+  );
   const response = await request.get("/wiki/Grab_and_Smash/", {
     headers: { "If-None-Match": '\"old\"' },
   });

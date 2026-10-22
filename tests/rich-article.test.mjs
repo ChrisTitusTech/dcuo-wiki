@@ -177,3 +177,102 @@ test("vertical cell merges may cover an empty row while uncovered empty rows are
     validateDocument(doc([{ type: "table", content: [{ type: "tableRow" }] }])),
   );
 });
+
+test("currency icons stay in reward content rather than decorating ordinary prose", () => {
+  const h = (label, level = 2) => ({
+    type: "heading",
+    attrs: { level },
+    content: [{ type: "text", text: label }],
+  });
+  const document = validateDocument(
+    doc([
+      h("Overview"),
+      p("Their influence and prestige shaped this story."),
+      h("Rewards"),
+      p("1 Source Mark"),
+      h("Vendor", 3),
+      p("5 Cash"),
+      h("Walkthrough"),
+      p("The heroes paid tribute to their allies."),
+      {
+        type: "table",
+        content: [
+          {
+            type: "tableRow",
+            content: ["Currency", "Amount"].map((value) => ({
+              type: "tableHeader",
+              content: [p(value)],
+            })),
+          },
+          {
+            type: "tableRow",
+            content: ["Source Mark", "1"].map((value) => ({
+              type: "tableCell",
+              content: [p(value)],
+            })),
+          },
+        ],
+      },
+    ]),
+  );
+  const html = renderDocument(document).html;
+  assert.ok(
+    html.includes("Their influence and prestige shaped this story.</p>"),
+  );
+  assert.ok(html.includes("The heroes paid tribute to their allies.</p>"));
+  assert.equal((html.match(/class="reward-currency"/g) || []).length, 3);
+});
+
+test("nested reward headings decorate their own block containers without leaking into siblings", () => {
+  const h = (label) => ({
+    type: "heading",
+    attrs: { level: 2 },
+    content: [{ type: "text", text: label }],
+  });
+  const reward = [
+    h("Rewards"),
+    p("Complete the mission to earn 5 Cash."),
+    h("Walkthrough"),
+    p("Their influence shaped the story."),
+  ];
+  const containers = [
+    { type: "blockquote", content: reward },
+    {
+      type: "bulletList",
+      content: [
+        {
+          type: "listItem",
+          content: [p("A useful list item introduction."), ...reward],
+        },
+        { type: "listItem", content: [p("Their prestige shaped the story.")] },
+      ],
+    },
+    {
+      type: "table",
+      content: [
+        {
+          type: "tableRow",
+          content: [
+            { type: "tableCell", content: reward },
+            {
+              type: "tableCell",
+              content: [p("Their prestige shaped the story.")],
+            },
+          ],
+        },
+      ],
+    },
+  ];
+  for (const container of containers) {
+    const html = renderDocument(
+      validateDocument(
+        doc([container, p("Their influence and prestige shaped the ending.")]),
+      ),
+    ).html;
+    assert.equal((html.match(/class="reward-currency"/g) || []).length, 1);
+    assert.ok(html.includes("Their influence shaped the story.</p>"));
+    assert.ok(
+      html.includes("Their influence and prestige shaped the ending.</p>"),
+    );
+  }
+});
