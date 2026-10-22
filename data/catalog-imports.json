@@ -161,7 +161,16 @@
       "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_City",
       "status": "published",
       "slug": "Gotham_City",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham_City"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham_City",
+      "corrections": [
+        {
+          "field": "sections[13].title",
+          "before": "Episode 13: Amazon Fury Part III",
+          "after": "Episode 27: Amazon Fury Part III",
+          "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III",
+          "reason": "Source location article had an incorrect Episode number; reconciled with release catalog."
+        }
+      ]
     },
     {
       "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege",

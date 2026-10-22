@@ -643,3 +643,8 @@ stages remaining captures in sequential batches using ignored progress files;
 it cannot publish them or change hosting subscriptions. See
 [docs/CATALOG-IMPORT.md](docs/CATALOG-IMPORT.md) for recovery and review steps.
 Production acceptance and screenshot evidence belong in `.import-cache/catalog/`.
+
+Live acceptance also caught a source heading that labeled Amazon Fury Part III
+as Episode 13 in Gotham City. Corrected the heading to Episode 27 using the
+release catalog, with correction provenance in `data/catalog-imports.json`.
+Section position and body text remain unchanged.
