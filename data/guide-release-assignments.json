@@ -15370,6 +15370,774 @@
       "method": "story-source",
       "source": "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright",
       "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Allies",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Allies",
+      "evidence": "Allies is a system of iconic characters that provides assistance to players during gameplay."
+    },
+    {
+      "slug": "Atlantis_Location",
+      "ids": [
+        "episode-33"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Location)",
+      "evidence": "Atlantis is an open world zone for the episode Atlantis."
+    },
+    {
+      "slug": "Augment",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Augment",
+      "evidence": "Augments are fortifiable components designed to further empower characters, providing additional stats, content bonuses, or entirely new abilities. They were introduced with Game Update 85, along with the Teen Titans: The Judas Contract episode."
+    },
+    {
+      "slug": "Base_Items",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Bottled_D_C",
+      "ids": [
+        "episode-47"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Bottled_D.C.",
+      "evidence": "Bottled D.C. is the open world zone in the Brainiac Returns episode and event."
+    },
+    {
+      "slug": "Player_Briefings",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Player_Briefings",
+      "evidence": "Player Briefings are a collectible similar to investigations or collections. Their tokens are marked with a blue exclamation mark (!). Completing a player briefing will reward the player with a unique style or base item."
+    },
+    {
+      "slug": "Central_City",
+      "ids": [
+        "episode-2"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Central_City",
+      "evidence": "Central City is a city located across the Missouri River from Keystone City, in Kansas, best known as the home of the second Flash ( Barry Allen), The Fastest Man Alive."
+    },
+    {
+      "slug": "Character_Creation",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Character_Creation",
+      "evidence": "Character Creation (also known as Character generation or Character design) is the term used to refer to the process through which a player must go in order to create their own avatar."
+    },
+    {
+      "slug": "Styles",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Styles",
+      "evidence": "Styles are the visual appearances of items such as armor and weapons that can be worn or wielded by the player. Fully collectible, the player can customize the appearance of their character through collecting and combining different styles to best suit their tastes. Certain style pieces follow a theme and can be combined to form a full Style Set."
+    },
+    {
+      "slug": "Combat",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Combat",
+      "evidence": "In Combat, all weapon attacks excluding basic melee and ranged attacks are classified as either Interrupts or Block Breakers."
+    },
+    {
+      "slug": "Team_Roles",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Team_Roles",
+      "evidence": "A Team Role, or Combat Role, is a \"battle mode\" that boosts specific combat attributes for your character and group."
+    },
+    {
+      "slug": "Consumable_Items",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Consumable_Items",
+      "evidence": "Consumable Items include restoratives like Soder Colas and also transportation items that can be purchased from vendors in the police stations or at the headquarters ( House of Legends, JLA Watchtower, Hall of Doom)."
+    },
+    {
+      "slug": "Controller",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Controller",
+      "evidence": "A Controller is one of the four roles available in DCUO. This role focuses on restoring power to group members, debuffing Boss level opponents and incapacitating lower rank enemies. Controllers have specific debuff abilities that can lower an opponent's defense, healing or damage output. This role requires high Vitalization and Dominance. Each Controller power set has shields that are useful for activating controls..."
+    },
+    {
+      "slug": "Critical_Attack_Chance",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Chance",
+      "evidence": "Critical Attack Chance is the chance to perform a critical attack."
+    },
+    {
+      "slug": "Critical_Attack_Damage",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Damage",
+      "evidence": "Critical Attack Damage is the percentage increase of damage a critical attack does."
+    },
+    {
+      "slug": "Currency",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Currency",
+      "evidence": "Currency in DC Universe Online refers to tokens and cash used to obtain various items and equipment when trading with certain vendors and kiosks. There are several different forms of in-game currency, some can be obtained from defeating opponents and completing quests, while others can be earned through conversion with real world money. While the majority are available throughout the game, others still are only..."
+    },
+    {
+      "slug": "Damage",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Damage",
+      "evidence": "Damagers or Damage Per Second (D.P.S) are one of the 4 roles available in DCUO."
+    },
+    {
+      "slug": "Damage_over_Time",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Damage_over_Time",
+      "evidence": "Damage over Time (DOT) is provided by the DPS role. Damage over time can be caused by all powers and isn't shown as a buff or debuff. When an enemy is struck by DOT, their health will go down in small amounts as compared to straight forward burst damage. Damage over Time can only be provided by powers not weapons. The stat Might is required for damage over time to cause high damage."
+    },
+    {
+      "slug": "Equipment_Mods",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Equipment_Mods",
+      "evidence": "This subject has been replaced or otherwise rendered obsolete by various updates, downloadable content packages, or general system upgrades."
+    },
+    {
+      "slug": "Factions",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Factions",
+      "evidence": "Factions are the supporting companies that work to support certain heroes and villains by providing equipment and weapons."
+    },
+    {
+      "slug": "Gear",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gear",
+      "evidence": "Gear, sometimes also referred to as Armor, is equipment that increases the player character's combat abilities by raising his or her stats-"
+    },
+    {
+      "slug": "Gotham_City",
+      "ids": [
+        "core-game"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotham_City",
+      "evidence": "Gotham City is one of the oldest-established Eastern urban centres in the United States of America, located in the state of New Jersey."
+    },
+    {
+      "slug": "Gotham_Under_Siege",
+      "ids": [
+        "episode-10"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege",
+      "evidence": "Gotham Under Siege is the East End and Burnley districts of Gotham City transformed into a magical battlezone as the forces of Wonder Woman oppose the forces of Hippolyta/ Circe as they converge upon the city without discrimination to destroy Brainiac's remaining forces in Old Gotham."
+    },
+    {
+      "slug": "Gotham_Wastelands",
+      "ids": [
+        "episode-8"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotham_Wastelands",
+      "evidence": "The Gotham Wasteland is a pocket dimension-turned-war ground as the Sons of Trigon ( Wrath, Lust, Sloth, Greed, Gluttony and Envy) try to resurrect their father and corrupt their sister, Raven, to corrupt the Earth and turn it into their father's latest conquest."
+    },
+    {
+      "slug": "Hall_of_Doom",
+      "ids": [
+        "core-game"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hall_of_Doom",
+      "evidence": "The Hall of Doom is a submersible lair that acts as the main headquarters of the Villains."
+    },
+    {
+      "slug": "Healer",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Healer",
+      "evidence": "Healers are one of the basic roles available in DCUO. This role generally focuses on keeping the team alive by healing other group members and preventing damage with group shields. Healers have the ability to heal and buff their team mates with high levels of restoration. All healing powers specialize in different healing methods and it is therefore preferred that Raids and Operations have two different healing..."
+    },
+    {
+      "slug": "House_of_Legends",
+      "ids": [
+        "episode-41"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends",
+      "evidence": "The House of Legends is headquarters to Heroes and Villains alike and was introduced with the House of Legends episode."
+    },
+    {
+      "slug": "Iconic_Powers",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Iconic_Powers",
+      "evidence": "Iconic Powers are based on the powers of Iconic heroes and villains in the DC Universe. Iconic powers are available for all powers sets. Many Iconic powers are useful for theme or role play character builds such as Amazons, Kryptonians or Clowns. Some Iconic powers are power interaction starters while others provide utility functions."
+    },
+    {
+      "slug": "Kahndaq",
+      "ids": [
+        "episode-5",
+        "episode-27",
+        "episode-44"
+      ],
+      "method": "source-release-association",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Kahndaq",
+      "evidence": "Kahndaq is a country located in the Middle East between Egypt, Israel and Palestine on the northern part of the Sinai Peninsula; it is the homeland of Black Adam."
+    },
+    {
+      "slug": "Lairs_and_Hideouts",
+      "ids": [
+        "core-game"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lairs_and_Hideouts",
+      "evidence": "Available to player characters level 10 and above, Lairs and Hideouts (a.k.a. bases) are obtainable \"personal living spaces\" for a player's character to dwell."
+    },
+    {
+      "slug": "League_Halls",
+      "ids": [
+        "core-game"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/League_Halls",
+      "evidence": "League Halls are League-centric living spaces that serve as a meeting place, trophy room, shared canvas, and source of power for individual League groups."
+    },
+    {
+      "slug": "Metropolis",
+      "ids": [
+        "core-game"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metropolis",
+      "evidence": "Metropolis is one of the largest and most well-known cities in the United States and is the adopted hometown of Metropolis' favorite son, Superman."
+    },
+    {
+      "slug": "Movement_Increasing_Skills",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Movement_Increasing_Skills",
+      "evidence": "Passive Movement Skills that add functionality to a base movement mode."
+    },
+    {
+      "slug": "Movement_Modes",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Movement_Modes",
+      "evidence": "Chosen during Character Creation, a character's Movement Mode affects the character's speed, movement style, and maneuvers in combat. It also determines if the character is a flyer, speedster or jumps from building to building as an acrobat."
+    },
+    {
+      "slug": "Movement_Styles",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Movement_Styles",
+      "evidence": "Movement Styles are visually enhanced movement effects for all movement modes. Each style applies to all four movement modes and can be claimed by all characters on the account."
+    },
+    {
+      "slug": "Omnipotence",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Omnipotence",
+      "evidence": "Omnipotence may refer to any of the items in the category Omnipotence Gear, referring to gear with superior stats as compared to the current regular gear."
+    },
+    {
+      "slug": "Plans",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Plans",
+      "evidence": "Plans are one-use items related to Research and Development."
+    },
+    {
+      "slug": "Player_versus_Environment",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Environment",
+      "evidence": "Player versus Environment ( PvE) is a videogaming term used to describe a Player's interaction with a videogame's Environment objects or NPCs (computer controlled characters)."
+    },
+    {
+      "slug": "Player_versus_Player",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Player",
+      "evidence": "Player versus Player ( PvP) is a videogaming term used to describe a Player's interaction with other Players or PCs (Player operated characters) in a videogame."
+    },
+    {
+      "slug": "Research_and_Development",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Research_and_Development",
+      "evidence": "Since Brainiac's arrival, scientists and engineers have been working tirelessly to learn everything possible about the Exobytes Future Lex Luthor released into the atmosphere."
+    },
+    {
+      "slug": "Renown",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Renown",
+      "evidence": "Renown is one of the leveling systems in the DC Universe Online. Renown points are earned by completing specific missions in the game. Reaching a renown threshold with factions grants access to exclusive gear and feat points."
+    },
+    {
+      "slug": "Skill_points",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Skill_points",
+      "evidence": "Skill points (SP) are used to purchase skills."
+    },
+    {
+      "slug": "Soder_Cola",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Soder_Cola",
+      "evidence": "Soder Cola is a popular cola drink franchise in the DC Universe most known for their eternal rivalry with Zesti Cola, an addictive cola alternative."
+    },
+    {
+      "slug": "Supercharge",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Supercharge",
+      "evidence": "Supercharge is used to unleash extremely effective powers. It builds while performing abilities or weapon attacks and increases with each hit level on the hit counter."
+    },
+    {
+      "slug": "Tactical_Mods",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tactical_Mods",
+      "evidence": "Tactical Mods are Lair System Dispenser Items that can be used to buff the attack, defense or other abilities of the player. They are also referred to as White Mods sometimes and need to be unlocked in the mainframe before they become visible in the Dispenser via respective Tactical Mod Capsules."
+    },
+    {
+      "slug": "Tank",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tank",
+      "evidence": "The Tank or Defensive role is one of the four roles available in DC Universe Online."
+    },
+    {
+      "slug": "Traits",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Traits",
+      "evidence": "Traits are the Powers and Weapon sets that the player character possesses, the Movement Mode used to get around and enhance their abilities, the Stat Points used to level up abilities and stats, and the Loadouts used to organize and summon these traits."
+    },
+    {
+      "slug": "Trinkets",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Trinkets",
+      "evidence": "Trinkets can be equipped through your inventory screen. Once equipped they can then be used from your action bar. An equipped trinket is placed into the eighth slot on the action bar."
+    },
+    {
+      "slug": "Vendors",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Vendors",
+      "evidence": "Vendors are a very important part of the game, as they allow you to buy, sell, or repair armor and weapons for currency. Vendors can be found at Safehouses, the JLA Watchtower, the Hall of Doom, the House of Legends, world PVP events, or at the beginning area of alerts and raids."
+    },
+    {
+      "slug": "Watchtower",
+      "ids": [
+        "core-game"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Watchtower",
+      "evidence": "The Watchtower is an orbital space station that acts as the main headquarters of the Heroes."
+    },
+    {
+      "slug": "Weapon_Types",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weapon_Types",
+      "evidence": "Chosen during Character Creation, a character's Weapon is what defines their combat abilities. Some weapons specialize in ranged attacks, some in melee, and some dabble in both. That being said, all weapons possess melee and ranged attacks at varying levels of effectiveness depending on their specialty."
+    },
+    {
+      "slug": "Base_Items_1",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_2",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_3",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_4",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_5",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_6",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_7",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_8",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_9",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_10",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_11",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_12",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_13",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Base_Items_14",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "evidence": "A Base Item is an item dropped randomly by any enemies or bosses defeated by the player in any instance or in the open world once they reach level 12. Those items were introduced with the episode Home Turf and are used to decorate the player's base."
+    },
+    {
+      "slug": "Accessory",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Accessory",
+      "evidence": "Accessory is an item class and sub-class of equipment."
+    },
+    {
+      "slug": "Alerts",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Alerts",
+      "evidence": "Alerts are missions in DC Universe Online in which 4 players are joined together in a group and placed in an instance, the only exception being the very first alert players have access to, ALERT: Calling all Heroes!, and its villain counterpart, ALERT: Villains Wanted!, which are solo missions."
+    },
+    {
+      "slug": "Combat_Rating",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Combat_Rating",
+      "evidence": "Combat Rating (abbreviated CR) is a statistic possessed by player characters representing the overall power of their equipment. Combat rating is calculated by averaging the item levels of all of a player's possessed equipment items."
+    },
+    {
+      "slug": "Duo",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Duo",
+      "evidence": "Duos are two-player instances. Completing one rewards 2 Source Marks in addition to any boss loot."
+    },
+    {
+      "slug": "Exobyte_Augments",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Augments)",
+      "evidence": "Created by Brainiac, the Exobyte is a large nanite roughly the size of a flea. Capable of downloading near infinite amounts of data and energy, the nanite is capable of killing an opponent by entering their body and digitizing them cell by cell, usually analyzing them in the process."
+    },
+    {
+      "slug": "Exobyte_Pre-Augments",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Pre-Augments)",
+      "evidence": "This subject has been replaced or otherwise rendered obsolete by various updates, downloadable content packages, or general system upgrades."
+    },
+    {
+      "slug": "Infernal_Kahndaq",
+      "ids": [
+        "episode-44"
+      ],
+      "method": "source-release-badge-or-introduction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Infernal_Kahndaq",
+      "evidence": "Infernal Kahndaq is the open world zone in the The Sins of Black Adam episode and event."
+    },
+    {
+      "slug": "Instance",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Instance",
+      "evidence": "Instance is a term used to describe areas of a MMORPG that are generated when a player or small group of players enters into them. Many copies of an instance can be running at the same time. In DC Universe Online there are the following types of instance."
+    },
+    {
+      "slug": "Item_Level",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Item_Level",
+      "evidence": "Item Level is a statistic possessed by all equippable items (other than consumables), representing the general PvE power level of the item comparable to other items. Item level has no relationship to character level, and characters of any level can equip items of any item level, providing they meet any other requirements of the item (i.e. Player Level Requirements or Role-specific). The item levels of all a player's..."
+    },
+    {
+      "slug": "Items",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Items",
+      "evidence": "The following is a list of types of available items in DC Universe Online."
+    },
+    {
+      "slug": "Level",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Level",
+      "evidence": "Levels are used to measure the general strength and combat abilities of a new character. Players unlock many basic features of the game by levelling up. The level cap is currently 30."
+    },
+    {
+      "slug": "Metropolis_Battlezone",
+      "ids": [
+        "episode-9",
+        "episode-12"
+      ],
+      "method": "source-release-badge-or-introduction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Battlezone",
+      "evidence": "Metropolis Battlezone is a part of Metropolis where the War of the Light has emerged. It has two main areas, the Downtown Metropolis Battlezone stretching from the eastern half of Centennial Park to LexCorp Tower, and the Historic District south and east of LexCorp Tower."
+    },
+    {
+      "slug": "New_Genesis",
+      "ids": [
+        "episode-14"
+      ],
+      "method": "source-release-badge-or-introduction",
+      "source": "https://dcuniverseonline.fandom.com/wiki/New_Genesis",
+      "evidence": "New Genesis is a realm of light, order life and creation. An idyllic, angelic dream of a planet filled with unspoiled forests, mountains, and rivers. Populated by the benevolent New Gods, New Genesis is ruled by the Highfather and opposed by its twin-planet, Apokolips. While the planet's surface is populated by a sentient race known as the Bugs, the planet's only known urban location is Celestial City; a floating..."
+    },
+    {
+      "slug": "Nth_Metal_Artifacts",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Nth_Metal_(Artifacts)",
+      "evidence": "Nth Metal is the core reagent for upgrading Artifacts. Once player characters have acquired their first Artifact, they will be able to find Nth Metal as a rare drop from defeating NPCs. In addition, large caches of Nth Metal will become available by completing the Stabilizer Event."
+    },
+    {
+      "slug": "On_Duty",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/On_Duty",
+      "evidence": "The On Duty menu, accessible by hitting the Y key by default for PC or via the Menu Interface on consoles, allows players to queue for various instances, arranged by Tier."
+    },
+    {
+      "slug": "R_D_Station",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/R%26D_Station",
+      "evidence": "A R&D Station a.k.a. R&D Workstation is a device with which Exobyte related research and development can be carried out."
+    },
+    {
+      "slug": "Races",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Races",
+      "evidence": "Races can be found in both Gotham City and Metropolis. Each race has four possible finishing times, Platinum, Gold, Silver, Bronze. Finishing a race with a platinum time for the first time awards experience."
+    },
+    {
+      "slug": "Raids",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raids",
+      "evidence": "Raids are instanced locations where 8 players come together to take on the challenges of the raid. Raids yield powerful equipment and a large amount of marks and episode-specific currency but have a very high difficulty."
+    },
+    {
+      "slug": "Stats",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stats",
+      "evidence": "Below is a listing of all the statistics for a character. Statistics determine how a character will fare in a battle against another character and are increased by gaining levels or spending skill points on specific abilities that can temporarily enhance character stats. Retroactively, specific abilities can also be used to temporarily decrease character stats."
+    },
+    {
+      "slug": "Stats_Revamp_2017",
+      "ids": [
+        "game-systems"
+      ],
+      "method": "category-foundation",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Stats_Revamp_(2017)",
+      "evidence": "The Stats Revamp was introduced with game update 73 and totally removed the CR differential stats equations introduced with game update 47."
     }
   ]
 }

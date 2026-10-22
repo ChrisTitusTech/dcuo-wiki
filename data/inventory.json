@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 1403,
+    "published": 1474,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -3521,7 +3521,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Accessory",
       "title": "Accessory",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Accessory",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -6403,7 +6404,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Alerts",
       "title": "Alerts",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Alerts",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke"
       ]
@@ -7039,7 +7041,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Allies",
       "title": "Allies",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Allies",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -15568,7 +15571,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Location)",
       "title": "Atlantis_(Location)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Atlantis_Location",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Arkham+Island+Official+Souvenir"
       ]
@@ -16330,7 +16334,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Augment",
       "title": "Augment",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Augment",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -18668,7 +18673,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
       "title": "Base_Items",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Base_Items_14",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ]
@@ -29271,7 +29277,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bottled_D.C.",
       "title": "Bottled_D.C.",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Bottled_D_C",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bombshell+Platinum+Poster+%28Purchased%29"
       ]
@@ -37455,7 +37462,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Central_City",
       "title": "Central_City",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Central_City",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Campaign"
       ]
@@ -38233,7 +38241,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Character_Creation",
       "title": "Character_Creation",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Character_Creation",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ]
@@ -46257,7 +46266,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Combat",
       "title": "Combat",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Combat",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Collections%3A+Me+Versus+You"
       ]
@@ -46293,7 +46303,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Combat_Rating",
       "title": "Combat_Rating",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Combat_Rating",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Collections%3A+Me+Versus+You"
       ]
@@ -47813,7 +47824,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Consumable_Items",
       "title": "Consumable_Items",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Consumable_Items",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Concentrated+Power+Set+Aura+Box"
       ]
@@ -48462,7 +48474,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Controller",
       "title": "Controller",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Controller",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Concentrated+Power+Set+Aura+Box"
       ]
@@ -50703,7 +50716,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Chance",
       "title": "Critical_Attack_Chance",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Critical_Attack_Chance",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Creeping+Thorned+Vine"
       ]
@@ -50712,7 +50726,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Damage",
       "title": "Critical_Attack_Damage",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Critical_Attack_Damage",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Creeping+Thorned+Vine"
       ]
@@ -52735,7 +52750,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Currency",
       "title": "Currency",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Currency",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Creeping+Thorned+Vine"
       ]
@@ -53967,7 +53983,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Damage",
       "title": "Damage",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Damage",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=DCPIII%2FSandbox-DoRTest"
       ]
@@ -53994,7 +54011,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Damage_over_Time",
       "title": "Damage_over_Time",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Damage_over_Time",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=DCPIII%2FSandbox-DoRTest"
       ]
@@ -65959,7 +65977,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Duo",
       "title": "Duo",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Duo",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Cape_Carmine_Lighthouse",
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
@@ -78754,7 +78773,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Equipment_Mods",
       "title": "Equipment_Mods",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Equipment_Mods",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -79703,7 +79723,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Augments)",
       "title": "Exobyte_(Augments)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Exobyte_Augments",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -79712,7 +79733,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Pre-Augments)",
       "title": "Exobyte_(Pre-Augments)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Exobyte_Pre-Augments",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ]
@@ -81848,7 +81870,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Factions",
       "title": "Factions",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Factions",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -94252,7 +94275,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gear",
       "title": "Gear",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Gear",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Garland+of+Life"
       ]
@@ -98299,7 +98323,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_City",
       "title": "Gotham_City",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Gotham_City",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Godseye+Pyramid+%28Location%29"
@@ -99203,7 +99228,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege",
       "title": "Gotham_Under_Siege",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Gotham_Under_Siege",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Godseye+Pyramid+%28Location%29"
       ]
@@ -99323,7 +99349,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Wastelands",
       "title": "Gotham_Wastelands",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Gotham_Wastelands",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Godseye+Pyramid+%28Location%29"
       ]
@@ -104170,7 +104197,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hall_of_Doom",
       "title": "Hall_of_Doom",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Hall_of_Doom",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -107237,7 +107265,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Healer",
       "title": "Healer",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Healer",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Harley+Quinn+vs.+Apokolips%3A+Loot+Cache"
       ]
@@ -120380,7 +120409,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends",
       "title": "House_of_Legends",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "House_of_Legends",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -122181,7 +122211,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Iconic_Powers",
       "title": "Iconic_Powers",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Iconic_Powers",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -123220,7 +123251,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Infernal_Kahndaq",
       "title": "Infernal_Kahndaq",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Infernal_Kahndaq",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -123872,7 +123904,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Instance",
       "title": "Instance",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Instance",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -125160,7 +125193,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Item_Level",
       "title": "Item_Level",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Item_Level",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -125178,7 +125212,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Items",
       "title": "Items",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Items",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Iconic+Equipment"
       ]
@@ -127563,7 +127598,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Kahndaq",
       "title": "Kahndaq",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Kahndaq",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -130681,7 +130717,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lairs_and_Hideouts",
       "title": "Lairs_and_Hideouts",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Lairs_and_Hideouts",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ]
@@ -132181,7 +132218,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/League_Halls",
       "title": "League_Halls",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "League_Halls",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ]
@@ -133800,7 +133838,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Level",
       "title": "Level",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Level",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ]
@@ -144381,7 +144420,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Metropolis",
       "title": "Metropolis",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Metropolis",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Metal+Part+I"
       ]
@@ -144426,7 +144466,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Battlezone",
       "title": "Metropolis_Battlezone",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Metropolis_Battlezone",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Metal+Part+I"
       ]
@@ -150554,7 +150595,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Movement_Increasing_Skills",
       "title": "Movement_Increasing_Skills",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Movement_Increasing_Skills",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ]
@@ -150572,7 +150614,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Movement_Modes",
       "title": "Movement_Modes",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Movement_Modes",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ]
@@ -150581,7 +150624,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Movement_Styles",
       "title": "Movement_Styles",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Movement_Styles",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ]
@@ -153659,7 +153703,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/New_Genesis",
       "title": "New_Genesis",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "New_Genesis",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -155385,7 +155430,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Nth_Metal_(Artifacts)",
       "title": "Nth_Metal_(Artifacts)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Nth_Metal_Artifacts",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Neon+Urban+Camo+Chroma+Pack"
       ]
@@ -157589,7 +157635,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Omnipotence",
       "title": "Omnipotence",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Omnipotence",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Oasis+Khadga"
       ]
@@ -157652,7 +157699,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/On_Duty",
       "title": "On_Duty",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "On_Duty",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Oasis+Khadga"
       ]
@@ -164337,7 +164385,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Plans",
       "title": "Plans",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Plans",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Perpetua+Necklace+Accessory"
       ]
@@ -180853,7 +180902,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Player_Briefings",
       "title": "Player_Briefings",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Player_Briefings",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Plans%3A+Static+Grenade+V"
       ]
@@ -180925,7 +180975,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Environment",
       "title": "Player_versus_Environment",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Player_versus_Environment",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Plans%3A+Static+Grenade+V"
       ]
@@ -180934,7 +180985,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Player",
       "title": "Player_versus_Player",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Player_versus_Player",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Plans%3A+Static+Grenade+V"
       ]
@@ -191888,7 +191940,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/R%26D_Station",
       "title": "R&D_Station",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "R_D_Station",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -192023,7 +192076,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Races",
       "title": "Races",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Races",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -192606,7 +192660,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Raids",
       "title": "Raids",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Raids",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -196624,7 +196679,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Renown",
       "title": "Renown",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Renown",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Recruit"
       ]
@@ -197132,7 +197188,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Research_and_Development",
       "title": "Research_and_Development",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Research_and_Development",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Requisitions-T234-VW"
       ]
@@ -213282,7 +213339,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Skill_points",
       "title": "Skill_points",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Skill_points",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Side+Quests"
       ]
@@ -215115,7 +215173,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Soder_Cola",
       "title": "Soder_Cola",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Soder_Cola",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -222355,7 +222414,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Stats",
       "title": "Stats",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Stats",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -222364,7 +222424,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Stats_Revamp_(2017)",
       "title": "Stats_Revamp_(2017)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Stats_Revamp_2017",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -224565,7 +224626,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Styles",
       "title": "Styles",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Styles",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -225758,7 +225820,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Supercharge",
       "title": "Supercharge",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Supercharge",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Summoner%27s+Mystic+Gloves"
       ]
@@ -230191,7 +230254,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tactical_Mods",
       "title": "Tactical_Mods",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Tactical_Mods",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -230801,7 +230865,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tank",
       "title": "Tank",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Tank",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -231296,7 +231361,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Team_Roles",
       "title": "Team_Roles",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Team_Roles",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -240945,7 +241011,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Traits",
       "title": "Traits",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Traits",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Tracy+W.+Bush"
       ]
@@ -241947,7 +242014,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Trinkets",
       "title": "Trinkets",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Trinkets",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Tracy+W.+Bush"
       ]
@@ -247219,7 +247287,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Vendors",
       "title": "Vendors",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Vendors",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vaulty+the+Snowman"
       ]
@@ -253097,7 +253166,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Watchtower",
       "title": "Watchtower",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Watchtower",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -253956,7 +254026,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Weapon_Types",
       "title": "Weapon_Types",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Weapon_Types",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]

@@ -4774,5 +4774,263 @@
   ],
   "Story_light_and_rain_chapter_4": [
     "light-and-rain-chapter-4"
+  ],
+  "Allies": [
+    "game-systems"
+  ],
+  "Atlantis_Location": [
+    "episode-33"
+  ],
+  "Augment": [
+    "game-systems"
+  ],
+  "Base_Items": [
+    "game-systems"
+  ],
+  "Bottled_D_C": [
+    "episode-47"
+  ],
+  "Player_Briefings": [
+    "game-systems"
+  ],
+  "Central_City": [
+    "episode-2"
+  ],
+  "Character_Creation": [
+    "game-systems"
+  ],
+  "Styles": [
+    "game-systems"
+  ],
+  "Combat": [
+    "game-systems"
+  ],
+  "Team_Roles": [
+    "game-systems"
+  ],
+  "Consumable_Items": [
+    "game-systems"
+  ],
+  "Controller": [
+    "game-systems"
+  ],
+  "Critical_Attack_Chance": [
+    "game-systems"
+  ],
+  "Critical_Attack_Damage": [
+    "game-systems"
+  ],
+  "Currency": [
+    "game-systems"
+  ],
+  "Damage": [
+    "game-systems"
+  ],
+  "Damage_over_Time": [
+    "game-systems"
+  ],
+  "Equipment_Mods": [
+    "game-systems"
+  ],
+  "Factions": [
+    "game-systems"
+  ],
+  "Gear": [
+    "game-systems"
+  ],
+  "Gotham_City": [
+    "core-game"
+  ],
+  "Gotham_Under_Siege": [
+    "episode-10"
+  ],
+  "Gotham_Wastelands": [
+    "episode-8"
+  ],
+  "Hall_of_Doom": [
+    "core-game"
+  ],
+  "Healer": [
+    "game-systems"
+  ],
+  "House_of_Legends": [
+    "episode-41"
+  ],
+  "Iconic_Powers": [
+    "game-systems"
+  ],
+  "Kahndaq": [
+    "episode-5",
+    "episode-27",
+    "episode-44"
+  ],
+  "Lairs_and_Hideouts": [
+    "core-game"
+  ],
+  "League_Halls": [
+    "core-game"
+  ],
+  "Metropolis": [
+    "core-game"
+  ],
+  "Movement_Increasing_Skills": [
+    "game-systems"
+  ],
+  "Movement_Modes": [
+    "game-systems"
+  ],
+  "Movement_Styles": [
+    "game-systems"
+  ],
+  "Omnipotence": [
+    "game-systems"
+  ],
+  "Plans": [
+    "game-systems"
+  ],
+  "Player_versus_Environment": [
+    "game-systems"
+  ],
+  "Player_versus_Player": [
+    "game-systems"
+  ],
+  "Research_and_Development": [
+    "game-systems"
+  ],
+  "Renown": [
+    "game-systems"
+  ],
+  "Skill_points": [
+    "game-systems"
+  ],
+  "Soder_Cola": [
+    "game-systems"
+  ],
+  "Supercharge": [
+    "game-systems"
+  ],
+  "Tactical_Mods": [
+    "game-systems"
+  ],
+  "Tank": [
+    "game-systems"
+  ],
+  "Traits": [
+    "game-systems"
+  ],
+  "Trinkets": [
+    "game-systems"
+  ],
+  "Vendors": [
+    "game-systems"
+  ],
+  "Watchtower": [
+    "core-game"
+  ],
+  "Weapon_Types": [
+    "game-systems"
+  ],
+  "Base_Items_1": [
+    "game-systems"
+  ],
+  "Base_Items_2": [
+    "game-systems"
+  ],
+  "Base_Items_3": [
+    "game-systems"
+  ],
+  "Base_Items_4": [
+    "game-systems"
+  ],
+  "Base_Items_5": [
+    "game-systems"
+  ],
+  "Base_Items_6": [
+    "game-systems"
+  ],
+  "Base_Items_7": [
+    "game-systems"
+  ],
+  "Base_Items_8": [
+    "game-systems"
+  ],
+  "Base_Items_9": [
+    "game-systems"
+  ],
+  "Base_Items_10": [
+    "game-systems"
+  ],
+  "Base_Items_11": [
+    "game-systems"
+  ],
+  "Base_Items_12": [
+    "game-systems"
+  ],
+  "Base_Items_13": [
+    "game-systems"
+  ],
+  "Base_Items_14": [
+    "game-systems"
+  ],
+  "Accessory": [
+    "game-systems"
+  ],
+  "Alerts": [
+    "game-systems"
+  ],
+  "Combat_Rating": [
+    "game-systems"
+  ],
+  "Duo": [
+    "game-systems"
+  ],
+  "Exobyte_Augments": [
+    "game-systems"
+  ],
+  "Exobyte_Pre-Augments": [
+    "game-systems"
+  ],
+  "Infernal_Kahndaq": [
+    "episode-44"
+  ],
+  "Instance": [
+    "game-systems"
+  ],
+  "Item_Level": [
+    "game-systems"
+  ],
+  "Items": [
+    "game-systems"
+  ],
+  "Level": [
+    "game-systems"
+  ],
+  "Metropolis_Battlezone": [
+    "episode-9",
+    "episode-12"
+  ],
+  "New_Genesis": [
+    "episode-14"
+  ],
+  "Nth_Metal_Artifacts": [
+    "game-systems"
+  ],
+  "On_Duty": [
+    "game-systems"
+  ],
+  "R_D_Station": [
+    "game-systems"
+  ],
+  "Races": [
+    "game-systems"
+  ],
+  "Raids": [
+    "game-systems"
+  ],
+  "Stats": [
+    "game-systems"
+  ],
+  "Stats_Revamp_2017": [
+    "game-systems"
   ]
 }

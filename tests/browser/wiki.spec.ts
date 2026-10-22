@@ -83,7 +83,9 @@ test("location tables, video chapters, and related guides", async ({
   await expect(page.locator(".card:visible")).toHaveCount(1);
   await page.getByRole("searchbox").fill("");
   await page.getByRole("button", { name: "Locations", exact: true }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(1);
+  await expect(page.locator(".card:visible")).toHaveCount(
+    Math.min(48, articles.filter((a) => a.category === "Locations").length),
+  );
 });
 
 test("mastery table remains usable on mobile and searchable", async ({
@@ -91,7 +93,9 @@ test("mastery table remains usable on mobile and searchable", async ({
 }) => {
   await page.goto("/");
   await page.getByRole("searchbox").fill("Shuriken Storm");
-  await expect(page.locator(".card:visible")).toHaveCount(1);
+  await expect(
+    page.getByRole("link", { name: /Weapon Mastery/ }),
+  ).toBeVisible();
   await page.getByRole("link", { name: /Weapon Mastery/ }).click();
   await expect(page.getByRole("row")).toHaveCount(12);
   await page.setViewportSize({ width: 390, height: 844 });
@@ -117,8 +121,9 @@ test("global search, category navigation, and mobile menu", async ({
   await page.goto("/wiki/Powers/");
   await page.getByRole("searchbox").fill("Shuriken Storm");
   await page.getByRole("button", { name: "Search wiki", exact: true }).click();
-  await expect(page.locator(".card:visible")).toHaveCount(1);
-  await expect(page.locator(".card:visible")).toContainText("Weapon Mastery");
+  await expect(
+    page.getByRole("link", { name: /Weapon Mastery/ }),
+  ).toBeVisible();
   await page
     .getByRole("navigation", { name: "Categories", exact: true })
     .getByRole("link", { name: "Quests" })
@@ -362,4 +367,39 @@ test("See also entries open the matching local guides directly", async ({
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Alert T1: Oan Sciencells (Heroes)",
   );
+});
+
+test("expanded locations and catalog parts are navigable with copied artwork", async ({
+  page,
+}) => {
+  await page.goto("/guides/?category=Locations");
+  await expect(
+    page.getByRole("button", { name: "Locations", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".card:visible")).toHaveCount(
+    articles.filter((a) => a.category === "Locations").length,
+  );
+  await page.locator('.card[href="/wiki/Metropolis/"]').click();
+  await expect(
+    page.getByRole("heading", { name: "Metropolis", exact: true, level: 1 }),
+  ).toBeVisible();
+  await expect(page.locator("#article-body img").first()).toHaveAttribute(
+    "src",
+    /^https:\/\/images\.dcuo-wiki\.com\//,
+  );
+  await page.goto("/wiki/Base_Items/");
+  await page
+    .getByRole("link", { name: "Base Items (Part 1)", exact: true })
+    .first()
+    .click();
+  await expect(
+    page.getByRole("heading", {
+      name: "Base Items (Part 1)",
+      exact: true,
+      level: 1,
+    }),
+  ).toBeVisible();
+  await expect(page.getByRole("table").first()).toBeVisible();
+  await page.goto("/guides/?release=game-systems&q=Vendors");
+  await expect(page.locator('.card[href="/wiki/Vendors/"]')).toBeVisible();
 });

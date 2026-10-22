@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Abilities",
+      "status": "existing-canonical",
+      "slug": "Powers"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Allies",
+      "status": "published",
+      "slug": "Allies",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Allies"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Location)",
+      "status": "published",
+      "slug": "Atlantis_Location",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Location)"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Augments",
+      "status": "published",
+      "slug": "Augment",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Augment"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "status": "published",
+      "slug": "Base_Items",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Base_Items"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Bottled_D.C.",
+      "status": "published",
+      "slug": "Bottled_D_C",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Bottled_D.C."
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Briefings",
+      "status": "published",
+      "slug": "Player_Briefings",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Player_Briefings"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Central_City",
+      "status": "published",
+      "slug": "Central_City",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Central_City"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Character_Creation",
+      "status": "published",
+      "slug": "Character_Creation",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Character_Creation"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Character_Customization",
+      "status": "published",
+      "slug": "Styles",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Styles"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Collection",
+      "status": "existing-canonical",
+      "slug": "Collections"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Combat",
+      "status": "published",
+      "slug": "Combat",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Combat"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Combat_Role",
+      "status": "published",
+      "slug": "Team_Roles",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Team_Roles"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Consumables",
+      "status": "published",
+      "slug": "Consumable_Items",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Consumable_Items"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Controller_Role",
+      "status": "published",
+      "slug": "Controller",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Controller"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Counter",
+      "status": "existing-canonical",
+      "slug": "Combat"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Chance",
+      "status": "published",
+      "slug": "Critical_Attack_Chance",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Chance"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Damage",
+      "status": "published",
+      "slug": "Critical_Attack_Damage",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Critical_Attack_Damage"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Currency",
+      "status": "published",
+      "slug": "Currency",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Currency"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Damage",
+      "status": "published",
+      "slug": "Damage",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Damage"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Damage_Absorption",
+      "status": "existing-canonical",
+      "slug": "Combat"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Damage_over_Time",
+      "status": "published",
+      "slug": "Damage_over_Time",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Damage_over_Time"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Damage_Role",
+      "status": "existing-canonical",
+      "slug": "Damage"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Equipment_Mods",
+      "status": "published",
+      "slug": "Equipment_Mods",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Equipment_Mods"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Exobytes",
+      "status": "held",
+      "reason": "Disambiguation: follow substantive targets instead"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Factions",
+      "status": "published",
+      "slug": "Factions",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Factions"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Gear",
+      "status": "published",
+      "slug": "Gear",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Gear"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_City",
+      "status": "published",
+      "slug": "Gotham_City",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham_City"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege",
+      "status": "published",
+      "slug": "Gotham_Under_Siege",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham_Under_Siege"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Gotham_Wastelands",
+      "status": "published",
+      "slug": "Gotham_Wastelands",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Gotham_Wastelands"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Hall_of_Doom",
+      "status": "published",
+      "slug": "Hall_of_Doom",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Hall_of_Doom"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Healer_Role",
+      "status": "published",
+      "slug": "Healer",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Healer"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends",
+      "status": "published",
+      "slug": "House_of_Legends",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Iconic_Powers",
+      "status": "published",
+      "slug": "Iconic_Powers",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Iconic_Powers"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Infernal_Kahndaq",
+      "status": "published",
+      "slug": "Infernal_Kahndaq",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Infernal_Kahndaq"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Kahndaq",
+      "status": "published",
+      "slug": "Kahndaq",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Kahndaq"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Lairs",
+      "status": "published",
+      "slug": "Lairs_and_Hideouts",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lairs_and_Hideouts"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/League_Halls",
+      "status": "published",
+      "slug": "League_Halls",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/League_Halls"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Metropolis",
+      "status": "published",
+      "slug": "Metropolis",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Metropolis"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Movement_Increasing_Skills",
+      "status": "published",
+      "slug": "Movement_Increasing_Skills",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Movement_Increasing_Skills"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Movement_Modes",
+      "status": "published",
+      "slug": "Movement_Modes",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Movement_Modes"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Movement_Styles",
+      "status": "published",
+      "slug": "Movement_Styles",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Movement_Styles"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/New_Genesis",
+      "status": "published",
+      "slug": "New_Genesis",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/New_Genesis"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Omnipotence",
+      "status": "published",
+      "slug": "Omnipotence",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Omnipotence"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Page_of_Destiny",
+      "status": "held",
+      "reason": "Artifact rank/effect details absent from capture"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Plans",
+      "status": "published",
+      "slug": "Plans",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Plans"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Player_Briefings",
+      "status": "existing-canonical",
+      "slug": "Player_Briefings"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/PvE",
+      "status": "published",
+      "slug": "Player_versus_Environment",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Environment"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/PvP",
+      "status": "published",
+      "slug": "Player_versus_Player",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Player"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/R%26D",
+      "status": "published",
+      "slug": "Research_and_Development",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Research_and_Development"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Renown",
+      "status": "published",
+      "slug": "Renown",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Renown"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Skill_Points",
+      "status": "published",
+      "slug": "Skill_points",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Skill_points"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Soder_Cola",
+      "status": "published",
+      "slug": "Soder_Cola",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Soder_Cola"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Styles",
+      "status": "existing-canonical",
+      "slug": "Styles"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Supercharge",
+      "status": "published",
+      "slug": "Supercharge",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Supercharge"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Tactical_Mods",
+      "status": "published",
+      "slug": "Tactical_Mods",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Tactical_Mods"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Tank_Role",
+      "status": "published",
+      "slug": "Tank",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Tank"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/The_Strategist_Card",
+      "status": "held",
+      "reason": "Artifact rank/effect details absent from capture"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Traits",
+      "status": "published",
+      "slug": "Traits",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Traits"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Trinkets",
+      "status": "published",
+      "slug": "Trinkets",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Trinkets"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Vendors",
+      "status": "published",
+      "slug": "Vendors",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Vendors"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Watchtower",
+      "status": "published",
+      "slug": "Watchtower",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Watchtower"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Weapons",
+      "status": "published",
+      "slug": "Weapon_Types",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Weapon_Types"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_1",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_2",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_3",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_4",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_5",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_6",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_7",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_8",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_9",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_10",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_11",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_12",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_13",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Base_Items",
+      "slug": "Base_Items_14",
+      "status": "published-part"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Accessory",
+      "status": "published",
+      "slug": "Accessory",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Accessory"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Alerts",
+      "status": "published",
+      "slug": "Alerts",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Alerts"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Combat_Rating",
+      "status": "published",
+      "slug": "Combat_Rating",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Combat_Rating"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Duos",
+      "status": "published",
+      "slug": "Duo",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Duo"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Augments)",
+      "status": "published",
+      "slug": "Exobyte_Augments",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Augments)"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Pre-Augments)",
+      "status": "published",
+      "slug": "Exobyte_Pre-Augments",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Exobyte_(Pre-Augments)"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Instances",
+      "status": "published",
+      "slug": "Instance",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Instance"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Item_Level",
+      "status": "published",
+      "slug": "Item_Level",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Item_Level"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Items",
+      "status": "published",
+      "slug": "Items",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Items"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Leveling",
+      "status": "published",
+      "slug": "Level",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Level"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Battlezone",
+      "status": "published",
+      "slug": "Metropolis_Battlezone",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Metropolis_Battlezone"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Nth_Metal_(Artifacts)",
+      "status": "published",
+      "slug": "Nth_Metal_Artifacts",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Nth_Metal_(Artifacts)"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/On_Duty",
+      "status": "published",
+      "slug": "On_Duty",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/On_Duty"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/R%26D_Station",
+      "status": "published",
+      "slug": "R_D_Station",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/R%26D_Station"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Races",
+      "status": "published",
+      "slug": "Races",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Races"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Raids",
+      "status": "published",
+      "slug": "Raids",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Raids"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Stats",
+      "status": "published",
+      "slug": "Stats",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Stats"
+    },
+    {
+      "url": "https://dcuniverseonline.fandom.com/wiki/Stats_Revamp_(2017)",
+      "status": "published",
+      "slug": "Stats_Revamp_2017",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Stats_Revamp_(2017)"
+    }
+  ],
+  "aliases": [
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Abilities",
+      "slug": "Powers",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Powers"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Augments",
+      "slug": "Augment",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Augment"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Briefings",
+      "slug": "Player_Briefings",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Player_Briefings"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Character_Customization",
+      "slug": "Styles",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Styles"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Collection",
+      "slug": "Collections",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Collections"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Combat_Role",
+      "slug": "Team_Roles",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Team_Roles"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Consumables",
+      "slug": "Consumable_Items",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Consumable_Items"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Controller_Role",
+      "slug": "Controller",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Controller"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Counter",
+      "slug": "Combat",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Combat"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Damage_Absorption",
+      "slug": "Combat",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Combat"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Damage_Role",
+      "slug": "Damage",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Damage"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Healer_Role",
+      "slug": "Healer",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Healer"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lairs",
+      "slug": "Lairs_and_Hideouts",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lairs_and_Hideouts"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/PvE",
+      "slug": "Player_versus_Environment",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Environment"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/PvP",
+      "slug": "Player_versus_Player",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Player_versus_Player"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/R%26D",
+      "slug": "Research_and_Development",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Research_and_Development"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Skill_Points",
+      "slug": "Skill_points",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Skill_points"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tank_Role",
+      "slug": "Tank",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Tank"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Weapons",
+      "slug": "Weapon_Types",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Weapon_Types"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Duos",
+      "slug": "Duo",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Duo"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Instances",
+      "slug": "Instance",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Instance"
+    },
+    {
+      "source": "https://dcuniverseonline.fandom.com/wiki/Leveling",
+      "slug": "Level",
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Level"
+    }
+  ]
+}

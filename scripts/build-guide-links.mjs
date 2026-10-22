@@ -4,10 +4,23 @@ import { sectionHasContent } from "../shared/import-text.mjs";
 const articles = JSON.parse(
   await fs.readFile("src/data/articles.json", "utf8"),
 );
+let imported = { aliases: [] };
+try {
+  imported = JSON.parse(await fs.readFile("data/catalog-imports.json", "utf8"));
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+}
 const records = articles.map((a) => ({
   slug: a.slug,
   title: a.title,
   source: a.source,
+  ...(imported.aliases.some((r) => r.slug === a.slug)
+    ? {
+        aliases: imported.aliases
+          .filter((r) => r.slug === a.slug && r.canonical === a.source)
+          .map((r) => r.source),
+      }
+    : {}),
   faction:
     /\((Heroes|Villains)\)$/i.exec(a.title)?.[1] ||
     (/\bhero missions?\b/i.test(a.summary + " " + a.title) &&

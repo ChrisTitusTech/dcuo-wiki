@@ -605,3 +605,41 @@ matching context too.
 Follow-up independent review found no additional actionable regressions and
 validated baselines across the article catalog. No source article records or
 stored community documents are rewritten by this feature.
+
+## Remaining category foundations
+
+Owner scope: complete the remaining wiki categories and publish directly to main.
+Added 71 canonical source articles plus 14 linked Base Items continuation pages:
+85 new pages, 1,671 total. New content covers Character (15), Locations (16),
+Equipment (34 including continuations), Combat (10), Collectibles (1), Instances
+(5) and Guides (4). Every earlier article record and section position is unchanged.
+
+Firecrawl staged 200 fresh captures and reused 252 cached captures. Canonical
+redirects resolve locally without duplicate articles. The disambiguation Exobyte
+page is omitted in favor of its two substantive variants. Two artifact captures
+remain held because rank/effect details are missing. New Genesis's broken nested
+character gallery is flattened while preserving character links and images.
+Infernal Kahndaq retains the dated Pride launch information, omitting its obsolete
+prediction sentence. Generic system guides do not inherit incidental Episode links.
+
+Copied 776 additional source images with originals and previews to R2, with 2,834
+credited image records in the bundled catalog and D1. Public image URL acceptance
+is checked before publication. The Base Items catalog is split to remain fully
+editable within the existing document limits; table references accompany their
+rows. Import scripts validate captures and preserve pagination checkpoints,
+omitted-source failures, existing content and recoverable multi-file publication.
+
+Local acceptance: 138 unit tests, 26 browser tests, 17 Cloudflare integration
+checks, Astro checks, content/feat validation, build and deployment dry run pass.
+Output contains 1,771 static files against the 18,000 internal / 20,000 platform
+limit. Worker gzip is 2,316.97 KiB. Independent review passed the content, aliases,
+release associations and publication journal. A focused follow-up covers the
+long-running downloader's persisted failure counts and omitted batch targets.
+
+The full source migration remains in progress. The inventory contains 28,636
+candidate URLs and 27,162 unpublished candidate targets after this expansion;
+these counts include redirects and insufficient pages. The bulk downloader
+stages remaining captures in sequential batches using ignored progress files;
+it cannot publish them or change hosting subscriptions. See
+[docs/CATALOG-IMPORT.md](docs/CATALOG-IMPORT.md) for recovery and review steps.
+Production acceptance and screenshot evidence belong in `.import-cache/catalog/`.

@@ -24,6 +24,17 @@ for (const r of records) {
   add(byTitle, normalize(r.title), r);
   add(byTitle, normalize(r.slug), r);
   add(bySource, normalize(new URL(r.source).pathname.slice(6)), r);
+  for (const source of r.aliases || []) {
+    try {
+      const u = new URL(source);
+      if (
+        u.origin === "https://dcuniverseonline.fandom.com" &&
+        u.pathname.startsWith("/wiki/") &&
+        !u.search
+      )
+        add(bySource, normalize(u.pathname.slice(6)), r);
+    } catch {}
+  }
   if (/\((Heroes|Villains)\)$/i.test(r.title))
     add(
       byFactionBase,
@@ -46,6 +57,15 @@ function choose(matches, context = {}, hash = "") {
   const faction = context.faction || bySlug.get(context.slug)?.faction;
   const scoped = matches.filter((r) => r.faction === faction);
   if (scoped.length === 1) return scoped[0];
+  const root = matches.find((r) =>
+    matches.every(
+      (m) =>
+        m.slug === r.slug ||
+        (m.slug.startsWith(r.slug + "_") &&
+          /^\d+$/.test(m.slug.slice(r.slug.length + 1))),
+    ),
+  );
+  if (root) return root;
   // Split feat pages are a numbered continuation of the same source. Start at 1.
   const first = matches.find((r) => r.slug.endsWith("_1"));
   return first &&
