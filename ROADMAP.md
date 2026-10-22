@@ -212,7 +212,7 @@ and 79 sources held. The held entries comprise 56 without reliable location/vide
 evidence, 22 with insufficient substantive objectives/detail, and one conflicting
 Bane prerequisite. All raw captures remain available for further research.
 The library now contains 1,054 articles. Of the new guides, 957 have source-backed
-location context, 101 include source maps, and 319 have 462 verified-title video
+location context, 101 include source maps, and 319 have 461 verified-title video
 references. A named area/instance is not an exact map pin. Video gameplay and
 route/faction/version remain unverified unless separately documented.
 
@@ -221,12 +221,24 @@ from the public R2 domain. Total image catalog: 1,361 records, 265,333,760 origi
 and preview bytes. All 535 original editable parts across 35 earlier guides are
 unchanged; missing source reward tables and gallery images were appended.
 Pagination displays 48 results while search covers all guides. Local validation:
-58 unit tests, type/content checks and build passed. Output: 1,070 files against
+61 unit tests, type/content checks and build passed. Output: 1,070 files against
 18,000 internal / 20,000 platform budget. Deployment dry run passed at
-7,746.72 KiB raw / 929.03 KiB compressed. Seven Cloudflare integration tests passed.
+7,736.41 KiB raw / 928.11 KiB compressed. Seven Cloudflare integration tests passed.
 Browser, independent review and production checks are recorded below when complete.
 
 D1 attribution import completed: production `media_assets` count is 1,361.
 Manual browsing found repeated map galleries; captions are now cleaned before
 deduplication, removing 30 repeated galleries while retaining map panels and
 meaningful walkthrough text. Regression coverage verifies that ordering.
+
+Independent review found opposing-faction video matches and environment-only
+credential handling. Explicitly conflicting faction titles are now rejected in
+both search and YouTube metadata; neutral titles retain the documented faction
+limitation. Accepted matches use stable search-result order. Video evidence and
+articles were regenerated, retaining all 1,019 new guides and 461 video references.
+Research now permits missing .env files, accepts environment credentials, and
+requires a key only for uncached queries. Three regression tests cover those
+cases and the complete accepted-video dataset. Manual desktop/mobile inspection
+confirmed inline R2 maps, a three-image viewer, next/close behavior and no mobile
+overflow. All 13 browser checks passed before the final faction correction;
+post-correction browser checks and repeat review are pending below.

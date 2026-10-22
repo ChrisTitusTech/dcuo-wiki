@@ -2,13 +2,19 @@
 import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
 import { parseEnv } from "node:util";
 import { createHash } from "node:crypto";
-const env = parseEnv(await readFile(".env", "utf8"));
+let env = {};
+try {
+  env = parseEnv(await readFile(".env", "utf8"));
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
 const key =
   process.env.FIRECRAWL_API_KEY ||
+  process.env.FIRECRAWL_KEY ||
+  process.env.firecrawl_key ||
   env.FIRECRAWL_API_KEY ||
   env.FIRECRAWL_KEY ||
   env.firecrawl_key;
-if (!key) throw Error("Missing Firecrawl key");
 const manifest = JSON.parse(
   await readFile("data/mission-downloads.json", "utf8"),
 );
@@ -34,6 +40,7 @@ for (let i = 0; i < records.length; i += 4) {
     if (e.code !== "ENOENT") throw e;
   }
   if (!cached) {
+    if (!key) throw Error("Missing Firecrawl key for uncached query");
     let body;
     for (let attempt = 0; attempt < 6; attempt++) {
       const response = await fetch("https://api.firecrawl.dev/v2/search", {

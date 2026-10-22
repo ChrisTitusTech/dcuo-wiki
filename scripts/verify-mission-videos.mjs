@@ -1,4 +1,5 @@
 import { readFile, writeFile, readdir, mkdir } from "node:fs/promises";
+import { hasFactionConflict } from "./mission-video-match.mjs";
 import { normalizeTitle } from "./convert-missions.mjs";
 const directory = ".import-cache/video-search";
 await mkdir(".import-cache/video-metadata", { recursive: true });
@@ -12,7 +13,7 @@ for (const file of await readdir(directory)) {
     ).replaceAll("_", " ");
     const base = normalizeTitle(
       raw.replace(
-        /\s*\((?:Heroes?|Villains?|hero mission|villain mission|Mission)\)$/i,
+        /\s*\((?:(?:hero(?:es)?|villains?)(?: mission)?|Mission)\)$/i,
         "",
       ),
     );
@@ -25,7 +26,7 @@ for (const file of await readdir(directory)) {
     };
     missions.set(source, record);
     if (base.length < 7) continue;
-    for (const hit of search.results || []) {
+    for (const [rank, hit] of (search.results || []).entries()) {
       let u;
       try {
         u = new URL(hit.url);
@@ -39,6 +40,7 @@ for (const file of await readdir(directory)) {
         !/^[\w-]{11}$/.test(id || "")
       )
         continue;
+      if (hasFactionConflict(raw, hit.title)) continue;
       if (!(" " + normalizeTitle(hit.title) + " ").includes(" " + base + " "))
         continue;
       if (!candidates.has(id))
@@ -47,7 +49,9 @@ for (const file of await readdir(directory)) {
           url: "https://www.youtube.com/watch?v=" + id,
           records: [],
         });
-      candidates.get(id).records.push({ record, base, searchTitle: hit.title });
+      candidates
+        .get(id)
+        .records.push({ record, base, rank, searchTitle: hit.title });
     }
   }
 }
@@ -86,6 +90,7 @@ await Promise.all(
         record,
         base,
         searchTitle,
+        rank,
         searchDescription,
       } of c.records) {
         if (
@@ -94,6 +99,7 @@ await Promise.all(
               metadata.title,
               metadata.author_name,
               searchTitle,
+              rank,
               searchDescription,
             ].join(" "),
           )
@@ -105,7 +111,9 @@ await Promise.all(
           )
         )
           continue;
+        if (hasFactionConflict(record.title, metadata.title)) continue;
         record.matches.push({
+          rank,
           title: metadata.title,
           url: c.url,
           evidence: `YouTube's title explicitly names ${record.title}. Title and availability checked through YouTube metadata on ${metadata.checked.slice(0, 10)}. Faction, route, current mechanics and timestamps have not been verified by viewing the full video.`,
@@ -116,7 +124,10 @@ await Promise.all(
 );
 const records = [...missions.values()].map((r) => ({
   ...r,
-  matches: r.matches.slice(0, 2),
+  matches: r.matches
+    .sort((a, b) => a.rank - b.rank || a.url.localeCompare(b.url))
+    .slice(0, 2)
+    .map(({ rank, ...video }) => video),
 }));
 await writeFile(
   "data/mission-videos.json",
