@@ -299,7 +299,7 @@ Validation before deployment: all 1,047 guides (1,006 quests) have audited assig
 - [x] Import 29 specific instance guides, Patrol Catastrophe, and two Children of Krypton chapter guides; retain source catalog provenance and title-verified video references.
 - [x] Restore source icon-only reward currency labels and render names/icons without changing any existing editable parts.
 - [x] Upload and verify new R2 artwork/currency icons and mirror image provenance to D1.
-- [ ] Pass validation, independent review, main deployment and live checks.
+- [x] Pass validation, independent review, main deployment and live checks.
 
 Local acceptance: 1,079 articles across all 75 populated release groups, including
 all 48 Episodes and six chapters. The 32 additions include 29 title-verified
@@ -316,5 +316,15 @@ run (1,172 asset files, 1,094.60 KiB compressed Worker).
 Independent Codex review found two source-conversion defects: conflicting
 currency icons appended an extra label, and short image captions became guide
 summaries. Both are fixed with regression coverage. The final review found no
-actionable regressions and independently passed nine focused tests. Production
-deployment and live acceptance remain pending.
+actionable regressions and independently passed nine focused tests.
+
+Production commit `610cf26` passed GitHub validation run `39709239020` and
+Cloudflare build `3d7f0526-7a9a-43ae-8ba0-3b31c0b079c5`. All 75 release landing
+pages returned 200 with the expected guide counts; all 66 sampled public live
+parts retained their text, base hashes and revision IDs. Browser acceptance
+confirmed Episode 13's six guides, the R2 map overlay's next/close behavior in
+Return to the Nexus, and loaded Cash/Source Mark icons on New Genesis Protector.
+The corrected Wayne Manor Gala summary and conflicting-currency case also
+passed production checks. Evidence: `.import-cache/release-guides/production-verification.json`,
+`.import-cache/release-guides/media-verification.json`, and
+`.import-cache/proofs/reward-currencies-live.jpg`.
