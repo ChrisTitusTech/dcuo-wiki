@@ -84,3 +84,41 @@ test("maps in the source Map section remain map references even when the filenam
   const result = convertMission(d, record);
   assert.equal(result.article.location.maps.length, 1);
 });
+
+test("source form placeholders do not become guide text or substantive words", () => {
+  const result = convertMission(
+    cache(
+      "A short mission.\n\n## Objectives\n\nIntro Message\n\n- Collect the samples.\n\n## Outro\n\nOutro Message\n\nDescription",
+    ),
+    record,
+  );
+  assert.deepEqual(
+    result.article.sections.find((s) => s.title === "Objectives").items,
+    ["Collect the samples."],
+  );
+  assert.ok(
+    result.article.sections.every((s) =>
+      s.items.every(
+        (item) => !/^(Intro Message|Outro Message|Description)$/.test(item),
+      ),
+    ),
+  );
+  assert.ok(result.reasons.includes("Insufficient source detail"));
+});
+
+test("checking the Journal after a world objective is not a menu-only location", () => {
+  const world = convertMission(
+    cache(
+      "A disguise mission.\n\n## Objectives\n\nSpeak to Jimmy Olsen. Talk to Scoops to disguise yourself. Then check your journal for the new mission and its objectives.",
+    ),
+    record,
+  );
+  assert.equal(world.article.location, undefined);
+  const menu = convertMission(
+    cache(
+      "Your Armory is a mission for heroes and villains.\n\n## Objective\n\nComplete the mission in your journal to acquire your first Armory",
+    ),
+    record,
+  );
+  assert.equal(menu.article.location.label, "Journal");
+});

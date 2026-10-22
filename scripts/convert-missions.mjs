@@ -52,6 +52,7 @@ export function convertMission(cache, record) {
         (x) =>
           !maintenance.test(x) &&
           !/^n\/a$/i.test(x) &&
+          !/^(?:(?:Intro|Outro) Message|Description)$/i.test(x.trim()) &&
           !/^Source-listed entries\./.test(x),
       ),
     }))
@@ -320,9 +321,14 @@ export function convertMission(cache, record) {
       maps: [],
     };
   if (!article.location) {
-    const journal = objectiveSections
-      .flatMap((s) => s.items)
-      .find((x) => /\b(?:complete|open|check).*\bjournal\b/i.test(x));
+    const instructions = objectiveSections.flatMap((s) => s.items);
+    const journal =
+      instructions.length === 1 &&
+      /^Complete (?:the|this) mission in your journal to (?:acquire|claim|collect)\b/i.test(
+        instructions[0],
+      )
+        ? instructions[0]
+        : undefined;
     if (journal)
       article.location = {
         label: "Journal",

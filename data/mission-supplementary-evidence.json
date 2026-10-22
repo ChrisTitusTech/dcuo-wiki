@@ -23,6 +23,14 @@
       "excerpt": "Doctor Sarah Charles can be found in the Little Bohemia MPD near the Booster Gold Kiosk",
       "location": "Little Bohemia Police Station, near the Booster Gold Kiosk",
       "precision": "The mission names Doctor Sarah Charles in the Little Bohemia Police Station; her NPC source entry identifies the nearby kiosk"
+    },
+    {
+      "slug": "Daily_Master_of_Disguise",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Space/Off",
+      "retrieved": "2026-10-21",
+      "excerpt": "Space/Off is one of the possible missions for heroes and villains from the Daily: Master of Disguise set of missions. Its objectives include: Return to Jimmy Olsen in Death Metal Washington, D.C.",
+      "location": "Jimmy Olsen: Death Metal Washington, D.C.",
+      "precision": "The parent mission names Jimmy Olsen as its contact; its explicitly listed Space/Off child mission places him in Death Metal Washington, D.C. This establishes mission-set area context, not an exact contact spawn point."
     }
   ]
 }

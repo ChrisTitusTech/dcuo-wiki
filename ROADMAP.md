@@ -221,7 +221,7 @@ from the public R2 domain. Total image catalog: 1,361 records, 265,333,760 origi
 and preview bytes. All 535 original editable parts across 35 earlier guides are
 unchanged; missing source reward tables and gallery images were appended.
 Pagination displays 48 results while search covers all guides. Local validation:
-61 unit tests, type/content checks and build passed. Output: 1,070 files against
+63 unit tests, type/content checks and build passed. Output: 1,070 files against
 18,000 internal / 20,000 platform budget. Deployment dry run passed at
 7,736.41 KiB raw / 928.11 KiB compressed. Seven Cloudflare integration tests passed.
 Browser, independent review and production checks are recorded below when complete.
@@ -242,3 +242,12 @@ cases and the complete accepted-video dataset. Manual desktop/mobile inspection
 confirmed inline R2 maps, a three-image viewer, next/close behavior and no mobile
 overflow. All 13 browser checks passed before the final faction correction;
 post-correction browser checks and repeat review are pending below.
+
+Repeat review identified an incidental Journal instruction incorrectly treated as
+world-location evidence. Journal fallback now requires a single explicit menu-only
+claim objective. Daily: Master of Disguise instead cites its linked Space/Off
+mission, which explicitly places Jimmy Olsen in Death Metal Washington, D.C.; the
+label states that this is shared mission-set area context, not a verified spawn
+point. Source form scaffolding (Intro Message, Outro Message, Description) is
+removed before counting substantive content. Both behaviors have regression tests;
+all 1,019 new guides remain eligible after regeneration.
