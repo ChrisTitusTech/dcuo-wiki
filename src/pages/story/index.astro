@@ -1,0 +1,195 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import story from "../../data/story.json";
+import feats from "../../data/feats.json";
+const featReleases = new Set(feats.feats.flatMap((f) => f.releases));
+import articles from "../../data/articles";
+import { releases } from "../../../shared/releases.mjs";
+import "../../styles/story.css";
+const bySlug = new Map(articles.map((a) => [a.slug, a]));
+const groups = [
+  {
+    id: "original",
+    title: "The original game",
+    entries: story.entries.filter((e) => e.era === "original"),
+  },
+  {
+    id: "mentors",
+    title: "Choose your mentor",
+    entries: story.entries.filter((e) => e.era === "mentor"),
+  },
+  {
+    id: "classic",
+    title: "Classic story arcs",
+    entries: story.entries.filter((e) => e.era === "classic"),
+  },
+  {
+    id: "episodes",
+    title: "Episodes and DLCs",
+    entries: story.entries.filter((e) => e.era === "episode"),
+  },
+  ...releases
+    .filter((r) => r.kind === "arc")
+    .map((r) => ({
+      id: r.id,
+      title: r.title,
+      entries: story.entries.filter(
+        (e) => releases.find((x) => x.id === e.release)?.arc === r.id,
+      ),
+    })),
+];
+---
+
+<Layout
+  title="Story"
+  description="Follow DC Universe Online's story from Brainiac's invasion and six original mentor paths through every Episode and released chapter."
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Main page</a>
+    <span>/</span>
+    <span>Story</span>
+  </nav>
+  <div class="section-heading">
+    <h1>Story</h1>
+    <span class="badge">{story.entries.length} story guides</span>
+  </div>
+  <p class="lede">
+    From Brainiac's invasion to Children of Krypton. Read the plot, follow your
+    mentor's path and find the missions that continue the story.
+  </p>
+  <p class="story-order-note">
+    Episodes and chapters follow release order. The original campaign branches
+    by mentor, and classic arcs overlap; this is a reading order, not one
+    mandatory journal route. Story pages contain plot spoilers.
+  </p>
+  <nav class="story-jumps" aria-label="Story eras">
+    {groups.map((g) => (
+      <a href={"#" + g.id}>{g.title}</a>
+    ))}
+  </nav>
+  <div class="story-controls">
+    <label for="story-search">
+      Find a story
+      <input
+        id="story-search"
+        type="search"
+        placeholder="Title, character, place or mission..."
+        autocomplete="off"
+      />
+    </label>
+    <label for="story-era">
+      Era
+      <select id="story-era">
+        <option value="">All stories</option>
+        <option value="original">Original campaign</option>
+        <option value="episode">Episodes and DLCs</option>
+        <option value="chapter">Chapters</option>
+      </select>
+    </label>
+  </div>
+  <p id="story-count" role="status">
+    {story.entries.length} stories
+  </p>
+  <p id="story-empty" hidden>
+    No stories match. Try another term or era.
+  </p>
+  {groups.map((g) => (
+    <section class="story-group" id={g.id}>
+      <h2>{g.title}</h2>
+      {g.id === "mentors" && (
+        <p>
+          Three hero mentors and three villain mentors introduce different
+          enemies and missions. Choose the branch that matches your character.
+        </p>
+      )}
+      {g.id === "classic" && (
+        <p>
+          These arcs intertwine with the mentor paths and original alerts and
+          raids. Follow their documented mission and instance sequences within
+          each guide.
+        </p>
+      )}
+      <div class="story-grid">
+        {g.entries.map((e) => {
+          const a = bySlug.get(e.slug)!;
+          return (
+            <div class="story-row">
+              <a
+                class="card story-card"
+                href={"/wiki/" + e.slug + "/"}
+                data-era={
+                  ["original", "mentor", "classic"].includes(e.era)
+                    ? "original"
+                    : e.era
+                }
+                data-search={[
+                  e.label,
+                  e.summary,
+                  e.mentor,
+                  e.faction,
+                  ...a.sections.flatMap((s) => [
+                    ...s.items,
+                    ...(s.table?.rows.flat() || []),
+                  ]),
+                ]
+                  .join(" ")
+                  .toLowerCase()}
+              >
+                <span class="eyebrow">
+                  {e.era === "mentor"
+                    ? e.faction + " / " + e.mentor
+                    : e.era === "classic"
+                      ? "Original campaign"
+                      : e.label === e.title
+                        ? "Story"
+                        : e.label.split(":")[0]}
+                </span>
+                <h3>{e.era === "mentor" ? e.label : e.title}</h3>
+                <p>{e.summary}</p>
+                <span class="card-link">
+                  Read story and mission sequence &gt;
+                </span>
+              </a>
+              {(e.guides.length > 0 || featReleases.has(e.release)) && (
+                <nav
+                  class="story-resources"
+                  aria-label={"Related content: " + e.label}
+                >
+                  {e.guides.length > 0 && (
+                    <a href={"/releases/" + e.release + "/"}>
+                      Browse release guides
+                    </a>
+                  )}
+                  {featReleases.has(e.release) && (
+                    <a href={"/feats/?release=" + e.release}>Related feats</a>
+                  )}
+                </nav>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+  <noscript>
+    <p>
+      All story guides are available above. Search and era filtering require
+      JavaScript.
+    </p>
+  </noscript>
+  <p class="story-attribution">
+    Narratives adapted from{" "}
+    <a href="https://dcuniverseonline.fandom.com/wiki/Storyline">
+      DC Universe Online Wiki contributors
+    </a>
+    , with original sources and contributor histories on every guide. Text is
+    shared under{" "}
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>. The{" "}
+    <a href="https://www.dcuniverseonline.com/children-of-krypton?chapter=2">
+      official chapter page
+    </a>{" "}
+    confirms Shadows Over Argo and Wrath of the Worldkillers; unnamed future
+    chapters are omitted.
+  </p>
+  <script src="../../scripts/story.ts"></script>
+</Layout>

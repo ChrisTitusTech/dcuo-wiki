@@ -7,7 +7,7 @@
     "allPagesBatches": 84,
     "articleCandidates": 28636,
     "supportPages": 12,
-    "published": 1332,
+    "published": 1403,
     "duplicateObservations": 503,
     "excludedLinks": 113
   },
@@ -25,7 +25,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/'Til_Death_Do_Us_Part",
       "title": "'Til_Death_Do_Us_Part",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_til_death_do_us_part",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages",
         "https://dcuniverseonline.fandom.com/wiki/Local_Sitemap"
@@ -5550,7 +5551,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Age_of_Justice",
       "title": "Age_of_Justice",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_28",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Accelerated+Mini-Nuke"
       ]
@@ -7906,7 +7908,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_I",
       "title": "Amazon_Fury_Part_I",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_10",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -7934,7 +7937,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
       "title": "Amazon_Fury_Part_II",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_13",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -7962,7 +7966,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III",
       "title": "Amazon_Fury_Part_III",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_27",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ]
@@ -12911,7 +12916,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Arkham_Unleashed",
       "title": "Arkham_Unleashed",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_arkham_unleashed",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Arkham+Island+Official+Souvenir"
       ]
@@ -15542,7 +15548,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Episode)",
       "title": "Atlantis_(Episode)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_33",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Arkham+Island+Official+Souvenir"
       ]
@@ -23013,7 +23020,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Beginning_of_the_End",
       "title": "Beginning_of_the_End",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_beginning_of_the_end",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Battle+Lust+Aura+-+Hands%2C+Head%2C+Feet"
       ]
@@ -24470,7 +24478,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Episode)",
       "title": "Birds_of_Prey_(Episode)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_37",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Battle+Lust+Aura+-+Hands%2C+Head%2C+Feet"
       ]
@@ -30889,7 +30898,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns",
       "title": "Brainiac_Returns",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_47",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bombshell+Platinum+Poster+%28Purchased%29"
       ]
@@ -54715,7 +54725,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Episode)",
       "title": "Dark_Knights_(Episode)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_43",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=DCPIII%2FSandbox-DoRTest"
       ]
@@ -55587,7 +55598,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Day_of_Reckoning",
       "title": "Day_of_Reckoning",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_light_and_rain_chapter_1",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=DCPIII%2FSandbox-DoRTest"
       ]
@@ -58158,7 +58170,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Deluge",
       "title": "Deluge",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_31",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ]
@@ -66149,7 +66162,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dying_of_the_Light",
       "title": "Dying_of_the_Light",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_dying_of_the_light",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -66645,7 +66659,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Earth_3",
       "title": "Earth_3",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_30",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ]
@@ -77833,7 +77848,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_15%3A_Bombshell_Paradox_%26_Corrupted_Zamaron",
       "title": "Episode_15:_Bombshell_Paradox_&_Corrupted_Zamaron",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_15",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77870,7 +77886,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_16%3A_Desecrated_Cathedral_%26_Oa_Under_Siege",
       "title": "Episode_16:_Desecrated_Cathedral_&_Oa_Under_Siege",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_16",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77907,7 +77924,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_17%3A_Flash_Museum_Burglary_%26_Unholy_Matrimony",
       "title": "Episode_17:_Flash_Museum_Burglary_&_Unholy_Matrimony",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_17",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77944,7 +77962,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_18%3A_Blackest_Day_%26_The_Demon's_Pit",
       "title": "Episode_18:_Blackest_Day_&_The_Demon's_Pit",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_18",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -77981,7 +78000,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_19%3A_The_Demon's_Plan_%26_Deep_Desires",
       "title": "Episode_19:_The_Demon's_Plan_&_Deep_Desires",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_19",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78027,7 +78047,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_20%3A_Blackest_Night_%26_Wastelands_Wonderland",
       "title": "Episode_20:_Blackest_Night_&_Wastelands_Wonderland",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_20",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78064,7 +78085,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_21%3A_The_First_Piece_%26_Prison_Break",
       "title": "Episode_21:_The_First_Piece_&_Prison_Break",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_21",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78101,7 +78123,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_22%3A_Phantom_Zone_%26_Science_Spire",
       "title": "Episode_22:_Phantom_Zone_&_Science_Spire",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_22",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78138,7 +78161,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_23%3A_Brainiac's_Bottle_Ship_%26_The_Will_of_Darkseid",
       "title": "Episode_23:_Brainiac's_Bottle_Ship_&_The_Will_of_Darkseid",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_23",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78175,7 +78199,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_24%3A_Darkseid's_War_Factory_%26_Harley's_Heist",
       "title": "Episode_24:_Darkseid's_War_Factory_&_Harley's_Heist",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_24",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78212,7 +78237,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_25%3A_Iceberg_Lounge_%26_A_Rip_in_Time",
       "title": "Episode_25:_Iceberg_Lounge_&_A_Rip_in_Time",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_25",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -78249,7 +78275,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Episode_26%3A_Wayne_Manor_Gala_%26_Kandor_Central_Tower",
       "title": "Episode_26:_Wayne_Manor_Gala_&_Kandor_Central_Tower",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_26",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ]
@@ -82977,7 +83004,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fearful_Day",
       "title": "Fearful_Day",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_light_and_rain_chapter_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -84053,7 +84081,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Fight_for_the_Light",
       "title": "Fight_for_the_Light",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_1",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ]
@@ -99682,7 +99711,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gotham's_Gang_War",
       "title": "Gotham's_Gang_War",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_gotham_s_gang_war",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Viva_la_Lucha_Libre_(Investigations)",
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Godseye+Pyramid+%28Location%29"
@@ -104556,7 +104586,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_I",
       "title": "Halls_of_Power_Part_I",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_11",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -104584,7 +104615,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_II",
       "title": "Halls_of_Power_Part_II",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_14",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -104900,7 +104932,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate",
       "title": "Hand_of_Fate",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_5",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -106041,7 +106074,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips",
       "title": "Harley_Quinn_vs._Apokolips",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_48",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Guy+Gardner+%28Red+Lantern+Corps%29"
       ]
@@ -109067,7 +109101,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hearts_of_Darkness",
       "title": "Hearts_of_Darkness",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_hearts_of_darkness",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Harley+Quinn+vs.+Apokolips%3A+Loot+Cache"
       ]
@@ -112356,7 +112391,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Home_Turf",
       "title": "Home_Turf",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_6",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Heavy+Industrial+Light"
       ]
@@ -112758,7 +112794,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright",
       "title": "Hope_Burns_Bright",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_light_and_rain_chapter_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hoodie"
       ]
@@ -120352,7 +120389,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends_(Episode)",
       "title": "House_of_Legends_(Episode)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_41",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Hotfix+25%2F03%2F16"
       ]
@@ -127202,7 +127240,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Episode)",
       "title": "Justice_League_Dark_(Episode)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_34",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -127240,7 +127279,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed",
       "title": "Justice_League_Dark_Cursed",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_46",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Ixion%27s+Tale+of+Woe+%28Briefings%29"
       ]
@@ -132465,7 +132505,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Legacy_of_Krypton",
       "title": "Legacy_of_Krypton",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_legacy_of_krypton",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ]
@@ -133034,7 +133075,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Doom_(Episode)",
       "title": "Legion_of_Doom_(Episode)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_42",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ]
@@ -135730,7 +135772,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lightning_Strikes",
       "title": "Lightning_Strikes",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_2",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -136905,7 +136948,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion",
       "title": "Long_Live_the_Legion",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_39",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=LexCorp+Trooper"
       ]
@@ -138993,7 +139037,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Magic_Hero_Storyline",
       "title": "Magic_Hero_Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_magic_hero_storyline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Lovestruck+Painter"
       ]
@@ -139047,7 +139092,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Magic_Villain_Storyline",
       "title": "Magic_Villain_Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_magic_villain_storyline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Lovestruck+Painter"
       ]
@@ -143314,7 +143360,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Meta_Hero_Storyline",
       "title": "Meta_Hero_Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_meta_hero_storyline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Manor+Lair"
       ]
@@ -143360,7 +143407,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Meta_Villain_Storyline",
       "title": "Meta_Villain_Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_meta_villain_storyline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Manor+Lair"
       ]
@@ -143622,7 +143670,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I",
       "title": "Metal_Part_I",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_35",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Metal+Part+I"
       ]
@@ -143715,7 +143764,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II",
       "title": "Metal_Part_II",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_36",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Metal+Part+I"
       ]
@@ -159091,7 +159141,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Origin_Crisis",
       "title": "Origin_Crisis",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_7",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Oasis+Khadga"
       ]
@@ -189706,7 +189757,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Punchline_(story_arc)",
       "title": "Punchline_(story_arc)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_punchline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Priority+Taunt"
       ]
@@ -192308,7 +192360,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Raging_Night",
       "title": "Raging_Night",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_light_and_rain_chapter_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ]
@@ -200680,7 +200733,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Riddled_with_Crime",
       "title": "Riddled_with_Crime",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_29",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Retro-Futuristic"
       ]
@@ -210984,7 +211038,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System",
       "title": "Shock_to_the_System",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_45",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Serpentine+Weapons+Box+%28Green%29"
       ]
@@ -212711,7 +212766,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sins_of_the_Father",
       "title": "Sins_of_the_Father",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_sins_of_the_father",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Side+Quests"
       ]
@@ -216063,7 +216119,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sons_of_Trigon",
       "title": "Sons_of_Trigon",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_8",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ]
@@ -223911,7 +223968,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Storyline",
       "title": "Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_original_game",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Stately+Column"
       ]
@@ -228372,7 +228430,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Survival_of_the_Fittest",
       "title": "Survival_of_the_Fittest",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_survival_of_the_fittest",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Surging+Regalia+Accessory"
       ]
@@ -231417,7 +231476,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tech_Hero_Storyline",
       "title": "Tech_Hero_Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_tech_hero_storyline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -231588,7 +231648,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tech_Villain_Storyline",
       "title": "Tech_Villain_Storyline",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_tech_villain_storyline",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -231932,7 +231993,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Teen_Titans%3A_The_Judas_Contract",
       "title": "Teen_Titans:_The_Judas_Contract",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_32",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -233668,7 +233730,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Battle_for_Earth",
       "title": "The_Battle_for_Earth",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_3",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -234128,7 +234191,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Death_of_Superman",
       "title": "The_Death_of_Superman",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_death_of_superman",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ]
@@ -235022,7 +235086,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(DLC)",
       "title": "The_Last_Laugh_(DLC)",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_4",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -235974,7 +236039,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam",
       "title": "The_Sins_of_Black_Adam",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_44",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ]
@@ -252263,7 +252329,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_I",
       "title": "War_of_the_Light_Part_I",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_9",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -252291,7 +252358,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_II",
       "title": "War_of_the_Light_Part_II",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_12",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vitalization+v4.3"
       ]
@@ -256272,7 +256340,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wishful_Thinking",
       "title": "Wishful_Thinking",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_classic_wishful_thinking",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Waterspouts"
       ]
@@ -257132,7 +257201,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Wonderverse",
       "title": "Wonderverse",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_38",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]
@@ -257540,7 +257610,8 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/World_of_Flashpoint",
       "title": "World_of_Flashpoint",
-      "status": "unreviewed",
+      "status": "published",
+      "slug": "Story_episode_40",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Witchy"
       ]

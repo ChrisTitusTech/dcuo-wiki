@@ -440,3 +440,40 @@ acceptance checklist was cleared afterward. Evidence:
 `.import-cache/feats/media-verification.json`, and
 `.import-cache/proofs/feats-live.png`. The small sorting follow-up receives a
 fresh deployment/check run; content and database state are unchanged by it.
+
+## Story navigation (authorized October 22, 2026)
+
+- [x] Add a compact Story navigation tab with original campaign, mentor paths, classic arcs, numbered Episodes and released chapters.
+- [x] Reuse source captures, fill missing story sources with Firecrawl, and record provenance. Include substantive narrative and mission links; omit future unnamed chapters and empty entries.
+- [x] Provide readable story pages and release-order navigation without implying that parallel classic arcs have one mandatory order.
+- [x] Validate complete coverage, guide links, search/filter behavior, mobile layout, existing article preservation and independent review.
+- [ ] Push to main and verify the live Story tab, article editor and existing edits.
+
+Scope: story summaries and source-documented mission/instance sequences, not a
+transcript of every conversation or an invented universal mission order.
+Preserve existing editable articles and source attributions. Reuse R2 artwork
+where already credited; do not hotlink new third-party art. Verify all 48
+Episodes, the six currently named chapters, and all source-listed classic arcs
+and mentor paths. Future named releases require source verification.
+
+Local acceptance: 75 source captures produce 73 story entries: the original
+invasion, six mentor paths, 11 classic arcs, 48 Episodes, The Death of Superman,
+and six named chapters. Seventy-one new editable articles are added; the two
+existing Children of Krypton chapter guides are reused. All 1,515 prior article
+records remain unchanged. Generation reproduces all four output files
+identically on an in-memory rerun. Existing R2 images are reused; no new media
+objects, account changes or database migrations are needed.
+
+The Story index supports era/full-text filters and shared URLs, works without
+JavaScript, and reflects published corrections through the existing live index
+renderer. The first review identified lost empty mentor-level parents and
+omitted Chapter Missions; heading context now preserves all level boundaries,
+and all chapter mission sections are retained. Regression tests cover both.
+Final full-feature and sitemap reviews found no actionable defects.
+
+Local gates pass: 105 unit tests, 22 browser tests, 15 Cloudflare integration
+tests, Astro checks, and deployment dry run. Output has 1,686 files against the
+20,000 platform limit; Worker gzip size is 1,757.71 KiB. Local browser inspection
+confirmed Story navigation, original-game layout, mentor level 5/15/30 labels
+and the numbered Murder in Kaznia / Dead Reckoning chapter chains. Release
+checks compare 152 pre-existing live parts across six sampled articles.

@@ -9,6 +9,7 @@ export function GET() {
     "/",
     "/about/",
     "/guides/",
+    "/story/",
     "/releases/",
     ...releases
       .filter((r) => articles.some((a) => releaseIdsFor(a.slug).includes(r.id)))

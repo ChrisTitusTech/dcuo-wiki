@@ -461,3 +461,33 @@ test("the largest existing article can be edited and previewed as a complete doc
   await expect(page.locator("#article-preview h1")).toHaveText("Collections");
   await expect(page.locator("#article-preview table").first()).toBeVisible();
 });
+
+test("published story corrections appear safely in the Story tab and its search", async ({
+  page,
+  request,
+}) => {
+  const res = await request.get("/story/");
+  expect(res.headers()["cache-control"]).toBe("no-store");
+  expect(await res.text()).toContain(
+    "Live story correction &lt;script&gt;storyUnsafe()&lt;/script&gt;",
+  );
+  await page.goto("/story/");
+  await page
+    .getByRole("searchbox", { name: "Find a story", exact: true })
+    .fill("Live story correction");
+  await expect(page.locator(".story-row:visible")).toHaveCount(1);
+  await expect(page.locator(".story-card:visible p")).toContainText(
+    "Live story correction <script>storyUnsafe()</script>",
+  );
+  expect(await page.evaluate(() => typeof (window as any).storyUnsafe)).toBe(
+    "undefined",
+  );
+  await page.locator(".story-card:visible").click();
+  await expect(page.locator('[data-live-part="summary"]')).toContainText(
+    "Live story correction",
+  );
+  await page.getByRole("link", { name: "Edit this page", exact: true }).click();
+  await expect(
+    page.getByRole("textbox", { name: "Article body", exact: true }),
+  ).toContainText("Green Lantern");
+});

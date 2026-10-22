@@ -14731,6 +14731,645 @@
       "method": "feat-source-release",
       "source": "https://dcuniverseonline.fandom.com/wiki/You_Got_Jammed_(Feat)",
       "evidence": "You Got Jammed: You Got Jammed is a feat for heroes in the Metal Pt. I: Batcave Breach 4-player operation and part of the Metal Part I episode. Source catalog links and exact release names determine the release; unassociated system feats use game-systems."
+    },
+    {
+      "slug": "Story_original_game",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_meta_hero_storyline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Meta_Hero_Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_tech_hero_storyline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tech_Hero_Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_magic_hero_storyline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Magic_Hero_Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_meta_villain_storyline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Meta_Villain_Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_tech_villain_storyline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Tech_Villain_Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_magic_villain_storyline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Magic_Villain_Storyline",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_arkham_unleashed",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Arkham_Unleashed",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_beginning_of_the_end",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Beginning_of_the_End",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_dying_of_the_light",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dying_of_the_Light",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_gotham_s_gang_war",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Gotham%27s_Gang_War",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_hearts_of_darkness",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hearts_of_Darkness",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_legacy_of_krypton",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Legacy_of_Krypton",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_punchline",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Punchline_(story_arc)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_sins_of_the_father",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sins_of_the_Father",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_survival_of_the_fittest",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Survival_of_the_Fittest",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_til_death_do_us_part",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/%27Til_Death_Do_Us_Part",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_classic_wishful_thinking",
+      "ids": [
+        "core-game"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wishful_Thinking",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_1",
+      "ids": [
+        "episode-1"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fight_for_the_Light",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_2",
+      "ids": [
+        "episode-2"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Lightning_Strikes",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_3",
+      "ids": [
+        "episode-3"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Battle_for_Earth",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_4",
+      "ids": [
+        "episode-4"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Last_Laugh_(DLC)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_5",
+      "ids": [
+        "episode-5"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hand_of_Fate",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_6",
+      "ids": [
+        "episode-6"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Home_Turf",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_7",
+      "ids": [
+        "episode-7"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Origin_Crisis",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_8",
+      "ids": [
+        "episode-8"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sons_of_Trigon",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_9",
+      "ids": [
+        "episode-9"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_I",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_10",
+      "ids": [
+        "episode-10"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_I",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_11",
+      "ids": [
+        "episode-11"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_I",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_12",
+      "ids": [
+        "episode-12"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/War_of_the_Light_Part_II",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_13",
+      "ids": [
+        "episode-13"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_II",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_14",
+      "ids": [
+        "episode-14"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Halls_of_Power_Part_II",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_15",
+      "ids": [
+        "episode-15"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_15:_Bombshell_Paradox_%26_Corrupted_Zamaron",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_16",
+      "ids": [
+        "episode-16"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_16:_Desecrated_Cathedral_%26_Oa_Under_Siege",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_17",
+      "ids": [
+        "episode-17"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_17:_Flash_Museum_Burglary_%26_Unholy_Matrimony",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_18",
+      "ids": [
+        "episode-18"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_18:_Blackest_Day_%26_The_Demon%27s_Pit",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_19",
+      "ids": [
+        "episode-19"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_19:_The_Demon%27s_Plan_%26_Deep_Desires",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_20",
+      "ids": [
+        "episode-20"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_20:_Blackest_Night_%26_Wastelands_Wonderland",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_21",
+      "ids": [
+        "episode-21"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_21:_The_First_Piece_%26_Prison_Break",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_22",
+      "ids": [
+        "episode-22"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_22:_Phantom_Zone_%26_Science_Spire",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_23",
+      "ids": [
+        "episode-23"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_23:_Brainiac%27s_Bottle_Ship_%26_The_Will_of_Darkseid",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_24",
+      "ids": [
+        "episode-24"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_24:_Darkseid%27s_War_Factory_%26_Harley%27s_Heist",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_25",
+      "ids": [
+        "episode-25"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_25:_Iceberg_Lounge_%26_A_Rip_in_Time",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_26",
+      "ids": [
+        "episode-26"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Episode_26:_Wayne_Manor_Gala_%26_Kandor_Central_Tower",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_27",
+      "ids": [
+        "episode-27"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Amazon_Fury_Part_III",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_28",
+      "ids": [
+        "episode-28"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Age_of_Justice",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_29",
+      "ids": [
+        "episode-29"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Riddled_with_Crime",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_30",
+      "ids": [
+        "episode-30"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Earth_3",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_31",
+      "ids": [
+        "episode-31"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Deluge",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_death_of_superman",
+      "ids": [
+        "death-of-superman"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Death_of_Superman",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_32",
+      "ids": [
+        "episode-32"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Teen_Titans:_The_Judas_Contract",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_33",
+      "ids": [
+        "episode-33"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Atlantis_(Episode)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_34",
+      "ids": [
+        "episode-34"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_(Episode)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_35",
+      "ids": [
+        "episode-35"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_I",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_36",
+      "ids": [
+        "episode-36"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Metal_Part_II",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_37",
+      "ids": [
+        "episode-37"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Birds_of_Prey_(Episode)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_38",
+      "ids": [
+        "episode-38"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Wonderverse",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_39",
+      "ids": [
+        "episode-39"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Long_Live_the_Legion",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_40",
+      "ids": [
+        "episode-40"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/World_of_Flashpoint",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_41",
+      "ids": [
+        "episode-41"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/House_of_Legends_(Episode)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_42",
+      "ids": [
+        "episode-42"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Legion_of_Doom_(Episode)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_43",
+      "ids": [
+        "episode-43"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Dark_Knights_(Episode)",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_44",
+      "ids": [
+        "episode-44"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Sins_of_Black_Adam",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_45",
+      "ids": [
+        "episode-45"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Shock_to_the_System",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_46",
+      "ids": [
+        "episode-46"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Justice_League_Dark_Cursed",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_47",
+      "ids": [
+        "episode-47"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Brainiac_Returns",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_episode_48",
+      "ids": [
+        "episode-48"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Harley_Quinn_vs._Apokolips",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_light_and_rain_chapter_1",
+      "ids": [
+        "light-and-rain-chapter-1"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Day_of_Reckoning",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_light_and_rain_chapter_2",
+      "ids": [
+        "light-and-rain-chapter-2"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Fearful_Day",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_light_and_rain_chapter_3",
+      "ids": [
+        "light-and-rain-chapter-3"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Raging_Night",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
+    },
+    {
+      "slug": "Story_light_and_rain_chapter_4",
+      "ids": [
+        "light-and-rain-chapter-4"
+      ],
+      "method": "story-source",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Hope_Burns_Bright",
+      "evidence": "Narrative and mission references from the exact classic, mentor or release source."
     }
   ]
 }

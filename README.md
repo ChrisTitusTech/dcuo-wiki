@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An Astro wiki for https://dcuo-wiki.com with 1,515 published articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
+An Astro wiki for https://dcuo-wiki.com with 1,586 published articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
 
 ## Develop and validate
 
@@ -100,6 +100,42 @@ npm run validate
 
 The reward builder reads cached mission/instance captures and the Currency source capture at `.import-cache/release-guides/currency-source.json`. It restores currency labels dropped when the source used icons alone, and builds the currency icon registry. Reward display uses source context only when the current editable part still matches its original text. Player corrections retain their amounts and named currencies receive the same safe icon rendering. Historical currencies are retained by name; quantities are not converted or invented. Existing article parts and revision hashes remain unchanged. Upload and verify new media originals/previews and upsert D1 metadata using the [image storage workflow](docs/MEDIA.md) before deploying.
 
+## Story
+
+`/story/` follows the narrative from the original game through all 48 Episodes,
+The Death of Superman and the six currently named chapters. It includes six
+mentor paths and 11 classic arcs, for 73 story guides. Seventy-one new articles
+use the complete wiki editor; the two existing Children of Krypton chapter
+guides are reused. Era and full-text filters combine and persist in shareable
+URLs. All story links remain accessible without JavaScript. Published title and
+summary corrections appear in the Story index through the existing live index
+renderer.
+
+Episodes follow release order, with The Death of Superman between Episodes 31
+and 32. Classic arcs and mentor paths run in parallel; the reading order does
+not claim that every character follows one journal sequence. Source narrative
+and documented mission/instance lists are retained, placeholder-only lists and
+maintenance notices are omitted, and only already credited R2 illustrations
+are displayed. Every guide links its source and contributor history. The
+verified official Children of Krypton page lists Chapters 1 and 2 as available;
+unnamed locked chapters are not published as empty pages.
+
+```sh
+node scripts/download-story-sources.mjs
+node scripts/build-story.mjs
+npm run inventory
+npm run validate
+npm run test:browser
+npm run test:cloudflare
+npm run deploy:check
+```
+
+`data/story-sources.json` records 75 source captures and their hashes.
+`src/data/story.json` records the ordered reading catalog and generated article
+slugs. Regeneration removes only its own generated records and preserves the
+existing chapter guides, editable article parts and release assignments.
+Download captures stay in the ignored cache and are reused on subsequent runs.
+
 ## Feats and point farming
 
 The current feat import contains 5,801 entries across 94 groups, including faction and historical variants, with 160 individual walkthroughs. It inspects 424 source URLs: 342 successful captures and 82 confirmed 404 pages omitted. Eleven source rows lack substantive requirements and remain rejected. This is source coverage, not a claim that every current in-game feat has a verified walkthrough.
@@ -128,7 +164,7 @@ Upload and verify new R2 originals/previews and mirror their provenance in D1 be
 
 ## Discovery and inventory
 
-`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,515 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
+`data/discovery.json` holds Firecrawl link observations, page provenance, and exact continuation URLs. `data/inventory.json` is the derived inventory. The completed traversal covers 84 sequential All Pages batches, ending at the final Z entries, and records 28,636 unique article candidates plus 12 supporting pages. The current published dataset contains 1,586 articles. The inventory exhaustiveness flag means the source main-namespace pagination chain ended; it does not mean every candidate is substantive, current, or imported. Redirects and semantically duplicate titles still require resolution, and supporting namespaces have not been comprehensively enumerated.
 
 ```sh
 npm run inventory

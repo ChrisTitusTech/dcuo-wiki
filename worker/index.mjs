@@ -233,6 +233,7 @@ export async function handle(request, env, fetcher = fetch) {
     if (
       (path === "/" ||
         /^\/guides\/?$/.test(path) ||
+        /^\/story\/?$/.test(path) ||
         /^\/releases\/[^/]+\/?$/.test(path)) &&
       ["GET", "HEAD"].includes(request.method)
     )

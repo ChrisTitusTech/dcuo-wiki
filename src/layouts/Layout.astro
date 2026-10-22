@@ -10,7 +10,9 @@ const {
   title,
   description = "A carefully sourced DC Universe Online community wiki.",
 } = Astro.props;
-const categories = [...new Set(articles.map((a) => a.category))];
+const categories = [...new Set(articles.map((a) => a.category))].filter(
+  (c) => c !== "Story",
+);
 const home = Astro.url.pathname === "/";
 ---
 
@@ -84,6 +86,12 @@ const home = Astro.url.pathname === "/";
             </a>
           </nav>
           <nav aria-label="Content navigation">
+            <a
+              class:list={{ active: Astro.url.pathname === "/story/" }}
+              href="/story/"
+            >
+              Story
+            </a>
             <a href="/releases/">Episodes, DLCs &amp; chapters</a>
           </nav>
           <h2>Browse the wiki</h2>

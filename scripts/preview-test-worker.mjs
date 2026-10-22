@@ -98,6 +98,14 @@ await writeFile(
 INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
 VALUES ('Grab_and_Smash','document','${createHash("sha256").update(JSON.stringify(beforeDocument)).digest("hex")}',0,'${quote(JSON.stringify(editedDocument))}','${quote(JSON.stringify(beforeDocument))}','Local full article test','Local in-game fixture evidence','11111111-1111-4111-8111-111111111111','Local fixture',3);`,
 );
+const storyFixture = articles.find((a) => a.slug === "Story_episode_1");
+await writeFile(
+  join(directory, "seed.sql"),
+  (await readFile(join(directory, "seed.sql"), "utf8")) +
+    `
+INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
+VALUES ('Story_episode_1','summary','${createHash("sha256").update(storyFixture.summary).digest("hex")}',0,'Live story correction <script>storyUnsafe()</script>','${quote(storyFixture.summary)}','Local story navigation test','Local story source evidence','11111111-1111-4111-8111-111111111111','Local fixture',4);`,
+);
 const init = spawnSync(
   process.execPath,
   [

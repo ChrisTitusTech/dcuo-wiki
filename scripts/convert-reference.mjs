@@ -33,7 +33,8 @@ const safe = (value) => {
     return false;
   }
 };
-export function convertReference(markdown, source) {
+/** @param {string} markdown @param {string} source @param {{headingTitle?: (title:string, depth:number)=>string}} [options] */
+export function convertReference(markdown, source, options = {}) {
   const tree = fromMarkdown(markdown, {
     extensions: [gfm()],
     mdastExtensions: [gfmFromMarkdown()],
@@ -236,7 +237,10 @@ export function convertReference(markdown, source) {
   for (const node of tree.children) {
     if (node.type === "heading") {
       flush();
-      title = plain(node).split("[ Edit section:")[0].trim();
+      const heading = plain(node).split("[ Edit section:")[0].trim();
+      title = options.headingTitle
+        ? options.headingTitle(heading, node.depth)
+        : heading;
     } else {
       if (title === "Contents" && node.type === "list") continue;
       if (title === "Contents") title = "Source details";

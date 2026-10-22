@@ -1,0 +1,7 @@
+{
+  "checked": "2026-10-22",
+  "source": "https://www.dcuniverseonline.com/children-of-krypton?chapter=2&nav=true",
+  "method": "Firecrawl search and full-page scrape of the official chapter page",
+  "availableChapters": ["Shadows Over Argo", "Wrath of the Worldkillers"],
+  "omitted": "The official page shows locked, unnamed slots for Chapters 3 and 4. No empty story pages are generated for them."
+}

@@ -5,6 +5,7 @@ import ArticleEditor from "../../components/ArticleEditor.astro";
 import { renderMapLinks } from "../../../shared/media.mjs";
 import { releasesFor, releaseHref } from "../../../shared/releases.mjs";
 import articles from "../../data/articles";
+import story from "../../data/story.json";
 export function getStaticPaths() {
   return articles.map((article) => ({
     params: { slug: article.slug },
@@ -22,7 +23,11 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       <a href="/">Main page</a>
       <span>/</span>
       <a
-        href={`/guides/?category=${encodeURIComponent(article.category)}#library`}
+        href={
+          article.category === "Story"
+            ? "/story/"
+            : `/guides/?category=${encodeURIComponent(article.category)}#library`
+        }
       >
         {article.category}
       </a>
@@ -37,6 +42,11 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       <a href="#article-editor">Edit this page</a>
       <a href={article.history}>Source history ↗</a>
     </div>
+    {story.entries.some((e) => e.slug === article.slug) && (
+      <p>
+        <a href="/story/">Story timeline, original mentor paths and chapters</a>
+      </p>
+    )}
     {article.category === "Feats" && (
       <p>
         <a href="/feats/">
