@@ -488,3 +488,28 @@ six-chapter filter, Wrath of the Worldkillers search and its complete article
 editor. No production test correction was published. Evidence is in
 `.import-cache/story/production-acceptance.json` and
 `.import-cache/proofs/story-live.png`.
+
+### Story mission path correction (2026-10-22)
+
+The source's empty-header layout tables had flattened faction columns and
+embedded mission headings into a single list. Story conversion now recovers
+those cells before importing, scopes Hero/Villain paths to their story segment,
+and separates main, optional side and featured-objective lists. It retains
+source order and original step numbers (including gaps for absent side missions),
+removes numbered n/a placeholders and duplicate text within each section, and
+keeps shared missions in their respective faction paths with the correct links.
+
+Regenerated 15 Story articles: all 11 classic arcs and Episodes 1, 2, 3 and 11.
+Other articles and release chronology remain unchanged. Public document checks
+found revision 0 on all 15 affected articles before deployment. No database
+migration or production test edit is needed. Generation is repeatable. Regression
+coverage checks faction paths, source sequence, faction-specific references,
+numbered main/side missions and removal of source editor markup.
+
+Local acceptance: Astro checks, 108 unit tests, 23 browser tests, 15 Cloudflare
+integration tests and deployment dry run pass. Static output remains 1,686 files
+against the 20,000-file platform limit. Independent review caught shared
+collectibles falling under the last faction; this was fixed and regression
+tested. Follow-up review found no actionable regressions. A concurrent build
+interfered with two browser checks; both suites passed when rerun against the
+completed build. Deployment and live acceptance follow.

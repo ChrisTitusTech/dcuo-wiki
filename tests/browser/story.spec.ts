@@ -55,3 +55,27 @@ test("the whole Story catalog remains accessible without JavaScript", async ({
   ).toBeVisible();
   await context.close();
 });
+
+test("Episode 1 separates faction mission paths in source order", async ({
+  page,
+}) => {
+  await page.goto("/wiki/Story_episode_1/");
+  const body = page.locator("#article-body");
+  await expect(
+    body.getByRole("heading", {
+      name: "Story Missions - For Heroes",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(
+    body.getByRole("heading", {
+      name: "Story Missions - For Villains",
+      exact: true,
+    }),
+  ).toBeVisible();
+  const text = await body.innerText();
+  expect(text.indexOf("Emergency at Ferris Aircraft")).toBeLessThan(
+    text.indexOf("Opportunity at Ferris Aircraft"),
+  );
+  expect(text).not.toMatch(/Edit section:|#####/);
+});

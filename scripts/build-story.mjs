@@ -1,7 +1,7 @@
 // Source-backed story articles reuse the complete wiki editor and existing guide links.
 import fs from "node:fs/promises";
 import { convertReference } from "./convert-reference.mjs";
-import { storyHeadingContext } from "./story-content.mjs";
+import { storyHeadingContext, storyMarkdown } from "./story-content.mjs";
 import { issuesFor } from "./content-policy.mjs";
 import { normalize } from "./assign-guide-releases.mjs";
 const manifest = JSON.parse(
@@ -35,7 +35,7 @@ for (const rec of manifest.records) {
   captures.set(normalize(rec.url), {
     c,
     rec,
-    converted: convertReference(c.markdown, rec.url, {
+    converted: convertReference(storyMarkdown(c.markdown), rec.url, {
       headingTitle: storyHeadingContext(),
     }),
   });
@@ -61,7 +61,14 @@ const cleanItems = (items) =>
       !/\b(?:TODO|TBD|coming soon)\b/i.test(t),
   );
 function sourceSection(s) {
-  const items = cleanItems(s.items);
+  const items = [
+    ...new Set(
+      cleanItems(s.items.map((t) => t.replace(/^(?:>\s*)+/, "").trim())).filter(
+        (t) =>
+          t && !/^(?:[\d]+\.\s*)?(?:n\/?a|none|unknown|[>\'\s]+)$/i.test(t),
+      ),
+    ),
+  ];
   const references = (s.references || [])
     .filter(
       (r) =>
@@ -286,7 +293,7 @@ for (const [i, r] of expanded.entries())
         ...front,
         ...ss
           .slice(end < 0 ? ss.length : end)
-          .filter((s) => /^(?:Story|Chapter) Missions$/i.test(s.title)),
+          .filter((s) => /^(?:Story|Chapter) Missions(?: -|$)/i.test(s.title)),
       ];
     },
   });
