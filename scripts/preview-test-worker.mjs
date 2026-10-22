@@ -6,6 +6,7 @@ import { spawn, spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { articleParts } from "../shared/article-content.mjs";
 import articles from "../src/data/articles.json" with { type: "json" };
+import { baselineDocument, validateDocument } from "../shared/rich-article.mjs";
 const directory = await mkdtemp(join(tmpdir(), "dcuo-worker-test-"));
 const { default: ts } = await import("typescript");
 const parsed = ts.parseConfigFileTextToJson(
@@ -60,6 +61,43 @@ INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previo
 VALUES ('BOUNTY_New_Genesis_Protector','${rewardPart.id}','${createHash("sha256").update(rewardPart.text).digest("hex")}',0,'- 9 Source Marks\n- Reward correction fixture <script>unsafe()</script>','${rewardPart.text.replaceAll("'", "''")}','Local reward correction test','Local fixture evidence','11111111-1111-4111-8111-111111111111','Local fixture',2);`,
 );
 const cli = resolve("node_modules/wrangler/bin/wrangler.js");
+const ice = articles.find((a) => a.slug === "Grab_and_Smash");
+const beforeDocument = baselineDocument(ice, articleParts(ice));
+const editedDocument = validateDocument({
+  ...structuredClone(beforeDocument),
+  title: "Live fixture Grab and Smash guide",
+  summary: "A full-article fixture summary for Grab and Smash players.",
+  content: {
+    type: "doc",
+    content: [
+      {
+        type: "heading",
+        attrs: { level: 2 },
+        content: [{ type: "text", text: "Community walkthrough" }],
+      },
+      {
+        type: "paragraph",
+        content: [
+          {
+            type: "text",
+            text: "Live full-article fixture with ",
+            marks: [{ type: "bold" }],
+          },
+          { type: "text", text: "<script>neverExecute()</script>" },
+        ],
+      },
+      ...beforeDocument.content.content,
+    ],
+  },
+});
+const quote = (value) => value.replaceAll("'", "''");
+await writeFile(
+  join(directory, "seed.sql"),
+  (await readFile(join(directory, "seed.sql"), "utf8")) +
+    `
+INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
+VALUES ('Grab_and_Smash','document','${createHash("sha256").update(JSON.stringify(beforeDocument)).digest("hex")}',0,'${quote(JSON.stringify(editedDocument))}','${quote(JSON.stringify(beforeDocument))}','Local full article test','Local in-game fixture evidence','11111111-1111-4111-8111-111111111111','Local fixture',3);`,
+);
 const init = spawnSync(
   process.execPath,
   [

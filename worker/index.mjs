@@ -13,11 +13,18 @@ import {
 } from "./security.mjs";
 import {
   findArticle,
-  liveParts,
   serveArticle,
   serveIndex,
+  articleState,
+  getDocumentState,
 } from "./articles.mjs";
 import { renderPart } from "../shared/article-content.mjs";
+import {
+  validateDocument,
+  renderDocument,
+  DOCUMENT_BYTES,
+} from "../shared/rich-article.mjs";
+import media from "../data/media.json" with { type: "json" };
 import { searchCharacters, matchCharacter } from "./census.mjs";
 const SESSION = "__Host-dcuo-session",
   STATE = "__Host-dcuo-state";
@@ -233,23 +240,85 @@ export async function handle(request, env, fetcher = fetch) {
     if (path.startsWith("/wiki/") && ["GET", "HEAD"].includes(request.method))
       return await serveArticle(request, env);
     if (!path.startsWith("/api/")) return env.ASSETS.fetch(request);
-    const articleRoute = path.match(/^\/api\/articles\/([^/]+)(\/history)?$/);
+    const articleRoute = path.match(
+      /^\/api\/articles\/([^/]+)(?:\/(history|document|preview|media)(?:\/(\d+))?)?$/,
+    );
     if (articleRoute && request.method === "GET") {
       const article = findArticle(decodeURIComponent(articleRoute[1]));
       if (!env.DB) throw new HttpError(503, "Live editing is unavailable.");
-      if (articleRoute[2])
+      if (articleRoute[3] && articleRoute[2] !== "history")
+        throw new HttpError(404, "Endpoint not found.");
+      if (articleRoute[2] === "document")
+        return json(await getDocumentState(env, article));
+      if (articleRoute[2] === "media") {
+        const query = (url.searchParams.get("q") || "")
+          .toLowerCase()
+          .slice(0, 120);
+        const state = query ? null : await getDocumentState(env, article);
+        const current = new Set();
+        const walk = (n) => {
+          if (n.type === "image") current.add(n.attrs.src);
+          (n.content || []).forEach(walk);
+        };
+        if (state) walk(state.document.content);
+        return json({
+          images: media
+            .filter((m) =>
+              query
+                ? query
+                    .split(/\s+/)
+                    .filter(Boolean)
+                    .every((term) =>
+                      (m.sourcePage + " " + m.discoveredOn)
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]/g, "")
+                        .includes(term.replace(/[^a-z0-9]/g, "")),
+                    )
+                : current.has(m.preview),
+            )
+            .slice(0, 24)
+            .map((m) => ({
+              src: m.preview,
+              source: m.sourcePage,
+              label: decodeURIComponent(
+                m.sourcePage.split("File:")[1] || "Image",
+              ),
+              credit: m.credit,
+            })),
+        });
+      }
+      if (articleRoute[2] === "history" && articleRoute[3]) {
+        const revision = await stmt(
+          env,
+          "SELECT id,part,content,previous_content,reason,sources,character_name,created_at FROM article_revisions WHERE slug=? AND id=?",
+          article.slug,
+          Number(articleRoute[3]),
+        ).first();
+        if (!revision) throw new HttpError(404, "Revision not found.");
+        const versions =
+          revision.part === "document"
+            ? [revision.previous_content, revision.content].map((value) => {
+                const document = validateDocument(JSON.parse(value));
+                return { document, ...renderDocument(document) };
+              })
+            : undefined;
+        return json({ revision, ...(versions ? { versions } : {}) });
+      }
+      if (articleRoute[2] === "history")
         return json({
           revisions: (
             await stmt(
               env,
-              "SELECT id,part,content,previous_content,reason,sources,character_name,created_at FROM article_revisions WHERE slug=? ORDER BY id DESC LIMIT 50",
+              "SELECT id,part,reason,sources,character_name,created_at FROM article_revisions WHERE slug=? ORDER BY id DESC LIMIT 50",
               article.slug,
             ).all()
           ).results,
         });
+      if (articleRoute[2]) throw new HttpError(404, "Endpoint not found.");
+      const state = await articleState(env, article);
       return json({
-        title: article.title,
-        parts: await liveParts(env, article),
+        title: state.document?.title || article.title,
+        parts: state.parts,
       });
     }
     if (path === "/api/status" && request.method === "GET")
@@ -268,6 +337,20 @@ export async function handle(request, env, fetcher = fetch) {
       request.headers.get("Origin") !== origin
     )
       throw new HttpError(403, "Please submit from this website.");
+    if (
+      articleRoute?.[2] === "preview" &&
+      !articleRoute[3] &&
+      request.method === "POST"
+    ) {
+      findArticle(decodeURIComponent(articleRoute[1]));
+      const b = await bodyJson(request, DOCUMENT_BYTES * 2 + 16384);
+      try {
+        const document = validateDocument(b.document);
+        return json({ document, ...renderDocument(document) });
+      } catch (error) {
+        throw new HttpError(400, error.message);
+      }
+    }
     if (
       request.method === "GET" &&
       ["/api/auth/discord", "/api/auth/callback"].includes(path)
@@ -383,6 +466,70 @@ export async function handle(request, env, fetcher = fetch) {
       }
       return json({ profile: await profile(env, user.id) });
     }
+    if (
+      articleRoute?.[2] === "document" &&
+      !articleRoute[3] &&
+      request.method === "POST"
+    ) {
+      await limit(env, `publish:${user.id}`, 20, 3600);
+      const article = findArticle(decodeURIComponent(articleRoute[1]));
+      const p = await profile(env, user.id);
+      if (!p)
+        throw new HttpError(
+          403,
+          "Match your character in Census before publishing.",
+        );
+      const b = await bodyJson(request, DOCUMENT_BYTES * 2 + 16384);
+      let document;
+      try {
+        document = validateDocument(b.document);
+      } catch (error) {
+        throw new HttpError(400, error.message);
+      }
+      const current = await getDocumentState(env, article);
+      if (b.revision !== current.revision || b.baseHash !== current.baseHash)
+        throw new HttpError(
+          409,
+          "This article changed since you opened it. Your draft is saved; compare it with the latest published article before trying again.",
+        );
+      const content = JSON.stringify(document),
+        previous = JSON.stringify(current.document);
+      if (content === previous)
+        throw new HttpError(400, "Change the article before publishing.");
+      const reason = textField(b.reason, "Edit summary", 10, 500);
+      const sources = textField(b.sources, "Supporting evidence", 10, 2000);
+      await matchCharacter(
+        env,
+        p.character.character_id,
+        p.character.name,
+        fetcher,
+      );
+      const saved = await stmt(
+        env,
+        `INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
+        SELECT ?,'document',?,?,?,?,?,?,user_id,character_name,? FROM profiles WHERE user_id=? AND character_id=? AND character_name=?
+        AND COALESCE((SELECT MAX(id) FROM article_revisions WHERE slug=?),0)=?`,
+        article.slug,
+        current.baseHash,
+        current.revision,
+        content,
+        previous,
+        reason,
+        sources,
+        now(),
+        user.id,
+        p.character.character_id,
+        p.character.name,
+        article.slug,
+        current.revision,
+      ).run();
+      if (saved.meta.changes !== 1)
+        throw new HttpError(
+          409,
+          "The article or your character changed. Your draft is saved. Reload the current article before publishing.",
+        );
+      return json({ published: true }, 201);
+    }
     if (articleRoute && !articleRoute[2] && request.method === "POST") {
       await limit(env, `publish:${user.id}`, 20, 3600);
       const article = findArticle(decodeURIComponent(articleRoute[1]));
@@ -393,7 +540,13 @@ export async function handle(request, env, fetcher = fetch) {
           "Match your character in Census before publishing.",
         );
       const b = await bodyJson(request);
-      const part = (await liveParts(env, article)).find((p) => p.id === b.part);
+      const state = await articleState(env, article);
+      if (state.document)
+        throw new HttpError(
+          409,
+          "This page now uses full-article editing. Reload and use Edit this page.",
+        );
+      const part = state.parts.find((p) => p.id === b.part);
       if (!part)
         throw new HttpError(400, "Choose an existing article section.");
       if (b.revision !== part.revision || b.baseHash !== part.baseHash)
@@ -426,7 +579,8 @@ export async function handle(request, env, fetcher = fetch) {
         env,
         `INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
         SELECT ?,?,?,?,?,?,?,?,user_id,character_name,? FROM profiles WHERE user_id=? AND character_id=? AND character_name=?
-        AND COALESCE((SELECT MAX(id) FROM article_revisions WHERE slug=? AND part=? AND base_hash=?),0)=?`,
+        AND COALESCE((SELECT MAX(id) FROM article_revisions WHERE slug=? AND part=? AND base_hash=?),0)=?
+        AND NOT EXISTS (SELECT 1 FROM article_revisions WHERE slug=? AND part='document')`,
         article.slug,
         part.id,
         part.baseHash,
@@ -443,6 +597,7 @@ export async function handle(request, env, fetcher = fetch) {
         part.id,
         part.baseHash,
         part.revision,
+        article.slug,
       ).run();
       if (saved.meta.changes !== 1)
         throw new HttpError(

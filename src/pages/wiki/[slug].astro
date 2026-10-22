@@ -46,7 +46,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
   <div class="article-grid">
     <aside class="toc">
       <strong>Contents</strong>
-      <nav aria-label="Table of contents">
+      <nav id="article-toc" aria-label="Table of contents">
         {article.sections.map((s, i) => (
           <a href={`#section-${i}`}>{s.title}</a>
         ))}
@@ -54,173 +54,177 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       </nav>
     </aside>
     <article>
-      {article.sections.map((s, i) => (
-        <section id={`section-${i}`}>
-          <a
-            class="section-edit"
-            href="#article-editor"
-            data-edit-part={`section-${i}`}
-            aria-label={`Edit ${s.title}`}
-          >
-            Edit section
-          </a>
-          <h2>{s.title}</h2>
-          <div
-            data-live-part={`section-${i}`}
-            set:html={
-              s.items.length
-                ? renderPart(
-                    parts.get(`section-${i}`),
-                    parts.get(`section-${i}`).text,
-                    { slug: article.slug },
-                  )
-                : ""
-            }
-          />
-          {s.images && (
+      <div id="article-body">
+        {article.sections.map((s, i) => (
+          <section id={`section-${i}`}>
+            <a
+              class="section-edit"
+              href="#article-editor"
+              data-edit-part={`section-${i}`}
+              aria-label={`Edit ${s.title}`}
+            >
+              Edit section
+            </a>
+            <h2>{s.title}</h2>
             <div
-              class="section-images"
-              data-live-part={`images-${i}`}
-              set:html={renderMapLinks(s.images.map((m) => [m.label, m.url]))}
+              data-live-part={`section-${i}`}
+              set:html={
+                s.items.length
+                  ? renderPart(
+                      parts.get(`section-${i}`),
+                      parts.get(`section-${i}`).text,
+                      { slug: article.slug },
+                    )
+                  : ""
+              }
             />
-          )}
-          {s.references && (
-            <details class="section-references">
-              <summary>
-                Source wiki detail links ({s.references.length})
-              </summary>
-              {s.references.map((r, index) => (
-                <>
-                  {index > 0 && " · "}
-                  <a href={r.url}>{r.label}</a>
-                </>
-              ))}
-            </details>
-          )}
-          {s.table && (
-            <>
-              <a
-                class="section-edit"
-                href="#article-editor"
-                data-edit-part={`table-${i}`}
-                aria-label={`Edit ${s.title} table`}
-              >
-                Edit table
-              </a>
+            {s.images && (
               <div
-                data-live-part={`table-${i}`}
-                class="table-scroll"
-                tabindex="0"
-                role="region"
-                aria-label={s.table.caption}
-              >
-                <Fragment
-                  set:html={renderPart(
-                    parts.get(`table-${i}`),
-                    parts.get(`table-${i}`).text,
-                    { slug: article.slug },
-                  )}
-                />
-              </div>
-            </>
-          )}
-        </section>
-      ))}
-      {article.location && (
-        <section id="location">
-          <div class="eyebrow">FIND YOUR WAY</div>
-          <a
-            class="section-edit"
-            href="#article-editor"
-            data-edit-part="location-maps"
-          >
-            Edit map links
-          </a>
-          <h2 data-live-part="location-label">{article.location.label}</h2>
-          <p>
-            Precision:{" "}
-            <span data-live-part="location-precision">
-              {article.location.precision}
-            </span>
-            . No coordinates have been inferred.{" "}
-            <a href={article.location.source}>Location evidence</a>.
-          </p>
-          <div
-            data-live-part="location-maps"
-            set:html={renderMapLinks(
-              article.location.maps.map((m) => [m.label, m.url]),
+                class="section-images"
+                data-live-part={`images-${i}`}
+                set:html={renderMapLinks(s.images.map((m) => [m.label, m.url]))}
+              />
             )}
-          />
-          {article.location.maps.length > 0 && (
-            <p class="map-note">
-              Select a map to open the full-size image. Copies are hosted by
-              DCUO Wiki; original sources are credited below.
-            </p>
-          )}
-        </section>
-      )}
-      {article.locationLimitation && (
-        <section>
-          <a
-            class="section-edit"
-            href="#article-editor"
-            data-edit-part="location-research"
-          >
-            Edit location research
-          </a>
-          <h2>Location research</h2>
-          <p data-live-part="location-research">{article.locationLimitation}</p>
-        </section>
-      )}
-      {article.videoReview && (
-        <section>
-          <a
-            class="section-edit"
-            href="#article-editor"
-            data-edit-part="videos"
-          >
-            Edit video walkthroughs
-          </a>
-          <h2>Video walkthroughs</h2>
-          <div data-live-part="videos">
-            {article.videos?.length ? (
-              <ul>
-                {article.videos.map((video) => (
-                  <li>
-                    <a
-                      href={
-                        video.startSeconds
-                          ? `${video.url}&t=${video.startSeconds}s`
-                          : video.url
-                      }
-                    >
-                      {video.title}
-                    </a>
-                    <p>{video.evidence}</p>
-                  </li>
+            {s.references && (
+              <details class="section-references">
+                <summary>
+                  Source wiki detail links ({s.references.length})
+                </summary>
+                {s.references.map((r, index) => (
+                  <>
+                    {index > 0 && " · "}
+                    <a href={r.url}>{r.label}</a>
+                  </>
                 ))}
-              </ul>
-            ) : (
-              <p>
-                No quest-specific video verified in the search performed on{" "}
-                {article.videoReview.checked}. This does not mean none exists.
+              </details>
+            )}
+            {s.table && (
+              <>
+                <a
+                  class="section-edit"
+                  href="#article-editor"
+                  data-edit-part={`table-${i}`}
+                  aria-label={`Edit ${s.title} table`}
+                >
+                  Edit table
+                </a>
+                <div
+                  data-live-part={`table-${i}`}
+                  class="table-scroll"
+                  tabindex="0"
+                  role="region"
+                  aria-label={s.table.caption}
+                >
+                  <Fragment
+                    set:html={renderPart(
+                      parts.get(`table-${i}`),
+                      parts.get(`table-${i}`).text,
+                      { slug: article.slug },
+                    )}
+                  />
+                </div>
+              </>
+            )}
+          </section>
+        ))}
+        {article.location && (
+          <section id="location">
+            <div class="eyebrow">FIND YOUR WAY</div>
+            <a
+              class="section-edit"
+              href="#article-editor"
+              data-edit-part="location-maps"
+            >
+              Edit map links
+            </a>
+            <h2 data-live-part="location-label">{article.location.label}</h2>
+            <p>
+              Precision:{" "}
+              <span data-live-part="location-precision">
+                {article.location.precision}
+              </span>
+              . No coordinates have been inferred.{" "}
+              <a href={article.location.source}>Location evidence</a>.
+            </p>
+            <div
+              data-live-part="location-maps"
+              set:html={renderMapLinks(
+                article.location.maps.map((m) => [m.label, m.url]),
+              )}
+            />
+            {article.location.maps.length > 0 && (
+              <p class="map-note">
+                Select a map to open the full-size image. Copies are hosted by
+                DCUO Wiki; original sources are credited below.
               </p>
             )}
-          </div>
-        </section>
-      )}
-      {related.length > 0 && (
-        <section>
-          <h2>Related guides</h2>
-          <ul>
-            {related.map((a) => (
-              <li>
-                <a href={`/wiki/${a.slug}/`}>{a.title}</a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+          </section>
+        )}
+        {article.locationLimitation && (
+          <section>
+            <a
+              class="section-edit"
+              href="#article-editor"
+              data-edit-part="location-research"
+            >
+              Edit location research
+            </a>
+            <h2>Location research</h2>
+            <p data-live-part="location-research">
+              {article.locationLimitation}
+            </p>
+          </section>
+        )}
+        {article.videoReview && (
+          <section>
+            <a
+              class="section-edit"
+              href="#article-editor"
+              data-edit-part="videos"
+            >
+              Edit video walkthroughs
+            </a>
+            <h2>Video walkthroughs</h2>
+            <div data-live-part="videos">
+              {article.videos?.length ? (
+                <ul>
+                  {article.videos.map((video) => (
+                    <li>
+                      <a
+                        href={
+                          video.startSeconds
+                            ? `${video.url}&t=${video.startSeconds}s`
+                            : video.url
+                        }
+                      >
+                        {video.title}
+                      </a>
+                      <p>{video.evidence}</p>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>
+                  No quest-specific video verified in the search performed on{" "}
+                  {article.videoReview.checked}. This does not mean none exists.
+                </p>
+              )}
+            </div>
+          </section>
+        )}
+        {related.length > 0 && (
+          <section>
+            <h2>Related guides</h2>
+            <ul>
+              {related.map((a) => (
+                <li>
+                  <a href={`/wiki/${a.slug}/`}>{a.title}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </div>
       <aside class="notice">
         <strong>Source & accuracy</strong>
         <p>

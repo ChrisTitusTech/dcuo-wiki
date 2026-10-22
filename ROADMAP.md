@@ -328,3 +328,30 @@ The corrected Wayne Manor Gala summary and conflicting-currency case also
 passed production checks. Evidence: `.import-cache/release-guides/production-verification.json`,
 `.import-cache/release-guides/media-verification.json`, and
 `.import-cache/proofs/reward-currencies-live.jpg`.
+
+## Full-article visual editing (authorized October 21, 2026)
+
+- [x] Replace the section selector with a full-page visual editor, HTML source, preview, formatting, tables, wiki images/maps and YouTube insertion.
+- [x] Preserve effective legacy edits and attribution when creating the initial complete document; retain old drafts and public revision history.
+- [x] Publish title, summary and body in one Census-checked, conditional revision; handle whole-article conflicts without losing the draft.
+- [x] Render complete revisions in live HTML, contents, metadata, guide cards and search, and restore earlier full documents as drafts.
+- [ ] Complete release validation, independent review, deployment and live acceptance.
+
+The document format uses the existing revision table, so no additional D1
+migration or editor service is required. Imported article JSON is unchanged.
+All 1,079 articles convert successfully; the largest document exceeds 400 KB
+and passes the complete visual/source/preview flow. Drafts are local to the
+browser tab. Canonical documents allow 250,000 text characters and 512 KiB of
+JSON while bounding nested structure, links, tables and media. Source HTML is
+parsed into the supported editor schema; the server independently validates
+that schema and renders safe HTML. Existing R2 provenance remains attached.
+
+Local acceptance: all 1,079 articles convert; 83 unit tests, 16 site browser
+tests and 14 Cloudflare integration tests pass. The largest article completes
+the visual/source/preview flow, and published fixture headings, tables, media,
+history restore and deliberately reviewed conflict publishing are covered.
+Desktop visual inspection and a 390 by 844 viewport check confirm the complete
+editor fits its viewport. The initial independent review identified long legacy
+summaries, fully spanned empty table rows, and generated section anchors; all
+three now have regression coverage. Legacy summaries up to 7,000 characters
+are retained, while full article bodies use the larger document limit.

@@ -328,8 +328,11 @@ test("matched players publish revisions, reject stale writes, and retain public 
   const history = await (
     await handle(new Request(origin + path + "/history"), env, fetcher)
   ).json();
-  assert.equal(history.revisions[0].previous_content, before.text);
-  assert.equal(history.revisions[0].content, edit.content);
+  const details = (
+    await (await call(path + "/history/" + history.revisions[0].id)).json()
+  ).revision;
+  assert.equal(details.previous_content, before.text);
+  assert.equal(details.content, edit.content);
   assert.equal(history.revisions[0].character_name, character.name);
   assert.equal(JSON.stringify(history).includes("discord_id"), false);
   assert.equal(
@@ -385,6 +388,187 @@ test("live publishing rechecks Census and rejects unsafe links or malformed tabl
   assert.equal((await call(path, "POST", good)).status, 201);
   const history = await (await call(path + "/history")).json();
   assert.equal(history.revisions.length, 1);
+});
+
+test("matched players publish whole articles over 7,000 characters in one revision and can restore them", async () => {
+  const { call, env, fetcher } = await setup();
+  const path = "/api/articles/Powers";
+  const snapshot = await (await call(path + "/document")).json();
+  const document = structuredClone(snapshot.document);
+  document.title = "Player-maintained Powers Guide";
+  document.summary =
+    "A new player-maintained summary checked against the game.";
+  document.content.content.push({
+    type: "paragraph",
+    content: [
+      { type: "text", text: "A detailed complete walkthrough. ".repeat(1000) },
+    ],
+  });
+  const payload = {
+    document,
+    baseHash: snapshot.baseHash,
+    revision: snapshot.revision,
+    reason: "Expand the entire guide with current walkthrough details.",
+    sources: "Verified in game using the current power menu.",
+  };
+  assert.equal((await call(path + "/document", "POST", payload)).status, 403);
+  await call("/api/profile", "POST", {
+    characterId: "123",
+    name: character.name,
+  });
+  assert.equal(
+    (
+      await call(path + "/document", "POST", payload, {
+        Origin: "https://evil.example",
+      })
+    ).status,
+    403,
+  );
+  assert.equal((await call(path + "/document", "POST", payload)).status, 201);
+  assert.equal((await call(path + "/document", "POST", payload)).status, 409);
+  const saved = await (await call(path + "/document")).json();
+  assert.equal(saved.document.title, document.title);
+  assert.equal(saved.document.summary, document.summary);
+  assert.ok(saved.html.includes("A detailed complete walkthrough."));
+  assert.ok(saved.revision > snapshot.revision);
+  const old = await (await call(path)).json();
+  assert.equal(old.title, document.title);
+  assert.equal(old.parts[0].text, document.summary);
+  assert.equal(
+    (
+      await call(path, "POST", {
+        part: "summary",
+        content: "An invisible old section update.",
+        baseHash: old.parts[0].baseHash,
+        revision: old.parts[0].revision,
+        reason: payload.reason,
+        sources: payload.sources,
+      })
+    ).status,
+    409,
+  );
+  const history = await (
+    await handle(new Request(origin + path + "/history"), env, fetcher)
+  ).json();
+  assert.equal(history.revisions[0].part, "document");
+  assert.equal(history.revisions[0].content, undefined);
+  const detail = (
+    await (await call(path + "/history/" + history.revisions[0].id)).json()
+  ).revision;
+  assert.deepEqual(JSON.parse(detail.previous_content), snapshot.document);
+  assert.equal(detail.character_name, character.name);
+  const restore = {
+    ...payload,
+    document: JSON.parse(detail.previous_content),
+    revision: saved.revision,
+    baseHash: saved.baseHash,
+  };
+  assert.equal((await call(path + "/document", "POST", restore)).status, 201);
+  assert.deepEqual(
+    (await (await call(path + "/document")).json()).document,
+    snapshot.document,
+  );
+});
+
+test("full article publishing rejects a concurrent section edit or character change during Census verification", async () => {
+  const { call, env, DB, request, user } = await setup();
+  await call("/api/profile", "POST", {
+    characterId: "123",
+    name: character.name,
+  });
+  const path = "/api/articles/Grab_and_Smash";
+  let snapshot = await (await call(path + "/document")).json();
+  const proposed = structuredClone(snapshot.document);
+  proposed.summary = "A corrected full-article summary with fresh evidence.";
+  const payload = {
+    document: proposed,
+    baseHash: snapshot.baseHash,
+    revision: snapshot.revision,
+    reason: "Correct details throughout this article.",
+    sources: "Checked directly in game with the current character.",
+  };
+  const summary = (await (await call(path)).json()).parts[0];
+  const result = await handle(
+    request(path + "/document", "POST", payload),
+    env,
+    async () => {
+      DB.sqlite
+        .prepare(
+          "INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+        )
+        .run(
+          "Grab_and_Smash",
+          "summary",
+          summary.baseHash,
+          0,
+          "A concurrent summary correction.",
+          summary.text,
+          "Concurrent correction",
+          "In-game evidence",
+          user,
+          character.name,
+          now(),
+        );
+      return Response.json({ character_list: [character] });
+    },
+  );
+  assert.equal(result.status, 409);
+  snapshot = await (await call(path + "/document")).json();
+  assert.equal(snapshot.document.summary, "A concurrent summary correction.");
+  const second = await handle(
+    request(path + "/document", "POST", {
+      ...payload,
+      revision: snapshot.revision,
+      baseHash: snapshot.baseHash,
+    }),
+    env,
+    async () => {
+      DB.sqlite.prepare("DELETE FROM profiles WHERE user_id=?").run(user);
+      return Response.json({ character_list: [character] });
+    },
+  );
+  assert.equal(second.status, 409);
+  assert.equal(
+    DB.sqlite
+      .prepare(
+        "SELECT COUNT(*) AS count FROM article_revisions WHERE part='document'",
+      )
+      .get().count,
+    0,
+  );
+});
+
+test("whole-article preview renders safely without sign-in and rejects scripts or unsafe media", async () => {
+  const { call, env, fetcher, request } = await setup();
+  const path = "/api/articles/Powers";
+  const snapshot = await (await call(path + "/document")).json();
+  const doc = structuredClone(snapshot.document);
+  doc.content.content.push({
+    type: "paragraph",
+    content: [{ type: "text", text: "<script>bad()</script>" }],
+  });
+  const previewRequest = new Request(origin + path + "/preview", {
+    method: "POST",
+    headers: { Origin: origin, "Content-Type": "application/json" },
+    body: JSON.stringify({ document: doc }),
+  });
+  const preview = await handle(previewRequest, env, fetcher);
+  assert.equal(preview.status, 200);
+  assert.match((await preview.json()).html, /&lt;script&gt;/);
+  doc.content.content.push({
+    type: "image",
+    attrs: { src: "javascript:alert(1)" },
+  });
+  assert.equal(
+    (
+      await handle(
+        request(path + "/preview", "POST", { document: doc }),
+        env,
+        fetcher,
+      )
+    ).status,
+    400,
+  );
 });
 
 async function secondAccount(context) {
@@ -499,5 +683,51 @@ test("simultaneous claims have one winner", async () => {
     context.DB.sqlite.prepare("SELECT COUNT(*) AS total FROM profiles").get()
       .total,
     1,
+  );
+});
+
+test("legacy summaries above 2,000 characters remain editable and publishable in full articles", async () => {
+  const { call } = await setup();
+  await call("/api/profile", "POST", {
+    characterId: "123",
+    name: character.name,
+  });
+  const path = "/api/articles/Powers";
+  const summary = (await (await call(path)).json()).parts[0];
+  const longSummary =
+    "Legacy summary details. ".repeat(260) + "End of preserved summary.";
+  assert.ok(longSummary.length > 2000 && longSummary.length < 7000);
+  assert.equal(
+    (
+      await call(path, "POST", {
+        part: "summary",
+        content: longSummary,
+        revision: summary.revision,
+        baseHash: summary.baseHash,
+        reason: "Preserve a previously valid long summary.",
+        sources: "A legacy in-game research summary with sources.",
+      })
+    ).status,
+    201,
+  );
+  const full = await (await call(path + "/document")).json();
+  assert.equal(full.document.summary, longSummary);
+  full.document.content.content.push({
+    type: "paragraph",
+    content: [{ type: "text", text: "A new complete article correction." }],
+  });
+  assert.equal(
+    (
+      await call(path + "/document", "POST", {
+        ...full,
+        reason: "Extend the guide while retaining the complete summary.",
+        sources: "Verified against the current in-game menu.",
+      })
+    ).status,
+    201,
+  );
+  assert.equal(
+    (await (await call(path + "/document")).json()).document.summary,
+    longSummary,
   );
 });

@@ -1109,3 +1109,9 @@ html.image-viewer-open { overflow: hidden; }
 
 .reward-currency { display: inline-flex; align-items: center; gap: .25rem; white-space: nowrap; vertical-align: middle; }
 .reward-currency img { width: 24px; height: 24px; object-fit: contain; display: inline-block; }
+.wiki-video { margin: 1rem 0; }
+.wiki-video iframe { width: min(100%, 850px); aspect-ratio: 16 / 9; height: auto; border: 0; }
+.wiki-video figcaption { font-size: .85rem; }
+.rich-article, #article-body { overflow-wrap: anywhere; }
+.rich-article .table-scroll p, #article-body .table-scroll p { margin: .25rem 0; }
+#article-toc .toc-subheading { padding-left: .8rem; font-size: .85rem; }

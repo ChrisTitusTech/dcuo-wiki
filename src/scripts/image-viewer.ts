@@ -34,8 +34,11 @@ document.addEventListener("click", (event) => {
     event.altKey
   )
     return;
+  const galleryRoot =
+    link.closest("#article-preview, #published-preview, #article-body") ||
+    document;
   const figures = [
-    ...document.querySelectorAll<HTMLElement>(".map-gallery figure"),
+    ...galleryRoot.querySelectorAll<HTMLElement>(".map-gallery figure"),
   ];
   const entries = figures.flatMap((figure) => {
     const anchor = figure.querySelector<HTMLAnchorElement>(

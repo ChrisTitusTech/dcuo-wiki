@@ -33,6 +33,10 @@
   "homepage": "https://github.com/ChrisTitusTech/dcuo-wiki#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.11",
+    "@tiptap/core": "3.32.0",
+    "@tiptap/extension-image": "3.32.0",
+    "@tiptap/extension-table": "3.32.0",
+    "@tiptap/starter-kit": "3.32.0",
     "astro": "^7.4.1",
     "typescript": "^6.0.3"
   },

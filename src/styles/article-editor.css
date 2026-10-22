@@ -1,0 +1,412 @@
+#article-editor {
+  width: calc(100vw - 24px);
+  max-width: 1500px;
+  height: calc(100dvh - 24px);
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--bg);
+  overflow: hidden;
+}
+#article-editor[open] {
+  display: flex;
+  flex-direction: column;
+}
+:where(#article-editor, #editor-insert) button {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.4rem 0.65rem;
+  background: var(--raised);
+  color: var(--text);
+}
+:root.light #article-editor {
+  --editor-on-accent: #fff;
+}
+#article-editor::backdrop,
+#editor-insert::backdrop {
+  background: #030a16df;
+}
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.editor-header h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  border: 0;
+}
+.editor-header .eyebrow {
+  font-size: 0.65rem;
+}
+.editor-statusbar {
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  background: var(--panel);
+}
+.editor-statusbar p {
+  margin: 0.2rem 0;
+}
+#article-edit-form {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: none;
+  width: 100%;
+  gap: 0;
+  margin: 0;
+}
+#article-edit-form[hidden],
+#article-editor [hidden],
+#editor-insert [hidden] {
+  display: none !important;
+}
+#article-editor label,
+#editor-insert label {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+#article-editor input,
+#article-editor textarea,
+#editor-insert input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.4rem 0.55rem;
+  font: inherit;
+}
+.editor-document-fields {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(200px, 2fr);
+  gap: 0.8rem;
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+#edit-summary {
+  resize: vertical;
+  max-height: 100px;
+}
+.editor-modebar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.4rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.editor-modebar button[aria-selected="true"] {
+  background: var(--accent);
+  color: var(--editor-on-accent, #081121);
+  border-color: var(--accent);
+}
+#draft-status {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+#editor-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.4rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+#editor-toolbar button,
+#editor-toolbar select {
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--text);
+  background: var(--bg);
+}
+#editor-toolbar button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
+}
+#table-tools {
+  display: contents;
+}
+.editor-workspace {
+  flex: 1;
+  min-height: 100px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 1rem max(1rem, calc((100% - 1000px) / 2));
+  background: var(--bg);
+}
+#visual-editor .tiptap {
+  min-height: 40vh;
+  outline: none;
+  overflow-wrap: anywhere;
+}
+#visual-editor p {
+  margin: 0.45rem 0;
+}
+#visual-editor h2,
+#visual-editor h3,
+#visual-editor h4 {
+  scroll-margin-top: 1rem;
+}
+#visual-editor img {
+  max-width: min(100%, 640px);
+  max-height: 440px;
+  object-fit: contain;
+}
+#visual-editor table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+#visual-editor td,
+#visual-editor th {
+  min-width: 60px;
+  vertical-align: top;
+  position: relative;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+}
+#visual-editor .selectedCell::after {
+  position: absolute;
+  inset: 0;
+  background: #549de244;
+  content: "";
+  pointer-events: none;
+}
+#visual-editor .ProseMirror-selectednode {
+  outline: 2px solid var(--accent);
+}
+#visual-editor .tableWrapper {
+  overflow-x: auto;
+}
+#visual-editor blockquote,
+.rich-article blockquote {
+  border-left: 3px solid var(--accent);
+  margin-left: 0;
+  padding-left: 1rem;
+}
+#visual-editor pre,
+.rich-article pre {
+  background: var(--panel);
+  padding: 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+.editor-video {
+  border: 1px solid var(--line);
+  padding: 1rem;
+  margin: 0.75rem 0;
+  background: var(--panel);
+  display: grid;
+  gap: 0.4rem;
+}
+.editor-video span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+#source-panel p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+#edit-source {
+  min-height: 45vh;
+  font:
+    0.9rem/1.6 ui-monospace,
+    monospace !important;
+  resize: vertical;
+  white-space: pre-wrap;
+}
+#published-preview {
+  max-height: 35vh;
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  margin-top: 0.5rem;
+}
+.editor-footer {
+  border-top: 1px solid var(--line);
+  padding: 0.5rem 1rem;
+  background: var(--panel);
+}
+#publish-details > summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.publish-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  padding: 0.5rem 0;
+}
+.editor-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.4rem;
+  flex-wrap: wrap;
+}
+#editor-word-count {
+  margin-right: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+#submit-edit {
+  background: var(--accent);
+  color: var(--editor-on-accent, #081121);
+  font-weight: 700;
+}
+.editor-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+#editor-insert {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  width: min(760px, calc(100vw - 24px));
+  max-height: 85dvh;
+  padding: 1rem;
+}
+#insert-form {
+  display: grid;
+  gap: 0.7rem;
+  max-width: none;
+}
+#insert-form h2 {
+  margin-top: 0;
+}
+#insert-error {
+  color: #f4a6a6;
+  margin: 0;
+}
+#media-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 0.5rem;
+  max-height: 35vh;
+  overflow-y: auto;
+}
+#media-results button {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+#media-results img {
+  width: 100%;
+  height: 85px;
+  object-fit: contain;
+}
+#media-results button[aria-pressed="true"] {
+  outline: 2px solid var(--accent);
+}
+#legacy-drafts {
+  max-height: 20vh;
+  overflow-y: auto;
+  padding: 0.6rem 1rem;
+}
+#edit-history-list pre {
+  max-height: 30rem;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.history-article {
+  max-height: 35rem;
+  overflow: auto;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+}
+#conflict-controls {
+  border: 1px solid var(--orange);
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+#conflict-controls label {
+  display: flex;
+  align-items: start;
+  margin-bottom: 0.5rem;
+}
+#conflict-controls input {
+  width: auto;
+  margin: 0.2rem 0.4rem 0 0;
+}
+#article-editor button:disabled,
+#editor-toolbar select:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+@media (max-width: 640px) {
+  #article-editor {
+    width: 100vw;
+    height: 100dvh;
+    border-radius: 0;
+  }
+  .editor-header,
+  .editor-statusbar,
+  .editor-document-fields,
+  .editor-modebar,
+  #editor-toolbar,
+  .editor-footer {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  .editor-header h2 {
+    font-size: 1.05rem;
+  }
+  .editor-document-fields {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  #edit-summary {
+    min-height: 2rem;
+    max-height: 3rem;
+  }
+  .editor-modebar button {
+    font-size: 0.8rem;
+    padding: 0.35rem;
+  }
+  #draft-status {
+    font-size: 0.7rem;
+  }
+  #editor-toolbar {
+    max-height: 5.5rem;
+    overflow-y: auto;
+  }
+  .publish-fields {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .editor-note {
+    display: none;
+  }
+  .editor-actions button {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+  .editor-workspace {
+    padding: 0.6rem;
+  }
+}

@@ -64,12 +64,12 @@ export async function boundedBody(request, limit) {
   }
   return bytes;
 }
-export async function bodyJson(request) {
+export async function bodyJson(request, maximum = 20000) {
   if (request.headers.get("Content-Type")?.split(";")[0] !== "application/json")
     throw new HttpError(415, "Send JSON.");
   try {
     const body = JSON.parse(
-      new TextDecoder().decode(await boundedBody(request, 20000)),
+      new TextDecoder().decode(await boundedBody(request, maximum)),
     );
     if (!body || typeof body !== "object" || Array.isArray(body))
       throw new Error();

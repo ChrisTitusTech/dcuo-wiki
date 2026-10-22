@@ -1,105 +1,280 @@
 ---
-import { articleParts } from "../../shared/article-content.mjs";
 import type { Article } from "../data/articles";
+import "../styles/article-editor.css";
 interface Props {
   article: Article;
 }
 const { article } = Astro.props;
-const parts = articleParts(article);
+const tools = [
+  ["undo", "Undo"],
+  ["redo", "Redo"],
+  ["bold", "Bold"],
+  ["italic", "Italic"],
+  ["underline", "Underline"],
+  ["strike", "Strike"],
+  ["bulletList", "Bullets"],
+  ["orderedList", "Numbered list"],
+  ["blockquote", "Quote"],
+  ["codeBlock", "Code block"],
+  ["link", "Link"],
+  ["unlink", "Remove link"],
+  ["image", "Image / map"],
+  ["youtube", "YouTube video"],
+  ["table", "Table"],
+  ["horizontalRule", "Divider"],
+];
 ---
 
-<details
+<dialog
   id="article-editor"
-  class="account account-card article-editor"
   data-page={article.title}
   data-slug={article.slug}
+  aria-labelledby="editor-heading"
 >
-  <summary>Edit this page</summary>
-  <p>
-    Corrections publish immediately after your Discord session and Census
-    character match are checked. Every change is recorded in public edit history
-    with your character name.
-  </p>
-  <p id="edit-status" role="status" aria-live="polite">
-    Checking your player account...
-  </p>
-  <p id="edit-account" hidden>
-    <a href={`/account/?page=${encodeURIComponent(article.title)}`}>
-      Sign in or match your character
-    </a>{" "}
-    to unlock edits. Your draft stays in this browser tab.
-  </p>
-  <noscript>
-    JavaScript is required to edit. Published articles remain readable without
-    it.
-  </noscript>
-  <form id="article-edit-form" hidden>
-    <p id="edit-help">
-      Select any article section below to edit its current content. Tables,
-      maps, and video links have their own entries. Each section publishes
-      separately.
+  <header class="editor-header">
+    <div>
+      <span class="eyebrow">COMMUNITY EDITOR</span>
+      <h2 id="editor-heading">Editing: {article.title}</h2>
+    </div>
+    <button type="button" id="close-editor">
+      Back to article
+    </button>
+  </header>
+  <div class="editor-statusbar">
+    <p id="edit-status" role="status" aria-live="polite">
+      Loading full article editor...
     </p>
-    <label>
-      Section to edit
-      <select
-        id="edit-part"
-        name="part"
-        size={Math.min(parts.length, 8)}
-        aria-describedby="edit-help"
+    <p id="edit-account" hidden>
+      <a href={`/account/?page=${encodeURIComponent(article.title)}`}>
+        Sign in with Discord and match your character
+      </a>{" "}
+      to publish. You can prepare a draft here.
+    </p>
+  </div>
+  <form id="article-edit-form" hidden novalidate>
+    <div class="editor-document-fields">
+      <label>
+        Article title
+        <input id="edit-title" name="title" required maxlength="160" />
+      </label>
+      <label>
+        Article summary
+        <textarea
+          id="edit-summary"
+          name="summary"
+          rows="2"
+          required
+          maxlength="7000"
+        ></textarea>
+      </label>
+    </div>
+    <div class="editor-modebar" role="tablist" aria-label="Editor view">
+      <button
+        type="button"
+        role="tab"
+        id="tab-visual"
+        aria-selected="true"
+        aria-controls="visual-panel"
+        data-mode="visual"
       >
-        {parts.map((part, i) => (
-          <option value={i}>{part.title}</option>
-        ))}
+        Visual editor
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-source"
+        aria-selected="false"
+        aria-controls="source-panel"
+        data-mode="source"
+      >
+        Source (HTML)
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-preview"
+        aria-selected="false"
+        aria-controls="preview-panel"
+        data-mode="preview"
+      >
+        Preview
+      </button>
+      <span id="draft-status" role="status" aria-live="polite">
+        No unpublished changes
+      </span>
+    </div>
+    <div id="editor-toolbar" role="toolbar" aria-label="Article formatting">
+      <label class="sr-only" for="editor-format">
+        Text style
+      </label>
+      <select id="editor-format">
+        <option value="paragraph">Paragraph</option>
+        <option value="2">Heading</option>
+        <option value="3">Subheading</option>
+        <option value="4">Minor heading</option>
       </select>
-    </label>
-    <label>
-      Proposed text
-      <textarea
-        id="edit-text"
-        name="replacement"
-        rows="10"
-        required
-        maxlength="7000"
-      >{parts[0].text}</textarea>
-    </label>
-    <details class="edit-original">
-      <summary>View currently published text</summary>
-      <pre id="edit-original">{parts[0].text}</pre>
-    </details>
-    <label>
-      What changed and why?
-      <textarea
-        name="reason"
-        rows="2"
-        required
-        minlength="10"
-        maxlength="500"
-      ></textarea>
-    </label>
-    <label>
-      Sources or in-game evidence
-      <textarea
-        name="sources"
-        rows="3"
-        required
-        minlength="10"
-        maxlength="2000"
-      ></textarea>
-    </label>
-    <p>
-      Keep useful map locations and quest-specific video references. Include
-      evidence for factual corrections.
-    </p>
-    <button id="submit-edit" disabled>
-      Publish correction
-    </button>
-    <button type="button" id="reset-edit">
-      Discard this draft
-    </button>
+      {tools.map(([command, label]) => (
+        <button type="button" data-command={command} title={label}>
+          {label}
+        </button>
+      ))}
+      <span id="table-tools" hidden>
+        <button type="button" data-command="addRowAfter">
+          Add row
+        </button>
+        <button type="button" data-command="addColumnAfter">
+          Add column
+        </button>
+        <button type="button" data-command="deleteRow">
+          Delete row
+        </button>
+        <button type="button" data-command="deleteColumn">
+          Delete column
+        </button>
+        <button type="button" data-command="mergeCells">
+          Merge cells
+        </button>
+        <button type="button" data-command="splitCell">
+          Split cell
+        </button>
+        <button type="button" data-command="toggleHeaderRow">
+          Header row
+        </button>
+        <button type="button" data-command="deleteTable">
+          Delete table
+        </button>
+      </span>
+    </div>
+    <div class="editor-workspace">
+      <section id="visual-panel" role="tabpanel" aria-labelledby="tab-visual">
+        <div id="visual-editor"></div>
+      </section>
+      <section
+        id="source-panel"
+        role="tabpanel"
+        aria-labelledby="tab-source"
+        hidden
+      >
+        <p>
+          HTML source for the entire article body. Headings, lists, tables,
+          links, and wiki media are supported. The title and summary above are
+          saved with the body.
+        </p>
+        <label class="sr-only" for="edit-source">
+          Article HTML source
+        </label>
+        <textarea id="edit-source" spellcheck="false"></textarea>
+      </section>
+      <section
+        id="preview-panel"
+        role="tabpanel"
+        aria-labelledby="tab-preview"
+        hidden
+      >
+        <aside id="conflict-controls" hidden>
+          <p>
+            A newer article revision is published. Compare it with your draft
+            and merge any changes you want to keep before continuing.
+          </p>
+          <label>
+            <input type="checkbox" id="review-latest" /> I have reviewed the
+            latest article and merged the changes I want to keep.
+          </label>
+          <button type="button" id="use-reviewed-draft" disabled>
+            Continue with reviewed draft
+          </button>
+        </aside>
+        <details id="compare-published">
+          <summary>Compare with the currently published article</summary>
+          <div id="published-preview" class="rich-article"></div>
+        </details>
+        <div id="article-preview" class="rich-article"></div>
+      </section>
+    </div>
+    <footer class="editor-footer">
+      <details id="publish-details">
+        <summary>Edit summary and supporting sources</summary>
+        <div class="publish-fields">
+          <label>
+            What changed and why?
+            <textarea
+              name="reason"
+              rows="2"
+              required
+              minlength="10"
+              maxlength="500"
+            ></textarea>
+          </label>
+          <label>
+            Sources or in-game evidence
+            <textarea
+              name="sources"
+              rows="2"
+              required
+              minlength="10"
+              maxlength="2000"
+            ></textarea>
+          </label>
+        </div>
+      </details>
+      <div class="editor-actions">
+        <span id="editor-word-count"></span>
+        <button type="button" id="reset-edit">
+          Discard draft and reload
+        </button>
+        <button id="submit-edit" disabled>
+          Publish changes
+        </button>
+      </div>
+      <p class="editor-note">
+        Publish the whole article at once. Changes are checked against Census
+        and recorded under your character name. Keep useful maps, source
+        credits, and quest-specific video references.
+      </p>
+    </footer>
   </form>
-</details>
+  <details id="legacy-drafts" hidden>
+    <summary>Earlier section drafts saved in this tab</summary>
+    <pre></pre>
+  </details>
+</dialog>
+<dialog id="editor-insert" aria-labelledby="insert-heading">
+  <form id="insert-form">
+    <h2 id="insert-heading">Insert content</h2>
+    <label id="insert-url-label">
+      Link URL
+      <input id="insert-url" type="text" />
+    </label>
+    <label id="insert-caption-label">
+      Label / caption
+      <input id="insert-caption" type="text" maxlength="2000" />
+    </label>
+    <div id="media-picker" hidden>
+      <label>
+        Search wiki images
+        <input
+          id="media-query"
+          type="search"
+          placeholder="Search artwork, maps, or characters..."
+        />
+      </label>
+      <p id="media-status" role="status"></p>
+      <div id="media-results"></div>
+    </div>
+    <p id="insert-error" role="alert"></p>
+    <div class="editor-actions">
+      <button type="button" id="cancel-insert">
+        Cancel
+      </button>
+      <button id="confirm-insert">Insert</button>
+    </div>
+  </form>
+</dialog>
 <details id="edit-history" class="account account-card">
   <summary>Page edit history</summary>
   <div id="edit-history-list"></div>
 </details>
+<noscript>
+  JavaScript is required to edit. Published articles remain readable without it.
+</noscript>
 <script src="../scripts/article-editor.ts"></script>
