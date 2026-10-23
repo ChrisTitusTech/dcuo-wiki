@@ -22,6 +22,13 @@ until captures are available or a batch requires attention. Run it on a machine
 that will remain awake. The account's concurrency limit controls throughput;
 no subscription upgrade is made. No more than one batch is queued at a time.
 
+Connection timeouts and temporary polling network errors wait five minutes
+before retrying, repeating until connectivity returns. Each wait is logged as
+`network-retry` with its next retry time. The existing remote job is retained.
+Batch submissions retry only errors that occur before a connection is made;
+ambiguous submission failures still stop for inspection to avoid duplicate paid
+batches. SIGTERM can stop the runner during a retry wait.
+
 Bulk progress is isolated from the committed snapshot:
 
 - `.import-cache/catalog/download-all-state.json`: process, status and totals.

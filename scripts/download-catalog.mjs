@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { parseEnv } from "node:util";
 import { acquireCatalogLock } from "./catalog-lock.mjs";
+import { catalogFetch } from "./catalog-network.mjs";
 import { catalogPlan } from "./catalog-plan.mjs";
 import { classifyURL } from "./wiki-urls.mjs";
 import {
@@ -122,14 +123,13 @@ const request = async (url, body) => {
   )
     throw Error("Unexpected batch API URL");
   for (let attempt = 0; attempt < 4; attempt++) {
-    const response = await fetch(u, {
+    const response = await catalogFetch(u, {
       method: body ? "POST" : "GET",
       headers: {
         Authorization: "Bearer " + key,
         "Content-Type": "application/json",
       },
       ...(body ? { body: JSON.stringify(body) } : {}),
-      signal: AbortSignal.timeout(60000),
     });
     if ((response.status === 429 || response.status >= 500) && attempt < 3) {
       await new Promise((r) => setTimeout(r, 15000));
