@@ -24,12 +24,33 @@ export async function catalogFetch(
   { fetchImpl = fetch, sleep = delay, log = console.log } = {},
 ) {
   let retries = 0;
+  const wait = async (reason) => {
+    log(
+      JSON.stringify({
+        status: "network-retry",
+        reason,
+        retry: ++retries,
+        retryAfterSeconds: 300,
+        retryAt: new Date(Date.now() + 300000).toISOString(),
+      }),
+    );
+    await sleep(300000);
+  };
   for (;;) {
     try {
-      return await fetchImpl(url, {
+      const response = await fetchImpl(url, {
         ...options,
         signal: AbortSignal.timeout(60000),
       });
+      if (
+        response.status === 429 ||
+        (options.method !== "POST" && response.status >= 500)
+      ) {
+        await response.body?.cancel();
+        await wait("HTTP_" + response.status);
+        continue;
+      }
+      return response;
     } catch (error) {
       const code = error.cause?.code || error.code;
       const submission = options.method === "POST";
@@ -37,16 +58,7 @@ export async function catalogFetch(
         ? connectionErrors.has(code)
         : transportErrors.has(code) || error.name === "TimeoutError";
       if (!retryable) throw error;
-      log(
-        JSON.stringify({
-          status: "network-retry",
-          reason: code || error.name,
-          retry: ++retries,
-          retryAfterSeconds: 300,
-          retryAt: new Date(Date.now() + 300000).toISOString(),
-        }),
-      );
-      await sleep(300000);
+      await wait(code || error.name);
     }
   }
 }

@@ -105,15 +105,43 @@ test("ambiguous submissions and non-network errors stop without retrying", async
   }
 });
 
-test("HTTP responses are returned to the existing status retry policy", async () => {
-  const response = { status: 503 };
+test("rate limits and polling server errors retry after five minutes", async () => {
+  for (const [method, status] of [
+    ["GET", 503],
+    ["GET", 429],
+    ["POST", 429],
+  ]) {
+    const waits = [],
+      logs = [];
+    let calls = 0;
+    const response = { status: 200 };
+    assert.equal(
+      await catalogFetch(
+        "https://example.test/job",
+        { method },
+        {
+          fetchImpl: async () =>
+            ++calls === 1 ? new Response("temporary", { status }) : response,
+          sleep: async (ms) => waits.push(ms),
+          log: (line) => logs.push(JSON.parse(line)),
+        },
+      ),
+      response,
+    );
+    assert.deepEqual(waits, [300000]);
+    assert.equal(logs[0].reason, "HTTP_" + status);
+  }
+});
+
+test("authentication failures are returned without endless retries", async () => {
+  const response = { status: 401 };
   assert.equal(
     await catalogFetch(
       "https://example.test/job",
       { method: "GET" },
       {
         fetchImpl: async () => response,
-        sleep: async () => assert.fail("unexpected network retry"),
+        sleep: async () => assert.fail("unexpected retry"),
       },
     ),
     response,

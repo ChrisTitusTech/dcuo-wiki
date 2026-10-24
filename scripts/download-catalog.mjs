@@ -261,9 +261,22 @@ while (next) {
   if (job.status === "scraping") await new Promise((r) => setTimeout(r, 15000));
 }
 if (saved.size !== expected.size) {
-  throw Error(
-    `Captured ${saved.size}/${expected.size}; failed or missing batch items require follow-up`,
-  );
+  if (background && job.status === "completed") {
+    // The missing targets are already saved as failure holds in the manifest.
+    // Continue the queue without resubmitting these pages on every batch.
+    console.log(
+      JSON.stringify({
+        status: "batch-completed-with-holds",
+        captured: saved.size,
+        expected: expected.size,
+        heldForReview: expected.size - saved.size,
+      }),
+    );
+  } else {
+    throw Error(
+      `Captured ${saved.size}/${expected.size}; failed or missing batch items require follow-up`,
+    );
+  }
 }
 if (job.status !== "completed")
   throw Error("Firecrawl batch ended with status " + job.status);

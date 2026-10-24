@@ -25,6 +25,7 @@ no subscription upgrade is made. No more than one batch is queued at a time.
 Connection timeouts and temporary polling network errors wait five minutes
 before retrying, repeating until connectivity returns. Each wait is logged as
 `network-retry` with its next retry time. The existing remote job is retained.
+Rate limits and polling server errors also wait five minutes and retry.
 Batch submissions retry only errors that occur before a connection is made;
 ambiguous submission failures still stop for inspection to avoid duplicate paid
 batches. SIGTERM can stop the runner during a retry wait.
@@ -42,8 +43,11 @@ Already accepted remote work can finish; retain its job record for resumption.
 The lock is removed on a normal stop. After a machine crash, verify that the
 recorded process is absent before removing a stale lock. Do not run a foreground
 writer while the bulk runner is active. Failed captures are held for review,
-not repeatedly resubmitted by the bulk runner. A terminal batch that omits a
-source records that source as failed, and stops for inspection.
+not repeatedly resubmitted by the bulk runner. A completed batch that omits a
+source records that source as failed and continues with the remaining queue.
+The final status distinguishes completion with held failures from a clean
+download. Authentication, storage, invalid responses and failed/cancelled remote
+jobs still require inspection; these must not silently discard the queue.
 
 ## Review and publish
 
