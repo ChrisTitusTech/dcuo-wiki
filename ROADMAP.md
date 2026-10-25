@@ -735,3 +735,14 @@ Review also corrected unknown document endpoints to return 404 and retained
 legacy table-cell text containing unescaped pipes. A suggestion to silently skip
 missing related source packs was rejected: the complete related-slug graph is
 valid, and transient source failures must not silently alter saved draft hashes.
+
+
+Production acceptance of catalog commit 062f63c passed representative pages and
+complete editors across every category, all 110 preserved live article parts,
+the 17,240-entry search index, and configured Discord/Census status. GitHub run
+40221530609 passed. Live image copying exposed a workerd-specific rejection of
+fetch redirect:error. Use redirect:manual and reject non-success responses before
+any write. A real local workerd request now fetches the source and writes the R2
+object successfully; 166 unit tests, 20 Cloudflare checks, the deployment dry run
+and focused independent review pass. Recheck the corrected production mirror
+before starting the resumable image writer.

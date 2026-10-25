@@ -56,7 +56,7 @@ export async function serveCatalogMedia(request, env, fetcher = fetch) {
     )
       throw new HttpError(502, "Unapproved image source.");
     const response = await fetcher(url, {
-      redirect: "error",
+      redirect: "manual",
       signal: AbortSignal.timeout(30000),
     });
     if (!response.ok)

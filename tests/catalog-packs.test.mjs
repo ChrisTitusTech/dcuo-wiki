@@ -149,3 +149,40 @@ test("unknown images and unsafe sources cannot become an arbitrary proxy", async
     );
   }
 });
+test("upstream image redirects are rejected without following or storing another host", async () => {
+  const source = {
+    originalUrl:
+      "https://static.wikia.nocookie.net/dcuo/images/a/aa/Example.png",
+  };
+  let writes = 0;
+  const env = {
+    MEDIA: {
+      head: async () => null,
+      put: async () => {
+        writes++;
+      },
+    },
+    ASSETS: {
+      fetch: async () =>
+        new Response(packLine(id, "media", source), {
+          headers: { "Content-Type": "text/plain" },
+        }),
+    },
+  };
+  await assert.rejects(
+    () =>
+      serveCatalogMedia(
+        new Request("https://dcuo-wiki.com/api/catalog-media/" + id),
+        env,
+        async (url, options) => {
+          assert.equal(options.redirect, "manual");
+          return new Response(null, {
+            status: 302,
+            headers: { Location: "https://example.com/private" },
+          });
+        },
+      ),
+    (error) => error.status === 502,
+  );
+  assert.equal(writes, 0);
+});
