@@ -1,0 +1,31 @@
+<section
+  id="equipment-panel"
+  class="account-card equipment-panel"
+  hidden
+  aria-labelledby="equipment-title"
+>
+  <h2 id="equipment-title">Equipped items</h2>
+  <p id="equipment-status" role="status" aria-live="polite"></p>
+  <p id="equipment-time"></p>
+  <button id="equipment-refresh" type="button" hidden>
+    Refresh equipment
+  </button>
+  <div class="table-scroll">
+    <table id="equipment-table" hidden>
+      <thead>
+        <tr>
+          <th scope="col">Slot</th>
+          <th scope="col">Item</th>
+          <th scope="col">Details</th>
+        </tr>
+      </thead>
+      <tbody id="equipment-items"></tbody>
+    </table>
+  </div>
+  <p class="equipment-note">
+    Read-only snapshot from Daybreak Census. Updates can lag behind the game.
+    Item definitions are incomplete; unidentified items show their Census ID.
+    Slot numbers and durability are reported as supplied, without inferred
+    stats.
+  </p>
+</section>

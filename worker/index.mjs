@@ -27,6 +27,7 @@ import {
 import { pristineDocumentResponse } from "./editor-baselines.mjs";
 import media from "../data/media.json" with { type: "json" };
 import { searchCharacters, matchCharacter } from "./census.mjs";
+import { equipment } from "./equipment.mjs";
 import { serveCatalogMedia } from "./catalog-media.mjs";
 const SESSION = "__Host-dcuo-session",
   STATE = "__Host-dcuo-state";
@@ -228,7 +229,7 @@ async function profile(env, id) {
       : null,
   };
 }
-export async function handle(request, env, fetcher = fetch) {
+export async function handle(request, env, fetcher = fetch, context) {
   const url = new URL(request.url),
     path = url.pathname;
   try {
@@ -440,6 +441,14 @@ export async function handle(request, env, fetcher = fetch) {
       ["/api/auth/discord", "/api/auth/callback"].includes(path)
     )
       return await oauth(request, env, path, fetcher);
+    const equipmentMatch = path.match(
+      /^\/api\/profiles\/([a-f0-9-]{36})\/equipment$/,
+    );
+    if (equipmentMatch && request.method === "GET") {
+      const p = await profile(env, equipmentMatch[1]);
+      if (!p) throw new HttpError(404, "Player profile not found.");
+      return json(await equipment(env, p.character, { fetcher, context }));
+    }
     const publicMatch = path.match(
       /^\/api\/profiles\/([a-f0-9-]{36})(\/screenshot)?$/,
     );
@@ -491,6 +500,21 @@ export async function handle(request, env, fetcher = fetch) {
           fetcher,
         ),
       });
+    }
+    if (
+      path === "/api/profile/equipment/refresh" &&
+      request.method === "POST"
+    ) {
+      await limit(env, `equipment:${user.id}`, 10, 900);
+      const body = await bodyJson(request, 1000);
+      if (Object.keys(body).length)
+        throw new HttpError(
+          400,
+          "Refresh uses your linked character automatically.",
+        );
+      const p = await profile(env, user.id);
+      if (!p) throw new HttpError(403, "Match your character in Census first.");
+      return json(await equipment(env, p.character, { manual: true, fetcher }));
     }
     if (path === "/api/profile" && request.method === "POST") {
       await limit(env, `profile:${user.id}`, 10, 600);
@@ -804,7 +828,7 @@ export async function handle(request, env, fetcher = fetch) {
   }
 }
 export default {
-  fetch(request, env) {
-    return handle(request, env);
+  fetch(request, env, context) {
+    return handle(request, env, fetch, context);
   },
 };

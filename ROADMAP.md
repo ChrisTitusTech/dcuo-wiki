@@ -746,3 +746,10 @@ any write. A real local workerd request now fetches the source and writes the R2
 object successfully; 166 unit tests, 20 Cloudflare checks, the deployment dry run
 and focused independent review pass. Recheck the corrected production mirror
 before starting the resumable image writer.
+
+## Character equipment sync
+
+- Add read-only Census equipment to account and public player profiles, scoped by the saved character ID and world. Only the signed-in account can request a manual refresh of its own character.
+- Cache successful snapshots in D1 for 15 minutes, enforce a five-minute manual cooldown/outage retry, and use a refresh lease to avoid duplicate upstream requests. Preserve the last successful snapshot during outages; distinguish successful empty results from failures.
+- Link exact source-backed item IDs to existing articles. Unidentified gear and augments retain numeric IDs. Do not infer slot names, icons, current stats, or character ownership from incomplete Census data.
+- Acceptance: unit coverage of query scope, validation, cache isolation, concurrency and failures; browser coverage of owner controls, mobile display and stale snapshots; full existing gates, independent review, D1 migration, main deployment and live API/profile checks.

@@ -1,4 +1,5 @@
 ---
+import EquipmentPanel from "../components/EquipmentPanel.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -16,6 +17,7 @@ import Layout from "../layouts/Layout.astro";
         alt="Player-provided character screenshot"
         hidden
       />
+      <EquipmentPanel />
       <p>
         Census matched means the character appears in Daybreak's public data.
         Ownership is not verified. Stats reflect the last profile save.
@@ -26,6 +28,8 @@ import Layout from "../layouts/Layout.astro";
     </p>
   </section>
   <script>
+    import { equipmentPanel } from "../scripts/equipment";
+    const equipment = equipmentPanel();
     const status = document.getElementById("player-status")!;
     const id = new URLSearchParams(location.search).get("id");
     async function load() {
@@ -50,6 +54,19 @@ import Layout from "../layouts/Layout.astro";
           image.hidden = false;
         }
         document.getElementById("player-details")!.hidden = false;
+        equipment.setProfile(p);
+        fetch("/api/me", { credentials: "same-origin" })
+          .then(async (r) => {
+            if (!r.ok) return;
+            const me = await r.json();
+            if (
+              me.profile?.id === p.id &&
+              me.profile.character.character_id === p.character.character_id &&
+              me.profile.character.world_id === p.character.world_id
+            )
+              equipment.setProfile(p, true);
+          })
+          .catch(() => {});
       } catch (e) {
         status.textContent =
           (e as Error).message || "Profile is temporarily unavailable.";

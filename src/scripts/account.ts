@@ -1,3 +1,5 @@
+import { equipmentPanel } from "./equipment";
+const equipment = equipmentPanel();
 import { showPlayerNavigation } from "./player-navigation";
 const articles = JSON.parse(
   document.getElementById("account-article-index")?.textContent || "[]",
@@ -46,6 +48,7 @@ const post = (path: string, data: unknown) =>
     body: JSON.stringify(data),
   });
 function showProfile(p: Profile | null) {
+  equipment.setProfile(p, true);
   showPlayerNavigation(p, el("display-name").textContent || "Your account");
   el("profile-summary").hidden = !p;
   el("contribution-form").hidden = !p;

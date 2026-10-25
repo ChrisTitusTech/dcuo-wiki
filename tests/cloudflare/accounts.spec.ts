@@ -109,6 +109,8 @@ test("account form saves a selected Census character and queues a suggestion", a
     if (path === "/api/status") body = { login: true, census: true };
     else if (path === "/api/me")
       body = { name: "Player", profile: null, moderator: false };
+    else if (path === `/api/profiles/${profile.id}/equipment`)
+      body = { characterId: "123", worldId: "2", items: [], syncedAt: 1700000000, stale: false, unavailable: false, refreshing: false, refreshAfter: 0 };
     else if (path === "/api/characters") body = { characters: [character] };
     else if (path === "/api/profile") {
       expect(route.request().postDataJSON().characterId).toBe("123");
@@ -148,7 +150,7 @@ test("account form saves a selected Census character and queues a suggestion", a
     .getByLabel("Sources or in-game evidence")
     .fill("A map location and quest evidence");
   await page.getByRole("button", { name: "Submit for review" }).click();
-  await expect(page.getByRole("status")).toContainText(
+  await expect(page.locator("#account-status")).toContainText(
     "Suggestion submitted for review",
   );
   await page.setViewportSize({ width: 390, height: 844 });
@@ -213,4 +215,33 @@ test("account editor return links use only the lightweight title index", async (
     size += (await response.body()).byteLength;
   }
   expect(size).toBeLessThan(100 * 1024);
+});
+
+test("equipment endpoint uses D1 and retains a cached loadout while Census is unconfigured", async ({
+  request,
+}) => {
+  const id = "33333333-3333-4333-8333-333333333333";
+  const result = await request.get(`/api/profiles/${id}/equipment`);
+  expect(result.status()).toBe(200);
+  const data = await result.json();
+  expect(data.characterId).toBe("987654321");
+  expect(data.unavailable).toBe(true);
+  expect(data.items[0].href).toBe("/wiki/Digital_Invader_Helm/");
+  expect(data.syncedAt).toBe(1700000000);
+  expect(
+    (
+      await request.post("/api/profile/equipment/refresh", {
+        headers: { Origin: headers.Origin },
+        data: {},
+      })
+    ).status(),
+  ).toBe(401);
+  expect(
+    (
+      await request.post("/api/profile/equipment/refresh", {
+        headers,
+        data: { characterId: "987654321" },
+      })
+    ).status(),
+  ).toBe(400);
 });

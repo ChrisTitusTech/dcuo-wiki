@@ -226,3 +226,13 @@ were visually inspected at desktop and 390px mobile widths.
   fragments found during conversion cleanup were removed; the final build passed.
 - Manual desktop inspection confirmed readable inline icons and a scrollable
   contents list; D1 catalog count is now 53 copied images.
+
+## Census equipment snapshots (2026-10-25)
+
+- `npm run validate`: passed; Astro reports zero errors/warnings, 176 unit tests pass, and the complete build succeeds. Non-blocking diagnostic hints remain.
+- `npm run test:browser`: 33 passed, including compact mobile equipment display, local item links, unknown IDs, owner refresh controls, outage retention, mismatched-character rejection, and restoring a cached page.
+- `npm run test:cloudflare`: 21 passed against disposable local D1/Worker bindings. Updated the existing account mock to answer the newly introduced equipment request and scoped its status assertion to the account status. The first run exposed that stale mock; the complete rerun passed.
+- `npx wrangler deploy --dry-run`: passed; compressed Worker 2,826.37 KiB. Budget check: 16,113 deployable files, below the 19,500 internal guard and 20,000 free platform limit.
+- Live Census query using the assigned service ID returned 35 equipment entries for an existing linked character, with matching character/world IDs. No test data was inserted into production profiles or equipment.
+- Applied additive migration `0005_equipment_snapshots.sql` in the existing production D1 console; the console confirmed success and a subsequent schema query returned `equipment_snapshots`.
+- Independent review found that back-forward cache restoration could leave refresh disabled. Added generation invalidation on page hide, reloading on persisted page show, and a browser regression test. `npm run check`, `npm run build`, both browser suites, and the deployment dry run passed again after the fix. Follow-up independent `codex review --uncommitted` completed with no actionable findings and independently reran all nine equipment unit tests and four equipment browser tests. Deployed-site acceptance is recorded in the task delivery record. Item-name coverage remains limited to exact, source-backed mappings; Census IDs are deliberately retained where definitions are unavailable.

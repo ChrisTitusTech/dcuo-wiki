@@ -1122,3 +1122,26 @@ html.image-viewer-open { overflow: hidden; }
 .difficulty-meter > .filled { background: #2389bb; border-color: #2389bb; }
 .difficulty-meter[aria-valuenow="4"] > .filled { background: #b56b17; border-color: #b56b17; }
 .difficulty-meter[aria-valuenow="5"] > .filled { background: #c24545; border-color: #c24545; }
+
+.equipment-panel h2 {
+  margin-top: 0;
+}
+.equipment-panel table {
+  width: 100%;
+  font-size: 0.9rem;
+}
+.equipment-panel th,
+.equipment-panel td {
+  padding: 7px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.equipment-panel small,
+.equipment-note,
+#equipment-time {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.equipment-panel button {
+  margin-bottom: 12px;
+}

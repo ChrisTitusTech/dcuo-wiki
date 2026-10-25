@@ -1,4 +1,5 @@
 ---
+import EquipmentPanel from "../components/EquipmentPanel.astro";
 import Layout from "../layouts/Layout.astro";
 import articles from "../data/articles";
 import catalog from "../data/catalog-index.json";
@@ -90,6 +91,7 @@ const articleIndex = [...articles, ...catalog].map(({ title, slug }) => ({
           </button>
         </div>
       </section>
+      <EquipmentPanel />
       <section class="account-card">
         <h2>Suggest a wiki addition</h2>
         <p id="contribution-lock">

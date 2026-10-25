@@ -43,12 +43,18 @@ const sql =
   (await readFile("migrations/0001_accounts.sql", "utf8")) +
   (await readFile("migrations/0002_article_revisions.sql", "utf8")) +
   (await readFile("migrations/0003_unique_character_claim.sql", "utf8")) +
+  (await readFile("migrations/0005_equipment_snapshots.sql", "utf8")) +
   `\nINSERT INTO users VALUES ('11111111-1111-4111-8111-111111111111','100','Local fixture',0);
 INSERT INTO sessions VALUES ('${createHash("sha256").update("a".repeat(64)).digest("hex")}','11111111-1111-4111-8111-111111111111',4102444800);
 INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES ('11111111-1111-4111-8111-111111111111','123','Local fixture','2','{"character_id":"123","name":"Local fixture","world_id":"2"}',0,'',0);`;
+const equipmentSeed = `
+INSERT INTO users VALUES ('33333333-3333-4333-8333-333333333333','300','Equipment fixture',0);
+INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES ('33333333-3333-4333-8333-333333333333','987654321','Equipment fixture','2','{"character_id":"987654321","name":"Equipment fixture","world_id":"2"}',0,'',0);
+INSERT INTO equipment_snapshots(character_id,world_id,items_json,synced_at) VALUES ('987654321','2','[{"itemId":"2548220","slot":"14","quantity":1,"durability":null,"augments":[]}]',1700000000);`;
 await writeFile(
   join(directory, "seed.sql"),
   sql +
+    equipmentSeed +
     `
 INSERT INTO article_revisions(slug,part,base_hash,parent_revision,content,previous_content,reason,sources,user_id,character_name,created_at)
 VALUES ('Powers','summary','${createHash("sha256").update(baseline).digest("hex")}',0,'Live fixture power correction <script>bad()</script>','${baseline.replaceAll("'", "''")}','Local integration test','Local fixture evidence','11111111-1111-4111-8111-111111111111','Local fixture',1);`,
