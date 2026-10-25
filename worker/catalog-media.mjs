@@ -6,8 +6,10 @@ function imageType(bytes) {
     return "image/jpeg";
   if ([137, 80, 78, 71, 13, 10, 26, 10].every((v, i) => bytes[i] === v))
     return "image/png";
-  const text = new TextDecoder().decode(bytes.slice(0, 12));
-  if (text.startsWith("RIFF") && text.slice(8) === "WEBP") return "image/webp";
+  const ascii = (start, end) =>
+    new TextDecoder().decode(bytes.slice(start, end));
+  if (ascii(0, 4) === "RIFF" && ascii(8, 12) === "WEBP") return "image/webp";
+  const text = ascii(0, 6);
   if (/^GIF8[79]a/.test(text)) return "image/gif";
   throw new HttpError(502, "The source did not return a supported image.");
 }

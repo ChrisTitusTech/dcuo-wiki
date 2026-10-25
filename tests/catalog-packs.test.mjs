@@ -186,3 +186,38 @@ test("upstream image redirects are rejected without following or storing another
   );
   assert.equal(writes, 0);
 });
+test("WebP detection uses fixed byte offsets even when RIFF length contains UTF-8 sequences", async () => {
+  // Real CharacterBrutes source prefix: decoding the binary length shifts WEBP.
+  const bytes = new Uint8Array([
+    82, 73, 70, 70, 232, 136, 1, 0, 87, 69, 66, 80,
+  ]);
+  const source = {
+    originalUrl:
+      "https://static.wikia.nocookie.net/dcuo/images/8/85/CharacterBrutes.png",
+    sourcePage:
+      "https://dcuniverseonline.fandom.com/wiki/File:CharacterBrutes.png",
+    credit: "Source contributors",
+  };
+  let storedType;
+  const env = {
+    MEDIA: {
+      head: async () => null,
+      put: async (key, value, options) => {
+        storedType = options.httpMetadata.contentType;
+      },
+    },
+    ASSETS: {
+      fetch: async () =>
+        new Response(packLine(id, "media", source), {
+          headers: { "Content-Type": "text/plain" },
+        }),
+    },
+  };
+  const response = await serveCatalogMedia(
+    new Request("https://dcuo-wiki.com/api/catalog-media/" + id),
+    env,
+    async () => new Response(bytes),
+  );
+  assert.equal(response.status, 302);
+  assert.equal(storedType, "image/webp");
+});
