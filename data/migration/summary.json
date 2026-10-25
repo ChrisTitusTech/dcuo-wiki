@@ -1,0 +1,37 @@
+{
+  "sourceFiles": 28722,
+  "filedSourceFiles": 28722,
+  "failures": [],
+  "bulk": {
+    "already-published": 550,
+    "held": 7085,
+    "converted": 17114,
+    "canonical-alias": 2452,
+    "failed": 9,
+    "missing": 8
+  },
+  "prior": {
+    "already-published": 1411,
+    "source-error": 89,
+    "supporting-research": 19,
+    "bulk-covered": 2
+  },
+  "preparedArticles": 17240,
+  "totalArticles": 18911,
+  "categories": {
+    "Character": 35,
+    "Characters": 910,
+    "Collectibles": 805,
+    "Combat": 571,
+    "Equipment": 8887,
+    "Feats": 21,
+    "Guides": 1,
+    "Housing": 3157,
+    "Instances": 235,
+    "Locations": 364,
+    "Reference": 1350,
+    "Story": 165,
+    "Updates": 739
+  },
+  "approvedMedia": 27524
+}

@@ -27,8 +27,8 @@ export function canonicalCapture(capture) {
   throw Error("Missing canonical source");
 }
 const maintenance =
-  /^(?:This article (?:needs|is a)|Please (?:refer to|follow)|The following is a list of links to pages that might share|Source details and references for |Source-listed entries\.)/i;
-export function convertCatalog(capture, target) {
+  /^(?:This article (?:needs|is a|or section)|You can help DC Universe Online Wiki|Please (?:refer to|follow|help)|The following is a list of links to pages that might share|Source details and references for |Source-listed entries\.)/i;
+export function convertCatalog(capture, target, options = {}) {
   if (
     capture.metadata?.statusCode !== 200 ||
     !capture.html ||
@@ -45,7 +45,9 @@ export function convertCatalog(capture, target) {
     names.includes(canonical.title),
   );
   const category =
-    root?.[0] || (target.priority === 0 ? target.category : null);
+    root?.[0] ||
+    (target.priority === 0 ? target.category : null) ||
+    options.classification?.category;
   if (!category) throw Error("Category requires editorial classification");
   let markdown = capture.markdown;
   const transformations = [];
@@ -70,13 +72,16 @@ export function convertCatalog(capture, target) {
       },
     );
   }
-  const converted = convertReference(markdown, canonical.url);
+  const converted = convertReference(markdown, canonical.url, {
+    currencies: Boolean(options.classification),
+  });
   converted.audit.push(
     ...transformations.map((note) => ({ transformation: note })),
   );
   const sourceIntro = converted.sections[0]?.items.join(" ") || "";
   if (
-    /\bis an? artifact\b/i.test(sourceIntro) &&
+    category === "Equipment" &&
+    /\bis an? artifact\b(?![- ]level)/i.test(sourceIntro) &&
     !converted.sections.some((s) => /rank|effects|stats/i.test(s.title))
   )
     throw Error("Artifact rank/effect details absent from capture");
@@ -203,10 +208,14 @@ export function splitCatalogArticle(article, maxBytes = 60000) {
     slug: slugs[i],
     title: article.title + " (Part " + (i + 1) + ")",
     sections,
+    ...(sections.reduce((n, s) => n + (s.images?.length || 0), 0) >= 10
+      ? { galleryContinuation: true }
+      : {}),
     related: [article.slug, ...slugs.filter((s) => s !== slugs[i])],
   }));
   const root = {
     ...article,
+    catalogDirectory: true,
     sections: [
       { title: "Overview", items: [article.summary] },
       {
@@ -220,6 +229,31 @@ export function splitCatalogArticle(article, maxBytes = 60000) {
     ],
     related: slugs,
   };
+  // A short introduction alone should not make a useful large catalog disappear.
+  // Show real source entries on its directory page, never fabricated filler.
+  if (issuesFor(root).includes("insufficient substantive content")) {
+    for (const section of article.sections) {
+      if (!section.items.length && !section.table) continue;
+      const preview = {
+        ...section,
+        title: section.title + " (preview)",
+        items: section.items.slice(0, 3),
+      };
+      delete preview.images;
+      if (section.table) {
+        preview.table = {
+          ...section.table,
+          rows: section.table.rows.slice(0, 12),
+        };
+        const cells = preview.table.rows.flat();
+        preview.references = (section.references || []).filter((r) =>
+          cells.some((c) => c.includes(r.label)),
+        );
+      }
+      root.sections.push(preview);
+      if (!issuesFor(root).includes("insufficient substantive content")) break;
+    }
+  }
   for (const a of [root, ...parts]) {
     const issues = issuesFor(a);
     if (issues.length) throw Error(a.slug + ": " + issues.join("; "));

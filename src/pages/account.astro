@@ -1,7 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import articles from "../data/articles";
-const articleIndex = articles.map(({ title, slug }) => ({ title, slug }));
+import catalog from "../data/catalog-index.json";
+const articleIndex = [...articles, ...catalog].map(({ title, slug }) => ({
+  title,
+  slug,
+}));
 ---
 
 <Layout

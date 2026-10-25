@@ -5,7 +5,16 @@
     "directory": "./dist",
     "not_found_handling": "404-page",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*", "/wiki/*", "/guides", "/guides/*", "/releases/*", "/story", "/story/*", "/"],
+    "run_worker_first": [
+      "/api/*",
+      "/wiki/*",
+      "/guides",
+      "/guides/*",
+      "/releases/*",
+      "/story",
+      "/story/*",
+      "/",
+    ],
   },
   "workers_dev": false,
   "preview_urls": false,
@@ -16,6 +25,7 @@
     },
   ],
   "main": "worker/index.mjs",
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "dcuo-wiki-images" }],
   "d1_databases": [
     {
       "binding": "DB",

@@ -1,4 +1,5 @@
 import { HttpError } from "./security.mjs";
+import { catalogRecord } from "./catalog-packs.mjs";
 // A build-time source document is valid only while this article has no edits.
 // Return its byte stream to keep large editor loads within the free CPU budget.
 export async function pristineDocumentResponse(env, article) {
@@ -9,20 +10,16 @@ export async function pristineDocumentResponse(env, article) {
     .bind(article.slug)
     .first();
   if (revision) return null;
-  const asset = await env.ASSETS.fetch(
-    new Request("https://dcuo-wiki.com/_editor/" + article.slug + ".json"),
-  );
-  if (
-    asset.status !== 200 ||
-    !asset.headers.get("content-type")?.includes("application/json")
-  )
+  const payload = await catalogRecord(env, article.slug, "editor");
+  if (!payload)
     throw new HttpError(
       503,
       "This article's editor is temporarily unavailable. Please try again later.",
     );
-  const headers = new Headers(asset.headers);
-  headers.set("Cache-Control", "no-store");
-  headers.delete("ETag");
-  headers.delete("Last-Modified");
-  return new Response(asset.body, { status: 200, headers });
+  return new Response(payload, {
+    headers: {
+      "Content-Type": "application/json",
+      "Cache-Control": "no-store",
+    },
+  });
 }

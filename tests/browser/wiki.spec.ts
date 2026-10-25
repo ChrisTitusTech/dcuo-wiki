@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import articles from "../../src/data/articles.json" with { type: "json" };
+import catalog from "../../src/data/catalog-index.json" with { type: "json" };
 test("search, filters, quest sources and mobile layout", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".card")).toHaveCount(articles.length);
@@ -84,7 +85,11 @@ test("location tables, video chapters, and related guides", async ({
   await page.getByRole("searchbox").fill("");
   await page.getByRole("button", { name: "Locations", exact: true }).click();
   await expect(page.locator(".card:visible")).toHaveCount(
-    Math.min(48, articles.filter((a) => a.category === "Locations").length),
+    Math.min(
+      48,
+      [...articles, ...catalog].filter((a) => a.category === "Locations")
+        .length,
+    ),
   );
 });
 
@@ -377,7 +382,7 @@ test("expanded locations and catalog parts are navigable with copied artwork", a
     page.getByRole("button", { name: "Locations", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await expect(page.locator(".card:visible")).toHaveCount(
-    articles.filter((a) => a.category === "Locations").length,
+    48,
   );
   await page.locator('.card[href="/wiki/Metropolis/"]').click();
   await expect(

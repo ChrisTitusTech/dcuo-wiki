@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import articles from "../src/data/articles.json" with { type: "json" };
+import catalog from "../src/data/catalog-index.json" with { type: "json" };
 import {
   localGuideLink,
   guideReferenceLink,
@@ -169,7 +170,7 @@ test("editor baselines and existing published documents both display local links
 });
 test("every resolved catalog reference links to an existing local article", () => {
   let count = 0;
-  const slugs = new Set(articles.map((a) => a.slug));
+  const slugs = new Set([...articles, ...catalog].map((a) => a.slug));
   for (const a of articles)
     for (const s of a.sections)
       for (const r of s.references || []) {
@@ -244,11 +245,7 @@ test("formatting evidence labels retains provenance throughout the location sect
     { ...text, text: "evidence", marks: [...text.marks, { type: "bold" }] },
   ];
   let html = renderDocument(doc, { slug: a.slug }).html;
-  assert.ok(
-    html.includes(
-      `href="${a.source}" rel="noreferrer">evidence</a>`,
-    ),
-  );
+  assert.ok(html.includes(`href="${a.source}" rel="noreferrer">evidence</a>`));
   p.content = [{ ...text, text: "Original map source" }];
   html = renderDocument(doc, { slug: a.slug }).html;
   assert.ok(

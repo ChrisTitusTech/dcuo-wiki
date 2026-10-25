@@ -36,7 +36,7 @@ test("incidental video matches cannot pass without evidence", () => {
   );
 });
 test("deployment includes all files and rejects oversized assets", () => {
-  assert.equal(checkBudget(Array(18001).fill(1)).ok, false);
+  assert.equal(checkBudget(Array(19501).fill(1)).ok, false);
   assert.equal(checkBudget([26 * 1024 * 1024]).ok, false);
   assert.equal(checkBudget([100, 200]).ok, true);
 });

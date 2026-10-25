@@ -1,6 +1,7 @@
 ---
 import type { Article } from "../data/articles";
 import allArticles from "../data/articles";
+import catalog from "../data/catalog-index.json";
 import {
   releases,
   releasesFor,
@@ -19,7 +20,10 @@ const {
 } = Astro.props;
 const countFor = (id: string) =>
   allArticles.filter((article) => releaseIdsFor(article.slug).includes(id))
-    .length;
+    .length + catalog.filter((a) => a.releaseIds.includes(id)).length;
+const catalogEntries = fixedRelease
+  ? catalog.filter((a) => a.releaseIds.includes(fixedRelease))
+  : catalog;
 const groups = [
   {
     label: "Core game & systems",
@@ -49,16 +53,19 @@ const groups = [
 <section id="library" data-fixed-release={fixedRelease}>
   <div class="section-heading">
     <h2>{title}</h2>
-    <span class="badge">{articles.length} guides</span>
+    <span class="badge">{articles.length + catalogEntries.length} guides</span>
   </div>
   <div class="filters" aria-label="Filter guides">
-    {["All", ...new Set(articles.map((article) => article.category))].map(
-      (category) => (
-        <button data-category={category} aria-pressed={category === "All"}>
-          {category}
-        </button>
+    {[
+      "All",
+      ...new Set(
+        [...articles, ...catalogEntries].map((article) => article.category),
       ),
-    )}
+    ].map((category) => (
+      <button data-category={category} aria-pressed={category === "All"}>
+        {category}
+      </button>
+    ))}
   </div>
   <div class="release-filter">
     {!fixedRelease ? (

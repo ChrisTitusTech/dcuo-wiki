@@ -7,16 +7,23 @@ import ArticleEditor from "../../components/ArticleEditor.astro";
 import { renderMapLinks } from "../../../shared/media.mjs";
 import { releasesFor, releaseHref } from "../../../shared/releases.mjs";
 import articles from "../../data/articles";
+import catalog from "../../data/catalog";
+import { releases } from "../../../shared/releases.mjs";
 import story from "../../data/story.json";
 export function getStaticPaths() {
-  return articles.map((article) => ({
+  return [...articles, ...catalog].map((article) => ({
     params: { slug: article.slug },
     props: { article },
   }));
 }
 const { article } = Astro.props;
 const parts = new Map(articleParts(article).map((part) => [part.id, part]));
-const related = articles.filter((a) => article.related?.includes(a.slug));
+const related = [...articles, ...catalog].filter((a) =>
+  article.related?.includes(a.slug),
+);
+const articleReleases = article.imported
+  ? releases.filter((r) => article.releaseIds?.includes(r.id))
+  : releasesFor(article.slug);
 ---
 
 <Layout title={article.title} description={article.summary}>
@@ -40,7 +47,10 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       {article.summary}
     </p>
     <div class="article-tools">
-      <span class="badge">Source reviewed · {article.retrieved}</span>
+      <span class="badge">
+        {article.imported ? "Source imported" : "Source reviewed"} ·{" "}
+        {article.retrieved}
+      </span>
       <a href="#article-editor">Edit this page</a>
       <a href={article.history}>Source history ↗</a>
     </div>
@@ -57,7 +67,7 @@ const related = articles.filter((a) => article.related?.includes(a.slug));
       </p>
     )}
     <nav class="release-links" aria-label="Content release">
-      {releasesFor(article.slug).map((release) => (
+      {articleReleases.map((release) => (
         <a href={releaseHref(release.id)}>{release.label}</a>
       ))}
     </nav>

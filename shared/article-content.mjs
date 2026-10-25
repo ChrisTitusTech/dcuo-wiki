@@ -12,6 +12,29 @@ export const escapeHtml = (value) =>
         c
       ],
   );
+export function tableTextRow(cells) {
+  return cells
+    .map((cell) => cell.replaceAll("\\", "\\\\").replaceAll("|", "\\|"))
+    .join(" | ");
+}
+export function parseTableRow(line) {
+  const cells = [];
+  let value = "";
+  for (let i = 0; i < line.length; i++) {
+    if (line[i] === "\\" && ["|", "\\"].includes(line[i + 1]))
+      value += line[++i];
+    else if (
+      line[i] === "|" &&
+      (i === 0 || line[i - 1] === " ") &&
+      (i === line.length - 1 || line[i + 1] === " ")
+    ) {
+      cells.push(value.trim());
+      value = "";
+    } else value += line[i];
+  }
+  cells.push(value.trim());
+  return cells;
+}
 export function articleParts(article) {
   return [
     { id: "summary", title: "Summary", kind: "text", text: article.summary },
@@ -40,7 +63,7 @@ export function articleParts(article) {
               kind: "table",
               columns: s.table.columns,
               caption: s.table.caption,
-              text: s.table.rows.map((r) => r.join(" | ")).join("\n"),
+              text: s.table.rows.map(tableTextRow).join("\n"),
             },
           ]
         : []),
@@ -136,7 +159,7 @@ export function renderPart(part, value, { slug, references = [] } = {}) {
   if (part.kind === "items")
     return `<ul>${lines.map((s, i) => `<li>${renderText(restored?.items?.[i] ?? s.replace(/^[-*]\s*/, ""))}</li>`).join("")}</ul>`;
   const rows = lines.map((s) =>
-    (part.kind === "table" ? s.split(/\s*\|\s*/) : s.split(" | ")).map((v) =>
+    (part.kind === "table" ? parseTableRow(s) : s.split(" | ")).map((v) =>
       v.trim(),
     ),
   );

@@ -1,7 +1,7 @@
 import { guideReferenceLink, guideTextParts } from "./guide-links.mjs";
 import { sectionHasContent, filledTable } from "./import-text.mjs";
 import { renderFeatText } from "./feat-meter.mjs";
-import { escapeHtml } from "./article-content.mjs";
+import { escapeHtml, parseTableRow } from "./article-content.mjs";
 import { mediaAsset, renderMapLinks } from "./media.mjs";
 import { rewardContext, renderCurrencyText } from "./rewards.mjs";
 
@@ -538,10 +538,7 @@ export function baselineDocument(article, parts, related = []) {
         restore = rewardContext(article.slug, part, part.text);
       const rows =
         restore?.rows ||
-        get(`table-${i}`)
-          .split("\n")
-          .filter(Boolean)
-          .map((r) => r.split(/\s*\|\s*/));
+        get(`table-${i}`).split("\n").filter(Boolean).map(parseTableRow);
       const display = filledTable(section.table.columns, rows);
       if (!display.columns.length) continue;
       content.push({

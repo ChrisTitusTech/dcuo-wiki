@@ -1,6 +1,6 @@
 # DCUO Wiki
 
-An Astro wiki for https://dcuo-wiki.com with 1,586 published articles. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
+An Astro wiki for https://dcuo-wiki.com with 18,911 prepared articles, including 17,240 newly filed catalog pages. The mission conversion adds 1,012 substantive guides, source-backed locations, copied artwork and title-matched YouTube references. It is an ongoing migration, not a complete Fandom mirror.
 
 ## Develop and validate
 
@@ -16,7 +16,7 @@ npm run deploy:check
 npm run test:cloudflare
 ```
 
-`npm run build` validates published content, builds Astro, and counts every output file. It fails above 18,000 files (2,000 below Cloudflare's free 20,000-file ceiling), or if any asset exceeds 25 MiB. Search currently filters published guides and their location tables locally; a sharded full-text index is future work.
+`npm run build` validates published content, builds Astro, and counts every output file. It fails above 19,500 files (500 below Cloudflare's free 20,000-file ceiling), or if any asset exceeds 25 MiB. Search filters original guides and their location tables plus compact metadata for new catalog pages; a sharded full-text index is future work.
 
 ## Import and review
 
@@ -38,7 +38,22 @@ Batches accept 1-100 attempted fetches, skip published and cached records, and n
 
 The importer uses Firecrawl v2, retries failures, and resumes from `.import-cache/`. It stages data only, never publishes automatically. Use `npm run import -- --refresh <URL>` to deliberately refresh an entry. Corrupt or incomplete cached entries are fetched again; writes replace cache files atomically. Authentication failures are not retried. Markdown, HTML, and links are retained for review of tables and infoboxes. Keep keys out of source control. The importer reads `FIRECRAWL_API_KEY` or `FIRECRAWL_KEY` from the environment or the ignored local `.env` file. It also accepts `firecrawl_key` in `.env`. Authentication failures stop the batch; rate-limited requests wait before retrying.
 
-Review staged content against its source before adding a record to `src/data/articles.json`. Keep source and history attribution, retrieval date, substantive sections, and review status. Do not infer facts. Quest records require sourced location information or a researched limitation, plus a dated YouTube search. Videos require explicit quest-match evidence. Semantic quality still requires human/editorial judgment; automated rules are guardrails, not proof.
+Review staged content against its source before publication. Existing articles stay in `src/data/articles.json`; the expanded catalog is filed by category under `content/catalog/`. Keep source and history attribution, retrieval date, substantive sections, and review status. Do not infer facts. Quest records require sourced location information or a researched limitation, plus a dated YouTube search. Videos require explicit quest-match evidence. Semantic quality still requires human/editorial judgment; automated rules are guardrails, not proof.
+
+## Full catalog filing
+
+All 28,722 downloaded or earlier source captures are filed and verified in the
+local `.import-cache/filed/` archive. `data/migration/summary.json` gives current
+counts; per-source and per-category ledgers explain every disposition. The bulk
+catalog holds 7,085 incomplete sources rather than publishing placeholders, with
+9 failed and 8 missing captures tracked explicitly. See
+[the filing guide](docs/CATALOG-FILING.md) for the initial conversion, archive
+verification, hosting packs, and resumable R2 image-copy workflow.
+
+Preserve published slugs, section keys and source baselines in future updates so
+player corrections stay attached. The full initial-migration generators are not
+routine live refresh commands. Housing HTML uses the Worker at its normal wiki
+URL; use the Cloudflare preview to test it locally.
 
 ## Mission conversion
 

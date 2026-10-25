@@ -27,6 +27,7 @@ import {
 import { pristineDocumentResponse } from "./editor-baselines.mjs";
 import media from "../data/media.json" with { type: "json" };
 import { searchCharacters, matchCharacter } from "./census.mjs";
+import { serveCatalogMedia } from "./catalog-media.mjs";
 const SESSION = "__Host-dcuo-session",
   STATE = "__Host-dcuo-state";
 const WEEK = 7 * 86400;
@@ -231,6 +232,23 @@ export async function handle(request, env, fetcher = fetch) {
   const url = new URL(request.url),
     path = url.pathname;
   try {
+    if (path === "/api/catalog-corrections" && request.method === "GET") {
+      if (!env.DB) return json({ corrections: [] });
+      const rows = await env.DB.prepare(
+        `WITH latest AS (
+        SELECT MAX(id) AS id FROM article_revisions WHERE part IN ('document','summary') GROUP BY slug,part
+      ) SELECT slug,part,base_hash,
+        CASE WHEN part='document' THEN json_extract(content,'$.title') ELSE NULL END AS title,
+        CASE WHEN part='document' THEN json_extract(content,'$.summary') ELSE content END AS summary
+        FROM article_revisions WHERE id IN (SELECT id FROM latest) ORDER BY id DESC`,
+      ).all();
+      return json({ corrections: rows.results });
+    }
+    if (
+      path.startsWith("/api/catalog-media/") &&
+      ["GET", "HEAD"].includes(request.method)
+    )
+      return await serveCatalogMedia(request, env, fetcher);
     if (
       (path === "/" ||
         /^\/guides\/?$/.test(path) ||
@@ -246,7 +264,26 @@ export async function handle(request, env, fetcher = fetch) {
       /^\/api\/articles\/([^/]+)(?:\/(history|document|preview|media)(?:\/(\d+))?)?$/,
     );
     if (articleRoute && request.method === "GET") {
-      const article = findArticle(decodeURIComponent(articleRoute[1]));
+      if (articleRoute[2] === "document" && !articleRoute[3]) {
+        if (!env.DB) throw new HttpError(503, "Live editing is unavailable.");
+        const slug = decodeURIComponent(articleRoute[1]);
+        if (!/^[A-Za-z0-9_-]+$/.test(slug))
+          throw new HttpError(404, "Article not found.");
+        let response;
+        try {
+          response = await pristineDocumentResponse(env, { slug });
+        } catch (error) {
+          // Check existence only on the failure path, preserving the cheap
+          // prepared response for real articles and a permanent 404 for others.
+          if (error.status === 503) await findArticle(slug, env);
+          throw error;
+        }
+        if (response) return response;
+      }
+      const article = await findArticle(
+        decodeURIComponent(articleRoute[1]),
+        env,
+      );
       if (!env.DB) throw new HttpError(503, "Live editing is unavailable.");
       if (articleRoute[3] && articleRoute[2] !== "history")
         throw new HttpError(404, "Endpoint not found.");
@@ -262,12 +299,41 @@ export async function handle(request, env, fetcher = fetch) {
           .toLowerCase()
           .slice(0, 120);
         const state = query ? null : await getDocumentState(env, article);
-        const current = new Set();
+        const current = new Map();
         const walk = (n) => {
-          if (n.type === "image") current.add(n.attrs.src);
+          if (n.type === "image")
+            current.set(n.attrs.src, n.attrs.alt || "Article image");
           (n.content || []).forEach(walk);
         };
         if (state) walk(state.document.content);
+        const importedImages = (
+          state
+            ? [...current].map(([src, label]) => ({ src, label }))
+            : article.sections.flatMap((s) =>
+                (s.images || []).map((i) => ({ src: i.url, label: i.label })),
+              )
+        )
+          .filter((i) =>
+            /^https:\/\/dcuo-wiki\.com\/api\/catalog-media\/[a-f0-9]{64}$/.test(
+              i.src,
+            ),
+          )
+          .filter(
+            (i) =>
+              !query ||
+              query
+                .split(/\s+/)
+                .every((term) =>
+                  (i.label + " " + article.title).toLowerCase().includes(term),
+                ),
+          )
+          .map((i) => ({
+            src: i.src,
+            source: i.src + "/source",
+            label: i.label,
+            credit:
+              "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+          }));
         return json({
           images: media
             .filter((m) =>
@@ -291,7 +357,9 @@ export async function handle(request, env, fetcher = fetch) {
                 m.sourcePage.split("File:")[1] || "Image",
               ),
               credit: m.credit,
-            })),
+            }))
+            .concat(importedImages)
+            .slice(0, 24),
         });
       }
       if (articleRoute[2] === "history" && articleRoute[3]) {
@@ -352,7 +420,10 @@ export async function handle(request, env, fetcher = fetch) {
       !articleRoute[3] &&
       request.method === "POST"
     ) {
-      const previewArticle = findArticle(decodeURIComponent(articleRoute[1]));
+      const previewArticle = await findArticle(
+        decodeURIComponent(articleRoute[1]),
+        env,
+      );
       const b = await bodyJson(request, DOCUMENT_BYTES * 2 + 16384);
       try {
         const document = validateDocument(b.document);
@@ -485,7 +556,10 @@ export async function handle(request, env, fetcher = fetch) {
       request.method === "POST"
     ) {
       await limit(env, `publish:${user.id}`, 20, 3600);
-      const article = findArticle(decodeURIComponent(articleRoute[1]));
+      const article = await findArticle(
+        decodeURIComponent(articleRoute[1]),
+        env,
+      );
       const p = await profile(env, user.id);
       if (!p)
         throw new HttpError(
@@ -545,7 +619,10 @@ export async function handle(request, env, fetcher = fetch) {
     }
     if (articleRoute && !articleRoute[2] && request.method === "POST") {
       await limit(env, `publish:${user.id}`, 20, 3600);
-      const article = findArticle(decodeURIComponent(articleRoute[1]));
+      const article = await findArticle(
+        decodeURIComponent(articleRoute[1]),
+        env,
+      );
       const p = await profile(env, user.id);
       if (!p)
         throw new HttpError(

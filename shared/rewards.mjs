@@ -58,6 +58,8 @@ export function isRewardPart(part, slug) {
   return (
     Boolean(context[slug]?.[part.id]) ||
     /rewards?|results?|loot|drops?/i.test(part.title || part.caption || "") ||
-    part.columns?.some((c) => /rewards?|currency|cash|marks/i.test(c))
+    part.columns?.some((c) =>
+      /rewards?|currency|cash|marks|cost|price/i.test(c),
+    )
   );
 }

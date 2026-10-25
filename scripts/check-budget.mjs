@@ -1,6 +1,6 @@
 import { readdir, stat } from "node:fs/promises";
 import { join } from "node:path";
-export function checkBudget(sizes, limit = 18000) {
+export function checkBudget(sizes, limit = 19500) {
   return {
     files: sizes.length,
     bytes: sizes.reduce((a, b) => a + b, 0),
@@ -19,7 +19,7 @@ async function walk(dir) {
 if (process.argv[1]?.endsWith("check-budget.mjs")) {
   const report = checkBudget(await walk("dist"));
   console.log(
-    JSON.stringify({ ...report, budget: 18000, platformLimit: 20000 }, null, 2),
+    JSON.stringify({ ...report, budget: 19500, platformLimit: 20000 }, null, 2),
   );
   if (!report.ok) process.exitCode = 1;
 }

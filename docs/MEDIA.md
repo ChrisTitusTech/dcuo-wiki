@@ -25,7 +25,7 @@ Unknown URLs remain links until reviewed and imported; they are not hotlinked.
    appropriate `--content-type`. Keep the custom domain enabled.
    Dashboard uploads allow 100 files per batch. After completion, refresh the
    page before selecting another batch. Do not use the upload panel's `Remove
-   all` control: it removes the uploaded objects as well as clearing the list.
+all` control: it removes the uploaded objects as well as clearing the list.
 5. Apply D1 migrations, run `node scripts/media-catalog.mjs`, then execute
    `.import-cache/media-catalog.sql` against `dcuo-wiki-accounts`. This upserts
    metadata only; it does not modify player data.
@@ -36,3 +36,18 @@ Unknown URLs remain links until reviewed and imported; they are not hotlinked.
 R2 objects do not count toward the site's 20,000 static-file limit. R2 usage is
 shared across the account; other buckets already exceed its free storage tier.
 Profile screenshot storage and unrelated site artwork are unchanged.
+
+## Complete-catalog mirroring
+
+The full migration's approved source-image manifest is
+`data/migration/catalog-media.json`. Existing media records above are reused.
+Additional images use the MEDIA binding to the same `dcuo-wiki-images` bucket,
+under `catalog/<source-url-hash>`. They are copied once on request, checked by
+signature and byte limit, credited in R2 metadata, and then served from the public
+R2 domain. Each article keeps inline images and the existing full-screen viewer.
+These new originals are lazy-loaded without a separate resized preview object.
+
+Use `node scripts/warm-catalog-media.mjs --write` after deployment to copy the
+entire approved set in the background. Its ignored progress file supports resume.
+The source-only pack manifests and R2 metadata retain provenance; existing D1
+media records, player screenshots and earlier originals/previews are unchanged.

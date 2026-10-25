@@ -1,4 +1,5 @@
 import { pristineDocumentResponse } from "./editor-baselines.mjs";
+import { catalogRecord } from "./catalog-packs.mjs";
 import { releaseSearchText } from "../shared/releases.mjs";
 import articles from "../src/data/articles.json" with { type: "json" };
 import { articleParts, renderPart } from "../shared/article-content.mjs";
@@ -9,10 +10,14 @@ import {
   renderDocument,
   documentText,
 } from "../shared/rich-article.mjs";
-export function findArticle(slug) {
+export async function findArticle(slug, env) {
   const article = articles.find((a) => a.slug === slug);
-  if (!article) throw new HttpError(404, "Article not found.");
-  return article;
+  if (article) return article;
+  if (!/^[A-Za-z0-9_-]+$/.test(slug) || !env?.ASSETS)
+    throw new HttpError(404, "Article not found.");
+  const packed = await catalogRecord(env, slug, "article");
+  if (!packed) throw new HttpError(404, "Article not found.");
+  return JSON.parse(packed);
 }
 export async function articleState(env, article) {
   const parts = articleParts(article);
@@ -57,11 +62,14 @@ export async function getDocumentState(env, article, { prebuilt = true } = {}) {
   const state = await articleState(env, article);
   const document =
     state.document ||
-    baselineDocument(
-      article,
-      state.parts,
-      articles.filter((a) => article.related?.includes(a.slug)),
-    );
+    baselineDocument(article, state.parts, [
+      ...articles.filter((a) => article.related?.includes(a.slug)),
+      ...(await Promise.all(
+        (article.related || [])
+          .filter((slug) => !articles.some((a) => a.slug === slug))
+          .map((slug) => findArticle(slug, env)),
+      )),
+    ]);
   return {
     document,
     revision: state.revision,
@@ -79,9 +87,48 @@ export async function serveArticle(request, env) {
   const slug = decodeURIComponent(
     new URL(request.url).pathname.split("/")[2] || "",
   );
-  const article = articles.find((a) => a.slug === slug);
-  const response = await env.ASSETS.fetch(assetRequest(request));
-  if (!article || response.status !== 200 || !env.DB) return response;
+  let response = await env.ASSETS.fetch(assetRequest(request));
+  if (
+    response.status === 404 &&
+    /^\/wiki\/[^/]+\/?$/.test(new URL(request.url).pathname) &&
+    /^[A-Za-z0-9_-]+$/.test(slug)
+  ) {
+    const html = await catalogRecord(env, slug, "html");
+    if (html) {
+      const url = new URL(request.url);
+      if (!url.pathname.endsWith("/"))
+        return new Response(null, {
+          status: 301,
+          headers: { Location: url.pathname + "/" + url.search },
+        });
+      response = new Response(
+        request.method === "HEAD" ? null : JSON.parse(html),
+        {
+          headers: {
+            "Content-Type": "text/html; charset=utf-8",
+            "Cache-Control": "no-store",
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+          },
+        },
+      );
+    }
+  }
+  if (response.status !== 200 || !env.DB) return response;
+  const revision = await env.DB.prepare(
+    "SELECT id FROM article_revisions WHERE slug=? LIMIT 1",
+  )
+    .bind(slug)
+    .first();
+  if (!revision) {
+    const headers = new Headers(response.headers);
+    headers.set("Cache-Control", "no-store");
+    headers.delete("ETag");
+    headers.delete("Last-Modified");
+    return new Response(response.body, { status: response.status, headers });
+  }
+  const article = await findArticle(slug, env);
   const { parts, document } = await articleState(env, article);
   const changed = parts.filter((p) => p.revision);
   if (!changed.length && !document) {

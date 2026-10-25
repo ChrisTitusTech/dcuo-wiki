@@ -1,13 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import articles from "../../data/articles";
+import catalog from "../../data/catalog-index.json";
 import {
   releases,
   releaseIdsFor,
   releaseHref,
 } from "../../../shared/releases.mjs";
 const count = (id: string) =>
-  articles.filter((a) => releaseIdsFor(a.slug).includes(id)).length;
+  articles.filter((a) => releaseIdsFor(a.slug).includes(id)).length +
+  catalog.filter((a) => a.releaseIds.includes(id)).length;
 const groups = [
   {
     label: "Core game & systems",

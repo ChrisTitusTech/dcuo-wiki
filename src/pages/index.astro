@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import articles from "../data/articles";
+import catalog from "../data/catalog-index.json";
 import GuideLibrary from "../components/GuideLibrary.astro";
 ---
 
@@ -47,7 +48,7 @@ import GuideLibrary from "../components/GuideLibrary.astro";
         <dl>
           <div>
             <dt>Published guides</dt>
-            <dd>{articles.length}</dd>
+            <dd>{articles.length + catalog.length}</dd>
           </div>
           <div>
             <dt>Topics</dt>

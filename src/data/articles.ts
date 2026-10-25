@@ -3,6 +3,9 @@ export interface Article {
   slug: string;
   title: string;
   category: string;
+  imported?: boolean;
+  type?: string;
+  releaseIds?: string[];
   summary: string;
   sections: {
     title: string;

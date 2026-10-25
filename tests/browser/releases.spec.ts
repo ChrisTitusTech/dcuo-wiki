@@ -1,10 +1,12 @@
 import { test, expect } from "@playwright/test";
 import articles from "../../src/data/articles.json" with { type: "json" };
+import catalog from "../../src/data/catalog-index.json" with { type: "json" };
 import { releaseIdsFor } from "../../shared/releases.mjs";
 const releaseCount = (id: string) =>
   Math.min(
     48,
-    articles.filter((a) => releaseIdsFor(a.slug).includes(id)).length,
+    articles.filter((a) => releaseIdsFor(a.slug).includes(id)).length +
+      catalog.filter((a) => a.releaseIds.includes(id)).length,
   );
 test("guides hub combines release, category and search; shareable filters reset pagination", async ({
   page,
@@ -15,14 +17,19 @@ test("guides hub combines release, category and search; shareable filters reset 
   ).toBeVisible();
   await page.locator("#next-guides").click();
   await expect(page.locator("#guide-page")).toHaveText(
-    `Page 2 of ${Math.ceil(articles.length / 48)}`,
+    `Page 2 of ${Math.ceil((articles.length + catalog.length) / 48)}`,
   );
   await page.getByLabel("Episode / DLC / chapter").selectOption("episode-1");
   const expected = articles.filter((a) =>
     releaseIdsFor(a.slug).includes("episode-1"),
   );
-  await expect(page.locator(".card:visible")).toHaveCount(expected.length);
-  await expect(page.locator(".library-pagination")).toBeHidden();
+  const total =
+    expected.length +
+    catalog.filter((a) => a.releaseIds.includes("episode-1")).length;
+  await expect(page.locator(".card:visible")).toHaveCount(Math.min(48, total));
+  if (total <= 48)
+    await expect(page.locator(".library-pagination")).toBeHidden();
+  else await expect(page.locator(".library-pagination")).toBeVisible();
   await page.getByRole("button", { name: "Quests", exact: true }).click();
   await page.getByRole("searchbox").fill("Alert T1: Oan Sciencells (Heroes)");
   await expect(page.locator(".card:visible")).toHaveCount(1);

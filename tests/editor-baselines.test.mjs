@@ -4,6 +4,7 @@ import articles from "../src/data/articles.json" with { type: "json" };
 import { editorBaseline } from "../scripts/editor-baseline.mjs";
 import { pristineDocumentResponse } from "../worker/editor-baselines.mjs";
 import { hash } from "../worker/security.mjs";
+import { catalogPackPath, packLine } from "../shared/catalog-packs.mjs";
 const fixture = (revision, fetch) => ({
   DB: {
     prepare(sql) {
@@ -30,10 +31,13 @@ test("large source editor payloads have the same document hash as the publish pr
   assert.ok(payload.toc.includes("#section-"));
   const serialized = JSON.stringify(payload);
   const env = fixture(null, async (request) => {
-    assert.equal(new URL(request.url).pathname, "/_editor/Base_Items_1.json");
-    return new Response(serialized, {
+    assert.equal(
+      new URL(request.url).pathname,
+      catalogPackPath("Base_Items_1"),
+    );
+    return new Response(packLine(article.slug, "editor", payload), {
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/plain",
         ETag: "source-etag",
         "Last-Modified": "yesterday",
         "Cache-Control": "public,max-age=3600",

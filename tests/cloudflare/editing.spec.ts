@@ -604,13 +604,17 @@ test("large untouched articles stream prepared editor documents and keep revisio
   request,
 }) => {
   for (const slug of ["Allies", "Base_Items_1", "Vendors"]) {
-    const source = await request.get("/_editor/" + slug + ".json");
+    const { catalogPackPath, packedValue } =
+      await import("../../shared/catalog-packs.mjs");
+    const source = await request.get(catalogPackPath(slug));
     expect(source.status()).toBe(200);
     const live = await request.get("/api/articles/" + slug + "/document");
     expect(live.status()).toBe(200);
     expect(live.headers()["cache-control"]).toBe("no-store");
     const document = await live.json();
-    expect(document).toEqual(await source.json());
+    expect(document).toEqual(
+      JSON.parse(packedValue(await source.text(), slug, "editor")!),
+    );
     expect(document.revision).toBe(0);
     expect(document.baseHash).toHaveLength(64);
   }

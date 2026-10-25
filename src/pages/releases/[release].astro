@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import GuideLibrary from "../../components/GuideLibrary.astro";
 import articles from "../../data/articles";
+import catalog from "../../data/catalog-index.json";
 import {
   releases,
   releaseIdsFor,
@@ -15,7 +16,11 @@ export function getStaticPaths() {
         releaseIdsFor(a.slug).includes(release.id),
       ),
     }))
-    .filter(({ matching }) => matching.length)
+    .filter(
+      ({ matching, release }) =>
+        matching.length ||
+        catalog.some((a) => a.releaseIds.includes(release.id)),
+    )
     .map(({ release, matching }) => ({
       params: { release: release.id },
       props: { release, matching },
@@ -46,7 +51,8 @@ const chapters = releases.filter((r) => r.arc === release.id);
   {chapters.length > 0 && (
     <nav class="release-links" aria-label="Story arc chapters">
       {chapters.map((chapter) =>
-        articles.some((a) => releaseIdsFor(a.slug).includes(chapter.id)) ? (
+        articles.some((a) => releaseIdsFor(a.slug).includes(chapter.id)) ||
+        catalog.some((a) => a.releaseIds.includes(chapter.id)) ? (
           <a href={releaseHref(chapter.id)}>
             Chapter {chapter.number}: {chapter.title}
           </a>

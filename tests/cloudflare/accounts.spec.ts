@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import articles from "../../src/data/articles.json" with { type: "json" };
+import catalog from "../../src/data/catalog-index.json" with { type: "json" };
 const headers = {
   Cookie: `__Host-dcuo-session=${"a".repeat(64)}`,
   Origin: "http://127.0.0.1:8787",
@@ -197,7 +198,7 @@ test("account editor return links use only the lightweight title index", async (
   const index = JSON.parse(
     (await page.locator("#account-article-index").textContent()) || "[]",
   );
-  expect(index).toHaveLength(articles.length);
+  expect(index).toHaveLength(articles.length + catalog.length);
   for (const entry of index)
     expect(Object.keys(entry).sort()).toEqual(["slug", "title"]);
   const scripts = await page

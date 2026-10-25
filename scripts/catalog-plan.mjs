@@ -115,7 +115,10 @@ export function catalogPlan(articles, inventory) {
   const published = new Set(articles.map((a) => normalize(a.source)));
   const entries = new Map(
     inventory.entries
-      .filter((e) => e.kind === "article")
+      .filter(
+        (e) =>
+          e.kind === "article" && !["published", "redirect"].includes(e.status),
+      )
       .map((e) => [normalize(e.url), e]),
   );
   const queue = new Map();

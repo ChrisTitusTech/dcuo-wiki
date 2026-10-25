@@ -52,9 +52,10 @@ export function buildInventory(pages, articles) {
   const records = new Map(),
     exclusions = new Map();
   let observations = 0;
-  const published = new Map(
-    articles.map((a) => [classifyURL(a.source).url, a.slug]),
-  );
+  const published = new Map();
+  for (const article of articles)
+    if (!published.has(classifyURL(article.source).url))
+      published.set(classifyURL(article.source).url, article.slug);
   for (const page of pages)
     for (const raw of page.links || []) {
       const entry = classifyURL(typeof raw === "string" ? raw : raw.url);

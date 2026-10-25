@@ -77,11 +77,12 @@ jobs still require inspection; these must not silently discard the queue.
 
 ## Editor request budget
 
-The build also generates `dist/_editor/<slug>.json` for each published source
-article. These are validated source-only documents and previews, never database
-snapshots. The Worker streams one only after checking that D1 has no revisions
-for that article. Existing corrections and whole-document edits remain on the
-live path. Prepared and live baselines use identical related-guide ordering and
-hashing, preserving conflict checks and saved drafts. Rebuild before deployment;
-missing prepared files return a clear temporary editor error. These JSON files
-count toward the static-file budget, which is checked after their generation.
+The build prepares source articles and editor documents in 256 line-addressable
+`dist/_catalog/` assets. These replace per-page `_editor` files. Housing HTML is
+also pre-rendered and packed, with the same public article URL served by the
+Worker. This preserves the free file allowance without removing useful pages.
+
+An untouched editor returns its prepared JSON only after checking D1 for revisions.
+Existing corrections and whole-document edits remain authoritative. Missing
+prepared data fails clearly. See [CATALOG-FILING.md](CATALOG-FILING.md) for the
+complete filing process, audit ledgers and image mirroring.

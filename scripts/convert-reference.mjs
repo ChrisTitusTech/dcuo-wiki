@@ -9,6 +9,7 @@ import { createHash } from "node:crypto";
 import { fromMarkdown } from "mdast-util-from-markdown";
 import { gfmFromMarkdown } from "mdast-util-gfm";
 import { gfm } from "micromark-extension-gfm";
+import { currencyPlain, currencyImageName } from "./catalog-currency.mjs";
 
 export function plain(node) {
   if (node.type === "image") return "";
@@ -40,8 +41,11 @@ const safe = (value) => {
     return false;
   }
 };
-/** @param {string} markdown @param {string} source @param {{headingTitle?: (title:string, depth:number)=>string}} [options] */
+/** @param {string} markdown @param {string} source @param {{headingTitle?: (title:string, depth:number)=>string, currencies?:boolean}} [options] */
 export function convertReference(markdown, source, options = {}) {
+  const contentPlain = options.currencies
+    ? (node) => currencyPlain(node, plain)
+    : plain;
   const tree = fromMarkdown(markdown, {
     extensions: [gfm()],
     mdastExtensions: [gfmFromMarkdown()],
@@ -63,6 +67,13 @@ export function convertReference(markdown, source, options = {}) {
       }
       walk(node, (n, parent) => {
         if (n.type === "image") {
+          if (options.currencies && currencyImageName(n)) {
+            audit.push({
+              title,
+              omitted: "Currency icon represented inline with its source label",
+            });
+            return;
+          }
           const u = (
             parent?.type === "link" &&
             parent.url.startsWith("https://static.wikia.nocookie.net/")
@@ -129,7 +140,7 @@ export function convertReference(markdown, source, options = {}) {
       });
       if (node.type === "table") {
         const raw = node.children.map((r) =>
-          r.children.map((c) => clean(plain(c))),
+          r.children.map((c) => clean(contentPlain(c))),
         );
         if (!raw.flat().some(Boolean)) continue;
         // Some Fandom tables have an empty Markdown header before the actual labels.
@@ -172,11 +183,11 @@ export function convertReference(markdown, source, options = {}) {
         }
       } else if (node.type === "list") {
         for (const li of node.children) {
-          const value = clean(plain(li));
+          const value = clean(contentPlain(li));
           if (value) items.push(value);
         }
       } else if (["paragraph", "blockquote"].includes(node.type)) {
-        const value = clean(plain(node));
+        const value = clean(contentPlain(node));
         if (/^\|.*\|$/.test(value))
           throw new Error(
             `Malformed Markdown table in ${title}; inspect the source HTML`,

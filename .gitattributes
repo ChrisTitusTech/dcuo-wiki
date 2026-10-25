@@ -1,0 +1,6 @@
+content/catalog/*.json linguist-generated=true
+data/migration/*.json linguist-generated=true
+data/migration/filed/*.json linguist-generated=true
+public/catalog-index.json linguist-generated=true
+src/data/catalog-index.json linguist-generated=true
+src/data/guide-links.json linguist-generated=true

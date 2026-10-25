@@ -71,6 +71,9 @@ export function issuesFor(a) {
     .flatMap((s) => [
       ...(Array.isArray(s.items) ? s.items : []),
       ...(Array.isArray(s.table?.rows) ? s.table.rows.flat() : []),
+      ...(a.galleryContinuation === true
+        ? (s.images || []).map((i) => i.label)
+        : []),
     ])
     .join(" ");
   const wordCount = body.trim().split(/\s+/).length;

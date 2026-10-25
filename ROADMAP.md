@@ -122,12 +122,12 @@ map points and exact-match YouTube guides ahead of reference directories. This
 supersedes the reference-first order in the previous coverage correction.
 
 - [x] Complete existing three quests and four mapped location/collectible guides:
-  missing route images, objectives/context, exact-name video research, chapters.
+      missing route images, objectives/context, exact-name video research, chapters.
 - [x] Expand a connected set of additional quest walkthroughs with sourced maps
-  and matching videos; record researched exclusions instead of publishing stubs.
+      and matching videos; record researched exclusions instead of publishing stubs.
 - [x] Add further mapped collectible guides with source-complete node coverage.
 - [x] Restore Collections, Artifacts, Investigations and Feats reference coverage,
-  then remaining Equipment/Weapon Mastery details.
+      then remaining Equipment/Weapon Mastery details.
 - [x] Convert individual power ability lists after the practical guide work.
 - [x] Resume bounded inventory imports with section/image coverage evidence.
 
@@ -223,6 +223,7 @@ missing selectable-reward table was appended to Bane Brought Down. Library
 pagination shows 48 results while search covers the full dataset.
 
 Independent review findings corrected before publication:
+
 - Opposing-faction video titles are rejected in search and YouTube metadata;
   accepted matches follow stable search-result order.
 - Research accepts environment-only credentials and reuses complete caches
@@ -668,3 +669,69 @@ content/feat validation, build and deployment dry run. Independent review passed
 The build now contains 3,442 assets, including 1,671 prepared editor documents
 (55.9 MB total); Worker gzip remains 2,317.42 KiB. Recheck the actual deployed
 editor endpoints and preserved live corrections before reporting completion.
+
+## Full downloaded catalog filing (2026-10-25)
+
+The owner authorized sorting and filing every downloaded capture and expanding
+remaining useful content. All 27,218 bulk records now have a category, subtype,
+source hash, cache path and disposition in `data/migration/catalog.json` and its
+per-category `filed` ledgers. Failed and missing captures remain explicit. Existing
+article records and section indices remain unchanged. Source navigation tables
+cannot qualify an otherwise empty page. Mission pages still require map/location
+and YouTube evidence; unsupported extraction and incomplete artifact captures
+remain held rather than becoming placeholders.
+
+Converted articles are filed under `content/catalog/`. General references receive
+more specific source-backed rules for styles, plans, NPCs, housing, locations,
+collectibles and patch notes. Source release badges and introduction links supply
+DLC associations. Classification evidence remains attached to each article.
+
+Pre-render all Astro article pages. Pack source records and editor baselines
+into 256 line-addressable assets. Housing HTML uses the same packs and its
+usual public wiki route, avoiding a file for every Housing page. Read only the requested record, preserving D1 corrections as the
+authority. The internal guard is 19,500 files, retaining 500 below the unchanged
+20,000 platform limit. No plan or subscription change is required. Search loads
+additional compact reference metadata and renders only the current page of cards.
+
+Approved source images are recorded in hashed pack entries. The existing R2 bucket
+is bound as MEDIA. Only a manifest-listed image may be fetched, MIME/size checked,
+copied with provenance, and redirected to its public R2 URL. Existing media assets
+are reused. Large galleries and tables remain editable without truncating rows or
+images. Image-rich continuations count their actual captions as substantive text.
+
+Exit criteria: all records accounted for; converted content and whole documents
+validate; build/file and Worker size gates pass; browser and local Cloudflare tests
+pass; independent Codex review is resolved; main deployment, live corrections,
+new article editors, search and R2 copies are verified. Record actual publication
+and held counts only after acceptance. Bulk R2 warming records failures separately.
+
+Physical filing is complete: all 28,722 successful/earlier source capture files
+have verified exact archive links, with zero missing archive entries. Earlier
+partial captures and research remain identifiable. The gameplay inventory has
+zero unreviewed or uncategorized URLs. The bulk ledger retains 7,085 held sources,
+9 failed and 8 missing captures; these are not published placeholders.
+
+Review found and fixed two integration defects before publication: currency icon
+labels must be matched to their amount, not suppressed by unrelated currency
+mentions; the account return-to-edit index must include the new catalog.
+Regression coverage checks both paths. Existing article JSON remains unchanged,
+and 110 current live article parts were captured for deployment comparison.
+
+Local acceptance passes: Astro checking, 165 unit tests, source/feat validation,
+29 browser tests and 20 Cloudflare tests. The build prepares 18,911 complete
+editor documents for 18,911 articles (17,240 newly filed pages) in 256 packs.
+Its 16,111 actual files remain below the 19,500 internal guard and 20,000 platform
+limit; the Worker dry run is 2,825.90 KiB gzip with DB, MEDIA and ASSETS bindings.
+Production checks and image-copy counts are recorded after the main deployment.
+
+The full category reconciliation corrected 357 converted source groups, including
+vendor descriptions previously matching incidental raid/location terms. Explicit
+housing namespaces override vendor names for base amenities. Every converted
+source now receives the final rules, not only the Reference category, and alias
+ledgers inherit their canonical category. Regression checks include the generated
+article records. Archive links were refiled and verified again without failures.
+
+Review also corrected unknown document endpoints to return 404 and retained
+legacy table-cell text containing unescaped pipes. A suggestion to silently skip
+missing related source packs was rejected: the complete related-slug graph is
+valid, and transient source failures must not silently alter saved draft hashes.

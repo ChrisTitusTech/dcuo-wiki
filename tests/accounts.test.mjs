@@ -4,6 +4,7 @@ import { DatabaseSync } from "node:sqlite";
 import { readFileSync } from "node:fs";
 import articles from "../src/data/articles.json" with { type: "json" };
 import { editorBaseline } from "../scripts/editor-baseline.mjs";
+import { catalogPackPath, packLine } from "../shared/catalog-packs.mjs";
 import { handle } from "../worker/index.mjs";
 import { hash, now } from "../worker/security.mjs";
 const origin = "https://dcuo-wiki.com";
@@ -60,19 +61,24 @@ async function setup() {
     SITE_ORIGIN: origin,
     ASSETS: {
       fetch: async (request) => {
-        const match = new URL(request.url).pathname.match(
-          /^\/_editor\/([A-Za-z0-9_-]+)\.json$/,
-        );
-        if (match) {
-          const article = articles.find((a) => a.slug === match[1]);
-          return article
-            ? Response.json(
+        const path = new URL(request.url).pathname;
+        if (path.startsWith("/_catalog/")) {
+          const packed = articles
+            .filter((a) => catalogPackPath(a.slug) === path)
+            .map((a) =>
+              packLine(
+                a.slug,
+                "editor",
                 editorBaseline(
-                  article,
-                  articles.filter((a) => article.related?.includes(a.slug)),
+                  a,
+                  articles.filter((r) => a.related?.includes(r.slug)),
                 ),
-              )
-            : new Response("Missing", { status: 404 });
+              ),
+            )
+            .join("");
+          return new Response(packed, {
+            headers: { "Content-Type": "text/plain" },
+          });
         }
         return new Response("asset");
       },
