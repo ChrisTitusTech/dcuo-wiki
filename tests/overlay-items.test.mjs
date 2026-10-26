@@ -18,6 +18,7 @@ function setup() {
     "0005_equipment_snapshots",
     "0006_item_identifications",
     "0007_overlay_items",
+    "0008_item_details",
   ])
     sqlite.exec(readFileSync(`migrations/${f}.sql`, "utf8"));
   const DB = {
@@ -160,6 +161,7 @@ test("queue includes unique unresolved equipment and augments; native submission
   assert.equal(audit.decision, "approved");
   assert.match(audit.reason, /not moderator verified/);
   assert.deepEqual((await overlayItems(request(token), env)).items, [
+    { itemId: "999000111" },
     { itemId: "999000112" },
   ]);
   const listing = await listItemEvidence(env, user);
@@ -336,4 +338,371 @@ test("fifty publications use three atomic batch statements", async () => {
     sqlite.prepare("SELECT count(*) AS n FROM item_evidence_reviews").get().n,
     50,
   );
+});
+
+test("rich captures enrich already named items and retain their original identity audit", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  await submitOverlayItems(request(token, body()), env);
+  const original = sqlite
+    .prepare("SELECT evidence_id FROM item_identifications")
+    .get().evidence_id;
+  const rich = {
+    ...body(),
+    schemaVersion: 2,
+    profile: "item-details-v1",
+    items: [
+      {
+        itemId: "999000111",
+        name: "Fixture Helmet",
+        details: {
+          description: "A protective helmet.",
+          style: "Tech Armor",
+          requiredLevel: 30,
+          requiredCombatRating: 100,
+          qualityId: 4,
+          categoryId: 2,
+          iconResource: "DUIICONSLIBS123/UIICONSLIBS123#321",
+        },
+      },
+    ],
+  };
+  assert.deepEqual(await submitOverlayItems(request(token, rich), env), {
+    submitted: 1,
+    skipped: 0,
+    iconsUploaded: 0,
+    iconsMissing: rich.items.filter((i) => i.details.iconResource).length,
+  });
+  assert.notEqual(
+    sqlite.prepare("SELECT evidence_id FROM item_identifications").get()
+      .evidence_id,
+    original,
+  );
+  assert.equal(
+    sqlite.prepare("SELECT status FROM item_evidence WHERE id=?").get(original)
+      .status,
+    "approved",
+  );
+  const saved = sqlite.prepare("SELECT * FROM item_details").get();
+  assert.deepEqual(JSON.parse(saved.details_json), rich.items[0].details);
+  const { itemIdentities, describeItem } =
+    await import("../worker/item-identities.mjs");
+  const publicItem = describeItem(
+    "999000111",
+    await itemIdentities(env, ["999000111"]),
+  );
+  assert.equal(publicItem.details.style, "Tech Armor");
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM item_evidence_reviews").get().n,
+    2,
+  );
+  assert.deepEqual((await overlayItems(request(token), env)).items, [
+    { itemId: "999000111" },
+    { itemId: "999000112" },
+  ]);
+  for (const details of [
+    { requiredLevel: 256 },
+    { description: "a\u0000b" },
+    { iconResource: "../../evil" },
+    { iconPng: "abc" },
+    { style: "" },
+    { qualityId: -1 },
+  ]) {
+    await assert.rejects(
+      submitOverlayItems(
+        request(token, { ...rich, items: [{ ...rich.items[0], details }] }),
+        env,
+      ),
+      { status: 400 },
+    );
+  }
+  const batch = env.DB.batch;
+  env.DB.batch = async (statements) => {
+    sqlite.exec("DELETE FROM overlay_tokens");
+    return batch(statements);
+  };
+  await assert.rejects(submitOverlayItems(request(token, rich), env), {
+    status: 401,
+  });
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM item_evidence").get().n,
+    2,
+  );
+});
+
+test("rich publication audit failure also rolls back details", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  sqlite.exec(
+    "CREATE TRIGGER fail_rich_audit BEFORE INSERT ON item_evidence_reviews BEGIN SELECT RAISE(ABORT,'audit unavailable'); END",
+  );
+  await assert.rejects(
+    submitOverlayItems(
+      request(token, {
+        ...body(),
+        schemaVersion: 2,
+        profile: "item-details-v1",
+        items: [
+          {
+            ...body().items[0],
+            details: { description: "Fixture definition" },
+          },
+        ],
+      }),
+      env,
+    ),
+    /audit unavailable/,
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM item_details").get().n,
+    0,
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM item_evidence").get().n,
+    0,
+  );
+});
+
+test("catalog captures create and update non-equipped definitions without copying character values globally", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  const rich = {
+    ...body(),
+    schemaVersion: 2,
+    profile: "item-details-v1",
+    scope: "catalog",
+    items: [
+      {
+        itemId: "990000888",
+        name: "New Catalog Item",
+        details: { description: "A newly observed item.", style: "Tech" },
+      },
+    ],
+    equipped: [],
+  };
+  assert.deepEqual(await submitOverlayItems(request(token, rich), env), {
+    submitted: 1,
+    skipped: 0,
+    iconsUploaded: 0,
+    iconsMissing: rich.items.filter((i) => i.details.iconResource).length,
+  });
+  rich.items[0].name = "Corrected Catalog Item";
+  rich.items[0].details.description = "Updated item description";
+  assert.deepEqual(await submitOverlayItems(request(token, rich), env), {
+    submitted: 1,
+    skipped: 0,
+    iconsUploaded: 0,
+    iconsMissing: rich.items.filter((i) => i.details.iconResource).length,
+  });
+  assert.equal(
+    sqlite.prepare("SELECT name FROM item_identifications").get().name,
+    "Corrected Catalog Item",
+  );
+  const { findCompanionArticle, listCompanionItems } =
+    await import("../worker/companion-catalog.mjs");
+  const article = await findCompanionArticle("Item_990000888", env);
+  assert.equal(article.title, "Corrected Catalog Item");
+  assert.match(article.summary, /Updated item description/);
+  const catalog = await listCompanionItems(
+    new URL("https://dcuo-wiki.com/api/companion/items"),
+    env,
+  );
+  assert.equal(catalog.items[0].href, "/wiki/Item_990000888/");
+  const before = sqlite
+    .prepare("SELECT count(*) AS n FROM item_evidence")
+    .get().n;
+  await assert.rejects(
+    submitOverlayItems(
+      request(token, { ...rich, capturedAt: rich.capturedAt - 1 }),
+      env,
+    ),
+    { status: 409 },
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM item_evidence").get().n,
+    before,
+  );
+  await assert.rejects(
+    submitOverlayItems(request(token, { ...rich, scope: "equipment" }), env),
+    { status: 409 },
+  );
+  await assert.rejects(
+    submitOverlayItems(
+      request(token, {
+        ...rich,
+        items: [{ ...rich.items[0], details: { qualityId: 1 } }],
+      }),
+      env,
+    ),
+    { status: 400 },
+  );
+});
+
+test("equipped captures keep identical item IDs independent by character, world and slot", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  sqlite.prepare("UPDATE equipment_snapshots SET items_json=?").run(
+    JSON.stringify([
+      { itemId: "999000111", slot: "24", augments: [] },
+      { itemId: "999000111", slot: "25", augments: [] },
+    ]),
+  );
+  const rich = {
+    ...body(),
+    schemaVersion: 2,
+    profile: "item-details-v1",
+    items: [
+      {
+        ...body().items[0],
+        details: { description: "Shared item definition" },
+      },
+    ],
+    equipped: [
+      {
+        slot: "24",
+        itemId: "999000111",
+        itemLevel: 381,
+        baseStats: [{ name: "Might", value: 123 }],
+      },
+      {
+        slot: "25",
+        itemId: "999000111",
+        itemLevel: 407,
+        baseStats: [{ name: "Might", value: 456 }],
+      },
+    ],
+  };
+  await submitOverlayItems(request(token, rich), env);
+  const { equipment } = await import("../worker/equipment.mjs");
+  const result = await equipment(env, { character_id: "123", world_id: "2" });
+  assert.equal(result.items[0].equipped.itemLevel, 381);
+  assert.equal(result.items[1].equipped.itemLevel, 407);
+  assert.equal(result.items[1].equipped.baseStats[0].value, 456);
+  assert.equal(result.items[0].details.itemLevel, undefined);
+  const foreign = await equipment(env, { character_id: "123", world_id: "3" });
+  assert.equal(foreign.items, null);
+  sqlite
+    .prepare("UPDATE equipment_snapshots SET items_json=?")
+    .run(JSON.stringify([{ itemId: "999000112", slot: "24", augments: [] }]));
+  assert.equal(
+    (await equipment(env, { character_id: "123", world_id: "2" })).items[0]
+      .equipped,
+    undefined,
+  );
+  await assert.rejects(submitOverlayItems(request(token, rich), env), {
+    status: 409,
+  });
+});
+
+test("equipment pagination reaches every ID and supports recapturing known definitions", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  const items = Array.from({ length: 80 }, (_, i) => ({
+    itemId: String(990000000 + i),
+    slot: String(i),
+    augments: [],
+  }));
+  sqlite
+    .prepare("UPDATE equipment_snapshots SET items_json=?")
+    .run(JSON.stringify(items));
+  const first = await overlayItems(request(token), env);
+  assert.equal(first.items.length, 50);
+  assert.equal(first.nextCursor, "990000049");
+  const nextRequest = new Request(
+    "https://dcuo-wiki.com/api/overlay/items?cursor=" + first.nextCursor,
+    { headers: { Authorization: `Bearer ${token}` } },
+  );
+  const second = await overlayItems(nextRequest, env);
+  assert.equal(second.items.length, 30);
+  assert.equal(second.items[0].itemId, "990000050");
+  assert.equal(second.nextCursor, undefined);
+  assert.equal(
+    new Set([...first.items, ...second.items].map((i) => i.itemId)).size,
+    80,
+  );
+  const bad = new Request("https://dcuo-wiki.com/api/overlay/items?cursor=01", {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  await assert.rejects(overlayItems(bad, env), { status: 400 });
+});
+
+test("revoking rich evidence removes its public details, article and equipped values", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  sqlite
+    .prepare("UPDATE equipment_snapshots SET items_json=?")
+    .run(JSON.stringify([{ itemId: "999000111", slot: "1", augments: [] }]));
+  await submitOverlayItems(
+    request(token, {
+      ...body(),
+      schemaVersion: 2,
+      profile: "item-details-v1",
+      items: [
+        {
+          ...body().items[0],
+          details: { description: "Revocable item description." },
+        },
+      ],
+      equipped: [{ slot: "1", itemId: "999000111", itemLevel: 450 }],
+    }),
+    env,
+  );
+  const evidence = sqlite
+    .prepare("SELECT evidence_id FROM item_identifications")
+    .get().evidence_id;
+  const { reviewItemEvidence } = await import("../worker/item-evidence.mjs");
+  await reviewItemEvidence(
+    request(token, {
+      id: evidence,
+      status: "revoked",
+      reason: "The contributed definition is incorrect.",
+    }),
+    env,
+    user,
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM item_details").get().n,
+    0,
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) AS n FROM equipment_item_details").get().n,
+    0,
+  );
+  const { findCompanionArticle } =
+    await import("../worker/companion-catalog.mjs");
+  assert.equal(await findCompanionArticle("Item_999000111", env), null);
+  const { itemIdentities, describeItem } =
+    await import("../worker/item-identities.mjs");
+  assert.equal(
+    describeItem("999000111", await itemIdentities(env, ["999000111"])).href,
+    undefined,
+  );
+});
+
+test("the complete native effect bound fits the equipped API contract", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  sqlite
+    .prepare("UPDATE equipment_snapshots SET items_json=?")
+    .run(JSON.stringify([{ itemId: "999000111", slot: "1", augments: [] }]));
+  const effects = Array.from({ length: 128 }, (_, i) => "Effect " + i);
+  const rich = {
+    ...body(),
+    schemaVersion: 2,
+    profile: "item-details-v1",
+    items: [{ ...body().items[0], details: { description: "A definition" } }],
+    equipped: [{ slot: "1", itemId: "999000111", effects }],
+  };
+  await submitOverlayItems(request(token, rich), env);
+  assert.equal(
+    JSON.parse(
+      sqlite.prepare("SELECT details_json FROM equipment_item_details").get()
+        .details_json,
+    ).effects.length,
+    128,
+  );
+  rich.equipped[0].effects.push("Overflow");
+  await assert.rejects(submitOverlayItems(request(token, rich), env), {
+    status: 400,
+  });
 });

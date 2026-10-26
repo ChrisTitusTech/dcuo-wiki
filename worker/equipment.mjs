@@ -150,6 +150,24 @@ export async function equipment(
     env,
     (rawItems || []).flatMap((item) => [item.itemId, ...item.augments]),
   );
+  const capturedRows = await query(
+    env,
+    "SELECT slot,item_id,details_json,captured_at FROM equipment_item_details WHERE character_id=? AND world_id=?",
+    characterId,
+    worldId,
+  ).all();
+  const captures = new Map(capturedRows.results.map((r) => [r.slot, r]));
+  const equipped = (item) => {
+    const c = captures.get(item.slot);
+    return c && c.item_id === item.itemId
+      ? {
+          equipped: {
+            ...JSON.parse(c.details_json),
+            capturedAt: c.captured_at,
+          },
+        }
+      : {};
+  };
   return {
     characterId,
     worldId,
@@ -157,6 +175,7 @@ export async function equipment(
       ? rawItems.map((item) => ({
           ...item,
           ...describeItem(item.itemId, identities),
+          ...equipped(item),
           augments: item.augments.map((id) => describeItem(id, identities)),
         }))
       : null,

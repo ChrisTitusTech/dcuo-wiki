@@ -32,6 +32,7 @@ function setup() {
     "0005_equipment_snapshots",
     "0006_item_identifications",
     "0007_overlay_items",
+    "0008_item_details",
   ])
     sqlite.exec(readFileSync(`migrations/${migration}.sql`, "utf8"));
   const env = {

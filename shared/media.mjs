@@ -14,7 +14,24 @@ const escape = (value) =>
       ],
   );
 export function mediaAsset(reference) {
-  return assets.get(new URL(reference).href) || catalogMediaAsset(reference);
+  const url = new URL(reference);
+  if (
+    url.origin === "https://dcuo-wiki.com" &&
+    !url.username &&
+    !url.password &&
+    !url.search &&
+    !url.hash &&
+    /^\/api\/item-icons\/[a-f0-9]{64}$/.test(url.pathname)
+  ) {
+    return {
+      preview: url.href,
+      original: url.href,
+      sourcePage: "https://dcuo-wiki.com/companion-items/",
+      credit:
+        "DC Universe Online game artwork; rights belong to their respective owners.",
+    };
+  }
+  return assets.get(url.href) || catalogMediaAsset(reference);
 }
 export function renderMapLinks(rows) {
   return `<div class="map-gallery">${rows

@@ -253,3 +253,93 @@ test("companion token UI publishes native names directly and revokes access", as
     (await request.get("/api/overlay/items", { headers: bearer })).status(),
   ).toBe(401);
 });
+
+test("rich companion catalog publication creates an illustrated, editable article and updates it", async ({
+  page,
+  request,
+}) => {
+  const issued = await request.post("/api/items/overlay-token", { headers });
+  expect(issued.status()).toBe(201);
+  const { token } = await issued.json();
+  const bearer = { Authorization: `Bearer ${token}` };
+  const target = await (
+    await request.get("/api/overlay/items", { headers: bearer })
+  ).json();
+  const iconPng =
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4nGP4z8DwHwAFAAH/iZk9HQAAAABJRU5ErkJggg==";
+  const capture = {
+    schemaVersion: 2,
+    profile: "item-details-v1",
+    scope: "catalog",
+    character: target.character,
+    build: "a".repeat(64),
+    capturedAt: Math.floor(Date.now() / 1000),
+    items: [
+      {
+        itemId: "990088776",
+        name: "Illustrated Catalog Fixture",
+        details: {
+          description: "A newly discovered protective item.",
+          style: "Tech Armor",
+          requiredLevel: 30,
+          iconResource: "DUIICONSLIBS123/UIICONSLIBS123#321",
+          iconPng,
+        },
+      },
+    ],
+    equipped: [],
+  };
+  const published = await request.post("/api/overlay/items", {
+    headers: bearer,
+    data: capture,
+  });
+  expect(published.status()).toBe(201);
+  expect(await published.json()).toEqual({
+    submitted: 1,
+    skipped: 0,
+    iconsUploaded: 1,
+    iconsMissing: 0,
+  });
+  const catalog = await (await request.get("/api/companion/items")).json();
+  const item = catalog.items.find((i: any) => i.itemId === "990088776");
+  expect(item.href).toBe("/wiki/Item_990088776/");
+  const imageResponse = await request.get(item.icon, { maxRedirects: 0 });
+  expect(imageResponse.status()).toBe(302);
+  expect(imageResponse.headers().location).toMatch(
+    /^https:\/\/images\.dcuo-wiki\.com\/item-icons\/[a-f0-9]{64}$/,
+  );
+  const article = await request.get(item.href);
+  expect(article.status()).toBe(200);
+  const html = await article.text();
+  expect(html).toContain("A newly discovered protective item.");
+  expect(html).toContain('data-slug="Item_990088776"');
+  expect(html).toContain('href="https://dcuo-wiki.com/wiki/Item_990088776/"');
+  expect(html).not.toContain('data-slug="Companion_item_template"');
+  const doc = await request.get("/api/articles/Item_990088776/document");
+  expect(doc.status()).toBe(200);
+  const state = await doc.json();
+  expect(JSON.stringify(state.document.content)).toContain("/api/item-icons/");
+  state.document.summary="A player correction to the captured item description.";
+  const preview=await request.post("/api/articles/Item_990088776/preview",{headers,data:{document:state.document}});
+  expect(preview.status()).toBe(200);
+  expect(JSON.stringify(await preview.json())).toContain("player correction");
+  capture.items[0].details.description =
+    "Updated definition from the next companion capture.";
+  delete (capture.items[0].details as any).iconPng;
+  const updated = await request.post("/api/overlay/items", {
+    headers: bearer,
+    data: capture,
+  });
+  expect(updated.status()).toBe(201);
+  expect((await updated.json()).iconsMissing).toBe(1);
+  const next = await (await request.get("/api/companion/items")).json();
+  expect(next.items.find((i: any) => i.itemId === "990088776").icon).toBe(
+    item.icon,
+  );
+  await page.goto("/companion-items/");
+  await expect(
+    page.getByRole("link", { name: "Illustrated Catalog Fixture" }),
+  ).toBeVisible();
+  expect((await request.get("/companion-item-template/")).status()).toBe(404);
+  await request.delete("/api/items/overlay-token", { headers });
+});

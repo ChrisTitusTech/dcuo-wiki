@@ -1,0 +1,78 @@
+/* Equipment-only enhancements; keep article bundles independent. */
+.equipment-panel .sheet-body {
+  grid-template-columns: minmax(105px, 1fr) minmax(160px, 2fr) minmax(
+      105px,
+      1fr
+    );
+}
+.equipment-panel .equipment-rail {
+  align-items: stretch;
+}
+.equipment-panel .equipment-slot {
+  width: 100%;
+  min-height: 64px;
+  height: auto;
+  padding: 9px 7px 16px 60px;
+  text-align: left;
+}
+.equipment-panel .equipment-slot img {
+  inset: 5px auto auto 5px;
+  width: 48px;
+  height: 44px;
+}
+.equipment-panel .equipment-slot-glyph {
+  inset: 8px auto auto 9px;
+  width: 40px;
+  height: 40px;
+}
+.equipment-panel .equipment-slot-name {
+  position: relative;
+  font-size: 11px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  color: #e2f5ff;
+}
+.equipment-panel .equipment-slot-number {
+  text-align: left;
+  left: 60px;
+  width: auto;
+}
+.equipment-panel .equipment-extra .equipment-slot {
+  width: 170px;
+}
+.equipment-panel .equipment-source-note {
+  color: #a7c7d9;
+  font-size: 11px;
+}
+.equipment-panel .equipment-item-detail table {
+  font-size: 11px;
+}
+.equipment-panel .equipment-item-detail th,
+.equipment-panel .equipment-item-detail td {
+  padding: 5px;
+}
+@media (max-width: 600px) {
+  .equipment-panel .sheet-body {
+    grid-template-columns: minmax(70px, 1fr) minmax(120px, 1.5fr) minmax(
+        70px,
+        1fr
+      );
+    gap: 4px;
+  }
+  .equipment-panel .equipment-slot {
+    padding: 50px 4px 15px;
+    min-height: 91px;
+  }
+  .equipment-panel .equipment-slot-name {
+    font-size: 10px;
+  }
+  .equipment-panel .equipment-slot-number {
+    left: 4px;
+  }
+  .equipment-panel .equipment-extra .equipment-slot {
+    width: 105px;
+  }
+}
+#equipment-selected-content p {
+  white-space: pre-line;
+}

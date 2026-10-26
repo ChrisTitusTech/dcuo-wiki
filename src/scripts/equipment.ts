@@ -10,11 +10,39 @@ type Profile = {
   };
   screenshot?: string | null;
 };
+type SourceDetails = {
+  description?: string;
+  style?: string;
+  itemType?: string;
+  requirements?: string;
+  requiredLevel?: number | string;
+  requiredCombatRating?: number | string;
+  icon?: string;
+  source?: string;
+  sections?: {
+    heading: string;
+    items?: string[];
+    table?: { caption?: string; columns: string[]; rows: string[][] };
+  }[];
+};
 type Item = {
   itemId: string;
   name: string;
   href?: string;
   identified?: boolean;
+  icon?: string;
+  details?: SourceDetails & {
+    iconResource?: string;
+    qualityId?: number;
+    categoryId?: number;
+  };
+  equipped?: {
+    itemLevel?: number;
+    effects?: string[];
+    stats?: { name: string; value: number }[];
+    baseStats?: { name: string; value: number }[];
+    capturedAt: number;
+  };
   notes?: string;
 };
 type Snapshot = {
@@ -71,22 +99,127 @@ export function equipmentPanel() {
   let selectedSlot: string | null = null;
   let currentItems: NonNullable<Snapshot["items"]> = [];
   let artwork: Record<string, string> = {};
-  const safeArtwork = (item: Item) => {
-    const slug = item.href?.match(/^\/wiki\/([A-Za-z0-9_%-]+)\/$/)?.[1];
-    const path = slug ? artwork[slug] : null;
-    return path && /^\/api\/catalog-media\/[a-f0-9]{64}$/.test(path)
-      ? path
-      : null;
-  };
+  let sourceDetails: Record<string, SourceDetails> = {};
+  const slugFor = (item: Item) =>
+    item.href?.match(/^\/wiki\/([A-Za-z0-9_%-]+)\/$/)?.[1];
+  const sourceFor = (item: Item) => sourceDetails[slugFor(item) || ""];
+  const nativeIcon = (path?: string) =>
+    path && /^\/api\/item-icons\/[a-f0-9]{64}$/.test(path) ? path : null;
+  const sourceIcon = (path?: string) =>
+    path && /^\/api\/catalog-media\/[a-f0-9]{64}$/.test(path) ? path : null;
   function artworkImage(item: Item) {
-    const path = safeArtwork(item);
-    if (!path) return null;
+    const paths = [
+      ...new Set(
+        [
+          nativeIcon(item.icon),
+          nativeIcon(item.details?.icon),
+          sourceIcon(sourceFor(item)?.icon),
+          sourceIcon(artwork[slugFor(item) || ""]),
+        ].filter((p): p is string => !!p),
+      ),
+    ];
+    if (!paths.length) return null;
     const image = document.createElement("img");
-    image.src = path;
+    image.src = paths.shift()!;
     image.alt = "";
     image.loading = "lazy";
-    image.addEventListener("error", () => image.remove(), { once: true });
+    image.addEventListener("error", () => {
+      const next = paths.shift();
+      if (next) image.src = next;
+      else image.remove();
+    });
     return image;
+  }
+  function appendDefinition(
+    target: HTMLElement,
+    details: SourceDetails,
+    sourced: boolean,
+  ) {
+    const title = document.createElement("h4");
+    title.textContent = sourced
+      ? "Source-listed item details"
+      : "Captured item details";
+    target.append(title);
+    if (details.description) {
+      const p = document.createElement("p");
+      p.textContent = details.description;
+      target.append(p);
+    }
+    const facts = document.createElement("dl");
+    for (const [label, value] of [
+      ["Type", details.itemType],
+      ["Style", details.style],
+      ["Required level", details.requiredLevel],
+      ["Required combat rating", details.requiredCombatRating],
+      ["Requires", details.requirements],
+    ] as const) {
+      if (value === undefined || value === "") continue;
+      if (
+        (label === "Required level" || label === "Required combat rating") &&
+        !(Number(value) > 0)
+      )
+        continue;
+      const dt = document.createElement("dt"),
+        dd = document.createElement("dd");
+      dt.textContent = label;
+      dd.textContent = String(value);
+      facts.append(dt, dd);
+    }
+    if (facts.childElementCount) target.append(facts);
+    if (sourced) {
+      for (const section of details.sections || []) {
+        const heading = document.createElement("h4");
+        heading.textContent = section.heading;
+        target.append(heading);
+        for (const text of section.items || []) {
+          const p = document.createElement("p");
+          p.textContent = text;
+          target.append(p);
+        }
+        if (section.table) {
+          const scroll = document.createElement("div"),
+            table = document.createElement("table");
+          scroll.className = "table-scroll";
+          const head = document.createElement("thead"),
+            header = document.createElement("tr"),
+            body = document.createElement("tbody");
+          for (const text of section.table.columns) {
+            const th = document.createElement("th");
+            th.scope = "col";
+            th.textContent = text;
+            header.append(th);
+          }
+          head.append(header);
+          for (const values of section.table.rows) {
+            const tr = document.createElement("tr");
+            for (const text of values) {
+              const td = document.createElement("td");
+              td.textContent = text;
+              tr.append(td);
+            }
+            body.append(tr);
+          }
+          table.append(head, body);
+          scroll.append(table);
+          target.append(scroll);
+        }
+      }
+      const note = document.createElement("p");
+      note.className = "equipment-source-note";
+      note.textContent =
+        "Source-listed effects and rank bonuses describe the item definition. They are not this character's current scaled stats.";
+      target.append(note);
+      if (
+        details.source &&
+        /^https:\/\/dcuniverseonline\.fandom\.com\/wiki\//.test(details.source)
+      ) {
+        const link = document.createElement("a");
+        link.href = details.source;
+        link.textContent = "Item source";
+        link.rel = "noopener noreferrer";
+        target.append(link);
+      }
+    }
   }
   function closeDetails(focus = false) {
     el("equipment-item-detail").hidden = true;
@@ -96,6 +229,62 @@ export function equipmentPanel() {
     selected?.setAttribute("aria-pressed", "false");
     selectedSlot = null;
     if (focus) selected?.focus();
+  }
+  function appendEquipped(
+    target: HTMLElement,
+    equipped: NonNullable<Item["equipped"]>,
+  ) {
+    const section = document.createElement("section");
+    section.className = "equipment-captured-values";
+    const heading = document.createElement("h4");
+    heading.textContent = "Captured equipped values";
+    section.append(heading);
+    const date = new Date(equipped.capturedAt * 1000);
+    if (Number.isFinite(equipped.capturedAt) && !Number.isNaN(date.getTime())) {
+      const p = document.createElement("p"),
+        time = document.createElement("time");
+      time.dateTime = date.toISOString();
+      time.textContent = date.toLocaleString();
+      p.append("Captured ", time, ". These values describe the saved capture.");
+      section.append(p);
+    }
+    const facts = document.createElement("dl");
+    const entries: [string, number][] = [];
+    if (
+      typeof equipped.itemLevel === "number" &&
+      Number.isFinite(equipped.itemLevel) &&
+      equipped.itemLevel > 0
+    )
+      entries.push(["Item level", equipped.itemLevel]);
+    for (const stat of equipped.baseStats || equipped.stats || []) {
+      if (
+        stat.name &&
+        typeof stat.value === "number" &&
+        Number.isFinite(stat.value)
+      )
+        entries.push([stat.name, stat.value]);
+    }
+    for (const [name, value] of entries) {
+      const dt = document.createElement("dt"),
+        dd = document.createElement("dd");
+      dt.textContent = name;
+      dd.textContent = String(value);
+      facts.append(dt, dd);
+    }
+    if (facts.childElementCount) section.append(facts);
+    if (equipped.baseStats?.length) {
+      const note = document.createElement("p");
+      note.textContent =
+        "Base item stats; socket and conditional bonuses are separate.";
+      section.append(note);
+    }
+    for (const effect of equipped.effects || []) {
+      if (!effect) continue;
+      const p = document.createElement("p");
+      p.textContent = effect;
+      section.append(p);
+    }
+    target.append(section);
   }
   function showDetails(item: NonNullable<Snapshot["items"]>[number]) {
     selectedSlot = item.slot;
@@ -129,6 +318,10 @@ export function equipmentPanel() {
       }
     }
     target.append(facts);
+    if (item.equipped) appendEquipped(target, item.equipped);
+    if (item.details) appendDefinition(target, item.details, false);
+    const sourced = sourceFor(item);
+    if (sourced) appendDefinition(target, sourced, true);
     if (item.notes) {
       const label = document.createElement("h4"),
         notes = document.createElement("p");
@@ -208,6 +401,10 @@ export function equipmentPanel() {
         label.className = "equipment-slot-number";
         label.textContent = `Slot ${item.slot}`;
         b.append(label);
+        const name = document.createElement("span");
+        name.className = "equipment-slot-name";
+        name.textContent = item.name;
+        b.append(name);
         if (item.quantity !== null && item.quantity > 1) {
           const quantity = document.createElement("span");
           quantity.className = "equipment-slot-quantity";
@@ -248,6 +445,16 @@ export function equipmentPanel() {
       const value = await r.json();
       if (value && typeof value === "object" && !Array.isArray(value)) {
         artwork = value;
+        if (currentItems.length) renderSheet(currentItems);
+      }
+    })
+    .catch(() => {});
+  void fetch("/equipment-details.json")
+    .then(async (r) => {
+      if (!r.ok) return;
+      const value = await r.json();
+      if (value && typeof value === "object" && !Array.isArray(value)) {
+        sourceDetails = value;
         if (currentItems.length) renderSheet(currentItems);
       }
     })

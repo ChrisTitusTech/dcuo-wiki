@@ -83,7 +83,7 @@ test("public equipment shows local wiki links, unknown IDs and read-only slots o
     page.getByRole("link", { name: "Digital Invader Helm" }),
   ).toHaveAttribute("href", "/wiki/Digital_Invader_Helm/");
   await expect(
-    page.getByText("Census item 999", { exact: true }),
+    page.locator("#equipment-items").getByText("Census item 999", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("Durability: 80")).toBeVisible();
   await expect(
@@ -237,7 +237,7 @@ test("source-named items without a local article retain their ID and do not crea
   await page.goto(`/player/?id=${id}`);
   await page.locator("#equipment-list summary").click();
   await expect(
-    page.getByText("Source-named artifact", { exact: true }),
+    page.locator("#equipment-items").getByText("Source-named artifact", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("Census ID 1234", { exact: true })).toBeVisible();
   await expect(
@@ -398,4 +398,176 @@ test("the character portrait stays visible when Census equipment has never synce
     "temporarily unavailable",
   );
   await expect(page.locator(".equipment-slot")).toHaveCount(0);
+});
+
+test("captured icons and details take precedence while source rank bonuses stay labelled", async ({
+  page,
+}) => {
+  const native = "/api/item-icons/" + "b".repeat(64);
+  const source = "/api/catalog-media/" + "c".repeat(64);
+  await page.route("**/equipment-details.json", (route) =>
+    route.fulfill({
+      json: {
+        Digital_Invader_Helm: {
+          description: "Source description",
+          source:
+            "https://dcuniverseonline.fandom.com/wiki/Digital_Invader_Helm",
+          icon: source,
+          sections: [
+            {
+              heading: "Rank bonuses",
+              table: {
+                columns: ["Rank", "Source-listed bonus"],
+                rows: [["80", "+1% Health"]],
+              },
+            },
+          ],
+        },
+      },
+    }),
+  );
+  await page.route("**/api/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    if (
+      path.startsWith("/api/item-icons/") ||
+      path.startsWith("/api/catalog-media/")
+    )
+      return route.fulfill({
+        contentType: "image/png",
+        body: Buffer.from(
+          "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=",
+          "base64",
+        ),
+      });
+    await route.fulfill({
+      json: path.endsWith("/equipment")
+        ? {
+            ...snapshot,
+            items: [
+              {
+                ...snapshot.items[0],
+                icon: native,
+                details: {
+                  description: "Captured description",
+                  style: "Invader",
+                  requiredLevel: 30,
+                },
+              },
+            ],
+          }
+        : path === `/api/profiles/${id}`
+          ? profile
+          : {},
+      status: path === "/api/me" ? 401 : 200,
+    });
+  });
+  await page.goto(`/player/?id=${id}`);
+  const slot = page.getByRole("button", {
+    name: "Slot 14: Digital Invader Helm",
+    exact: true,
+  });
+  await expect(slot.locator(".equipment-slot-name")).toHaveText(
+    "Digital Invader Helm",
+  );
+  await expect(slot.locator("img")).toHaveAttribute("src", native);
+  await slot.click();
+  const detail = page.getByRole("region", { name: "Selected equipment" });
+  await expect(detail).toContainText("Captured description");
+  await expect(detail).toContainText("Required level");
+  await expect(detail).toContainText("Invader");
+  await expect(detail).toContainText("Source-listed item details");
+  await expect(
+    detail.getByRole("cell", { name: "+1% Health", exact: true }),
+  ).toBeVisible();
+  await expect(detail).toContainText(
+    "not this character's current scaled stats",
+  );
+});
+
+test("captured equipped values remain specific to the selected slot", async ({
+  page,
+}) => {
+  const capturedAt = 1700000000;
+  await page.route("**/equipment-details.json", (route) =>
+    route.fulfill({
+      json: {
+        Digital_Invader_Helm: {
+          description: "Definition only",
+          sections: [
+            {
+              heading: "Rank bonuses",
+              table: {
+                columns: ["Rank", "Source-listed bonus"],
+                rows: [["80", "+1% Health"]],
+              },
+            },
+          ],
+        },
+      },
+    }),
+  );
+  await page.route("**/api/**", (route) => {
+    const path = new URL(route.request().url()).pathname;
+    return route.fulfill({
+      json: path.endsWith("/equipment")
+        ? {
+            ...snapshot,
+            items: [
+              {
+                ...snapshot.items[0],
+                slot: "14",
+                details: { requiredLevel: 0, requiredCombatRating: 0 },
+                equipped: {
+                  itemLevel: 391,
+                  effects: ["First equipped effect"],
+                  stats: [{ name: "Might", value: 1234 }],
+                  capturedAt,
+                },
+              },
+              {
+                ...snapshot.items[0],
+                slot: "15",
+                details: { requiredLevel: 30, requiredCombatRating: 100 },
+                equipped: {
+                  itemLevel: 402,
+                  effects: ["Second equipped effect"],
+                  capturedAt: capturedAt + 60,
+                },
+              },
+            ],
+          }
+        : path === `/api/profiles/${id}`
+          ? profile
+          : {},
+      status: path === "/api/me" ? 401 : 200,
+    });
+  });
+  await page.goto(`/player/?id=${id}`);
+  await page
+    .getByRole("button", { name: "Slot 14: Digital Invader Helm", exact: true })
+    .click();
+  const detail = page.getByRole("region", { name: "Selected equipment" });
+  const values = detail.locator(".equipment-captured-values");
+  await expect(values).toContainText("Captured equipped values");
+  await expect(values).toContainText("391");
+  await expect(values).toContainText("Might");
+  await expect(values).toContainText("1234");
+  await expect(values).toContainText("First equipped effect");
+  await expect(values.locator("time")).toHaveAttribute(
+    "datetime",
+    new Date(capturedAt * 1000).toISOString(),
+  );
+  await expect(values).not.toContainText("+1% Health");
+  await expect(detail).not.toContainText("Required level");
+  await expect(detail).not.toContainText("Required combat rating");
+  await page
+    .getByRole("button", { name: "Slot 15: Digital Invader Helm", exact: true })
+    .click();
+  await expect(values).toContainText("402");
+  await expect(values).toContainText("Second equipped effect");
+  await expect(values).not.toContainText("391");
+  await expect(values).not.toContainText("1234");
+  await expect(values).not.toContainText("Might");
+  await expect(detail).toContainText("Required level");
+  await expect(detail).toContainText("Required combat rating");
 });

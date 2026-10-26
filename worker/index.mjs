@@ -41,6 +41,8 @@ import {
   submitOverlayItems,
 } from "./overlay-items.mjs";
 import { equipment } from "./equipment.mjs";
+import { listCompanionItems } from "./companion-catalog.mjs";
+import { serveItemIcon } from "./item-details.mjs";
 import { serveCatalogMedia } from "./catalog-media.mjs";
 const SESSION = "__Host-dcuo-session",
   STATE = "__Host-dcuo-state";
@@ -246,6 +248,7 @@ export async function handle(request, env, fetcher = fetch, context) {
   const url = new URL(request.url),
     path = url.pathname;
   try {
+    if (/^\/companion-item-template\/?$/.test(path)) return new Response("Not found",{status:404});
     if (path === "/api/catalog-corrections" && request.method === "GET") {
       if (!env.DB) return json({ corrections: [] });
       const rows = await env.DB.prepare(
@@ -258,6 +261,13 @@ export async function handle(request, env, fetcher = fetch, context) {
       ).all();
       return json({ corrections: rows.results });
     }
+    if (path === "/api/companion/items" && request.method === "GET")
+      return json(await listCompanionItems(url, env));
+    if (
+      path.startsWith("/api/item-icons/") &&
+      ["GET", "HEAD"].includes(request.method)
+    )
+      return await serveItemIcon(request, env);
     if (
       path.startsWith("/api/catalog-media/") &&
       ["GET", "HEAD"].includes(request.method)
@@ -278,7 +288,7 @@ export async function handle(request, env, fetcher = fetch, context) {
       /^\/api\/articles\/([^/]+)(?:\/(history|document|preview|media)(?:\/(\d+))?)?$/,
     );
     if (articleRoute && request.method === "GET") {
-      if (articleRoute[2] === "document" && !articleRoute[3]) {
+      if (articleRoute[2] === "document" && !articleRoute[3] && !/^Item_[1-9]\d{0,29}$/.test(articleRoute[1])) {
         if (!env.DB) throw new HttpError(503, "Live editing is unavailable.");
         const slug = decodeURIComponent(articleRoute[1]);
         if (!/^[A-Za-z0-9_-]+$/.test(slug))
@@ -328,7 +338,7 @@ export async function handle(request, env, fetcher = fetch, context) {
               )
         )
           .filter((i) =>
-            /^https:\/\/dcuo-wiki\.com\/api\/catalog-media\/[a-f0-9]{64}$/.test(
+            /^https:\/\/dcuo-wiki\.com\/api\/(?:catalog-media|item-icons)\/[a-f0-9]{64}$/.test(
               i.src,
             ),
           )
@@ -343,7 +353,7 @@ export async function handle(request, env, fetcher = fetch, context) {
           )
           .map((i) => ({
             src: i.src,
-            source: i.src + "/source",
+            source: i.src.includes("/api/item-icons/") ? "https://dcuo-wiki.com/companion-items/" : i.src + "/source",
             label: i.label,
             credit:
               "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",

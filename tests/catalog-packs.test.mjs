@@ -38,7 +38,14 @@ test("packed article HTML stays readable, canonical, protected and returns real 
           ? new Response(pack, { headers: { "Content-Type": "text/plain" } })
           : new Response("Not found", { status: 404 }),
     },
-    DB: { prepare: () => ({ bind: () => ({ first: async () => null }) }) },
+    DB: {
+      prepare: () => ({
+        bind: () => ({
+          first: async () => null,
+          all: async () => ({ results: [] }),
+        }),
+      }),
+    },
   };
   const response = await serveArticle(
     new Request("https://dcuo-wiki.com/wiki/Example_House/"),

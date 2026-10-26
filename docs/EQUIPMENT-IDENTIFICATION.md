@@ -31,3 +31,12 @@ The October 25 research checked 24 distinct unresolved IDs: 23 equipped item IDs
 The game-style equipment view places the saved player image (or a neutral silhouette) between two selectable slot rails. Additional equipment appears below; the complete Census table remains in an expandable list. Selecting a slot opens item details over the portrait. Close or Escape returns focus to the selected slot. Phone layouts retain both rails and wrap the lower slots.
 
 Slot positions are a visual arrangement, not an inferred body-slot taxonomy. Historical and third-party slot mappings disagree with modern data, and Census no longer exposes the definition collection. Unknown items keep their actual slot numbers and neutral icons. No rarity, item level, weapon stats or gear totals are invented. `public/equipment-art.json` is generated from existing, title-matched article images and points only to the approved R2 mirror endpoints; unrelated release icons are excluded. If no matching artwork exists, the neutral icon remains. Approved equipment and augment notes appear in both the inspection panel and full list.
+
+## Rich companion catalog contributions
+
+Companion capture now enriches known items as well as missing names. Loaded
+catalog batches can create substantive new item pages and update existing
+captured definitions/artwork directly. See [the capture contract](overlay-item-capture.md).
+The catalog is at `/companion-items/`; existing source mappings retain their
+original articles. Equipped base stats remain character/slot-specific and are
+not copied into global item definitions.

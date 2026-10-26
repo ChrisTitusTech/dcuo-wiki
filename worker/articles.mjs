@@ -1,3 +1,8 @@
+import {
+  findCompanionArticle,
+  serveCompanionArticle,
+  supplementCompanionArticle,
+} from "./companion-catalog.mjs";
 import { pristineDocumentResponse } from "./editor-baselines.mjs";
 import { catalogRecord } from "./catalog-packs.mjs";
 import { releaseSearchText } from "../shared/releases.mjs";
@@ -16,7 +21,11 @@ export async function findArticle(slug, env) {
   if (!/^[A-Za-z0-9_-]+$/.test(slug) || !env?.ASSETS)
     throw new HttpError(404, "Article not found.");
   const packed = await catalogRecord(env, slug, "article");
-  if (!packed) throw new HttpError(404, "Article not found.");
+  if (!packed) {
+    const companion = await findCompanionArticle(slug, env);
+    if (companion) return companion;
+    throw new HttpError(404, "Article not found.");
+  }
   return JSON.parse(packed);
 }
 export async function articleState(env, article) {
@@ -115,6 +124,10 @@ export async function serveArticle(request, env) {
       );
     }
   }
+  if (response.status === 404 && /^Item_[1-9]\d{0,29}$/.test(slug)) {
+    const article = await findCompanionArticle(slug, env);
+    if (article) response = await serveCompanionArticle(request, env, article);
+  }
   if (response.status !== 200 || !env.DB) return response;
   const revision = await env.DB.prepare(
     "SELECT id FROM article_revisions WHERE slug=? LIMIT 1",
@@ -126,7 +139,11 @@ export async function serveArticle(request, env) {
     headers.set("Cache-Control", "no-store");
     headers.delete("ETag");
     headers.delete("Last-Modified");
-    return new Response(response.body, { status: response.status, headers });
+    return supplementCompanionArticle(
+      new Response(response.body, { status: response.status, headers }),
+      slug,
+      env,
+    );
   }
   const article = await findArticle(slug, env);
   const { parts, document } = await articleState(env, article);
@@ -136,7 +153,11 @@ export async function serveArticle(request, env) {
     headers.set("Cache-Control", "no-store");
     headers.delete("ETag");
     headers.delete("Last-Modified");
-    return new Response(response.body, { status: response.status, headers });
+    return supplementCompanionArticle(
+      new Response(response.body, { status: response.status, headers }),
+      slug,
+      env,
+    );
   }
   const rewriter = new HTMLRewriter();
   rewriter.on(".article-tools .badge", {
@@ -221,10 +242,14 @@ export async function serveArticle(request, env) {
   headers.delete("ETag");
   headers.delete("Last-Modified");
   headers.delete("Content-Length");
-  return new Response(transformed.body, {
-    status: transformed.status,
-    headers,
-  });
+  return supplementCompanionArticle(
+    new Response(transformed.body, {
+      status: transformed.status,
+      headers,
+    }),
+    slug,
+    env,
+  );
 }
 
 export async function serveIndex(request, env) {

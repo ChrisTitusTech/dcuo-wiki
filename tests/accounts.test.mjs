@@ -757,3 +757,54 @@ test("legacy summaries above 2,000 characters remain editable and publishable in
     longSummary,
   );
 });
+
+test("a companion-created item supports full article correction and revision history", async () => {
+  const { call, DB } = await setup();
+  DB.sqlite.exec(
+    "CREATE TABLE item_identifications(item_id TEXT PRIMARY KEY,name TEXT,slug TEXT);CREATE TABLE item_details(item_id TEXT PRIMARY KEY,details_json TEXT,captured_at INTEGER,updated_at INTEGER);",
+  );
+  DB.sqlite
+    .prepare("INSERT INTO item_identifications VALUES(?,?,NULL)")
+    .run("990088776", "Captured Item");
+  DB.sqlite
+    .prepare("INSERT INTO item_details VALUES(?,?,?,?)")
+    .run(
+      "990088776",
+      JSON.stringify({
+        description: "Captured definition.",
+        icon: "/api/item-icons/" + "a".repeat(64),
+      }),
+      now(),
+      now(),
+    );
+  assert.equal(
+    (
+      await call("/api/profile", "POST", {
+        characterId: "123",
+        name: "Test Hero",
+        bio: "",
+      })
+    ).status,
+    200,
+  );
+  const endpoint = "/api/articles/Item_990088776";
+  const response = await call(endpoint + "/document");
+  assert.equal(response.status, 200);
+  const state = await response.json();
+  state.document.summary =
+    "A player corrected description for the captured item.";
+  const publish = await call(endpoint + "/document", "POST", {
+    ...state,
+    reason: "Correct the captured item description.",
+    sources: "Verified directly in the current game item tooltip.",
+  });
+  assert.equal(publish.status, 201);
+  const next = await (await call(endpoint + "/document")).json();
+  assert.equal(next.document.summary, state.document.summary);
+  assert(next.revision > 0);
+  const history = await (await call(endpoint + "/history")).json();
+  assert.equal(
+    history.revisions[0].reason,
+    "Correct the captured item description.",
+  );
+});

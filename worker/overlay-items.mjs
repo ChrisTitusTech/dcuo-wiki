@@ -6,6 +6,7 @@ import {
   bodyJson,
   textField,
 } from "./security.mjs";
+import { validateDetails, iconPng } from "./item-details.mjs";
 import { itemIdentities } from "./item-identities.mjs";
 const q = (env, sql, ...args) => env.DB.prepare(sql).bind(...args);
 const id = (value) => {
@@ -71,28 +72,39 @@ async function context(request, env) {
     p,
     snapshot,
     items,
-    ids: ids.filter((i) => !known.has(i)),
+    ids,
+    unresolved: ids.filter((i) => !known.has(i)),
     tokenHash,
   };
 }
 export async function overlayItems(request, env) {
   const { p, ids } = await context(request, env);
+  const rawCursor = new URL(request.url).searchParams.get("cursor");
+  const cursor = rawCursor === null ? 0 : id(rawCursor);
+  if (cursor === null) throw new HttpError(400, "Invalid equipment cursor.");
+  const remaining = ids
+    .filter((i) => Number(i) > Number(cursor))
+    .sort((a, b) => Number(a) - Number(b));
+  const page = remaining.slice(0, 50);
   return {
     character: {
       id: p.character_id,
       name: p.character_name,
       worldId: p.world_id,
     },
-    items: ids.slice(0, 50).map((itemId) => ({ itemId })),
+    items: page.map((itemId) => ({ itemId })),
+    ...(remaining.length > 50 ? { nextCursor: page.at(-1) } : {}),
   };
 }
 export async function submitOverlayItems(request, env) {
   const c = await context(request, env),
-    b = await bodyJson(request, 32768),
+    b = await bodyJson(request, 4 * 1024 * 1024),
     t = now();
   if (
-    b.schemaVersion !== 1 ||
-    b.profile !== "item-names-v1" ||
+    !(
+      (b.schemaVersion === 1 && b.profile === "item-names-v1") ||
+      (b.schemaVersion === 2 && b.profile === "item-details-v1")
+    ) ||
     typeof b.build !== "string" ||
     !/^[a-f0-9]{64}$/.test(b.build) ||
     !Number.isSafeInteger(b.capturedAt) ||
@@ -119,15 +131,47 @@ export async function submitOverlayItems(request, env) {
     const name = textField(i.name, "Item name", 2, 160);
     if (/[\u0000-\u001f\u007f]/.test(name))
       throw new HttpError(400, "Invalid item name.");
-    return { itemId, name };
+    return {
+      itemId,
+      name,
+      ...(b.schemaVersion === 2
+        ? { details: validateDetails(i.details), iconPng: i.details.iconPng }
+        : {}),
+    };
   });
   const membership = new Set(
     c.items.flatMap((i) => [i.itemId, ...(i.augments || [])]).map(id),
   );
-  if (items.some((i) => !membership.has(i.itemId)))
+  const catalog = b.schemaVersion === 2 && b.scope === "catalog";
+  if (b.scope !== undefined && !["equipment", "catalog"].includes(b.scope))
+    throw new HttpError(400, "Invalid capture scope.");
+  if (!catalog && items.some((i) => !membership.has(i.itemId)))
     throw new HttpError(409, "Captured item is not in your saved equipment.");
+  if (
+    catalog &&
+    items.some(
+      (i) =>
+        !(
+          i.details.description ||
+          i.details.style ||
+          i.details.iconResource ||
+          i.details.requiredLevel > 0 ||
+          i.details.requiredCombatRating > 0
+        ),
+    )
+  )
+    throw new HttpError(400, "Catalog items need substantive captured data.");
+  const equipped =
+    b.schemaVersion === 2
+      ? validateEquipped(
+          b.equipped || [],
+          c.items,
+          new Set(items.map((i) => i.itemId)),
+        )
+      : [];
   const capture = JSON.stringify({
-    schemaVersion: 1,
+    schemaVersion: b.schemaVersion,
+    scope: catalog ? "catalog" : "equipment",
     character: {
       id: c.p.character_id,
       name: c.p.character_name,
@@ -146,12 +190,22 @@ export async function submitOverlayItems(request, env) {
   const notes =
     "Identified from an in-game item definition using DCUO Companion.";
   const candidates = items
-    .filter((i) => c.ids.includes(i.itemId))
+    .filter((i) => b.schemaVersion === 2 || c.unresolved.includes(i.itemId))
     .map((i) => ({
       evidenceId: crypto.randomUUID(),
       itemId: i.itemId,
       name: i.name,
+      ...(i.details ? { details: i.details } : {}),
     }));
+  for (const candidate of candidates) {
+    const item = items.find((i) => i.itemId === candidate.itemId);
+    if (item.iconPng !== undefined)
+      candidate.details.icon = await iconPng(
+        env,
+        item.iconPng,
+        item.details.iconResource,
+      );
+  }
   const candidatesJson = JSON.stringify(candidates);
   // Three bounded statements keep a full 50-item publication within D1 query budgets.
   const results = candidates.length
@@ -163,7 +217,7 @@ export async function submitOverlayItems(request, env) {
       JOIN overlay_tokens ot ON ot.user_id=p.user_id AND ot.character_id=p.character_id AND ot.character_name=p.character_name AND ot.world_id=p.world_id
       JOIN equipment_snapshots s ON s.character_id=p.character_id AND s.world_id=p.world_id
       CROSS JOIN json_each(?) i
-      WHERE ot.token_hash=? AND ot.expires_at>? AND p.character_id=? AND p.character_name=? AND p.world_id=? AND s.synced_at>=? AND s.items_json=? AND NOT EXISTS(SELECT 1 FROM item_identifications WHERE item_id=json_extract(i.value,'$.itemId'))`,
+      WHERE ot.token_hash=? AND ot.expires_at>? AND p.character_id=? AND p.character_name=? AND p.world_id=? AND s.synced_at>=? AND s.items_json=? ${b.schemaVersion === 2 ? "AND NOT EXISTS(SELECT 1 FROM item_details d JOIN json_each(?) x ON d.item_id=json_extract(x.value,'$.itemId') WHERE d.captured_at>?)" : ""} ${b.schemaVersion === 1 ? "AND NOT EXISTS(SELECT 1 FROM item_identifications WHERE item_id=json_extract(i.value,'$.itemId'))" : ""}`,
           reason,
           new Uint8Array(0).buffer,
           t,
@@ -178,12 +232,14 @@ export async function submitOverlayItems(request, env) {
           c.p.world_id,
           now() - 86400,
           c.snapshot.items_json,
+          ...(b.schemaVersion === 2 ? [candidatesJson, b.capturedAt] : []),
         ),
         q(
           env,
           `INSERT INTO item_identifications(item_id,name,slug,notes,evidence_id)
       SELECT e.item_id,e.proposed_name,NULL,?,e.id FROM json_each(?) i
-      JOIN item_evidence e ON e.id=json_extract(i.value,'$.evidenceId') WHERE e.status='approved'`,
+      JOIN item_evidence e ON e.id=json_extract(i.value,'$.evidenceId') WHERE e.status='approved'
+      ON CONFLICT(item_id) ${b.schemaVersion === 2 ? "DO UPDATE SET name=excluded.name,notes=excluded.notes,evidence_id=excluded.evidence_id" : "DO NOTHING"}`,
           notes,
           candidatesJson,
         ),
@@ -192,12 +248,39 @@ export async function submitOverlayItems(request, env) {
           `INSERT INTO item_evidence_reviews(evidence_id,reviewer_id,decision,reason,name,slug,notes,created_at)
       SELECT e.id,e.user_id,'approved',?,e.proposed_name,NULL,?,? FROM json_each(?) i
       JOIN item_evidence e ON e.id=json_extract(i.value,'$.evidenceId')
-      JOIN item_identifications m ON m.evidence_id=e.id`,
+      WHERE e.status='approved'`,
           reason,
           notes,
           t,
           candidatesJson,
         ),
+        ...(b.schemaVersion === 2
+          ? [
+              q(
+                env,
+                `INSERT INTO item_details(item_id,details_json,evidence_id,captured_at,updated_at)
+          SELECT e.item_id,json_extract(i.value,'$.details'),e.id,?,? FROM json_each(?) i
+          JOIN item_evidence e ON e.id=json_extract(i.value,'$.evidenceId') WHERE e.status='approved'
+          ON CONFLICT(item_id) DO UPDATE SET details_json=CASE WHEN json_extract(excluded.details_json,'$.icon') IS NULL AND json_extract(item_details.details_json,'$.iconResource')=json_extract(excluded.details_json,'$.iconResource') THEN json_patch(excluded.details_json,json_object('icon',json_extract(item_details.details_json,'$.icon'))) ELSE excluded.details_json END,evidence_id=excluded.evidence_id,captured_at=excluded.captured_at,updated_at=excluded.updated_at
+          WHERE excluded.captured_at>=item_details.captured_at`,
+                b.capturedAt,
+                t,
+                candidatesJson,
+              ),
+              q(
+                env,
+                `INSERT INTO equipment_item_details(character_id,world_id,slot,item_id,details_json,evidence_id,captured_at)
+          SELECT e.character_id,e.world_id,json_extract(x.value,'$.slot'),e.item_id,json_extract(x.value,'$.details'),e.id,?
+          FROM json_each(?) x JOIN json_each(?) i ON json_extract(i.value,'$.itemId')=json_extract(x.value,'$.itemId')
+          JOIN item_evidence e ON e.id=json_extract(i.value,'$.evidenceId') WHERE e.status='approved'
+          ON CONFLICT(character_id,world_id,slot) DO UPDATE SET item_id=excluded.item_id,details_json=excluded.details_json,evidence_id=excluded.evidence_id,captured_at=excluded.captured_at
+          WHERE excluded.captured_at>=equipment_item_details.captured_at`,
+                b.capturedAt,
+                JSON.stringify(equipped),
+                candidatesJson,
+              ),
+            ]
+          : []),
       ])
     : [];
   await context(request, env);
@@ -210,6 +293,100 @@ export async function submitOverlayItems(request, env) {
       409,
       "Equipment changed during publication. Refresh equipment and retry the capture.",
     );
-  const submitted = results.length ? Number(results[1].meta.changes) : 0;
-  return { submitted, skipped: items.length - submitted };
+  if (b.schemaVersion === 2) {
+    const rows = await q(
+      env,
+      `SELECT evidence_id FROM item_details WHERE evidence_id IN (SELECT json_extract(value,'$.evidenceId') FROM json_each(?))`,
+      candidatesJson,
+    ).all();
+    const saved = new Set(rows.results.map((r) => r.evidence_id));
+    if (candidates.some((i) => !saved.has(i.evidenceId)))
+      throw new HttpError(
+        409,
+        "A newer capture or changed equipment prevented publication. Refresh and capture again.",
+      );
+  }
+  const submitted = results.length
+    ? Number(results[b.schemaVersion === 2 ? 3 : 1].meta.changes)
+    : 0;
+  return {
+    submitted,
+    skipped: items.length - submitted,
+    ...(b.schemaVersion === 2
+      ? {
+          iconsUploaded: items.filter((i) => i.iconPng !== undefined).length,
+          iconsMissing: items.filter(
+            (i) => i.details.iconResource && i.iconPng === undefined,
+          ).length,
+        }
+      : {}),
+  };
+}
+
+function validateEquipped(rows, snapshot, definitions) {
+  if (!Array.isArray(rows) || rows.length > 64)
+    throw new HttpError(400, "Invalid equipped item capture.");
+  const seen = new Set();
+  return rows.map((row) => {
+    if (
+      !row ||
+      typeof row.slot !== "string" ||
+      !/^\d{1,2}$/.test(row.slot) ||
+      Number(row.slot) >= 64 ||
+      seen.has(row.slot) ||
+      !definitions.has(row.itemId)
+    )
+      throw new HttpError(400, "Invalid equipped item slot.");
+    seen.add(row.slot);
+    if (!snapshot.some((i) => i.slot === row.slot && i.itemId === row.itemId))
+      throw new HttpError(
+        409,
+        "Equipped capture no longer matches Census. Refresh equipment.",
+      );
+    const details = {};
+    if (row.itemLevel !== undefined) {
+      if (
+        !Number.isSafeInteger(row.itemLevel) ||
+        row.itemLevel < 0 ||
+        row.itemLevel > 10000
+      )
+        throw new HttpError(400, "Invalid equipped item level.");
+      details.itemLevel = row.itemLevel;
+    }
+    if (row.effects !== undefined) {
+      if (
+        !Array.isArray(row.effects) ||
+        row.effects.length > 128 ||
+        row.effects.some(
+          (t) =>
+            typeof t !== "string" ||
+            !t.trim() ||
+            t.length > 1024 ||
+            /[\u0000-\u001f\u007f]/.test(t),
+        )
+      )
+        throw new HttpError(400, "Invalid equipped item effects.");
+      if (row.effects.length) details.effects = row.effects;
+    }
+    if (row.baseStats !== undefined) {
+      if (
+        !Array.isArray(row.baseStats) ||
+        row.baseStats.length > 32 ||
+        row.baseStats.some(
+          (s) =>
+            !s ||
+            typeof s.name !== "string" ||
+            !s.name.trim() ||
+            s.name.length > 128 ||
+            /[\u0000-\u001f\u007f]/.test(s.name) ||
+            !Number.isSafeInteger(s.value) ||
+            s.value < 0 ||
+            s.value > 4294967295,
+        )
+      )
+        throw new HttpError(400, "Invalid equipped base stats.");
+      if (row.baseStats.length) details.baseStats = row.baseStats;
+    }
+    return { slot: row.slot, itemId: row.itemId, details };
+  });
 }

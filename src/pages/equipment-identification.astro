@@ -47,17 +47,22 @@ import Layout from "../layouts/Layout.astro";
       hidden
       aria-labelledby="overlay-title"
     >
-      <h2 id="overlay-title">Send item names from DCUO Companion</h2>
+      <h2 id="overlay-title">Publish item details from DCUO Companion</h2>
       <p>
         Refresh your linked character's equipment, then create a companion
         token. In DCUO Companion, open Wiki items, paste the token, refresh the
-        list, capture names and review them before sending. Only loaded item
-        definitions can be captured. Captured names update the shared equipment
-        catalog immediately.
+        list, capture item details and review them before sending. Choose loaded
+        catalog items to capture items beyond your equipment. Captured names,
+        icons and supported details create or update the shared item catalog
+        immediately. Only definitions actually loaded by the game are captured.
       </p>
       <p>
-        The token expires after 30 days and allows item submissions for your
-        linked character only. Creating another token replaces the previous one.
+        The token expires after 30 days and allows item contributions from your
+        linked character session. Creating another token replaces the previous
+        one.
+      </p>
+      <p>
+        <a href="/companion-items/">Browse companion item contributions</a>
       </p>
       <button id="overlay-token-create" type="button">
         Create companion token

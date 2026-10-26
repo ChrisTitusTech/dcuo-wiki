@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ArticleEditor from "../components/ArticleEditor.astro";
+const article = {
+  slug: "Companion_item_template",
+  title: "Companion item",
+  category: "Equipment",
+  summary: "An item definition captured through DCUO Companion.",
+  sections: [],
+  related: [],
+  source: "https://github.com/ChrisTitusTech/dcuo-overlay",
+  history: "https://github.com/ChrisTitusTech/dcuo-overlay",
+  retrieved: "",
+  reviewed: false,
+  license: "Game text and artwork belong to their respective owners.",
+};
+---
+
+<Layout title={article.title} description={article.summary}>
+  <div class="article-top">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Main page</a>
+      <span>/</span>
+      <a href="/companion-items/">Companion item catalog</a>
+    </nav>
+    <h1>{article.title}</h1>
+    <p class="lede" data-live-part="summary">
+      {article.summary}
+    </p>
+    <div class="article-tools">
+      <span class="badge">Companion item definition</span>
+      <a href="#article-editor">Edit this page</a>
+      <a href="/companion-items/">Browse captured items</a>
+    </div>
+  </div>
+  <div class="article-grid">
+    <aside class="toc">
+      <strong>Contents</strong>
+      <nav id="article-toc" aria-label="Table of contents"></nav>
+    </aside>
+    <article>
+      <div id="article-body"></div>
+      <aside class="notice">
+        <strong>Source and accuracy</strong>
+        <p>
+          Item definitions captured through DCUO Companion. Character-specific
+          equipped stats are separate. Game text and artwork belong to their
+          respective owners.
+        </p>
+      </aside>
+    </article>
+  </div>
+  <ArticleEditor article={article} />
+</Layout>

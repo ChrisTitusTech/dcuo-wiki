@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Companion item catalog"
+  description="Browse DC Universe Online item definitions and artwork contributed through DCUO Companion."
+>
+  <section class="prose">
+    <h1>Companion item catalog</h1>
+    <p>
+      Item definitions and artwork contributed through DCUO Companion. Items
+      with an existing wiki article link directly to it.
+    </p>
+    <p id="companion-items-status" role="status" aria-live="polite">
+      Loading items...
+    </p>
+    <ul id="companion-items"></ul>
+    <button id="companion-items-more" type="button" hidden>
+      Load more items
+    </button>
+    <p>
+      <a href="/equipment-identification/">
+        Connect DCUO Companion and contribute items
+      </a>
+    </p>
+  </section>
+</Layout>
+<script src="../scripts/companion-items.ts"></script>

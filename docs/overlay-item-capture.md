@@ -1,60 +1,112 @@
 # Companion item capture
 
-DCUO Companion (the DCUO-Overlay repository) can resolve missing equipped item
-names from its supported client's loaded item-definition tree. Capture is
-read-only and on demand, using the existing selected session reader. It does not
-open the Broker or send game input.
+DCUO Companion (DCUO-Overlay) captures loaded item definitions and equipped values
+from its exact supported game build. The existing selected-session reader performs
+bounded, read-only captures. It never opens inventory/Broker, loads definitions,
+invokes game functions or sends input for this feature.
 
 ## Player workflow
 
-1. Sign in with Discord, link a character through Census and refresh equipment
-   on the wiki account page.
-2. Open `/equipment-identification/#overlay-access` and create a companion token.
-3. In Companion, select the same character/world reference and open **Wiki items**.
-4. Paste the token, refresh wiki items, capture names, then inspect the preview.
-5. Choose **Send names to wiki**. Published names appear on every
-   profile without resyncing the equipment snapshot.
+1. Sign in with Discord, link a Census character and refresh wiki equipment.
+2. Create a token at `/equipment-identification/#overlay-access`.
+3. Open **Wiki items** in Companion and paste the token. Account details load
+   automatically; no separate reference lookup is needed.
+4. Choose equipment or loaded catalog items. Capture and inspect the preview.
+5. Send item details explicitly. For catalog capture, continue through the next
+   bounded batch; an unsent preview must be sent or cleared before continuing.
 
-Only definitions currently loaded by the game can be captured. Missing definitions
-remain unresolved. This captures exact item IDs and names, not unproven item
-stats, icons, acquisition sources or character ownership. Existing tooltip
-submissions remain available for additional evidence.
+Equipment capture fills existing names, icons, definitions and slot-specific base
+stats. Loaded catalog capture also creates or updates non-equipped items actually
+observed in the game's loaded definition cache. It processes at most 50 IDs per
+batch, without loading absent items. A batch is not a complete game database.
+Missing/unsupported icons do not discard valid definitions; publication reports
+uploaded and missing artwork counts. No generated placeholder artwork is used.
 
-Tokens are character-bound, expire after 30 days, and authorize only viewing
-missing equipment IDs and publishing captured item names. Creation replaces the
-previous token; revoke it from the same page. Tokens are stored hashed on the
-server and only in memory in Companion. They cannot edit articles, moderate other contributions, access screenshots,
-or authenticate as a Discord browser session.
-Changing the linked character invalidates the token.
+The public [companion catalog](https://dcuo-wiki.com/companion-items/) links exact
+source IDs to their existing wiki articles. Substantive new definitions receive
+`/wiki/Item_<ID>/` articles with the full wiki editor. Names or raw enum IDs alone
+do not create empty articles. Existing source articles receive a clearly labelled
+captured-definition supplement; community corrections and history are preserved.
 
-## API contract
+## Fields and artwork
 
-Cookie-authenticated same-origin `POST /api/items/overlay-token` creates a token;
-`DELETE` revokes it. Both require the normal Discord session. The creation
-response contains `token` and Unix-seconds `expiresAt` and is never cached.
+Definition fields include independently proven name, description, icon resource,
+style when available, base level/CR requirements and raw category/quality IDs.
+Descriptions become plain text; game markup is not trusted. Category/quality
+labels are not guessed. Artwork resolves the exact GFX symbol and texture export,
+then decodes the installed game texture to a bounded PNG. Startup libraries and
+separate icon packages are supported. Image names or texture order never establish
+an item association. PNGs are content-addressed and displayed from the wiki's R2
+bucket through `/api/item-icons/<SHA256>`.
 
-Native requests use `Authorization: Bearer <64 lowercase hex characters>` and
-never fall back to browser cookies:
+Equipped item level, effects and numeric **base stats** are stored separately by
+character, world, slot and item ID. Identical augment IDs in multiple slots retain
+different values. Base stats exclude socket/conditional bonuses and are labelled
+accordingly, with capture time. Replaced items never inherit another item's data.
+Acquisition locations, prices and other unproven fields are not invented.
 
-- `GET /api/overlay/items` returns `character: {id,name,worldId}` and
-  `items: [{itemId}]`. IDs are strings. Saved equipment must be less than 24 hours
-  old. Includes unknown augments, deduplicates IDs, and caps each list at 50.
-- `POST /api/overlay/items` accepts `schemaVersion: 1`, `character`, `build`
-  (executable SHA-256), `profile: "item-names-v1"`, Unix-seconds `capturedAt`, and
-  `items: [{itemId,name}]`. Returns HTTP 201 with `{submitted,skipped}` counts.
-  Repeating published items skips duplicates. IDs must belong to the linked
-  character's fresh snapshot; unknown IDs are published directly with capture history.
+## Tokens and API
 
-Requests are bounded and rate limited. Writes recheck token, character, snapshot
-and existing identity. Captures contain no raw addresses, memory dumps, chat,
-positions or account tokens. Build/profile metadata is client-provided provenance,
-not remote attestation. Captured names publish directly from linked player accounts; the existing
-audit history records the publisher and capture provenance. Corrections and
-revocations remain available.
+Tokens expire after 30 days, are stored hashed on the server and remain only in
+Companion memory. Creating a token replaces the previous one; revoke on the same
+page. Changing/deleting the linked profile revokes it permanently. Tokens allow
+item contributions from that linked session; they do not authenticate as Discord,
+access screenshots, moderate others or grant general article-editing access.
+Census confirms a character record, not ownership or remote memory attestation.
 
-## Deployment
+Cookie-authenticated, same-origin `POST /api/items/overlay-token` creates a token;
+`DELETE` revokes it. Native requests use `Authorization: Bearer <64 lowercase hex
+characters>` and never fall back to cookies.
 
-Apply `migrations/0007_overlay_items.sql` before deploying this worker. It adds a
-scoped token table and capture metadata columns without changing existing
-screenshots or published mappings. Deploy the companion with the matching API
-contract. No Daybreak or Discord secret is included in the companion.
+- `GET /api/overlay/items`: character `{id,name,worldId}` and up to 50 deduplicated
+  equipped/augment IDs, including already named items. Saved equipment must be
+  less than 24 hours old.
+- `POST /api/overlay/items`: schema version 2, profile `item-details-v1`, scope
+  `equipment` or `catalog`, character, executable SHA-256 `build`, Unix-seconds
+  `capturedAt`, and `items: [{itemId,name,details}]`. IDs are canonical strings.
+  Details may contain the fields above and a base64 `iconPng` tied to its captured
+  resource. Optional `equipped` records contain slot, itemId, itemLevel, effects
+  and `baseStats: [{name,value}]`.
+- Equipment records must match the linked character's saved Census slot/ID.
+  Catalog definitions may be non-equipped, but require substantive captured data.
+  Newer captures supersede older definitions; an older batch cannot overwrite
+  newer data. Writes, provenance and contribution history commit together.
+- HTTP 201 returns `submitted`, `skipped`, `iconsUploaded`, `iconsMissing`.
+  Version 1 `item-names-v1` remains compatible and skips existing identities.
+- Public `GET /api/companion/items?cursor=<ID>` paginates 50 catalog entries.
+
+Bodies, strings, images, dimensions, traversals and request rates are bounded.
+Icons allow PNG only (256 x 256 maximum, 64 KiB) with validated structure/checksums;
+clients cannot upload a remote URL. No raw memory, addresses, personal snapshots,
+chat, location or account tokens are published. Build/profile metadata is
+client-provided provenance, not server attestation.
+
+## Deployment and rollback
+
+Apply migrations `0007_overlay_items.sql` and `0008_item_details.sql` before the
+matching Worker. Existing screenshots, mappings and history remain intact.
+Publish through the repository's main deployment, then install the matching
+Companion. Do not restart an existing Companion process silently: its token is
+memory-only and must be pasted again after restart.
+
+Rollback the Worker/Companion commit together; the additive tables can remain.
+Use D1 Time Travel before a maintenance backfill. Native definition seeds contain
+only sanitized public item data and decoded icons; character snapshots remain
+private and are never committed.
+
+## October 26 acceptance evidence
+
+Read-only live capture resolved 32 parent definitions across all 35 occupied
+slots, with 31 distinct decoded icon PNGs. Per-slot implant levels remain
+independent; weapon base stats match the owner's in-game screenshot. Production
+D1 contains these definitions/slot observations and the additive revocation
+trigger. Personal capture payloads remain private. Artwork copies to R2 on first
+view through the content-addressed endpoint.
+
+Local checks pass: 220 unit, 39 browser and 25 Cloudflare tests, including native
+PNG upload, catalog creation/update, dynamic article/editor/preview, real D1,
+revocation and equipment pagination. Full article correction/history is also
+covered with a mocked Census response. Independent Codex review is clean.
+Current output is 16,195 static files and 2,888.13 KiB gzip Worker code. Workers
+Paid was confirmed active in the account dashboard; its file allowance is
+100,000. The existing build guard remains a conservative 19,500 files.
