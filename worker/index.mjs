@@ -27,6 +27,13 @@ import {
 import { pristineDocumentResponse } from "./editor-baselines.mjs";
 import media from "../data/media.json" with { type: "json" };
 import { searchCharacters, matchCharacter } from "./census.mjs";
+import {
+  unidentifiedItems,
+  submitItemEvidence,
+  listItemEvidence,
+  evidenceImage,
+  reviewItemEvidence,
+} from "./item-evidence.mjs";
 import { equipment } from "./equipment.mjs";
 import { serveCatalogMedia } from "./catalog-media.mjs";
 const SESSION = "__Host-dcuo-session",
@@ -474,7 +481,42 @@ export async function handle(request, env, fetcher = fetch, context) {
       if (!p) throw new HttpError(404, "Player profile not found.");
       return json(p);
     }
+    if (path === "/api/items/unidentified" && request.method === "GET")
+      return json(
+        await unidentifiedItems(env, url.searchParams.get("after") || ""),
+      );
     const user = await session(request, env);
+    if (path === "/api/items/evidence" && request.method === "GET")
+      return json(
+        await listItemEvidence(env, user, {
+          before: url.searchParams.get("before") || "",
+        }),
+      );
+    if (path === "/api/items/evidence" && request.method === "POST") {
+      await limit(env, `item-evidence:${user.id}`, 30, 3600);
+      return json(await submitItemEvidence(request, env, user), 201);
+    }
+    const itemImage = path.match(
+      /^\/api\/items\/evidence\/([a-f0-9-]{36})\/image$/,
+    );
+    if (itemImage && request.method === "GET")
+      return await evidenceImage(env, user, itemImage[1], moderator(env, user));
+    if (path === "/api/items/review") {
+      if (!moderator(env, user))
+        throw new HttpError(403, "Moderator access required.");
+      if (request.method === "GET")
+        return json(
+          await listItemEvidence(env, user, {
+            moderator: true,
+            status: url.searchParams.get("status") || "pending",
+            before: url.searchParams.get("before") || "",
+          }),
+        );
+      if (request.method === "POST") {
+        await limit(env, `item-review:${user.id}`, 60, 3600);
+        return json(await reviewItemEvidence(request, env, user));
+      }
+    }
     if (path === "/api/me" && request.method === "GET")
       return json({
         name: user.display_name,

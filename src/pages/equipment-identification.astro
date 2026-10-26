@@ -1,0 +1,134 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Identify equipment"
+  description="Help identify missing DCUO equipment names using Census snapshots and in-game tooltip evidence."
+>
+  <section class="prose account item-identification">
+    <h1>Identify equipment</h1>
+    <p>
+      Help connect unknown Census IDs to the right equipment. Verified names
+      appear on every player's profile.
+    </p>
+    <p id="identification-status" role="status" aria-live="polite">
+      Loading missing items...
+    </p>
+    <section class="account-card" aria-labelledby="missing-items-title">
+      <h2 id="missing-items-title">Missing item names</h2>
+      <p>
+        Distinct IDs from saved equipment and augments. Counts reflect saved
+        characters, which may have changed equipment since their last sync.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Census ID</th>
+              <th>Characters</th>
+              <th>Pending evidence</th>
+              <th>Last seen</th>
+            </tr>
+          </thead>
+          <tbody id="unknown-items"></tbody>
+        </table>
+      </div>
+      <button id="unknown-more" type="button" hidden>
+        Load more items
+      </button>
+      <p id="unknown-empty" hidden>
+        No unidentified items in the snapshots checked.
+      </p>
+    </section>
+    <section class="account-card" aria-labelledby="item-submit-title">
+      <h2 id="item-submit-title">Identify an item</h2>
+      <p id="item-sign-in">
+        <a href="/account/">Sign in with Discord and link your character</a> to
+        submit evidence.
+      </p>
+      <form id="item-evidence-form" hidden>
+        <label>
+          Unknown item from your character{" "}
+          <select name="itemId" required></select>
+        </label>
+        <p id="item-snapshot-time"></p>
+        <p>
+          <a href="/account/#equipment-panel">Refresh your equipment</a> first
+          if you changed gear. For an uncertain slot, change one item, wait for
+          Census to update, and compare the before and after IDs.
+        </p>
+        <label>
+          Exact item name{" "}
+          <input name="name" required minlength="2" maxlength="160" />
+        </label>
+        <label>
+          Tooltip screenshot{" "}
+          <input
+            name="image"
+            type="file"
+            accept="image/png,image/jpeg"
+            required
+          />
+        </label>
+        <label>
+          Evidence and item details{" "}
+          <textarea
+            name="evidence"
+            required
+            minlength="30"
+            maxlength="4000"
+            rows="5"
+            placeholder="Explain which slot or augment this is, when the tooltip was captured, and how you matched it to this ID. Include the item level, variant, stats, and a wiki/source link where available."
+          ></textarea>
+        </label>
+        <p>
+          Crop to the item tooltip. Screenshots are resized and stripped of
+          metadata before upload. They are visible to you and moderators. Your
+          saved Census snapshot is attached for review; a matching character
+          name does not prove ownership.
+        </p>
+        <button>Submit item evidence</button>
+      </form>
+      <div id="item-submissions" hidden>
+        <h3>Your item submissions</h3>
+        <div id="item-submission-list"></div>
+        <button id="item-submissions-more" type="button" hidden>
+          More of your submissions
+        </button>
+      </div>
+    </section>
+    <section
+      id="item-review"
+      class="account-card"
+      hidden
+      aria-labelledby="item-review-title"
+    >
+      <h2 id="item-review-title">Review item evidence</h2>
+      <p>
+        Check the tooltip name, item variant, snapshot slot and timestamp.
+        Screenshots alone cannot prove an ID. Use before/after observations or
+        an explicit source ID when needed. Publish only verified details; leave
+        the article blank if no substantive page exists.
+      </p>
+      <label>
+        Review status{" "}
+        <select id="item-review-status">
+          <option value="pending">Pending evidence</option>
+          <option value="approved">Published mappings</option>
+          <option value="rejected">Rejected evidence</option>
+          <option value="revoked">Revoked mappings</option>
+        </select>
+      </label>
+      <div id="item-review-list"></div>
+      <button id="item-reviews-more" type="button" hidden>
+        More evidence
+      </button>
+    </section>
+    <noscript>
+      JavaScript is needed for item identification. Existing wiki articles
+      remain readable.
+    </noscript>
+  </section>
+  <script src="../scripts/item-identification.ts"></script>
+</Layout>

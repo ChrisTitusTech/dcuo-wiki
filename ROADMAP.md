@@ -761,3 +761,18 @@ before starting the resumable image writer.
 - Restore substantive artifact articles from full source infobox effects/rank tables. Keep source placeholders held, and show independently sourced names without broken article links where no useful local article exists.
 - Preserve all established article bodies and existing raw character snapshots. Resolve current names when a cached loadout is read so no character relinking or database migration is needed.
 - Acceptance: parser/conflict and provenance checks, real article destinations, full local validation, independent review, main deployment, and live profile names/links.
+
+## Community equipment identification
+
+- Research unresolved Census IDs against explicit source identity evidence; do not infer names or stats from neighboring IDs or slot order.
+- Add a public, paginated queue derived from saved Census snapshots, with duplicate IDs combined and approved mappings removed.
+- Linked players may submit an observed ID, proposed name, tooltip screenshot, and written evidence. Preserve the matching snapshot and its timestamp. Evidence screenshots remain visible only to the submitter and moderators.
+- Moderators may approve an exact name, an existing article link, and optional source-backed notes. Approval updates every equipment profile without a rebuild; rejection and revocation retain audit history.
+- Acceptance: authorization, snapshot binding, bounded images, conflict/concurrency and pagination tests; desktop/mobile form checks; full gates, independent review, additive D1 migration, main publication and live queue verification.
+
+## Game-style character sheet
+
+- Match the supplied game screenshot with two compact equipment rails around the player image, a lower strip for additional equipment, and an inline item inspection panel. Keep an expandable complete Census list.
+- Use the saved player image when available and a neutral drawn silhouette otherwise. Use only existing R2-backed article artwork matched to verified article titles, with neutral numbered icons for unknown items. Do not assign guessed body-slot labels, rarity colors, item levels or stats.
+- Keep keyboard selection, Escape/Close, mobile sizing, existing refresh/outage behavior and identification links. Show verified notes for equipment and augments.
+- Acceptance: desktop/mobile visual inspection; selection, safe artwork, portrait and keyboard regressions; complete checks, independent review, main deployment and live profile inspection alongside the identification workflow.

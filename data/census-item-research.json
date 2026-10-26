@@ -1,0 +1,297 @@
+{
+  "checkedAt": "2026-10-26T00:47:50.010Z",
+  "method": "Individual exact-ID Firecrawl searches, following complete raw wiki template extraction and pinned community artifact/ally mapping.",
+  "identitiesAdded": 0,
+  "records": [
+    {
+      "itemId": "1743047",
+      "checkedAt": "2026-10-26T00:43:22.326Z",
+      "query": "DCUO \"1743047\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "5579090",
+      "checkedAt": "2026-10-26T00:43:29.822Z",
+      "query": "DCUO \"5579090\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "7580773",
+      "checkedAt": "2026-10-26T00:43:37.341Z",
+      "query": "DCUO \"7580773\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "7595492",
+      "checkedAt": "2026-10-26T00:43:44.866Z",
+      "query": "DCUO \"7595492\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "7609881",
+      "checkedAt": "2026-10-26T00:43:52.355Z",
+      "query": "DCUO \"7609881\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "7621762",
+      "checkedAt": "2026-10-26T00:43:59.909Z",
+      "query": "DCUO \"7621762\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "7631149",
+      "checkedAt": "2026-10-26T00:44:07.350Z",
+      "query": "DCUO \"7631149\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "7632077",
+      "checkedAt": "2026-10-26T00:44:14.914Z",
+      "query": "DCUO \"7632077\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "https://featdaddy.com/player/810/us-ps/forensicist",
+          "title": "Forensicist - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Forensicist on US PS - DCUO feat checker profile with feat progress ... Unknown Artifact #7632077. Ally 1 #8791069. Ally 2 #8869182. Origin Augment ..."
+        },
+        {
+          "url": "http://featdaddy.com/player/622/us-pc/iemzy",
+          "title": "iEmzy - US PC DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "iEmzy on US PC - DCUO feat checker profile with feat progress, collections ... Unknown Artifact #7632077. Unknown Artifact #8916763. Unknown Artifact ..."
+        },
+        {
+          "url": "https://featdaddy.com/player/947/us-pc/ragebaiting",
+          "title": "RAGEBAITING - US PC DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "RAGEBAITING on US PC - DCUO feat checker profile with feat progress ... Unknown Artifact #7632077. Unknown Artifact #7559382. Unknown Artifact ..."
+        }
+      ]
+    },
+    {
+      "itemId": "7647189",
+      "checkedAt": "2026-10-26T00:44:22.395Z",
+      "query": "DCUO \"7647189\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8020104",
+      "checkedAt": "2026-10-26T00:44:29.886Z",
+      "query": "DCUO \"8020104\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "http://www.featdaddy.com/player/655/eu-pc/mercuros",
+          "title": "Mercuros - EU PC DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Mercuros on EU PC - DCUO feat checker profile with feat progress, collections ... Unknown Artifact #8020104. Unknown Artifact #1746695. Unknown Artifact ..."
+        }
+      ]
+    },
+    {
+      "itemId": "8507753",
+      "checkedAt": "2026-10-26T00:44:37.357Z",
+      "query": "DCUO \"8507753\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8538390",
+      "checkedAt": "2026-10-26T00:44:45.059Z",
+      "query": "DCUO \"8538390\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8676423",
+      "checkedAt": "2026-10-26T00:44:52.603Z",
+      "query": "DCUO \"8676423\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8676435",
+      "checkedAt": "2026-10-26T00:45:00.144Z",
+      "query": "DCUO \"8676435\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8848824",
+      "checkedAt": "2026-10-26T00:45:07.590Z",
+      "query": "DCUO \"8848824\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8848859",
+      "checkedAt": "2026-10-26T00:45:15.168Z",
+      "query": "DCUO \"8848859\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "http://www.featdaddy.com/player/486/us-ps/dimension",
+          "title": "Dimension - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "... 8848859. Ring 2 #8848859. Trinket #5577638. Face #8849373. Tetrahedron of Urgrund Artifact. Heart of Isis Artifact."
+        }
+      ]
+    },
+    {
+      "itemId": "8849086",
+      "checkedAt": "2026-10-26T00:45:22.678Z",
+      "query": "DCUO \"8849086\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8849106",
+      "checkedAt": "2026-10-26T00:45:30.242Z",
+      "query": "DCUO \"8849106\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "https://featdaddy.com/player/803/us-xbox/sick",
+          "title": "Sick - US Xbox DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Sick on US Xbox - DCUO feat checker profile with feat progress ... Head #8849106. Shoulders #8849670. Chest #8849328. Back #8849682. Hands #8849686."
+        },
+        {
+          "url": "https://www.featdaddy.com/player/591/us-ns/yikaisdaha",
+          "title": "Yikaisdaha - US NS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Yikaisdaha on US NS - DCUO feat checker profile with feat progress ... 8849106. Shoulders #8489781. Chest #8849328. Back #8844790. Hands #8268045. Waist ..."
+        }
+      ]
+    },
+    {
+      "itemId": "8849373",
+      "checkedAt": "2026-10-26T00:45:37.940Z",
+      "query": "DCUO \"8849373\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "https://featdaddy.com/player/968/us-ps/commandergrimm",
+          "title": "CommanderGrimm - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Face #8849373. Amulet of Rao Artifact. Claw of Aelkhünd Artifact. Sinestro's Corrupted Power ..."
+        },
+        {
+          "url": "https://featdaddy.com/player/652/us-ps/the",
+          "title": "Michael - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Face #8849373. Amulet of Rao Artifact. Claw of Aelkhünd Artifact. Scrap of the Soul Cloak Artifact."
+        },
+        {
+          "url": "https://featdaddy.com/player/949/us-ps/kid-omega",
+          "title": "Kid Omega - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Kid Omega on US PS - DCUO feat checker profile with feat progress ... 8849373. Amulet of Rao Artifact. Brand of Hecate ..."
+        },
+        {
+          "url": "https://www.featdaddy.com/player/924/us-pc/scam-macher",
+          "title": "scam macher - US PC DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Face #8849373. Cog of Mageddon Artifact. Tetrahedron of Urgrund Artifact. Computo's ..."
+        }
+      ]
+    },
+    {
+      "itemId": "8849629",
+      "checkedAt": "2026-10-26T00:45:45.521Z",
+      "query": "DCUO \"8849629\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    },
+    {
+      "itemId": "8869184",
+      "checkedAt": "2026-10-26T00:45:53.076Z",
+      "query": "DCUO \"8869184\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "https://featdaddy.com/player/818/eu-pc/zintra",
+          "title": "Zintra - EU PC DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Zintra on EU PC - DCUO feat checker profile with feat progress, collections ... Ally 1 #8869184. Origin Augment #6793038. Origin Augment #8698973. Augment ..."
+        }
+      ]
+    },
+    {
+      "itemId": "8873474",
+      "checkedAt": "2026-10-26T00:46:00.710Z",
+      "query": "DCUO \"8873474\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "https://www.featdaddy.com/player/443/us-ps/kel",
+          "title": "KEL - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "KEL on US PS - DCUO feat checker profile with feat progress, collections ... Ally 2 #8873474. Ally 3 #8875042. Origin Augment #6795977. Origin Augment ..."
+        },
+        {
+          "url": "http://featdaddy.com/player/551/us-ns/momokz",
+          "title": "Clins - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Clins on US PS - DCUO feat checker profile with feat progress, collections ... Ally 3 #8873474. Origin Augment #8753359. Origin Augment #8799222. Augment ..."
+        },
+        {
+          "url": "http://featdaddy.com/player/639/eu-ps/little",
+          "title": "Little - EU PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Little on EU PS - DCUO feat checker profile with feat progress, collections ... Ally 3 #8873474. Origin Augment #8341873. Origin Augment #8531809. Augment ..."
+        }
+      ]
+    },
+    {
+      "itemId": "8875042",
+      "checkedAt": "2026-10-26T00:46:08.394Z",
+      "query": "DCUO \"8875042\"",
+      "status": "unresolved",
+      "reason": "Search candidates show numeric loadouts without an explicit name/ID identity.",
+      "candidates": [
+        {
+          "url": "https://www.featdaddy.com/player/443/us-ps/kel",
+          "title": "KEL - US PS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "KEL on US PS - DCUO feat checker profile with feat progress, collections ... Ally 3 #8875042. Origin Augment #6795977. Origin Augment #8799220. Augment ..."
+        },
+        {
+          "url": "https://featdaddy.com/player/581/us-ns/xiao-hu",
+          "title": "Xiao Hu - US NS DCUO Feat Profile - DCUO Feat Checker",
+          "excerpt": "Xiao Hu on US NS - DCUO feat checker profile with feat progress ... Ally 4 #8875042. Origin Augment #7213674. Origin Augment #5180346. Augment ..."
+        }
+      ]
+    },
+    {
+      "itemId": "8944299",
+      "checkedAt": "2026-10-26T00:46:15.930Z",
+      "query": "DCUO \"8944299\"",
+      "status": "unresolved",
+      "reason": "No search candidates returned.",
+      "candidates": []
+    }
+  ],
+  "followUp": {
+    "url": "https://www.featdaddy.com/player/443/us-ps/kel",
+    "status": 404,
+    "reason": "Full-page retrieval unavailable; search excerpts are not identity evidence."
+  }
+}

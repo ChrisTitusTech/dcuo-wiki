@@ -30,6 +30,7 @@ function setup() {
     "0002_article_revisions",
     "0003_unique_character_claim",
     "0005_equipment_snapshots",
+    "0006_item_identifications",
   ])
     sqlite.exec(readFileSync(`migrations/${migration}.sql`, "utf8"));
   const env = {
@@ -42,6 +43,9 @@ function setup() {
         return {
           bind(...args) {
             return {
+              async all() {
+                return { results: sqlite.prepare(sql).all(...args) };
+              },
               async first() {
                 return sqlite.prepare(sql).get(...args) || null;
               },

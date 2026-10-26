@@ -22,6 +22,7 @@ config.vars = {
   SITE_ORIGIN: "http://127.0.0.1:8787",
   DISCORD_CLIENT_ID: "local-test",
   DISCORD_CLIENT_SECRET: "local-test-only",
+  DISCORD_MODERATOR_IDS: "900",
 };
 config.d1_databases = [
   {
@@ -44,10 +45,15 @@ const sql =
   (await readFile("migrations/0002_article_revisions.sql", "utf8")) +
   (await readFile("migrations/0003_unique_character_claim.sql", "utf8")) +
   (await readFile("migrations/0005_equipment_snapshots.sql", "utf8")) +
+  (await readFile("migrations/0006_item_identifications.sql", "utf8")) +
   `\nINSERT INTO users VALUES ('11111111-1111-4111-8111-111111111111','100','Local fixture',0);
 INSERT INTO sessions VALUES ('${createHash("sha256").update("a".repeat(64)).digest("hex")}','11111111-1111-4111-8111-111111111111',4102444800);
 INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES ('11111111-1111-4111-8111-111111111111','123','Local fixture','2','{"character_id":"123","name":"Local fixture","world_id":"2"}',0,'',0);`;
 const equipmentSeed = `
+INSERT INTO users VALUES ('99999999-9999-4999-8999-999999999999','900','Item moderator',0);
+INSERT INTO sessions VALUES ('${createHash("sha256").update("b".repeat(64)).digest("hex")}','99999999-9999-4999-8999-999999999999',4102444800);
+INSERT INTO equipment_snapshots(character_id,world_id,items_json,synced_at,next_refresh_at) VALUES ('123','2','[{"itemId":"999000111","slot":"1","quantity":1,"durability":null,"augments":["999000112"]}]',${Math.floor(Date.now() / 1000)},4102444800);
+
 INSERT INTO users VALUES ('33333333-3333-4333-8333-333333333333','300','Equipment fixture',0);
 INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES ('33333333-3333-4333-8333-333333333333','987654321','Equipment fixture','2','{"character_id":"987654321","name":"Equipment fixture","world_id":"2"}',0,'',0);
 INSERT INTO equipment_snapshots(character_id,world_id,items_json,synced_at) VALUES ('987654321','2','[{"itemId":"2548220","slot":"14","quantity":1,"durability":null,"augments":[]},{"itemId":"783542","slot":"15","quantity":98,"durability":null,"augments":[]}]',1700000000);`;

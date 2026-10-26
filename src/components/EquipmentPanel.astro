@@ -5,27 +5,102 @@
   aria-labelledby="equipment-title"
 >
   <h2 id="equipment-title">Equipped items</h2>
+  <p>
+    <a href="/equipment-identification/">Help identify missing item names</a>
+  </p>
   <p id="equipment-status" role="status" aria-live="polite"></p>
   <p id="equipment-time"></p>
   <button id="equipment-refresh" type="button" hidden>
     Refresh equipment
   </button>
-  <div class="table-scroll">
-    <table id="equipment-table" hidden>
-      <thead>
-        <tr>
-          <th scope="col">Slot</th>
-          <th scope="col">Item</th>
-          <th scope="col">Details</th>
-        </tr>
-      </thead>
-      <tbody id="equipment-items"></tbody>
-    </table>
+  <div id="equipment-sheet" class="character-sheet" hidden>
+    <div class="sheet-heading">
+      <span>CHARACTER</span>
+      <span id="equipment-character-name"></span>
+      <span>LOADOUT</span>
+    </div>
+    <div class="sheet-body">
+      <div
+        id="equipment-left"
+        class="equipment-rail"
+        role="group"
+        aria-label="Equipment left"
+      ></div>
+      <div class="equipment-stage">
+        <div class="equipment-scanlines" aria-hidden="true"></div>
+        <svg
+          class="equipment-silhouette"
+          viewBox="0 0 200 400"
+          aria-hidden="true"
+        >
+          <circle cx="100" cy="45" r="27" />
+          <path d="M71 77 42 94 24 178 35 233 50 228 48 180 65 135 69 227 61 298 68 380 91 380 95 294 100 252 105 294 109 380 132 380 139 298 131 227 135 135 152 180 150 228 165 233 176 178 158 94 129 77 116 88 84 88Z" />
+        </svg>
+        <img
+          id="player-screenshot"
+          alt="Player-provided character screenshot"
+          hidden
+        />
+        <div class="equipment-character-summary">
+          <strong id="equipment-character-level"></strong>
+          <span id="equipment-character-stats"></span>
+        </div>
+        <section
+          id="equipment-item-detail"
+          class="equipment-item-detail"
+          aria-label="Selected equipment"
+          hidden
+        >
+          <button
+            id="equipment-detail-close"
+            type="button"
+            aria-label="Close item details"
+          >
+            Close
+          </button>
+          <div id="equipment-selected-content"></div>
+        </section>
+      </div>
+      <div
+        id="equipment-right"
+        class="equipment-rail"
+        role="group"
+        aria-label="Equipment right"
+      ></div>
+    </div>
+    <div class="equipment-extra-label">
+      Additional equipment <span>Artifacts, allies and other Census slots</span>
+    </div>
+    <div
+      id="equipment-extra"
+      class="equipment-extra"
+      role="group"
+      aria-label="Additional equipment"
+    ></div>
+    <p class="sheet-help">
+      Select a slot to inspect it. Neutral icons represent items without
+      verified artwork.
+    </p>
   </div>
+  <details id="equipment-list" class="equipment-list">
+    <summary>All equipment and Census details</summary>
+    <div class="table-scroll">
+      <table id="equipment-table" hidden>
+        <thead>
+          <tr>
+            <th scope="col">Slot</th>
+            <th scope="col">Item</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody id="equipment-items"></tbody>
+      </table>
+    </div>
+  </details>
   <p class="equipment-note">
     Read-only snapshot from Daybreak Census. Updates can lag behind the game.
     Item definitions are incomplete; unidentified items show their Census ID.
-    Slot numbers and durability are reported as supplied, without inferred
-    stats.
+    Slot numbers and durability are reported as supplied. Item positions are a
+    visual arrangement, not a verified body-slot classification.
   </p>
 </section>

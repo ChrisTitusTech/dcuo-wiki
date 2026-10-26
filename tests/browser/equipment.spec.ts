@@ -14,6 +14,23 @@ const profile = {
   matchedAt: 1,
   screenshot: null,
 };
+type Gear = {
+  itemId: string;
+  name: string;
+  href?: string;
+  notes?: string;
+  identified?: boolean;
+  slot: string;
+  quantity: number | null;
+  durability: number | null;
+  augments: {
+    itemId: string;
+    name: string;
+    href?: string;
+    notes?: string;
+    identified?: boolean;
+  }[];
+};
 const snapshot = {
   characterId: "123",
   worldId: "2",
@@ -40,7 +57,7 @@ const snapshot = {
       durability: 80,
       augments: [{ itemId: "88", name: "Census item 88" }],
     },
-  ],
+  ] as Gear[],
 };
 test("public equipment shows local wiki links, unknown IDs and read-only slots on mobile", async ({
   page,
@@ -58,6 +75,7 @@ test("public equipment shows local wiki links, unknown IDs and read-only slots o
     });
   });
   await page.goto(`/player/?id=${id}`);
+  await page.locator("#equipment-list summary").click();
   await expect(
     page.getByRole("heading", { name: "Equipment Hero" }),
   ).toBeVisible();
@@ -99,6 +117,7 @@ test("owner refresh retains the last successful loadout on a Census outage", asy
     });
   });
   await page.goto(`/player/?id=${id}`);
+  await page.locator("#equipment-list summary").click();
   const button = page.getByRole("button", { name: "Refresh equipment" });
   await expect(button).toBeVisible();
   await expect(button).toBeEnabled();
@@ -134,6 +153,7 @@ test("profile changes reject mismatched equipment and other players cannot refre
     });
   });
   await page.goto(`/player/?id=${id}`);
+  await page.locator("#equipment-list summary").click();
   await expect(page.locator("#equipment-status")).toContainText(
     "linked character changed",
   );
@@ -166,6 +186,7 @@ test("restoring a cached page resumes equipment loading and refresh availability
     });
   });
   await page.goto(`/player/?id=${id}`);
+  await page.locator("#equipment-list summary").click();
   const button = page.getByRole("button", { name: "Refresh equipment" });
   await expect(button).toBeVisible();
   await expect(button).toBeDisabled();
@@ -214,6 +235,7 @@ test("source-named items without a local article retain their ID and do not crea
     });
   });
   await page.goto(`/player/?id=${id}`);
+  await page.locator("#equipment-list summary").click();
   await expect(
     page.getByText("Source-named artifact", { exact: true }),
   ).toBeVisible();
@@ -221,4 +243,159 @@ test("source-named items without a local article retain their ID and do not crea
   await expect(
     page.getByRole("link", { name: "Source-named artifact" }),
   ).toHaveCount(0);
+});
+
+test("verified augment details render safely beside the matching augment", async ({
+  page,
+}) => {
+  await page.route("**/api/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    const data = structuredClone(snapshot);
+    data.items[1].augments = [
+      {
+        itemId: "88",
+        name: "Verified augment",
+        notes: "Rank 10 variant: +123 defense. <script>unsafe()</script>",
+      } as (typeof data.items)[1]["augments"][number],
+    ];
+    await route.fulfill({
+      json: path.endsWith("/equipment")
+        ? data
+        : path === `/api/profiles/${id}`
+          ? profile
+          : {},
+      status: path === "/api/me" ? 401 : 200,
+    });
+  });
+  await page.goto(`/player/?id=${id}`);
+  await page.locator("#equipment-list summary").click();
+  await expect(page.locator("#equipment-items")).toContainText(
+    "Rank 10 variant: +123 defense. <script>unsafe()</script>",
+  );
+  await expect(page.locator("#equipment-items script")).toHaveCount(0);
+});
+
+test("character sheet selects numbered slots, preserves focus and shows verified artwork safely", async ({
+  page,
+}) => {
+  const data = structuredClone(snapshot);
+  Object.assign(data.items[1], { identified: false });
+  for (const slot of [
+    0, 1, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+    26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38,
+  ])
+    data.items.push({
+      itemId: String(999000000 + slot),
+      name: `Census item ${999000000 + slot}`,
+      slot: String(slot),
+      quantity: 1,
+      durability: null,
+      augments: [],
+    });
+  await page.route("**/api/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    await route.fulfill({
+      json: path.endsWith("/equipment")
+        ? data
+        : path === `/api/profiles/${id}`
+          ? profile
+          : {},
+      status: path === "/api/me" ? 401 : 200,
+    });
+  });
+  data.items.sort((a, b) => Number(a.slot) - Number(b.slot));
+  await page.route("**/equipment-art.json", (route) =>
+    route.fulfill({
+      json: { Digital_Invader_Helm: "/api/catalog-media/" + "a".repeat(64) },
+    }),
+  );
+  await page.route("**/api/catalog-media/**", (route) =>
+    route.fulfill({
+      contentType: "image/png",
+      body: Buffer.from(
+        "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=",
+        "base64",
+      ),
+    }),
+  );
+  await page.goto(`/player/?id=${id}`);
+  await expect(page.locator("#equipment-sheet")).toBeVisible();
+  await expect(page.locator("#equipment-character-name")).toHaveText(
+    "Equipment Hero",
+  );
+  await expect(page.locator("#equipment-table")).toBeHidden();
+  const slot = page.getByRole("button", {
+    name: "Slot 14: Digital Invader Helm",
+    exact: true,
+  });
+  await expect(slot.locator("img")).toHaveAttribute(
+    "src",
+    "/api/catalog-media/" + "a".repeat(64),
+  );
+  await slot.click();
+  const detail = page.getByRole("region", { name: "Selected equipment" });
+  await expect(detail).toBeVisible();
+  await expect(
+    detail.getByRole("link", { name: "Digital Invader Helm" }),
+  ).toHaveAttribute("href", "/wiki/Digital_Invader_Helm/");
+  await slot.press("Escape");
+  await expect(detail).toBeHidden();
+  await expect(slot).toBeFocused();
+  await page
+    .getByRole("button", { name: "Slot 15: Census item 999", exact: true })
+    .click();
+  await expect(
+    detail.getByRole("link", { name: "Identify this item", exact: true }),
+  ).toHaveAttribute("href", "/equipment-identification/?item=999");
+  await page.getByRole("button", { name: "Close item details" }).click();
+  await expect(detail).toBeHidden();
+  await page.screenshot({
+    path: "test-results/character-sheet-desktop.png",
+    fullPage: true,
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await page
+    .getByRole("button", { name: "Slot 15: Census item 999", exact: true })
+    .click();
+  await expect(detail).toBeVisible();
+  await page.screenshot({
+    path: "test-results/character-sheet-mobile.png",
+    fullPage: true,
+  });
+});
+
+test("the character portrait stays visible when Census equipment has never synced", async ({
+  page,
+}) => {
+  const photo = { ...profile, screenshot: `/api/profiles/${id}/screenshot` };
+  await page.route("**/api/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    if (path.endsWith("/screenshot"))
+      return route.fulfill({
+        contentType: "image/png",
+        body: Buffer.from(
+          "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=",
+          "base64",
+        ),
+      });
+    await route.fulfill({
+      json: path.endsWith("/equipment")
+        ? { ...snapshot, items: null, syncedAt: null, unavailable: true }
+        : path === `/api/profiles/${id}`
+          ? photo
+          : {},
+      status: path === "/api/me" ? 401 : 200,
+    });
+  });
+  await page.goto(`/player/?id=${id}`);
+  await expect(page.locator("#player-screenshot")).toBeVisible();
+  await expect(page.locator("#equipment-status")).toContainText(
+    "temporarily unavailable",
+  );
+  await expect(page.locator(".equipment-slot")).toHaveCount(0);
 });

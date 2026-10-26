@@ -12,11 +12,6 @@ import Layout from "../layouts/Layout.astro";
     <div id="player-details" hidden>
       <p id="player-stats"></p>
       <p id="player-bio"></p>
-      <img
-        id="player-screenshot"
-        alt="Player-provided character screenshot"
-        hidden
-      />
       <EquipmentPanel />
       <p>
         Census matched means the character appears in Daybreak's public data.
@@ -46,13 +41,6 @@ import Layout from "../layouts/Layout.astro";
           `World ${p.character.world_id} | Level ${p.character.level} | Combat rating ${p.character.combat_rating} | Skill points ${p.character.skill_points}`;
         document.getElementById("player-bio")!.textContent = p.bio;
         status.textContent = `Census matched on ${new Date(p.matchedAt * 1000).toLocaleDateString()}`;
-        if (p.screenshot) {
-          const image = document.getElementById(
-            "player-screenshot",
-          ) as HTMLImageElement;
-          image.src = p.screenshot;
-          image.hidden = false;
-        }
         document.getElementById("player-details")!.hidden = false;
         equipment.setProfile(p);
         fetch("/api/me", { credentials: "same-origin" })

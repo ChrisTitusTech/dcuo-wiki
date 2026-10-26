@@ -1,8 +1,5 @@
 import { boundedBody, now, random, HttpError } from "./security.mjs";
-import knownItems from "../data/census-item-index.json" with { type: "json" };
-const lookup = new Map(
-  knownItems.map(([itemId, slug, title]) => [itemId, { slug, title }]),
-);
+import { itemIdentities, describeItem } from "./item-identities.mjs";
 const id = (value) =>
   typeof value === "string" && /^[1-9]\d{0,29}$/.test(value);
 const configured = (env) =>
@@ -71,16 +68,6 @@ export async function fetchEquipment(
   });
   return items.sort((a, b) => Number(a.slot) - Number(b.slot));
 }
-const describe = (itemId) => {
-  const known = lookup.get(itemId);
-  return known
-    ? {
-        itemId,
-        name: known.title,
-        ...(known.slug ? { href: `/wiki/${known.slug}/` } : {}),
-      }
-    : { itemId, name: `Census item ${itemId}` };
-};
 export async function equipment(
   env,
   character,
@@ -158,14 +145,19 @@ export async function equipment(
     }
     row = await read();
   }
+  const rawItems = row?.items_json ? JSON.parse(row.items_json) : null;
+  const identities = await itemIdentities(
+    env,
+    (rawItems || []).flatMap((item) => [item.itemId, ...item.augments]),
+  );
   return {
     characterId,
     worldId,
     items: row?.items_json
-      ? JSON.parse(row.items_json).map((item) => ({
+      ? rawItems.map((item) => ({
           ...item,
-          ...describe(item.itemId),
-          augments: item.augments.map(describe),
+          ...describeItem(item.itemId, identities),
+          augments: item.augments.map((id) => describeItem(id, identities)),
         }))
       : null,
     syncedAt: row?.synced_at ?? null,
