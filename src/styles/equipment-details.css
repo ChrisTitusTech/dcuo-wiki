@@ -37,6 +37,9 @@
   width: 40px;
   height: 40px;
 }
+#equipment-panel .equipment-slot:has(img) .equipment-slot-glyph {
+  display: none;
+}
 #equipment-panel .equipment-slot-name {
   position: relative;
   grid-column: 2;

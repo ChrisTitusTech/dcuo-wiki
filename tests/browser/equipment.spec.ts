@@ -481,6 +481,7 @@ test("captured icons and details take precedence while source rank bonuses stay 
   );
   await expect(slot.locator("img")).toHaveAttribute("src", native);
   await expect(page.locator(".equipment-slot-number")).toHaveCount(0);
+  await expect(slot.locator(".equipment-slot-glyph")).not.toBeVisible();
   // The component stylesheet must win over the base button dimensions/padding.
   const separated = () =>
     page.locator(".equipment-slot").evaluateAll((buttons) =>
