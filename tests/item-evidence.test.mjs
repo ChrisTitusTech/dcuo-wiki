@@ -21,6 +21,7 @@ async function setup() {
     "0003_unique_character_claim",
     "0005_equipment_snapshots",
     "0006_item_identifications",
+    "0007_overlay_items",
   ])
     sqlite.exec(readFileSync(`migrations/${file}.sql`, "utf8"));
   const DB = {

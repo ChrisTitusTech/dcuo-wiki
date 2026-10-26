@@ -123,7 +123,7 @@ export async function listItemEvidence(
     : ["999999999999", "ffffffff-ffff-ffff-ffff-ffffffffffff"];
   const { results } = await q(
     env,
-    `SELECT e.id,e.item_id,e.proposed_name,e.character_name,e.world_id,e.evidence,e.synced_at,e.created_at,e.status,e.review_reason,
+    `SELECT e.id,e.item_id,e.proposed_name,e.character_name,e.world_id,e.evidence,e.synced_at,e.created_at,e.status,e.review_reason,e.source,e.capture_json,(length(e.screenshot)>0) AS hasScreenshot,
     m.name,m.slug,m.notes ${moderator ? ",e.snapshot_json" : ""},
     (SELECT json_group_array(json_object('decision',r.decision,'reason',r.reason,'name',r.name,'slug',r.slug,'notes',r.notes,'createdAt',r.created_at)) FROM (SELECT * FROM item_evidence_reviews WHERE evidence_id=e.id ORDER BY id) r) AS history_json
     FROM item_evidence e LEFT JOIN item_identifications m ON m.evidence_id=e.id
@@ -133,7 +133,11 @@ export async function listItemEvidence(
     Number(timestamp),
     cursor,
   ).all();
-  const submissions = results.slice(0, 50),
+  const submissions = results.slice(0, 50).map((row) => ({
+      ...row,
+      hasScreenshot: Boolean(row.hasScreenshot),
+      capture: row.capture_json ? JSON.parse(row.capture_json) : null,
+    })),
     last = submissions.at(-1);
   return {
     submissions,
@@ -149,7 +153,8 @@ export async function evidenceImage(env, user, id, moderator) {
     user.id,
     moderator ? 1 : 0,
   ).first();
-  if (!row) throw new HttpError(404, "Evidence image not found.");
+  if (!row || !row.screenshot || !new Uint8Array(row.screenshot).byteLength)
+    throw new HttpError(404, "Evidence image not found.");
   return new Response(new Uint8Array(row.screenshot), {
     headers: {
       "Content-Type": row.screenshot_type,

@@ -46,6 +46,7 @@ const sql =
   (await readFile("migrations/0003_unique_character_claim.sql", "utf8")) +
   (await readFile("migrations/0005_equipment_snapshots.sql", "utf8")) +
   (await readFile("migrations/0006_item_identifications.sql", "utf8")) +
+  (await readFile("migrations/0007_overlay_items.sql", "utf8")) +
   `\nINSERT INTO users VALUES ('11111111-1111-4111-8111-111111111111','100','Local fixture',0);
 INSERT INTO sessions VALUES ('${createHash("sha256").update("a".repeat(64)).digest("hex")}','11111111-1111-4111-8111-111111111111',4102444800);
 INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES ('11111111-1111-4111-8111-111111111111','123','Local fixture','2','{"character_id":"123","name":"Local fixture","world_id":"2"}',0,'',0);`;

@@ -86,7 +86,12 @@ async function submissions(reset = true) {
     const link = document.createElement("a");
     link.href = `/api/items/evidence/${s.id}/image`;
     link.textContent = "View your tooltip evidence";
-    p.append(" ", link);
+    if (s.hasScreenshot !== false) p.append(" ", link);
+    else
+      paragraph(
+        target,
+        "Companion capture published to the shared item catalog.",
+      );
     if (s.review_reason) paragraph(target, s.review_reason);
   }
   el("item-submissions").hidden = false;
@@ -140,13 +145,25 @@ async function reviews(reset = true) {
     paragraph(card, s.evidence);
     const details = document.createElement("details"),
       summary = document.createElement("summary");
-    summary.textContent = "Tooltip and saved equipment";
+    summary.textContent =
+      s.source === "companion"
+        ? "Companion capture and saved equipment"
+        : "Tooltip and saved equipment";
     details.append(summary);
     const image = document.createElement("img");
     image.src = `/api/items/evidence/${s.id}/image`;
     image.alt = "Submitted item tooltip";
     image.loading = "lazy";
-    details.append(image);
+    if (s.hasScreenshot !== false) details.append(image);
+    if (s.capture_json) {
+      paragraph(
+        details,
+        "Client-provided capture provenance; a build hash is not remote attestation.",
+      );
+      const capture = document.createElement("pre");
+      capture.textContent = JSON.stringify(JSON.parse(s.capture_json), null, 2);
+      details.append(capture);
+    }
     const pre = document.createElement("pre");
     pre.textContent = JSON.stringify(JSON.parse(s.snapshot_json), null, 2);
     details.append(pre);
@@ -321,6 +338,7 @@ async function start() {
         "Link a character in your player account to submit item evidence.";
       return;
     }
+    el("overlay-access").hidden = false;
     const data = await api(`/api/profiles/${me.profile.id}/equipment`);
     const items = new Map<string, string>();
     for (const item of data.items || [])
@@ -346,3 +364,54 @@ async function start() {
   }
 }
 void start();
+
+const tokenStatus = el("overlay-token-status");
+const clearToken = () => {
+  el<HTMLInputElement>("overlay-token").value = "";
+  el("overlay-token-result").hidden = true;
+};
+el("overlay-token-create").addEventListener("click", async () => {
+  const button = el<HTMLButtonElement>("overlay-token-create");
+  button.disabled = true;
+  clearToken();
+  try {
+    const result = await post("/api/items/overlay-token", {});
+    el<HTMLInputElement>("overlay-token").value = result.token;
+    el("overlay-token-result").hidden = false;
+    tokenStatus.textContent =
+      "Copy this token into DCUO Companion. Expires " +
+      new Date(result.expiresAt * 1000).toLocaleString() +
+      ".";
+  } catch (e) {
+    tokenStatus.textContent = (e as Error).message;
+  } finally {
+    button.disabled = false;
+  }
+});
+el("overlay-token-revoke").addEventListener("click", async () => {
+  const button = el<HTMLButtonElement>("overlay-token-revoke");
+  button.disabled = true;
+  try {
+    await api("/api/items/overlay-token", { method: "DELETE" });
+    clearToken();
+    tokenStatus.textContent = "Companion access revoked.";
+  } catch (e) {
+    tokenStatus.textContent = (e as Error).message;
+  } finally {
+    button.disabled = false;
+  }
+});
+el("overlay-token-copy").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(
+      el<HTMLInputElement>("overlay-token").value,
+    );
+    tokenStatus.textContent =
+      "Token copied. Paste it into the companion, then clear the clipboard when finished.";
+  } catch {
+    tokenStatus.textContent =
+      "Clipboard access failed. Select and copy the token field.";
+  }
+});
+el("overlay-token-hide").addEventListener("click", clearToken);
+window.addEventListener("pagehide", clearToken);

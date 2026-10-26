@@ -34,6 +34,12 @@ import {
   evidenceImage,
   reviewItemEvidence,
 } from "./item-evidence.mjs";
+import {
+  createOverlayToken,
+  revokeOverlayToken,
+  overlayItems,
+  submitOverlayItems,
+} from "./overlay-items.mjs";
 import { equipment } from "./equipment.mjs";
 import { serveCatalogMedia } from "./catalog-media.mjs";
 const SESSION = "__Host-dcuo-session",
@@ -417,6 +423,20 @@ export async function handle(request, env, fetcher = fetch, context) {
         503,
         "Player accounts are awaiting activation. Wiki guides remain available.",
       );
+    if (path === "/api/overlay/items") {
+      // Native clients use a scoped bearer token; never fall back to a Discord cookie.
+      await limit(
+        env,
+        `overlay-ip:${request.headers.get("CF-Connecting-IP") || "unknown"}`,
+        120,
+        3600,
+      );
+      if (request.method === "GET")
+        return json(await overlayItems(request, env));
+      if (request.method === "POST")
+        return json(await submitOverlayItems(request, env), 201);
+      throw new HttpError(405, "Method not allowed.");
+    }
     const origin = env.SITE_ORIGIN || "https://dcuo-wiki.com";
     if (
       !["GET", "HEAD"].includes(request.method) &&
@@ -486,6 +506,15 @@ export async function handle(request, env, fetcher = fetch, context) {
         await unidentifiedItems(env, url.searchParams.get("after") || ""),
       );
     const user = await session(request, env);
+    if (path === "/api/items/overlay-token") {
+      if (request.method === "POST") {
+        await limit(env, `overlay-token:${user.id}`, 5, 3600);
+        return json(await createOverlayToken(env, user), 201);
+      }
+      if (request.method === "DELETE")
+        return json(await revokeOverlayToken(env, user));
+      throw new HttpError(405, "Method not allowed.");
+    }
     if (path === "/api/items/evidence" && request.method === "GET")
       return json(
         await listItemEvidence(env, user, {

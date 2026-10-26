@@ -59,6 +59,31 @@ for (const row of await read("data/census-community-items.json")) {
   });
 }
 
+// Minimal public game data captured twice through the exact-build, read-only resolver.
+// No character names, process identities, addresses or private snapshots are retained.
+for (const row of await read("data/census-overlay-items.json")) {
+  if (
+    !/^[a-f0-9]{64}$/.test(row.build) ||
+    row.profile !== "item-names-v1" ||
+    !Number.isSafeInteger(row.capturedAt) ||
+    row.capturedAt <= 0 ||
+    typeof row.name !== "string" ||
+    row.name.length < 2 ||
+    row.name.length > 160 ||
+    /[\u0000-\u001f\u007f]/.test(row.name)
+  )
+    throw new Error("Invalid companion source data");
+  const article = bySource.get(titleKey(row.name).toLowerCase());
+  candidates.push({
+    itemId: row.itemId,
+    slug: article?.slug || null,
+    title: article?.title || row.name,
+    source: "https://github.com/ChrisTitusTech/dcuo-overlay",
+    evidence: `Stable repeated native item ID ${row.itemId} = ${row.name}; build ${row.build}; profile ${row.profile}; captured ${new Date(row.capturedAt * 1000).toISOString()}`,
+    kind: "native-memory",
+  });
+}
+
 for (const row of candidates) {
   const article = bySlug.get(row.slug);
   if (

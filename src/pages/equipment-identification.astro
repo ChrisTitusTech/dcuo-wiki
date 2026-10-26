@@ -41,11 +41,54 @@ import Layout from "../layouts/Layout.astro";
         No unidentified items in the snapshots checked.
       </p>
     </section>
+    <section
+      id="overlay-access"
+      class="account-card"
+      hidden
+      aria-labelledby="overlay-title"
+    >
+      <h2 id="overlay-title">Send item names from DCUO Companion</h2>
+      <p>
+        Refresh your linked character's equipment, then create a companion
+        token. In DCUO Companion, open Wiki items, paste the token, refresh the
+        list, capture names and review them before sending. Only loaded item
+        definitions can be captured. Captured names update the shared equipment
+        catalog immediately.
+      </p>
+      <p>
+        The token expires after 30 days and allows item submissions for your
+        linked character only. Creating another token replaces the previous one.
+      </p>
+      <button id="overlay-token-create" type="button">
+        Create companion token
+      </button>
+      <button id="overlay-token-revoke" type="button">
+        Revoke companion access
+      </button>
+      <div id="overlay-token-result" hidden>
+        <label>
+          Companion token (shown once)
+          <input
+            id="overlay-token"
+            type="password"
+            readonly
+            autocomplete="off"
+          />
+        </label>
+        <button id="overlay-token-copy" type="button">
+          Copy token
+        </button>
+        <button id="overlay-token-hide" type="button">
+          Clear displayed token
+        </button>
+      </div>
+      <p id="overlay-token-status" role="status" aria-live="polite"></p>
+    </section>
     <section class="account-card" aria-labelledby="item-submit-title">
       <h2 id="item-submit-title">Identify an item</h2>
       <p id="item-sign-in">
         <a href="/account/">Sign in with Discord and link your character</a> to
-        submit evidence.
+        publish item names.
       </p>
       <form id="item-evidence-form" hidden>
         <label>

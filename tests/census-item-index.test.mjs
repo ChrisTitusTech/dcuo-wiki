@@ -129,7 +129,9 @@ test("every linked identity has a published article, every identity has evidence
           .get(id)
           .sources.every(
             (s) =>
-              s.kind.startsWith("community-") || s.kind === "wiki-template",
+              s.kind.startsWith("community-") ||
+              s.kind === "wiki-template" ||
+              s.kind === "native-memory",
           ),
       );
     const source = sources.get(id);
@@ -211,4 +213,33 @@ test("index check succeeds with filesystem writes forbidden", () => {
     { encoding: "utf8" },
   );
   assert.equal(JSON.parse(output).mapped, items.length);
+});
+
+test("native item evidence retains exact IDs, names and build provenance without private session data", async () => {
+  const rows = JSON.parse(
+    await fs.readFile("data/census-overlay-items.json", "utf8"),
+  );
+  for (const row of rows) {
+    assert.deepEqual(Object.keys(row).sort(), [
+      "build",
+      "capturedAt",
+      "itemId",
+      "name",
+      "profile",
+    ]);
+    assert.match(row.build, /^[a-f0-9]{64}$/);
+    assert.equal(row.profile, "item-names-v1");
+    assert(Number.isSafeInteger(row.capturedAt));
+    const source = evidence.find((r) => r.itemId === row.itemId);
+    assert(source);
+    assert(
+      source.sources.some(
+        (s) =>
+          s.kind === "native-memory" &&
+          s.evidence.includes(row.name) &&
+          s.evidence.includes(row.build),
+      ),
+    );
+    assert(items.some(([id]) => id === row.itemId));
+  }
 });
