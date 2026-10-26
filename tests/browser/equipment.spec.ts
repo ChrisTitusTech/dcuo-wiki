@@ -83,7 +83,9 @@ test("public equipment shows local wiki links, unknown IDs and read-only slots o
     page.getByRole("link", { name: "Digital Invader Helm" }),
   ).toHaveAttribute("href", "/wiki/Digital_Invader_Helm/");
   await expect(
-    page.locator("#equipment-items").getByText("Census item 999", { exact: true }),
+    page
+      .locator("#equipment-items")
+      .getByText("Census item 999", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("Durability: 80")).toBeVisible();
   await expect(
@@ -237,7 +239,9 @@ test("source-named items without a local article retain their ID and do not crea
   await page.goto(`/player/?id=${id}`);
   await page.locator("#equipment-list summary").click();
   await expect(
-    page.locator("#equipment-items").getByText("Source-named artifact", { exact: true }),
+    page
+      .locator("#equipment-items")
+      .getByText("Source-named artifact", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("Census ID 1234", { exact: true })).toBeVisible();
   await expect(
@@ -470,6 +474,19 @@ test("captured icons and details take precedence while source rank bonuses stay 
     "Digital Invader Helm",
   );
   await expect(slot.locator("img")).toHaveAttribute("src", native);
+  // The component stylesheet must win over the base button dimensions/padding.
+  const separated = () =>
+    slot.evaluate((button) => {
+      const image = button.querySelector("img")!.getBoundingClientRect();
+      const label = button
+        .querySelector(".equipment-slot-name")!
+        .getBoundingClientRect();
+      return label.left >= image.right || label.top >= image.bottom;
+    });
+  await expect.poll(separated).toBe(true);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect.poll(separated).toBe(true);
+  await page.setViewportSize({ width: 1280, height: 720 });
   await slot.click();
   const detail = page.getByRole("region", { name: "Selected equipment" });
   await expect(detail).toContainText("Captured description");
