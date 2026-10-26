@@ -457,6 +457,12 @@ test("captured icons and details take precedence while source rank bonuses stay 
                   requiredLevel: 30,
                 },
               },
+              ...["15", "17"].map((slot) => ({
+                ...snapshot.items[0],
+                slot,
+                name: "Enhanced Armored Detective's Steady Helmet",
+                icon: native,
+              })),
             ],
           }
         : path === `/api/profiles/${id}`
@@ -474,22 +480,27 @@ test("captured icons and details take precedence while source rank bonuses stay 
     "Digital Invader Helm",
   );
   await expect(slot.locator("img")).toHaveAttribute("src", native);
+  await expect(page.locator(".equipment-slot-number")).toHaveCount(0);
   // The component stylesheet must win over the base button dimensions/padding.
   const separated = () =>
-    slot.evaluate((button) => {
-      const image = button.querySelector("img")!.getBoundingClientRect();
-      const label = button
-        .querySelector(".equipment-slot-name")!
-        .getBoundingClientRect();
-      return label.left >= image.right || label.top >= image.bottom;
-    });
-  await expect.poll(separated).toBe(true);
-  await page.setViewportSize({ width: 390, height: 844 });
-  await expect.poll(separated).toBe(true);
+    page.locator(".equipment-slot").evaluateAll((buttons) =>
+      buttons.every((button) => {
+        const image = button.querySelector("img")!.getBoundingClientRect();
+        const label = button
+          .querySelector(".equipment-slot-name")!
+          .getBoundingClientRect();
+        return label.left >= image.right && label.top < image.bottom;
+      }),
+    );
+  for (const width of [1280, 768, 390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    await expect.poll(separated).toBe(true);
+  }
   await page.setViewportSize({ width: 1280, height: 720 });
   await slot.click();
   const detail = page.getByRole("region", { name: "Selected equipment" });
   await expect(detail).toContainText("Captured description");
+  await expect(detail).not.toContainText("Slot 14");
   await expect(detail).toContainText("Required level");
   await expect(detail).toContainText("Invader");
   await expect(detail).toContainText("Source-listed item details");

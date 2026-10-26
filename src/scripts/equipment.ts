@@ -302,7 +302,7 @@ export function equipmentPanel() {
     target.append(heading);
     const identity = document.createElement("p");
     identity.className = "equipment-item-id";
-    identity.textContent = `Slot ${item.slot} / Census ID ${item.itemId}`;
+    identity.textContent = `Census ID ${item.itemId}`;
     target.append(identity);
     const facts = document.createElement("dl");
     for (const [label, value] of [
@@ -397,10 +397,6 @@ export function equipmentPanel() {
         b.append(glyph);
         const image = artworkImage(item);
         if (image) b.append(image);
-        const label = document.createElement("span");
-        label.className = "equipment-slot-number";
-        label.textContent = `Slot ${item.slot}`;
-        b.append(label);
         const name = document.createElement("span");
         name.className = "equipment-slot-name";
         name.textContent = item.name;
@@ -465,10 +461,8 @@ export function equipmentPanel() {
       rows.replaceChildren(
         ...data.items.map((item) => {
           const row = document.createElement("tr");
-          const slot = document.createElement("td"),
-            name = document.createElement("td"),
+          const name = document.createElement("td"),
             details = document.createElement("td");
-          slot.textContent = `Slot ${item.slot}`;
           name.append(itemLabel(item));
           const id = document.createElement("small");
           if (item.name !== `Census item ${item.itemId}`) {
@@ -500,7 +494,7 @@ export function equipmentPanel() {
             });
             details.append(augments);
           }
-          row.append(slot, name, details);
+          row.append(name, details);
           return row;
         }),
       );
