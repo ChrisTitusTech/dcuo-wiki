@@ -306,7 +306,10 @@ export function equipmentPanel() {
     target.append(identity);
     const facts = document.createElement("dl");
     for (const [label, value] of [
-      ["Quantity", item.quantity],
+      [
+        "Quantity",
+        item.quantity !== null && item.quantity > 1 ? item.quantity : null,
+      ],
       ["Durability", item.durability],
     ] as const) {
       if (value !== null) {
@@ -470,7 +473,8 @@ export function equipmentPanel() {
             name.append(document.createElement("br"), id);
           }
           const parts = [];
-          if (item.quantity !== null) parts.push(`Quantity: ${item.quantity}`);
+          if (item.quantity !== null && item.quantity > 1)
+            parts.push(`Quantity: ${item.quantity}`);
           if (item.durability !== null)
             parts.push(`Durability: ${item.durability}`);
           details.textContent = parts.join(" · ");
