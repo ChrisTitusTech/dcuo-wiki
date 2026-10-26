@@ -22,6 +22,7 @@ for (const article of articles.filter((a) => slugs.has(a.slug))) {
       const label = words(i.label || "");
       return (
         label &&
+        !/visual effect|side view/i.test(i.label || "") &&
         !/^(?:[a-z]+icon|episode\d*|dlc\d*|map|tc\b)/i.test(i.label || "") &&
         (label.includes(words(article.title)) ||
           (article.title === "Brand of Hecate" && label === "tarotcard"))
@@ -34,6 +35,14 @@ for (const article of articles.filter((a) => slugs.has(a.slug))) {
     /^\/api\/catalog-media\/[a-f0-9]{64}$/.test(url.pathname)
   )
     artwork[article.slug] = url.pathname;
+}
+// Explicit item-template icons take precedence over article artwork.
+const sourceDetails = JSON.parse(
+  await fs.readFile("public/equipment-details.json", "utf8"),
+);
+for (const [slug, details] of Object.entries(sourceDetails)) {
+  if (details.icon && /^\/api\/catalog-media\/[a-f0-9]{64}$/.test(details.icon))
+    artwork[slug] = details.icon;
 }
 await fs.writeFile("public/equipment-art.json", JSON.stringify(artwork) + "\n");
 console.log(JSON.stringify({ equipmentArtwork: Object.keys(artwork).length }));

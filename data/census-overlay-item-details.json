@@ -1,0 +1,495 @@
+[
+  {
+    "details": {
+      "categoryId": 0,
+      "icon": "/api/item-icons/51ab9bc9a39986507442edca1097682551b377fcbb9c733bb7830a69e16c5b1c",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#071",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "8507753",
+    "name": "Enhanced Armored Detective's Steady Helmet",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 11,
+      "icon": "/api/item-icons/0ea41ea8487a4b02db1b832f33114f98d0c1afcb8bd5657e535510ff24ec09e0",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#05",
+      "qualityId": 4,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "8849106",
+    "name": "Warden's Overbearing Necklace",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 5,
+      "icon": "/api/item-icons/2a9c107a28db0abd08cbb083f904390396c3937b19c872b5d4468df6c5979467",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#208",
+      "qualityId": 7,
+      "requiredCombatRating": 0,
+      "requiredLevel": 30
+    },
+    "itemId": "8676423",
+    "name": "Armored Corps Commander Shoulderpads",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 3,
+      "icon": "/api/item-icons/679887c8d3a5136a7a93749676b1e19c5de9c2266540f26dc89c6b6b2a1fda72",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#001",
+      "qualityId": 2,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7588611",
+    "name": "Sacred Wings of Prophecy",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 7,
+      "icon": "/api/item-icons/0a118c91448706c80fcf5083a199f7fbb3fbd738f032cc882bc5ab4829100392",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#080",
+      "qualityId": 7,
+      "requiredCombatRating": 0,
+      "requiredLevel": 30
+    },
+    "itemId": "8676435",
+    "name": "Armored Corps Commander Gauntlets",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 4,
+      "icon": "/api/item-icons/8efa9981ec4a20eb0e8219e212671330cb3e83012f4b7b863a02655a15c65003",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#005",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7640980",
+    "name": "Tactician's Predatory Belt",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 9,
+      "icon": "/api/item-icons/3cc3650a490e151b2796fd4afc4bcf2c26a5666882fa6bfcd81a0b6cefd95007",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#110",
+      "qualityId": 2,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7595492",
+    "name": "Revitalizing Clockwork Boots",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 1,
+      "icon": "/api/item-icons/5a78f8e49ca48bd1edc89353d0325ff5477222ea4b2312def3ba2bd94cfe1f57",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#019",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7647189",
+    "name": "Dynamic Speed Demon Mask",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 2,
+      "icon": "/api/item-icons/5e95baeb5428d6be1691ce5c773232440ca696bdb1b2ddac2741df5072028208",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#108",
+      "qualityId": 2,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7631149",
+    "name": "Commander's Paramilitary Vest",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 8,
+      "icon": "/api/item-icons/f30731490d248b9ce8e9109f3cf20e43ff3ecb848ceb2747c7ad84ba2d8a2df8",
+      "iconResource": "DUIICONSLIBS102/UIICONSLIBS102#067",
+      "qualityId": 2,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7580773",
+    "name": "Noble Samurai's Hakama",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 12,
+      "icon": "/api/item-icons/7d63d408b19a5c9a3aa7dd095a012ae9896fb41197a16ca387edf95565bd57f4",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#03",
+      "qualityId": 4,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7610870",
+    "name": "Warden's Berserker Ring",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 12,
+      "icon": "/api/item-icons/a058b4757836e47254c03c87d5bce9969fdc74c9b689e69a71cda26e60f45717",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#30",
+      "qualityId": 2,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7595477",
+    "name": "Revitalizing Clockwork Ring",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 10,
+      "description": "Restores Health and Power",
+      "icon": "/api/item-icons/bb51c905eafbc781ef1ee0d9a8d881bd9a919fc8f2f56d9fc59d74b9e0fd55b7",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#21",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "783542",
+    "name": "Soder Cola Extreme",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 14,
+      "icon": "/api/item-icons/5e32dbd9591cefd88d96cf0e827a968a677183fea1ef6b6819cdeabb1a3942de",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#191",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "8849373",
+    "name": "Manipulator's Nuclear Utility Belt",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 13,
+      "icon": "/api/item-icons/76bccd5b199aa0741a1bb9835ccec3043399f0778071afbbbfd0bf03254dcba3",
+      "iconResource": "DUIICONSLIBS101/UIICONSLIBS101#046",
+      "qualityId": 7,
+      "requiredCombatRating": 0,
+      "requiredLevel": 30
+    },
+    "itemId": "8849629",
+    "name": "Tactical Might of Krypton Hammers",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 10,
+      "description": "Note: Purchase Limits for this item are shared across all characters on your account.\n\nUsing this item grants a chance to find Nth Metal Caches from defeated enemies for 1 hour, greatly increasing your artifact experience drops while playing.\n\nPlease note, this is a one-time use only item and is not tradable across platforms. This effect does not stack.\n\nThanagar, the home of Hawkman and Hawkgirl, is the only known native source of Nth Metal. Since the Rann/Thanagar War, ore detectors like this one have become a rare commodity.",
+      "icon": "/api/item-icons/ff0bc6e6f30831ddd23be968db6244cfa390821696d828645bb02f5bf2a7f96c",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#355",
+      "qualityId": 3,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "8020104",
+    "name": "Nth Metal Detector",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 14,
+      "icon": "/api/item-icons/380c2e9718dac2dc4c7cbe1d7dfa681c9569ed7c3f9dfc75a9cb973bf6344c7e",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#061",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "8538390",
+    "name": "Godling Wonderpunk Powerful Token",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 10,
+      "description": "Increases your Health, Power, Restoration, Vitalization, Dominance, Precision, and Might for 30 minutes\n\nNote: stacks with all other consumable buffs!",
+      "icon": "/api/item-icons/dbb9eb41db2f92e6bce681d9a48d8c89e90d961ec84167fe3d67bae29230e363",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#158",
+      "qualityId": 6,
+      "requiredCombatRating": 0,
+      "requiredLevel": 1
+    },
+    "itemId": "7632077",
+    "name": "Compound Omega",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 14,
+      "icon": "/api/item-icons/380c2e9718dac2dc4c7cbe1d7dfa681c9569ed7c3f9dfc75a9cb973bf6344c7e",
+      "iconResource": "DUIICONSLIBS103/UIICONSLIBS103#061",
+      "qualityId": 4,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7621762",
+    "name": "Machinist's Girded Trinket",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 18,
+      "description": "Like the ones gifted by the Batman Who Laughs to Mister Freeze and Poison Ivy, this metal card makes one stronger, but comes at a cost.",
+      "icon": "/api/item-icons/56190159c639d736f041ff74311bdbf7a67e3c71f04cabe365b40ea1e8bf36b9",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#321",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "6795977",
+    "name": "The Transformation Card",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 18,
+      "description": "Mark of the Witch-Goddess' curse manifesting across every phase of life.",
+      "icon": "/api/item-icons/87401a8de709e5df728fde5914e6ddbe40b1c7bcf2a3f724fd331d6cec17b610",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#480",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "8225427",
+    "name": "Brand of Hecate",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 19,
+      "description": "Recommended for:\n- Damage (Superpowers)\n\nPlace this in a lower Augment socket to increase your stats. Use Exobytes to make this Augment stronger.\n\nYou get a +50% bonus for color-matched Exobytes.",
+      "icon": "/api/item-icons/4a424023806e074194a15fe4bc4f12a3ec8b29b4d8c85b44aefc84ac0e7e1a02",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#096",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 1
+    },
+    "itemId": "5579090",
+    "name": "Mighty Implant",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 20,
+      "description": "Place this in an upper Augment socket to modify your stats. Fortify this Augment with Red Kryptonite Infused Exobytes to make it stronger and unlock bonuses.",
+      "icon": "/api/item-icons/0a3d16b77df23e861f2967a9b1e8e94c1b9964aeb0449adaa6eb4b105b37a7f3",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#567",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 25
+    },
+    "itemId": "8869184",
+    "name": "Decayed Mighty Red K-Radiation",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 20,
+      "description": "Place this in an upper Augment socket to modify your stats. Fortify this Augment with S.T.A.R. Labs Exobytes to make it stronger and unlock bonuses.",
+      "icon": "/api/item-icons/36442f89c58e3493d043eb07ea22fdb69c3c5999445d99c7aa5858c78e3b3346",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#583",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 25
+    },
+    "itemId": "8944299",
+    "name": "Faulty Dominating S.T.A.R. Labs Neural Chip",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 18,
+      "description": "If you have the strength to wield a Power Ring once worn by Sinestro himself, take hold of this Artifact and unleash the powers of Fear and Will!",
+      "icon": "/api/item-icons/2e904af2cb41f2c33c24b713f7a0078b529f61d0cff5c8112165551c2ea24468",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#535",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "8616086",
+    "name": "Sinestro's Corrupted Power Ring",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 21,
+      "icon": "/api/item-icons/d7464c6b2337680889ebb7fcbcaf49a22c4b0aadf9c3d4a189923373dffa3d1a",
+      "iconResource": "DUIICONSLIBS128/UIICONSLIBS128#035",
+      "qualityId": 7,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "8221858",
+    "name": "General Zod",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 21,
+      "icon": "/api/item-icons/8bcb92301c5e6850dbb72ed47842d8785b8317c694aea5b09391feaa25e69447",
+      "iconResource": "DUIICONSLIBS128/UIICONSLIBS128#030",
+      "qualityId": 7,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "8129032",
+    "name": "Shazam",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 21,
+      "icon": "/api/item-icons/c1430bcd4af97cd87656c8b43bc1c38463b37cfcf1542052670188943f1034a0",
+      "iconResource": "DUIICONSLIBS128/UIICONSLIBS128#017",
+      "qualityId": 7,
+      "requiredCombatRating": 0,
+      "requiredLevel": 10
+    },
+    "itemId": "7558231",
+    "name": "Batman Who Laughs",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 18,
+      "description": "These lost artifacts of Krypton allowed priests of the Kryptonian god, Rao, to elevate their thoughts allowing them to better lead their faithful flock.",
+      "icon": "/api/item-icons/8a313d43d59472ee23386c4e3d91a36e616c18aaeb719cc639e6535c262c55e7",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#253",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "5319139",
+    "name": "Amulet of Rao",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 18,
+      "description": "When it comes to coordinating her team, Oracle knows communication is key.",
+      "icon": "/api/item-icons/880aacd70af5541a53270483fa0e5c1a6b44cdc86c4aade2c749922156928470",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#333",
+      "qualityId": 1,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "6686003",
+    "name": "B.O.P. Commlink",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 22,
+      "description": "Water infused by the power of the Blue. Gather Nth Metal and use them to fortify this Power Array Augment, granting new abilities in the Loadouts screen when equipped.",
+      "icon": "/api/item-icons/b058198c059bb39bdf8f69cf9d853bfeaf8d1d6f67bca5ee523864affcd24fb4",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#576",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "8873474",
+    "name": "Tides of the Blue",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  },
+  {
+    "details": {
+      "categoryId": 22,
+      "description": "Fire energized by the power of rekindled pyroplasm. Gather Nth Metal and use them to fortify this Power Array Augment, granting new abilities in the Loadouts screen when equipped.",
+      "icon": "/api/item-icons/eabe337e5f4ef53f198bef537fac7a999a4a125a02b802514a1fb52c70ab8c1b",
+      "iconResource": "DUIICONSLIBS123/UIICONSLIBS123#577",
+      "qualityId": 5,
+      "requiredCombatRating": 0,
+      "requiredLevel": 0
+    },
+    "itemId": "8875042",
+    "name": "Rekindled Pyroplasm",
+    "build": "89a9001e5e3ed8cf80e383af2d9671df02132fe0c9e9d021eb13f2fd35e115bb",
+    "profile": "item-details-v1",
+    "capturedAt": 1793036611
+  }
+]

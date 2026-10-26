@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "slug": "Amulet_of_Rao",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Amulet_of_Rao?oldid=354568",
+      "revisionId": 354568,
+      "fields": {
+        "item type": "Artifact"
+      },
+      "iconSource": {
+        "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Amulet_of_Rao_(Base).png",
+        "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/e/e7/Icon_Amulet_of_Rao_%28Base%29.png/revision/latest?cb=20180628121600",
+        "discoveredOn": "https://dcuniverseonline.fandom.com/wiki/Amulet_of_Rao",
+        "credit": "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+        "rights": "Game artwork. No separate reusable-image license was stated in the retrieved article; no CC-BY-SA image license is asserted.",
+        "retrieved": "2026-10-25",
+        "id": "103b9bf25805e367155a2984840be7576e1ce832fe4bb9fb402fe2996e72c093"
+      },
+      "effects": [
+        "Recommended for: Controller",
+        "Blessing of Rao",
+        "Your Controller Debuffs are (20/30/40/50)% stronger and deal damage over time to (1/2/4/7) additional enemies equal to (0.6/1.2/1.8/2.4)% of your Vitalization and (0.15/0.3/0.45/0.6)% of your Might."
+      ],
+      "ranks": [
+        ["20", "+Power Stat, 1% Vitalization"],
+        ["40", "+Health Stat, 2% Vitalization"],
+        ["60", "1% Power"],
+        ["80", "3% Vitalization, 1% Health"],
+        ["80", "Blessing of Rao (1)"],
+        ["100", "2% Power"],
+        ["120", "4% Vitalization, 2% Health"],
+        ["120", "Blessing of Rao (2)"],
+        ["140", "3% Power"],
+        ["160", "5% Vitalization, 3% Health"],
+        ["160", "Blessing of Rao (3)"],
+        ["180", "4% Power"],
+        ["200", "Blessing of Rao (4)"]
+      ]
+    },
+    {
+      "slug": "B_O_P_Commlink",
+      "source": "https://dcuniverseonline.fandom.com/wiki/B.O.P._Commlink?oldid=299210",
+      "revisionId": 299210,
+      "fields": {
+        "item type": "Artifact",
+        "requires": "[[Controller]]"
+      },
+      "iconSource": {
+        "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_B.O.P._Commlink_(Base).png",
+        "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/7/75/Icon_B.O.P._Commlink_%28Base%29.png/revision/latest?cb=20200329160117",
+        "discoveredOn": "https://dcuniverseonline.fandom.com/wiki/B.O.P._Commlink",
+        "credit": "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+        "rights": "Game artwork. No separate reusable-image license was stated in the retrieved article; no CC-BY-SA image license is asserted.",
+        "retrieved": "2026-10-25",
+        "id": "c9e5ac2a82f3d6c599b5c3fa3275c4b2a0b405739f5565a6236d3fefbf8268ac"
+      },
+      "effects": [
+        "Recommended for: Controller",
+        "Birds' Blitz",
+        "While in Controller Role, coordinate an attack with the Birds of Prey, applying Expose Weakness to your target. All Controller debuffs now last 6 seconds.",
+        "Expose Weakness",
+        "* Oracle's attack reduces target's defense.",
+        "* Black Canary's attack reduces target's healing ability.",
+        "* Huntress' attack reduces target's damage.",
+        "Siphon Weakness",
+        "* On hitting an enemy target with 3 debuffs on it, will grant power to you and your group members.",
+        "* Double the amount of power granted by Siphon Weakness."
+      ],
+      "ranks": [
+        ["20", "+Dominance Stat, 1% Vitalization"],
+        ["40", "+Health Stat, 2% Vitalization"],
+        ["60", "1% Health"],
+        ["80", "3% Vitalization, 1% Dominance"],
+        ["80", "Birds' Blitz, Expose Weakness"],
+        ["100", "2% Health"],
+        ["120", "4% Vitalization, 2% Dominance"],
+        ["120", "Siphon Weakness  Rank 1"],
+        ["140", "3% Health"],
+        ["160", "5% Vitalization, 3% Dominance"],
+        ["160", "Expose Weakness Rank 2"],
+        ["180", "4% Health"],
+        ["200", "Siphon Weakness  Rank 2"]
+      ]
+    },
+    {
+      "slug": "Compound_Omega",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Compound_Omega?oldid=326041",
+      "revisionId": 326041,
+      "fields": {
+        "itemid": "2970190",
+        "item type": "Consumable",
+        "on use": ". 5% Health - Group (+1800s). 5% Power - Group (+1800s). 5% Restoration - Group (+1800s). 5% Vitalization - Group (+1800s). 5% Dominance - Group (+1800s). 5% Might - Group (+1800s). 5% Precision - Group (+1800s)",
+        "description": "Increases Health, Power, Restoration, Vitalization and Dominance, Precision, and Might for 30 minutesNote: stacks with all other consumable buffs!"
+      },
+      "iconSource": {
+        "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Compound_ATK-00.png",
+        "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/c/c5/Compound_ATK-00.png/revision/latest?cb=20200227091127",
+        "discoveredOn": "https://dcuniverseonline.fandom.com/wiki/Doctor_Fate's_Daily_Rewards",
+        "credit": "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+        "rights": "Game artwork. No separate reusable-image license was stated in the retrieved article; no CC-BY-SA image license is asserted.",
+        "retrieved": "2026-10-23",
+        "id": "596baa680f5c8f366db42d5ee92db6819c04aa1c872520740deed4fcdae83c78"
+      }
+    },
+    {
+      "slug": "Sinestro_s_Corrupted_Power_Ring",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Sinestro's_Corrupted_Power_Ring?oldid=361103",
+      "revisionId": 361103,
+      "fields": {
+        "item type": "Artifact"
+      },
+      "iconSource": {
+        "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_Sinestro's_Corrupted_Power_Ring_(Base).png",
+        "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/94/Icon_Sinestro%27s_Corrupted_Power_Ring_%28Base%29.png/revision/latest?cb=20250529114521",
+        "discoveredOn": "https://dcuniverseonline.fandom.com/wiki/Sinestro's_Corrupted_Power_Ring",
+        "credit": "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+        "rights": "Game artwork. No separate reusable-image license was stated in the retrieved article; no CC-BY-SA image license is asserted.",
+        "retrieved": "2026-10-25",
+        "id": "0b3c1960b45caa1ff7b889769ceda4e7e2afcb8585b426cf4f15f98c1079dd73"
+      },
+      "effects": [
+        "Recommended for: Damage (Superpowers), Controller",
+        "Overflowing Energy",
+        "[Controller Role]",
+        "Granting group members power has a (15/30/45/60)% chance of powering up the Avatar of Fear for (10/20/30/45) seconds. Cooldown 60s",
+        "[Damage Role]",
+        "Consuming power has a (15/30/45/60)% chance of powering up the Avatar of Will for (10/20/30/45) seconds. Cooldown 60s",
+        "Avatar of Fear",
+        "The Avatar of Fear unleashes an explosion of Fear at the next target you damage increasing their damage taken & restoring your power and Super charge.",
+        "Cooldown: 6s",
+        "Superpower Modifier: 20",
+        "Radius: 3 meters",
+        "Defense Debuff:(2/3/5/8)%",
+        "Debuff Duration: 6s",
+        "Power Restored:(2/4/7/10)%",
+        "Supercharge Restored:(1/2/3/5)%",
+        "Avatar of Will",
+        "The Avatar of Will unleashes an explosion at your current target whenever you damage an enemy",
+        "Cooldown: 3s",
+        "Superpower Modifier: (5/8/12/16)",
+        "Radius: 3 meters"
+      ],
+      "ranks": [
+        ["20", "+Vitalization Stat, +1% Might"],
+        ["40", "+Power Stat, +2% Might"],
+        ["60", "+1% Vitalization"],
+        ["80", "+3% Might, +1% Power"],
+        ["80", "Overflowing Energy  (1)"],
+        ["80", "Avatar of Will (1)"],
+        ["80", "Avatar of Fear (1)"],
+        ["100", "+2% Vitalization"],
+        ["120", "+4% Might, +2% Power"],
+        ["120", "Overflowing Energy  (2)"],
+        ["120", "Avatar of Will (2)"],
+        ["120", "Avatar of Fear (2)"],
+        ["140", "+3% Vitalization"],
+        ["160", "+5% Might, +3% Power"],
+        ["160", "Overflowing Energy  (3)"],
+        ["160", "Avatar of Will (3)"],
+        ["160", "Avatar of Fear (3)"],
+        ["180", "+4% Vitalization"],
+        ["200", "Overflowing Energy  (4)"],
+        ["200", "Avatar of Will (4)"],
+        ["200", "Avatar of Fear (4)"]
+      ]
+    },
+    {
+      "slug": "Soder_Cola_Extreme",
+      "source": "https://dcuniverseonline.fandom.com/wiki/Soder_Cola_Extreme?oldid=299053",
+      "revisionId": 299053,
+      "fields": {
+        "item type": "Consumable",
+        "itemid": "783542",
+        "on use": "+50 to +90 % of Max Power - Self\n''+45 to +80 % of Max Health - Self",
+        "requires level": "30",
+        "description": "Restores Health and Power"
+      },
+      "iconSource": {
+        "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Soder_Cola_Extreme.png",
+        "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/c/c5/Soder_Cola_Extreme.png/revision/latest?cb=20200227052754",
+        "discoveredOn": "https://dcuniverseonline.fandom.com/wiki/Thanagarian_Repair_Vendor_(Thanagar)",
+        "credit": "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+        "rights": "Game artwork. No separate reusable-image license was stated in the retrieved article; no CC-BY-SA image license is asserted.",
+        "retrieved": "2026-10-25",
+        "id": "53cb4c9e68cda6a871f38ea8526668a255a458fecdd6748cb2a25b72fc6537ea"
+      }
+    },
+    {
+      "slug": "The_Transformation_Card",
+      "source": "https://dcuniverseonline.fandom.com/wiki/The_Transformation_Card?oldid=337841",
+      "revisionId": 337841,
+      "fields": {
+        "item type": "Artifact"
+      },
+      "iconSource": {
+        "sourcePage": "https://dcuniverseonline.fandom.com/wiki/File:Icon_The_Transformation_Card_(Base).png",
+        "originalUrl": "https://static.wikia.nocookie.net/dcuo/images/9/97/Icon_The_Transformation_Card_%28Base%29.png/revision/latest?cb=20191125005035",
+        "discoveredOn": "https://dcuniverseonline.fandom.com/wiki/The_Transformation_Card",
+        "credit": "DC Universe Online Wiki contributors; game artwork belongs to its respective owners.",
+        "rights": "Game artwork. No separate reusable-image license was stated in the retrieved article; no CC-BY-SA image license is asserted.",
+        "retrieved": "2026-10-25",
+        "id": "63f4d24c78020f19c113cd620487c27a4b5f7dae238c49726956c0e7a19fad86"
+      },
+      "effects": [
+        "Recommended for: DPS and Healer",
+        "Dark Bargain",
+        "Gain 20% critical chance and 30% critical magnitude on your attacks and heals. Reduce your total damage and healing done by (21/19/17/15)%."
+      ],
+      "ranks": [
+        ["20", "+Restoration Stat"],
+        ["40", "+Might Stat, +Precision Stat"],
+        ["60", "1% Power, 1% Health"],
+        ["80", "Dark Bargain (1)"],
+        ["100", "1% Restoration, 1% Might, 1% Precision"],
+        ["120", "2% Power, 2% Health"],
+        ["120", "Dark Bargain (2)"],
+        ["140", "2% Restoration, 2% Might, 2% Precision"],
+        ["160", "3% Health, 3% Power"],
+        ["160", "Dark Bargain (3)"],
+        ["180", "3% Restoration, 3% Might, 3% Precision"],
+        ["200", "Dark Bargain (4)"]
+      ]
+    }
+  ]
+}
