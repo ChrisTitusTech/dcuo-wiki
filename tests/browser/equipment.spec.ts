@@ -186,3 +186,39 @@ test("restoring a cached page resumes equipment loading and refresh availability
     page.getByRole("link", { name: "Digital Invader Helm" }),
   ).toBeVisible();
 });
+
+test("source-named items without a local article retain their ID and do not create broken links", async ({
+  page,
+}) => {
+  await page.route("**/api/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    await route.fulfill({
+      json: path.endsWith("/equipment")
+        ? {
+            ...snapshot,
+            items: [
+              {
+                itemId: "1234",
+                name: "Source-named artifact",
+                slot: "22",
+                quantity: 1,
+                durability: null,
+                augments: [],
+              },
+            ],
+          }
+        : path === `/api/profiles/${id}`
+          ? profile
+          : {},
+      status: path === "/api/me" ? 401 : 200,
+    });
+  });
+  await page.goto(`/player/?id=${id}`);
+  await expect(
+    page.getByText("Source-named artifact", { exact: true }),
+  ).toBeVisible();
+  await expect(page.getByText("Census ID 1234", { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Source-named artifact" }),
+  ).toHaveCount(0);
+});

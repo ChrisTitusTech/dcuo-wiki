@@ -50,7 +50,7 @@ INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,ma
 const equipmentSeed = `
 INSERT INTO users VALUES ('33333333-3333-4333-8333-333333333333','300','Equipment fixture',0);
 INSERT INTO profiles(user_id,character_id,character_name,world_id,census_json,matched_at,bio,updated_at) VALUES ('33333333-3333-4333-8333-333333333333','987654321','Equipment fixture','2','{"character_id":"987654321","name":"Equipment fixture","world_id":"2"}',0,'',0);
-INSERT INTO equipment_snapshots(character_id,world_id,items_json,synced_at) VALUES ('987654321','2','[{"itemId":"2548220","slot":"14","quantity":1,"durability":null,"augments":[]}]',1700000000);`;
+INSERT INTO equipment_snapshots(character_id,world_id,items_json,synced_at) VALUES ('987654321','2','[{"itemId":"2548220","slot":"14","quantity":1,"durability":null,"augments":[]},{"itemId":"783542","slot":"15","quantity":98,"durability":null,"augments":[]}]',1700000000);`;
 await writeFile(
   join(directory, "seed.sql"),
   sql +

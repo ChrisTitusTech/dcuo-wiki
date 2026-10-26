@@ -4,9 +4,9 @@
   "failures": [],
   "bulk": {
     "already-published": 550,
-    "held": 7085,
-    "converted": 17114,
-    "canonical-alias": 2452,
+    "held": 7033,
+    "converted": 17159,
+    "canonical-alias": 2459,
     "failed": 9,
     "missing": 8
   },
@@ -16,14 +16,14 @@
     "supporting-research": 19,
     "bulk-covered": 2
   },
-  "preparedArticles": 17240,
-  "totalArticles": 18911,
+  "preparedArticles": 17285,
+  "totalArticles": 18956,
   "categories": {
     "Character": 35,
     "Characters": 910,
     "Collectibles": 805,
     "Combat": 571,
-    "Equipment": 8887,
+    "Equipment": 8932,
     "Feats": 21,
     "Guides": 1,
     "Housing": 3157,
@@ -33,5 +33,5 @@
     "Story": 165,
     "Updates": 739
   },
-  "approvedMedia": 27524
+  "approvedMedia": 27544
 }

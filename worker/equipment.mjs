@@ -1,6 +1,8 @@
 import { boundedBody, now, random, HttpError } from "./security.mjs";
-import knownItems from "../data/census-items.json" with { type: "json" };
-const lookup = new Map(knownItems.map((item) => [item.itemId, item]));
+import knownItems from "../data/census-item-index.json" with { type: "json" };
+const lookup = new Map(
+  knownItems.map(([itemId, slug, title]) => [itemId, { slug, title }]),
+);
 const id = (value) =>
   typeof value === "string" && /^[1-9]\d{0,29}$/.test(value);
 const configured = (env) =>
@@ -72,7 +74,11 @@ export async function fetchEquipment(
 const describe = (itemId) => {
   const known = lookup.get(itemId);
   return known
-    ? { itemId, name: known.title, href: `/wiki/${known.slug}/` }
+    ? {
+        itemId,
+        name: known.title,
+        ...(known.slug ? { href: `/wiki/${known.slug}/` } : {}),
+      }
     : { itemId, name: `Census item ${itemId}` };
 };
 export async function equipment(

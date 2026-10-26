@@ -753,3 +753,11 @@ before starting the resumable image writer.
 - Cache successful snapshots in D1 for 15 minutes, enforce a five-minute manual cooldown/outage retry, and use a refresh lease to avoid duplicate upstream requests. Preserve the last successful snapshot during outages; distinguish successful empty results from failures.
 - Link exact source-backed item IDs to existing articles. Unidentified gear and augments retain numeric IDs. Do not infer slot names, icons, current stats, or character ownership from incomplete Census data.
 - Acceptance: unit coverage of query scope, validation, cache isolation, concurrency and failures; browser coverage of owner controls, mobile display and stale snapshots; full existing gates, independent review, D1 migration, main deployment and live API/profile checks.
+
+## Equipment identity matching
+
+- Retrieve hidden source `Item.itemID` fields through revision-pinned MediaWiki batches with Firecrawl; do not infer IDs from titles, icons, item stats, or slot position.
+- Build an offline evidence registry and compact Worker index. Use pinned DCUOBot artifact/ally identity facts for definitions missing from Census. Resolve only documented canonical replacements; keep conflicting IDs unidentified.
+- Restore substantive artifact articles from full source infobox effects/rank tables. Keep source placeholders held, and show independently sourced names without broken article links where no useful local article exists.
+- Preserve all established article bodies and existing raw character snapshots. Resolve current names when a cached loadout is read so no character relinking or database migration is needed.
+- Acceptance: parser/conflict and provenance checks, real article destinations, full local validation, independent review, main deployment, and live profile names/links.

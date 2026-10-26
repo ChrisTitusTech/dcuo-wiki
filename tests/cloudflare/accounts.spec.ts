@@ -228,6 +228,7 @@ test("equipment endpoint uses D1 and retains a cached loadout while Census is un
   expect(data.unavailable).toBe(true);
   expect(data.items[0].href).toBe("/wiki/Digital_Invader_Helm/");
   expect(data.syncedAt).toBe(1700000000);
+  expect(data.items[1].href).toBe("/wiki/Soder_Cola_Extreme/");
   expect(
     (
       await request.post("/api/profile/equipment/refresh", {

@@ -96,3 +96,25 @@ Migration `0005_equipment_snapshots.sql` adds the D1 cache. Apply it before depl
 Successful snapshots remain fresh for 15 minutes. A stale saved snapshot is returned while the Worker refreshes it in the background; a first sync waits up to eight seconds for Census. The signed-in owner can use `POST /api/profile/equipment/refresh` with an empty JSON object, at most once per five minutes per character. A database lease prevents concurrent requests from duplicating Census calls. Outages back off for five minutes and preserve the last successful snapshot and its timestamp. HTTP-200 API errors, mismatched characters/worlds, invalid rows, oversized responses, and potentially truncated lists are failures, not empty loadouts. A valid empty result is shown explicitly.
 
 Item definitions are currently incomplete in Census. `data/census-items.json` contains exact numeric IDs supported by imported article text, with source URLs and evidence. These IDs resolve only to published local articles. Other IDs stay unidentified; no guessed slot labels, icons, item stats or historical stat totals are presented. Augment IDs are shown when available, and negative sentinel values are omitted. Durability is a raw Census value, not a calculated percentage. The imported [Census data reference](https://dcuo-wiki.com/wiki/Daybreak_Games_Census_Data_Links/) describes the missing item definitions and dated historical coverage. Expand mappings only with exact ID evidence, never a name similarity match.
+
+### Item identity sources and refresh procedure
+
+`data/census-item-index.json` is the compact runtime lookup. Its 3,628 identities supply 2,863 article links. The remaining 765 identities have exact source-backed names but no substantive local article; they display as text with their ID rather than linking to an empty page. All 65 unresolved ID conflicts stay excluded. Claims from unpublished source pages participate in conflict detection too. The one explicit canonical rule links the shared Soder Cola Extreme ID to its current article while retaining the historical claim in the audit.
+
+Identity evidence is committed separately in `data/census-item-evidence.json`, `data/census-wiki-items.json`, `data/census-community-items.json`, and `data/census-item-conflicts.json`. The wiki records pin revision IDs from hidden raw `Item.itemID` fields; the community records pin DCUOBot's source commit. The original prose-backed identities remain in `data/census-items.json`. No runtime request calls a third-party item database. CI checks the generated lookup offline.
+
+The local source refresh requires the existing original article archive. The downloaders read the existing ignored Firecrawl key, save resumable jobs under `.import-cache/census-items/`, pace API requests, and back off five minutes after rate limits or network timeouts. Oversized revision responses are split into smaller lead-section batches instead of accepting truncated JSON.
+
+```sh
+node scripts/download-census-item-sources.mjs --download
+node scripts/download-census-item-infoboxes.mjs --download
+node scripts/extract-census-wiki-items.mjs
+node scripts/restore-census-artifact-articles.mjs --write
+node scripts/file-catalog-captures.mjs
+node scripts/verify-catalog-filing.mjs
+node scripts/build-catalog-index.mjs
+node scripts/build-census-item-index.mjs
+npm run validate
+```
+
+If a revision batch is split or a source is omitted, rerun its downloader to retrieve the missing child batches. A successful extraction refuses missing batches. The artifact importer retains incomplete source descriptions as holds; it never creates a name-only article. Item IDs are compared as exact strings, and multiple variant IDs may point to the same artifact article. The three source holds are Grimbor's Chains, Computo's Redistributor HUD, and Red Tornado Redistribution Module. Sources with new definitions can be added later without changing saved character equipment.

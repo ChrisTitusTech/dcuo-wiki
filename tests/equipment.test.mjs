@@ -286,3 +286,29 @@ test("API refresh requires sign-in, correct origin and a saved profile; clients 
   assert.equal(publicData.discord_id, undefined);
   assert.equal(publicResponse.headers.get("Cache-Control"), "no-store");
 });
+
+test("cached equipment identities resolve to local consumable, artifact and ally pages", async () => {
+  const { env } = setup();
+  const data = await equipment(env, character, {
+    fetcher: async () =>
+      response([
+        { ...row, item_id: "783542", equipment_slot_id: "14" },
+        { ...row, item_id: "6795977", equipment_slot_id: "22" },
+        { ...row, item_id: "8129032", equipment_slot_id: "32" },
+      ]),
+  });
+  assert.deepEqual(
+    data.items.map((item) => item.href),
+    [
+      "/wiki/Soder_Cola_Extreme/",
+      "/wiki/The_Transformation_Card/",
+      "/wiki/Ally_Shazam/",
+    ],
+  );
+  const cached = await equipment(env, character, {
+    fetcher: () => {
+      throw new Error("must reuse the saved snapshot");
+    },
+  });
+  assert.deepEqual(cached.items, data.items);
+});

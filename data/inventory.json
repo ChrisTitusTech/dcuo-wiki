@@ -7,11 +7,11 @@
     "allPagesBatches": 84,
     "articleCandidates": 28641,
     "supportPages": 12,
-    "published": 18588,
+    "published": 18633,
     "duplicateObservations": 503,
     "excludedLinks": 113,
-    "redirects": 2951,
-    "held": 7085,
+    "redirects": 2958,
+    "held": 7033,
     "sourceErrors": 17,
     "unreviewed": 0
   },
@@ -13524,14 +13524,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Ancient_Tantu_Totem",
       "title": "Ancient_Tantu_Totem",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Alien+Technology"
       ],
+      "slug": "Reforged_Tantu_Totem",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Reforged_Tantu_Totem",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Reforged_Tantu_Totem"
     },
     {
       "kind": "article",
@@ -24355,14 +24355,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/B.O.P._Commlink",
       "title": "B.O.P._Commlink",
-      "status": "held",
+      "status": "published",
+      "slug": "B_O_P_Commlink",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Atlantis+Twin+Wall+Lamps"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/B.O.P._Commlink",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/B.O.P._Commlink"
     },
     {
       "kind": "article",
@@ -41686,14 +41686,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Bottled_City_Soder",
       "title": "Bottled_City_Soder",
-      "status": "held",
+      "status": "published",
+      "slug": "Bottled_City_Soder",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bombshell+Platinum+Poster+%28Purchased%29"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Bottled_City_Soder",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Bottled_City_Soder"
     },
     {
       "kind": "article",
@@ -44638,14 +44638,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Brand_of_Hecate",
       "title": "Brand_of_Hecate",
-      "status": "held",
+      "status": "published",
+      "slug": "Brand_of_Hecate",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Bombshell+Platinum+Poster+%28Purchased%29"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Brand_of_Hecate",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Brand_of_Hecate"
     },
     {
       "kind": "article",
@@ -49560,14 +49560,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Candle_of_Neron",
       "title": "Candle_of_Neron",
-      "status": "held",
+      "status": "published",
+      "slug": "Candle_of_Neron",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Campaign"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Candle_of_Neron",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Candle_of_Neron"
     },
     {
       "kind": "article",
@@ -57062,14 +57062,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Circe's_Mask",
       "title": "Circe's_Mask",
-      "status": "held",
+      "status": "published",
+      "slug": "Circe_s_Mask",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Circe's_Mask",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Circe's_Mask"
     },
     {
       "kind": "article",
@@ -57917,14 +57917,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkh%C3%BCnd",
       "title": "Claw_of_Aelkhünd",
-      "status": "held",
+      "status": "published",
+      "slug": "Claw_of_Aelkh_nd",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkh%C3%BCnd",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkh%C3%BCnd"
     },
     {
       "kind": "article",
@@ -57942,14 +57942,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkhund",
       "title": "Claw_of_Aelkhund",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Challenger%27s+Agressive+Bow"
       ],
+      "slug": "Claw_of_Aelkh_nd",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkh%C3%BCnd",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Claw_of_Aelkh%C3%BCnd"
     },
     {
       "kind": "article",
@@ -59768,14 +59768,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Cog_of_Mageddon",
       "title": "Cog_of_Mageddon",
-      "status": "held",
+      "status": "published",
+      "slug": "Cog_of_Mageddon",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Cleansed+Malediction"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Cog_of_Mageddon",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Cog_of_Mageddon"
     },
     {
       "kind": "article",
@@ -81229,14 +81229,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dead_King's_Scepter",
       "title": "Dead_King's_Scepter",
-      "status": "held",
+      "status": "published",
+      "slug": "Dead_King_s_Scepter",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_King's_Scepter",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_King's_Scepter"
     },
     {
       "kind": "article",
@@ -81280,14 +81280,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dead_King%E2%80%99s_Scepter",
       "title": "Dead_King’s_Scepter",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Day+of+Reckoning%3A+Elite+Recipe+Cache+-+Healer+Role"
       ],
+      "slug": "Dead_King_s_Scepter",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_King's_Scepter",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Dead_King's_Scepter"
     },
     {
       "kind": "article",
@@ -86548,14 +86548,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Dilustel_Refractor",
       "title": "Dilustel_Refractor",
-      "status": "held",
+      "status": "published",
+      "slug": "Dilustel_Refractor",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Detective+Comics+Batman+No.1000+2010+Variant"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Dilustel_Refractor",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Dilustel_Refractor"
     },
     {
       "kind": "article",
@@ -95883,14 +95883,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Ebon's_Untethered_Shadow",
       "title": "Ebon's_Untethered_Shadow",
-      "status": "held",
+      "status": "published",
+      "slug": "Ebon_s_Untethered_Shadow",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Dual+Pistol+Weapon+List+by+DPS"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Ebon's_Untethered_Shadow",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Ebon's_Untethered_Shadow"
     },
     {
       "kind": "article",
@@ -110741,14 +110741,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Entwined_Rings_of_Azar",
       "title": "Entwined_Rings_of_Azar",
-      "status": "held",
+      "status": "published",
+      "slug": "Entwined_Rings_of_Azar",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Enhanced+Orange+Lantern+Corp+Emblem"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Entwined_Rings_of_Azar",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Entwined_Rings_of_Azar"
     },
     {
       "kind": "article",
@@ -113442,14 +113442,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Everyman_Prototype",
       "title": "Everyman_Prototype",
-      "status": "held",
+      "status": "published",
+      "slug": "Everyman_Prototype",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Episode+3"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Everyman_Prototype",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Everyman_Prototype"
     },
     {
       "kind": "article",
@@ -116496,14 +116496,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Eye_of_Gemini",
       "title": "Eye_of_Gemini",
-      "status": "held",
+      "status": "published",
+      "slug": "Eye_of_Gemini",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Extracted+Nth+Metal"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Eye_of_Gemini",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Eye_of_Gemini"
     },
     {
       "kind": "article",
@@ -134777,14 +134777,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Gem_of_Horus",
       "title": "Gem_of_Horus",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Garland+of+Life"
       ],
+      "slug": "The_Gem_of_Horus",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Gem_of_Horus",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Gem_of_Horus"
     },
     {
       "kind": "article",
@@ -146541,14 +146541,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Grimorium_Verum",
       "title": "Grimorium_Verum",
-      "status": "held",
+      "status": "published",
+      "slug": "Grimorium_Verum",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Grappler%27s+Vanadium+Knucklespike"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Grimorium_Verum",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Grimorium_Verum"
     },
     {
       "kind": "article",
@@ -155572,14 +155572,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Heart_of_Isis",
       "title": "Heart_of_Isis",
-      "status": "held",
+      "status": "published",
+      "slug": "Heart_of_Isis",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Harley+Quinn+vs.+Apokolips%3A+Loot+Cache"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Heart_of_Isis",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Heart_of_Isis"
     },
     {
       "kind": "article",
@@ -186327,14 +186327,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/La-Mort_Card",
       "title": "La-Mort_Card",
-      "status": "held",
+      "status": "published",
+      "slug": "La-Mort_Card",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Kaznian+Merchant"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/La-Mort_Card",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/La-Mort_Card"
     },
     {
       "kind": "article",
@@ -188141,14 +188141,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lasso_of_Truth_(Artifact)",
       "title": "Lasso_of_Truth_(Artifact)",
-      "status": "held",
+      "status": "published",
+      "slug": "Lasso_of_Truth_Artifact",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lasso_of_Truth_(Artifact)",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lasso_of_Truth_(Artifact)"
     },
     {
       "kind": "article",
@@ -188619,14 +188619,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lazarus_Pit_Water",
       "title": "Lazarus_Pit_Water",
-      "status": "held",
+      "status": "published",
+      "slug": "Lazarus_Pit_Water",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lazarus_Pit_Water",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lazarus_Pit_Water"
     },
     {
       "kind": "article",
@@ -190470,14 +190470,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Legionnaire's_Sparring_AI",
       "title": "Legionnaire's_Sparring_AI",
-      "status": "held",
+      "status": "published",
+      "slug": "Legionnaire_s_Sparring_AI",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Legionnaire's_Sparring_AI",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Legionnaire's_Sparring_AI"
     },
     {
       "kind": "article",
@@ -190678,14 +190678,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Lernaea's_Amulet",
       "title": "Lernaea's_Amulet",
-      "status": "held",
+      "status": "published",
+      "slug": "Lernaea_s_Amulet",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Large+Power+Column"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lernaea's_Amulet",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Lernaea's_Amulet"
     },
     {
       "kind": "article",
@@ -198145,14 +198145,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/M.E.R.C.Y._Amazotron_Matrix",
       "title": "M.E.R.C.Y._Amazotron_Matrix",
-      "status": "held",
+      "status": "published",
+      "slug": "M_E_R_C_Y_Amazotron_Matrix",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Lovestruck+Painter"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/M.E.R.C.Y._Amazotron_Matrix",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/M.E.R.C.Y._Amazotron_Matrix"
     },
     {
       "kind": "article",
@@ -200142,14 +200142,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Manacles_of_Force",
       "title": "Manacles_of_Force",
-      "status": "held",
+      "status": "published",
+      "slug": "Manacles_of_Force",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Lovestruck+Painter"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Manacles_of_Force",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Manacles_of_Force"
     },
     {
       "kind": "article",
@@ -217420,14 +217420,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Mystic_Symbol_Of_The_Seven",
       "title": "Mystic_Symbol_Of_The_Seven",
-      "status": "held",
+      "status": "published",
+      "slug": "Mystic_Symbol_Of_The_Seven",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Morality"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Mystic_Symbol_Of_The_Seven",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Mystic_Symbol_Of_The_Seven"
     },
     {
       "kind": "article",
@@ -225228,14 +225228,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Omegahedron",
       "title": "Omegahedron",
-      "status": "held",
+      "status": "published",
+      "slug": "Omegahedron",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Oasis+Khadga"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Omegahedron",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Omegahedron"
     },
     {
       "kind": "article",
@@ -227018,14 +227018,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion",
       "title": "Orb_of_Arion",
-      "status": "held",
+      "status": "published",
+      "slug": "Orb_of_Arion",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Oasis+Khadga"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion"
     },
     {
       "kind": "article",
@@ -229253,14 +229253,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Page_of_Destiny",
       "title": "Page_of_Destiny",
-      "status": "held",
+      "status": "published",
+      "slug": "Page_of_Destiny",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Otherworldly+Armored+Vest"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Page_of_Destiny",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Page_of_Destiny"
     },
     {
       "kind": "article",
@@ -230869,14 +230869,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Parasite's_Power_Harness",
       "title": "Parasite's_Power_Harness",
-      "status": "held",
+      "status": "published",
+      "slug": "Parasite_s_Power_Harness",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Otherworldly+Armored+Vest"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Parasite's_Power_Harness",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Parasite's_Power_Harness"
     },
     {
       "kind": "article",
@@ -233733,14 +233733,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Philosopher's_Stone",
       "title": "Philosopher's_Stone",
-      "status": "held",
+      "status": "published",
+      "slug": "Philosopher_s_Stone",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Perpetua+Necklace+Accessory"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Philosopher's_Stone",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Philosopher's_Stone"
     },
     {
       "kind": "article",
@@ -233979,14 +233979,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Pied_Piper's_Flute",
       "title": "Pied_Piper's_Flute",
-      "status": "held",
+      "status": "published",
+      "slug": "Pied_Piper_s_Flute",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Perpetua+Necklace+Accessory"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Pied_Piper's_Flute",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Pied_Piper's_Flute"
     },
     {
       "kind": "article",
@@ -272052,14 +272052,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Purple_Healing_Ray",
       "title": "Purple_Healing_Ray",
-      "status": "held",
+      "status": "published",
+      "slug": "Purple_Healing_Ray",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Priority+Taunt"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Purple_Healing_Ray",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Purple_Healing_Ray"
     },
     {
       "kind": "article",
@@ -273901,14 +273901,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Quislet",
       "title": "Quislet",
-      "status": "held",
+      "status": "published",
+      "slug": "Quislet",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Quantum+Paradox+Reaper"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Quislet",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Quislet"
     },
     {
       "kind": "article",
@@ -280393,14 +280393,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Reforged_Tantu_Totem",
       "title": "Reforged_Tantu_Totem",
-      "status": "held",
+      "status": "published",
+      "slug": "Reforged_Tantu_Totem",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Recruit"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Reforged_Tantu_Totem",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Reforged_Tantu_Totem"
     },
     {
       "kind": "article",
@@ -295712,14 +295712,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Scrap_of_the_Soul_Cloak",
       "title": "Scrap_of_the_Soul_Cloak",
-      "status": "held",
+      "status": "published",
+      "slug": "Scrap_of_the_Soul_Cloak",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Saving+Justice"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Scrap_of_the_Soul_Cloak",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Scrap_of_the_Soul_Cloak"
     },
     {
       "kind": "article",
@@ -304067,14 +304067,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Sinestro's_Corrupted_Power_Ring",
       "title": "Sinestro's_Corrupted_Power_Ring",
-      "status": "held",
+      "status": "published",
+      "slug": "Sinestro_s_Corrupted_Power_Ring",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Side+Quests"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Sinestro's_Corrupted_Power_Ring",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Sinestro's_Corrupted_Power_Ring"
     },
     {
       "kind": "article",
@@ -308633,14 +308633,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Solar_Amplifier",
       "title": "Solar_Amplifier",
-      "status": "held",
+      "status": "published",
+      "slug": "Solar_Amplifier",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Solar_Amplifier",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Solar_Amplifier"
     },
     {
       "kind": "article",
@@ -310451,14 +310451,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Source_Shard",
       "title": "Source_Shard",
-      "status": "held",
+      "status": "published",
+      "slug": "Source_Shard",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Source_Shard",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Source_Shard"
     },
     {
       "kind": "article",
@@ -311825,27 +311825,27 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Spectral_Acolyte",
       "title": "Spectral_Acolyte",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ],
+      "slug": "Orb_of_Arion",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion"
     },
     {
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Spectral_Ally",
       "title": "Spectral_Ally",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Snow+Tree+Bent"
       ],
+      "slug": "Orb_of_Arion",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Orb_of_Arion"
     },
     {
       "kind": "article",
@@ -316624,14 +316624,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Starheart_Fragment",
       "title": "Starheart_Fragment",
-      "status": "held",
+      "status": "published",
+      "slug": "Starheart_Fragment",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Speed+Force+Ring"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Starheart_Fragment",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Starheart_Fragment"
     },
     {
       "kind": "article",
@@ -333512,14 +333512,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Tetrahedron_of_Urgrund",
       "title": "Tetrahedron_of_Urgrund",
-      "status": "held",
+      "status": "published",
+      "slug": "Tetrahedron_of_Urgrund",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Tetrahedron_of_Urgrund",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Tetrahedron_of_Urgrund"
     },
     {
       "kind": "article",
@@ -334904,14 +334904,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Clarion",
       "title": "The_Clarion",
-      "status": "held",
+      "status": "published",
+      "slug": "The_Clarion",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Clarion",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Clarion"
     },
     {
       "kind": "article",
@@ -335275,14 +335275,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Fang",
       "title": "The_Demon's_Fang",
-      "status": "held",
+      "status": "published",
+      "slug": "The_Demon_s_Fang",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Team+Riddles+Graffiti+-+Question+Mark+Takeover"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Fang",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Demon's_Fang"
     },
     {
       "kind": "article",
@@ -335916,14 +335916,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Gem_of_Horus",
       "title": "The_Gem_of_Horus",
-      "status": "held",
+      "status": "published",
+      "slug": "The_Gem_of_Horus",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Gem_of_Horus",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Gem_of_Horus"
     },
     {
       "kind": "article",
@@ -337029,14 +337029,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Omega_Totality",
       "title": "The_Omega_Totality",
-      "status": "held",
+      "status": "published",
+      "slug": "The_Omega_Totality",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Omega_Totality",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Omega_Totality"
     },
     {
       "kind": "article",
@@ -338026,14 +338026,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Stategist_Card",
       "title": "The_Stategist_Card",
-      "status": "held",
+      "status": "redirect",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ],
+      "slug": "The_Strategist_Card",
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Strategist_Card",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Strategist_Card"
     },
     {
       "kind": "article",
@@ -338052,14 +338052,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Strategist_Card",
       "title": "The_Strategist_Card",
-      "status": "held",
+      "status": "published",
+      "slug": "The_Strategist_Card",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Strategist_Card",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Strategist_Card"
     },
     {
       "kind": "article",
@@ -338192,14 +338192,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/The_Transformation_Card",
       "title": "The_Transformation_Card",
-      "status": "held",
+      "status": "published",
+      "slug": "The_Transformation_Card",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=The+First+Clue"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Transformation_Card",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/The_Transformation_Card"
     },
     {
       "kind": "article",
@@ -354009,14 +354009,14 @@
       "kind": "article",
       "url": "https://dcuniverseonline.fandom.com/wiki/Venom_Wrist_Dispenser",
       "title": "Venom_Wrist_Dispenser",
-      "status": "held",
+      "status": "published",
+      "slug": "Venom_Wrist_Dispenser",
       "discoveredOn": [
         "https://dcuniverseonline.fandom.com/wiki/Special:AllPages?from=Vaulty+the+Snowman"
       ],
       "category": "Equipment",
       "type": "Artifacts",
-      "canonical": "https://dcuniverseonline.fandom.com/wiki/Venom_Wrist_Dispenser",
-      "reason": "Artifact rank/effect details absent from capture"
+      "canonical": "https://dcuniverseonline.fandom.com/wiki/Venom_Wrist_Dispenser"
     },
     {
       "kind": "article",

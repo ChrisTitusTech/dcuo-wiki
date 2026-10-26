@@ -54,7 +54,7 @@ export function equipmentPanel() {
           slot.textContent = `Slot ${item.slot}`;
           name.append(itemLabel(item));
           const id = document.createElement("small");
-          if (item.href) {
+          if (item.name !== `Census item ${item.itemId}`) {
             id.textContent = `Census ID ${item.itemId}`;
             name.append(document.createElement("br"), id);
           }

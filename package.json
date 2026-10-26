@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "check": "astro check",
-    "build": "node scripts/build-catalog-index.mjs && node scripts/build-guide-links.mjs && node scripts/inventory.mjs --check && node scripts/validate-content.mjs && node scripts/validate-feats.mjs && astro build && node scripts/build-editor-baselines.mjs && node scripts/check-budget.mjs",
+    "build": "node scripts/build-catalog-index.mjs && node scripts/build-census-item-index.mjs --check && node scripts/build-guide-links.mjs && node scripts/inventory.mjs --check && node scripts/validate-content.mjs && node scripts/validate-feats.mjs && astro build && node scripts/build-editor-baselines.mjs && node scripts/check-budget.mjs",
     "preview": "astro preview --host 0.0.0.0",
-    "test": "node scripts/build-catalog-index.mjs && node scripts/build-guide-links.mjs && node --test tests/*.test.mjs",
+    "test": "node scripts/build-catalog-index.mjs && node scripts/build-census-item-index.mjs --check && node scripts/build-guide-links.mjs && node --test tests/*.test.mjs",
     "test:browser": "playwright test",
     "validate": "npm run check && npm test && npm run build",
     "import": "node scripts/import.mjs",

@@ -1,0 +1,1227 @@
+[
+  {
+    "itemId": "5151620",
+    "name": "Tetrahedron of Urgrund",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Tetrahedron of Urgrund"
+  },
+  {
+    "itemId": "8326683",
+    "name": "Tetrahedron of Urgrund",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Tetrahedron of Urgrund"
+  },
+  {
+    "itemId": "8341832",
+    "name": "Tetrahedron of Urgrund",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Tetrahedron of Urgrund"
+  },
+  {
+    "itemId": "5151621",
+    "name": "Cog of Mageddon",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Cog of Mageddon"
+  },
+  {
+    "itemId": "8326684",
+    "name": "Cog of Mageddon",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Cog of Mageddon"
+  },
+  {
+    "itemId": "8341833",
+    "name": "Cog of Mageddon",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Cog of Mageddon"
+  },
+  {
+    "itemId": "5151622",
+    "name": "Starheart Fragment",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Starheart Fragment"
+  },
+  {
+    "itemId": "8326685",
+    "name": "Starheart Fragment",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Starheart Fragment"
+  },
+  {
+    "itemId": "8341834",
+    "name": "Starheart Fragment",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Starheart Fragment"
+  },
+  {
+    "itemId": "5151623",
+    "name": "Entwined Rings of Azar",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Entwined Rings of Azar"
+  },
+  {
+    "itemId": "8326686",
+    "name": "Entwined Rings of Azar",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Entwined Rings of Azar"
+  },
+  {
+    "itemId": "8341835",
+    "name": "Entwined Rings of Azar",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Entwined Rings of Azar"
+  },
+  {
+    "itemId": "5180346",
+    "name": "Dilustel Refractor",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Dilustel Refractor"
+  },
+  {
+    "itemId": "8326687",
+    "name": "Dilustel Refractor",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Dilustel Refractor"
+  },
+  {
+    "itemId": "8341836",
+    "name": "Dilustel Refractor",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Dilustel Refractor"
+  },
+  {
+    "itemId": "5271632",
+    "name": "Scrap of the Soul Cloak",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Scrap of the Soul Cloak"
+  },
+  {
+    "itemId": "8326688",
+    "name": "Scrap of the Soul Cloak",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Scrap of the Soul Cloak"
+  },
+  {
+    "itemId": "8341837",
+    "name": "Scrap of the Soul Cloak",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Scrap of the Soul Cloak"
+  },
+  {
+    "itemId": "5271633",
+    "name": "Legionnaire's Sparring AI",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Legionnaire's Sparring AI"
+  },
+  {
+    "itemId": "8326689",
+    "name": "Legionnaire's Sparring AI",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Legionnaire's Sparring AI"
+  },
+  {
+    "itemId": "8341838",
+    "name": "Legionnaire's Sparring AI",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Legionnaire's Sparring AI"
+  },
+  {
+    "itemId": "5271634",
+    "name": "Parasite's Power Harness",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Parasite's Power Harness"
+  },
+  {
+    "itemId": "8326690",
+    "name": "Parasite's Power Harness",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Parasite's Power Harness"
+  },
+  {
+    "itemId": "8341839",
+    "name": "Parasite's Power Harness",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Parasite's Power Harness"
+  },
+  {
+    "itemId": "5271635",
+    "name": "Lazarus Pit Water",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lazarus Pit Water"
+  },
+  {
+    "itemId": "8326691",
+    "name": "Lazarus Pit Water",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lazarus Pit Water"
+  },
+  {
+    "itemId": "8341840",
+    "name": "Lazarus Pit Water",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lazarus Pit Water"
+  },
+  {
+    "itemId": "5274522",
+    "name": "Omegahedron",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Omegahedron"
+  },
+  {
+    "itemId": "8326692",
+    "name": "Omegahedron",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Omegahedron"
+  },
+  {
+    "itemId": "8341841",
+    "name": "Omegahedron",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Omegahedron"
+  },
+  {
+    "itemId": "5286624",
+    "name": "Venom Wrist Dispenser",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Venom Wrist Dispenser"
+  },
+  {
+    "itemId": "8326693",
+    "name": "Venom Wrist Dispenser",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Venom Wrist Dispenser"
+  },
+  {
+    "itemId": "8341842",
+    "name": "Venom Wrist Dispenser",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Venom Wrist Dispenser"
+  },
+  {
+    "itemId": "5286625",
+    "name": "The Demon's Fang",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Demon's Fang"
+  },
+  {
+    "itemId": "8326694",
+    "name": "The Demon's Fang",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Demon's Fang"
+  },
+  {
+    "itemId": "8341843",
+    "name": "The Demon's Fang",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Demon's Fang"
+  },
+  {
+    "itemId": "5319139",
+    "name": "Amulet of Rao",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Amulet of Rao"
+  },
+  {
+    "itemId": "8326695",
+    "name": "Amulet of Rao",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Amulet of Rao"
+  },
+  {
+    "itemId": "8341844",
+    "name": "Amulet of Rao",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Amulet of Rao"
+  },
+  {
+    "itemId": "5577638",
+    "name": "Bottled City Soder",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Bottled City Soder"
+  },
+  {
+    "itemId": "5594425",
+    "name": "Solar Amplifier",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Solar Amplifier"
+  },
+  {
+    "itemId": "8326696",
+    "name": "Solar Amplifier",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Solar Amplifier"
+  },
+  {
+    "itemId": "8341845",
+    "name": "Solar Amplifier",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Solar Amplifier"
+  },
+  {
+    "itemId": "6235423",
+    "name": "Dead King's Scepter",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Dead King's Scepter"
+  },
+  {
+    "itemId": "8326697",
+    "name": "Dead King's Scepter",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Dead King's Scepter"
+  },
+  {
+    "itemId": "8341846",
+    "name": "Dead King's Scepter",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Dead King's Scepter"
+  },
+  {
+    "itemId": "6238273",
+    "name": "Manacles of Force",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Manacles of Force"
+  },
+  {
+    "itemId": "8326698",
+    "name": "Manacles of Force",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Manacles of Force"
+  },
+  {
+    "itemId": "8341847",
+    "name": "Manacles of Force",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Manacles of Force"
+  },
+  {
+    "itemId": "6238490",
+    "name": "Eye of Gemini",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Eye of Gemini"
+  },
+  {
+    "itemId": "8326699",
+    "name": "Eye of Gemini",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Eye of Gemini"
+  },
+  {
+    "itemId": "8341848",
+    "name": "Eye of Gemini",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Eye of Gemini"
+  },
+  {
+    "itemId": "6244076",
+    "name": "Orb of Arion",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Orb of Arion"
+  },
+  {
+    "itemId": "8326700",
+    "name": "Orb of Arion",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Orb of Arion"
+  },
+  {
+    "itemId": "8341849",
+    "name": "Orb of Arion",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Orb of Arion"
+  },
+  {
+    "itemId": "6375287",
+    "name": "Grimorium Verum",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Grimorium Verum"
+  },
+  {
+    "itemId": "8326701",
+    "name": "Grimorium Verum",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Grimorium Verum"
+  },
+  {
+    "itemId": "8341850",
+    "name": "Grimorium Verum",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Grimorium Verum"
+  },
+  {
+    "itemId": "6519246",
+    "name": "Philosopher's Stone",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Philosopher's Stone"
+  },
+  {
+    "itemId": "8326702",
+    "name": "Philosopher's Stone",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Philosopher's Stone"
+  },
+  {
+    "itemId": "8341851",
+    "name": "Philosopher's Stone",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Philosopher's Stone"
+  },
+  {
+    "itemId": "6522353",
+    "name": "Claw of Aelkhünd",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Claw of Aelkhünd"
+  },
+  {
+    "itemId": "8326703",
+    "name": "Claw of Aelkhünd",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Claw of Aelkhünd"
+  },
+  {
+    "itemId": "8341852",
+    "name": "Claw of Aelkhünd",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Claw of Aelkhünd"
+  },
+  {
+    "itemId": "6555906",
+    "name": "Mystic Symbol Of The Seven",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Mystic Symbol Of The Seven"
+  },
+  {
+    "itemId": "8326704",
+    "name": "Mystic Symbol Of The Seven",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Mystic Symbol Of The Seven"
+  },
+  {
+    "itemId": "8341853",
+    "name": "Mystic Symbol Of The Seven",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Mystic Symbol Of The Seven"
+  },
+  {
+    "itemId": "6686003",
+    "name": "B.O.P. Commlink",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "B.O.P. Commlink"
+  },
+  {
+    "itemId": "8326705",
+    "name": "B.O.P. Commlink",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "B.O.P. Commlink"
+  },
+  {
+    "itemId": "8341854",
+    "name": "B.O.P. Commlink",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "B.O.P. Commlink"
+  },
+  {
+    "itemId": "6793038",
+    "name": "The Strategist Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Strategist Card"
+  },
+  {
+    "itemId": "8326706",
+    "name": "The Strategist Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Strategist Card"
+  },
+  {
+    "itemId": "8341855",
+    "name": "The Strategist Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Strategist Card"
+  },
+  {
+    "itemId": "6793107",
+    "name": "The La-Mort Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "La-Mort Card"
+  },
+  {
+    "itemId": "8326707",
+    "name": "The La-Mort Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "La-Mort Card"
+  },
+  {
+    "itemId": "8341856",
+    "name": "The La-Mort Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "La-Mort Card"
+  },
+  {
+    "itemId": "6794485",
+    "name": "Page of Destiny",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Page of Destiny"
+  },
+  {
+    "itemId": "8326708",
+    "name": "Page of Destiny",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Page of Destiny"
+  },
+  {
+    "itemId": "8341857",
+    "name": "Page of Destiny",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Page of Destiny"
+  },
+  {
+    "itemId": "6795977",
+    "name": "The Transformation Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Transformation Card"
+  },
+  {
+    "itemId": "8326709",
+    "name": "The Transformation Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Transformation Card"
+  },
+  {
+    "itemId": "8341858",
+    "name": "The Transformation Card",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Transformation Card"
+  },
+  {
+    "itemId": "6796364",
+    "name": "Gem of Horus",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Gem of Horus"
+  },
+  {
+    "itemId": "8326710",
+    "name": "Gem of Horus",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Gem of Horus"
+  },
+  {
+    "itemId": "8341859",
+    "name": "Gem of Horus",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Gem of Horus"
+  },
+  {
+    "itemId": "6885524",
+    "name": "Everyman Prototype",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Everyman Prototype"
+  },
+  {
+    "itemId": "8326711",
+    "name": "Everyman Prototype",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Everyman Prototype"
+  },
+  {
+    "itemId": "8341860",
+    "name": "Everyman Prototype",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Everyman Prototype"
+  },
+  {
+    "itemId": "6895809",
+    "name": "Source Shard",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Source Shard"
+  },
+  {
+    "itemId": "8326712",
+    "name": "Source Shard",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Source Shard"
+  },
+  {
+    "itemId": "8341861",
+    "name": "Source Shard",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Source Shard"
+  },
+  {
+    "itemId": "6971511",
+    "name": "Lernaea's Amulet",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lernaea's Amulet"
+  },
+  {
+    "itemId": "8326713",
+    "name": "Lernaea's Amulet",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lernaea's Amulet"
+  },
+  {
+    "itemId": "8341862",
+    "name": "Lernaea's Amulet",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lernaea's Amulet"
+  },
+  {
+    "itemId": "6972627",
+    "name": "Lasso of Truth",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lasso of Truth (Artifact)"
+  },
+  {
+    "itemId": "8326714",
+    "name": "Lasso of Truth",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lasso of Truth (Artifact)"
+  },
+  {
+    "itemId": "8341863",
+    "name": "Lasso of Truth",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Lasso of Truth (Artifact)"
+  },
+  {
+    "itemId": "6972634",
+    "name": "Purple Healing Ray",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Purple Healing Ray"
+  },
+  {
+    "itemId": "8326715",
+    "name": "Purple Healing Ray",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Purple Healing Ray"
+  },
+  {
+    "itemId": "8341864",
+    "name": "Purple Healing Ray",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Purple Healing Ray"
+  },
+  {
+    "itemId": "7213674",
+    "name": "Quislet",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Quislet"
+  },
+  {
+    "itemId": "8326716",
+    "name": "Quislet",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Quislet"
+  },
+  {
+    "itemId": "8341865",
+    "name": "Quislet",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Quislet"
+  },
+  {
+    "itemId": "7213762",
+    "name": "Grimbor's Chains",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Grimbor's Chains"
+  },
+  {
+    "itemId": "8326717",
+    "name": "Grimbor's Chains",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Grimbor's Chains"
+  },
+  {
+    "itemId": "8341866",
+    "name": "Grimbor's Chains",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Grimbor's Chains"
+  },
+  {
+    "itemId": "7213771",
+    "name": "Computo's Redistributor HUD",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Computo's Redistributor HUD"
+  },
+  {
+    "itemId": "8326718",
+    "name": "Computo's Redistributor HUD",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Computo's Redistributor HUD"
+  },
+  {
+    "itemId": "8341867",
+    "name": "Computo's Redistributor HUD",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Computo's Redistributor HUD"
+  },
+  {
+    "itemId": "7290407",
+    "name": "Pied Piper's Flute",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Pied Piper's Flute"
+  },
+  {
+    "itemId": "8326719",
+    "name": "Pied Piper's Flute",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Pied Piper's Flute"
+  },
+  {
+    "itemId": "8341868",
+    "name": "Pied Piper's Flute",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Pied Piper's Flute"
+  },
+  {
+    "itemId": "7334422",
+    "name": "Circe's Mask",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Circe's Mask"
+  },
+  {
+    "itemId": "8326720",
+    "name": "Circe's Mask",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Circe's Mask"
+  },
+  {
+    "itemId": "8341869",
+    "name": "Circe's Mask",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Circe's Mask"
+  },
+  {
+    "itemId": "7985480",
+    "name": "M.E.R.C.Y. Amazotron Matrix",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "M.E.R.C.Y. Amazotron Matrix"
+  },
+  {
+    "itemId": "8326722",
+    "name": "M.E.R.C.Y. Amazotron Matrix",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "M.E.R.C.Y. Amazotron Matrix"
+  },
+  {
+    "itemId": "8341871",
+    "name": "M.E.R.C.Y. Amazotron Matrix",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "M.E.R.C.Y. Amazotron Matrix"
+  },
+  {
+    "itemId": "7767690",
+    "name": "The Clarion",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Clarion"
+  },
+  {
+    "itemId": "8326721",
+    "name": "The Clarion",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Clarion"
+  },
+  {
+    "itemId": "8341870",
+    "name": "The Clarion",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Clarion"
+  },
+  {
+    "itemId": "8125260",
+    "name": "Heart of Isis",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Heart of Isis"
+  },
+  {
+    "itemId": "8326723",
+    "name": "Heart of Isis",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Heart of Isis"
+  },
+  {
+    "itemId": "8341872",
+    "name": "Heart of Isis",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Heart of Isis"
+  },
+  {
+    "itemId": "8200756",
+    "name": "Ebon's Untethered Shadow",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Ebon's Untethered Shadow"
+  },
+  {
+    "itemId": "8326724",
+    "name": "Ebon's Untethered Shadow",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Ebon's Untethered Shadow"
+  },
+  {
+    "itemId": "8341873",
+    "name": "Ebon's Untethered Shadow",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Ebon's Untethered Shadow"
+  },
+  {
+    "itemId": "8225427",
+    "name": "Brand of Hecate",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Brand of Hecate"
+  },
+  {
+    "itemId": "8326725",
+    "name": "Brand of Hecate",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Brand of Hecate"
+  },
+  {
+    "itemId": "8341874",
+    "name": "Brand of Hecate",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Brand of Hecate"
+  },
+  {
+    "itemId": "8400559",
+    "name": "Reforged Tantu Totem",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Reforged Tantu Totem"
+  },
+  {
+    "itemId": "8426705",
+    "name": "Reforged Tantu Totem",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Reforged Tantu Totem"
+  },
+  {
+    "itemId": "8426731",
+    "name": "Reforged Tantu Totem",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Reforged Tantu Totem"
+  },
+  {
+    "itemId": "8418238",
+    "name": "Red Tornado Redistribution Module",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Red Tornado Redistribution Module"
+  },
+  {
+    "itemId": "8426706",
+    "name": "Red Tornado Redistribution Module",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Red Tornado Redistribution Module"
+  },
+  {
+    "itemId": "8426732",
+    "name": "Red Tornado Redistribution Module",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Red Tornado Redistribution Module"
+  },
+  {
+    "itemId": "8478156",
+    "name": "The Omega Totality",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Omega Totality"
+  },
+  {
+    "itemId": "8480915",
+    "name": "The Omega Totality",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Omega Totality"
+  },
+  {
+    "itemId": "8480898",
+    "name": "The Omega Totality",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "The Omega Totality"
+  },
+  {
+    "itemId": "8531809",
+    "name": "Candle of Neron",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Candle of Neron"
+  },
+  {
+    "itemId": "8557813",
+    "name": "Candle of Neron",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Candle of Neron"
+  },
+  {
+    "itemId": "8557812",
+    "name": "Candle of Neron",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Candle of Neron"
+  },
+  {
+    "itemId": "8616086",
+    "name": "Sinestro's Corrupted Power Ring",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Sinestro's Corrupted Power Ring"
+  },
+  {
+    "itemId": "8655181",
+    "name": "Sinestro's Corrupted Power Ring",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Sinestro's Corrupted Power Ring"
+  },
+  {
+    "itemId": "8655768",
+    "name": "Sinestro's Corrupted Power Ring",
+    "kind": "Artifacts",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/artifacts.json",
+    "sourceTitle": "Sinestro's Corrupted Power Ring"
+  },
+  {
+    "itemId": "7496652",
+    "name": "Professor Zoom",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Professor Zoom"
+  },
+  {
+    "itemId": "7558231",
+    "name": "Batman Who Laughs",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Batman Who Laughs"
+  },
+  {
+    "itemId": "7558232",
+    "name": "Emperor Aquaman",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Emperor Aquaman"
+  },
+  {
+    "itemId": "7558233",
+    "name": "Queen Diana",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Queen Diana"
+  },
+  {
+    "itemId": "7558234",
+    "name": "Flashpoint Batman",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Flashpoint Batman"
+  },
+  {
+    "itemId": "7558235",
+    "name": "The Flash",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: The Flash"
+  },
+  {
+    "itemId": "7558236",
+    "name": "Cyborg",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Cyborg"
+  },
+  {
+    "itemId": "7558237",
+    "name": "House of Legends Bot",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: House of Legends Bot"
+  },
+  {
+    "itemId": "7558238",
+    "name": "Calculator-Bot",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Calculator-Bot"
+  },
+  {
+    "itemId": "7558239",
+    "name": "Oracle-Bot",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Oracle-Bot"
+  },
+  {
+    "itemId": "7686691",
+    "name": "Nubia",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Nubia"
+  },
+  {
+    "itemId": "7873632",
+    "name": "Bombshell Harley Quinn",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Bombshell Harley Quinn"
+  },
+  {
+    "itemId": "7979751",
+    "name": "Death Metal Batman",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Death Metal Batman"
+  },
+  {
+    "itemId": "7980138",
+    "name": "Krypto",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Krypto"
+  },
+  {
+    "itemId": "7980413",
+    "name": "Superman",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Superman"
+  },
+  {
+    "itemId": "7980592",
+    "name": "Future Lex Luthor",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Future Lex Luthor"
+  },
+  {
+    "itemId": "8057779",
+    "name": "Batman",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Batman"
+  },
+  {
+    "itemId": "8057952",
+    "name": "Black Adam",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Black Adam"
+  },
+  {
+    "itemId": "8129032",
+    "name": "Shazam",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Shazam"
+  },
+  {
+    "itemId": "8146359",
+    "name": "Static",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Static"
+  },
+  {
+    "itemId": "8177121",
+    "name": "Poison Ivy",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Poison Ivy"
+  },
+  {
+    "itemId": "8186440",
+    "name": "Bruce Wayne",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Bruce Wayne"
+  },
+  {
+    "itemId": "8221858",
+    "name": "General Zod",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: General Zod"
+  },
+  {
+    "itemId": "8238254",
+    "name": "Blue Beetle",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Blue Beetle"
+  },
+  {
+    "itemId": "8258537",
+    "name": "Zatanna",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Zatanna"
+  },
+  {
+    "itemId": "8274728",
+    "name": "Teekl",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Teekl"
+  },
+  {
+    "itemId": "8347932",
+    "name": "John Stewart",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: John Stewart"
+  },
+  {
+    "itemId": "8430112",
+    "name": "Starfire",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Starfire"
+  },
+  {
+    "itemId": "8492154",
+    "name": "Wonder Woman",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: Wonder Woman"
+  },
+  {
+    "itemId": "8575949",
+    "name": "John Constantine",
+    "kind": "Allies",
+    "source": "https://github.com/DCUOBot/dcuobot-api/blob/cffcdaf944f45a0c885945a0a87b20151add5143/src/main/resources/gamedata/allies.json",
+    "sourceTitle": "Ally: John Constantine"
+  }
+]
