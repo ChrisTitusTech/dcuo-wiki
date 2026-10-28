@@ -11,9 +11,15 @@ invokes game functions or sends input for this feature.
 2. Create a token at `/equipment-identification/#overlay-access`.
 3. Open **Wiki items** in Companion and paste the token. Account details load
    automatically; no separate reference lookup is needed.
-4. Choose equipment or loaded catalog items. Capture and inspect the preview.
-5. Send item details explicitly. For catalog capture, continue through the next
-   bounded batch; an unsent preview must be sent or cleared before continuing.
+4. With the matching supported game character connected, updated Companion
+   source versions automatically check loaded item IDs and upload unknown
+   definitions/icons in batches, at least 90 seconds apart, on any tab. Use
+   **Pause automatic missing-item uploads** in the Wiki tab to pause this work.
+5. Manual equipment/catalog capture and preview remain available for explicit
+   enrichment of known items. Send or clear a manual preview before continuing.
+
+Automatic uploads require both the updated server and companion. The original
+v0.1.0 installer still uses the manual workflow.
 
 Equipment capture fills existing names, icons, definitions and slot-specific base
 stats. Loaded catalog capture also creates or updates non-equipped items actually
@@ -47,8 +53,10 @@ Acquisition locations, prices and other unproven fields are not invented.
 
 ## Tokens and API
 
-Tokens expire after 30 days, are stored hashed on the server and remain only in
-Companion memory. Creating a token replaces the previous one; revoke on the same
+Tokens expire after 30 days and are stored hashed on the server. Updated
+Companion source versions save tokens separately from preferences (user-bound
+DPAPI on Windows, a private user-owned file on Linux) and restore them at startup.
+Clear token removes that saved copy; the original v0.1.0 keeps tokens in memory. Creating a token replaces the previous one; revoke on the same
 page. Changing/deleting the linked profile revokes it permanently. Tokens allow
 item contributions from that linked session; they do not authenticate as Discord,
 access screenshots, moderate others or grant general article-editing access.
@@ -60,13 +68,24 @@ characters>` and never fall back to cookies.
 
 - `GET /api/overlay/items`: character `{id,name,worldId}` and up to 50 deduplicated
   equipped/augment IDs, including already named items. Saved equipment must be
-  less than 24 hours old.
+  less than 24 hours old. The optional `ids=7,8` query checks 1-50 unique,
+  canonical positive u32 IDs from any observed catalog batch and returns only IDs
+  without a known wiki identity, including skipping name-only identities. It
+  cannot be combined with `cursor`. Responses include `missingOnlySupported:true`;
+  clients must require this marker before enabling automatic publication.
 - `POST /api/overlay/items`: schema version 2, profile `item-details-v1`, scope
   `equipment` or `catalog`, character, executable SHA-256 `build`, Unix-seconds
   `capturedAt`, and `items: [{itemId,name,details}]`. IDs are canonical strings.
   Details may contain the fields above and a base64 `iconPng` tied to its captured
   resource. Optional `equipped` records contain slot, itemId, itemLevel, effects
   and `baseStats: [{name,value}]`.
+- For automatic missing-only catalog publication, send `missingOnly:true` with
+  version 2 and scope `catalog`. Existing identities, including source-backed
+  names without articles, are skipped. The transaction also checks for concurrent
+  identities or definitions so an automatic upload cannot overwrite them. The
+  response includes `missingOnlySupported:true`; submitted/skipped totals include
+  these skips. Other flag types and `true` with other versions/scopes are rejected.
+  Manual submissions retain their existing create/update behavior.
 - Equipment records must match the linked character's saved Census slot/ID.
   Catalog definitions may be non-equipped, but require substantive captured data.
   Newer captures supersede older definitions; an older batch cannot overwrite
@@ -76,6 +95,9 @@ characters>` and never fall back to cookies.
 - Public `GET /api/companion/items?cursor=<ID>` paginates 50 catalog entries.
 
 Bodies, strings, images, dimensions, traversals and request rates are bounded.
+Overlay lookup and submission together allow at most 120 requests per hour per IP.
+Automatic clients must pace requests, suppress repeats, stop on authentication or
+character mismatches, and require a server advertising missing-only support.
 Icons allow PNG only (256 x 256 maximum, 64 KiB) with validated structure/checksums;
 clients cannot upload a remote URL. No raw memory, addresses, personal snapshots,
 chat, location or account tokens are published. Build/profile metadata is
@@ -86,8 +108,8 @@ client-provided provenance, not server attestation.
 Apply migrations `0007_overlay_items.sql` and `0008_item_details.sql` before the
 matching Worker. Existing screenshots, mappings and history remain intact.
 Publish through the repository's main deployment, then install the matching
-Companion. Do not restart an existing Companion process silently: its token is
-memory-only and must be pasted again after restart.
+Companion. Do not restart an existing Companion process silently. The original v0.1.0
+keeps its token only in memory and requires pasting it again after restart.
 
 Rollback the Worker/Companion commit together; the additive tables can remain.
 Use D1 Time Travel before a maintenance backfill. Native definition seeds contain
@@ -110,3 +132,12 @@ covered with a mocked Census response. Independent Codex review is clean.
 Current output is 16,195 static files and 2,888.13 KiB gzip Worker code. Workers
 Paid was confirmed active in the account dashboard; its file allowance is
 100,000. The existing build guard remains a conservative 19,500 files.
+
+## Automatic missing-item source validation (October 27)
+
+The bounded lookup and atomic missing-only write changes pass 224 Node tests,
+26 local Cloudflare tests, type checking (zero errors/warnings) and the site
+build/budget check (16,195 files). Actual local D1 tests cover known/static skips,
+repeat contributions and concurrent submissions with one insert and one skip.
+Independent Codex review found no actionable regressions. No production deployment
+or real-token automatic upload was performed for this change.

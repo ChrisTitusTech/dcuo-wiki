@@ -79,7 +79,35 @@ async function context(request, env) {
 }
 export async function overlayItems(request, env) {
   const { p, ids } = await context(request, env);
-  const rawCursor = new URL(request.url).searchParams.get("cursor");
+  const params = new URL(request.url).searchParams;
+  if (params.has("ids")) {
+    const ids = params.get("ids").split(",");
+    if (
+      params.has("cursor") ||
+      params.getAll("ids").length !== 1 ||
+      !ids.length ||
+      ids.length > 50 ||
+      ids.some((value) => !id(value)) ||
+      new Set(ids).size !== ids.length
+    )
+      throw new HttpError(
+        400,
+        "Provide between 1 and 50 unique item IDs without a cursor.",
+      );
+    const known = await itemIdentities(env, ids);
+    return {
+      character: {
+        id: p.character_id,
+        name: p.character_name,
+        worldId: p.world_id,
+      },
+      items: ids
+        .filter((itemId) => !known.has(itemId))
+        .map((itemId) => ({ itemId })),
+      missingOnlySupported: true,
+    };
+  }
+  const rawCursor = params.get("cursor");
   const cursor = rawCursor === null ? 0 : id(rawCursor);
   if (cursor === null) throw new HttpError(400, "Invalid equipment cursor.");
   const remaining = ids
@@ -93,6 +121,7 @@ export async function overlayItems(request, env) {
       worldId: p.world_id,
     },
     items: page.map((itemId) => ({ itemId })),
+    missingOnlySupported: true,
     ...(remaining.length > 50 ? { nextCursor: page.at(-1) } : {}),
   };
 }
@@ -143,6 +172,21 @@ export async function submitOverlayItems(request, env) {
     c.items.flatMap((i) => [i.itemId, ...(i.augments || [])]).map(id),
   );
   const catalog = b.schemaVersion === 2 && b.scope === "catalog";
+  if (
+    (b.missingOnly !== undefined && typeof b.missingOnly !== "boolean") ||
+    (b.missingOnly === true && !catalog)
+  )
+    throw new HttpError(
+      400,
+      "Missing-only publication requires a version 2 catalog capture.",
+    );
+  const missingOnly = b.missingOnly === true;
+  const known = missingOnly
+    ? await itemIdentities(
+        env,
+        items.map((i) => i.itemId),
+      )
+    : null;
   if (b.scope !== undefined && !["equipment", "catalog"].includes(b.scope))
     throw new HttpError(400, "Invalid capture scope.");
   if (!catalog && items.some((i) => !membership.has(i.itemId)))
@@ -190,7 +234,11 @@ export async function submitOverlayItems(request, env) {
   const notes =
     "Identified from an in-game item definition using DCUO Companion.";
   const candidates = items
-    .filter((i) => b.schemaVersion === 2 || c.unresolved.includes(i.itemId))
+    .filter((i) =>
+      missingOnly
+        ? !known.has(i.itemId)
+        : b.schemaVersion === 2 || c.unresolved.includes(i.itemId),
+    )
     .map((i) => ({
       evidenceId: crypto.randomUUID(),
       itemId: i.itemId,
@@ -217,7 +265,7 @@ export async function submitOverlayItems(request, env) {
       JOIN overlay_tokens ot ON ot.user_id=p.user_id AND ot.character_id=p.character_id AND ot.character_name=p.character_name AND ot.world_id=p.world_id
       JOIN equipment_snapshots s ON s.character_id=p.character_id AND s.world_id=p.world_id
       CROSS JOIN json_each(?) i
-      WHERE ot.token_hash=? AND ot.expires_at>? AND p.character_id=? AND p.character_name=? AND p.world_id=? AND s.synced_at>=? AND s.items_json=? ${b.schemaVersion === 2 ? "AND NOT EXISTS(SELECT 1 FROM item_details d JOIN json_each(?) x ON d.item_id=json_extract(x.value,'$.itemId') WHERE d.captured_at>?)" : ""} ${b.schemaVersion === 1 ? "AND NOT EXISTS(SELECT 1 FROM item_identifications WHERE item_id=json_extract(i.value,'$.itemId'))" : ""}`,
+      WHERE ot.token_hash=? AND ot.expires_at>? AND p.character_id=? AND p.character_name=? AND p.world_id=? AND s.synced_at>=? AND s.items_json=? ${b.schemaVersion === 2 && !missingOnly ? "AND NOT EXISTS(SELECT 1 FROM item_details d JOIN json_each(?) x ON d.item_id=json_extract(x.value,'$.itemId') WHERE d.captured_at>?)" : ""} ${missingOnly ? "AND NOT EXISTS(SELECT 1 FROM item_identifications WHERE item_id=json_extract(i.value,'$.itemId')) AND NOT EXISTS(SELECT 1 FROM item_details WHERE item_id=json_extract(i.value,'$.itemId'))" : ""} ${b.schemaVersion === 1 ? "AND NOT EXISTS(SELECT 1 FROM item_identifications WHERE item_id=json_extract(i.value,'$.itemId'))" : ""}`,
           reason,
           new Uint8Array(0).buffer,
           t,
@@ -232,7 +280,9 @@ export async function submitOverlayItems(request, env) {
           c.p.world_id,
           now() - 86400,
           c.snapshot.items_json,
-          ...(b.schemaVersion === 2 ? [candidatesJson, b.capturedAt] : []),
+          ...(b.schemaVersion === 2 && !missingOnly
+            ? [candidatesJson, b.capturedAt]
+            : []),
         ),
         q(
           env,
@@ -293,14 +343,15 @@ export async function submitOverlayItems(request, env) {
       409,
       "Equipment changed during publication. Refresh equipment and retry the capture.",
     );
+  let saved;
   if (b.schemaVersion === 2) {
     const rows = await q(
       env,
       `SELECT evidence_id FROM item_details WHERE evidence_id IN (SELECT json_extract(value,'$.evidenceId') FROM json_each(?))`,
       candidatesJson,
     ).all();
-    const saved = new Set(rows.results.map((r) => r.evidence_id));
-    if (candidates.some((i) => !saved.has(i.evidenceId)))
+    saved = new Set(rows.results.map((r) => r.evidence_id));
+    if (!missingOnly && candidates.some((i) => !saved.has(i.evidenceId)))
       throw new HttpError(
         409,
         "A newer capture or changed equipment prevented publication. Refresh and capture again.",
@@ -312,11 +363,25 @@ export async function submitOverlayItems(request, env) {
   return {
     submitted,
     skipped: items.length - submitted,
+    ...(missingOnly ? { missingOnlySupported: true } : {}),
     ...(b.schemaVersion === 2
       ? {
-          iconsUploaded: items.filter((i) => i.iconPng !== undefined).length,
+          iconsUploaded: items.filter(
+            (i) =>
+              (!missingOnly ||
+                candidates.some(
+                  (c) => c.itemId === i.itemId && saved.has(c.evidenceId),
+                )) &&
+              i.iconPng !== undefined,
+          ).length,
           iconsMissing: items.filter(
-            (i) => i.details.iconResource && i.iconPng === undefined,
+            (i) =>
+              (!missingOnly ||
+                candidates.some(
+                  (c) => c.itemId === i.itemId && saved.has(c.evidenceId),
+                )) &&
+              i.details.iconResource &&
+              i.iconPng === undefined,
           ).length,
         }
       : {}),

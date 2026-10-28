@@ -706,3 +706,122 @@ test("the complete native effect bound fits the equipped API contract", async ()
     status: 400,
   });
 });
+
+const catalogBody = () => ({
+  ...body(),
+  schemaVersion: 2,
+  profile: "item-details-v1",
+  scope: "catalog",
+  missingOnly: true,
+  items: [
+    {
+      itemId: "999000111",
+      name: "Fixture Helmet",
+      details: { description: "Protective armor." },
+    },
+  ],
+});
+const lookupRequest = (token, query) =>
+  new Request(`https://dcuo-wiki.com/api/overlay/items?${query}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+test("arbitrary ID lookup skips static and name-only identities with explicit capability", async () => {
+  const { sourceItems } = await import("../worker/item-identities.mjs");
+  const staticId = [...sourceItems.keys()].find(
+    (value) => Number(value) <= 4294967295,
+  );
+  const { env } = setup();
+  const { token } = await createOverlayToken(env, user);
+  await submitOverlayItems(request(token, body()), env);
+  const result = await overlayItems(
+    lookupRequest(token, `ids=${staticId},999000111,999000113`),
+    env,
+  );
+  assert.deepEqual(result.items, [{ itemId: "999000113" }]);
+  assert.equal(result.missingOnlySupported, true);
+  assert.deepEqual(result.character, body().character);
+  for (const query of [
+    "ids=",
+    "ids=0",
+    "ids=01",
+    "ids=-1",
+    "ids=4294967296",
+    "ids=1,1",
+    "ids=1&cursor=2",
+    "ids=1&ids=2",
+    `ids=${Array.from({ length: 51 }, (_, i) => i + 1).join(",")}`,
+  ])
+    await assert.rejects(overlayItems(lookupRequest(token, query), env), {
+      status: 400,
+    });
+});
+test("missing-only catalog skips known names and static identities while manual updates remain available", async () => {
+  const { sourceItems } = await import("../worker/item-identities.mjs");
+  const staticId = [...sourceItems.keys()].find(
+    (value) => Number(value) <= 4294967295,
+  );
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  await submitOverlayItems(request(token, body()), env);
+  const b = catalogBody();
+  b.items.push(
+    { ...b.items[0], itemId: staticId },
+    { ...b.items[0], itemId: "999000113" },
+  );
+  assert.deepEqual(await submitOverlayItems(request(token, b), env), {
+    submitted: 1,
+    skipped: 2,
+    missingOnlySupported: true,
+    iconsUploaded: 0,
+    iconsMissing: 0,
+  });
+  assert.equal(
+    sqlite.prepare("SELECT count(*) n FROM item_details").get().n,
+    1,
+  );
+  b.items = [b.items[0]];
+  b.missingOnly = false;
+  assert.equal((await submitOverlayItems(request(token, b), env)).submitted, 1);
+});
+test("missing-only catalog atomically skips a concurrent identity without overwriting it", async () => {
+  const { env, sqlite } = setup();
+  const { token } = await createOverlayToken(env, user);
+  const batch = env.DB.batch;
+  env.DB.batch = async (statements) => {
+    await submitOverlayItems(request(token, body()), {
+      DB: { ...env.DB, batch },
+    });
+    return batch(statements);
+  };
+  assert.deepEqual(
+    await submitOverlayItems(request(token, catalogBody()), env),
+    {
+      submitted: 0,
+      skipped: 1,
+      missingOnlySupported: true,
+      iconsUploaded: 0,
+      iconsMissing: 0,
+    },
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) n FROM item_details").get().n,
+    0,
+  );
+  assert.equal(
+    sqlite.prepare("SELECT count(*) n FROM item_evidence").get().n,
+    1,
+  );
+});
+test("missing-only rejects malformed flags and incompatible publication scopes", async () => {
+  const { env } = setup();
+  const { token } = await createOverlayToken(env, user);
+  for (const b of [
+    { ...body(), missingOnly: true },
+    { ...catalogBody(), scope: "equipment" },
+    { ...catalogBody(), missingOnly: "true" },
+    { ...catalogBody(), missingOnly: null },
+  ])
+    await assert.rejects(submitOverlayItems(request(token, b), env), {
+      status: 400,
+    });
+});

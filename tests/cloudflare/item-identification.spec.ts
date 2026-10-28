@@ -343,3 +343,122 @@ test("rich companion catalog publication creates an illustrated, editable articl
   expect((await request.get("/companion-item-template/")).status()).toBe(404);
   await request.delete("/api/items/overlay-token", { headers });
 });
+
+test("real D1 missing-only publication skips known identities and concurrent uploads", async ({
+  request,
+}) => {
+  const { readFileSync } = await import("node:fs");
+  const staticRows = JSON.parse(
+    readFileSync("data/census-item-index.json", "utf8"),
+  );
+  const staticId = staticRows.find(
+    ([id]: string[]) => Number(id) <= 4294967295,
+  )[0];
+  const issued = await request.post("/api/items/overlay-token", { headers });
+  expect(issued.status()).toBe(201);
+  const { token } = await issued.json();
+  const bearer = { Authorization: `Bearer ${token}` };
+  const targetResponse = await request.get("/api/overlay/items", {
+    headers: bearer,
+  });
+  expect(targetResponse.status()).toBe(200);
+  const target = await targetResponse.json();
+  expect(target.missingOnlySupported).toBe(true);
+  const base = {
+    character: target.character,
+    build: "a".repeat(64),
+    capturedAt: Math.floor(Date.now() / 1000),
+  };
+  const nameOnly = await request.post("/api/overlay/items", {
+    headers: bearer,
+    data: {
+      ...base,
+      schemaVersion: 1,
+      profile: "item-names-v1",
+      items: [{ itemId: "999000112", name: "Name Only Integration Fixture" }],
+    },
+  });
+  expect(nameOnly.status()).toBe(201);
+  expect((await nameOnly.json()).submitted).toBe(1);
+  const lookup = await request.get(
+    `/api/overlay/items?ids=${staticId},999000112,990088779`,
+    { headers: bearer },
+  );
+  expect(lookup.status()).toBe(200);
+  expect(await lookup.json()).toMatchObject({
+    items: [{ itemId: "990088779" }],
+    missingOnlySupported: true,
+  });
+  const item = (itemId: string, name: string) => ({
+    itemId,
+    name,
+    details: { description: `${name} description.` },
+  });
+  const capture = {
+    ...base,
+    schemaVersion: 2,
+    profile: "item-details-v1",
+    scope: "catalog",
+    missingOnly: true,
+    items: [
+      item(staticId, "Must Not Replace Static"),
+      item("999000112", "Must Not Replace Name"),
+      item("990088779", "Missing Only Integration Fixture"),
+    ],
+  };
+  const first = await request.post("/api/overlay/items", {
+    headers: bearer,
+    data: capture,
+  });
+  expect(first.status()).toBe(201);
+  expect(await first.json()).toEqual({
+    submitted: 1,
+    skipped: 2,
+    missingOnlySupported: true,
+    iconsUploaded: 0,
+    iconsMissing: 0,
+  });
+  capture.items[2].name = "Must Not Overwrite Existing";
+  capture.items[2].details.description =
+    "Must not overwrite original description.";
+  const second = await request.post("/api/overlay/items", {
+    headers: bearer,
+    data: capture,
+  });
+  expect(second.status()).toBe(201);
+  expect(await second.json()).toMatchObject({
+    submitted: 0,
+    skipped: 3,
+    missingOnlySupported: true,
+  });
+  const original = await request.get("/wiki/Item_990088779/");
+  expect(original.status()).toBe(200);
+  const html = await original.text();
+  expect(html).toContain("Missing Only Integration Fixture description.");
+  expect(html).not.toContain("Must not overwrite original description.");
+  expect((await request.get("/wiki/Item_999000112/")).status()).toBe(404);
+  const race = await Promise.all(
+    ["First", "Second"].map((label) =>
+      request.post("/api/overlay/items", {
+        headers: bearer,
+        data: {
+          ...capture,
+          items: [item("990088780", `${label} Concurrent Integration Fixture`)],
+        },
+      }),
+    ),
+  );
+  expect(race.map((response) => response.status())).toEqual([201, 201]);
+  const receipts = await Promise.all(race.map((response) => response.json()));
+  expect(receipts.reduce((sum, receipt) => sum + receipt.submitted, 0)).toBe(1);
+  expect(receipts.reduce((sum, receipt) => sum + receipt.skipped, 0)).toBe(1);
+  expect(
+    receipts.every((receipt) => receipt.missingOnlySupported === true),
+  ).toBe(true);
+  const winner = receipts.findIndex((receipt) => receipt.submitted === 1);
+  const raceHtml = await (await request.get("/wiki/Item_990088780/")).text();
+  expect(raceHtml).toContain(
+    `${winner === 0 ? "First" : "Second"} Concurrent Integration Fixture description.`,
+  );
+  await request.delete("/api/items/overlay-token", { headers });
+});
