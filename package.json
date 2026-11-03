@@ -49,7 +49,7 @@
     "parse5": "^8.0.1",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.1",
-    "wrangler": "4.151.3"
+    "wrangler": "4.156.2"
   },
   "private": true
 }
